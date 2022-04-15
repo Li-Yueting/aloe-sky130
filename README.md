@@ -3,10 +3,11 @@ aloe-sky130 is an analog PnR automation tool based on ALOE [1] architecture usin
 
 ## Running codes
 Fristly, log into singularity env on farmshare: ``` /farmshare/home/classes/ee/admin/software/bin/centos.sh```  <br>
-``` source setup.csh  
+``` 
+$ source setup.csh  
 $ cd layout 
 $ magic & 
-$ load <mag_name>.mag  
+$ load <your_mag_name>.mag  
 $ source stem_cell_generation.tcl  
 ```
 in magic command line put in: ``` place_pmos 0 0 2 12 1 ``` to generate stem cell for pmos/nmos/pnp/resistor/cap
