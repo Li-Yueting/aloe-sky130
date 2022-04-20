@@ -5,10 +5,8 @@ proc generate_lef {inst_name} {
 	set box_pos [box position]
 	set llx [lindex $box_pos  0]
 	set lly [lindex $box_pos  1]
-
-	move origin right [$llx]um
+    move origin right [$llx]um
     move origin bottom -[$lly]um
-	
     box
 	property LEFsite unithddbl
 	if {$inst_name==pfet}{
