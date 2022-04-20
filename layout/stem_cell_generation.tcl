@@ -194,7 +194,7 @@ proc place_inst {inst_name x_center y_center width length nf index params} {
 	puts "y_center: $y_center"
 	box [expr $x_center]um [expr $y_center]um [expr $x_center]um [expr $y_center]um  
 	# edit size(w,l) and finger number
-    dict set params w $width
+	dict set params w $width
 	dict set params l $length
 	dict set params nf $nf
 	# puts "cell_parameter: $params"
