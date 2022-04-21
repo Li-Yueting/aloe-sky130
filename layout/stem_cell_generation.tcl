@@ -155,11 +155,16 @@ proc place_nmos {x_center y_center length nf index} {
 		paint p
 	}
 	### paint source connection
-	for {set x [expr 5.5+$con_sep+29]} {$x+29<=$bx} {set x [expr $x+2*$con_sep+2*29]} {
+	for {set x [expr 5.5+$con_sep+29]} {$x+10<=$bx} {set x [expr $x+2*$con_sep+2*29]} {
 		box [expr $x_center-$bx/2+$x] [expr $y_center+$by/2-40] [expr $x_center-$bx/2+$x+17]  [expr $y_center+$height_half_center]
 		paint li
 	}
 	### paint drain connection
+	puts "x is: $x\n"
+	puts "bx is: $bx\n"
+	puts "by is: $by\n"
+	puts "con_sep is: $con_sep\n"
+	puts "height_half_center is: $height_half_center"
 	for {set x 5.5} {$x+29<=$bx} {set x [expr $x+2*$con_sep+2*29]} {
 		box [expr $x_center-$bx/2+$x] [expr $y_center-$by/2+40] [expr $x_center-$bx/2+$x+17]  [expr $y_center-$height_half_center]
 		paint li
