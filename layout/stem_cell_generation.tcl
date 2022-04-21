@@ -94,17 +94,17 @@ proc place_nmos {x_center y_center length nf index} {
 	set bx [expr {[lindex $box_size 0]/2}]
 	set by [expr {[lindex $box_size 1]/2}]
 	puts "by is : $by"
-    set height_half_center 380
+	set height_half_center 380
 	set power_half_w 30
-	set con_sep [expr $length*100] ;#unit conversion
 	set con_w 30
 	### unit conversion here
+	set con_sep  [expr $length*100] 
 	set x_center [expr $x_center*100]
 	set y_center [expr $y_center*100]
-    ### extend PWELL to VGND
+	### extend PWELL to VSS
 	box [expr $x_center-$bx/2] [expr $y_center] [expr $x_center+$bx/2] [expr $y_center-$height_half_center+$con_w/2-120]
 	paint pwell
-	### paint VPWR
+	### paint VDD
 	box [expr $x_center-$bx/2] [expr $y_center+$height_half_center - $power_half_w+60] [expr $x_center + $bx/2] [expr $y_center + $height_half_center + $power_half_w+60]
 	paint m1
 	box [expr $x_center-$bx/2] [expr $y_center+$height_half_center-$con_w/2+60] [expr $x_center+$bx/2] [expr $y_center + $height_half_center + $con_w/2+60]
@@ -115,7 +115,7 @@ proc place_nmos {x_center y_center length nf index} {
 	}
 	box [expr $x_center-$bx/2] [expr $y_center+$height_half_center-$con_w/2+60] [expr $x_center-$bx/2+$con_w] [expr $y_center+$height_half_center+$con_w/2+60]
 	label VPWR FreeSans 30
-	### paint VGND
+	### paint VSS
 	box [expr $x_center-$bx/2] [expr $y_center-$height_half_center-$power_half_w-120] [expr $x_center+$bx/2] [expr $y_center-$height_half_center+$power_half_w-120]
 	paint m1
 	box [expr $x_center-$bx/2] [expr $y_center-$height_half_center-$con_w/2-120] [expr $x_center+$bx/2] [expr $y_center-$height_half_center+$con_w/2-120]
@@ -126,13 +126,10 @@ proc place_nmos {x_center y_center length nf index} {
 	}
 	box [expr $x_center-$bx/2] [expr $y_center-$height_half_center-$con_w/2-120] [expr $x_center-$bx/2+$con_w] [expr $y_center-$height_half_center+$con_w/2-120]
 	label VGND FreeSans 30
-	########## add body pin ###########
-	box [expr $x_center-$bx/2-5] [expr $y_center-$height_half_center-$con_w/2-120] [expr $x_center-$bx/2+$con_w-5] [expr $y_center-$height_half_center+$con_w/2-120]
-	label VNB FreeSans 30
 	### paint SOURCE rail
 	box [expr $x_center-$bx/2] [expr $y_center+$height_half_center-$con_w/2] [expr $x_center+$bx/2] [expr $y_center+$height_half_center+$con_w/2]
 	paint li
-    box [expr $x_center+$bx/2-$con_w] [expr $y_center+$height_half_center-$con_w/2] [expr $x_center+$bx/2] [expr $y_center+$height_half_center+$con_w/2]
+	box [expr $x_center+$bx/2-$con_w] [expr $y_center+$height_half_center-$con_w/2] [expr $x_center+$bx/2] [expr $y_center+$height_half_center+$con_w/2]
 	label SOURCE FreeSans 30
 	### paint DRAIN rail
 	box [expr $x_center-$bx/2] [expr $y_center-$height_half_center-$con_w/2] [expr $x_center+$bx/2] [expr $y_center-$height_half_center+$con_w/2]
@@ -157,11 +154,11 @@ proc place_nmos {x_center y_center length nf index} {
 		paint p
 	}
 	### paint source connection
-	for {set x [expr 5.5+$con_sep+29]} {$x+29<=$bx} {set x [expr $x+2*$con_sep+2*29]} {
+	for {set x [expr 5.5+$con_sep+29]} {$x+10<=$bx} {set x [expr $x+2*$con_sep+2*29]} {
 		box [expr $x_center-$bx/2+$x] [expr $y_center+$by/2-40] [expr $x_center-$bx/2+$x+17]  [expr $y_center+$height_half_center]
 		paint li
 	}
-    ### paint drain connection
+	### paint drain connection
 	for {set x 5.5} {$x+29<=$bx} {set x [expr $x+2*$con_sep+2*29]} {
 		box [expr $x_center-$bx/2+$x] [expr $y_center-$by/2+40] [expr $x_center-$bx/2+$x+17]  [expr $y_center-$height_half_center]
 		paint li

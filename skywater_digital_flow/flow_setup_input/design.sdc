@@ -12,3 +12,4 @@ group_path -name REGIN  -from [get_ports in]
 group_path -name REGOUT  -to [get_ports out]
 set_input_delay -clock ideal_clock  5  [get_ports in]
 set_output_delay -clock ideal_clock  0  [get_ports out]
+
