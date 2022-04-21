@@ -5,17 +5,17 @@ MMIP1 DRAIN GATE SOURCE VPB pfet_01v8_lvt m=1 w=6.45 l=2 nf=1 .....
 
 .SUBCKT sky130_fd_sc_hd__nfet GATE SOURCE DRAIN VNB VPWR VGND
 *.PININFO GATE:I SOURCE:I VNB:I VPWR:I VGND:I DRAIN:O
-MMIN1 DRAIN GATE SOURCE VNB nfet_01v8_lvt m=1 w=6.45 l=2 nf=1 .....
+MMIN1 DRAIN GATE SOURCE VNB nfet_01v8_lvt m=1 w=4 l=2 nf=1 .....
 .ENDS sky130_fd_sc_hd__nfet
 
 
 
-.SUBCKT sky130_fd_sc_hd__inv_2 A VGND VNB VPB VPWR Y
-MMIN1 Y A VGND VNB nfet_01v8 m=2 w=0.65 l=0.15 mult=1 sa=0.265
-+ sb=0.265 sd=0.28 topography=normal area=0.063 perim=1.14
-MMIP1 Y A VPWR VPB pfet_01v8_hvt m=2 w=1.0 l=0.15 mult=1 sa=0.265
-+ sb=0.265 sd=0.28 topography=normal area=0.063 perim=1.14
-.ENDS sky130_fd_sc_hd__inv_2
+// .SUBCKT sky130_fd_sc_hd__inv_2 A VGND VNB VPB VPWR Y
+// MMIN1 Y A VGND VNB nfet_01v8 m=2 w=0.65 l=0.15 mult=1 sa=0.265
+// + sb=0.265 sd=0.28 topography=normal area=0.063 perim=1.14
+// MMIP1 Y A VPWR VPB pfet_01v8_hvt m=2 w=1.0 l=0.15 mult=1 sa=0.265
+// + sb=0.265 sd=0.28 topography=normal area=0.063 perim=1.14
+// .ENDS sky130_fd_sc_hd__inv_2
 
 
 ******* EOF

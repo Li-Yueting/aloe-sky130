@@ -22,7 +22,7 @@ proc place_pmos {x_center y_center length nf index} {
 	### extend NWELL
 	box [expr $x_center-$bx/2] [expr $y_center] [expr $x_center+$bx/2] [expr $y_center + $height_half_center + $power_half_w+60]
 	paint nwell
-	### paint VDD
+	### paint VPWR
 	box [expr $x_center-$bx/2] [expr $y_center+$height_half_center - $power_half_w+60] [expr $x_center + $bx/2] [expr $y_center + $height_half_center + $power_half_w+60]
 	paint m1
 	box [expr $x_center-$bx/2] [expr $y_center+$height_half_center-$con_w/2+60] [expr $x_center+$bx/2] [expr $y_center + $height_half_center + $con_w/2+60]
@@ -32,8 +32,11 @@ proc place_pmos {x_center y_center length nf index} {
 		paint viali
 	}
 	box [expr $x_center-$bx/2] [expr $y_center+$height_half_center-$con_w/2+60] [expr $x_center-$bx/2+$con_w] [expr $y_center+$height_half_center+$con_w/2+60]
-	label VDD FreeSans 30
-	### paint VSS
+	label VPWR FreeSans 30
+	########## add body pin ###########
+	box [expr $x_center-$bx/2-5] [expr $y_center+$height_half_center-$con_w/2+60] [expr $x_center-$bx/2+$con_w-5] [expr $y_center+$height_half_center+$con_w/2+60]
+	label VPB FreeSans 30
+	### paint VGND
 	box [expr $x_center-$bx/2] [expr $y_center-$height_half_center-$power_half_w-120] [expr $x_center+$bx/2] [expr $y_center-$height_half_center+$power_half_w-120]
 	paint m1
 	box [expr $x_center-$bx/2] [expr $y_center-$height_half_center-$con_w/2-120] [expr $x_center+$bx/2] [expr $y_center-$height_half_center+$con_w/2-120]
@@ -43,7 +46,7 @@ proc place_pmos {x_center y_center length nf index} {
 		paint viali
 	}
 	box [expr $x_center-$bx/2] [expr $y_center-$height_half_center-$con_w/2-120] [expr $x_center-$bx/2+$con_w] [expr $y_center-$height_half_center+$con_w/2-120]
-	label VSS FreeSans 30
+	label VGND FreeSans 30
 	### paint SOURCE rail
 	box [expr $x_center-$bx/2] [expr $y_center+$height_half_center-$con_w/2] [expr $x_center+$bx/2] [expr $y_center+$height_half_center+$con_w/2]
 	paint li
@@ -98,10 +101,10 @@ proc place_nmos {x_center y_center length nf index} {
 	### unit conversion here
 	set x_center [expr $x_center*100]
 	set y_center [expr $y_center*100]
-    ### extend PWELL to VSS
+    ### extend PWELL to VGND
 	box [expr $x_center-$bx/2] [expr $y_center] [expr $x_center+$bx/2] [expr $y_center-$height_half_center+$con_w/2-120]
 	paint pwell
-	### paint VDD
+	### paint VPWR
 	box [expr $x_center-$bx/2] [expr $y_center+$height_half_center - $power_half_w+60] [expr $x_center + $bx/2] [expr $y_center + $height_half_center + $power_half_w+60]
 	paint m1
 	box [expr $x_center-$bx/2] [expr $y_center+$height_half_center-$con_w/2+60] [expr $x_center+$bx/2] [expr $y_center + $height_half_center + $con_w/2+60]
@@ -111,8 +114,8 @@ proc place_nmos {x_center y_center length nf index} {
 		paint viali
 	}
 	box [expr $x_center-$bx/2] [expr $y_center+$height_half_center-$con_w/2+60] [expr $x_center-$bx/2+$con_w] [expr $y_center+$height_half_center+$con_w/2+60]
-	label VDD FreeSans 30
-	### paint VSS
+	label VPWR FreeSans 30
+	### paint VGND
 	box [expr $x_center-$bx/2] [expr $y_center-$height_half_center-$power_half_w-120] [expr $x_center+$bx/2] [expr $y_center-$height_half_center+$power_half_w-120]
 	paint m1
 	box [expr $x_center-$bx/2] [expr $y_center-$height_half_center-$con_w/2-120] [expr $x_center+$bx/2] [expr $y_center-$height_half_center+$con_w/2-120]
@@ -122,7 +125,10 @@ proc place_nmos {x_center y_center length nf index} {
 		paint viali
 	}
 	box [expr $x_center-$bx/2] [expr $y_center-$height_half_center-$con_w/2-120] [expr $x_center-$bx/2+$con_w] [expr $y_center-$height_half_center+$con_w/2-120]
-	label VSS FreeSans 30
+	label VGND FreeSans 30
+	########## add body pin ###########
+	box [expr $x_center-$bx/2-5] [expr $y_center-$height_half_center-$con_w/2-120] [expr $x_center-$bx/2+$con_w-5] [expr $y_center-$height_half_center+$con_w/2-120]
+	label VNB FreeSans 30
 	### paint SOURCE rail
 	box [expr $x_center-$bx/2] [expr $y_center+$height_half_center-$con_w/2] [expr $x_center+$bx/2] [expr $y_center+$height_half_center+$con_w/2]
 	paint li
@@ -239,7 +245,7 @@ proc place_res {x_center y_center index} {
     paint m1
     paint locali
 
-	### paint VDD
+	### paint VPWR
 	box [expr $x_center-$bx/2] [expr $y_center+$height_half_center - $power_half_w] [expr $x_center + $bx/2] [expr $y_center + $height_half_center + $power_half_w]
 	paint m1
 	box [expr $x_center-$bx/2] [expr $y_center+$height_half_center-$con_w/2] [expr $x_center+$bx/2] [expr $y_center + $height_half_center + $con_w/2]
@@ -249,9 +255,9 @@ proc place_res {x_center y_center index} {
 		paint viali
 	}
 	box [expr $x_center-$bx/2] [expr $y_center+$height_half_center-$con_w/2] [expr $x_center-$bx/2+$con_w] [expr $y_center+$height_half_center+$con_w/2]
-	label VDD FreeSans 30
+	label VPWR FreeSans 30
 
-	### paint VSS
+	### paint VGND
 	box [expr $x_center-$bx/2] [expr $y_center-$height_half_center-$power_half_w] [expr $x_center+$bx/2] [expr $y_center-$height_half_center+$power_half_w]
 	paint m1
 	box [expr $x_center-$bx/2] [expr $y_center-$height_half_center-$con_w/2] [expr $x_center+$bx/2] [expr $y_center-$height_half_center+$con_w/2]
@@ -261,7 +267,7 @@ proc place_res {x_center y_center index} {
 		paint viali
 	}
 	box [expr $x_center-$bx/2] [expr $y_center-$height_half_center-$con_w/2] [expr $x_center-$bx/2+$con_w] [expr $y_center-$height_half_center+$con_w/2]
-	label VSS FreeSans 30
+	label VGND FreeSans 30
 }
 
 proc place_pnp {x_center y_center index} {
@@ -275,7 +281,7 @@ proc place_pnp {x_center y_center index} {
 	set con_sep 100 ;#unit conversion
 	set con_w 30
 
-	### paint VDD
+	### paint VPWR
 	box [expr $x_center-$bx/2] [expr $y_center+$height_half_center - $power_half_w] [expr $x_center + $bx/2] [expr $y_center + $height_half_center + $power_half_w]
 	paint m1
 	box [expr $x_center-$bx/2] [expr $y_center+$height_half_center-$con_w/2] [expr $x_center+$bx/2] [expr $y_center + $height_half_center + $con_w/2]
@@ -285,9 +291,9 @@ proc place_pnp {x_center y_center index} {
 		paint viali
 	}
 	box [expr $x_center-$bx/2] [expr $y_center+$height_half_center-$con_w/2] [expr $x_center-$bx/2+$con_w] [expr $y_center+$height_half_center+$con_w/2]
-	label VDD FreeSans 30
+	label VPWR FreeSans 30
 
-	### paint VSS
+	### paint VGND
 	box [expr $x_center-$bx/2] [expr $y_center-$height_half_center-$power_half_w] [expr $x_center+$bx/2] [expr $y_center-$height_half_center+$power_half_w]
 	paint m1
 	box [expr $x_center-$bx/2] [expr $y_center-$height_half_center-$con_w/2] [expr $x_center+$bx/2] [expr $y_center-$height_half_center+$con_w/2]
@@ -297,7 +303,7 @@ proc place_pnp {x_center y_center index} {
 		paint viali
 	}
 	box [expr $x_center-$bx/2] [expr $y_center-$height_half_center-$con_w/2] [expr $x_center-$bx/2+$con_w] [expr $y_center-$height_half_center+$con_w/2]
-	label VSS FreeSans 30
+	label VGND FreeSans 30
 }
 
 proc place_inst {inst_name x_center y_center width length nf index params} {
