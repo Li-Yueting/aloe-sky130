@@ -1,0 +1,87 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1650585996
+<< nwell >>
+rect 0 353 588 2000
+<< pmoslvt >>
+rect 94 415 494 1705
+<< pdiff >>
+rect 36 1693 94 1705
+rect 36 427 48 1693
+rect 82 427 94 1693
+rect 36 415 94 427
+rect 494 1693 552 1705
+rect 494 427 506 1693
+rect 540 427 552 1693
+rect 494 415 552 427
+<< pdiffc >>
+rect 48 427 82 1693
+rect 506 427 540 1693
+<< poly >>
+rect 94 1705 494 1731
+rect 94 389 494 415
+rect 240 244 360 389
+rect 0 224 588 244
+rect 0 164 170 224
+rect 230 164 588 224
+rect 0 144 588 164
+<< polycont >>
+rect 170 164 230 224
+<< locali >>
+rect 0 1910 170 1970
+rect 230 1910 588 1970
+rect 0 1790 588 1850
+rect 505 1709 539 1790
+rect 48 1693 82 1709
+rect 47 427 48 434
+rect 505 1693 540 1709
+rect 505 1686 506 1693
+rect 47 411 82 427
+rect 506 411 540 427
+rect 47 330 81 411
+rect 0 270 588 330
+rect 0 164 170 224
+rect 230 164 588 224
+rect 0 30 170 90
+rect 230 30 588 90
+<< viali >>
+rect 170 1910 230 1970
+rect 48 427 82 1693
+rect 506 427 540 1693
+rect 170 30 230 90
+<< metal1 >>
+rect 0 1970 588 2000
+rect 0 1910 170 1970
+rect 230 1910 588 1970
+rect 0 1880 588 1910
+rect 42 1693 88 1705
+rect 42 427 48 1693
+rect 82 427 88 1693
+rect 42 415 88 427
+rect 500 1693 546 1705
+rect 500 427 506 1693
+rect 540 427 546 1693
+rect 500 415 546 427
+rect 0 90 588 120
+rect 0 30 170 90
+rect 230 30 588 90
+rect 0 0 588 30
+<< labels >>
+flabel nwell 170 1910 230 1970 1 FreeSans 800 0 0 0 VPB
+port 4 n power bidirectional
+flabel metal1 0 1910 60 1970 1 FreeSans 800 0 0 0 VPWR
+port 5 n power bidirectional
+flabel metal1 0 30 60 90 1 FreeSans 800 0 0 0 VGND
+port 6 n ground bidirectional
+flabel locali 528 1790 588 1850 1 FreeSans 800 0 0 0 SOURCE
+port 2 n signal bidirectional
+flabel locali 528 270 588 330 1 FreeSans 800 0 0 0 DRAIN
+port 3 n signal bidirectional
+flabel locali 528 164 588 224 1 FreeSans 800 0 0 0 GATE
+port 1 n signal bidirectional
+<< properties >>
+string FIXED_BBOX 0 0 294 940
+string LEFclass CORE
+string LEFsite unitasc
+<< end >>
