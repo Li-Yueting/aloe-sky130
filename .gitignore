@@ -3,3 +3,5 @@ skywater-digital-flow
 layout/inv1
 mflowgen/
 venv/
+inverter/build
+layout/
