@@ -1,6 +1,6 @@
 # skywater-130nm-analog-adk
 skywater-digital-flow
-layout/inv1
+layout/inv1/
 mflowgen/
 venv/
 inverter/build

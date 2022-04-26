@@ -2,11 +2,11 @@ VERSION 5.7 ;
   NOWIREEXTENSIONATPIN ON ;
   DIVIDERCHAR "/" ;
   BUSBITCHARS "[]" ;
-MACRO box
+MACRO /home/users/lyt1314/ee372/aloe-sky130/skywater-130nm-analog-adk/sky130_asc_pfet_01v8_lvt_1
   CLASS CORE ;
-  FOREIGN box ;
+  FOREIGN /home/users/lyt1314/ee372/aloe-sky130/skywater-130nm-analog-adk/sky130_asc_pfet_01v8_lvt_1 ;
   ORIGIN 0.000 0.000 ;
-  SIZE 1.470 BY 4.700 ;
+  SIZE 2.940 BY 9.400 ;
   SITE unitasc ;
   PIN GATE
     DIRECTION INOUT ;
@@ -14,7 +14,7 @@ MACRO box
     ANTENNAGATEAREA 12.900000 ;
     PORT
       LAYER li1 ;
-        RECT 0.000 0.820 2.940 1.120 ;
+        RECT 0.000 0.520 2.940 0.820 ;
     END
   END GATE
   PIN SOURCE
@@ -23,14 +23,14 @@ MACRO box
     ANTENNADIFFAREA 1.870500 ;
     PORT
       LAYER li1 ;
-        RECT 0.000 8.950 2.940 9.250 ;
-        RECT 2.525 8.545 2.695 8.950 ;
-        RECT 2.525 8.430 2.700 8.545 ;
-        RECT 2.530 2.055 2.700 8.430 ;
+        RECT 0.000 8.650 2.940 8.950 ;
+        RECT 2.525 8.245 2.695 8.650 ;
+        RECT 2.525 8.130 2.700 8.245 ;
+        RECT 2.530 1.755 2.700 8.130 ;
       LAYER mcon ;
-        RECT 2.530 2.135 2.700 8.465 ;
+        RECT 2.530 1.835 2.700 8.165 ;
       LAYER met1 ;
-        RECT 2.500 2.075 2.730 8.525 ;
+        RECT 2.500 1.775 2.730 8.225 ;
     END
   END SOURCE
   PIN DRAIN
@@ -39,14 +39,14 @@ MACRO box
     ANTENNADIFFAREA 1.870500 ;
     PORT
       LAYER li1 ;
-        RECT 0.240 2.170 0.410 8.545 ;
-        RECT 0.235 2.055 0.410 2.170 ;
-        RECT 0.235 1.650 0.405 2.055 ;
-        RECT 0.000 1.350 2.940 1.650 ;
+        RECT 0.240 1.870 0.410 8.245 ;
+        RECT 0.235 1.755 0.410 1.870 ;
+        RECT 0.235 1.350 0.405 1.755 ;
+        RECT 0.000 1.050 2.940 1.350 ;
       LAYER mcon ;
-        RECT 0.240 2.135 0.410 8.465 ;
+        RECT 0.240 1.835 0.410 8.165 ;
       LAYER met1 ;
-        RECT 0.210 2.075 0.440 8.525 ;
+        RECT 0.210 1.775 0.440 8.225 ;
     END
   END DRAIN
   PIN VPB
@@ -54,7 +54,7 @@ MACRO box
     USE POWER ;
     PORT
       LAYER nwell ;
-        RECT 0.000 1.765 2.940 10.000 ;
+        RECT 0.000 1.465 2.940 9.700 ;
     END
   END VPB
   PIN VPWR
@@ -62,11 +62,11 @@ MACRO box
     USE POWER ;
     PORT
       LAYER li1 ;
-        RECT 0.000 9.550 2.940 9.850 ;
+        RECT 0.000 9.250 2.940 9.550 ;
       LAYER mcon ;
-        RECT 0.850 9.550 1.150 9.850 ;
+        RECT 0.850 9.250 1.150 9.550 ;
       LAYER met1 ;
-        RECT 0.000 9.400 2.940 10.000 ;
+        RECT 0.000 9.100 2.940 9.700 ;
     END
   END VPWR
   PIN VGND
@@ -74,13 +74,13 @@ MACRO box
     USE GROUND ;
     PORT
       LAYER li1 ;
-        RECT 0.000 0.150 2.940 0.450 ;
+        RECT 0.000 -0.150 2.940 0.150 ;
       LAYER mcon ;
-        RECT 0.850 0.150 1.150 0.450 ;
+        RECT 0.850 -0.150 1.150 0.150 ;
       LAYER met1 ;
-        RECT 0.000 0.000 2.940 0.600 ;
+        RECT 0.000 -0.300 2.940 0.300 ;
     END
   END VGND
-END box
+END /home/users/lyt1314/ee372/aloe-sky130/skywater-130nm-analog-adk/sky130_asc_pfet_01v8_lvt_1
 END LIBRARY
 

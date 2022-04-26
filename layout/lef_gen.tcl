@@ -11,14 +11,15 @@ proc addlef {inst_name output_folder} {
     set llx [lindex $box_pos 0]    
     set lly [lindex $box_pos 1]    
     move origin right [expr $llx/2]  
-    move origin bottom [expr -$lly/2]
+    move origin bottom [expr -$lly/2-30]
     puts "Now the origin is:"    
     box
     # Property add here 
     property LEFclass CORE 
     property LEFsite unitasc
-    property FIXED_BBOX {0 0 294 940}
+    
     if {$inst_name=={pmos_flat}} {
+        property FIXED_BBOX {0 0 588 1880}
         # GATE
         findlabel GATE
         port GATE make "nsew"
@@ -49,13 +50,17 @@ proc addlef {inst_name output_folder} {
         port VGND make "nsew"
         port class bidirectional
         port use ground
-        set mag_file [file join a b $output_folder sky130_asc_pfet_01v8_lvt_1.mag] 
-        set lef_file [file join a b $output_folder sky130_asc_pfet_01v8_lvt_1.lef]
-        puts "mag_file: $mag_file"
-        puts "lef_file: $lef_file"
-        save $mag_file
-        lef write $lef_file
+        # set mag_file [file join a b $output_folder sky130_asc_pfet_01v8_lvt_1.mag] 
+        # set lef_file [file join a b $output_folder sky130_asc_pfet_01v8_lvt_1.lef]
+        cd $output_folder
+        save sky130_asc_pfet_01v8_lvt_1.mag
+        lef write sky130_asc_pfet_01v8_lvt_1.lef
+        # puts "mag_file: $mag_file"
+        # puts "lef_file: $lef_file"
+        # save $mag_file
+        # lef write $lef_file
 	} elseif {$inst_name=={nmos_flat}} {
+        property FIXED_BBOX {0 0 516 1880}
         # GATE
         findlabel GATE
         port make 
@@ -72,6 +77,7 @@ proc addlef {inst_name output_folder} {
         findlabel VNB
         port make 
         port class inout
+        port use ground
         # VPWR
         findlabel VPWR
         port make 
@@ -82,6 +88,8 @@ proc addlef {inst_name output_folder} {
         port make 
         port class inout
         port use ground
+        cd $output_folder
+        save sky130_asc_nfet_01v8_lvt_1.mag
         lef write sky130_asc_nfet_01v8_lvt_1.lef
     } else {
         puts "No inst lef generated ..."
