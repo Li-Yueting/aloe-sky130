@@ -1,6 +1,9 @@
 # aloe-sky130
 aloe-sky130 is an analog PnR automation tool based on ALOE [1] architecture using skywater-130nm technology. This is a developing repo for our EE372 project at Stanford University. aloe-sky130 is tested on a bandgap reference (BGR) circuit. For the BGR part, we referred [2]. In the layout part, some of the tcl codes referred [3].
 
+## Proposal & Presentation
+Our project proposal & the overview presentation is [here](https://drive.google.com/drive/folders/1wuhCuDhPMV9OHajH3ZFC1K35qJaZ7o5d?usp=sharing)
+
 ## Running codes
 Fristly, log into singularity env on farmshare: ``` /farmshare/home/classes/ee/admin/software/bin/centos.sh```  <br>
 ``` 
