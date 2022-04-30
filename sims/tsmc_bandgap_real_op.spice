@@ -1,0 +1,130 @@
+**.subckt tsmc_bandgap_real_op
+V1 VDD GND 'VDD' pwl 0us 0 5us 'VDD' 
+XQ2 GND GND Veb sky130_fd_pr__pnp_05v5_W3p40L3p40
+Vr4 Vb net2 0
+Vr2 Vb net1 0
+Vm1 net5 Va 0
+Vm2 net4 Vb 0
+Vm3 net6 vbg 0
+Vr1 Va net3 0
+Vq2 Va Veb 0
+XQ1 GND GND vbneg sky130_fd_pr__pnp_05v5_W3p40L3p40 m=39
+XM5 vgate Va Vq GND sky130_fd_pr__nfet_01v8_lvt L='2' W='1' nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=26.95 m=26.95 
+XM6 Vq Vx GND GND sky130_fd_pr__nfet_01v8_lvt L=2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=3.65 m=3.65 
+XM9 vg Vb Vq GND sky130_fd_pr__nfet_01v8_lvt L='2' W='1' nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=26.95 m=26.95 
+XM7 Vx Vx GND GND sky130_fd_pr__nfet_01v8_lvt L=2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=3.65 m=3.65 
+XM13 Vx vgate VDD VDD sky130_fd_pr__pfet_01v8_lvt L=2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=77.32 m=77.32 
+XM1 net5 vgate VDD VDD sky130_fd_pr__pfet_01v8_lvt L=2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=386.6 m=386.6 
+XM2 net4 vgate VDD VDD sky130_fd_pr__pfet_01v8_lvt L=2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=386.6 m=386.6 
+XM3 net6 vgate VDD VDD sky130_fd_pr__pfet_01v8_lvt L=2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=386.6 m=386.6 
+XR1 GND net3 GND sky130_fd_pr__res_xhigh_po_0p35 L=21.839 mult=1 m=1
+XR2 GND net2 GND sky130_fd_pr__res_xhigh_po_0p35 L=21.839 mult=1 m=1
+XR3 vbneg net1 GND sky130_fd_pr__res_xhigh_po_0p35 L=3.763 mult=1 m=1
+XR4 GND vbg GND sky130_fd_pr__res_xhigh_po_0p35 L=17.38 mult=1 m=1
+XM4 vg vg VDD VDD sky130_fd_pr__pfet_01v8_lvt L=2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=38.66 m=38.66 
+XM8 vgate vg VDD VDD sky130_fd_pr__pfet_01v8_lvt L=2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=38.66 m=38.66 
+XM10 vgate porst GND GND sky130_fd_pr__nfet_01v8_lvt L='2' W='1' nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=34 m=34 
+V2 porst GND 0 pulse(0V 1.8V 10us 0us 0us 5us)
+C1 VDD vgate 20p m=1
+C2 Va GND 20p m=1
+**** begin user architecture code
+
+.lib /farmshare/home/classes/ee/272/PDKs/open_pdks/sky130/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+
+.option savecurrents
+.param R3val='22.187k'
+.param alpha='1'
+.param R2R3ratio='5.6555038*alpha'
+.param R2val='R3val*R2R3ratio'
+.param R4R2ratio='0.79694273'
+.param R4val='R2val*R4R2ratio'
+.nodeset v(vgate)=1.4
+.param VDD=1.8
+.control
+save all  @m.xm1.msky130_fd_pr__pfet_01v8_lvt[gm]  @m.xm2.msky130_fd_pr__pfet_01v8_lvt[gm]  @m.xm3.msky130_fd_pr__pfet_01v8_lvt[gm]  @m.xm4.msky130_fd_pr__pfet_01v8_lvt[gm]  @m.xm5.msky130_fd_pr__nfet_01v8_lvt[gm]  @m.xm6.msky130_fd_pr__nfet_01v8_lvt[gm]  @m.xm7.msky130_fd_pr__nfet_01v8_lvt[gm]  @m.xm8.msky130_fd_pr__pfet_01v8_lvt[gm]  @m.xm9.msky130_fd_pr__nfet_01v8_lvt[gm]  @m.xm13.msky130_fd_pr__pfet_01v8_lvt[gm]
+
+op
+
+let id8=@m.xm8.msky130_fd_pr__pfet_01v8_lvt[id]
+let id1=@m.xm1.msky130_fd_pr__pfet_01v8_lvt[id]
+let vth5=@m.xm5.msky130_fd_pr__nfet_01v8_lvt[vth]
+let vth6=@m.xm6.msky130_fd_pr__nfet_01v8_lvt[vth]
+let wm8=@m.xm8.msky130_fd_pr__pfet_01v8_lvt[w]
+let mm8=@m.xm8.msky130_fd_pr__pfet_01v8_lvt[m]
+let weff8=wm8*mm8
+let jd8=id8/weff8
+let wm1=@m.xm1.msky130_fd_pr__pfet_01v8_lvt[w]
+let mm1=@m.xm1.msky130_fd_pr__pfet_01v8_lvt[m]
+let weff1=wm1*mm1
+let jd1=id1/weff1
+let wm13=@m.xm13.msky130_fd_pr__pfet_01v8_lvt[w]
+let mm13=@m.xm13.msky130_fd_pr__pfet_01v8_lvt[m]
+let weff13=wm13*mm13
+let id13=@m.xm13.msky130_fd_pr__pfet_01v8_lvt[id]
+let jd13=id13/weff13
+let gm13=@m.xm13.msky130_fd_pr__pfet_01v8_lvt[gm]
+let gm3=@m.xm3.msky130_fd_pr__pfet_01v8_lvt[gm]
+let gm4=@m.xm4.msky130_fd_pr__pfet_01v8_lvt[gm]
+let gm5=@m.xm5.msky130_fd_pr__nfet_01v8_lvt[gm]
+let gm6=@m.xm6.msky130_fd_pr__nfet_01v8_lvt[gm]
+let gm7=@m.xm7.msky130_fd_pr__nfet_01v8_lvt[gm]
+let gm8=@m.xm8.msky130_fd_pr__pfet_01v8_lvt[gm]
+let gm9=@m.xm9.msky130_fd_pr__nfet_01v8_lvt[gm]
+let gm1=@m.xm1.msky130_fd_pr__pfet_01v8_lvt[gm]
+let gm2=@m.xm2.msky130_fd_pr__pfet_01v8_lvt[gm]
+let vdsat1=2/(gm1/vm1#branch)
+let vdsat2=2/(gm2/vm2#branch)
+let vdsat3=2/(gm3/vm3#branch)
+let vdsat4=2/(gm4/@m.xm4.msky130_fd_pr__pfet_01v8_lvt[id])
+let vdsat5=2/(gm5/@m.xm5.msky130_fd_pr__nfet_01v8_lvt[id])
+let vdsat6=2/(gm6/@m.xm6.msky130_fd_pr__nfet_01v8_lvt[id])
+let vdsat7=2/(gm7/@m.xm7.msky130_fd_pr__nfet_01v8_lvt[id])
+let vdsat8=2/(gm8/@m.xm8.msky130_fd_pr__pfet_01v8_lvt[id])
+let vdsat9=2/(gm9/@m.xm9.msky130_fd_pr__nfet_01v8_lvt[id])
+let vdsat13=2/(gm13/@m.xm13.msky130_fd_pr__pfet_01v8_lvt[id])
+
+write 
+print vbg vgate vg va vb vx vq
+print vdsat1 vdsat2 vdsat3 vdsat4   vdsat5 vdsat6 vdsat7 vdsat8 vdsat9 vdsat13 
+unset askquit
+quit
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL VDD 
+.GLOBAL GND 
+** flattened .save nodes
+.save I(Vr4)
+.save I(Vr2)
+.save I(Vm1)
+.save I(Vm2)
+.save I(Vm3)
+.save I(Vr1)
+.save I(Vq2)
+.end 
