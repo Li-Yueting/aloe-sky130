@@ -1,0 +1,37 @@
+#!/bin/tcsh
+
+#====================================#
+# Author: Po-Hsuan Wei               #
+# Date Modified: 2018.03.06          #
+# Function: Top level flow execution #
+# ===================================#
+#=======#
+# Envs  #
+#=======#
+setenv REPO `pwd`
+setenv ALOE_HOME `pwd`/aloe
+
+#===============#
+# Function Test #
+# ==============#
+#python -m aloe.layout.pnr.plot_experiments
+#python -m aloe.layout.pnr.plot_evolution
+#python -m aloe.layout.pnr.plot_results
+#python -m aloe.layout.pylib.plot_20180905
+#python -m aloe.layout.pylib.plot_hof [2019.08.22 does not work]
+#python -m aloe.layout.pylib.plot_statistics [2019.08.22 does not work]
+
+#python -m aloe.layout.pylib.write_tech
+#python -m aloe.layout.pylib.get_gen_num -g 5
+#python -m aloe.layout.pylib.write_runs 0 lucy
+#============#
+# Single Run #
+#============#
+#cd layout/pnr
+#innovus -nologv -init top0.tcl -cpus 4
+
+#=================#
+# Skipping run.py #
+# ================#
+#cd layout/pnr
+#innovus -nologv -init top.tcl -cpus 4
