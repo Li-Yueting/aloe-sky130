@@ -18,3 +18,8 @@ in magic command line put in: ``` place_pmos 0 0 2 12 1 ``` to generate stem cel
 ## Contact
 Yueting Li: lyt1314@stanford.edu <br>
 Xingyu Ni: xingyuni@stanford.edu
+
+## Circuit specific aloe flow
+1. change config/config.py
+2. change pnr/def_ip.py, pnr/usr_ip.py
+3. change pylib/write_run.py

@@ -88,7 +88,7 @@ def write_run(run_num, generation):
     if not generation == 'lucy':
         cstr_df = read_cstr('net', ['weight'], cstrin_path)
         net_wt_stubs = []
-        all_nets = ["in", "clk", "out", "VDD", "VSS", "VNW", "VDDPST", "POC", "VDDCE", "VDDPE", "VPW", "VSSPST", "VSSE"]
+        all_nets = ["clk", "en", "out1", "out2", "out3", "out4", "out5", "inv1/ds", "inv2/ds", "inv3/ds", "inv4/ds", "inv5/ds", "VDD", "VSS", "VNW", "VDDPST", "POC", "VDDCE", "VDDPE", "VPW", "VSSPST", "VSSE"]
         for idx, net in enumerate(all_nets):
             print(net)
             net_wt_stubs.append('createNetGroup group' + str(idx) + '\n')
@@ -108,10 +108,15 @@ def write_run(run_num, generation):
             #run_tcl.write('source {}\n'.format(os.path.join(ip.pnr_dir, 'sroute.tcl')))
         if flow.steps['place']:
             # ONETIME
-            run_tcl.write('loadFPlan /home/users/xingyuni/ee372/repo.git/aloe/layout/pnr/aloe_place_debug.fp\n')
+            run_tcl.write('loadFPlan /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/examples/ringosc/ro.fp\n')
             if not generation == 'lucy':
                 run_tcl.write('defIn ' + ip.fdef0 + '\n')
                 run_tcl.write(''.join(net_wt_stubs))
+            run_tcl.write('setDesignMode -process 130 -powerEffort high\n')
+            run_tcl.write('setAnalysisMode -analysisType onChipVariation\n')
+            run_tcl.write('setPlaceMode -place_global_cong_effort low -place_global_clock_gate_aware true -place_global_place_io_pins false\n')
+            run_tcl.write('set_interactive_constraint_modes [all_constraint_modes -active]\n')
+            run_tcl.write('setPlaceMode -checkCellDRCFromPreRoute false\n')
             if os.path.isfile(os.path.join(ip.pnr_dir, 'cluster.tcl')):
                 run_tcl.write('source {}\n'.format(os.path.join(ip.pnr_dir, 'cluster.tcl')))
             # run_tcl.write('setPlaceMode -place_detail_color_aware_legal true -place_global_place_io_pins true\n')
@@ -143,9 +148,11 @@ def write_run(run_num, generation):
         if generation == 'old':
             run_tcl.write('cal_nl -n {} -l {} -d {} -b {}\n'.format(
                 run_num, ip.run_num_len, ip.expr_old_dir, ip.blk_name))
+            run_tcl.write(cmd_lefout(run_num))
         elif generation == 'new':
             run_tcl.write('cal_nl -n {} -l {} -d {} -b {}\n'.format(
                 run_num, ip.run_num_len, ip.expr_new_dir, ip.blk_name))
+            run_tcl.write(cmd_lefout(run_num))
         elif generation == 'out':
             #TODO: Multiple iteration here
             run_tcl.write('cal_nl -n {} -l {} -d {} -b {}\n'.format(
@@ -169,6 +176,7 @@ def write_run(run_num, generation):
             run_tcl.write('cal_nl -n {} -l {} -d {} -b {}\n'.format(
                 0, ip.run_num_len, ip.expr_hof_dir, ip.blk_name))
             run_tcl.write(cmd_defout())
+            run_tcl.write(cmd_lefout(run_num))
 
 if __name__ == '__main__':
     run_num, generation = sys.argv[1:3]

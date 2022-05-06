@@ -1,0 +1,37 @@
+add_ndr -name M2W2xS2x_M3W2xS2x_M4W2xS2x_M5W2xS2x -generate_via -width_multiplier {M2 2 M3 2 M4 2 M5 2} -spacing_multiplier {M2 2 M3 2 M4 2 M5 2}
+setAttribute -net ro_out -non_default_rule M2W2xS2x_M3W2xS2x_M4W2xS2x_M5W2xS2x -bottom_preferred_routing_layer 2 -preferred_routing_layer_effort high
+setAttribute -net RO/o1 -non_default_rule M2W2xS2x_M3W2xS2x_M4W2xS2x_M5W2xS2x -bottom_preferred_routing_layer 2 -preferred_routing_layer_effort high
+setAttribute -net RO/o2 -non_default_rule M2W2xS2x_M3W2xS2x_M4W2xS2x_M5W2xS2x -bottom_preferred_routing_layer 2 -preferred_routing_layer_effort high
+setAttribute -net RO/o3 -non_default_rule M2W2xS2x_M3W2xS2x_M4W2xS2x_M5W2xS2x -bottom_preferred_routing_layer 2 -preferred_routing_layer_effort high
+setAttribute -net RO/o4 -non_default_rule M2W2xS2x_M3W2xS2x_M4W2xS2x_M5W2xS2x -bottom_preferred_routing_layer 2 -preferred_routing_layer_effort high
+setAttribute -net RO/o5 -non_default_rule M2W2xS2x_M3W2xS2x_M4W2xS2x_M5W2xS2x -bottom_preferred_routing_layer 2 -preferred_routing_layer_effort high
+setAttribute -net RO/o6 -non_default_rule M2W2xS2x_M3W2xS2x_M4W2xS2x_M5W2xS2x -bottom_preferred_routing_layer 2 -preferred_routing_layer_effort high
+setAttribute -net RO/o7 -non_default_rule M2W2xS2x_M3W2xS2x_M4W2xS2x_M5W2xS2x -bottom_preferred_routing_layer 2 -preferred_routing_layer_effort high
+setAttribute -net RO/o8 -non_default_rule M2W2xS2x_M3W2xS2x_M4W2xS2x_M5W2xS2x -bottom_preferred_routing_layer 2 -preferred_routing_layer_effort high
+setAttribute -net RO/o9 -non_default_rule M2W2xS2x_M3W2xS2x_M4W2xS2x_M5W2xS2x -bottom_preferred_routing_layer 2 -preferred_routing_layer_effort high
+setAttribute -net RO/o10 -non_default_rule M2W2xS2x_M3W2xS2x_M4W2xS2x_M5W2xS2x -bottom_preferred_routing_layer 2 -preferred_routing_layer_effort high
+setAttribute -net RO/INV1/sp -non_default_rule M2W2xS2x_M3W2xS2x_M4W2xS2x_M5W2xS2x -bottom_preferred_routing_layer 2 -preferred_routing_layer_effort high
+setAttribute -net RO/INV1/sn -non_default_rule M2W2xS2x_M3W2xS2x_M4W2xS2x_M5W2xS2x -bottom_preferred_routing_layer 2 -preferred_routing_layer_effort high
+setAttribute -net RO/INV2/sp -non_default_rule M2W2xS2x_M3W2xS2x_M4W2xS2x_M5W2xS2x -bottom_preferred_routing_layer 2 -preferred_routing_layer_effort high
+setAttribute -net RO/INV2/sn -non_default_rule M2W2xS2x_M3W2xS2x_M4W2xS2x_M5W2xS2x -bottom_preferred_routing_layer 2 -preferred_routing_layer_effort high
+setAttribute -net RO/INV3/sp -non_default_rule M2W2xS2x_M3W2xS2x_M4W2xS2x_M5W2xS2x -bottom_preferred_routing_layer 2 -preferred_routing_layer_effort high
+setAttribute -net RO/INV3/sn -non_default_rule M2W2xS2x_M3W2xS2x_M4W2xS2x_M5W2xS2x -bottom_preferred_routing_layer 2 -preferred_routing_layer_effort high
+setAttribute -net RO/INV4/sp -non_default_rule M2W2xS2x_M3W2xS2x_M4W2xS2x_M5W2xS2x -bottom_preferred_routing_layer 2 -preferred_routing_layer_effort high
+setAttribute -net RO/INV4/sn -non_default_rule M2W2xS2x_M3W2xS2x_M4W2xS2x_M5W2xS2x -bottom_preferred_routing_layer 2 -preferred_routing_layer_effort high
+setAttribute -net RO/INV5/sp -non_default_rule M2W2xS2x_M3W2xS2x_M4W2xS2x_M5W2xS2x -bottom_preferred_routing_layer 2 -preferred_routing_layer_effort high
+setAttribute -net RO/INV5/sn -non_default_rule M2W2xS2x_M3W2xS2x_M4W2xS2x_M5W2xS2x -bottom_preferred_routing_layer 2 -preferred_routing_layer_effort high
+setAttribute -net RO/INV6/sp -non_default_rule M2W2xS2x_M3W2xS2x_M4W2xS2x_M5W2xS2x -bottom_preferred_routing_layer 2 -preferred_routing_layer_effort high
+setAttribute -net RO/INV6/sn -non_default_rule M2W2xS2x_M3W2xS2x_M4W2xS2x_M5W2xS2x -bottom_preferred_routing_layer 2 -preferred_routing_layer_effort high
+setAttribute -net RO/INV7/sp -non_default_rule M2W2xS2x_M3W2xS2x_M4W2xS2x_M5W2xS2x -bottom_preferred_routing_layer 2 -preferred_routing_layer_effort high
+setAttribute -net RO/INV7/sn -non_default_rule M2W2xS2x_M3W2xS2x_M4W2xS2x_M5W2xS2x -bottom_preferred_routing_layer 2 -preferred_routing_layer_effort high
+setAttribute -net RO/INV8/sp -non_default_rule M2W2xS2x_M3W2xS2x_M4W2xS2x_M5W2xS2x -bottom_preferred_routing_layer 2 -preferred_routing_layer_effort high
+setAttribute -net RO/INV8/sn -non_default_rule M2W2xS2x_M3W2xS2x_M4W2xS2x_M5W2xS2x -bottom_preferred_routing_layer 2 -preferred_routing_layer_effort high
+setAttribute -net RO/INV9/sp -non_default_rule M2W2xS2x_M3W2xS2x_M4W2xS2x_M5W2xS2x -bottom_preferred_routing_layer 2 -preferred_routing_layer_effort high
+setAttribute -net RO/INV9/sn -non_default_rule M2W2xS2x_M3W2xS2x_M4W2xS2x_M5W2xS2x -bottom_preferred_routing_layer 2 -preferred_routing_layer_effort high
+setAttribute -net RO/INV10/sp -non_default_rule M2W2xS2x_M3W2xS2x_M4W2xS2x_M5W2xS2x -bottom_preferred_routing_layer 2 -preferred_routing_layer_effort high
+setAttribute -net RO/INV10/sn -non_default_rule M2W2xS2x_M3W2xS2x_M4W2xS2x_M5W2xS2x -bottom_preferred_routing_layer 2 -preferred_routing_layer_effort high
+setAttribute -net RO/INV11/sp -non_default_rule M2W2xS2x_M3W2xS2x_M4W2xS2x_M5W2xS2x -bottom_preferred_routing_layer 2 -preferred_routing_layer_effort high
+setAttribute -net RO/INV11/sn -non_default_rule M2W2xS2x_M3W2xS2x_M4W2xS2x_M5W2xS2x -bottom_preferred_routing_layer 2 -preferred_routing_layer_effort high
+add_ndr -name M2W5xS5x_M3W5xS5x_M4W5xS5x_M5W5xS5x -generate_via -width_multiplier {M2 5 M3 5 M4 5 M5 5} -spacing_multiplier {M2 5 M3 5 M4 5 M5 5}
+setAttribute -net out -non_default_rule M2W5xS5x_M3W5xS5x_M4W5xS5x_M5W5xS5x -bottom_preferred_routing_layer 2 -preferred_routing_layer_effort high
+setAttribute -net net027 -non_default_rule M2W5xS5x_M3W5xS5x_M4W5xS5x_M5W5xS5x -bottom_preferred_routing_layer 2 -preferred_routing_layer_effort high
