@@ -37,6 +37,8 @@ outputs:
 
 commands:
   - ln -sf inputs/innovus-foundation-flow
+  - rm inputs/innovus-foundation-flow/INNOVUS/run_signoff.tcl
+  - cp cust_run_signoff.tcl inputs/innovus-foundation-flow/INNOVUS/run_signoff.tcl
   - innovus -overwrite -64 -nowin -init START.tcl -log logs/run.log
 
   # Outputs
@@ -61,7 +63,7 @@ commands:
 
 parameters:
   order:
-    - fill-decap.tcl
+    # - fill-decap.tcl
     - main.tcl
     - generate-results.tcl
     - reporting.tcl

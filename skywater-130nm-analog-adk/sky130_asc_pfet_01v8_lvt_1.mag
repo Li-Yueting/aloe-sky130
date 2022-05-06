@@ -1,87 +1,97 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1650964561
+timestamp 1651800363
 << nwell >>
-rect 0 293 588 1940
+rect -20 294 706 1940
+rect 98 293 686 294
 << pmoslvt >>
-rect 94 355 494 1645
+rect 192 355 592 1645
 << pdiff >>
-rect 36 1633 94 1645
-rect 36 367 48 1633
-rect 82 367 94 1633
-rect 36 355 94 367
-rect 494 1633 552 1645
-rect 494 367 506 1633
-rect 540 367 552 1633
-rect 494 355 552 367
+rect 134 1633 192 1645
+rect 134 367 146 1633
+rect 180 367 192 1633
+rect 134 355 192 367
+rect 592 1633 650 1645
+rect 592 367 604 1633
+rect 638 367 650 1633
+rect 592 355 650 367
 << pdiffc >>
-rect 48 367 82 1633
-rect 506 367 540 1633
+rect 146 367 180 1633
+rect 604 367 638 1633
+<< nsubdiff >>
+rect 38 1760 78 1800
+rect 38 1680 78 1720
+<< nsubdiffcont >>
+rect 38 1720 78 1760
 << poly >>
-rect 94 1645 494 1671
-rect 94 329 494 355
-rect 240 184 360 329
-rect 0 164 588 184
-rect 0 104 170 164
-rect 230 104 588 164
-rect 0 84 588 104
+rect 192 1645 592 1671
+rect 192 329 592 355
+rect 338 184 458 329
+rect 98 164 686 184
+rect 98 104 268 164
+rect 328 104 686 164
+rect 98 84 686 104
 << polycont >>
-rect 170 104 230 164
+rect 268 104 328 164
 << locali >>
-rect 0 1850 170 1910
-rect 230 1850 588 1910
-rect 0 1730 588 1790
-rect 505 1649 539 1730
-rect 48 1633 82 1649
-rect 47 367 48 374
-rect 505 1633 540 1649
-rect 505 1626 506 1633
-rect 47 351 82 367
-rect 506 351 540 367
-rect 47 270 81 351
-rect 0 210 588 270
-rect 0 104 170 164
-rect 230 104 588 164
-rect 0 -30 170 30
-rect 230 -30 588 30
+rect 0 1850 268 1910
+rect 328 1850 686 1910
+rect 28 1760 88 1850
+rect 28 1720 38 1760
+rect 78 1720 88 1760
+rect 158 1730 686 1790
+rect 28 1640 88 1720
+rect 603 1649 637 1730
+rect 146 1633 180 1649
+rect 145 367 146 374
+rect 603 1633 638 1649
+rect 603 1626 604 1633
+rect 145 351 180 367
+rect 604 351 638 367
+rect 145 270 179 351
+rect 98 210 686 270
+rect 98 104 268 164
+rect 328 104 686 164
+rect 0 -30 268 30
+rect 328 -30 686 30
 << viali >>
-rect 170 1850 230 1910
-rect 48 367 82 1633
-rect 506 367 540 1633
-rect 170 -30 230 30
+rect 268 1850 328 1910
+rect 146 367 180 1633
+rect 604 367 638 1633
+rect 268 -30 328 30
 << metal1 >>
-rect 0 1910 588 1940
-rect 0 1850 170 1910
-rect 230 1850 588 1910
-rect 0 1820 588 1850
-rect 42 1633 88 1645
-rect 42 367 48 1633
-rect 82 367 88 1633
-rect 42 355 88 367
-rect 500 1633 546 1645
-rect 500 367 506 1633
-rect 540 367 546 1633
-rect 500 355 546 367
-rect 0 30 588 60
-rect 0 -30 170 30
-rect 230 -30 588 30
-rect 0 -60 588 -30
+rect 0 1910 686 1940
+rect 0 1850 268 1910
+rect 328 1850 686 1910
+rect 0 1820 686 1850
+rect 140 1633 186 1645
+rect 140 367 146 1633
+rect 180 367 186 1633
+rect 140 355 186 367
+rect 598 1633 644 1645
+rect 598 367 604 1633
+rect 638 367 644 1633
+rect 598 355 644 367
+rect 0 30 686 60
+rect 0 -30 268 30
+rect 328 -30 686 30
+rect 0 -60 686 -30
 << labels >>
-flabel nwell 170 1850 230 1910 1 FreeSans 800 0 0 0 VPB
+flabel nwell 268 1850 328 1910 1 FreeSans 800 0 0 0 VPB
 port 4 n power bidirectional
-flabel metal1 0 1850 60 1910 1 FreeSans 800 0 0 0 VPWR
+flabel metal1 98 1850 158 1910 1 FreeSans 800 0 0 0 VPWR
 port 5 n power bidirectional
-flabel metal1 0 -30 60 30 1 FreeSans 800 0 0 0 VGND
+flabel metal1 98 -30 158 30 1 FreeSans 800 0 0 0 VGND
 port 6 n ground bidirectional
-flabel locali 528 1730 588 1790 1 FreeSans 800 0 0 0 SOURCE
+flabel locali 626 1730 686 1790 1 FreeSans 800 0 0 0 SOURCE
 port 2 n signal bidirectional
-flabel locali 528 210 588 270 1 FreeSans 800 0 0 0 DRAIN
+flabel locali 626 210 686 270 1 FreeSans 800 0 0 0 DRAIN
 port 3 n signal bidirectional
-flabel locali 528 104 588 164 1 FreeSans 800 0 0 0 GATE
+flabel locali 626 104 686 164 1 FreeSans 800 0 0 0 GATE
 port 1 n signal bidirectional
 << properties >>
-string FIXED_BBOX 0 0 588 1880
+string FIXED_BBOX 0 0 686 1880
 string LEFclass CORE
 string LEFsite unitasc
 << end >>

@@ -22,7 +22,7 @@ proc place_pmos {x_center y_center length nf index} {
 	set x_center [expr $x_center*100]
 	set y_center [expr $y_center*100]
 	### extend NWELL
-	box [expr $x_center-$bx/2] [expr $y_center] [expr $x_center+$bx/2] [expr $y_center + $height_half_center + $power_half_w+60]
+	box [expr $x_center-$bx/2-58.8] [expr $y_center-$by/2] [expr $x_center+$bx/2+9.8] [expr $y_center + $height_half_center + $power_half_w+60]
 	paint nwell
 	#------- label VPB
 	box [expr $x_center-$bx/2+100-$con_w/2] [expr $y_center+$height_half_center-$con_w/2+60] [expr $x_center-$bx/2+100+$con_w/2] [expr $y_center+$height_half_center+$con_w/2+60]
@@ -55,7 +55,7 @@ proc place_pmos {x_center y_center length nf index} {
 	paint m1
 	label VGND FreeSans 50 
 	### paint SOURCE rail
-	box [expr $x_center-$bx/2] [expr $y_center+$height_half_center-$con_w/2] [expr $x_center+$bx/2] [expr $y_center+$height_half_center+$con_w/2]
+	box [expr $x_center-$bx/2+30] [expr $y_center+$height_half_center-$con_w/2] [expr $x_center+$bx/2] [expr $y_center+$height_half_center+$con_w/2]
 	paint li
 	#------ label SOURCE
 	box [expr $x_center+$bx/2-$con_w] [expr $y_center+$height_half_center-$con_w/2] [expr $x_center+$bx/2] [expr $y_center+$height_half_center+$con_w/2]
@@ -97,6 +97,26 @@ proc place_pmos {x_center y_center length nf index} {
 		box [expr $x_center-$bx/2+$x] [expr $y_center-$by/2+40] [expr $x_center-$bx/2+$x+17] [expr $y_center-$height_half_center]
 		paint li
 	}
+	### paint tapvpwr
+	# PWR
+	box [expr $x_center-$bx/2-49] [expr $y_center+$height_half_center - $power_half_w+60] [expr $x_center-$bx/2] [expr $y_center + $height_half_center + $power_half_w+60]
+	paint m1
+	box [expr $x_center-$bx/2-49] [expr $y_center+$height_half_center-$con_w/2+60] [expr $x_center-$bx/2] [expr $y_center + $height_half_center + $con_w/2+60]
+	paint li
+	# GND
+	box [expr $x_center-$bx/2-49] [expr $y_center-$height_half_center-$power_half_w-120] [expr $x_center-$bx/2] [expr $y_center-$height_half_center+$power_half_w-120]
+	paint m1
+	box [expr $x_center-$bx/2-49] [expr $y_center-$height_half_center-$con_w/2-120] [expr $x_center-$bx/2] [expr $y_center-$height_half_center+$con_w/2-120]
+	paint li
+	# diff
+	box [expr $x_center-$bx/2-30] [expr $y_center+$height_half_center-40+60] [expr $x_center-$bx/2-10] [expr $y_center + $height_half_center-100+60]
+	paint nsubstratendiff
+	# nsubstratencontact
+	box [expr $x_center-$bx/2-30] [expr $y_center+$height_half_center-60+60] [expr $x_center-$bx/2-10] [expr $y_center + $height_half_center-80+60]
+    paint nsubstratencontact
+	# m1 with diff
+	box [expr $x_center-$bx/2-35] [expr $y_center+$height_half_center+$con_w/2+60] [expr $x_center-$bx/2-5] [expr $y_center + $height_half_center-120+60] 
+	paint li
 	return $box_size
 }
 
@@ -115,11 +135,10 @@ proc place_nmos {x_center y_center length nf index} {
 	set x_center [expr $x_center*100]
 	set y_center [expr $y_center*100]
 	### extend PWELL to VSS
-	box [expr $x_center-$bx/2] [expr $y_center] [expr $x_center+$bx/2] [expr $y_center-$height_half_center+$con_w/2-120]
+	box [expr $x_center-$bx/2-58.8] [expr $y_center+$by/2] [expr $x_center+$bx/2+9.8] [expr $y_center-$height_half_center+$con_w/2-120]
 	paint pwell
 	#------ Label VNB
-	box [expr $x_center + $bx/2 - $con_w] [expr $y_center-$height_half_center-$con_w/2-120] [expr $x_center + $bx/2] [expr $y_center-$height_half_center+$con_w/2-120]
-	paint pwell
+	box [expr $x_center+$bx/2-30-$con_w] [expr $y_center-$height_half_center-$con_w/2-120] [expr $x_center+$bx/2-30] [expr $y_center-$height_half_center+$con_w/2-120]
 	label VNB FreeSans 50
 	### paint VDD
 	box [expr $x_center-$bx/2] [expr $y_center+$height_half_center - $power_half_w+60] [expr $x_center + $bx/2] [expr $y_center + $height_half_center + $power_half_w+60]
@@ -163,9 +182,9 @@ proc place_nmos {x_center y_center length nf index} {
 	label DRAIN FreeSans 50
 	### paint GATE rail
 	set gate_w 50  
-	box [expr $x_center-$bx/2] [expr $y_center-$by/2-$gate_w/2-200] [expr $x_center+$bx/2] [expr $y_center-$by/2+$gate_w/2-200]
+	box [expr $x_center-$bx/2+40] [expr $y_center-$by/2-$gate_w/2-200] [expr $x_center+$bx/2] [expr $y_center-$by/2+$gate_w/2-200]
 	paint p
-	box [expr $x_center-$bx/2] [expr $y_center-$by/2-200-15] [expr $x_center+$bx/2] [expr $y_center-$by/2-200+15]
+	box [expr $x_center-$bx/2+40] [expr $y_center-$by/2-200-15] [expr $x_center+$bx/2] [expr $y_center-$by/2-200+15]
 	paint li
 	for {set x 100} {$x+$con_w<=$bx} {set x [expr $x + $con_sep]} {
 		box [expr $x_center - $bx/2 + $x - $con_w/2] [expr $y_center - $by/2 - $con_w/2 - 200] [expr $x_center - $bx/2 + $x+$con_w/2] [expr $y_center - $by/2 + $con_w/2 - 200]
@@ -190,6 +209,26 @@ proc place_nmos {x_center y_center length nf index} {
 		box [expr $x_center-$bx/2+$x] [expr $y_center-$by/2+40] [expr $x_center-$bx/2+$x+17] [expr $y_center-$height_half_center+80]
 		paint li
 	}
+	### paint tapvpwr
+	# PWR
+	box [expr $x_center-$bx/2-49] [expr $y_center+$height_half_center - $power_half_w+60] [expr $x_center-$bx/2] [expr $y_center + $height_half_center + $power_half_w+60]
+	paint m1
+	box [expr $x_center-$bx/2-49] [expr $y_center+$height_half_center-$con_w/2+60] [expr $x_center-$bx/2] [expr $y_center + $height_half_center + $con_w/2+60]
+	paint li
+	# GND
+	box [expr $x_center-$bx/2-49] [expr $y_center-$height_half_center-$power_half_w-120] [expr $x_center-$bx/2] [expr $y_center-$height_half_center+$power_half_w-120]
+	paint m1
+	box [expr $x_center-$bx/2-49] [expr $y_center-$height_half_center-$con_w/2-120] [expr $x_center-$bx/2] [expr $y_center-$height_half_center+$con_w/2-120]
+	paint li
+	# diff
+	box [expr $x_center-$bx/2-30] [expr $y_center-$height_half_center+40-120] [expr $x_center-$bx/2-10] [expr $y_center-$height_half_center+100-120]
+	paint psubstratepdiff
+	# nsubstratencontact
+	box [expr $x_center-$bx/2-30] [expr $y_center-$height_half_center+60-120] [expr $x_center-$bx/2-10] [expr $y_center-$height_half_center+80-120]
+    paint psubstratepcontact
+	# m1 with diff
+	box [expr $x_center-$bx/2-35] [expr $y_center-$height_half_center-$con_w/2-120] [expr $x_center-$bx/2-5] [expr $y_center - $height_half_center] 
+	paint li
 	return $box_size
 }
 

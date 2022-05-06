@@ -10,7 +10,7 @@ proc addlef {inst_name output_folder} {
     set box_pos [box position]    
     set llx [lindex $box_pos 0]    
     set lly [lindex $box_pos 1]    
-    move origin right [expr $llx/2]  
+    move origin right [expr $llx/2+10]  
     move origin bottom [expr -$lly/2-30]
     puts "Now the origin is:"    
     box
@@ -19,7 +19,7 @@ proc addlef {inst_name output_folder} {
     property LEFsite unitasc
     
     if {$inst_name=={pmos_flat}} {
-        property FIXED_BBOX {0 0 588 1880}
+        property FIXED_BBOX {0 0 686 1880}
         # GATE
         findlabel GATE
         port GATE make "nsew"
@@ -60,7 +60,7 @@ proc addlef {inst_name output_folder} {
         # save $mag_file
         # lef write $lef_file
 	} elseif {$inst_name=={nmos_flat}} {
-        property FIXED_BBOX {0 0 516 1880}
+        property FIXED_BBOX {0 0 614 1880}
         # GATE
         findlabel GATE
         port make 

@@ -1,0 +1,74 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Fri Apr 29 21:17:23 2022                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v20.13-s083_1 (64bit) 01/19/2021 16:51 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.13-s083_1 NR201221-0721/20_13-UB (database version 18.20.538) {superthreading v2.13}
+#@(#)CDS: AAE 20.13-s024 (64bit) 01/19/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.13-s042_1 () Jan 14 2021 08:49:42 ( )
+#@(#)CDS: SYNTECH 20.13-s015_1 () Jan  6 2021 07:44:41 ( )
+#@(#)CDS: CPE v20.13-s092
+#@(#)CDS: IQuantus/TQuantus 20.1.1-s453 (64bit) Fri Nov 20 21:16:44 PST 2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+define_proc_arguments cal_nl -info {Writes TCL scripts to run.
+} -define_args {{-n "current run number" "int_value" int required}
+    {-l "length of zero-padding" "int_value" int required}
+    {-d "expression directory" "none" string required}
+    {-b "blk_name" "none" string optional}
+    }
+setDistributeHost -local
+set init_layout_view {}
+set init_verilog /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/inverter.v
+set init_mmmc_file /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/view_definition.tcl
+set init_lef_file {/home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/adk/rtk-tech.lef /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/adk/stdcells.lef /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/adk/rtk-tech.lef /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/adk/stdcells.lef}
+set init_top_cell inverter
+set init_gnd_net {VSS VPW VSSPST VSSE}
+set init_pwr_net {VDD VNW VDDPST POC VDDCE VDDPE}
+init_design
+globalNetConnect VDD -type pgpin -pin VPWR -inst * -verbose
+globalNetConnect VSS -type pgpin -pin VGND -inst * -verbose
+globalNetConnect VSS -type pgpin -pin VNB -inst * -verbose
+globalNetConnect VDD -type pgpin -pin VPB -inst * -verbose
+sroute -nets {VDD VSS} -connect corePin
+addRing -nets {VDD VSS} -type core_rings -follow core -layer {top 6 bottom 6 left 5 right 5} -width 4 -spacing 8 -offset 8 -extend_corner {tl tr bl br lt lb rt rb}
+setViaGenMode -reset
+setViaGenMode -viarule_preference default
+setViaGenMode -ignore_DRC false
+setAddStripeMode -reset
+setAddStripeMode -stacked_via_bottom_layer 2 -stacked_via_top_layer 6
+addStripe -nets {VSS VDD} -layer 5 -direction vertical -width 3.36 -spacing 10.24 -set_to_set_distance 27.2 -max_same_layer_jog_length 13.6 -padcore_ring_bottom_layer_limit 5 -padcore_ring_top_layer_limit 6 -start 13.6
+setViaGenMode -reset
+setViaGenMode -viarule_preference default
+setViaGenMode -ignore_DRC false
+setAddStripeMode -reset
+setAddStripeMode -stacked_via_bottom_layer 5 -stacked_via_top_layer 6
+addStripe -nets {VSS VDD} -layer 6 -direction horizontal -width 3.36 -spacing 10.24 -set_to_set_distance 27.2 -max_same_layer_jog_length 13.6 -padcore_ring_bottom_layer_limit 5 -padcore_ring_top_layer_limit 6 -start 13.6
+place_design
+selectNet *
+deselectNet VDD
+deselectNet VSS
+setNanoRouteMode -quiet -routeSelectedNetOnly 1
+routeDesign -globalDetail
+write_lef_abstract -5.8 -extractBlockObs /home/users/lyt1314/ee372/aloe-sky130/aloe/outputs/design.lef
+win
+zoomBox -13.75100 -5.26600 33.42700 17.89900
+zoomBox -12.18500 -4.67400 27.91600 15.01600
+zoomBox -10.78900 -4.17600 23.29800 12.56100
+zoomBox -8.47900 -3.31100 16.15000 8.78200
+zoomBox -10.72900 -4.90500 18.24700 9.32200
+zoomBox -16.49000 -8.96900 23.61600 10.72300
+zoomBox -13.40500 -6.21800 20.68600 10.52100
+zoomBox -10.79400 -4.03900 18.18300 10.18900
+zoomBox -8.57900 -2.23100 16.05200 9.86300
+zoomBox -6.69600 -0.70000 14.24100 9.58000
+setLayerPreference node_cell -isVisible 1
+setLayerPreference violation -isVisible 1
+violationBrowser -all -no_display_false -displayByLayer
+zoomBox -0.78 -4.7 11.56 14.1
+zoomBox -4.21 -4.7 7.77 14.1
+violationBrowserClose

@@ -1,0 +1,88 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1651598176
+<< pwell >>
+rect 0 30 516 1000
+rect 456 -30 516 30
+<< nmoslvt >>
+rect 58 600 458 1400
+<< ndiff >>
+rect 0 1388 58 1400
+rect 0 612 12 1388
+rect 46 612 58 1388
+rect 0 600 58 612
+rect 458 1388 516 1400
+rect 458 612 470 1388
+rect 504 612 516 1388
+rect 458 600 516 612
+<< ndiffc >>
+rect 12 612 46 1388
+rect 470 612 504 1388
+<< poly >>
+rect 58 1400 458 1426
+rect 58 574 458 600
+rect 206 224 326 574
+rect 0 204 516 224
+rect 0 144 170 204
+rect 230 144 516 204
+rect 0 124 516 144
+<< polycont >>
+rect 170 144 230 204
+<< locali >>
+rect 0 1850 170 1910
+rect 230 1850 516 1910
+rect 0 1690 516 1750
+rect 469 1404 503 1690
+rect 12 1388 46 1404
+rect 11 612 12 654
+rect 469 1388 504 1404
+rect 469 1386 470 1388
+rect 11 596 46 612
+rect 470 596 504 612
+rect 11 430 45 596
+rect 0 370 516 430
+rect 0 144 170 204
+rect 230 144 516 204
+rect 0 -30 170 30
+rect 230 -30 516 30
+<< viali >>
+rect 170 1850 230 1910
+rect 12 612 46 1388
+rect 470 612 504 1388
+rect 170 -30 230 30
+<< metal1 >>
+rect 0 1910 516 1940
+rect 0 1850 170 1910
+rect 230 1850 516 1910
+rect 0 1820 516 1850
+rect 6 1388 52 1400
+rect 6 612 12 1388
+rect 46 612 52 1388
+rect 6 600 52 612
+rect 464 1388 510 1400
+rect 464 612 470 1388
+rect 504 612 510 1388
+rect 464 600 510 612
+rect 0 30 516 60
+rect 0 -30 170 30
+rect 230 -30 516 30
+rect 0 -60 516 -30
+<< labels >>
+flabel pwell 456 -30 516 30 1 FreeSans 800 0 0 0 VNB
+port 4 n ground bidirectional
+flabel metal1 0 1850 60 1910 1 FreeSans 800 0 0 0 VPWR
+port 5 n power bidirectional
+flabel metal1 0 -30 60 30 1 FreeSans 800 0 0 0 VGND
+port 6 n ground bidirectional
+flabel locali 456 1690 516 1750 1 FreeSans 800 0 0 0 SOURCE
+port 2 n default bidirectional
+flabel locali 456 370 516 430 1 FreeSans 800 0 0 0 DRAIN
+port 3 n default bidirectional
+flabel locali 456 144 516 204 1 FreeSans 800 0 0 0 GATE
+port 1 n default bidirectional
+<< properties >>
+string FIXED_BBOX 0 0 516 1880
+string LEFclass CORE
+string LEFsite unitasc
+<< end >>

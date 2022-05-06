@@ -1,0 +1,23 @@
+* NGSPICE file created from ringosc.ext - technology: sky130A
+
+* Black-box entry subcircuit for sky130_asc_nfet_01v8_lvt_1 abstract view
+.subckt sky130_asc_nfet_01v8_lvt_1 VNB GATE SOURCE DRAIN VPWR VGND
+.ends
+
+* Black-box entry subcircuit for sky130_asc_pfet_01v8_lvt_1 abstract view
+.subckt sky130_asc_pfet_01v8_lvt_1 GATE SOURCE DRAIN VPB VPWR VGND
+.ends
+
+.subckt ringosc VSS VDD
+Xnfet1 VSUBS pfet1/GATE pfet2/GATE VSS VDD VSS sky130_asc_nfet_01v8_lvt_1
+Xnfet2 VSUBS pfet2/GATE pfet3/GATE VSS VDD VSS sky130_asc_nfet_01v8_lvt_1
+Xnfet3 VSUBS pfet3/GATE pfet4/GATE VSS VDD VSS sky130_asc_nfet_01v8_lvt_1
+Xnfet4 VSUBS pfet4/GATE pfet5/GATE VSS VDD VSS sky130_asc_nfet_01v8_lvt_1
+Xnfet5 VSUBS pfet5/GATE pfet1/GATE VSS VDD VSS sky130_asc_nfet_01v8_lvt_1
+Xpfet1 pfet1/GATE VDD pfet2/GATE pfet1/VPB VDD VSS sky130_asc_pfet_01v8_lvt_1
+Xpfet2 pfet2/GATE VDD pfet3/GATE pfet2/VPB VDD VSS sky130_asc_pfet_01v8_lvt_1
+Xpfet3 pfet3/GATE VDD pfet4/GATE pfet3/VPB VDD VSS sky130_asc_pfet_01v8_lvt_1
+Xpfet4 pfet4/GATE VDD pfet5/GATE pfet4/VPB VDD VSS sky130_asc_pfet_01v8_lvt_1
+Xpfet5 pfet5/GATE VDD pfet1/GATE pfet5/VPB VDD VSS sky130_asc_pfet_01v8_lvt_1
+.ends
+

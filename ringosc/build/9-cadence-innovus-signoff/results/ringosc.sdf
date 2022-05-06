@@ -1,0 +1,87 @@
+(DELAYFILE
+  (SDFVERSION "3.0")
+  (DESIGN "ringosc")
+  (DATE "Tue May  3 17:13:28 2022")
+  (VENDOR "Cadence Design Systems, Inc.")
+  (PROGRAM "Innovus")
+  (VERSION "v20.13-s083_1 ((64bit) 01/19/2021 16:51 (Linux 2.6.32-431.11.2.el6.x86_64))")
+  (DIVIDER /)
+  (VOLTAGE 1.800000::1.800000)
+  (PROCESS "1.000000::1.000000")
+  (TEMPERATURE 25.000000::25.000000)
+  (TIMESCALE 1.0 ns)
+
+  (CELL
+    (CELLTYPE  "ringosc")
+    (INSTANCE)
+      (DELAY
+	(ABSOLUTE
+	(INTERCONNECT pfet1/DRAIN nfet1/SOURCE  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT pfet1/DRAIN pfet2/GATE  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT pfet1/DRAIN nfet2/GATE  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT pfet2/DRAIN nfet2/SOURCE  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT pfet2/DRAIN pfet3/GATE  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT pfet2/DRAIN nfet3/GATE  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT pfet3/DRAIN nfet3/SOURCE  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT pfet3/DRAIN pfet4/GATE  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT pfet3/DRAIN nfet4/GATE  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT pfet4/DRAIN nfet4/SOURCE  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT pfet4/DRAIN pfet5/GATE  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT pfet4/DRAIN nfet5/GATE  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT pfet5/DRAIN pfet1/GATE  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT pfet5/DRAIN nfet1/GATE  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT pfet5/DRAIN nfet5/SOURCE  (0.000::0.000) (0.000::0.000))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "sky130_asc_pfet_01v8_lvt_1")
+    (INSTANCE  pfet1)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH SOURCE DRAIN  (0.147::0.147) (0.447::0.447))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "sky130_asc_pfet_01v8_lvt_1")
+    (INSTANCE  pfet2)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH SOURCE DRAIN  (0.144::0.144) (0.445::0.445))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "sky130_asc_pfet_01v8_lvt_1")
+    (INSTANCE  pfet3)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH SOURCE DRAIN  (0.156::0.156) (0.458::0.458))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "sky130_asc_pfet_01v8_lvt_1")
+    (INSTANCE  pfet4)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH SOURCE DRAIN  (0.144::0.144) (0.444::0.444))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "sky130_asc_pfet_01v8_lvt_1")
+    (INSTANCE  pfet5)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH SOURCE DRAIN  (0.146::0.146) (0.446::0.446))
+	)
+      )
+  )
+)

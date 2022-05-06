@@ -1,0 +1,221 @@
+
+Cell sky130_asc_nfet_01v8_lvt_1 disconnected node: VNB
+Cell sky130_asc_nfet_01v8_lvt_1 disconnected node: GATE
+Cell sky130_asc_nfet_01v8_lvt_1 disconnected node: SOURCE
+Cell sky130_asc_nfet_01v8_lvt_1 disconnected node: DRAIN
+Cell sky130_asc_nfet_01v8_lvt_1 disconnected node: VPWR
+Cell sky130_asc_nfet_01v8_lvt_1 disconnected node: VGND
+Warning: Equate pins:  cell sky130_asc_nfet_01v8_lvt_1 has no definition, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_asc_nfet_01v8_lvt_1      |Circuit 2: sky130_asc_nfet_01v8_lvt_1      
+-------------------------------------------|-------------------------------------------
+VNB                                        |VNB                                        
+GATE                                       |GATE                                       
+SOURCE                                     |SOURCE                                     
+DRAIN                                      |DRAIN                                      
+VPWR                                       |VPWR                                       
+VGND                                       |VGND                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_asc_nfet_01v8_lvt_1 and sky130_asc_nfet_01v8_lvt_1 are equivalent.
+
+Cell sky130_asc_pfet_01v8_lvt_1 disconnected node: GATE
+Cell sky130_asc_pfet_01v8_lvt_1 disconnected node: SOURCE
+Cell sky130_asc_pfet_01v8_lvt_1 disconnected node: DRAIN
+Cell sky130_asc_pfet_01v8_lvt_1 disconnected node: VPB
+Cell sky130_asc_pfet_01v8_lvt_1 disconnected node: VPWR
+Cell sky130_asc_pfet_01v8_lvt_1 disconnected node: VGND
+Warning: Equate pins:  cell sky130_asc_pfet_01v8_lvt_1 has no definition, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_asc_pfet_01v8_lvt_1      |Circuit 2: sky130_asc_pfet_01v8_lvt_1      
+-------------------------------------------|-------------------------------------------
+GATE                                       |GATE                                       
+SOURCE                                     |SOURCE                                     
+DRAIN                                      |DRAIN                                      
+VPB                                        |VPB                                        
+VPWR                                       |VPWR                                       
+VGND                                       |VGND                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_asc_pfet_01v8_lvt_1 and sky130_asc_pfet_01v8_lvt_1 are equivalent.
+
+Cell ringosc disconnected node: clk
+
+Subcircuit summary:
+Circuit 1: ringosc                         |Circuit 2: ringosc                         
+-------------------------------------------|-------------------------------------------
+sky130_asc_nfet_01v8_lvt_1 (5)             |sky130_asc_nfet_01v8_lvt_1 (5)             
+sky130_asc_pfet_01v8_lvt_1 (5)             |sky130_asc_pfet_01v8_lvt_1 (5)             
+Number of devices: 10                      |Number of devices: 10                      
+Number of nets: 13 **Mismatch**            |Number of nets: 7 **Mismatch**             
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: ringosc                         |Circuit 2: ringosc                         
+
+---------------------------------------------------------------------------------------
+Net: VSUBS                                 |(no matching net)                          
+  sky130_asc_nfet_01v8_lvt_1/VNB = 5       |                                           
+                                           |                                           
+Net: pfet1/VPB                             |(no matching net)                          
+  sky130_asc_pfet_01v8_lvt_1/VPB = 1       |                                           
+                                           |                                           
+Net: pfet2/VPB                             |(no matching net)                          
+  sky130_asc_pfet_01v8_lvt_1/VPB = 1       |                                           
+                                           |                                           
+Net: pfet3/VPB                             |(no matching net)                          
+  sky130_asc_pfet_01v8_lvt_1/VPB = 1       |                                           
+                                           |                                           
+Net: pfet4/VPB                             |(no matching net)                          
+  sky130_asc_pfet_01v8_lvt_1/VPB = 1       |                                           
+                                           |                                           
+Net: pfet5/VPB                             |(no matching net)                          
+  sky130_asc_pfet_01v8_lvt_1/VPB = 1       |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+(no matching net)                          |Net: VSS                                   
+                                           |  sky130_asc_pfet_01v8_lvt_1/VGND = 5      
+                                           |  sky130_asc_nfet_01v8_lvt_1/VNB = 5       
+                                           |  sky130_asc_nfet_01v8_lvt_1/DRAIN = 5     
+                                           |  sky130_asc_nfet_01v8_lvt_1/VGND = 5      
+                                           |                                           
+(no matching net)                          |Net: VDD                                   
+                                           |  sky130_asc_pfet_01v8_lvt_1/SOURCE = 5    
+                                           |  sky130_asc_pfet_01v8_lvt_1/VPB = 5       
+                                           |  sky130_asc_pfet_01v8_lvt_1/VPWR = 5      
+                                           |  sky130_asc_nfet_01v8_lvt_1/VPWR = 5      
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: VDD                                   |(no matching net)                          
+  sky130_asc_nfet_01v8_lvt_1/VPWR = 5      |                                           
+  sky130_asc_pfet_01v8_lvt_1/SOURCE = 5    |                                           
+  sky130_asc_pfet_01v8_lvt_1/VPWR = 5      |                                           
+                                           |                                           
+Net: VSS                                   |(no matching net)                          
+  sky130_asc_nfet_01v8_lvt_1/DRAIN = 5     |                                           
+  sky130_asc_nfet_01v8_lvt_1/VGND = 5      |                                           
+  sky130_asc_pfet_01v8_lvt_1/VGND = 5      |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: pfet5/GATE                            |Net: out4                                  
+  sky130_asc_nfet_01v8_lvt_1/SOURCE = 1    |  sky130_asc_pfet_01v8_lvt_1/DRAIN = 1     
+  sky130_asc_nfet_01v8_lvt_1/GATE = 1      |  sky130_asc_nfet_01v8_lvt_1/SOURCE = 1    
+  sky130_asc_pfet_01v8_lvt_1/DRAIN = 1     |  sky130_asc_pfet_01v8_lvt_1/GATE = 1      
+  sky130_asc_pfet_01v8_lvt_1/GATE = 1      |  sky130_asc_nfet_01v8_lvt_1/GATE = 1      
+                                           |                                           
+Net: pfet4/GATE                            |Net: out3                                  
+  sky130_asc_nfet_01v8_lvt_1/SOURCE = 1    |  sky130_asc_pfet_01v8_lvt_1/DRAIN = 1     
+  sky130_asc_nfet_01v8_lvt_1/GATE = 1      |  sky130_asc_nfet_01v8_lvt_1/SOURCE = 1    
+  sky130_asc_pfet_01v8_lvt_1/DRAIN = 1     |  sky130_asc_pfet_01v8_lvt_1/GATE = 1      
+  sky130_asc_pfet_01v8_lvt_1/GATE = 1      |  sky130_asc_nfet_01v8_lvt_1/GATE = 1      
+                                           |                                           
+Net: pfet3/GATE                            |Net: out2                                  
+  sky130_asc_nfet_01v8_lvt_1/SOURCE = 1    |  sky130_asc_pfet_01v8_lvt_1/DRAIN = 1     
+  sky130_asc_nfet_01v8_lvt_1/GATE = 1      |  sky130_asc_nfet_01v8_lvt_1/SOURCE = 1    
+  sky130_asc_pfet_01v8_lvt_1/DRAIN = 1     |  sky130_asc_pfet_01v8_lvt_1/GATE = 1      
+  sky130_asc_pfet_01v8_lvt_1/GATE = 1      |  sky130_asc_nfet_01v8_lvt_1/GATE = 1      
+                                           |                                           
+Net: pfet2/GATE                            |Net: out1                                  
+  sky130_asc_nfet_01v8_lvt_1/SOURCE = 1    |  sky130_asc_pfet_01v8_lvt_1/DRAIN = 1     
+  sky130_asc_nfet_01v8_lvt_1/GATE = 1      |  sky130_asc_nfet_01v8_lvt_1/SOURCE = 1    
+  sky130_asc_pfet_01v8_lvt_1/DRAIN = 1     |  sky130_asc_pfet_01v8_lvt_1/GATE = 1      
+  sky130_asc_pfet_01v8_lvt_1/GATE = 1      |  sky130_asc_nfet_01v8_lvt_1/GATE = 1      
+                                           |                                           
+Net: pfet1/GATE                            |Net: out5                                  
+  sky130_asc_nfet_01v8_lvt_1/GATE = 1      |  sky130_asc_pfet_01v8_lvt_1/GATE = 1      
+  sky130_asc_nfet_01v8_lvt_1/SOURCE = 1    |  sky130_asc_nfet_01v8_lvt_1/GATE = 1      
+  sky130_asc_pfet_01v8_lvt_1/GATE = 1      |  sky130_asc_pfet_01v8_lvt_1/DRAIN = 1     
+  sky130_asc_pfet_01v8_lvt_1/DRAIN = 1     |  sky130_asc_nfet_01v8_lvt_1/SOURCE = 1    
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: ringosc                         |Circuit 2: ringosc                         
+
+---------------------------------------------------------------------------------------
+Instance: sky130_asc_pfet_01v8_lvt_1pfet5  |Instance: pfet5                            
+  GATE = 4                                 |  GATE = 4                                 
+  SOURCE = 15                              |  SOURCE = 20                              
+  DRAIN = 4                                |  DRAIN = 4                                
+  VPB = 1                                  |  VPB = 20                                 
+  VPWR = 15                                |  VPWR = 20                                
+  VGND = 15                                |  VGND = 20                                
+                                           |                                           
+Instance: sky130_asc_pfet_01v8_lvt_1pfet4  |Instance: pfet4                            
+  GATE = 4                                 |  GATE = 4                                 
+  SOURCE = 15                              |  SOURCE = 20                              
+  DRAIN = 4                                |  DRAIN = 4                                
+  VPB = 1                                  |  VPB = 20                                 
+  VPWR = 15                                |  VPWR = 20                                
+  VGND = 15                                |  VGND = 20                                
+                                           |                                           
+Instance: sky130_asc_pfet_01v8_lvt_1pfet3  |Instance: pfet3                            
+  GATE = 4                                 |  GATE = 4                                 
+  SOURCE = 15                              |  SOURCE = 20                              
+  DRAIN = 4                                |  DRAIN = 4                                
+  VPB = 1                                  |  VPB = 20                                 
+  VPWR = 15                                |  VPWR = 20                                
+  VGND = 15                                |  VGND = 20                                
+                                           |                                           
+Instance: sky130_asc_pfet_01v8_lvt_1pfet2  |Instance: pfet2                            
+  GATE = 4                                 |  GATE = 4                                 
+  SOURCE = 15                              |  SOURCE = 20                              
+  DRAIN = 4                                |  DRAIN = 4                                
+  VPB = 1                                  |  VPB = 20                                 
+  VPWR = 15                                |  VPWR = 20                                
+  VGND = 15                                |  VGND = 20                                
+                                           |                                           
+Instance: sky130_asc_pfet_01v8_lvt_1pfet1  |Instance: pfet1                            
+  GATE = 4                                 |  GATE = 4                                 
+  SOURCE = 15                              |  SOURCE = 20                              
+  DRAIN = 4                                |  DRAIN = 4                                
+  VPB = 1                                  |  VPB = 20                                 
+  VPWR = 15                                |  VPWR = 20                                
+  VGND = 15                                |  VGND = 20                                
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_asc_nfet_01v8_lvt_1nfet5  |Instance: nfet5                            
+  VNB = 5                                  |  VNB = 20                                 
+  GATE = 4                                 |  GATE = 4                                 
+  SOURCE = 4                               |  SOURCE = 4                               
+  DRAIN = 15                               |  DRAIN = 20                               
+  VPWR = 15                                |  VPWR = 20                                
+  VGND = 15                                |  VGND = 20                                
+                                           |                                           
+Instance: sky130_asc_nfet_01v8_lvt_1nfet4  |Instance: nfet4                            
+  VNB = 5                                  |  VNB = 20                                 
+  GATE = 4                                 |  GATE = 4                                 
+  SOURCE = 4                               |  SOURCE = 4                               
+  DRAIN = 15                               |  DRAIN = 20                               
+  VPWR = 15                                |  VPWR = 20                                
+  VGND = 15                                |  VGND = 20                                
+                                           |                                           
+Instance: sky130_asc_nfet_01v8_lvt_1nfet3  |Instance: nfet3                            
+  VNB = 5                                  |  VNB = 20                                 
+  GATE = 4                                 |  GATE = 4                                 
+  SOURCE = 4                               |  SOURCE = 4                               
+  DRAIN = 15                               |  DRAIN = 20                               
+  VPWR = 15                                |  VPWR = 20                                
+  VGND = 15                                |  VGND = 20                                
+                                           |                                           
+Instance: sky130_asc_nfet_01v8_lvt_1nfet2  |Instance: nfet2                            
+  VNB = 5                                  |  VNB = 20                                 
+  GATE = 4                                 |  GATE = 4                                 
+  SOURCE = 4                               |  SOURCE = 4                               
+  DRAIN = 15                               |  DRAIN = 20                               
+  VPWR = 15                                |  VPWR = 20                                
+  VGND = 15                                |  VGND = 20                                
+                                           |                                           
+Instance: sky130_asc_nfet_01v8_lvt_1nfet1  |Instance: nfet1                            
+  VNB = 5                                  |  VNB = 20                                 
+  GATE = 4                                 |  GATE = 4                                 
+  SOURCE = 4                               |  SOURCE = 4                               
+  DRAIN = 15                               |  DRAIN = 20                               
+  VPWR = 15                                |  VPWR = 20                                
+  VGND = 15                                |  VGND = 20                                
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Netlists do not match.

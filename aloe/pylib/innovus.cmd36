@@ -1,0 +1,108 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Fri Apr 29 21:49:57 2022                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v20.13-s083_1 (64bit) 01/19/2021 16:51 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.13-s083_1 NR201221-0721/20_13-UB (database version 18.20.538) {superthreading v2.13}
+#@(#)CDS: AAE 20.13-s024 (64bit) 01/19/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.13-s042_1 () Jan 14 2021 08:49:42 ( )
+#@(#)CDS: SYNTECH 20.13-s015_1 () Jan  6 2021 07:44:41 ( )
+#@(#)CDS: CPE v20.13-s092
+#@(#)CDS: IQuantus/TQuantus 20.1.1-s453 (64bit) Fri Nov 20 21:16:44 PST 2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+define_proc_arguments cal_nl -info {Writes TCL scripts to run.
+} -define_args {{-n "current run number" "int_value" int required}
+    {-l "length of zero-padding" "int_value" int required}
+    {-d "expression directory" "none" string required}
+    {-b "blk_name" "none" string optional}
+    }
+setDistributeHost -local
+set init_layout_view {}
+set init_verilog /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/inverter.v
+set init_mmmc_file /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/view_definition.tcl
+set init_lef_file {/home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/adk/rtk-tech.lef /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/adk/stdcells.lef /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/adk/rtk-tech.lef /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/adk/stdcells.lef}
+set init_top_cell inverter
+set init_gnd_net {VSS VPW VSSPST VSSE}
+set init_pwr_net {VDD VNW VDDPST POC VDDCE VDDPE}
+set init_design_uniquify 1
+init_design
+um::push_snapshot_stack
+set_power_analysis_mode -analysis_view analysis_default
+setRouteMode -earlyGlobalMaxRouteLayer 6
+setPinAssignMode -maxLayer 6
+setNanoRouteMode -routeTopRoutingLayer 6
+setDesignMode -topRoutingLayer met5
+setDesignMode -process 130 -powerEffort high
+checkDesign -all
+floorPlan -r 0.6 0.70 28.56 28.56 28.56 28.56
+setFlipping s
+planDesign
+editPin -layer M4 -pin en -side LEFT -spreadType SIDE
+editPin -layer M4 -pin {in out} -side RIGHT -spreadType SIDE
+globalNetConnect VDD -type pgpin -pin VPWR -inst * -verbose
+globalNetConnect VSS -type pgpin -pin VGND -inst * -verbose
+globalNetConnect VSS -type pgpin -pin VNB -inst * -verbose
+globalNetConnect VDD -type pgpin -pin VPB -inst * -verbose
+sroute -nets {VDD VSS} -connect corePin
+addRing -nets {VDD VSS} -type core_rings -follow core -layer {top 6 bottom 6 left 5 right 5} -width 4 -spacing 8 -offset 8 -extend_corner {tl tr bl br lt lb rt rb}
+setViaGenMode -reset
+setViaGenMode -viarule_preference default
+setViaGenMode -ignore_DRC false
+setAddStripeMode -reset
+setAddStripeMode -stacked_via_bottom_layer 2 -stacked_via_top_layer 6
+addStripe -nets {VSS VDD} -layer 5 -direction vertical -width 3.36 -spacing 10.24 -set_to_set_distance 27.2 -max_same_layer_jog_length 13.6 -padcore_ring_bottom_layer_limit 5 -padcore_ring_top_layer_limit 6 -start 13.6
+setViaGenMode -reset
+setViaGenMode -viarule_preference default
+setViaGenMode -ignore_DRC false
+setAddStripeMode -reset
+setAddStripeMode -stacked_via_bottom_layer 5 -stacked_via_top_layer 6
+addStripe -nets {VSS VDD} -layer 6 -direction horizontal -width 3.36 -spacing 10.24 -set_to_set_distance 27.2 -max_same_layer_jog_length 13.6 -padcore_ring_bottom_layer_limit 5 -padcore_ring_top_layer_limit 6 -start 13.6
+place_design
+routeDesign -globalDetail
+write_lef_abstract -5.8 -extractBlockObs /home/users/lyt1314/ee372/aloe-sky130/aloe/outputs/design.lef
+win
+fit
+setLayerPreference node_cell -isVisible 1
+zoomBox -19.82700 8.13400 88.03900 61.09700
+zoomBox 1.97700 19.39700 68.22000 51.92300
+zoomBox 7.18200 22.06200 63.48900 49.70900
+zoomBox 10.60300 23.06600 58.46400 46.56600
+zoomBox 13.51000 23.91900 54.19200 43.89400
+setLayerPreference node_row -isVisible 1
+setLayerPreference node_blockage -isVisible 1
+setLayerPreference violation -isVisible 1
+violationBrowser -all -no_display_false -displayByLayer
+zoomBox 28.73 37.41 29.83 38.51
+zoomBox 35.97 37.41 37.07 38.51
+zoomBox 28.73 28.01 29.83 29.11
+zoomBox 35.97 28.01 37.07 29.11
+zoomBox 35.97 37.41 37.07 38.51
+zoomBox 28.73 37.41 29.83 38.51
+violationBrowserClose
+zoomBox 27.50200 37.21200 30.60600 38.73600
+zoomBox 27.08400 37.08600 30.73600 38.87900
+zoomBox 2.75400 29.77200 38.32300 47.23700
+zoomBox -2.75800 28.74600 39.08900 49.29300
+fit
+zoomBox -29.32400 0.66000 97.57600 62.96900
+zoomBox -19.48700 4.23100 88.37800 57.19400
+zoomBox -11.45500 7.43100 80.23100 52.45000
+zoomBox 1.09100 12.51100 67.33500 45.03700
+zoomBox 5.41100 14.68600 61.71800 42.33300
+zoomBox -5.95200 11.21900 71.98200 49.48500
+zoomBox -21.67900 6.42100 86.18800 59.38500
+zoomBox -31.51800 3.90500 95.38600 66.21600
+zoomBox -56.70800 -2.53600 118.93800 83.70800
+zoomBox -32.50900 3.48500 94.39600 65.79600
+zoomBox -43.62900 0.71800 105.67200 74.02600
+zoomBox -71.56200 -2.60100 135.08400 98.86400
+zoomBox -56.46400 -0.80800 119.18700 85.43800
+zoomBox -31.42700 5.90100 95.48300 68.21500
+zoomBox -21.64900 8.50600 86.22500 61.47300
+zoomBox -6.27300 12.60200 71.66700 50.87100
+zoomBox -0.26800 14.20100 65.98100 46.73000

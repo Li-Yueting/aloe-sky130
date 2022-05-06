@@ -20,11 +20,13 @@ proc cal_nl {args} {
     close $filePtr
 }
 
+
 define_proc_arguments cal_nl \
     -info "Writes TCL scripts to run.\n" \
     -define_args \
     {{-n "current run number" "int_value" int required}
     {-l "length of zero-padding" "int_value" int required}
-    {-d "directory" "none" string required}
-    {-b "inst_name" "none" string optional}
+    {-d "expression directory" "none" string required}
+    {-b "blk_name" "none" string optional}
     }
+

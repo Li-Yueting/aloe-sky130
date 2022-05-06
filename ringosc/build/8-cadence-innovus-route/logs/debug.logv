@@ -1,0 +1,602 @@
+[05/05 14:32:11      0s] 
+[05/05 14:32:11      0s] Cadence Innovus(TM) Implementation System.
+[05/05 14:32:11      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[05/05 14:32:11      0s] 
+[05/05 14:32:11      0s] Version:	v20.13-s083_1, built Tue Jan 19 16:51:46 PST 2021
+[05/05 14:32:11      0s] Options:	-overwrite -init innovus-foundation-flow/custom-scripts/run-debug.tcl -log logs/debug.log 
+[05/05 14:32:11      0s] Date:		Thu May  5 14:32:11 2022
+[05/05 14:32:11      0s] Host:		rice-503-20-north (x86_64 w/Linux 5.11.0-41-generic) (20cores*40cpus*Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz 28160KB)
+[05/05 14:32:11      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[05/05 14:32:11      0s] 
+[05/05 14:32:11      0s] License:
+[05/05 14:32:11      0s] 		invs	Innovus Implementation System	20.1	checkout succeeded
+[05/05 14:32:11      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[05/05 14:32:38     14s] @(#)CDS: Innovus v20.13-s083_1 (64bit) 01/19/2021 16:51 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/05 14:32:38     14s] @(#)CDS: NanoRoute 20.13-s083_1 NR201221-0721/20_13-UB (database version 18.20.538) {superthreading v2.13}
+[05/05 14:32:38     14s] @(#)CDS: AAE 20.13-s024 (64bit) 01/19/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/05 14:32:38     14s] @(#)CDS: CTE 20.13-s042_1 () Jan 14 2021 08:49:42 ( )
+[05/05 14:32:38     14s] @(#)CDS: SYNTECH 20.13-s015_1 () Jan  6 2021 07:44:41 ( )
+[05/05 14:32:38     14s] @(#)CDS: CPE v20.13-s092
+[05/05 14:32:38     14s] @(#)CDS: IQuantus/TQuantus 20.1.1-s453 (64bit) Fri Nov 20 21:16:44 PST 2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/05 14:32:38     14s] @(#)CDS: OA 22.60-p048 Wed Nov 11 13:31:42 2020
+[05/05 14:32:38     14s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[05/05 14:32:38     14s] @(#)CDS: RCDB 11.15.0
+[05/05 14:32:38     14s] @(#)CDS: STYLUS 20.10-p024_1 (12/01/2020 07:22 PST)
+[05/05 14:32:38     14s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_3653368_rice-503-20-north_lyt1314_MRPOy8.
+
+[05/05 14:32:38     14s] The soft stacksize limit is either up to the hard limit or larger than 0.2% of RAM. No change is needed.
+[05/05 14:32:42     16s] 
+[05/05 14:32:42     16s] **INFO:  MMMC transition support version v31-84 
+[05/05 14:32:42     16s] 
+[05/05 14:32:42     16s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[05/05 14:32:42     16s] <CMD> suppressMessage ENCEXT-2799
+[05/05 14:32:42     16s] Sourcing file "innovus-foundation-flow/custom-scripts/run-debug.tcl" ...
+[05/05 14:32:42     16s] <CMD> is_common_ui_mode
+[05/05 14:32:42     16s] <CMD> restoreDesign /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/8-cadence-innovus-route/checkpoints/design.checkpoint/save.enc.dat ringosc
+[05/05 14:32:42     16s] #% Begin load design ... (date=05/05 14:32:42, mem=709.3M)
+[05/05 14:32:42     17s] Set Default Input Pin Transition as 0.1 ps.
+[05/05 14:32:42     17s] Loading design 'ringosc' saved by 'Innovus' '20.13-s083_1' on 'Tue May 3 17:12:45 2022'.
+[05/05 14:32:42     17s] % Begin Load MMMC data ... (date=05/05 14:32:42, mem=711.3M)
+[05/05 14:32:42     17s] % End Load MMMC data ... (date=05/05 14:32:42, total cpu=0:00:00.0, real=0:00:00.0, peak res=712.3M, current mem=712.3M)
+[05/05 14:32:42     17s] 
+[05/05 14:32:42     17s] Loading LEF file /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/8-cadence-innovus-route/checkpoints/design.checkpoint/save.enc.dat/libs/lef/rtk-tech.lef ...
+[05/05 14:32:42     17s] 
+[05/05 14:32:42     17s] Loading LEF file /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/8-cadence-innovus-route/checkpoints/design.checkpoint/save.enc.dat/libs/lef/stdcells.lef ...
+[05/05 14:32:42     17s] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+[05/05 14:32:42     17s] The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/8-cadence-innovus-route/checkpoints/design.checkpoint/save.enc.dat/libs/lef/stdcells.lef at line 2.
+[05/05 14:32:42     17s] Set DBUPerIGU to M1 pitch 460.
+[05/05 14:32:42     17s] **WARN: (IMPLF-201):	Pin 'GATE' in macro 'sky130_asc_nfet_01v8_lvt_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/05 14:32:42     17s] Type 'man IMPLF-201' for more detail.
+[05/05 14:32:42     17s] **WARN: (IMPLF-200):	Pin 'SOURCE' in macro 'sky130_asc_nfet_01v8_lvt_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/05 14:32:42     17s] Type 'man IMPLF-200' for more detail.
+[05/05 14:32:42     17s] **WARN: (IMPLF-200):	Pin 'DRAIN' in macro 'sky130_asc_nfet_01v8_lvt_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/05 14:32:42     17s] Type 'man IMPLF-200' for more detail.
+[05/05 14:32:42     17s] **WARN: (IMPLF-201):	Pin 'GATE' in macro 'sky130_asc_pfet_01v8_lvt_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/05 14:32:42     17s] Type 'man IMPLF-201' for more detail.
+[05/05 14:32:42     17s] **WARN: (IMPLF-200):	Pin 'SOURCE' in macro 'sky130_asc_pfet_01v8_lvt_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/05 14:32:42     17s] Type 'man IMPLF-200' for more detail.
+[05/05 14:32:42     17s] **WARN: (IMPLF-200):	Pin 'DRAIN' in macro 'sky130_asc_pfet_01v8_lvt_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/05 14:32:42     17s] Type 'man IMPLF-200' for more detail.
+[05/05 14:32:42     17s] 
+[05/05 14:32:42     17s] viaInitial starts at Thu May  5 14:32:42 2022
+viaInitial ends at Thu May  5 14:32:42 2022
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[05/05 14:32:42     17s] Loading view definition file from /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/8-cadence-innovus-route/checkpoints/design.checkpoint/save.enc.dat/viewDefinition.tcl
+[05/05 14:32:42     17s] Reading libs_typical timing library '/home/users/lyt1314/ee372/aloe-sky130/ringosc/build/2-skywater-130nm/view-standard/stdcells.lib' ...
+[05/05 14:32:42     17s] **ERROR: (TECHLIB-702):	No pg_pin with name 'VPB' has been read in the cell 'sky130_asc_nfet_01v8_lvt_1'. The attribute 'related_bias_pin' specified for the pg_pin 'VPWR' is being ignored. (File /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/2-skywater-130nm/view-standard/stdcells.lib, Line 328)
+Read 3 cells in library 'sky130_fd_sc_hd__tt_025C_1v80' 
+[05/05 14:32:42     17s] Ending "PreSetAnalysisView" (total cpu=0:00:00.1, real=0:00:00.0, peak res=753.4M, current mem=727.0M)
+[05/05 14:32:42     17s] *** End library_loading (cpu=0.00min, real=0.00min, mem=22.5M, fe_cpu=0.29min, fe_real=0.52min, fe_mem=711.7M) ***
+[05/05 14:32:42     17s] % Begin Load netlist data ... (date=05/05 14:32:42, mem=727.1M)
+[05/05 14:32:42     17s] *** Begin netlist parsing (mem=711.7M) ***
+[05/05 14:32:42     17s] Created 3 new cells from 1 timing libraries.
+[05/05 14:32:42     17s] Reading netlist ...
+[05/05 14:32:42     17s] Backslashed names will retain backslash and a trailing blank character.
+[05/05 14:32:42     17s] Reading verilogBinary netlist '/home/users/lyt1314/ee372/aloe-sky130/ringosc/build/8-cadence-innovus-route/checkpoints/design.checkpoint/save.enc.dat/vbin/ringosc.v.bin'
+[05/05 14:32:42     17s] Reading binary database version 2 in 1-threaded mode
+[05/05 14:32:42     17s] 
+[05/05 14:32:42     17s] *** Memory Usage v#2 (Current mem = 721.684M, initial mem = 275.723M) ***
+[05/05 14:32:42     17s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=721.7M) ***
+[05/05 14:32:42     17s] % End Load netlist data ... (date=05/05 14:32:42, total cpu=0:00:00.0, real=0:00:00.0, peak res=730.6M, current mem=730.6M)
+[05/05 14:32:42     17s] Set top cell to ringosc.
+[05/05 14:32:42     17s] Hooked 3 DB cells to tlib cells.
+[05/05 14:32:42     17s] ** Removed 1 unused lib cells.
+[05/05 14:32:43     17s] Ending "BindLib:" (total cpu=0:00:00.0, real=0:00:01.0, peak res=734.7M, current mem=734.7M)
+[05/05 14:32:43     17s] Starting recursive module instantiation check.
+[05/05 14:32:43     17s] No recursion found.
+[05/05 14:32:43     17s] Building hierarchical netlist for Cell ringosc ...
+[05/05 14:32:43     17s] *** Netlist is unique.
+[05/05 14:32:43     17s] Set DBUPerIGU to techSite unitasc width 490.
+[05/05 14:32:43     17s] Setting Std. cell height to 9400 DBU (smallest netlist inst).
+[05/05 14:32:43     17s] ** info: there are 3 modules.
+[05/05 14:32:43     17s] ** info: there are 10 stdCell insts.
+[05/05 14:32:43     17s] 
+[05/05 14:32:43     17s] *** Memory Usage v#2 (Current mem = 757.098M, initial mem = 275.723M) ***
+[05/05 14:32:43     17s] *info: set bottom ioPad orient R0
+[05/05 14:32:43     17s] **WARN: (IMPFP-3961):	The techSite 'unithddbl' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/05 14:32:43     17s] Type 'man IMPFP-3961' for more detail.
+[05/05 14:32:43     17s] **WARN: (IMPFP-3961):	The techSite 'unithd' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/05 14:32:43     17s] Type 'man IMPFP-3961' for more detail.
+[05/05 14:32:43     17s] Adjust met3 preferred direction offset from 0.34 to 0.17.
+[05/05 14:32:43     17s] Adjust met4 preferred direction offset from 0.46 to 0.23.
+[05/05 14:32:43     17s] Adjust met5 preferred direction offset from 1.7 to 0.17.
+[05/05 14:32:43     17s] Generated pitch 3.66 in met5 is different from 3.4 defined in technology file in preferred direction.
+[05/05 14:32:43     17s] Generated pitch 0.69 in met4 is different from 0.92 defined in technology file in preferred direction.
+[05/05 14:32:43     17s] Generated pitch 0.61 in met3 is different from 0.68 defined in technology file in preferred direction.
+[05/05 14:32:43     17s] Set Default Net Delay as 1000 ps.
+[05/05 14:32:43     17s] Set Default Net Load as 0.5 pF. 
+[05/05 14:32:43     17s] Set Default Input Pin Transition as 0.1 ps.
+[05/05 14:32:43     17s] Loading preference file /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/8-cadence-innovus-route/checkpoints/design.checkpoint/save.enc.dat/gui.pref.tcl ...
+[05/05 14:32:43     17s] ##  Process: 130           (User Set)               
+[05/05 14:32:43     17s] ##     Node: (not set)                           
+[05/05 14:32:43     17s] 
+##  Check design process and node:  
+##  Design tech node is not set.
+
+[05/05 14:32:43     17s] Applying the recommended capacitance filtering threshold values for 130nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.4.
+[05/05 14:32:43     17s] 	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+[05/05 14:32:43     17s] 	Capacitance filtering mode(-capFilterMode option of the setExtractRCMode) is 'relAndCoup' for all engines.
+[05/05 14:32:43     17s] 	The accuracy mode for postRoute effortLevel low extraction will be set to 'standard'.
+[05/05 14:32:43     17s] 	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode is 'low'.
+[05/05 14:32:43     17s] #WARNING (NRIF-91) Option setNanoRouteMode -routeTopRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -topRoutingLayer instead.
+[05/05 14:32:43     17s] Setting -ignore_DRC to 0. ViaGen will do DRC check while creating vias.
+[05/05 14:32:43     17s] Setting -viarule_preference to default order. ViaGen will consider via rule priority based on the order of appearance in the technology file.
+[05/05 14:32:43     17s] **WARN: (IMPPTN-867):	Found use of setPinAssignMode -maxLayer. This will continue to work in this release; however, it is recommended to use setDesignMode -topRoutingLayer instead.
+[05/05 14:32:43     17s] **WARN: (IMPPSP-1003):	Found use of 'setRouteMode -earlyGlobalMaxRouteLayer'. This will continue to work in this release; however, it is recommended to use 'setDesignMode -topRoutingLayer' instead.
+[05/05 14:32:43     17s] Change floorplan default-technical-site to 'unitasc'.
+[05/05 14:32:43     17s] Extraction setup Delayed 
+[05/05 14:32:43     17s] *Info: initialize multi-corner CTS.
+[05/05 14:32:43     18s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=962.9M, current mem=767.7M)
+[05/05 14:32:43     18s] 
+[05/05 14:32:43     18s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[05/05 14:32:43     18s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[05/05 14:32:43     18s] Summary for sequential cells identification: 
+[05/05 14:32:43     18s]   Identified SBFF number: 0
+[05/05 14:32:43     18s]   Identified MBFF number: 0
+[05/05 14:32:43     18s]   Identified SB Latch number: 0
+[05/05 14:32:43     18s]   Identified MB Latch number: 0
+[05/05 14:32:43     18s]   Not identified SBFF number: 0
+[05/05 14:32:43     18s]   Not identified MBFF number: 0
+[05/05 14:32:43     18s]   Not identified SB Latch number: 0
+[05/05 14:32:43     18s]   Not identified MB Latch number: 0
+[05/05 14:32:43     18s]   Number of sequential cells which are not FFs: 0
+[05/05 14:32:43     18s] Total number of combinational cells: 2
+[05/05 14:32:43     18s] Total number of sequential cells: 0
+[05/05 14:32:43     18s] Total number of tristate cells: 0
+[05/05 14:32:43     18s] Total number of level shifter cells: 0
+[05/05 14:32:43     18s] Total number of power gating cells: 0
+[05/05 14:32:43     18s] Total number of isolation cells: 0
+[05/05 14:32:43     18s] Total number of power switch cells: 0
+[05/05 14:32:43     18s] Total number of pulse generator cells: 0
+[05/05 14:32:43     18s] Total number of always on buffers: 0
+[05/05 14:32:43     18s] Total number of retention cells: 0
+[05/05 14:32:43     18s] List of usable buffers:
+[05/05 14:32:43     18s] Total number of usable buffers: 0
+[05/05 14:32:43     18s] List of unusable buffers:
+[05/05 14:32:43     18s] Total number of unusable buffers: 0
+[05/05 14:32:43     18s] List of usable inverters:
+[05/05 14:32:43     18s] Total number of usable inverters: 0
+[05/05 14:32:43     18s] List of unusable inverters:
+[05/05 14:32:43     18s] Total number of unusable inverters: 0
+[05/05 14:32:43     18s] List of identified usable delay cells:
+[05/05 14:32:43     18s] Total number of identified usable delay cells: 0
+[05/05 14:32:43     18s] List of identified unusable delay cells:
+[05/05 14:32:43     18s] Total number of identified unusable delay cells: 0
+[05/05 14:32:43     18s] 
+[05/05 14:32:43     18s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[05/05 14:32:43     18s] No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+[05/05 14:32:43     18s] 
+[05/05 14:32:43     18s] TimeStamp Deleting Cell Server Begin ...
+[05/05 14:32:43     18s] 
+[05/05 14:32:43     18s] TimeStamp Deleting Cell Server End ...
+[05/05 14:32:43     18s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=968.5M, current mem=968.5M)
+[05/05 14:32:43     18s] 
+[05/05 14:32:43     18s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[05/05 14:32:43     18s] Summary for sequential cells identification: 
+[05/05 14:32:43     18s]   Identified SBFF number: 0
+[05/05 14:32:43     18s]   Identified MBFF number: 0
+[05/05 14:32:43     18s]   Identified SB Latch number: 0
+[05/05 14:32:43     18s]   Identified MB Latch number: 0
+[05/05 14:32:43     18s]   Not identified SBFF number: 0
+[05/05 14:32:43     18s]   Not identified MBFF number: 0
+[05/05 14:32:43     18s]   Not identified SB Latch number: 0
+[05/05 14:32:43     18s]   Not identified MB Latch number: 0
+[05/05 14:32:43     18s]   Number of sequential cells which are not FFs: 0
+[05/05 14:32:43     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:43     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:43     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:43     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:43     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:43     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:43     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:43     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:43     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:43     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:43     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:43     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:43     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:43     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:43     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:43     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:43     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:43     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:43     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:43     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:43     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:43     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:43     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:43     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:43     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:43     18s] **WARN: (IMPOPT-3000):	Buffer footprint is not defined or is an invalid buffer footprint.
+[05/05 14:32:43     18s] Type 'man IMPOPT-3000' for more detail.
+[05/05 14:32:43     18s] **WARN: (IMPOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
+[05/05 14:32:43     18s] Type 'man IMPOPT-3001' for more detail.
+[05/05 14:32:43     18s]  Visiting view : analysis_default
+[05/05 14:32:43     18s]    : PowerDomain = none : Weighted F : unweighted  = -922337203685477632.00 (1.000) with rcCorner = 0
+[05/05 14:32:43     18s]    : PowerDomain = none : no stdDelay from this view
+[05/05 14:32:43     18s]    : PowerDomain = none : Weighted F : unweighted  = -922337203685477632.00 (1.000) with rcCorner = -1
+[05/05 14:32:43     18s]  Visiting view : analysis_default
+[05/05 14:32:43     18s]    : PowerDomain = none : Weighted F : unweighted  = -922337203685477632.00 (1.000) with rcCorner = 0
+[05/05 14:32:43     18s]    : PowerDomain = none : no stdDelay from this view
+[05/05 14:32:43     18s]    : PowerDomain = none : Weighted F : unweighted  = -922337203685477632.00 (1.000) with rcCorner = -1
+[05/05 14:32:43     18s] *INFO : stdDelay is calculated as zero; using legacy method.
+[05/05 14:32:43     18s] *INFO : stdSlew is calculated as zero; using legacy method.
+[05/05 14:32:43     18s] 
+[05/05 14:32:43     18s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[05/05 14:32:43     18s] % Begin Load MMMC data ... (date=05/05 14:32:43, mem=968.9M)
+[05/05 14:32:43     18s] % End Load MMMC data ... (date=05/05 14:32:43, total cpu=0:00:00.0, real=0:00:00.0, peak res=968.9M, current mem=968.9M)
+[05/05 14:32:43     18s] Reading floorplan file - /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/8-cadence-innovus-route/checkpoints/design.checkpoint/save.enc.dat/ringosc.fp.gz (mem = 965.7M).
+[05/05 14:32:43     18s] % Begin Load floorplan data ... (date=05/05 14:32:43, mem=969.3M)
+[05/05 14:32:43     18s] *info: reset 16 existing net BottomPreferredLayer and AvoidDetour
+[05/05 14:32:43     18s] **WARN: (IMPDB-2078):	Output pin DRAIN of instance nfet5 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+[05/05 14:32:43     18s] **WARN: (IMPDB-2078):	Output pin DRAIN of instance nfet4 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+[05/05 14:32:43     18s] **WARN: (IMPDB-2078):	Output pin DRAIN of instance nfet3 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+[05/05 14:32:43     18s] **WARN: (IMPDB-2078):	Output pin DRAIN of instance nfet2 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+[05/05 14:32:43     18s] **WARN: (IMPDB-2078):	Output pin DRAIN of instance nfet1 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+[05/05 14:32:43     18s] Deleting old partition specification.
+[05/05 14:32:44     18s] Set FPlanBox to (0 0 103960 76160)
+[05/05 14:32:44     18s] **WARN: (IMPFP-3961):	The techSite 'unithddbl' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/05 14:32:44     18s] Type 'man IMPFP-3961' for more detail.
+[05/05 14:32:44     18s] **WARN: (IMPFP-3961):	The techSite 'unithd' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/05 14:32:44     18s] Type 'man IMPFP-3961' for more detail.
+[05/05 14:32:44     18s] Adjust met3 preferred direction offset from 0.34 to 0.17.
+[05/05 14:32:44     18s] Adjust met4 preferred direction offset from 0.46 to 0.23.
+[05/05 14:32:44     18s] Adjust met5 preferred direction offset from 1.7 to 0.17.
+[05/05 14:32:44     18s] Generated pitch 3.66 in met5 is different from 3.4 defined in technology file in preferred direction.
+[05/05 14:32:44     18s] Generated pitch 0.69 in met4 is different from 0.92 defined in technology file in preferred direction.
+[05/05 14:32:44     18s] Generated pitch 0.61 in met3 is different from 0.68 defined in technology file in preferred direction.
+[05/05 14:32:44     18s]  ... processed partition successfully.
+[05/05 14:32:44     18s] Reading binary special route file /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/8-cadence-innovus-route/checkpoints/design.checkpoint/save.enc.dat/ringosc.fp.spr.gz (Created by Innovus v20.13-s083_1 on Tue May  3 17:12:43 2022, version: 1)
+[05/05 14:32:44     18s] Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=975.1M, current mem=975.1M)
+[05/05 14:32:44     18s] Extracting standard cell pins and blockage ...... 
+[05/05 14:32:44     18s] Pin and blockage extraction finished
+[05/05 14:32:44     18s] % End Load floorplan data ... (date=05/05 14:32:44, total cpu=0:00:00.1, real=0:00:01.0, peak res=975.7M, current mem=975.7M)
+[05/05 14:32:44     18s] % Begin Load SymbolTable ... (date=05/05 14:32:44, mem=976.0M)
+[05/05 14:32:44     18s] Reading congestion map file /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/8-cadence-innovus-route/checkpoints/design.checkpoint/save.enc.dat/ringosc.route.congmap.gz ...
+[05/05 14:32:44     18s] Suppress "**WARN ..." messages.
+[05/05 14:32:44     18s] routingBox: (0 0) (103960 76160)
+[05/05 14:32:44     18s] coreBox:    (28980 28560) (74980 47360)
+[05/05 14:32:44     18s] Un-suppress "**WARN ..." messages.
+[05/05 14:32:44     18s] % End Load SymbolTable ... (date=05/05 14:32:44, total cpu=0:00:00.0, real=0:00:00.0, peak res=976.5M, current mem=976.5M)
+[05/05 14:32:44     18s] Loading place ...
+[05/05 14:32:44     18s] % Begin Load placement data ... (date=05/05 14:32:44, mem=976.5M)
+[05/05 14:32:44     18s] Reading placement file - /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/8-cadence-innovus-route/checkpoints/design.checkpoint/save.enc.dat/ringosc.place.gz.
+[05/05 14:32:44     18s] ** Reading stdCellPlacement_binary (Created by Innovus v20.13-s083_1 on Tue May  3 17:12:43 2022, version# 2) ...
+[05/05 14:32:44     18s] Read Views for adaptive view pruning ...
+[05/05 14:32:44     18s] Read 0 views from Binary DB for adaptive view pruning
+[05/05 14:32:44     18s] *** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=973.7M) ***
+[05/05 14:32:44     18s] Total net length = 9.674e+01 (8.394e+01 1.280e+01) (ext = 0.000e+00)
+[05/05 14:32:44     18s] % End Load placement data ... (date=05/05 14:32:44, total cpu=0:00:00.0, real=0:00:00.0, peak res=977.2M, current mem=977.2M)
+[05/05 14:32:44     18s] Reading PG file /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/8-cadence-innovus-route/checkpoints/design.checkpoint/save.enc.dat/ringosc.pg.gz, version#2, (Created by Innovus v20.13-s083_1 on       Tue May  3 17:12:43 2022)
+[05/05 14:32:44     18s] *** Completed restorePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=969.7M) ***
+[05/05 14:32:44     18s] % Begin Load routing data ... (date=05/05 14:32:44, mem=977.4M)
+[05/05 14:32:44     18s] Reading routing file - /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/8-cadence-innovus-route/checkpoints/design.checkpoint/save.enc.dat/ringosc.route.gz.
+[05/05 14:32:44     18s] Reading Innovus routing data (Created by Innovus v20.13-s083_1 on Tue May  3 17:12:43 2022 Format: 20.1) ...
+[05/05 14:32:44     18s] *** Total 16 nets are successfully restored.
+[05/05 14:32:44     18s] *** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=970.7M) ***
+[05/05 14:32:44     18s] % End Load routing data ... (date=05/05 14:32:44, total cpu=0:00:00.0, real=0:00:00.0, peak res=978.9M, current mem=977.9M)
+[05/05 14:32:44     18s] Loading Drc markers ...
+[05/05 14:32:45     18s] ... 7 markers are loaded ...
+[05/05 14:32:45     18s] ... 0 geometry drc markers are loaded ...
+[05/05 14:32:45     18s] ... 0 antenna drc markers are loaded ...
+[05/05 14:32:45     18s] TAT_INFO: restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+[05/05 14:32:45     18s] Reading property file /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/8-cadence-innovus-route/checkpoints/design.checkpoint/save.enc.dat/ringosc.prop
+[05/05 14:32:45     18s] *** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=975.7M) ***
+[05/05 14:32:45     18s] Reading dirtyarea snapshot file /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/8-cadence-innovus-route/checkpoints/design.checkpoint/save.enc.dat/ringosc.db.da.gz (Create by Innovus v20.13-s083_1 on Tue May  3 17:12:44 2022, version: 4).
+[05/05 14:32:45     18s] Set Default Input Pin Transition as 0.1 ps.
+[05/05 14:32:45     18s] eee: readRCCornerMetaData, file read unsuccessful: /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/8-cadence-innovus-route/checkpoints/design.checkpoint/save.enc.dat/extraction/extractionMetaData.gz
+[05/05 14:32:45     18s] Extraction setup Started 
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[05/05 14:32:45     18s] Reading Capacitance Table File /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/8-cadence-innovus-route/checkpoints/design.checkpoint/save.enc.dat/libs/mmmc/rtk-typical.captable ...
+[05/05 14:32:45     18s] Process name: (null).
+[05/05 14:32:45     18s] Allocated an empty WireEdgeEnlargement table in typical [6].
+[05/05 14:32:45     18s] Allocated an empty WireEdgeEnlargement table in typical [6].
+[05/05 14:32:45     18s] Importing multi-corner RC tables ... 
+[05/05 14:32:45     18s] Summary of Active RC-Corners : 
+[05/05 14:32:45     18s]  
+[05/05 14:32:45     18s]  Analysis View: analysis_default
+[05/05 14:32:45     18s]     RC-Corner Name        : typical
+[05/05 14:32:45     18s]     RC-Corner Index       : 0
+[05/05 14:32:45     18s]     RC-Corner Temperature : 25 Celsius
+[05/05 14:32:45     18s]     RC-Corner Cap Table   : '/home/users/lyt1314/ee372/aloe-sky130/ringosc/build/8-cadence-innovus-route/checkpoints/design.checkpoint/save.enc.dat/libs/mmmc/rtk-typical.captable'
+[05/05 14:32:45     18s]     RC-Corner PreRoute Res Factor         : 1
+[05/05 14:32:45     18s]     RC-Corner PreRoute Cap Factor         : 1
+[05/05 14:32:45     18s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[05/05 14:32:45     18s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[05/05 14:32:45     18s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[05/05 14:32:45     18s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[05/05 14:32:45     18s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[05/05 14:32:45     18s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[05/05 14:32:45     18s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] LayerId::1 widthSet size::4
+[05/05 14:32:45     18s] LayerId::2 widthSet size::4
+[05/05 14:32:45     18s] LayerId::3 widthSet size::5
+[05/05 14:32:45     18s] LayerId::4 widthSet size::4
+[05/05 14:32:45     18s] LayerId::5 widthSet size::5
+[05/05 14:32:45     18s] LayerId::6 widthSet size::2
+[05/05 14:32:45     18s] Initializing multi-corner capacitance tables ... 
+[05/05 14:32:45     18s] Initializing multi-corner resistance tables ...
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/05 14:32:45     18s] {RT typical 0 6 6 {4 0} {5 0} 2}
+[05/05 14:32:45     18s] Preroute length aware model : n: 40 ; LLS: 2-3 ; HLS: 3-5 ; rDens: 0.276670 ; uaWl: 1.000000 ; uaWlH: 0.000000 ; aWlH: 0.000000 ; Pmax: 0.850000 ; wcR: 0.396600 ; newSi: 0.074300 ; pMod: 82 ; 
+[05/05 14:32:45     18s] Start generating vias ..
+[05/05 14:32:45     18s] #create default rule from bind_ndr_rule rule=0x1530d571ec10 0x1530c339afc0
+[05/05 14:32:45     18s] ### import design signature (1): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 halo=0
+[05/05 14:32:45     18s] #Skip building auto via since it is not turned on.
+[05/05 14:32:45     18s] Extracting standard cell pins and blockage ...... 
+[05/05 14:32:45     18s] Pin and blockage extraction finished
+[05/05 14:32:45     18s] Via generation completed.
+[05/05 14:32:45     18s] % Begin Load power constraints ... (date=05/05 14:32:45, mem=984.7M)
+[05/05 14:32:45     18s] % End Load power constraints ... (date=05/05 14:32:45, total cpu=0:00:00.0, real=0:00:00.0, peak res=984.9M, current mem=984.9M)
+[05/05 14:32:45     18s] % Begin load AAE data ... (date=05/05 14:32:45, mem=991.7M)
+[05/05 14:32:46     19s] **WARN: (IMPESI-3505):	setDelayCalMode -eng_copyNetPropToNewNet true (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+[05/05 14:32:46     19s] AAE DB initialization (MEM=1005.21 CPU=0:00:00.0 REAL=0:00:00.0) 
+[05/05 14:32:46     19s] % End load AAE data ... (date=05/05 14:32:46, total cpu=0:00:00.3, real=0:00:01.0, peak res=997.5M, current mem=997.5M)
+[05/05 14:32:46     19s] 
+[05/05 14:32:46     19s] TimeStamp Deleting Cell Server Begin ...
+[05/05 14:32:46     19s] 
+[05/05 14:32:46     19s] TimeStamp Deleting Cell Server End ...
+[05/05 14:32:46     19s] 
+[05/05 14:32:46     19s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[05/05 14:32:46     19s] Summary for sequential cells identification: 
+[05/05 14:32:46     19s]   Identified SBFF number: 0
+[05/05 14:32:46     19s]   Identified MBFF number: 0
+[05/05 14:32:46     19s]   Identified SB Latch number: 0
+[05/05 14:32:46     19s]   Identified MB Latch number: 0
+[05/05 14:32:46     19s]   Not identified SBFF number: 0
+[05/05 14:32:46     19s]   Not identified MBFF number: 0
+[05/05 14:32:46     19s]   Not identified SB Latch number: 0
+[05/05 14:32:46     19s]   Not identified MB Latch number: 0
+[05/05 14:32:46     19s]   Number of sequential cells which are not FFs: 0
+[05/05 14:32:46     19s] Total number of combinational cells: 2
+[05/05 14:32:46     19s] Total number of sequential cells: 0
+[05/05 14:32:46     19s] Total number of tristate cells: 0
+[05/05 14:32:46     19s] Total number of level shifter cells: 0
+[05/05 14:32:46     19s] Total number of power gating cells: 0
+[05/05 14:32:46     19s] Total number of isolation cells: 0
+[05/05 14:32:46     19s] Total number of power switch cells: 0
+[05/05 14:32:46     19s] Total number of pulse generator cells: 0
+[05/05 14:32:46     19s] Total number of always on buffers: 0
+[05/05 14:32:46     19s] Total number of retention cells: 0
+[05/05 14:32:46     19s] List of usable buffers:
+[05/05 14:32:46     19s] Total number of usable buffers: 0
+[05/05 14:32:46     19s] List of unusable buffers:
+[05/05 14:32:46     19s] Total number of unusable buffers: 0
+[05/05 14:32:46     19s] List of usable inverters:
+[05/05 14:32:46     19s] Total number of usable inverters: 0
+[05/05 14:32:46     19s] List of unusable inverters:
+[05/05 14:32:46     19s] Total number of unusable inverters: 0
+[05/05 14:32:46     19s] List of identified usable delay cells:
+[05/05 14:32:46     19s] Total number of identified usable delay cells: 0
+[05/05 14:32:46     19s] List of identified unusable delay cells:
+[05/05 14:32:46     19s] Total number of identified unusable delay cells: 0
+[05/05 14:32:46     19s] 
+[05/05 14:32:46     19s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[05/05 14:32:46     19s] No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+[05/05 14:32:46     19s] 
+[05/05 14:32:46     19s] TimeStamp Deleting Cell Server Begin ...
+[05/05 14:32:46     19s] 
+[05/05 14:32:46     19s] TimeStamp Deleting Cell Server End ...
+[05/05 14:32:46     19s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.13-s083_1. They will be removed in the next release. 
+[05/05 14:32:46     19s] timing_enable_default_delay_arc
+[05/05 14:32:46     19s] #% End load design ... (date=05/05 14:32:46, total cpu=0:00:02.2, real=0:00:04.0, peak res=1022.2M, current mem=997.5M)
+[05/05 14:32:46     19s] 
+[05/05 14:32:46     19s] *** Summary of all messages that are not suppressed in this session:
+[05/05 14:32:46     19s] Severity  ID               Count  Summary                                  
+[05/05 14:32:46     19s] WARNING   IMPLF-200            4  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[05/05 14:32:46     19s] WARNING   IMPLF-201            2  Pin '%s' in macro '%s' has no ANTENNADIF...
+[05/05 14:32:46     19s] WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+[05/05 14:32:46     19s] WARNING   IMPPTN-867           1  Found use of %s. This will continue to w...
+[05/05 14:32:46     19s] WARNING   IMPDB-2078           5  Output pin %s of instance %s is connecte...
+[05/05 14:32:46     19s] WARNING   IMPESI-3505          1  setDelayCalMode -eng_%s (default=%s) wil...
+[05/05 14:32:46     19s] WARNING   IMPOPT-3000          1  Buffer footprint is not defined or is an...
+[05/05 14:32:46     19s] WARNING   IMPOPT-3001          1  Inverter footprint is not defined or is ...
+[05/05 14:32:46     19s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[05/05 14:32:46     19s] WARNING   IMPPSP-1003          1  Found use of '%s'. This will continue to...
+[05/05 14:32:46     19s] ERROR     TECHLIB-702          1  No pg_pin with name '%s' has been read i...
+[05/05 14:32:46     19s] *** Message Summary: 21 warning(s), 1 error(s)
+[05/05 14:32:46     19s] 
+[05/05 14:32:46     19s] <CMD> setDistributeHost -local
+[05/05 14:32:46     19s] The timeout for a remote job to respond is 3600 seconds.
+[05/05 14:32:46     19s] Submit command for task runs will be: local
+[05/05 14:32:46     19s] <CMD> setMultiCpuUsage -localCpu 16
+[05/05 14:32:46     19s] <FF> LOADING 'always_source_tcl' PLUG-IN FILE(s) 
+[05/05 14:32:46     19s] <FF> -> innovus-foundation-flow/custom-scripts/always-source.tcl
+[05/05 14:32:46     19s] <CMD> win
+[05/05 14:32:52     19s] <CMD> fit
+[05/05 14:32:53     20s] <CMD> zoomBox -18.07200 1.78600 118.13800 72.99600
+[05/05 14:32:54     20s] <CMD> zoomBox 4.24300 12.87100 87.89300 56.60300
+[05/05 14:32:56     20s] <CMD> zoomBox 15.16900 17.29600 75.60600 48.89200
+[05/05 14:32:59     20s] <CMD> panPage 1 0
+[05/05 14:33:00     20s] <CMD> panPage -1 0
+[05/05 14:33:05     21s] <CMD> setLayerPreference node_cell -isVisible 1
+[05/05 14:33:05     21s] <CMD> setLayerPreference node_cell -isVisible 0
+[05/05 14:33:06     21s] <CMD> setLayerPreference node_cell -isVisible 1
+[05/05 16:24:36   1440s] <CMD> zoomBox 0.52700 13.63500 55.18000 40.47000
+[05/05 16:24:37   1440s] <CMD> zoomBox -14.04800 9.99200 61.59700 47.13400
+[05/05 16:24:37   1440s] <CMD> zoomBox -47.04800 1.74100 76.12700 62.22100
+[05/05 16:24:38   1440s] <CMD> zoomBox -62.14000 -2.03200 82.77200 69.12100
+[05/05 16:24:40   1441s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Thu May  5 16:24:40 2022
+  Total CPU time:     0:24:02
+  Total real time:    1:52:31
+  Peak memory (main): 1079.91MB
+
+[05/05 16:24:40   1441s] 
+[05/05 16:24:40   1441s] *** Memory Usage v#2 (Current mem = 1090.473M, initial mem = 275.723M) ***
+[05/05 16:24:40   1441s] 
+[05/05 16:24:40   1441s] *** Summary of all messages that are not suppressed in this session:
+[05/05 16:24:40   1441s] Severity  ID               Count  Summary                                  
+[05/05 16:24:40   1441s] WARNING   IMPLF-200            4  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[05/05 16:24:40   1441s] WARNING   IMPLF-201            2  Pin '%s' in macro '%s' has no ANTENNADIF...
+[05/05 16:24:40   1441s] WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+[05/05 16:24:40   1441s] WARNING   IMPPTN-867           1  Found use of %s. This will continue to w...
+[05/05 16:24:40   1441s] WARNING   IMPDB-2078           5  Output pin %s of instance %s is connecte...
+[05/05 16:24:40   1441s] WARNING   IMPESI-3505          1  setDelayCalMode -eng_%s (default=%s) wil...
+[05/05 16:24:40   1441s] WARNING   IMPOPT-3000          1  Buffer footprint is not defined or is an...
+[05/05 16:24:40   1441s] WARNING   IMPOPT-3001          1  Inverter footprint is not defined or is ...
+[05/05 16:24:40   1441s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[05/05 16:24:40   1441s] WARNING   IMPPSP-1003          1  Found use of '%s'. This will continue to...
+[05/05 16:24:40   1441s] ERROR     TECHLIB-702          1  No pg_pin with name '%s' has been read i...
+[05/05 16:24:40   1441s] *** Message Summary: 21 warning(s), 1 error(s)
+[05/05 16:24:40   1441s] 
+[05/05 16:24:40   1441s] --- Ending "Innovus" (totcpu=0:24:01, real=1:52:29, mem=1090.5M) ---
