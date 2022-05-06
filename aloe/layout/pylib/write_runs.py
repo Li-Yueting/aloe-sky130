@@ -13,11 +13,11 @@ def cmd_defout():
     '''
     return 'defOut -floorplan -noStdCells {}\n'.format(ip.fdef0)
 
-def cmd_lefout(n):
+def cmd_lefout(n, gennum):
     '''
     Function: save LEF file for the final gneration
     '''
-    flef = '{}{}{}.lef'.format(ip.lefout_dir, ip.blk_name, str(n))
+    flef = '{}{}{}_{}.lef'.format(ip.lefout_dir, ip.blk_name, str(gennum), str(n))
     return 'write_lef_abstract -5.8 -extractBlockObs {}\n'.format(flef)
 
 def cmd_vout(n):
@@ -54,7 +54,7 @@ def cmd_gdsout(n):
         gds_merge_str)
     return ostrm_cmd
 
-def write_run(run_num, generation):
+def write_run(run_num, generation, gennum):
     '''
     run_num:    layout #
     cstr_df:    pandas DataFrame containing the input constraints
@@ -148,11 +148,11 @@ def write_run(run_num, generation):
         if generation == 'old':
             run_tcl.write('cal_nl -n {} -l {} -d {} -b {}\n'.format(
                 run_num, ip.run_num_len, ip.expr_old_dir, ip.blk_name))
-            run_tcl.write(cmd_lefout(run_num))
+            run_tcl.write(cmd_lefout(run_num, gennum))
         elif generation == 'new':
             run_tcl.write('cal_nl -n {} -l {} -d {} -b {}\n'.format(
                 run_num, ip.run_num_len, ip.expr_new_dir, ip.blk_name))
-            run_tcl.write(cmd_lefout(run_num))
+            run_tcl.write(cmd_lefout(run_num, gennum))
         elif generation == 'out':
             #TODO: Multiple iteration here
             run_tcl.write('cal_nl -n {} -l {} -d {} -b {}\n'.format(
@@ -163,7 +163,7 @@ def write_run(run_num, generation):
             # for net in ip.gnd_nets:
             #     run_tcl.write('swap_cells -net {} -tail _tied\n'.format(net))
             # [Warning]: Output lef file is not accurate on M1
-            run_tcl.write(cmd_lefout(run_num))
+            run_tcl.write(cmd_lefout(run_num, gennum))
 
             ###################################################### Remember to merge gds (lose tech map file) ###############
             # run_tcl.write(cmd_gdsout(run_num))
@@ -176,8 +176,8 @@ def write_run(run_num, generation):
             run_tcl.write('cal_nl -n {} -l {} -d {} -b {}\n'.format(
                 0, ip.run_num_len, ip.expr_hof_dir, ip.blk_name))
             run_tcl.write(cmd_defout())
-            run_tcl.write(cmd_lefout(run_num))
+            run_tcl.write(cmd_lefout(run_num, gennum))
 
 if __name__ == '__main__':
-    run_num, generation = sys.argv[1:3]
-    write_run(run_num, generation)
+    run_num, generation, gennum = sys.argv[1:4]
+    write_run(run_num, generation, gennum)
