@@ -1,0 +1,86 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.13-s083_1, built Tue Jan 19 16:51:46 PST 2021
+Options:	-nologv -init /home/users/lyt1314/ee372/aloe-sky130/aloe/tcllib/single_run.tcl -cpus 4 
+Date:		Fri Apr 29 17:11:33 2022
+Host:		rice-503-20-north (x86_64 w/Linux 5.11.0-41-generic) (20cores*40cpus*Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz 28160KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+**WARN: (IMPSYT-1507):	The display is invalid and will start in no window mode
+Change the soft stacksize limit to 0.2%RAM (383 mbytes). Set global soft_stack_size_limit to change the value.
+setMultiCpuUsage -localCpu 4
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+Sourcing file "/home/users/lyt1314/ee372/aloe-sky130/aloe/tcllib/single_run.tcl" ...
+<CMD> define_proc_arguments cal_nl -info {Writes TCL scripts to run.
+} -define_args {{-n "current run number" "int_value" int required}
+    {-l "length of zero-padding" "int_value" int required}
+    {-d "expression directory" "none" string required}
+    {-b "blk_name" "none" string optional}
+    }
+<CMD> setDistributeHost -local
+The timeout for a remote job to respond is 3600 seconds.
+Submit command for task runs will be: local
+<CMD> set init_layout_view {}
+<CMD> set init_verilog /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/inverter.v
+<CMD> set init_mmmc_file /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/view_definition.tcl
+<CMD> set init_lef_file {/home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/adk/rtk-tech.lef /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/adk/stdcells.lef /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/adk/rtk-tech.lef /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/adk/stdcells.lef}
+<CMD> set init_top_cell inverter
+<CMD> set init_gnd_net {VSS VPW VSSPST VSSE}
+<CMD> set init_pwr_net {VDD VNW VDDPST POC VDDCE VDDPE}
+<CMD> init_design
+#% Begin Load MMMC data ... (date=04/29 17:11:58, mem=669.5M)
+**ERROR: (TCLCMD-995):	Can not open file 'inputs/adk/stdcells.lib' for library set
+**ERROR: (IMPSYT-6692):	Invalid return code while executing '/home/users/lyt1314/ee372/aloe-sky130/aloe/tcllib/single_run.tcl' was returned and script processing was stopped. Review the following error in '/home/users/lyt1314/ee372/aloe-sky130/aloe/tcllib/single_run.tcl' then restart.
+Error info: /home/users/lyt1314/ee372/aloe-sky130/aloe/tcllib/single_run.tcl: 
+    while executing
+"create_library_set -name libs_typical -timing [list inputs/adk/stdcells.lib ]"
+    (file "/tmp/innovus_temp_2628838_rice-503-20-north_lyt1314_wvBDd3/.view_def_init_design_2628838.tcle32ReZ" line 28)
+    invoked from within
+"::se_source_orig /tmp/innovus_temp_2628838_rice-503-20-north_lyt1314_wvBDd3/.view_def_init_design_2628838.tcle32ReZ"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel [concat ::se_source_orig $args]"
+    (procedure "source" line 176)
+    invoked from within
+"source /tmp/innovus_temp_2628838_rice-503-20-north_lyt1314_wvBDd3/.view_def_init_design_2628838.tcle32ReZ"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 [list source $view_def_to_be_processed]"
+    (procedure "::init_design::process_view_def" line 80)
+    invoked from within
+"::init_design::process_view_def $::init_mmmc_file"
+    (procedure "init_design" line 209)
+    invoked from within
+"init_design"
+    (file "/home/users/lyt1314/ee372/aloe-sky130/aloe/tcllib/single_run.tcl" line 15)
+    invoked from within
+"::se_source_orig /home/users/lyt1314/ee372/aloe-sky130/aloe/tcllib/single_run.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel [concat ::se_source_orig $args]"
+    (procedure "source" line 176)
+    invoked from within
+"source /home/users/lyt1314/ee372/aloe-sky130/aloe/tcllib/single_run.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 source /home/users/lyt1314/ee372/aloe-sky130/aloe/tcllib/single_run.tcl"
+    ("eval" body line 1)
+    invoked from within
+"eval {uplevel #0 source /home/users/lyt1314/ee372/aloe-sky130/aloe/tcllib/single_run.tcl}"
+    (in namespace inscope "::" script line 1)
+    invoked from within
+"namespace inscope :: eval "uplevel #0 source $fileName"".
+
+*** Memory Usage v#2 (Current mem = 699.289M, initial mem = 287.723M) ***
+*** Message Summary: 0 warning(s), 2 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:15.6, real=0:01:28, mem=699.3M) ---

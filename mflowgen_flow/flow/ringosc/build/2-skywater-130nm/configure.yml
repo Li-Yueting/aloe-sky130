@@ -1,0 +1,30 @@
+build_dir: 2-skywater-130nm
+build_id: '2'
+commands:
+- mkdir -p outputs && cd outputs
+- ln -sf ../view-standard adk
+edges_i: {}
+edges_o:
+  adk:
+  - f: adk
+    step: 4-cadence-innovus-flowsetup
+  - f: adk
+    step: 5-cadence-innovus-init
+  - f: adk
+    step: 6-cadence-innovus-power
+  - f: adk
+    step: 7-cadence-innovus-place
+  - f: adk
+    step: 8-cadence-innovus-route
+  - f: adk
+    step: 9-cadence-innovus-postroute
+  - f: adk
+    step: 10-cadence-innovus-signoff
+name: skywater-130nm
+outputs:
+- adk
+parameters:
+  adk: skywater-130nm-analog-adk
+  adk_view: view-standard
+sandbox: true
+source: /home/users/xingyuni/ee372/mflowgen_flow/mflowgen/adks/skywater-130nm-analog-adk

@@ -1,0 +1,47 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.13-s083_1, built Tue Jan 19 16:51:46 PST 2021
+Options:	-nologv -init /home/users/lyt1314/ee372/aloe-sky130/aloe/tcllib/single_run.tcl -cpus 4 
+Date:		Fri Apr 29 16:58:11 2022
+Host:		rice-503-20-north (x86_64 w/Linux 5.11.0-41-generic) (20cores*40cpus*Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz 28160KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+**WARN: (IMPSYT-1507):	The display is invalid and will start in no window mode
+Change the soft stacksize limit to 0.2%RAM (383 mbytes). Set global soft_stack_size_limit to change the value.
+setMultiCpuUsage -localCpu 4
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+Sourcing file "/home/users/lyt1314/ee372/aloe-sky130/aloe/tcllib/single_run.tcl" ...
+<CMD> define_proc_arguments cal_nl -info {Writes TCL scripts to run.
+} -define_args {{-n "current run number" "int_value" int required}
+    {-l "length of zero-padding" "int_value" int required}
+    {-d "expression directory" "none" string required}
+    {-b "blk_name" "none" string optional}
+    }
+<CMD> setDistributeHost -local
+The timeout for a remote job to respond is 3600 seconds.
+Submit command for task runs will be: local
+<CMD> set init_layout_view {}
+<CMD> set init_verilog /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/inverter.v
+<CMD> set init_mmmc_file /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/view_definition.tcl
+<CMD> set init_lef_file {/home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/adk/rtk-tech.lef /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/adk/stdcells.lef /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/adk/rtk-tech.lef /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/adk/stdcells.lef}
+<CMD> set init_top_cell inverter
+<CMD> set init_gnd_net {VSS VPW VSSPST VSSE}
+<CMD> set init_pwr_net {VDD VNW VDDPST POC VDDCE VDDPE}
+<CMD> globalNetConnect VDD -type pgpin -pin VPWR -inst * -verbose
+**ERROR: Design must be in memory before running "globalNetConnect"
+**ERROR: (IMPSYT-6692):	Invalid return code while executing '/home/users/lyt1314/ee372/aloe-sky130/aloe/tcllib/single_run.tcl' was returned and script processing was stopped. Review the following error in '/home/users/lyt1314/ee372/aloe-sky130/aloe/tcllib/single_run.tcl' then restart.
+**ERROR: (IMPSYT-6693):	Error message: /home/users/lyt1314/ee372/aloe-sky130/aloe/tcllib/single_run.tcl: Design must be in memory before running "globalNetConnect".
+
+*** Memory Usage v#2 (Current mem = 686.297M, initial mem = 287.723M) ***
+*** Message Summary: 0 warning(s), 2 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:15.4, real=0:01:18, mem=686.3M) ---

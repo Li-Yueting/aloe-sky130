@@ -1,0 +1,20 @@
+build_dir: 0-info
+build_id: '0'
+commands:
+- echo "Design name      -- ringosc"
+- echo "Clock period     -- 10.0"
+- echo "ADK              -- skywater-130nm-analog-adk"
+- echo "ADK view         -- view-standard"
+- echo
+- echo "Constructed from -- /home/users/xingyuni/ee372/mflowgen_flow/aloe-sky130/ringosc/design/construct.py"
+- echo
+edges_i: {}
+edges_o: {}
+name: info
+parameters:
+  adk: skywater-130nm-analog-adk
+  adk_view: view-standard
+  clock_period: 10.0
+  construct_path: /home/users/xingyuni/ee372/mflowgen_flow/aloe-sky130/ringosc/design/construct.py
+  design_name: ringosc
+source: /home/users/xingyuni/ee372/mflowgen_flow/mflowgen/steps/info

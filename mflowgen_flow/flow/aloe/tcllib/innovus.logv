@@ -1,0 +1,42 @@
+[04/29 16:49:00      0s] 
+[04/29 16:49:00      0s] Cadence Innovus(TM) Implementation System.
+[04/29 16:49:00      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[04/29 16:49:00      0s] 
+[04/29 16:49:00      0s] Version:	v20.13-s083_1, built Tue Jan 19 16:51:46 PST 2021
+[04/29 16:49:00      0s] Options:	
+[04/29 16:49:00      0s] Date:		Fri Apr 29 16:49:00 2022
+[04/29 16:49:00      0s] Host:		rice-503-20-north (x86_64 w/Linux 5.11.0-41-generic) (20cores*40cpus*Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz 28160KB)
+[04/29 16:49:00      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[04/29 16:49:00      0s] 
+[04/29 16:49:00      0s] License:
+[04/29 16:49:00      0s] 		invs	Innovus Implementation System	20.1	checkout succeeded
+[04/29 16:49:00      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[04/29 16:49:00      0s] **WARN: (IMPSYT-1507):	The display is invalid and will start in no window mode
+[04/29 16:49:23     14s] @(#)CDS: Innovus v20.13-s083_1 (64bit) 01/19/2021 16:51 (Linux 2.6.32-431.11.2.el6.x86_64)
+[04/29 16:49:23     14s] @(#)CDS: NanoRoute 20.13-s083_1 NR201221-0721/20_13-UB (database version 18.20.538) {superthreading v2.13}
+[04/29 16:49:23     14s] @(#)CDS: AAE 20.13-s024 (64bit) 01/19/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+[04/29 16:49:23     14s] @(#)CDS: CTE 20.13-s042_1 () Jan 14 2021 08:49:42 ( )
+[04/29 16:49:23     14s] @(#)CDS: SYNTECH 20.13-s015_1 () Jan  6 2021 07:44:41 ( )
+[04/29 16:49:23     14s] @(#)CDS: CPE v20.13-s092
+[04/29 16:49:23     14s] @(#)CDS: IQuantus/TQuantus 20.1.1-s453 (64bit) Fri Nov 20 21:16:44 PST 2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+[04/29 16:49:23     14s] @(#)CDS: OA 22.60-p048 Wed Nov 11 13:31:42 2020
+[04/29 16:49:23     14s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[04/29 16:49:23     14s] @(#)CDS: RCDB 11.15.0
+[04/29 16:49:23     14s] @(#)CDS: STYLUS 20.10-p024_1 (12/01/2020 07:22 PST)
+[04/29 16:49:23     14s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_2615733_rice-503-20-north_lyt1314_nU9AhT.
+
+[04/29 16:49:23     14s] Change the soft stacksize limit to 0.2%RAM (383 mbytes). Set global soft_stack_size_limit to change the value.
+[04/29 16:49:24     15s] 
+[04/29 16:49:24     15s] **INFO:  MMMC transition support version v31-84 
+[04/29 16:49:24     15s] 
+[04/29 16:49:24     15s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[04/29 16:49:24     15s] <CMD> suppressMessage ENCEXT-2799
+[04/29 16:49:33     15s] can't read "tcllib": no such variable
+[04/29 16:50:36     15s] can't read "clock_period": no such variable
+[04/29 16:50:48     15s] can't read "clock_period": no such variable
+[04/29 16:52:00     15s] can't read "aloe_home": no such variable
+[04/29 16:55:56     15s] 
+[04/29 16:55:56     15s] *** Memory Usage v#2 (Current mem = 693.312M, initial mem = 287.723M) ***
+[04/29 16:55:56     15s] *** Message Summary: 0 warning(s), 0 error(s)
+[04/29 16:55:56     15s] 
+[04/29 16:55:56     15s] --- Ending "Innovus" (totcpu=0:00:15.9, real=0:06:56, mem=693.3M) ---

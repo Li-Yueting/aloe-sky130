@@ -1,0 +1,245 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.13-s083_1, built Tue Jan 19 16:51:46 PST 2021
+Options:	-nologv -init /home/users/lyt1314/ee372/aloe-sky130/aloe/tcllib/single_run.tcl -cpus 4 
+Date:		Fri Apr 29 17:17:48 2022
+Host:		rice-503-20-north (x86_64 w/Linux 5.11.0-41-generic) (20cores*40cpus*Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz 28160KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+**WARN: (IMPSYT-1507):	The display is invalid and will start in no window mode
+Change the soft stacksize limit to 0.2%RAM (383 mbytes). Set global soft_stack_size_limit to change the value.
+setMultiCpuUsage -localCpu 4
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+Sourcing file "/home/users/lyt1314/ee372/aloe-sky130/aloe/tcllib/single_run.tcl" ...
+<CMD> define_proc_arguments cal_nl -info {Writes TCL scripts to run.
+} -define_args {{-n "current run number" "int_value" int required}
+    {-l "length of zero-padding" "int_value" int required}
+    {-d "expression directory" "none" string required}
+    {-b "blk_name" "none" string optional}
+    }
+<CMD> setDistributeHost -local
+The timeout for a remote job to respond is 3600 seconds.
+Submit command for task runs will be: local
+<CMD> set init_layout_view {}
+<CMD> set init_verilog /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/inverter.v
+<CMD> set init_mmmc_file /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/view_definition.tcl
+<CMD> set init_lef_file {/home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/adk/rtk-tech.lef /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/adk/stdcells.lef /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/adk/rtk-tech.lef /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/adk/stdcells.lef}
+<CMD> set init_top_cell inverter
+<CMD> set init_gnd_net {VSS VPW VSSPST VSSE}
+<CMD> set init_pwr_net {VDD VNW VDDPST POC VDDCE VDDPE}
+<CMD> init_design
+#% Begin Load MMMC data ... (date=04/29 17:18:12, mem=668.0M)
+#% End Load MMMC data ... (date=04/29 17:18:12, total cpu=0:00:00.0, real=0:00:00.0, peak res=669.0M, current mem=669.0M)
+typical
+
+Loading LEF file /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/adk/rtk-tech.lef ...
+
+Loading LEF file /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/adk/stdcells.lef ...
+WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/adk/stdcells.lef at line 2.
+Set DBUPerIGU to M1 pitch 460.
+**WARN: (IMPLF-201):	Pin 'GATE' in macro 'sky130_asc_nfet_01v8_lvt_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'SOURCE' in macro 'sky130_asc_nfet_01v8_lvt_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'DRAIN' in macro 'sky130_asc_nfet_01v8_lvt_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'GATE' in macro 'sky130_asc_pfet_01v8_lvt_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'SOURCE' in macro 'sky130_asc_pfet_01v8_lvt_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'DRAIN' in macro 'sky130_asc_pfet_01v8_lvt_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+
+viaInitial starts at Fri Apr 29 17:18:12 2022
+viaInitial ends at Fri Apr 29 17:18:12 2022
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/view_definition.tcl
+Starting library reading in 'Multi-threaded flow' (with '4' threads)
+Reading libs_typical timing library /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/adk/stdcells.lib.
+Read 3 cells in library sky130_fd_sc_hd__tt_025C_1v80.
+Library reading multithread flow ended.
+*** End library_loading (cpu=0.00min, real=0.00min, mem=106.0M, fe_cpu=0.26min, fe_real=0.40min, fe_mem=809.9M) ***
+#% Begin Load netlist data ... (date=04/29 17:18:12, mem=687.7M)
+*** Begin netlist parsing (mem=809.9M) ***
+Created 3 new cells from 1 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '/home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/inverter.v'
+
+*** Memory Usage v#2 (Current mem = 809.863M, initial mem = 287.723M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=809.9M) ***
+#% End Load netlist data ... (date=04/29 17:18:12, total cpu=0:00:00.0, real=0:00:00.0, peak res=691.9M, current mem=691.9M)
+Set top cell to inverter.
+Hooked 3 DB cells to tlib cells.
+** Removed 1 unused lib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell inverter ...
+*** Netlist is unique.
+Set DBUPerIGU to techSite unitasc width 490.
+** info: there are 3 modules.
+** info: there are 2 stdCell insts.
+
+*** Memory Usage v#2 (Current mem = 825.277M, initial mem = 287.723M) ***
+**WARN: (IMPFP-3961):	The techSite 'unithddbl' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'unithd' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Adjust met3 preferred direction offset from 0.34 to 0.17.
+Adjust met4 preferred direction offset from 0.46 to 0.23.
+Adjust met5 preferred direction offset from 1.7 to 0.17.
+Generated pitch 3.66 in met5 is different from 3.4 defined in technology file in preferred direction.
+Generated pitch 0.69 in met4 is different from 0.92 defined in technology file in preferred direction.
+Generated pitch 0.61 in met3 is different from 0.68 defined in technology file in preferred direction.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+Reading Capacitance Table File /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/adk/rtk-typical.captable ...
+Process name: (null).
+Allocated an empty WireEdgeEnlargement table in typical [6].
+Allocated an empty WireEdgeEnlargement table in typical [6].
+Importing multi-corner RC tables ... 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: analysis_default
+    RC-Corner Name        : typical
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : '/home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/adk/rtk-typical.captable'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+*Info: initialize multi-corner CTS.
+Reading timing constraints file '/home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/design.sdc' ...
+Current (total cpu=0:00:16.3, real=0:00:25.0, peak res=913.8M, current mem=913.8M)
+Total number of combinational cells: 2
+Total number of sequential cells: 0
+Total number of tristate cells: 0
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers:
+Total number of usable buffers: 0
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters:
+Total number of usable inverters: 0
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+**WARN: (IMPOPT-3000):	Buffer footprint is not defined or is an invalid buffer footprint.
+Type 'man IMPOPT-3000' for more detail.
+**WARN: (IMPOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
+Type 'man IMPOPT-3001' for more detail.
+#% Begin Load MMMC data ... (date=04/29 17:18:13, mem=943.4M)
+#% End Load MMMC data ... (date=04/29 17:18:13, total cpu=0:00:00.0, real=0:00:00.0, peak res=943.4M, current mem=943.4M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-200            4  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPLF-201            2  Pin '%s' in macro '%s' has no ANTENNADIF...
+WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+WARNING   IMPOPT-3000          1  Buffer footprint is not defined or is an...
+WARNING   IMPOPT-3001          1  Inverter footprint is not defined or is ...
+*** Message Summary: 10 warning(s), 0 error(s)
+
+<CMD> globalNetConnect VDD -type pgpin -pin VPWR -inst * -verbose
+2 new pwr-pin connections were made to global net 'VDD'.
+<CMD> globalNetConnect VSS -type pgpin -pin VGND -inst * -verbose
+2 new gnd-pin connections were made to global net 'VSS'.
+<CMD> globalNetConnect VSS -type pgpin -pin VNB -inst * -verbose
+1 new gnd-pin connection was made to global net 'VSS'.
+<CMD> globalNetConnect VDD -type pgpin -pin VPB -inst * -verbose
+1 new pwr-pin connection was made to global net 'VDD'.
+<CMD> sroute -nets {VDD VSS} -connect corePin
+#% Begin sroute (date=04/29 17:18:13, mem=943.9M)
+*** Begin SPECIAL ROUTE on Fri Apr 29 17:18:13 2022 ***
+SPECIAL ROUTE ran on directory: /home/users/lyt1314/ee372/aloe-sky130/aloe/pylib
+SPECIAL ROUTE ran on machine: rice-503-20-north (Linux 5.11.0-41-generic Xeon 2.40Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "VDD VSS"
+routeSpecial set to true
+srouteConnectBlockPin set to false
+srouteConnectConverterPin set to false
+srouteConnectPadPin set to false
+srouteConnectStripe set to false
+srouteFollowCorePinEnd set to 3
+srouteFollowPadPin set to false
+srouteJogControl set to "preferWithChanges differentLayer"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 2040.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 13 layers, 6 routing layers, 1 overlap layer
+Read in 2 macros, 2 used
+Read in 2 components
+  2 core components: 2 unplaced, 0 placed, 0 fixed
+Read in 4 logical pins
+Read in 4 nets
+Read in 10 special nets
+Read in 6 terminals
+2 nets selected.
+
+Begin power routing ...
+**WARN: (IMPSR-2031):	For net VDD, no suitable cell can be taken as reference cell for followpin generation at (0.000 0.000) (7.840 9.400). Specify option -corePinLayer to generate followpin on met2 or above layers. Similar warnings suppressed.
+**WARN: (IMPSR-2031):	For net VSS, no suitable cell can be taken as reference cell for followpin generation at (0.000 0.000) (7.840 9.400). Specify option -corePinLayer to generate followpin on met2 or above layers. Similar warnings suppressed.
+**WARN: (IMPSR-2031):	For net VDD, no suitable cell can be taken as reference cell for followpin generation at (0.000 0.000) (7.840 9.400). Specify option -corePinLayer to generate followpin on met2 or above layers. Similar warnings suppressed.
+**WARN: (IMPSR-2031):	For net VSS, no suitable cell can be taken as reference cell for followpin generation at (0.000 0.000) (7.840 9.400). Specify option -corePinLayer to generate followpin on met2 or above layers. Similar warnings suppressed.
+  Number of Core ports routed: 0
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 2047.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 0 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+sroute created 0 wire.
+ViaGen created 0 via, deleted 0 via to avoid violation.
+#% End sroute (date=04/29 17:18:13, total cpu=0:00:00.1, real=0:00:00.0, peak res=963.8M, current mem=956.7M)
+**ERROR: (IMPSYT-6692):	Invalid return code while executing '/home/users/lyt1314/ee372/aloe-sky130/aloe/tcllib/single_run.tcl' was returned and script processing was stopped. Review the following error in '/home/users/lyt1314/ee372/aloe-sky130/aloe/tcllib/single_run.tcl' then restart.
+**ERROR: (IMPSYT-6693):	Error message: /home/users/lyt1314/ee372/aloe-sky130/aloe/tcllib/single_run.tcl: can't read "ADK_POWER_MESH_BOT_LAYER": no such variable.
+
+*** Memory Usage v#2 (Current mem = 1071.707M, initial mem = 287.723M) ***
+*** Message Summary: 14 warning(s), 2 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:16.6, real=0:02:36, mem=1071.7M) ---
