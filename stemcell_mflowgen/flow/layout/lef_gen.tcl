@@ -18,6 +18,9 @@ proc addlef {inst_name output_folder} {
     property LEFclass CORE 
     property LEFsite unitasc
     
+
+    # Todo: MODIFY FIXED_BBOX 
+
     if {$inst_name=={pmos_flat}} {
         property FIXED_BBOX {0 0 588 1880}
         # GATE
@@ -91,6 +94,56 @@ proc addlef {inst_name output_folder} {
         cd $output_folder
         save sky130_asc_nfet_01v8_lvt_9.mag
         lef write sky130_asc_nfet_01v8_lvt_9.lef
+    } elseif {$inst_name=={res_flat}} {
+        property FIXED_BBOX {0 0 2440 1880}
+        # Rin
+        findlabel Rin
+        port make
+        port class inout
+        # Rout
+        findlabel Rout
+        port make
+        port class inout
+        # VPWR
+        findlabel VPWR
+        port make 
+        port class inout
+        port use power
+        # VGND
+        findlabel VGND
+        port make 
+        port class inout
+        port use ground
+        cd $output_folder
+        save sky130_asc_res.mag
+        lef write sky130_asc_res.lef
+    } elseif {$inst_name=={pnp_flat}} {
+        property FIXED_BBOX {0 0 1340 1880}
+        # Emitter
+        findlabel Emitter
+        port make
+        port class inout
+        # Base
+        findlabel Base
+        port make
+        port class inout
+        # Collector
+        findlabel Collector
+        port make
+        port class inout
+        # VPWR
+        findlabel VPWR
+        port make 
+        port class inout
+        port use power
+        # VGND
+        findlabel VGND
+        port make 
+        port class inout
+        port use ground
+        cd $output_folder
+        save sky130_asc_pnp_0.mag
+        lef write sky130_asc_pnp_0.lef
     } else {
         puts "No inst lef generated ..."
     }

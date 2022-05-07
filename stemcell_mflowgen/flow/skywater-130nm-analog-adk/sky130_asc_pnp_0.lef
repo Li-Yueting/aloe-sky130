@@ -1,0 +1,122 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO sky130_asc_pnp_0
+  CLASS CORE ;
+  FOREIGN sky130_asc_pnp_0 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 6.700 BY 9.400 ;
+  SITE unitasc ;
+  PIN Emitter
+    DIRECTION INOUT ;
+    ANTENNADIFFAREA 11.559999 ;
+    PORT
+      LAYER li1 ;
+        RECT 1.615 2.665 5.085 6.135 ;
+      LAYER mcon ;
+        RECT 1.980 5.530 2.150 5.700 ;
+        RECT 2.480 5.530 2.650 5.700 ;
+        RECT 2.980 5.530 3.150 5.700 ;
+        RECT 3.480 5.530 3.650 5.700 ;
+        RECT 3.980 5.530 4.150 5.700 ;
+        RECT 4.480 5.530 4.650 5.700 ;
+        RECT 1.980 5.030 2.150 5.200 ;
+        RECT 2.480 5.030 2.650 5.200 ;
+        RECT 2.980 5.030 3.150 5.200 ;
+        RECT 3.480 5.030 3.650 5.200 ;
+        RECT 3.980 5.030 4.150 5.200 ;
+        RECT 4.480 5.030 4.650 5.200 ;
+        RECT 1.980 4.530 2.150 4.700 ;
+        RECT 2.480 4.530 2.650 4.700 ;
+        RECT 2.980 4.530 3.150 4.700 ;
+        RECT 3.480 4.530 3.650 4.700 ;
+        RECT 3.980 4.530 4.150 4.700 ;
+        RECT 4.480 4.530 4.650 4.700 ;
+        RECT 1.980 4.030 2.150 4.200 ;
+        RECT 2.480 4.030 2.650 4.200 ;
+        RECT 2.980 4.030 3.150 4.200 ;
+        RECT 3.480 4.030 3.650 4.200 ;
+        RECT 3.980 4.030 4.150 4.200 ;
+        RECT 4.480 4.030 4.650 4.200 ;
+        RECT 1.980 3.530 2.150 3.700 ;
+        RECT 2.480 3.530 2.650 3.700 ;
+        RECT 2.980 3.530 3.150 3.700 ;
+        RECT 3.480 3.530 3.650 3.700 ;
+        RECT 3.980 3.530 4.150 3.700 ;
+        RECT 4.480 3.530 4.650 3.700 ;
+        RECT 1.980 3.030 2.150 3.200 ;
+        RECT 2.480 3.030 2.650 3.200 ;
+        RECT 2.980 3.030 3.150 3.200 ;
+        RECT 3.480 3.030 3.650 3.200 ;
+        RECT 3.980 3.030 4.150 3.200 ;
+        RECT 4.480 3.030 4.650 3.200 ;
+      LAYER met1 ;
+        RECT 1.825 2.875 4.875 5.925 ;
+    END
+  END Emitter
+  PIN Base
+    DIRECTION INOUT ;
+    ANTENNAGATEAREA 26.728899 ;
+    ANTENNADIFFAREA 6.408000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.945 6.445 5.755 6.805 ;
+        RECT 0.945 2.355 1.305 6.445 ;
+        RECT 5.395 2.355 5.755 6.445 ;
+        RECT 0.945 1.995 5.755 2.355 ;
+    END
+  END Base
+  PIN Collector
+    DIRECTION INOUT ;
+    ANTENNADIFFAREA 11.988700 ;
+    PORT
+      LAYER pwell ;
+        RECT 0.000 6.985 6.700 7.750 ;
+        RECT 0.000 1.815 0.765 6.985 ;
+        RECT 5.935 1.815 6.700 6.985 ;
+        RECT 0.000 1.050 6.700 1.815 ;
+      LAYER li1 ;
+        RECT 0.130 7.125 6.570 7.620 ;
+        RECT 0.130 1.675 0.625 7.125 ;
+        RECT 6.075 1.675 6.570 7.125 ;
+        RECT 0.130 1.180 6.570 1.675 ;
+    END
+  END Collector
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER li1 ;
+        RECT 0.000 8.650 6.700 8.950 ;
+      LAYER mcon ;
+        RECT 0.850 8.650 1.150 8.950 ;
+        RECT 1.850 8.650 2.150 8.950 ;
+        RECT 2.850 8.650 3.150 8.950 ;
+        RECT 3.850 8.650 4.150 8.950 ;
+        RECT 4.850 8.650 5.150 8.950 ;
+        RECT 5.850 8.650 6.150 8.950 ;
+      LAYER met1 ;
+        RECT 0.000 8.500 6.700 9.100 ;
+    END
+  END VPWR
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER li1 ;
+        RECT 0.000 -0.150 6.700 0.150 ;
+      LAYER mcon ;
+        RECT 0.850 -0.150 1.150 0.150 ;
+        RECT 1.850 -0.150 2.150 0.150 ;
+        RECT 2.850 -0.150 3.150 0.150 ;
+        RECT 3.850 -0.150 4.150 0.150 ;
+        RECT 4.850 -0.150 5.150 0.150 ;
+        RECT 5.850 -0.150 6.150 0.150 ;
+      LAYER met1 ;
+        RECT 0.000 -0.300 6.700 0.300 ;
+    END
+  END VGND
+END sky130_asc_pnp_0
+END LIBRARY
+
