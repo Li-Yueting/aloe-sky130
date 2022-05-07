@@ -1,0 +1,8 @@
+name: rtl
+
+outputs:
+  - design_rtl.v
+  # - design.vcs.v
+
+commands:
+  - cat current_mirror.v > outputs/design_rtl.v 

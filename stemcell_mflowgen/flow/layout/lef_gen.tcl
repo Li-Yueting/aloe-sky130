@@ -5,7 +5,7 @@ proc addlef {inst_name output_folder} {
     append inst_name "_flat"
     flatten $inst_name
     load $inst_name
-    box -1000 -1000 1000 1000
+    box -100000 -100000 100000 100000
     select cell
     set box_pos [box position]    
     set llx [lindex $box_pos 0]    
@@ -53,8 +53,8 @@ proc addlef {inst_name output_folder} {
         # set mag_file [file join a b $output_folder sky130_asc_pfet_01v8_lvt_1.mag] 
         # set lef_file [file join a b $output_folder sky130_asc_pfet_01v8_lvt_1.lef]
         cd $output_folder
-        save sky130_asc_pfet_01v8_lvt_12.mag
-        lef write sky130_asc_pfet_01v8_lvt_12.lef
+        save sky130_asc_pfet_01v8_lvt_60_debug.mag
+        lef write sky130_asc_pfet_01v8_lvt_60_debug.lef
         # puts "mag_file: $mag_file"
         # puts "lef_file: $lef_file"
         # save $mag_file

@@ -1,11 +1,12 @@
 module amplifier (
     input clk,
     output va,
-    output vb
+    output vb,
+    output vc
  );
  supply1 power;
  supply0 ground;
- wire vg, vq, vc, vx;
+ wire vg, vq, vx;
 
  sky130_asc_pfet_01v8_lvt_6 M4 (
      .GATE(vg),

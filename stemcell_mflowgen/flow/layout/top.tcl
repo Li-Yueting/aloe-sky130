@@ -10,5 +10,5 @@ set script_path [file dirname $script_path]
 append script_path /skywater-130nm-analog-adk
 puts "script_path: $script_path"
 # generate mag, lef files
-place_pmos 0 0 2 12 0
+place_pmos 0 0 2 60 0
 addlef pmos $script_path
