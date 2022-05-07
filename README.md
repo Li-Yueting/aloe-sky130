@@ -23,3 +23,7 @@ Xingyu Ni: xingyuni@stanford.edu
 1. change config/config.py
 2. change pnr/def_ip.py, pnr/usr_ip.py
 3. change pylib/write_run.py
+
+
+## Additional steps
+cp -r /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/skywater-130nm-analog-adk/ /home/users/xingyuni/ee372/mflowgen_flow/mflowgen/adks/
