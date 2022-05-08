@@ -117,7 +117,7 @@ proc addlef {inst_name output_folder} {
         cd $output_folder
         save sky130_asc_res.mag
         lef write sky130_asc_res.lef
-    } elseif {$inst_name=={pnp_flat}} {
+    } elseif {$inst_name=={pnp_0_flat}} {
         property FIXED_BBOX {0 0 1340 1880}
         # Emitter
         findlabel Emitter
@@ -144,6 +144,33 @@ proc addlef {inst_name output_folder} {
         cd $output_folder
         save sky130_asc_pnp_0.mag
         lef write sky130_asc_pnp_0.lef
+    } elseif {$inst_name=={pnp_flat}} {
+        property FIXED_BBOX {0 0 9380 1880}
+        # Emitter
+        findlabel Emitter
+        port make
+        port class inout
+        # Base
+        findlabel Base
+        port make
+        port class inout
+        # Collector
+        findlabel Collector
+        port make
+        port class inout
+        # VPWR
+        findlabel VPWR
+        port make 
+        port class inout
+        port use power
+        # VGND
+        findlabel VGND
+        port make 
+        port class inout
+        port use ground
+        cd $output_folder
+        save sky130_asc_pnp_7.mag
+        lef write sky130_asc_pnp_7.lef
     } else {
         puts "No inst lef generated ..."
     }
