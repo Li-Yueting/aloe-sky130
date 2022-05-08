@@ -5,25 +5,25 @@ Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
 
 Version:	v20.13-s083_1, built Tue Jan 19 16:51:46 PST 2021
 Options:	-overwrite -nowin -init START.tcl -log logs/run.log 
-Date:		Fri May  6 19:48:40 2022
+Date:		Sat May  7 23:54:19 2022
 Host:		rice-503-20-north (x86_64 w/Linux 5.11.0-41-generic) (20cores*40cpus*Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz 28160KB)
 OS:		CentOS Linux release 7.9.2009 (Core)
 
 License:
 		invs	Innovus Implementation System	20.1	checkout succeeded
 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
-Create and set the environment variable TMPDIR to /tmp/innovus_temp_4058498_rice-503-20-north_lyt1314_9ZtWve.
+Create and set the environment variable TMPDIR to /tmp/innovus_temp_117131_rice-503-20-north_lyt1314_mL1gT5.
 
 The soft stacksize limit is either up to the hard limit or larger than 0.2% of RAM. No change is needed.
 
 **INFO:  MMMC transition support version v31-84 
 
 Sourcing file "START.tcl" ...
-#% Begin load design ... (date=05/06 19:49:02, mem=666.6M)
+#% Begin load design ... (date=05/07 23:54:44, mem=666.9M)
 Set Default Input Pin Transition as 0.1 ps.
-Loading design 'ringosc' saved by 'Innovus' '20.13-s083_1' on 'Fri May 6 19:48:34 2022'.
-% Begin Load MMMC data ... (date=05/06 19:49:03, mem=668.7M)
-% End Load MMMC data ... (date=05/06 19:49:03, total cpu=0:00:00.0, real=0:00:00.0, peak res=669.7M, current mem=669.7M)
+Loading design 'ringosc' saved by 'Innovus' '20.13-s083_1' on 'Sat May 7 23:54:13 2022'.
+% Begin Load MMMC data ... (date=05/07 23:54:45, mem=669.0M)
+% End Load MMMC data ... (date=05/07 23:54:45, total cpu=0:00:00.0, real=0:00:00.0, peak res=670.0M, current mem=670.0M)
 
 Loading LEF file /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/7-cadence-innovus-place/checkpoints/design.checkpoint/save.enc.dat/libs/lef/rtk-tech.lef ...
 
@@ -44,8 +44,8 @@ Type 'man IMPLF-200' for more detail.
 **WARN: (IMPLF-200):	Pin 'DRAIN' in macro 'sky130_asc_nfet_01v8_lvt_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
 Type 'man IMPLF-200' for more detail.
 
-viaInitial starts at Fri May  6 19:49:03 2022
-viaInitial ends at Fri May  6 19:49:03 2022
+viaInitial starts at Sat May  7 23:54:45 2022
+viaInitial ends at Sat May  7 23:54:45 2022
 
 ##  Check design process and node:  
 ##  Both design process and tech node are not set.
@@ -53,8 +53,8 @@ viaInitial ends at Fri May  6 19:49:03 2022
 Loading view definition file from /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/7-cadence-innovus-place/checkpoints/design.checkpoint/save.enc.dat/viewDefinition.tcl
 Reading libs_typical timing library '/home/users/lyt1314/ee372/aloe-sky130/ringosc/build/2-skywater-130nm/view-standard/stdcells.lib' ...
 Read 2 cells in library 'sky130_fd_sc_hd__tt_025C_1v80' 
-*** End library_loading (cpu=0.00min, real=0.00min, mem=22.0M, fe_cpu=0.26min, fe_real=0.38min, fe_mem=681.2M) ***
-% Begin Load netlist data ... (date=05/06 19:49:03, mem=684.3M)
+*** End library_loading (cpu=0.00min, real=0.00min, mem=22.0M, fe_cpu=0.27min, fe_real=0.43min, fe_mem=681.2M) ***
+% Begin Load netlist data ... (date=05/07 23:54:45, mem=684.5M)
 *** Begin netlist parsing (mem=681.2M) ***
 Created 2 new cells from 1 timing libraries.
 Reading netlist ...
@@ -64,7 +64,7 @@ Reading binary database version 2 in 1-threaded mode
 
 *** Memory Usage v#2 (Current mem = 692.176M, initial mem = 275.727M) ***
 *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=692.2M) ***
-% End Load netlist data ... (date=05/06 19:49:03, total cpu=0:00:00.0, real=0:00:00.0, peak res=687.7M, current mem=687.7M)
+% End Load netlist data ... (date=05/07 23:54:45, total cpu=0:00:00.0, real=0:00:00.0, peak res=688.0M, current mem=688.0M)
 Set top cell to ringosc.
 Hooked 2 DB cells to tlib cells.
 Starting recursive module instantiation check.
@@ -136,10 +136,10 @@ No delay cells were detected in the set of buffers. Buffers will be used to fix 
 Type 'man IMPOPT-3000' for more detail.
 **WARN: (IMPOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
 Type 'man IMPOPT-3001' for more detail.
-% Begin Load MMMC data ... (date=05/06 19:49:04, mem=916.4M)
-% End Load MMMC data ... (date=05/06 19:49:04, total cpu=0:00:00.0, real=0:00:00.0, peak res=916.4M, current mem=916.3M)
+% Begin Load MMMC data ... (date=05/07 23:54:46, mem=916.5M)
+% End Load MMMC data ... (date=05/07 23:54:46, total cpu=0:00:00.0, real=0:00:00.0, peak res=916.5M, current mem=916.5M)
 Reading floorplan file - /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/7-cadence-innovus-place/checkpoints/design.checkpoint/save.enc.dat/ringosc.fp.gz (mem = 929.2M).
-% Begin Load floorplan data ... (date=05/06 19:49:04, mem=916.8M)
+% Begin Load floorplan data ... (date=05/07 23:54:46, mem=916.9M)
 *info: reset 15 existing net BottomPreferredLayer and AvoidDetour
 **WARN: (IMPDB-2078):	Output pin DRAIN of instance nfet5 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
 **WARN: (IMPDB-2078):	Output pin DRAIN of instance nfet4 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
@@ -159,39 +159,39 @@ Generated pitch 3.66 in met5 is different from 3.4 defined in technology file in
 Generated pitch 0.69 in met4 is different from 0.92 defined in technology file in preferred direction.
 Generated pitch 0.61 in met3 is different from 0.68 defined in technology file in preferred direction.
  ... processed partition successfully.
-Reading binary special route file /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/7-cadence-innovus-place/checkpoints/design.checkpoint/save.enc.dat/ringosc.fp.spr.gz (Created by Innovus v20.13-s083_1 on Fri May  6 19:48:33 2022, version: 1)
-Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=922.8M, current mem=922.8M)
+Reading binary special route file /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/7-cadence-innovus-place/checkpoints/design.checkpoint/save.enc.dat/ringosc.fp.spr.gz (Created by Innovus v20.13-s083_1 on Sat May  7 23:54:12 2022, version: 1)
+Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=922.9M, current mem=922.9M)
 Extracting standard cell pins and blockage ...... 
 Pin and blockage extraction finished
 Delete all existing relative floorplan constraints.
-% End Load floorplan data ... (date=05/06 19:49:04, total cpu=0:00:00.1, real=0:00:00.0, peak res=923.3M, current mem=923.3M)
-% Begin Load SymbolTable ... (date=05/06 19:49:04, mem=923.7M)
+% End Load floorplan data ... (date=05/07 23:54:46, total cpu=0:00:00.1, real=0:00:00.0, peak res=923.5M, current mem=923.5M)
 Reading congestion map file /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/7-cadence-innovus-place/checkpoints/design.checkpoint/save.enc.dat/ringosc.route.congmap.gz ...
+% Begin Load SymbolTable ... (date=05/07 23:54:46, mem=923.8M)
 Suppress "**WARN ..." messages.
 Un-suppress "**WARN ..." messages.
-% End Load SymbolTable ... (date=05/06 19:49:05, total cpu=0:00:00.0, real=0:00:01.0, peak res=924.2M, current mem=924.1M)
+% End Load SymbolTable ... (date=05/07 23:54:46, total cpu=0:00:00.0, real=0:00:00.0, peak res=924.3M, current mem=924.3M)
 Loading place ...
-% Begin Load placement data ... (date=05/06 19:49:05, mem=924.1M)
+% Begin Load placement data ... (date=05/07 23:54:46, mem=924.3M)
 Reading placement file - /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/7-cadence-innovus-place/checkpoints/design.checkpoint/save.enc.dat/ringosc.place.gz.
-** Reading stdCellPlacement_binary (Created by Innovus v20.13-s083_1 on Fri May  6 19:48:33 2022, version# 2) ...
+** Reading stdCellPlacement_binary (Created by Innovus v20.13-s083_1 on Sat May  7 23:54:12 2022, version# 2) ...
 Read Views for adaptive view pruning ...
 Read 0 views from Binary DB for adaptive view pruning
 *** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=938.2M) ***
 Total net length = 1.539e+02 (1.411e+02 1.280e+01) (ext = 0.000e+00)
-% End Load placement data ... (date=05/06 19:49:05, total cpu=0:00:00.0, real=0:00:00.0, peak res=924.9M, current mem=924.9M)
-Reading PG file /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/7-cadence-innovus-place/checkpoints/design.checkpoint/save.enc.dat/ringosc.pg.gz, version#2, (Created by Innovus v20.13-s083_1 on       Fri May  6 19:48:33 2022)
-*** Completed restorePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=934.2M) ***
-% Begin Load routing data ... (date=05/06 19:49:05, mem=925.3M)
+% End Load placement data ... (date=05/07 23:54:46, total cpu=0:00:00.0, real=0:00:00.0, peak res=925.1M, current mem=925.1M)
+Reading PG file /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/7-cadence-innovus-place/checkpoints/design.checkpoint/save.enc.dat/ringosc.pg.gz, version#2, (Created by Innovus v20.13-s083_1 on       Sat May  7 23:54:12 2022)
+*** Completed restorePGFile (cpu=0:00:00.0 real=0:00:01.0 mem=934.2M) ***
+% Begin Load routing data ... (date=05/07 23:54:47, mem=925.5M)
 Reading routing file - /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/7-cadence-innovus-place/checkpoints/design.checkpoint/save.enc.dat/ringosc.route.gz.
-Reading Innovus routing data (Created by Innovus v20.13-s083_1 on Fri May  6 19:48:33 2022 Format: 20.1) ...
+Reading Innovus routing data (Created by Innovus v20.13-s083_1 on Sat May  7 23:54:12 2022 Format: 20.1) ...
 *** Total 15 nets are successfully restored.
 *** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=935.2M) ***
-% End Load routing data ... (date=05/06 19:49:05, total cpu=0:00:00.0, real=0:00:00.0, peak res=926.9M, current mem=925.9M)
+% End Load routing data ... (date=05/07 23:54:47, total cpu=0:00:00.0, real=0:00:00.0, peak res=927.0M, current mem=926.1M)
 Loading Drc markers ...
 ... 7 markers are loaded ...
 ... 0 geometry drc markers are loaded ...
 ... 0 antenna drc markers are loaded ...
-TAT_INFO: restoreCongMap REAL = 1 : CPU = 0 : MEM = 0.
+TAT_INFO: restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
 Reading property file /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/7-cadence-innovus-place/checkpoints/design.checkpoint/save.enc.dat/ringosc.prop
 *** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=941.2M) ***
 Set Default Input Pin Transition as 0.1 ps.
@@ -226,15 +226,15 @@ Start generating vias ..
 Extracting standard cell pins and blockage ...... 
 Pin and blockage extraction finished
 Via generation completed.
-% Begin Load power constraints ... (date=05/06 19:49:06, mem=932.6M)
+% Begin Load power constraints ... (date=05/07 23:54:47, mem=932.8M)
 source /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/7-cadence-innovus-place/checkpoints/design.checkpoint/save.enc.dat/ringosc_power_constraints.tcl
 ** WARN:  (VOLTUS_POWR-3212): The 'set_power_analysis_mode -leakage_power_view |-dynamic_power_view|-analysis_view' will be obsolete in 18.20 release. Use 'set_analysis_view -leakage <> | -dynamic <>' to set leakage and dynamic power views.
 
-% End Load power constraints ... (date=05/06 19:49:06, total cpu=0:00:00.0, real=0:00:00.0, peak res=932.9M, current mem=932.9M)
-% Begin load AAE data ... (date=05/06 19:49:06, mem=939.7M)
+% End Load power constraints ... (date=05/07 23:54:48, total cpu=0:00:00.0, real=0:00:01.0, peak res=933.0M, current mem=933.0M)
+% Begin load AAE data ... (date=05/07 23:54:48, mem=939.9M)
 **WARN: (IMPESI-3505):	setDelayCalMode -eng_copyNetPropToNewNet true (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
 AAE DB initialization (MEM=969.707 CPU=0:00:00.0 REAL=0:00:00.0) 
-% End load AAE data ... (date=05/06 19:49:06, total cpu=0:00:00.3, real=0:00:00.0, peak res=945.4M, current mem=945.4M)
+% End load AAE data ... (date=05/07 23:54:48, total cpu=0:00:00.3, real=0:00:00.0, peak res=945.6M, current mem=945.6M)
 Total number of combinational cells: 2
 Total number of sequential cells: 0
 Total number of tristate cells: 0
@@ -260,7 +260,7 @@ Total number of identified unusable delay cells: 0
 No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
 **WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.13-s083_1. They will be removed in the next release. 
 timing_enable_default_delay_arc
-#% End load design ... (date=05/06 19:49:06, total cpu=0:00:02.1, real=0:00:04.0, peak res=970.2M, current mem=945.4M)
+#% End load design ... (date=05/07 23:54:48, total cpu=0:00:02.0, real=0:00:04.0, peak res=970.3M, current mem=945.6M)
 
 *** Summary of all messages that are not suppressed in this session:
 Severity  ID               Count  Summary                                  
@@ -336,8 +336,8 @@ Type 'man IMPSP-5123' for more detail.
 # puts "<FF> Plugin -> pre_route_tcl"
 <FF> Plugin -> pre_route_tcl
 # routeDesign -placementCheck
-#% Begin routeDesign (date=05/06 19:49:06, mem=945.4M)
-#routeDesign: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 945.43 (MB), peak = 970.16 (MB)
+#% Begin routeDesign (date=05/07 23:54:48, mem=945.6M)
+#routeDesign: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 945.60 (MB), peak = 970.33 (MB)
 **INFO: User settings:
 setNanoRouteMode -drouteUseMultiCutViaEffort                    high
 setNanoRouteMode -extractThirdPartyCompatible                   false
@@ -384,31 +384,31 @@ changeUseClockNetStatus Option :  -noFixedNetWires
 *** Changed status on (0) nets in Clock.
 *** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=1071.4M) ***
 #**INFO: auto set of droutePostRouteSwapVia to multiCut
-% Begin globalDetailRoute (date=05/06 19:49:07, mem=1016.8M)
+% Begin globalDetailRoute (date=05/07 23:54:48, mem=1017.0M)
 
 globalDetailRoute
 
-#Start globalDetailRoute on Fri May  6 19:49:07 2022
+#Start globalDetailRoute on Sat May  7 23:54:48 2022
 #
 #Generating timing data, please wait...
 #5 total nets, 5 already routed, 5 will ignore in trialRoute
 #Dump tif for version 2.1
 Total number of fetched objects 5
 AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
-End delay calculation. (MEM=1334.62 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation. (MEM=1325.08 CPU=0:00:00.0 REAL=0:00:00.0)
 
-#Generating timing data took: cpu time = 00:00:00, elapsed time = 00:00:01, memory = 1046.65 (MB), peak = 1074.95 (MB)
+#Generating timing data took: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1055.81 (MB), peak = 1085.79 (MB)
 #Done generating timing data.
-#create default rule from bind_ndr_rule rule=0x14568c8143d0 0x14568c914fc0
+#create default rule from bind_ndr_rule rule=0x145e534ae3d0 0x145e4ae16fc0
 #WARNING (NRIG-1303) Congestion map does not match the GCELL grid, clearing map.
 #num needed restored net=0
 #need_extraction net=0 (total=15)
 #WARNING (NRDB-976) The TRACK STEP 0.6100 for preferred direction tracks is smaller than the PITCH 0.6800 for LAYER met3. This will cause routability problems for NanoRoute.
 #WARNING (NRDB-976) The TRACK STEP 0.6900 for preferred direction tracks is smaller than the PITCH 0.9200 for LAYER met4. This will cause routability problems for NanoRoute.
-#Start reading timing information from file .timing_file_4058498.tif.gz ...
+#Start reading timing information from file .timing_file_117131.tif.gz ...
 #WARNING (NRDB-194) 
 #No setup time constraints read in
-#Read in timing information for 0 ports, 10 instances from timing file .timing_file_4058498.tif.gz.
+#Read in timing information for 0 ports, 10 instances from timing file .timing_file_117131.tif.gz.
 #NanoRoute Version 20.13-s083_1 NR201221-0721/20_13-UB
 #Total number of trivial nets (e.g. < 2 pins) = 8 (skipped).
 #Total number of routable nets = 7.
@@ -416,7 +416,7 @@ End delay calculation. (MEM=1334.62 CPU=0:00:00.0 REAL=0:00:00.0)
 #7 routable nets do not have any wires.
 #7 nets will be global routed.
 #Using multithreading with 16 threads.
-#Start routing data preparation on Fri May  6 19:49:07 2022
+#Start routing data preparation on Sat May  7 23:54:49 2022
 #
 #WARNING (NRDB-2040) Rule LEF_DEFAULT doesn't specify any vias that satisfy all of the area rules for layer met3 
 #Minimum voltage of a net in the design = 0.000.
@@ -434,12 +434,12 @@ End delay calculation. (MEM=1334.62 CPU=0:00:00.0 REAL=0:00:00.0)
 # met4         V   Track-Pitch = 0.6900    Line-2-Via Pitch = 0.6150
 # met5         H   Track-Pitch = 3.6600    Line-2-Via Pitch = 3.2000
 #Monitoring time of adding inner blkg by smac
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1067.96 (MB), peak = 1139.64 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1077.71 (MB), peak = 1148.76 (MB)
 #Regenerating Ggrids automatically.
 #Auto generating G-grids with size=15 tracks, using layer met2's pitch = 0.4600.
 #Using automatically generated G-grids.
 #Done routing data preparation.
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1072.05 (MB), peak = 1139.64 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1081.48 (MB), peak = 1148.76 (MB)
 #
 #Connectivity extraction summary:
 #7 (46.67%) nets are without wires.
@@ -447,27 +447,27 @@ End delay calculation. (MEM=1334.62 CPU=0:00:00.0 REAL=0:00:00.0)
 #Total number of nets = 15.
 #
 #
-#Finished routing data preparation on Fri May  6 19:49:07 2022
+#Finished routing data preparation on Sat May  7 23:54:49 2022
 #
 #Cpu time = 00:00:00
 #Elapsed time = 00:00:00
-#Increased memory = 10.29 (MB)
-#Total memory = 1072.11 (MB)
-#Peak memory = 1139.64 (MB)
+#Increased memory = 10.57 (MB)
+#Total memory = 1081.55 (MB)
+#Peak memory = 1148.76 (MB)
 #
 #
-#Start global routing on Fri May  6 19:49:07 2022
+#Start global routing on Sat May  7 23:54:49 2022
 #
 #
-#Start global routing initialization on Fri May  6 19:49:07 2022
+#Start global routing initialization on Sat May  7 23:54:49 2022
 #
 #Number of eco nets is 0
 #
-#Start global routing data preparation on Fri May  6 19:49:07 2022
+#Start global routing data preparation on Sat May  7 23:54:49 2022
 #
-#Start routing resource analysis on Fri May  6 19:49:07 2022
+#Start routing resource analysis on Sat May  7 23:54:49 2022
 #
-#Routing resource analysis is done on Fri May  6 19:49:07 2022
+#Routing resource analysis is done on Sat May  7 23:54:49 2022
 #
 #  Resource Analysis:
 #
@@ -486,20 +486,20 @@ End delay calculation. (MEM=1334.62 CPU=0:00:00.0 REAL=0:00:00.0)
 #
 #
 #
-#Global routing data preparation is done on Fri May  6 19:49:07 2022
+#Global routing data preparation is done on Sat May  7 23:54:49 2022
 #
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1077.17 (MB), peak = 1139.64 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1088.02 (MB), peak = 1148.76 (MB)
 #
 #
-#Global routing initialization is done on Fri May  6 19:49:07 2022
+#Global routing initialization is done on Sat May  7 23:54:49 2022
 #
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1077.23 (MB), peak = 1139.64 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1088.08 (MB), peak = 1148.76 (MB)
 #
 #start global routing iteration 1...
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1078.92 (MB), peak = 1139.64 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1089.50 (MB), peak = 1148.76 (MB)
 #
 #start global routing iteration 2...
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1078.92 (MB), peak = 1139.64 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1089.50 (MB), peak = 1148.76 (MB)
 #
 #
 #Total number of trivial nets (e.g. < 2 pins) = 8 (skipped).
@@ -586,14 +586,14 @@ Local HotSpot Analysis (3d): normalized congestion max/total hotspot area = 0.00
 #Global routing statistics:
 #Cpu time = 00:00:00
 #Elapsed time = 00:00:00
-#Increased memory = 4.26 (MB)
-#Total memory = 1076.37 (MB)
-#Peak memory = 1139.64 (MB)
+#Increased memory = 5.40 (MB)
+#Total memory = 1086.95 (MB)
+#Peak memory = 1148.76 (MB)
 #
-#Finished global routing on Fri May  6 19:49:07 2022
+#Finished global routing on Sat May  7 23:54:49 2022
 #
 #
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1076.37 (MB), peak = 1139.64 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1086.95 (MB), peak = 1148.76 (MB)
 #Start Track Assignment.
 #Done with 11 horizontal wires in 1 hboxes and 0 vertical wires in 1 hboxes.
 #Done with 3 horizontal wires in 1 hboxes and 0 vertical wires in 1 hboxes.
@@ -628,14 +628,14 @@ Local HotSpot Analysis (3d): normalized congestion max/total hotspot area = 0.00
 #-----------------------
 #                    24 
 #
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1076.54 (MB), peak = 1139.64 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1087.09 (MB), peak = 1148.76 (MB)
 #
 #Routing data preparation, pin analysis, global routing and track assignment statistics:
 #Cpu time = 00:00:00
 #Elapsed time = 00:00:00
-#Increased memory = 14.84 (MB)
-#Total memory = 1076.54 (MB)
-#Peak memory = 1139.64 (MB)
+#Increased memory = 16.18 (MB)
+#Total memory = 1087.09 (MB)
+#Peak memory = 1148.76 (MB)
 #Using multithreading with 16 threads.
 #
 #Start Detail Routing..
@@ -643,7 +643,7 @@ Local HotSpot Analysis (3d): normalized congestion max/total hotspot area = 0.00
 #Start litho driven routing to prevent litho hotspot patterns.
 #start initial detail routing ...
 #   number of violations = 0
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1082.73 (MB), peak = 1139.64 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1093.31 (MB), peak = 1148.76 (MB)
 #Complete Detail Routing.
 #Total wire length = 195 um.
 #Total half perimeter of net bounding box = 280 um.
@@ -665,12 +665,12 @@ Local HotSpot Analysis (3d): normalized congestion max/total hotspot area = 0.00
 #Total number of DRC violations = 0
 #Cpu time = 00:00:00
 #Elapsed time = 00:00:00
-#Increased memory = 3.53 (MB)
-#Total memory = 1080.06 (MB)
-#Peak memory = 1139.64 (MB)
+#Increased memory = 3.56 (MB)
+#Total memory = 1090.65 (MB)
+#Peak memory = 1148.76 (MB)
 #
 #start routing for process antenna violation fix ...
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1082.47 (MB), peak = 1139.64 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1093.05 (MB), peak = 1148.76 (MB)
 #
 #Total wire length = 195 um.
 #Total half perimeter of net bounding box = 280 um.
@@ -722,7 +722,7 @@ Local HotSpot Analysis (3d): normalized congestion max/total hotspot area = 0.00
 #Start Post Route via swapping...
 #79.10% of area are rerouted by ECO routing.
 #   number of violations = 0
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1079.04 (MB), peak = 1139.64 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1089.92 (MB), peak = 1148.76 (MB)
 #CELL_VIEW ringosc,init has no DRC violation.
 #Total number of DRC violations = 0
 #Total number of process antenna violations = 0
@@ -752,7 +752,7 @@ Local HotSpot Analysis (3d): normalized congestion max/total hotspot area = 0.00
 #
 #Start DRC checking..
 #   number of violations = 0
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1081.84 (MB), peak = 1139.64 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1092.73 (MB), peak = 1148.76 (MB)
 #CELL_VIEW ringosc,init has no DRC violation.
 #Total number of DRC violations = 0
 #Total number of process antenna violations = 0
@@ -760,7 +760,7 @@ Local HotSpot Analysis (3d): normalized congestion max/total hotspot area = 0.00
 #
 #Start data preparation for wire spreading...
 #
-#Data preparation is done on Fri May  6 19:49:08 2022
+#Data preparation is done on Sat May  7 23:54:50 2022
 #
 #WARNING (NRDB-104) Cannot find antenna cell. Please set option 'route_antenna_cell_name', or change your LEF file.
 #
@@ -788,14 +788,14 @@ Local HotSpot Analysis (3d): normalized congestion max/total hotspot area = 0.00
 #
 #Start DRC checking..
 #   number of violations = 0
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1091.36 (MB), peak = 1139.64 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1102.49 (MB), peak = 1148.76 (MB)
 #CELL_VIEW ringosc,init has no DRC violation.
 #Total number of DRC violations = 0
 #Total number of process antenna violations = 0
 #Total number of net violated process antenna rule = 0 ant fix stage
 #WARNING (NRDB-104) Cannot find antenna cell. Please set option 'route_antenna_cell_name', or change your LEF file.
 #   number of violations = 0
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1091.37 (MB), peak = 1139.64 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1102.33 (MB), peak = 1148.76 (MB)
 #CELL_VIEW ringosc,init has no DRC violation.
 #Total number of DRC violations = 0
 #Total number of process antenna violations = 0
@@ -821,23 +821,23 @@ Local HotSpot Analysis (3d): normalized congestion max/total hotspot area = 0.00
 #detailRoute Statistics:
 #Cpu time = 00:00:01
 #Elapsed time = 00:00:01
-#Increased memory = 11.99 (MB)
-#Total memory = 1088.53 (MB)
-#Peak memory = 1139.64 (MB)
+#Increased memory = 12.58 (MB)
+#Total memory = 1099.66 (MB)
+#Peak memory = 1148.76 (MB)
 #
 #globalDetailRoute statistics:
 #Cpu time = 00:00:02
 #Elapsed time = 00:00:02
-#Increased memory = 79.40 (MB)
-#Total memory = 1096.25 (MB)
-#Peak memory = 1139.64 (MB)
+#Increased memory = 90.89 (MB)
+#Total memory = 1107.91 (MB)
+#Peak memory = 1148.76 (MB)
 #Number of warnings = 11
 #Total number of warnings = 13
 #Number of fails = 0
 #Total number of fails = 0
-#Complete globalDetailRoute on Fri May  6 19:49:08 2022
+#Complete globalDetailRoute on Sat May  7 23:54:50 2022
 #
-% End globalDetailRoute (date=05/06 19:49:08, total cpu=0:00:01.9, real=0:00:01.0, peak res=1139.6M, current mem=1087.3M)
+% End globalDetailRoute (date=05/07 23:54:50, total cpu=0:00:01.7, real=0:00:02.0, peak res=1148.8M, current mem=1097.6M)
 #Default setup view is reset to analysis_default.
 #Default setup view is reset to analysis_default.
 UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
@@ -858,15 +858,15 @@ Bits Per Flop        :         -nan
 [hotspot] +------------+---------------+---------------+
 Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:           2.43              3                                      route_design
-#routeDesign: cpu time = 00:00:02, elapsed time = 00:00:02, memory = 1077.48 (MB), peak = 1139.64 (MB)
+UM:           2.24              2                                      route_design
+#routeDesign: cpu time = 00:00:02, elapsed time = 00:00:02, memory = 1087.82 (MB), peak = 1148.76 (MB)
 *** Message Summary: 0 warning(s), 0 error(s)
 
-#% End routeDesign (date=05/06 19:49:09, total cpu=0:00:02.4, real=0:00:03.0, peak res=1139.6M, current mem=1077.5M)
+#% End routeDesign (date=05/07 23:54:50, total cpu=0:00:02.2, real=0:00:02.0, peak res=1148.8M, current mem=1087.9M)
 # setNanoRouteMode -droutePostRouteSpreadWire true -routeWithTimingDriven false
 # routeDesign -wireOpt
-#% Begin routeDesign (date=05/06 19:49:09, mem=1077.5M)
-#routeDesign: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1077.55 (MB), peak = 1139.64 (MB)
+#% Begin routeDesign (date=05/07 23:54:50, mem=1087.9M)
+#routeDesign: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1087.88 (MB), peak = 1148.76 (MB)
 **INFO: User settings:
 setNanoRouteMode -droutePostRouteSpreadWire                     true
 setNanoRouteMode -drouteUseMultiCutViaEffort                    high
@@ -896,28 +896,28 @@ setSIMode -separate_delta_delay_on_data                         true
 #**INFO: setDesignMode -flowEffort standard
 #**INFO: multi-cut via swapping will not be performed after routing.
 #**INFO: All auto set options tuned by routeDesign will be restored to their original settings on command completion.
-Begin checking placement ... (start mem=1147.7M, init mem=1147.7M)
+Begin checking placement ... (start mem=1159.4M, init mem=1159.4M)
 *info: Placed = 10            
 *info: Unplaced = 0           
 Placement Density:30.15%(306/1013)
 Placement Density (including fixed std cells):30.15%(306/1013)
-Finished checkPlace (total: cpu=0:00:00.0, real=0:00:00.0; vio checks: cpu=0:00:00.0, real=0:00:00.0; mem=1147.7M)
+Finished checkPlace (total: cpu=0:00:00.0, real=0:00:00.0; vio checks: cpu=0:00:00.0, real=0:00:00.0; mem=1159.4M)
 
 changeUseClockNetStatus Option :  -noFixedNetWires 
 *** Changed status on (0) nets in Clock.
-*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=1147.7M) ***
-% Begin detailRoute (date=05/06 19:49:09, mem=1077.6M)
+*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=1159.4M) ***
+% Begin detailRoute (date=05/07 23:54:51, mem=1087.9M)
 
 detailRoute
 
-#Start detailRoute on Fri May  6 19:49:09 2022
+#Start detailRoute on Sat May  7 23:54:51 2022
 #
 #num needed restored net=0
 #need_extraction net=0 (total=15)
 #WARNING (NRDB-976) The TRACK STEP 0.6100 for preferred direction tracks is smaller than the PITCH 0.6800 for LAYER met3. This will cause routability problems for NanoRoute.
 #WARNING (NRDB-976) The TRACK STEP 0.6900 for preferred direction tracks is smaller than the PITCH 0.9200 for LAYER met4. This will cause routability problems for NanoRoute.
 #NanoRoute Version 20.13-s083_1 NR201221-0721/20_13-UB
-#Start routing data preparation on Fri May  6 19:49:09 2022
+#Start routing data preparation on Sat May  7 23:54:51 2022
 #
 #Minimum voltage of a net in the design = 0.000.
 #Maximum voltage of a net in the design = 1.800.
@@ -933,19 +933,19 @@ detailRoute
 # met4         V   Track-Pitch = 0.6900    Line-2-Via Pitch = 0.6150
 # met5         H   Track-Pitch = 3.6600    Line-2-Via Pitch = 3.2000
 #Monitoring time of adding inner blkg by smac
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1091.94 (MB), peak = 1139.64 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1102.23 (MB), peak = 1148.76 (MB)
 #Regenerating Ggrids automatically.
 #Auto generating G-grids with size=15 tracks, using layer met2's pitch = 0.4600.
 #Using automatically generated G-grids.
 #Done routing data preparation.
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1094.66 (MB), peak = 1139.64 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1104.93 (MB), peak = 1148.76 (MB)
 #WARNING (NRDB-104) Cannot find antenna cell. Please set option 'route_antenna_cell_name', or change your LEF file.
 #
 #Start Post Route wire spreading..
 #
 #Start data preparation for wire spreading...
 #
-#Data preparation is done on Fri May  6 19:49:09 2022
+#Data preparation is done on Sat May  7 23:54:51 2022
 #
 #WARNING (NRDB-104) Cannot find antenna cell. Please set option 'route_antenna_cell_name', or change your LEF file.
 #
@@ -972,7 +972,7 @@ detailRoute
 #
 #WARNING (NRDB-104) Cannot find antenna cell. Please set option 'route_antenna_cell_name', or change your LEF file.
 #   number of violations = 0
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1106.27 (MB), peak = 1139.64 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1116.60 (MB), peak = 1148.76 (MB)
 #CELL_VIEW ringosc,init has no DRC violation.
 #Total number of DRC violations = 0
 #Total number of process antenna violations = 0
@@ -999,16 +999,16 @@ detailRoute
 #detailRoute statistics:
 #Cpu time = 00:00:00
 #Elapsed time = 00:00:00
-#Increased memory = 22.60 (MB)
-#Total memory = 1100.20 (MB)
-#Peak memory = 1139.64 (MB)
+#Increased memory = 22.93 (MB)
+#Total memory = 1110.78 (MB)
+#Peak memory = 1148.76 (MB)
 #Number of warnings = 5
 #Total number of warnings = 18
 #Number of fails = 0
 #Total number of fails = 0
-#Complete detailRoute on Fri May  6 19:49:09 2022
+#Complete detailRoute on Sat May  7 23:54:51 2022
 #
-% End detailRoute (date=05/06 19:49:09, total cpu=0:00:00.3, real=0:00:00.0, peak res=1092.7M, current mem=1092.7M)
+% End detailRoute (date=05/07 23:54:51, total cpu=0:00:00.3, real=0:00:00.0, peak res=1103.3M, current mem=1103.3M)
 #Default setup view is reset to analysis_default.
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
 UM:*                                                                   final
@@ -1028,11 +1028,11 @@ Bits Per Flop        :         -nan
 [hotspot] +------------+---------------+---------------+
 Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:           0.64              0                                      route_design
-#routeDesign: cpu time = 00:00:01, elapsed time = 00:00:01, memory = 1080.85 (MB), peak = 1139.64 (MB)
+UM:           0.61              1                                      route_design
+#routeDesign: cpu time = 00:00:01, elapsed time = 00:00:01, memory = 1091.34 (MB), peak = 1148.76 (MB)
 *** Message Summary: 0 warning(s), 0 error(s)
 
-#% End routeDesign (date=05/06 19:49:09, total cpu=0:00:00.6, real=0:00:01.0, peak res=1092.7M, current mem=1080.9M)
+#% End routeDesign (date=05/07 23:54:51, total cpu=0:00:00.6, real=0:00:01.0, peak res=1103.3M, current mem=1091.3M)
 # setNanoRouteMode -droutePostRouteSpreadWire false
 # setExtractRCMode -engine postRoute -effortLevel low
 # puts "<FF> Plugin -> post_route_tcl"
@@ -1055,24 +1055,24 @@ Bits Per Flop        :         -nan
 [hotspot] +------------+---------------+---------------+
 Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:            4.7              7                                      route
+UM:           4.43              6                                      route
 # report_metric -file reports/metrics.html -format html
 # return
 ### End verbose source output for 'innovus-foundation-flow/INNOVUS/run_route.tcl'.
 ### End verbose source output for 'scripts/main.tcl'.
-#% Begin save design ... (date=05/06 19:49:10, mem=1082.7M)
-% Begin Save ccopt configuration ... (date=05/06 19:49:10, mem=1085.7M)
-% End Save ccopt configuration ... (date=05/06 19:49:10, total cpu=0:00:00.0, real=0:00:00.0, peak res=1087.6M, current mem=1087.6M)
-% Begin Save netlist data ... (date=05/06 19:49:10, mem=1107.5M)
+#% Begin save design ... (date=05/07 23:54:52, mem=1093.4M)
+% Begin Save ccopt configuration ... (date=05/07 23:54:52, mem=1096.4M)
+% End Save ccopt configuration ... (date=05/07 23:54:52, total cpu=0:00:00.0, real=0:00:00.0, peak res=1098.2M, current mem=1098.2M)
+% Begin Save netlist data ... (date=05/07 23:54:52, mem=1118.1M)
 Writing Binary DB to checkpoints/design.checkpoint/save.enc.dat/vbin/ringosc.v.bin in multi-threaded mode...
-% End Save netlist data ... (date=05/06 19:49:10, total cpu=0:00:00.0, real=0:00:00.0, peak res=1116.6M, current mem=1116.6M)
+% End Save netlist data ... (date=05/07 23:54:52, total cpu=0:00:00.0, real=0:00:00.0, peak res=1127.3M, current mem=1127.3M)
 Saving symbol-table file in separate thread ...
 Saving congestion map file in separate thread ...
-% Begin Save AAE data ... (date=05/06 19:49:10, mem=1117.0M)
-Saving AAE Data ...
 Saving congestion map file checkpoints/design.checkpoint/save.enc.dat/ringosc.route.congmap.gz ...
-AAE DB initialization (MEM=1187.96 CPU=0:00:00.0 REAL=0:00:00.0) 
-% End Save AAE data ... (date=05/06 19:49:10, total cpu=0:00:00.0, real=0:00:00.0, peak res=1117.5M, current mem=1117.5M)
+% Begin Save AAE data ... (date=05/07 23:54:52, mem=1127.7M)
+Saving AAE Data ...
+AAE DB initialization (MEM=1198.62 CPU=0:00:00.0 REAL=0:00:00.0) 
+% End Save AAE data ... (date=05/07 23:54:52, total cpu=0:00:00.0, real=0:00:00.0, peak res=1128.2M, current mem=1128.2M)
 Saving preference file checkpoints/design.checkpoint/save.enc.dat/gui.pref.tcl ...
 Saving mode setting ...
 Saving global file ...
@@ -1085,31 +1085,31 @@ Saving PG file in separate thread ...
 Saving placement file in separate thread ...
 Saving route file in separate thread ...
 Saving property file in separate thread ...
+TAT_INFO: ::saveSpecialRoute REAL = 0 : CPU = 0 : MEM = 0.
 ** Saving stdCellPlacement_binary (version# 2) ...
 Save Adaptive View Pruning View Names to Binary file
-TAT_INFO: ::saveSpecialRoute REAL = 0 : CPU = 0 : MEM = 0.
 Saving property file checkpoints/design.checkpoint/save.enc.dat/ringosc.prop
-Saving PG file checkpoints/design.checkpoint/save.enc.dat/ringosc.pg.gz, version#2, (Created by Innovus v20.13-s083_1 on Fri May  6 19:49:11 2022)
-*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1218.5M) ***
-*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1218.5M) ***
-TAT_INFO: ::savePGFile REAL = 0 : CPU = 0 : MEM = 0.
+Saving PG file checkpoints/design.checkpoint/save.enc.dat/ringosc.pg.gz, version#2, (Created by Innovus v20.13-s083_1 on Sat May  7 23:54:52 2022)
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1229.2M) ***
+*** Completed savePGFile (cpu=0:00:00.0 real=0:00:01.0 mem=1229.2M) ***
+TAT_INFO: ::savePGFile REAL = 1 : CPU = 0 : MEM = 0.
 TAT_INFO: ::savePlace REAL = 0 : CPU = 0 : MEM = 0.
-*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1218.5M) ***
-TAT_INFO: ::saveRoute REAL = 0 : CPU = 0 : MEM = 0.
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:01.0 mem=1229.2M) ***
+TAT_INFO: ::saveRoute REAL = 1 : CPU = 0 : MEM = 0.
 TAT_INFO: ::db::saveAnnotationAndProp REAL = 0 : CPU = 0 : MEM = 0.
 #Saving pin access data to file checkpoints/design.checkpoint/save.enc.dat/ringosc.apa ...
 #
 TAT_INFO: ::db::saveSymbolTable REAL = 0 : CPU = 0 : MEM = 0.
 TAT_INFO: ::saveCongMap REAL = 0 : CPU = 0 : MEM = 0.
-% Begin Save power constraints data ... (date=05/06 19:49:11, mem=1122.6M)
-% End Save power constraints data ... (date=05/06 19:49:11, total cpu=0:00:00.0, real=0:00:00.0, peak res=1122.7M, current mem=1122.7M)
+% Begin Save power constraints data ... (date=05/07 23:54:53, mem=1133.4M)
+% End Save power constraints data ... (date=05/07 23:54:53, total cpu=0:00:00.0, real=0:00:00.0, peak res=1133.6M, current mem=1133.6M)
 Generated self-contained design save.enc.dat
-#% End save design ... (date=05/06 19:49:12, total cpu=0:00:00.7, real=0:00:02.0, peak res=1154.5M, current mem=1124.2M)
+#% End save design ... (date=05/07 23:54:54, total cpu=0:00:00.7, real=0:00:02.0, peak res=1165.4M, current mem=1135.0M)
 *** Message Summary: 0 warning(s), 0 error(s)
 
 
-*** Memory Usage v#2 (Current mem = 1231.883M, initial mem = 275.727M) ***
+*** Memory Usage v#2 (Current mem = 1241.531M, initial mem = 275.727M) ***
 *** Message Summary: 25 warning(s), 0 error(s)
 
---- Ending "Innovus" (totcpu=0:00:21.8, real=0:00:32.0, mem=1231.9M) ---
+--- Ending "Innovus" (totcpu=0:00:21.7, real=0:00:35.0, mem=1241.5M) ---
 

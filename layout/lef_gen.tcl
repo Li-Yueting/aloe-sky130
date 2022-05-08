@@ -107,6 +107,68 @@ proc addlef {inst_name output_folder} {
         extract all
         ext2spice lvs
         ext2spice -o sky130_asc_nfet_01v8_lvt_1.spice
+    } elseif {$inst_name=={cap_1_flat}} {
+        property FIXED_BBOX {0 0 7171 1880}
+        # c0
+        findlabel c0
+        port make 
+        port class inout
+        # c1 
+        findlabel c1
+        port make 
+        port class inout
+        # VPWR
+        findlabel VPWR
+        port make 
+        port class inout
+        port use power
+        # VGND
+        findlabel VGND
+        port make 
+        port class inout
+        port use ground
+        cd $output_folder
+        cd ./mag
+        save sky130_fd_pr__cap_mim_m3_1.mag
+        cd ../lef
+        lef write sky130_fd_pr__cap_mim_m3_1.lef
+        cd ../gds
+        gds write sky130_fd_pr__cap_mim_m3_1.gds
+        cd ../spi
+        extract all
+        ext2spice lvs
+        ext2spice -o sky130_fd_pr__cap_mim_m3_1.spice
+    }  elseif {$inst_name=={cap_2_flat}} {
+        property FIXED_BBOX {0 0 11222 1880}
+        # c0
+        findlabel c0
+        port make 
+        port class inout
+        # c1 
+        findlabel c1
+        port make 
+        port class inout
+        # VPWR
+        findlabel VPWR
+        port make 
+        port class inout
+        port use power
+        # VGND
+        findlabel VGND
+        port make 
+        port class inout
+        port use ground
+        cd $output_folder
+        cd ./mag
+        save sky130_fd_pr__cap_mim_m3_2.mag
+        cd ../lef
+        lef write sky130_fd_pr__cap_mim_m3_2.lef
+        cd ../gds
+        gds write sky130_fd_pr__cap_mim_m3_2.gds
+        cd ../spi
+        extract all
+        ext2spice lvs
+        ext2spice -o sky130_fd_pr__cap_mim_m3_2.spice
     } else {
         puts "No inst lef generated ..."
     }

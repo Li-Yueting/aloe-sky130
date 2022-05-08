@@ -4,7 +4,7 @@ Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
 
 Version:	v20.13-s083_1, built Tue Jan 19 16:51:46 PST 2021
 Options:	-overwrite -nowin -init START.tcl -log logs/run.log 
-Date:		Fri May  6 19:46:56 2022
+Date:		Sat May  7 23:52:28 2022
 Host:		rice-503-20-north (x86_64 w/Linux 5.11.0-41-generic) (20cores*40cpus*Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz 28160KB)
 OS:		CentOS Linux release 7.9.2009 (Core)
 
@@ -57,8 +57,8 @@ Submit command for task runs will be: local
 <CMD> set init_pwr_net {VDD VNW VDDPST POC VDDCE VDDPE}
 # init_design
 <CMD> init_design
-#% Begin Load MMMC data ... (date=05/06 19:47:19, mem=668.4M)
-#% End Load MMMC data ... (date=05/06 19:47:19, total cpu=0:00:00.0, real=0:00:00.0, peak res=669.4M, current mem=669.4M)
+#% Begin Load MMMC data ... (date=05/07 23:52:53, mem=669.7M)
+#% End Load MMMC data ... (date=05/07 23:52:53, total cpu=0:00:00.0, real=0:00:00.0, peak res=670.7M, current mem=670.7M)
 typical
 
 Loading LEF file inputs/adk/rtk-tech.lef ...
@@ -80,8 +80,8 @@ Type 'man IMPLF-200' for more detail.
 **WARN: (IMPLF-200):	Pin 'DRAIN' in macro 'sky130_asc_nfet_01v8_lvt_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
 Type 'man IMPLF-200' for more detail.
 
-viaInitial starts at Fri May  6 19:47:19 2022
-viaInitial ends at Fri May  6 19:47:19 2022
+viaInitial starts at Sat May  7 23:52:53 2022
+viaInitial ends at Sat May  7 23:52:53 2022
 
 ##  Check design process and node:  
 ##  Both design process and tech node are not set.
@@ -91,17 +91,17 @@ Starting library reading in 'Multi-threaded flow' (with '16' threads)
 Reading libs_typical timing library /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/2-skywater-130nm/view-standard/stdcells.lib.
 Read 2 cells in library sky130_fd_sc_hd__tt_025C_1v80.
 Library reading multithread flow ended.
-*** End library_loading (cpu=0.01min, real=0.00min, mem=94.0M, fe_cpu=0.28min, fe_real=0.38min, fe_mem=755.0M) ***
-#% Begin Load netlist data ... (date=05/06 19:47:19, mem=695.1M)
-*** Begin netlist parsing (mem=755.0M) ***
+*** End library_loading (cpu=0.01min, real=0.00min, mem=92.0M, fe_cpu=0.27min, fe_real=0.42min, fe_mem=753.4M) ***
+#% Begin Load netlist data ... (date=05/07 23:52:53, mem=696.3M)
+*** Begin netlist parsing (mem=753.4M) ***
 Created 2 new cells from 1 timing libraries.
 Reading netlist ...
 Backslashed names will retain backslash and a trailing blank character.
 Reading verilog netlist './inputs/design.v'
 
-*** Memory Usage v#2 (Current mem = 754.965M, initial mem = 275.727M) ***
-*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=755.0M) ***
-#% End Load netlist data ... (date=05/06 19:47:19, total cpu=0:00:00.0, real=0:00:00.0, peak res=699.5M, current mem=699.5M)
+*** Memory Usage v#2 (Current mem = 753.449M, initial mem = 275.727M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=753.4M) ***
+#% End Load netlist data ... (date=05/07 23:52:53, total cpu=0:00:00.0, real=0:00:00.0, peak res=700.6M, current mem=700.6M)
 Set top cell to ringosc.
 Hooked 2 DB cells to tlib cells.
 Starting recursive module instantiation check.
@@ -112,7 +112,7 @@ Set DBUPerIGU to techSite unitasc width 490.
 ** info: there are 3 modules.
 ** info: there are 10 stdCell insts.
 
-*** Memory Usage v#2 (Current mem = 766.379M, initial mem = 275.727M) ***
+*** Memory Usage v#2 (Current mem = 766.863M, initial mem = 275.727M) ***
 **WARN: (IMPFP-3961):	The techSite 'unithddbl' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
 Type 'man IMPFP-3961' for more detail.
 **WARN: (IMPFP-3961):	The techSite 'unithd' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
@@ -154,10 +154,10 @@ Initializing multi-corner capacitance tables ...
 Initializing multi-corner resistance tables ...
 *Info: initialize multi-corner CTS.
 Reading timing constraints file './inputs/design.sdc' ...
-Current (total cpu=0:00:17.2, real=0:00:24.0, peak res=914.4M, current mem=914.4M)
+Current (total cpu=0:00:16.7, real=0:00:26.0, peak res=915.5M, current mem=915.5M)
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=915.1M, current mem=915.1M)
-Current (total cpu=0:00:17.3, real=0:00:24.0, peak res=915.1M, current mem=915.1M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=916.3M, current mem=916.3M)
+Current (total cpu=0:00:16.7, real=0:00:26.0, peak res=916.3M, current mem=916.3M)
 Total number of combinational cells: 2
 Total number of sequential cells: 0
 Total number of tristate cells: 0
@@ -185,8 +185,8 @@ No delay cells were detected in the set of buffers. Buffers will be used to fix 
 Type 'man IMPOPT-3000' for more detail.
 **WARN: (IMPOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
 Type 'man IMPOPT-3001' for more detail.
-#% Begin Load MMMC data ... (date=05/06 19:47:20, mem=944.6M)
-#% End Load MMMC data ... (date=05/06 19:47:20, total cpu=0:00:00.0, real=0:00:00.0, peak res=944.6M, current mem=944.6M)
+#% Begin Load MMMC data ... (date=05/07 23:52:54, mem=945.8M)
+#% End Load MMMC data ... (date=05/07 23:52:54, total cpu=0:00:00.0, real=0:00:00.0, peak res=945.8M, current mem=945.8M)
 
 *** Summary of all messages that are not suppressed in this session:
 Severity  ID               Count  Summary                                  
@@ -235,7 +235,7 @@ Applying the recommended capacitance filtering threshold values for 130nm proces
 # puts "<FF> Plugin -> post_init_tcl"
 # timeDesign -preplace -prefix preplace -outDir reports -expandedViews
 <CMD> timeDesign -preplace -prefix preplace -outDir reports -expandedViews
-*** timeDesign #1 [begin] : totSession cpu/real = 0:00:17.4/0:00:22.7 (0.8), mem = 1002.5M
+*** timeDesign #1 [begin] : totSession cpu/real = 0:00:16.9/0:00:24.5 (0.7), mem = 1003.0M
 
 **INFO: Power effort not set by setOptMode, so setting 'setOptMode -powerEffort high', as set by setDesignMode
 Setting timing_disable_library_data_to_data_checks to 'true'.
@@ -254,7 +254,7 @@ Set Default Net Delay as 0 ps.
 Set Default Net Load as 0 pF. 
 Starting delay calculation for Setup views
 **WARN: (IMPESI-3505):	setDelayCalMode -eng_copyNetPropToNewNet true (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
-AAE DB initialization (MEM=1147.13 CPU=0:00:00.0 REAL=0:00:00.0) 
+AAE DB initialization (MEM=1146.62 CPU=0:00:00.0 REAL=0:00:00.0) 
 #################################################################################
 # Design Stage: PreRoute
 # Design Name: ringosc
@@ -264,12 +264,12 @@ AAE DB initialization (MEM=1147.13 CPU=0:00:00.0 REAL=0:00:00.0)
 # Signoff Settings: SI Off 
 #################################################################################
 Calculate delays in Single mode...
-Start delay calculation (fullDC) (16 T). (MEM=1231.58)
+Start delay calculation (fullDC) (16 T). (MEM=1232.06)
 siFlow : Timing analysis mode is single, using late cdB files
 Total number of fetched objects 5
-End delay calculation. (MEM=1447.88 CPU=0:00:00.0 REAL=0:00:00.0)
-End delay calculation (fullDC). (MEM=1447.88 CPU=0:00:00.2 REAL=0:00:00.0)
-*** Done Building Timing Graph (cpu=0:00:00.8 real=0:00:00.0 totSessionCpu=0:00:18.5 mem=1399.9M)
+End delay calculation. (MEM=1428.82 CPU=0:00:00.1 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1428.82 CPU=0:00:00.1 REAL=0:00:01.0)
+*** Done Building Timing Graph (cpu=0:00:00.7 real=0:00:01.0 totSessionCpu=0:00:17.9 mem=1388.8M)
 
 ------------------------------------------------------------------
           timeDesign Summary
@@ -299,25 +299,25 @@ Resetting back High Fanout Nets as non-ideal
 Set Default Net Delay as 1000 ps.
 Set Default Net Load as 0.5 pF. 
 Reported timing to dir reports
-Total CPU time: 1.15 sec
+Total CPU time: 1.07 sec
 Total Real time: 1.0 sec
-Total Memory Usage: 1225.351562 Mbytes
-*** timeDesign #1 [finish] : cpu/real = 0:00:01.1/0:00:01.1 (1.0), totSession cpu/real = 0:00:18.6/0:00:23.8 (0.8), mem = 1225.4M
+Total Memory Usage: 1221.296875 Mbytes
+*** timeDesign #1 [finish] : cpu/real = 0:00:01.1/0:00:01.0 (1.0), totSession cpu/real = 0:00:17.9/0:00:25.5 (0.7), mem = 1221.3M
 # checkDesign -all
 <CMD> checkDesign -all
 Creating directory checkDesign.
 **WARN: (IMPREPO-207):	There are 1 Cells dimensions not multiple integer of site.
 **Info: (IMPSP-307): Design contains fractional 1 cell.
-Begin checking placement ... (start mem=1225.4M, init mem=1255.4M)
+Begin checking placement ... (start mem=1221.3M, init mem=1251.3M)
 *info: Recommended don't use cell = 0           
 *info: Placed = 0             
 *info: Unplaced = 10          
 Placement Density:70.56%(306/433)
 Placement Density (including fixed std cells):70.56%(306/433)
-Finished checkPlace (total: cpu=0:00:00.0, real=0:00:00.0; vio checks: cpu=0:00:00.0, real=0:00:00.0; mem=1255.4M)
+Finished checkPlace (total: cpu=0:00:00.0, real=0:00:00.0; vio checks: cpu=0:00:00.0, real=0:00:00.0; mem=1251.3M)
 ############################################################################
 # Innovus Netlist Design Rule Check
-# Fri May  6 19:47:21 2022
+# Sat May  7 23:52:55 2022
 
 ############################################################################
 Design: ringosc
@@ -405,10 +405,10 @@ WARNING   IMPREPO-221          1  There are %d Output term shorted to Powe...
 # Signoff Settings: SI Off 
 #################################################################################
 Calculate delays in Single mode...
-Start delay calculation (fullDC) (16 T). (MEM=1255.35)
+Start delay calculation (fullDC) (16 T). (MEM=1251.3)
 Total number of fetched objects 5
-End delay calculation. (MEM=1465.19 CPU=0:00:00.0 REAL=0:00:00.0)
-End delay calculation (fullDC). (MEM=1465.19 CPU=0:00:00.1 REAL=0:00:00.0)
+End delay calculation. (MEM=1459.13 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1459.13 CPU=0:00:00.0 REAL=0:00:00.0)
 # um::pop_snapshot_stack
 <CMD> um::pop_snapshot_stack
 # create_snapshot -name init -categories design
@@ -422,16 +422,16 @@ Total Bit Count      :            0
 Total FF Count       :            0
 Bits Per Flop        :         -nan
 ------------------------------------------------------------
-<CMD> get_metric -raw -id current -uuid ef64a3f1-d28d-41f8-9262-4a064b93b67d clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid ef64a3f1-d28d-41f8-9262-4a064b93b67d clock.PostConditioning.area.total
-<CMD> get_metric -raw -id current -uuid ef64a3f1-d28d-41f8-9262-4a064b93b67d clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid ef64a3f1-d28d-41f8-9262-4a064b93b67d clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid ef64a3f1-d28d-41f8-9262-4a064b93b67d clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid ef64a3f1-d28d-41f8-9262-4a064b93b67d clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid ef64a3f1-d28d-41f8-9262-4a064b93b67d clock.Construction.area.total
-<CMD> get_metric -raw -id current -uuid ef64a3f1-d28d-41f8-9262-4a064b93b67d clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 3b894ad0-eddc-4f6d-8479-355e845b3e32 clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 3b894ad0-eddc-4f6d-8479-355e845b3e32 clock.PostConditioning.area.total
+<CMD> get_metric -raw -id current -uuid 3b894ad0-eddc-4f6d-8479-355e845b3e32 clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 3b894ad0-eddc-4f6d-8479-355e845b3e32 clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 3b894ad0-eddc-4f6d-8479-355e845b3e32 clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 3b894ad0-eddc-4f6d-8479-355e845b3e32 clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 3b894ad0-eddc-4f6d-8479-355e845b3e32 clock.Construction.area.total
+<CMD> get_metric -raw -id current -uuid 3b894ad0-eddc-4f6d-8479-355e845b3e32 clock.Implementation.area.total
 UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:          18.91             26          0.000 ns          0.000 ns  init
+UM:          18.24             27          0.000 ns          0.000 ns  init
 # report_metric -file reports/metrics.html -format html
 <CMD> um::get_metric_definition -name *.drc
 <CMD> um::get_metric_definition -name *.drc.layer:*
@@ -773,7 +773,7 @@ Type 'man IMPFP-3961' for more detail.
 Type 'man IMPFP-3961' for more detail.
 # planDesign
 <CMD> planDesign
-#% Begin planDesign (date=05/06 19:47:22, mem=1102.6M)
+#% Begin planDesign (date=05/07 23:52:56, mem=1101.8M)
 **WARN: (IMPAFP-9024):	This command is hidden and will be obsolete in the next major release. For module placement, use proto_design instead. For macro placement, use place_design -concurrent_macros to place both standard cells and macros together.
 **WARN: (IMPAFP-9024):	This command is hidden and will be obsolete in the next major release. For module placement, use proto_design instead. For macro placement, use place_design -concurrent_macros to place both standard cells and macros together.
 **WARN: (IMPTCM-77):	Option "-honorOrientation" for command getPlanDesignMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
@@ -790,7 +790,7 @@ Extracting standard cell pins and blockage ......
 Pin and blockage extraction finished
 Extracting macro/IO cell pins and blockage ...... 
 Pin and blockage extraction finished
-*** Starting "NanoPlace(TM) placement v#4 (mem=1268.2M)" ...
+*** Starting "NanoPlace(TM) placement v#4 (mem=1265.1M)" ...
 **WARN: (IMPTS-146):	Buffer footprint is not specified.
 *** Virtual Timing Model is not created.
 No user-set net weight.
@@ -828,14 +828,14 @@ Enabling multi-CPU acceleration with 16 CPU(s) for placement
 === lastAutoLevel = 4 
 Iteration  1: Total net bbox = 0.000e+00 (0.00e+00 0.00e+00)
               Est.  stn bbox = 0.000e+00 (0.00e+00 0.00e+00)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1260.7M
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1255.6M
 User specified -module_cluster_mode =  0 
 Iteration  2: Total net bbox = 0.000e+00 (0.00e+00 0.00e+00)
               Est.  stn bbox = 0.000e+00 (0.00e+00 0.00e+00)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1260.7M
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1255.6M
 Iteration  3: Total net bbox = 9.145e+01 (5.42e+01 3.73e+01)
               Est.  stn bbox = 9.602e+01 (5.69e+01 3.92e+01)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1260.7M
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1255.6M
  RelinkConst: Total constraint = 0, Relinked 0 constraints . 
 User specified -fenceSpacing =  -1.0000 
 User specified fence spacing: -1.0000 um
@@ -876,13 +876,13 @@ Targets:
 Number of Total Targets: 0
 
 ================== Finished Auto-Fence Creation ===============
-*** Done Auto-Fence Creation, (cpu = 0:00:00.0, mem = 1272.1M, mem_delta = 11.5M) ***
+*** Done Auto-Fence Creation, (cpu = 0:00:00.0, mem = 1267.1M, mem_delta = 11.5M) ***
 End Auto fence creation 1.
 Iteration  4: Total net bbox = 9.026e+01 (5.39e+01 3.63e+01)
               Est.  stn bbox = 9.478e+01 (5.66e+01 3.81e+01)
-              cpu = 0:00:00.0 real = 0:00:01.0 mem = 1272.1M
-*** cost = 9.026e+01 (5.39e+01 3.63e+01) (cpu for global=0:00:00.0) real=458858:47:23***
-Placement multithread real runtime: 458858:47:23 with 16 threads.
+              cpu = 0:00:00.0 real = 0:00:01.0 mem = 1267.1M
+*** cost = 9.026e+01 (5.39e+01 3.63e+01) (cpu for global=0:00:00.0) real=458886:52:57***
+Placement multithread real runtime: 458886:52:57 with 16 threads.
 **WARN: (IMPDB-2078):	Output pin DRAIN of instance nfet5 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
 **WARN: (IMPDB-2078):	Output pin DRAIN of instance nfet4 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
 **WARN: (IMPDB-2078):	Output pin DRAIN of instance nfet3 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
@@ -933,7 +933,7 @@ WARNING   IMPAFP-9024          3  This command is hidden and will be obsol...
 WARNING   IMPTCM-77            3  Option "%s" for command %s is obsolete a...
 *** Message Summary: 18 warning(s), 0 error(s)
 
-#% End planDesign (date=05/06 19:47:23, total cpu=0:00:00.3, real=0:00:02.0, peak res=1106.3M, current mem=1092.7M)
+#% End planDesign (date=05/07 23:52:57, total cpu=0:00:00.3, real=0:00:01.0, peak res=1106.3M, current mem=1092.8M)
 ### End verbose source output for 'scripts/floorplan.tcl'.
 ### Start verbose source output (echo mode) for 'scripts/add-endcaps-welltaps.tcl' ...
 # echo "skipping add-endcaps-welltaps.tcl"
@@ -952,7 +952,7 @@ WARNING   IMPTCM-77            3  Option "%s" for command %s is obsolete a...
 ### Start verbose source output (echo mode) for 'scripts/reporting.tcl' ...
 # timeDesign -preplace -hold -expandedViews -prefix preplace -outDir $vars(rpt_dir)
 <CMD> timeDesign -preplace -hold -expandedViews -prefix preplace -outDir reports
-*** timeDesign #2 [begin] : totSession cpu/real = 0:00:19.4/0:00:26.0 (0.7), mem = 1262.1M
+*** timeDesign #2 [begin] : totSession cpu/real = 0:00:18.7/0:00:27.7 (0.7), mem = 1256.1M
 
 **INFO: Power effort not set by setOptMode, so setting 'setOptMode -powerEffort high', as set by setDesignMode
 Set Using Default Delay Limit as 101.
@@ -970,11 +970,11 @@ Starting delay calculation for Hold views
 # Signoff Settings: SI Off 
 #################################################################################
 Calculate delays in Single mode...
-Start delay calculation (fullDC) (16 T). (MEM=1296.75)
+Start delay calculation (fullDC) (16 T). (MEM=1290.21)
 Total number of fetched objects 5
-End delay calculation. (MEM=1491.59 CPU=0:00:00.0 REAL=0:00:00.0)
-End delay calculation (fullDC). (MEM=1491.59 CPU=0:00:00.1 REAL=0:00:00.0)
-*** Done Building Timing Graph (cpu=0:00:00.3 real=0:00:00.0 totSessionCpu=0:00:19.7 mem=1459.6M)
+End delay calculation. (MEM=1503.13 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1503.13 CPU=0:00:00.1 REAL=0:00:00.0)
+*** Done Building Timing Graph (cpu=0:00:00.3 real=0:00:00.0 totSessionCpu=0:00:19.0 mem=1471.1M)
 
 ------------------------------------------------------------------
           timeDesign Summary
@@ -1004,10 +1004,10 @@ Resetting back High Fanout Nets as non-ideal
 Set Default Net Delay as 1000 ps.
 Set Default Net Load as 0.5 pF. 
 Reported timing to dir reports
-Total CPU time: 0.41 sec
+Total CPU time: 0.38 sec
 Total Real time: 0.0 sec
-Total Memory Usage: 1269.070312 Mbytes
-*** timeDesign #2 [finish] : cpu/real = 0:00:00.4/0:00:00.4 (1.1), totSession cpu/real = 0:00:19.8/0:00:26.4 (0.8), mem = 1269.1M
+Total Memory Usage: 1262.609375 Mbytes
+*** timeDesign #2 [finish] : cpu/real = 0:00:00.4/0:00:00.4 (1.0), totSession cpu/real = 0:00:19.1/0:00:28.0 (0.7), mem = 1262.6M
 # report_ports > $vars(rpt_dir)/$vars(step).ports.rpt
 <CMD> report_ports > $vars(rpt_dir)/$vars(step).ports.rpt
 #################################################################################
@@ -1019,25 +1019,25 @@ Total Memory Usage: 1269.070312 Mbytes
 # Signoff Settings: SI Off 
 #################################################################################
 Calculate delays in Single mode...
-Start delay calculation (fullDC) (16 T). (MEM=1267.08)
+Start delay calculation (fullDC) (16 T). (MEM=1260.62)
 Total number of fetched objects 5
-End delay calculation. (MEM=1527.99 CPU=0:00:00.0 REAL=0:00:00.0)
-End delay calculation (fullDC). (MEM=1527.99 CPU=0:00:00.1 REAL=0:00:00.0)
+End delay calculation. (MEM=1502.45 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1502.45 CPU=0:00:00.1 REAL=0:00:00.0)
 ### End verbose source output for 'scripts/reporting.tcl'.
 <CMD> getVersion
 <CMD> saveDesign checkpoints/design.checkpoint/save.enc -user_path
-#% Begin save design ... (date=05/06 19:47:24, mem=1127.4M)
-% Begin Save ccopt configuration ... (date=05/06 19:47:24, mem=1130.4M)
-% End Save ccopt configuration ... (date=05/06 19:47:24, total cpu=0:00:00.0, real=0:00:00.0, peak res=1132.2M, current mem=1132.2M)
-% Begin Save netlist data ... (date=05/06 19:47:24, mem=1132.2M)
+#% Begin save design ... (date=05/07 23:52:58, mem=1128.4M)
+% Begin Save ccopt configuration ... (date=05/07 23:52:58, mem=1131.4M)
+% End Save ccopt configuration ... (date=05/07 23:52:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=1133.3M, current mem=1133.3M)
+% Begin Save netlist data ... (date=05/07 23:52:58, mem=1133.3M)
 Writing Binary DB to checkpoints/design.checkpoint/save.enc.dat/vbin/ringosc.v.bin in multi-threaded mode...
-% End Save netlist data ... (date=05/06 19:47:24, total cpu=0:00:00.0, real=0:00:00.0, peak res=1141.2M, current mem=1141.2M)
+% End Save netlist data ... (date=05/07 23:52:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=1142.2M, current mem=1142.2M)
 Saving symbol-table file in separate thread ...
 Saving congestion map file in separate thread ...
-% Begin Save AAE data ... (date=05/06 19:47:24, mem=1141.3M)
+% Begin Save AAE data ... (date=05/07 23:52:58, mem=1142.3M)
 Saving AAE Data ...
 Saving congestion map file checkpoints/design.checkpoint/save.enc.dat/ringosc.route.congmap.gz ...
-% End Save AAE data ... (date=05/06 19:47:24, total cpu=0:00:00.0, real=0:00:00.0, peak res=1141.5M, current mem=1141.5M)
+% End Save AAE data ... (date=05/07 23:52:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=1142.5M, current mem=1142.5M)
 Saving preference file checkpoints/design.checkpoint/save.enc.dat/gui.pref.tcl ...
 Saving mode setting ...
 Saving global file ...
@@ -1049,27 +1049,28 @@ Saving special route data file in separate thread ...
 Saving PG Conn data in separate thread ...
 Saving placement file in separate thread ...
 Saving route file in separate thread ...
-** Saving stdCellPlacement_binary (version# 2) ...
-Save Adaptive View Pruning View Names to Binary file
+Saving property file in separate thread ...
 TAT_INFO: ::saveSpecialRoute REAL = 0 : CPU = 0 : MEM = 0.
 TAT_INFO: savePGConnFile REAL = 0 : CPU = 0 : MEM = 0.
-TAT_INFO: ::savePlace REAL = 0 : CPU = 0 : MEM = 0.
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
 Saving property file checkpoints/design.checkpoint/save.enc.dat/ringosc.prop
-*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1335.5M) ***
-*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1335.5M) ***
-TAT_INFO: ::saveRoute REAL = 0 : CPU = 0 : MEM = 0.
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1329.0M) ***
+TAT_INFO: ::savePlace REAL = 0 : CPU = 0 : MEM = 0.
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:01.0 mem=1329.0M) ***
+TAT_INFO: ::saveRoute REAL = 1 : CPU = 0 : MEM = 0.
 TAT_INFO: ::db::saveAnnotationAndProp REAL = 0 : CPU = 0 : MEM = 0.
 TAT_INFO: ::db::saveSymbolTable REAL = 0 : CPU = 0 : MEM = 0.
-TAT_INFO: ::saveCongMap REAL = 1 : CPU = 0 : MEM = 0.
-% Begin Save power constraints data ... (date=05/06 19:47:25, mem=1146.2M)
-% End Save power constraints data ... (date=05/06 19:47:25, total cpu=0:00:00.0, real=0:00:00.0, peak res=1146.4M, current mem=1146.4M)
+TAT_INFO: ::saveCongMap REAL = 0 : CPU = 0 : MEM = 0.
+% Begin Save power constraints data ... (date=05/07 23:52:59, mem=1147.2M)
+% End Save power constraints data ... (date=05/07 23:52:59, total cpu=0:00:00.0, real=0:00:00.0, peak res=1147.4M, current mem=1147.4M)
 typical
 Generated self-contained design save.enc.dat
-#% End save design ... (date=05/06 19:47:26, total cpu=0:00:00.7, real=0:00:02.0, peak res=1177.9M, current mem=1149.4M)
+#% End save design ... (date=05/07 23:53:00, total cpu=0:00:00.7, real=0:00:02.0, peak res=1178.9M, current mem=1150.3M)
 *** Message Summary: 0 warning(s), 0 error(s)
 
 
-*** Memory Usage v#2 (Current mem = 1340.852M, initial mem = 275.727M) ***
+*** Memory Usage v#2 (Current mem = 1337.336M, initial mem = 275.727M) ***
 *** Message Summary: 50 warning(s), 0 error(s)
 
---- Ending "Innovus" (totcpu=0:00:20.7, real=0:00:30.0, mem=1340.9M) ---
+--- Ending "Innovus" (totcpu=0:00:20.0, real=0:00:32.0, mem=1337.3M) ---

@@ -10,7 +10,7 @@ def write_concat_lef_file(outfilename, indirs):
     # print('outfilename',os.path.abspath(outfilename))
     with open(outfilename, 'w') as outfile:
         for fname in os.listdir(indirs):
-            print("now writing file:", indirs+fname)
+            print("now merging file:", indirs+fname)
             with open(indirs+fname) as infile:
                 start_macro = False
                 end_macro = False

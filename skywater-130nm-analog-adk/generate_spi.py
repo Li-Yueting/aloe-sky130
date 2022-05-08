@@ -10,7 +10,7 @@ def write_concat_spi_file(outfilename, indirs):
     with open(outfilename, 'w') as outfile:
         for fname in os.listdir(indirs):
             if fname.endswith(".spice"):
-                print("now writing file:", indirs+fname)
+                print("now merging file:", indirs+fname)
                 with open(indirs+fname) as infile:
                     start_subckt = False
                     for line in infile:

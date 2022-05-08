@@ -1,0 +1,25 @@
+* NGSPICE file created from sky130_fd_pr__cap_mim_m3_1.ext - technology: sky130A
+
+.subckt sky130_fd_pr__cap_mim_m3_1 c0 c1 VPWR VGND
+X0 c1 c0 sky130_fd_pr__cap_mim_m3_1 l=2e+06u w=2e+06u
+X1 c1 c0 sky130_fd_pr__cap_mim_m3_1 l=2e+06u w=2e+06u
+X2 c1 c0 sky130_fd_pr__cap_mim_m3_1 l=2e+06u w=2e+06u
+X3 c1 c0 sky130_fd_pr__cap_mim_m3_1 l=2e+06u w=2e+06u
+X4 c1 c0 sky130_fd_pr__cap_mim_m3_1 l=2e+06u w=2e+06u
+X5 c1 c0 sky130_fd_pr__cap_mim_m3_1 l=2e+06u w=2e+06u
+X6 c1 c0 sky130_fd_pr__cap_mim_m3_1 l=2e+06u w=2e+06u
+X7 c1 c0 sky130_fd_pr__cap_mim_m3_1 l=2e+06u w=2e+06u
+X8 c1 c0 sky130_fd_pr__cap_mim_m3_1 l=2e+06u w=2e+06u
+X9 c1 c0 sky130_fd_pr__cap_mim_m3_1 l=2e+06u w=2e+06u
+X10 c1 c0 sky130_fd_pr__cap_mim_m3_1 l=2e+06u w=2e+06u
+X11 c1 c0 sky130_fd_pr__cap_mim_m3_1 l=2e+06u w=2e+06u
+X12 c1 c0 sky130_fd_pr__cap_mim_m3_1 l=2e+06u w=2e+06u
+X13 c1 c0 sky130_fd_pr__cap_mim_m3_1 l=2e+06u w=2e+06u
+X14 c1 c0 sky130_fd_pr__cap_mim_m3_1 l=2e+06u w=2e+06u
+X15 c1 c0 sky130_fd_pr__cap_mim_m3_1 l=2e+06u w=2e+06u
+X16 c1 c0 sky130_fd_pr__cap_mim_m3_1 l=2e+06u w=2e+06u
+X17 c1 c0 sky130_fd_pr__cap_mim_m3_1 l=2e+06u w=2e+06u
+X18 c1 c0 sky130_fd_pr__cap_mim_m3_1 l=2e+06u w=2e+06u
+X19 c1 c0 sky130_fd_pr__cap_mim_m3_1 l=2e+06u w=2e+06u
+.ends
+

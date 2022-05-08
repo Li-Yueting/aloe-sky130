@@ -4,7 +4,7 @@ Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
 
 Version:	v20.13-s083_1, built Tue Jan 19 16:51:46 PST 2021
 Options:	-overwrite -nowin -init START.tcl -log logs/run.log 
-Date:		Fri May  6 19:47:30 2022
+Date:		Sat May  7 23:53:05 2022
 Host:		rice-503-20-north (x86_64 w/Linux 5.11.0-41-generic) (20cores*40cpus*Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz 28160KB)
 OS:		CentOS Linux release 7.9.2009 (Core)
 
@@ -20,11 +20,11 @@ The soft stacksize limit is either up to the hard limit or larger than 0.2% of R
 Sourcing file "START.tcl" ...
 <CMD> is_common_ui_mode
 <CMD> restoreDesign /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat ringosc
-#% Begin load design ... (date=05/06 19:47:53, mem=665.2M)
+#% Begin load design ... (date=05/07 23:53:29, mem=669.9M)
 Set Default Input Pin Transition as 0.1 ps.
-Loading design 'ringosc' saved by 'Innovus' '20.13-s083_1' on 'Fri May 6 19:47:26 2022'.
-% Begin Load MMMC data ... (date=05/06 19:47:53, mem=667.2M)
-% End Load MMMC data ... (date=05/06 19:47:53, total cpu=0:00:00.0, real=0:00:00.0, peak res=668.2M, current mem=668.2M)
+Loading design 'ringosc' saved by 'Innovus' '20.13-s083_1' on 'Sat May 7 23:52:59 2022'.
+% Begin Load MMMC data ... (date=05/07 23:53:29, mem=672.4M)
+% End Load MMMC data ... (date=05/07 23:53:29, total cpu=0:00:00.0, real=0:00:00.0, peak res=673.4M, current mem=673.4M)
 typical
 
 Loading LEF file /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/libs/lef/rtk-tech.lef ...
@@ -46,8 +46,8 @@ Type 'man IMPLF-200' for more detail.
 **WARN: (IMPLF-200):	Pin 'DRAIN' in macro 'sky130_asc_nfet_01v8_lvt_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
 Type 'man IMPLF-200' for more detail.
 
-viaInitial starts at Fri May  6 19:47:53 2022
-viaInitial ends at Fri May  6 19:47:53 2022
+viaInitial starts at Sat May  7 23:53:29 2022
+viaInitial ends at Sat May  7 23:53:29 2022
 
 ##  Check design process and node:  
 ##  Both design process and tech node are not set.
@@ -55,18 +55,18 @@ viaInitial ends at Fri May  6 19:47:53 2022
 Loading view definition file from /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/viewDefinition.tcl
 Reading libs_typical timing library '/home/users/lyt1314/ee372/aloe-sky130/ringosc/build/2-skywater-130nm/view-standard/stdcells.lib' ...
 Read 2 cells in library 'sky130_fd_sc_hd__tt_025C_1v80' 
-*** End library_loading (cpu=0.00min, real=0.00min, mem=21.0M, fe_cpu=0.27min, fe_real=0.38min, fe_mem=679.2M) ***
-% Begin Load netlist data ... (date=05/06 19:47:53, mem=682.8M)
-*** Begin netlist parsing (mem=679.2M) ***
+*** End library_loading (cpu=0.00min, real=0.00min, mem=22.0M, fe_cpu=0.26min, fe_real=0.40min, fe_mem=689.0M) ***
+% Begin Load netlist data ... (date=05/07 23:53:29, mem=688.0M)
+*** Begin netlist parsing (mem=689.0M) ***
 Created 2 new cells from 1 timing libraries.
 Reading netlist ...
 Backslashed names will retain backslash and a trailing blank character.
 Reading verilogBinary netlist '/home/users/lyt1314/ee372/aloe-sky130/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/vbin/ringosc.v.bin'
 Reading binary database version 2 in 1-threaded mode
 
-*** Memory Usage v#2 (Current mem = 691.184M, initial mem = 275.727M) ***
-*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=691.2M) ***
-% End Load netlist data ... (date=05/06 19:47:53, total cpu=0:00:00.0, real=0:00:00.0, peak res=686.3M, current mem=686.3M)
+*** Memory Usage v#2 (Current mem = 699.973M, initial mem = 275.727M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=700.0M) ***
+% End Load netlist data ... (date=05/07 23:53:29, total cpu=0:00:00.0, real=0:00:00.0, peak res=691.4M, current mem=691.4M)
 Set top cell to ringosc.
 Hooked 2 DB cells to tlib cells.
 Starting recursive module instantiation check.
@@ -77,7 +77,7 @@ Set DBUPerIGU to techSite unitasc width 490.
 ** info: there are 3 modules.
 ** info: there are 10 stdCell insts.
 
-*** Memory Usage v#2 (Current mem = 722.598M, initial mem = 275.727M) ***
+*** Memory Usage v#2 (Current mem = 731.387M, initial mem = 275.727M) ***
 *info: set bottom ioPad orient R0
 **WARN: (IMPFP-3961):	The techSite 'unithddbl' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
 Type 'man IMPFP-3961' for more detail.
@@ -136,8 +136,8 @@ No delay cells were detected in the set of buffers. Buffers will be used to fix 
 Type 'man IMPOPT-3000' for more detail.
 **WARN: (IMPOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
 Type 'man IMPOPT-3001' for more detail.
-Reading floorplan file - /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/ringosc.fp.gz (mem = 923.2M).
-% Begin Load floorplan data ... (date=05/06 19:47:54, mem=911.7M)
+Reading floorplan file - /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/ringosc.fp.gz (mem = 931.0M).
+% Begin Load floorplan data ... (date=05/07 23:53:30, mem=917.2M)
 *info: reset 15 existing net BottomPreferredLayer and AvoidDetour
 **WARN: (IMPDB-2078):	Output pin DRAIN of instance nfet5 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
 **WARN: (IMPDB-2078):	Output pin DRAIN of instance nfet4 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
@@ -157,36 +157,36 @@ Generated pitch 3.66 in met5 is different from 3.4 defined in technology file in
 Generated pitch 0.69 in met4 is different from 0.92 defined in technology file in preferred direction.
 Generated pitch 0.61 in met3 is different from 0.68 defined in technology file in preferred direction.
  ... processed partition successfully.
-Reading binary special route file /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/ringosc.fp.spr.gz (Created by Innovus v20.13-s083_1 on Fri May  6 19:47:25 2022, version: 1)
-Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=916.8M, current mem=916.8M)
+Reading binary special route file /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/ringosc.fp.spr.gz (Created by Innovus v20.13-s083_1 on Sat May  7 23:52:58 2022, version: 1)
+Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=922.3M, current mem=922.3M)
 Extracting standard cell pins and blockage ...... 
 Pin and blockage extraction finished
-% End Load floorplan data ... (date=05/06 19:47:54, total cpu=0:00:00.1, real=0:00:00.0, peak res=917.3M, current mem=917.3M)
-% Begin Load SymbolTable ... (date=05/06 19:47:54, mem=917.7M)
+% End Load floorplan data ... (date=05/07 23:53:31, total cpu=0:00:00.1, real=0:00:01.0, peak res=922.8M, current mem=922.7M)
+% Begin Load SymbolTable ... (date=05/07 23:53:31, mem=923.1M)
 Reading congestion map file /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/ringosc.route.congmap.gz ...
-% End Load SymbolTable ... (date=05/06 19:47:55, total cpu=0:00:00.0, real=0:00:01.0, peak res=917.8M, current mem=917.7M)
+% End Load SymbolTable ... (date=05/07 23:53:31, total cpu=0:00:00.0, real=0:00:00.0, peak res=923.2M, current mem=923.2M)
 Loading place ...
-% Begin Load placement data ... (date=05/06 19:47:55, mem=917.7M)
+% Begin Load placement data ... (date=05/07 23:53:31, mem=923.2M)
 Reading placement file - /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/ringosc.place.gz.
-** Reading stdCellPlacement_binary (Created by Innovus v20.13-s083_1 on Fri May  6 19:47:25 2022, version# 2) ...
+** Reading stdCellPlacement_binary (Created by Innovus v20.13-s083_1 on Sat May  7 23:52:58 2022, version# 2) ...
 Read Views for adaptive view pruning ...
 Read 0 views from Binary DB for adaptive view pruning
-*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=930.2M) ***
+*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=938.0M) ***
 Total net length = 1.000e-02 (5.000e-03 5.000e-03) (ext = 0.000e+00)
-% End Load placement data ... (date=05/06 19:47:55, total cpu=0:00:00.0, real=0:00:00.0, peak res=917.9M, current mem=917.9M)
-% Begin Load routing data ... (date=05/06 19:47:55, mem=918.2M)
+% End Load placement data ... (date=05/07 23:53:31, total cpu=0:00:00.0, real=0:00:00.0, peak res=923.4M, current mem=923.4M)
+% Begin Load routing data ... (date=05/07 23:53:31, mem=923.7M)
 Reading routing file - /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/ringosc.route.gz.
-Reading Innovus routing data (Created by Innovus v20.13-s083_1 on Fri May  6 19:47:25 2022 Format: 20.1) ...
+Reading Innovus routing data (Created by Innovus v20.13-s083_1 on Sat May  7 23:52:58 2022 Format: 20.1) ...
 *** Total 15 nets are successfully restored.
-*** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=927.2M) ***
-% End Load routing data ... (date=05/06 19:47:55, total cpu=0:00:00.0, real=0:00:00.0, peak res=919.4M, current mem=918.4M)
+*** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=935.0M) ***
+% End Load routing data ... (date=05/07 23:53:31, total cpu=0:00:00.0, real=0:00:00.0, peak res=924.8M, current mem=923.8M)
 Loading Drc markers ...
 ... 1 markers are loaded ...
 ... 0 geometry drc markers are loaded ...
 ... 0 antenna drc markers are loaded ...
-TAT_INFO: restoreCongMap REAL = 1 : CPU = 0 : MEM = 0.
+TAT_INFO: restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
 Reading property file /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/ringosc.prop
-*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=932.2M) ***
+*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=940.0M) ***
 Set Default Input Pin Transition as 0.1 ps.
 Extraction setup Started 
 Initializing multi-corner RC extraction with 1 active RC Corners ...
@@ -219,15 +219,15 @@ Start generating vias ..
 Extracting standard cell pins and blockage ...... 
 Pin and blockage extraction finished
 Via generation completed.
-% Begin Load power constraints ... (date=05/06 19:47:56, mem=924.6M)
+% Begin Load power constraints ... (date=05/07 23:53:32, mem=930.0M)
 ** WARN:  (VOLTUS_POWR-3212): The 'set_power_analysis_mode -leakage_power_view |-dynamic_power_view|-analysis_view' will be obsolete in 18.20 release. Use 'set_analysis_view -leakage <> | -dynamic <>' to set leakage and dynamic power views.
 
-% End Load power constraints ... (date=05/06 19:47:56, total cpu=0:00:00.0, real=0:00:00.0, peak res=924.9M, current mem=924.9M)
+% End Load power constraints ... (date=05/07 23:53:32, total cpu=0:00:00.0, real=0:00:00.0, peak res=930.3M, current mem=930.3M)
 delay_default
-% Begin load AAE data ... (date=05/06 19:47:56, mem=931.7M)
+% Begin load AAE data ... (date=05/07 23:53:32, mem=937.1M)
 **WARN: (IMPESI-3505):	setDelayCalMode -eng_copyNetPropToNewNet true (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
-AAE DB initialization (MEM=961.199 CPU=0:00:00.0 REAL=0:00:00.0) 
-% End load AAE data ... (date=05/06 19:47:56, total cpu=0:00:00.3, real=0:00:00.0, peak res=937.4M, current mem=937.4M)
+AAE DB initialization (MEM=968.988 CPU=0:00:00.0 REAL=0:00:00.0) 
+% End load AAE data ... (date=05/07 23:53:32, total cpu=0:00:00.3, real=0:00:00.0, peak res=942.9M, current mem=942.9M)
 Total number of combinational cells: 2
 Total number of sequential cells: 0
 Total number of tristate cells: 0
@@ -253,7 +253,7 @@ Total number of identified unusable delay cells: 0
 No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
 **WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.13-s083_1. They will be removed in the next release. 
 timing_enable_default_delay_arc
-#% End load design ... (date=05/06 19:47:56, total cpu=0:00:02.0, real=0:00:03.0, peak res=966.6M, current mem=937.4M)
+#% End load design ... (date=05/07 23:53:32, total cpu=0:00:01.9, real=0:00:03.0, peak res=972.2M, current mem=942.9M)
 
 *** Summary of all messages that are not suppressed in this session:
 Severity  ID               Count  Summary                                  
@@ -315,8 +315,8 @@ Submit command for task runs will be: local
 ### Start verbose source output (echo mode) for 'scripts/power-strategy-singlemesh.tcl' ...
 # sroute -nets {VDD VSS} -connect {corePin}
 <CMD> sroute -nets {VDD VSS} -connect corePin
-#% Begin sroute (date=05/06 19:47:56, mem=938.0M)
-*** Begin SPECIAL ROUTE on Fri May  6 19:47:56 2022 ***
+#% Begin sroute (date=05/07 23:53:32, mem=943.5M)
+*** Begin SPECIAL ROUTE on Sat May  7 23:53:32 2022 ***
 SPECIAL ROUTE ran on directory: /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/6-cadence-innovus-power
 SPECIAL ROUTE ran on machine: rice-503-20-north (Linux 5.11.0-41-generic Xeon 2.40Ghz)
 
@@ -334,7 +334,7 @@ srouteJogControl set to "preferWithChanges differentLayer"
 sroutePadPinAllPorts set to true
 sroutePreserveExistingRoutes set to true
 srouteRoutePowerBarPortOnBothDir set to true
-End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1934.00 megs.
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1942.00 megs.
 
 Reading DB technology information...
 Finished reading DB technology information.
@@ -353,7 +353,7 @@ CPU time for FollowPin 0 seconds
 CPU time for FollowPin 0 seconds
   Number of Core ports routed: 0  open: 6
   Number of Followpin connections: 3
-End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1940.00 megs.
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1948.00 megs.
 
 
 
@@ -366,7 +366,7 @@ ViaGen created 0 via, deleted 0 via to avoid violation.
 +--------+----------------+----------------+
 |  met1  |        3       |       NA       |
 +--------+----------------+----------------+
-#% End sroute (date=05/06 19:47:56, total cpu=0:00:00.1, real=0:00:00.0, peak res=945.6M, current mem=945.6M)
+#% End sroute (date=05/07 23:53:32, total cpu=0:00:00.1, real=0:00:00.0, peak res=951.0M, current mem=951.0M)
 # set pmesh_bot $ADK_POWER_MESH_BOT_LAYER
 # set pmesh_top $ADK_POWER_MESH_TOP_LAYER
 # addRing -nets {VDD VSS} -type core_rings -follow core   \
@@ -377,9 +377,9 @@ ViaGen created 0 via, deleted 0 via to avoid violation.
         -offset $savedvars(p_ring_spacing)              \
         -extend_corner {tl tr bl br lt lb rt rb}
 <CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top 6 bottom 6 left 5 right 5} -width 4 -spacing 8 -offset 8 -extend_corner {tl tr bl br lt lb rt rb}
-#% Begin addRing (date=05/06 19:47:56, mem=945.6M)
+#% Begin addRing (date=05/07 23:53:32, mem=951.0M)
 
-Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 967.5M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 975.3M)
 Ring generation is complete.
 vias are now being generated.
 addRing created 8 wires.
@@ -391,7 +391,7 @@ ViaGen created 8 vias, deleted 0 via to avoid violation.
 |  via4  |        8       |        0       |
 |  met5  |        4       |       NA       |
 +--------+----------------+----------------+
-#% End addRing (date=05/06 19:47:56, total cpu=0:00:00.0, real=0:00:00.0, peak res=948.0M, current mem=948.0M)
+#% End addRing (date=05/07 23:53:32, total cpu=0:00:00.0, real=0:00:01.0, peak res=953.5M, current mem=953.5M)
 # set M1_min_width    [dbGet [dbGetLayerByZ 2].minWidth]
 # set M1_route_pitchX [dbGet [dbGetLayerByZ 2].pitchX]
 # set pmesh_bot_str_width [expr  8 *  3 * $M1_min_width   ]
@@ -420,12 +420,12 @@ Setting -ignore_DRC to 0. ViaGen will do DRC check while creating vias.
     -padcore_ring_top_layer_limit $pmesh_top                    \
     -start [expr $pmesh_bot_str_pitch]
 <CMD> addStripe -nets {VSS VDD} -layer 5 -direction vertical -width 3.36 -spacing 10.24 -set_to_set_distance 27.2 -max_same_layer_jog_length 13.6 -padcore_ring_bottom_layer_limit 5 -padcore_ring_top_layer_limit 6 -start 13.6
-#% Begin addStripe (date=05/06 19:47:56, mem=948.2M)
+#% Begin addStripe (date=05/07 23:53:33, mem=953.6M)
 
-Initialize fgc environment(mem: 968.5M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 968.5M)
-Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 968.5M)
-Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 968.5M)
-Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 968.5M)
+Initialize fgc environment(mem: 975.3M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 975.3M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 975.3M)
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 975.3M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 975.3M)
 Starting stripe generation ...
 Non-Default Mode Option Settings :
   NONE
@@ -444,7 +444,7 @@ ViaGen created 26 vias, deleted 0 via to avoid violation.
 |  met4  |        4       |       NA       |
 |  via4  |        8       |        0       |
 +--------+----------------+----------------+
-#% End addStripe (date=05/06 19:47:56, total cpu=0:00:00.0, real=0:00:00.0, peak res=949.6M, current mem=949.6M)
+#% End addStripe (date=05/07 23:53:33, total cpu=0:00:00.0, real=0:00:00.0, peak res=955.0M, current mem=955.0M)
 # set pmesh_top_str_width [expr  8 *  3 * $M1_min_width   ]
 # set pmesh_top_str_pitch [expr 4 * 10 * $M1_route_pitchX]
 # set pmesh_top_str_intraset_spacing [expr $pmesh_top_str_pitch - $pmesh_top_str_width]
@@ -473,12 +473,12 @@ Setting -ignore_DRC to 0. ViaGen will do DRC check while creating vias.
     -padcore_ring_top_layer_limit $pmesh_top                      \
     -start [expr $pmesh_top_str_pitch]
 <CMD> addStripe -nets {VSS VDD} -layer 6 -direction horizontal -width 3.36 -spacing 10.24 -set_to_set_distance 27.2 -max_same_layer_jog_length 13.6 -padcore_ring_bottom_layer_limit 5 -padcore_ring_top_layer_limit 6 -start 13.6
-#% Begin addStripe (date=05/06 19:47:56, mem=949.6M)
+#% Begin addStripe (date=05/07 23:53:33, mem=955.0M)
 
-Initialize fgc environment(mem: 968.5M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 968.5M)
-Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 968.5M)
-Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 968.5M)
-Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 968.5M)
+Initialize fgc environment(mem: 975.3M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 975.3M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 975.3M)
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 975.3M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 975.3M)
 Starting stripe generation ...
 Non-Default Mode Option Settings :
   NONE
@@ -488,7 +488,16 @@ Non-Default Mode Option Settings :
 Type 'man IMPPP-354' for more detail.
 Stripe generation is complete.
 vias are now being generated.
-**WARN: (IMPPP-4063):	Multi-CPU is set to 1 in addStripe automatically according to the free memory on the current machine.  When the number of CPU in setMultiCpuUsage is more than 1, addStripe gets worse runtime caused by data exchange and other time consuming operations
+**WARN: (IMPPP-4063):	Multi-CPU is set to 12 in addStripe automatically according to the free memory on the current machine.  When the number of CPU in setMultiCpuUsage is more than 12, addStripe gets worse runtime caused by data exchange and other time consuming operations
+Total CPU(s) requested: 12
+Total CPU(s) enabled with current License(s): 8
+Current free CPU(s): 8
+Additional license(s) checked out: 1 Innovus_CPU_Opt license(s) for 8 CPU(s)
+Total CPU(s) now enabled: 16
+Multi-CPU acceleration using 12 CPU(s).
+Multi-CPU acceleration using 12 CPU(s).
+Multi-CPU acceleration using 12 CPU(s).
+Multi-CPU acceleration using 12 CPU(s).
 addStripe created 2 wires.
 ViaGen created 8 vias, deleted 0 via to avoid violation.
 +--------+----------------+----------------+
@@ -497,23 +506,23 @@ ViaGen created 8 vias, deleted 0 via to avoid violation.
 |  via4  |        8       |        0       |
 |  met5  |        2       |       NA       |
 +--------+----------------+----------------+
-#% End addStripe (date=05/06 19:47:56, total cpu=0:00:00.0, real=0:00:00.0, peak res=949.6M, current mem=949.6M)
+#% End addStripe (date=05/07 23:53:33, total cpu=0:00:00.4, real=0:00:00.0, peak res=955.0M, current mem=954.2M)
 ### End verbose source output for 'scripts/power-strategy-singlemesh.tcl'.
 ### End verbose source output for 'scripts/main.tcl'.
 <CMD> getVersion
 <CMD> saveDesign checkpoints/design.checkpoint/save.enc -user_path
-#% Begin save design ... (date=05/06 19:47:56, mem=948.3M)
-% Begin Save ccopt configuration ... (date=05/06 19:47:56, mem=951.3M)
-% End Save ccopt configuration ... (date=05/06 19:47:56, total cpu=0:00:00.0, real=0:00:00.0, peak res=953.2M, current mem=953.2M)
-% Begin Save netlist data ... (date=05/06 19:47:56, mem=973.3M)
+#% Begin save design ... (date=05/07 23:53:33, mem=954.4M)
+% Begin Save ccopt configuration ... (date=05/07 23:53:33, mem=957.4M)
+% End Save ccopt configuration ... (date=05/07 23:53:33, total cpu=0:00:00.0, real=0:00:00.0, peak res=959.3M, current mem=959.3M)
+% Begin Save netlist data ... (date=05/07 23:53:33, mem=979.4M)
 Writing Binary DB to checkpoints/design.checkpoint/save.enc.dat/vbin/ringosc.v.bin in multi-threaded mode...
-% End Save netlist data ... (date=05/06 19:47:56, total cpu=0:00:00.0, real=0:00:00.0, peak res=974.8M, current mem=974.2M)
+% End Save netlist data ... (date=05/07 23:53:33, total cpu=0:00:00.0, real=0:00:00.0, peak res=980.9M, current mem=980.3M)
 Saving symbol-table file in separate thread ...
 Saving congestion map file in separate thread ...
-% Begin Save AAE data ... (date=05/06 19:47:56, mem=974.4M)
+% Begin Save AAE data ... (date=05/07 23:53:33, mem=980.5M)
 Saving AAE Data ...
 Saving congestion map file checkpoints/design.checkpoint/save.enc.dat/ringosc.route.congmap.gz ...
-% End Save AAE data ... (date=05/06 19:47:57, total cpu=0:00:00.0, real=0:00:00.0, peak res=974.6M, current mem=974.6M)
+% End Save AAE data ... (date=05/07 23:53:33, total cpu=0:00:00.0, real=0:00:00.0, peak res=980.7M, current mem=980.7M)
 Saving preference file checkpoints/design.checkpoint/save.enc.dat/gui.pref.tcl ...
 Saving mode setting ...
 Saving global file ...
@@ -526,29 +535,29 @@ Saving PG file in separate thread ...
 Saving placement file in separate thread ...
 Saving route file in separate thread ...
 Saving property file in separate thread ...
+TAT_INFO: ::saveSpecialRoute REAL = 0 : CPU = 0 : MEM = 0.
 ** Saving stdCellPlacement_binary (version# 2) ...
 Save Adaptive View Pruning View Names to Binary file
-TAT_INFO: ::saveSpecialRoute REAL = 0 : CPU = 0 : MEM = 0.
-Saving PG file checkpoints/design.checkpoint/save.enc.dat/ringosc.pg.gz, version#2, (Created by Innovus v20.13-s083_1 on Fri May  6 19:47:57 2022)
+Saving PG file checkpoints/design.checkpoint/save.enc.dat/ringosc.pg.gz, version#2, (Created by Innovus v20.13-s083_1 on Sat May  7 23:53:34 2022)
 Saving property file checkpoints/design.checkpoint/save.enc.dat/ringosc.prop
-*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1028.1M) ***
-*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1028.1M) ***
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1035.9M) ***
+*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1035.9M) ***
 TAT_INFO: ::savePGFile REAL = 0 : CPU = 0 : MEM = 0.
 TAT_INFO: ::savePlace REAL = 0 : CPU = 0 : MEM = 0.
-*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1028.1M) ***
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1035.9M) ***
 TAT_INFO: ::saveRoute REAL = 0 : CPU = 0 : MEM = 0.
 TAT_INFO: ::db::saveAnnotationAndProp REAL = 0 : CPU = 0 : MEM = 0.
-TAT_INFO: ::db::saveSymbolTable REAL = 1 : CPU = 0 : MEM = 0.
-TAT_INFO: ::saveCongMap REAL = 1 : CPU = 0 : MEM = 0.
-% Begin Save power constraints data ... (date=05/06 19:47:58, mem=982.8M)
-% End Save power constraints data ... (date=05/06 19:47:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=982.9M, current mem=982.9M)
+TAT_INFO: ::db::saveSymbolTable REAL = 0 : CPU = 0 : MEM = 0.
+TAT_INFO: ::saveCongMap REAL = 0 : CPU = 0 : MEM = 0.
+% Begin Save power constraints data ... (date=05/07 23:53:34, mem=988.9M)
+% End Save power constraints data ... (date=05/07 23:53:34, total cpu=0:00:00.0, real=0:00:00.0, peak res=989.0M, current mem=989.0M)
 typical
 Generated self-contained design save.enc.dat
-#% End save design ... (date=05/06 19:47:58, total cpu=0:00:00.7, real=0:00:02.0, peak res=1013.5M, current mem=989.0M)
+#% End save design ... (date=05/07 23:53:35, total cpu=0:00:00.7, real=0:00:02.0, peak res=1019.6M, current mem=992.0M)
 *** Message Summary: 0 warning(s), 0 error(s)
 
 
-*** Memory Usage v#2 (Current mem = 1046.449M, initial mem = 275.727M) ***
+*** Memory Usage v#2 (Current mem = 1046.246M, initial mem = 275.727M) ***
 *** Message Summary: 28 warning(s), 2 error(s)
 
---- Ending "Innovus" (totcpu=0:00:18.6, real=0:00:28.0, mem=1046.4M) ---
+--- Ending "Innovus" (totcpu=0:00:18.6, real=0:00:30.0, mem=1046.2M) ---
