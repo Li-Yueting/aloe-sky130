@@ -19,4 +19,4 @@ source $env(pnr_dir)/ini.tcl
 # if {[file exists $env(pnr_dir)/ndr.tcl]} {
 #     source $env(pnr_dir)/ndr.tcl
 # }
-source $env(pnr_dir)/run0_ringosc.tcl
+source $env(pnr_dir)/run0_bgr.tcl

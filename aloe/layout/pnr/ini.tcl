@@ -11,11 +11,11 @@ set init_gnd_net {VSS}
 # 7777
 # set init_mmmc_file /home/users/xingyuni/ee372/skywater-digital-flow/GcdUnit/build/5-cadence-innovus-flowsetup/outputs/innovus-foundation-flow/view_definition.tcl
 set init_io_file {}
-set init_lef_file {/home/users/xingyuni/ee372/stemcell_share/rtk-tech.tlef \
-    /home/users/xingyuni/ee372/stemcell_share/stdcells.lef}
+set init_lef_file {/home/users/xingyuni/ee372/aloe-sky130/aloe/stemcell/rtk-tech.tlef \
+    /home/users/xingyuni/ee372/aloe-sky130/aloe/stemcell/stdcells.lef}
 set init_pwr_net {VDD}
-set init_top_cell ringosc
-set init_verilog /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/examples/ringosc/ringosc.v
+set init_top_cell BGR_Top
+set init_verilog /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/examples/BGR_Top/BGR_Top.v
 set latch_time_borrow_mode max_borrow
 set pegDefaultResScaleFactor 1.000000
 set pegDetailResScaleFactor 1.000000
