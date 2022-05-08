@@ -56,7 +56,10 @@ MACRO sky130_asc_res
     DIRECTION INOUT ;
     USE GROUND ;
     PORT
+      LAYER pwell ;
+        RECT 0.000 -0.300 12.200 8.250 ;
       LAYER li1 ;
+        RECT 4.560 0.150 7.640 4.850 ;
         RECT 0.000 -0.150 12.200 0.150 ;
       LAYER mcon ;
         RECT 0.850 -0.150 1.150 0.150 ;

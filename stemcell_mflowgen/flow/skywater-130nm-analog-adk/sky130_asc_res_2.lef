@@ -1,0 +1,98 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO sky130_asc_res_2
+  CLASS CORE ;
+  FOREIGN sky130_asc_res_2 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 15.070 BY 9.400 ;
+  SITE unitasc ;
+  PIN Rin
+    DIRECTION INOUT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.005 5.375 2.165 8.225 ;
+      LAYER mcon ;
+        RECT 0.095 5.455 2.080 8.145 ;
+      LAYER met1 ;
+        RECT 0.060 5.395 2.110 8.205 ;
+    END
+  END Rin
+  PIN Rout
+    DIRECTION INOUT ;
+    PORT
+      LAYER li1 ;
+        RECT 0.005 0.575 2.165 3.425 ;
+      LAYER mcon ;
+        RECT 0.095 0.655 2.080 3.345 ;
+      LAYER met1 ;
+        RECT 0.060 0.595 2.110 3.405 ;
+    END
+  END Rout
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER li1 ;
+        RECT 0.010 8.650 15.070 8.950 ;
+      LAYER mcon ;
+        RECT 0.860 8.650 1.160 8.950 ;
+        RECT 1.860 8.650 2.160 8.950 ;
+        RECT 2.860 8.650 3.160 8.950 ;
+        RECT 3.860 8.650 4.160 8.950 ;
+        RECT 4.860 8.650 5.160 8.950 ;
+        RECT 5.860 8.650 6.160 8.950 ;
+        RECT 6.860 8.650 7.160 8.950 ;
+        RECT 7.860 8.650 8.160 8.950 ;
+        RECT 8.860 8.650 9.160 8.950 ;
+        RECT 9.860 8.650 10.160 8.950 ;
+        RECT 10.860 8.650 11.160 8.950 ;
+        RECT 11.860 8.650 12.160 8.950 ;
+        RECT 12.860 8.650 13.160 8.950 ;
+        RECT 13.860 8.650 14.160 8.950 ;
+      LAYER met1 ;
+        RECT 0.010 8.500 15.070 9.100 ;
+    END
+  END VPWR
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER pwell ;
+        RECT 1.440 -0.300 13.640 8.250 ;
+      LAYER li1 ;
+        RECT 6.000 0.150 9.080 4.850 ;
+        RECT 0.010 -0.150 15.070 0.150 ;
+      LAYER mcon ;
+        RECT 0.860 -0.150 1.160 0.150 ;
+        RECT 1.860 -0.150 2.160 0.150 ;
+        RECT 2.860 -0.150 3.160 0.150 ;
+        RECT 3.860 -0.150 4.160 0.150 ;
+        RECT 4.860 -0.150 5.160 0.150 ;
+        RECT 5.860 -0.150 6.160 0.150 ;
+        RECT 6.860 -0.150 7.160 0.150 ;
+        RECT 7.860 -0.150 8.160 0.150 ;
+        RECT 8.860 -0.150 9.160 0.150 ;
+        RECT 9.860 -0.150 10.160 0.150 ;
+        RECT 10.860 -0.150 11.160 0.150 ;
+        RECT 11.860 -0.150 12.160 0.150 ;
+        RECT 12.860 -0.150 13.160 0.150 ;
+        RECT 13.860 -0.150 14.160 0.150 ;
+      LAYER met1 ;
+        RECT 0.010 -0.300 15.070 0.300 ;
+    END
+  END VGND
+  OBS
+      LAYER li1 ;
+        RECT 12.915 0.575 15.075 8.225 ;
+      LAYER mcon ;
+        RECT 13.000 5.455 14.985 8.145 ;
+        RECT 13.000 0.655 14.985 3.345 ;
+      LAYER met1 ;
+        RECT 12.970 5.395 15.020 8.205 ;
+        RECT 12.915 0.575 15.075 5.395 ;
+  END
+END sky130_asc_res_2
+END LIBRARY
+

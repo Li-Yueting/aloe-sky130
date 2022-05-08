@@ -245,7 +245,7 @@ proc inst_param_customize {inst_name guard topc botc doverlap lmin wmin viagate}
 	return $params
 }
 
-# w = 2.85    l = 7.88 x
+# w = 2.85    l = 7.88 x 2
 proc place_res {x_center y_center index} {
     set bx 1220
     # set by 
@@ -329,8 +329,116 @@ proc place_res {x_center y_center index} {
 	box [expr $x_center-$bx/2] [expr $y_center-$height_half_center-$con_w/2] [expr $x_center-$bx/2+$con_w] [expr $y_center-$height_half_center+$con_w/2]
 	paint m1
 	label VGND FreeSans 50
+
+	# bulk
+	box -610 -470 610 385 
+	paint pwell
+	box -124 -30 124 30
+	paint psubstratepcontact
+	box -154 -45 154 45
+	paint psubstratepdiff
+	box -154 -445 154 45
+	paint locali
 }
 
+# w = 2.85    l = 7.88 x 2   10.75 x 2
+proc place_res_2 {x_center y_center index} {
+    set bx 1507
+    # set by 
+    set height_half_center 440
+	set power_half_w 30
+	set con_sep 100 ;#unit conversion
+	set con_w 30
+
+	# box -394 97.5 394 382.5
+    box -537.5 97.5 537.5 382.5
+    paint xpolyres
+
+    # box 402.5 105.5 601 374.5
+	box 546 105.5 744.5 374.5
+    paint viali
+    box 537.5 97.5 753.5 382.5
+    paint xpolycontact
+    box 537.5 97.5 753.5 382.5
+    paint locali
+    box 543 99.5 748 380.5
+    paint metal1
+
+    box -744.5 105.5 -546 374.5
+    paint viali
+    box -753.5 97.5 -537.5 382.5
+    paint xpolycontact
+    box -753.5 97.5 -537.5 382.5
+    paint locali
+    box -748 99.5 -543 380.5
+    paint metal1
+    box -693.5 210 -633.5 270
+	# box -550 210 -490 270
+    label Rin FreeSans 30
+
+    box -537.5 -382.5 537.5 -97.5
+    paint xpolyres
+
+    box 546 -374.5 744.5 -105.5
+    paint viali
+    box 537.5 -382.5 753.5 -97.5
+    paint xpolycontact
+    box 537.5 -382.5 753.5 -97.5
+    paint locali
+    box 543 -380.5 748 -99.5
+    paint metal1
+
+    box -744.5 -374.5 -546 -105.5
+    paint viali
+    box -753.5 -382.5 -537.5 -97.5
+    paint xpolycontact
+    box -753.5 -382.5 -537.5 -97.5
+    paint locali
+    box -748 -380.5 -543 -99.5
+    paint metal1
+    box -693.5 -270 -633.5 -210
+    label Rout FreeSans 30
+
+    box 537.5 -382.5 753.5 99.5
+    paint m1
+    paint locali
+
+	### paint VPWR
+	box [expr $x_center-$bx/2] [expr $y_center+$height_half_center - $power_half_w] [expr $x_center + $bx/2] [expr $y_center + $height_half_center + $power_half_w]
+	paint m1
+	box [expr $x_center-$bx/2] [expr $y_center+$height_half_center-$con_w/2] [expr $x_center+$bx/2] [expr $y_center + $height_half_center + $con_w/2]
+	paint li
+	for {set x 100} {$x+$con_w<=$bx} {set x [expr $x + $con_sep]} {
+		box [expr $x_center-$bx/2+$x-$con_w/2] [expr $y_center+$height_half_center-$con_w/2] [expr $x_center-$bx/2+$x+$con_w/2]  [expr $y_center+$height_half_center+$con_w/2]
+		paint viali
+	}
+	box [expr $x_center-$bx/2] [expr $y_center+$height_half_center-$con_w/2] [expr $x_center-$bx/2+$con_w] [expr $y_center+$height_half_center+$con_w/2]
+	paint m1
+	label VPWR FreeSans 50
+
+	### paint VGND
+	box [expr $x_center-$bx/2] [expr $y_center-$height_half_center-$power_half_w] [expr $x_center+$bx/2] [expr $y_center-$height_half_center+$power_half_w]
+	paint m1
+	box [expr $x_center-$bx/2] [expr $y_center-$height_half_center-$con_w/2] [expr $x_center+$bx/2] [expr $y_center-$height_half_center+$con_w/2]
+	paint li
+	for {set x 100} {$x+$con_w<=$bx} {set x [expr $x + $con_sep]} {
+		box [expr $x_center-$bx/2+$x-$con_w/2] [expr $y_center-$height_half_center-$con_w/2] [expr $x_center-$bx/2+$x+$con_w/2]  [expr $y_center-$height_half_center+$con_w/2]
+		paint viali
+	}
+	box [expr $x_center-$bx/2] [expr $y_center-$height_half_center-$con_w/2] [expr $x_center-$bx/2+$con_w] [expr $y_center-$height_half_center+$con_w/2]
+	paint m1
+	label VGND FreeSans 50
+
+	# bulk
+	box -610 -470 610 385 
+	paint pwell
+	box -124 -30 124 30
+	paint psubstratepcontact
+	box -154 -45 154 45
+	paint psubstratepdiff
+	box -154 -445 154 45
+	paint locali
+}
 
 proc place_pnp_0 {x_center y_center index} {
 

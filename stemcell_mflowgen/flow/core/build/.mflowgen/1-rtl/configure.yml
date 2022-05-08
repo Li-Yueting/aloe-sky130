@@ -1,0 +1,13 @@
+build_dir: 1-rtl
+build_id: '1'
+commands:
+- cat core.v > outputs/design_rtl.v
+edges_i: {}
+edges_o:
+  design_rtl.v:
+  - f: design_rtl.v
+    step: 3-dummy_dc
+name: rtl
+outputs:
+- design_rtl.v
+source: /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/core/design/rtl

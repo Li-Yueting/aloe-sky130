@@ -95,7 +95,7 @@ proc addlef {inst_name output_folder} {
         save sky130_asc_nfet_01v8_lvt_9.mag
         lef write sky130_asc_nfet_01v8_lvt_9.lef
     } elseif {$inst_name=={res_flat}} {
-        property FIXED_BBOX {0 0 2440 1880}
+        property FIXED_BBOX {0 0 3014 1880}
         # Rin
         findlabel Rin
         port make
@@ -115,8 +115,8 @@ proc addlef {inst_name output_folder} {
         port class inout
         port use ground
         cd $output_folder
-        save sky130_asc_res.mag
-        lef write sky130_asc_res.lef
+        save sky130_asc_res_2.mag
+        lef write sky130_asc_res_2.lef
     } elseif {$inst_name=={pnp_0_flat}} {
         property FIXED_BBOX {0 0 1340 1880}
         # Emitter
