@@ -1,7 +1,7 @@
 (DELAYFILE
   (SDFVERSION "3.0")
   (DESIGN "ringosc")
-  (DATE "Tue May  3 17:13:28 2022")
+  (DATE "Fri May  6 19:49:47 2022")
   (VENDOR "Cadence Design Systems, Inc.")
   (PROGRAM "Innovus")
   (VERSION "v20.13-s083_1 ((64bit) 01/19/2021 16:51 (Linux 2.6.32-431.11.2.el6.x86_64))")
@@ -40,7 +40,7 @@
     (INSTANCE  pfet1)
       (DELAY
 	(ABSOLUTE
-	(IOPATH SOURCE DRAIN  (0.147::0.147) (0.447::0.447))
+	(IOPATH SOURCE DRAIN  (0.151::0.151) (0.452::0.452))
 	)
       )
   )
@@ -50,7 +50,7 @@
     (INSTANCE  pfet2)
       (DELAY
 	(ABSOLUTE
-	(IOPATH SOURCE DRAIN  (0.144::0.144) (0.445::0.445))
+	(IOPATH SOURCE DRAIN  (0.154::0.154) (0.456::0.456))
 	)
       )
   )
@@ -60,7 +60,7 @@
     (INSTANCE  pfet3)
       (DELAY
 	(ABSOLUTE
-	(IOPATH SOURCE DRAIN  (0.156::0.156) (0.458::0.458))
+	(IOPATH SOURCE DRAIN  (0.149::0.149) (0.450::0.450))
 	)
       )
   )
@@ -70,7 +70,7 @@
     (INSTANCE  pfet4)
       (DELAY
 	(ABSOLUTE
-	(IOPATH SOURCE DRAIN  (0.144::0.144) (0.444::0.444))
+	(IOPATH SOURCE DRAIN  (0.157::0.160) (0.461::0.463))
 	)
       )
   )
@@ -80,7 +80,7 @@
     (INSTANCE  pfet5)
       (DELAY
 	(ABSOLUTE
-	(IOPATH SOURCE DRAIN  (0.146::0.146) (0.446::0.446))
+	(IOPATH SOURCE DRAIN  (0.157::0.160) (0.461::0.463))
 	)
       )
   )

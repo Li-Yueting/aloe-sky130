@@ -1,6 +1,7 @@
 cif istyle sky130(vendor)
 gds flatten true
 gds read ./inputs/design_merged.gds
+puts $$::env(design_name)
 load $::env(design_name)
 select top cell
 extract no all

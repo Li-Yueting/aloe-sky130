@@ -24,10 +24,10 @@ proc place_pmos {x_center y_center length nf index} {
 	### extend NWELL
 	box [expr $x_center-$bx/2-58.8] [expr $y_center-$by/2] [expr $x_center+$bx/2+9.8] [expr $y_center + $height_half_center + $power_half_w+60]
 	paint nwell
-	#------- label VPB
-	box [expr $x_center-$bx/2+100-$con_w/2] [expr $y_center+$height_half_center-$con_w/2+60] [expr $x_center-$bx/2+100+$con_w/2] [expr $y_center+$height_half_center+$con_w/2+60]
-	paint nwell
-	label VPB FreeSans 50
+	# #------- label VPB
+	# box [expr $x_center-$bx/2+100-$con_w/2] [expr $y_center+$height_half_center-$con_w/2+60] [expr $x_center-$bx/2+100+$con_w/2] [expr $y_center+$height_half_center+$con_w/2+60]
+	# paint nwell
+	# label VPB FreeSans 50
 	### paint VDD
 	box [expr $x_center-$bx/2] [expr $y_center+$height_half_center - $power_half_w+60] [expr $x_center + $bx/2] [expr $y_center + $height_half_center + $power_half_w+60]
 	paint m1
@@ -137,9 +137,9 @@ proc place_nmos {x_center y_center length nf index} {
 	### extend PWELL to VSS
 	box [expr $x_center-$bx/2-58.8] [expr $y_center+$by/2] [expr $x_center+$bx/2+9.8] [expr $y_center-$height_half_center+$con_w/2-120]
 	paint pwell
-	#------ Label VNB
-	box [expr $x_center+$bx/2-30-$con_w] [expr $y_center-$height_half_center-$con_w/2-120] [expr $x_center+$bx/2-30] [expr $y_center-$height_half_center+$con_w/2-120]
-	label VNB FreeSans 50
+	# #------ Label VNB
+	# box [expr $x_center+$bx/2-30-$con_w] [expr $y_center-$height_half_center-$con_w/2-120] [expr $x_center+$bx/2-30] [expr $y_center-$height_half_center+$con_w/2-120]
+	# label VNB FreeSans 50
 	### paint VDD
 	box [expr $x_center-$bx/2] [expr $y_center+$height_half_center - $power_half_w+60] [expr $x_center + $bx/2] [expr $y_center + $height_half_center + $power_half_w+60]
 	paint m1

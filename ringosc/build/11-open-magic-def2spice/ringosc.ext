@@ -1,114 +1,102 @@
-timestamp 1651623215
+timestamp 1651892072
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
-use sky130_asc_nfet_01v8_lvt_1 nfet3 1 0 7070 0 1 5712
-use sky130_asc_pfet_01v8_lvt_1 pfet3 1 0 7854 0 1 5712
-use sky130_asc_pfet_01v8_lvt_1 pfet2 1 0 8638 0 1 5712
-use sky130_asc_nfet_01v8_lvt_1 nfet2 1 0 9422 0 1 5712
-use sky130_asc_nfet_01v8_lvt_1 nfet1 1 0 10206 0 1 5712
-use sky130_asc_pfet_01v8_lvt_1 pfet1 1 0 10990 0 1 5712
-use sky130_asc_nfet_01v8_lvt_1 nfet4 1 0 11774 0 1 5712
-use sky130_asc_nfet_01v8_lvt_1 nfet5 1 0 12558 0 1 5712
-use sky130_asc_pfet_01v8_lvt_1 pfet5 1 0 13342 0 1 5712
-use sky130_asc_pfet_01v8_lvt_1 pfet4 1 0 14126 0 1 5712
+use sky130_asc_pfet_01v8_lvt_1 pfet3 1 0 8540 0 1 5712
+use sky130_asc_pfet_01v8_lvt_1 pfet5 1 0 7756 0 1 5712
+use sky130_asc_nfet_01v8_lvt_1 nfet3 1 0 9324 0 1 5712
+use sky130_asc_nfet_01v8_lvt_1 nfet4 1 0 10304 0 1 5712
+use sky130_asc_nfet_01v8_lvt_1 nfet2 1 0 11676 0 1 5712
+use sky130_asc_pfet_01v8_lvt_1 pfet4 1 0 12460 0 1 5712
+use sky130_asc_nfet_01v8_lvt_1 nfet1 1 0 13244 0 1 5712
+use sky130_asc_pfet_01v8_lvt_1 pfet2 1 0 14028 0 1 5712
+use sky130_asc_nfet_01v8_lvt_1 nfet5 1 0 14812 0 1 5712
+use sky130_asc_pfet_01v8_lvt_1 pfet1 1 0 15596 0 1 5712
 port "VSS" 7 996 0 1796 800 m4
 port "VSS" 6 996 14432 1796 15232 m4
-port "VSS" 5 18910 0 19710 800 m4
-port "VSS" 4 18910 14432 19710 15232 m4
+port "VSS" 5 20576 0 21376 800 m4
+port "VSS" 4 20576 14432 21376 15232 m4
 port "VSS" 3 0 912 800 1712 m5
-port "VSS" 2 19992 912 20792 1712 m5
+port "VSS" 2 21648 912 22448 1712 m5
 port "VSS" 1 0 13472 800 14272 m5
-port "VSS" 0 19992 13472 20792 14272 m5
+port "VSS" 0 21648 13472 22448 14272 m5
 port "VDD" 15 3396 0 4196 800 m4
 port "VDD" 14 3396 14432 4196 15232 m4
-port "VDD" 13 16510 0 17310 800 m4
-port "VDD" 12 16510 14432 17310 15232 m4
+port "VDD" 13 18176 0 18976 800 m4
+port "VDD" 12 18176 14432 18976 15232 m4
 port "VDD" 11 0 3312 800 4112 m5
-port "VDD" 10 19992 3312 20792 4112 m5
+port "VDD" 10 21648 3312 22448 4112 m5
 port "VDD" 9 0 11072 800 11872 m5
-port "VDD" 8 19992 11072 20792 11872 m5
-node "li_13018_5865#" 177 0 13018 5865 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15980 1008 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_13829_5797#" 217 0 13829 5797 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19550 1218 7008 518 0 0 0 0 0 0 0 0 0 0
-node "li_10718_5865#" 117 0 10718 5865 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10540 688 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_11529_5797#" 198 0 11529 5797 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 17238 1082 48224 3462 0 0 0 0 0 0 0 0 0 0
-node "li_9137_5797#" 142 0 9137 5797 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12852 824 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_7498_5865#" 212 0 7498 5865 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19108 1192 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_8401_5797#" 157 0 8401 5797 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14110 898 7008 518 0 0 0 0 0 0 0 0 0 0
-node "li_12449_5865#" 221 0 12449 5865 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19890 1238 7008 518 0 0 0 0 0 0 0 0 0 0
-node "VSS" 178 0 19992 13472 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10404 748 2264872 42384 362752 9072 322560 6336 42327040 120256 45843008 125140 0 0
-node "li_12909_7293#" 34 0 12909 7293 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2890 238 14736 1070 0 0 0 0 0 0 0 0 0 0
-node "li_9873_5882#" 1093 0 9873 5882 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 98702 5874 0 0 0 0 0 0 0 0 0 0 0 0
-node "li_9505_7361#" 18 0 9505 7361 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1156 136 30752 2214 0 0 0 0 0 0 0 0 0 0
-node "li_7389_6273#" 709 0 7389 6273 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 53414 3414 231844 16462 0 0 0 0 0 0 0 0 0 0
-node "VDD" 142 0 19992 11072 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3468 408 1144776 22002 118560 2456 118560 2456 35875840 101056 42617408 115540 0 0
+port "VDD" 8 21648 11072 22448 11872 m5
+node "m1_9430_7024#" 16 0 9430 7024 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 98504 7092 0 0 0 0 0 0 0 0 0 0
+node "m1_12282_7024#" 11 0 12282 7024 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69328 5008 0 0 0 0 0 0 0 0 0 0
+node "VSS" 34 0 21648 13472 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2597184 44296 388560 10848 322560 6336 42327040 120256 49612160 135096 0 0
+node "li_9137_5831#" 92 0 9137 5831 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2312 272 98204 6926 18192 1232 0 0 0 0 0 0 0 0
+node "li_8401_5797#" 244 0 8401 5797 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13532 1000 205732 14568 16288 1096 0 0 0 0 0 0 0 0
+node "li_8418_5933#" 830 0 8418 5933 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 67082 4150 217152 15486 0 0 0 0 0 0 0 0 0 0
+node "li_10333_6001#" 519 0 10333 6001 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43384 2688 78500 5586 0 0 0 0 0 0 0 0 0 0
+node "li_12265_5865#" 351 0 12265 5865 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 27642 1762 115412 8240 0 0 0 0 0 0 0 0 0 0
+node "li_9413_7429#" 17 0 9413 7429 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1156 136 26272 1894 0 0 0 0 0 0 0 0 0 0
+node "VDD" 166 0 21648 11072 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7514 646 1327776 24164 118560 2456 118560 2456 35875840 101056 46386560 125496 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "nfet2/SOURCE" "pfet2/DRAIN" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "pfet2/DRAIN" "li_9505_7361#"
-merge "li_9505_7361#" "pfet3/GATE"
-merge "pfet3/GATE" "li_8401_5797#"
-merge "li_8401_5797#" "nfet3/GATE"
-merge "nfet3/GATE" "li_7498_5865#"
-merge "pfet4/VGND" "pfet5/VGND" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "pfet5/VGND" "nfet5/DRAIN"
-merge "nfet5/DRAIN" "nfet5/VGND"
-merge "nfet5/VGND" "nfet4/VGND"
-merge "nfet4/VGND" "nfet4/DRAIN"
-merge "nfet4/DRAIN" "pfet1/VGND"
-merge "pfet1/VGND" "nfet1/VGND"
+merge "nfet2/DRAIN" "nfet4/DRAIN" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "nfet4/DRAIN" "pfet1/VSUBS"
+merge "pfet1/VSUBS" "m1_9430_7024#"
+merge "m1_9430_7024#" "pfet1/VGND"
+merge "pfet1/VGND" "nfet5/VGND"
+merge "nfet5/VGND" "nfet5/DRAIN"
+merge "nfet5/DRAIN" "pfet2/VSUBS"
+merge "pfet2/VSUBS" "pfet2/VGND"
+merge "pfet2/VGND" "nfet1/VGND"
 merge "nfet1/VGND" "nfet1/DRAIN"
-merge "nfet1/DRAIN" "nfet2/VGND"
-merge "nfet2/VGND" "nfet2/DRAIN"
-merge "nfet2/DRAIN" "pfet2/VGND"
-merge "pfet2/VGND" "pfet3/VGND"
-merge "pfet3/VGND" "nfet3/VGND"
-merge "nfet3/VGND" "nfet3/DRAIN"
-merge "nfet3/DRAIN" "VSS"
-merge "nfet1/SOURCE" "pfet1/DRAIN" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "pfet1/DRAIN" "nfet2/GATE"
-merge "nfet2/GATE" "li_9873_5882#"
-merge "li_9873_5882#" "pfet2/GATE"
-merge "pfet2/GATE" "li_9137_5797#"
-merge "pfet4/VSUBS" "pfet5/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "pfet5/VSUBS" "nfet5/VNB"
-merge "nfet5/VNB" "nfet4/VNB"
-merge "nfet4/VNB" "pfet1/VSUBS"
-merge "pfet1/VSUBS" "nfet1/VNB"
-merge "nfet1/VNB" "nfet2/VNB"
-merge "nfet2/VNB" "pfet2/VSUBS"
-merge "pfet2/VSUBS" "pfet3/VSUBS"
-merge "pfet3/VSUBS" "nfet3/VNB"
-merge "nfet3/VNB" "VSUBS"
-merge "pfet4/SOURCE" "pfet4/VPWR" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "pfet4/VPWR" "pfet5/SOURCE"
-merge "pfet5/SOURCE" "pfet5/VPWR"
-merge "pfet5/VPWR" "nfet5/VPWR"
-merge "nfet5/VPWR" "nfet4/VPWR"
-merge "nfet4/VPWR" "pfet1/SOURCE"
-merge "pfet1/SOURCE" "pfet1/VPWR"
-merge "pfet1/VPWR" "nfet1/VPWR"
-merge "nfet1/VPWR" "nfet2/VPWR"
-merge "nfet2/VPWR" "pfet2/SOURCE"
+merge "nfet1/DRAIN" "pfet4/VSUBS"
+merge "pfet4/VSUBS" "pfet4/VGND"
+merge "pfet4/VGND" "nfet2/VGND"
+merge "nfet2/VGND" "nfet4/VGND"
+merge "nfet4/VGND" "nfet3/VGND"
+merge "nfet3/VGND" "pfet3/VSUBS"
+merge "pfet3/VSUBS" "pfet5/VSUBS"
+merge "pfet5/VSUBS" "VSUBS"
+merge "VSUBS" "nfet3/DRAIN"
+merge "nfet3/DRAIN" "pfet3/VGND"
+merge "pfet3/VGND" "pfet5/VGND"
+merge "pfet5/VGND" "VSS"
+merge "pfet2/DRAIN" "nfet2/SOURCE" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "nfet2/SOURCE" "m1_12282_7024#"
+merge "m1_12282_7024#" "nfet3/GATE"
+merge "nfet3/GATE" "pfet3/GATE"
+merge "pfet3/GATE" "li_9137_5831#"
+merge "pfet1/SOURCE" "pfet1/VPWR" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pfet1/VPWR" "nfet5/VPWR"
+merge "nfet5/VPWR" "pfet2/SOURCE"
 merge "pfet2/SOURCE" "pfet2/VPWR"
-merge "pfet2/VPWR" "pfet3/SOURCE"
+merge "pfet2/VPWR" "nfet1/VPWR"
+merge "nfet1/VPWR" "pfet4/SOURCE"
+merge "pfet4/SOURCE" "pfet4/VPWR"
+merge "pfet4/VPWR" "nfet2/VPWR"
+merge "nfet2/VPWR" "nfet4/VPWR"
+merge "nfet4/VPWR" "nfet3/VPWR"
+merge "nfet3/VPWR" "pfet3/SOURCE"
 merge "pfet3/SOURCE" "pfet3/VPWR"
-merge "pfet3/VPWR" "nfet3/VPWR"
-merge "nfet3/VPWR" "VDD"
-merge "pfet5/DRAIN" "nfet5/SOURCE" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "nfet5/SOURCE" "li_12909_7293#"
-merge "li_12909_7293#" "pfet1/GATE"
-merge "pfet1/GATE" "li_11529_5797#"
-merge "li_11529_5797#" "nfet1/GATE"
-merge "nfet1/GATE" "li_10718_5865#"
-merge "nfet3/SOURCE" "pfet4/GATE" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "pfet4/GATE" "nfet4/GATE"
-merge "nfet4/GATE" "pfet3/DRAIN"
-merge "pfet3/DRAIN" "li_7389_6273#"
-merge "pfet4/DRAIN" "pfet5/GATE" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-merge "pfet5/GATE" "li_13829_5797#"
-merge "li_13829_5797#" "nfet5/GATE"
-merge "nfet5/GATE" "li_13018_5865#"
-merge "li_13018_5865#" "nfet4/SOURCE"
-merge "nfet4/SOURCE" "li_12449_5865#"
+merge "pfet3/VPWR" "pfet5/SOURCE"
+merge "pfet5/SOURCE" "pfet5/VPWR"
+merge "pfet5/VPWR" "VDD"
+merge "pfet1/GATE" "nfet5/SOURCE" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "nfet5/SOURCE" "nfet1/GATE"
+merge "nfet1/GATE" "pfet5/DRAIN"
+merge "pfet5/DRAIN" "li_8418_5933#"
+merge "pfet4/GATE" "pfet3/DRAIN" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pfet3/DRAIN" "li_9413_7429#"
+merge "li_9413_7429#" "nfet4/GATE"
+merge "nfet4/GATE" "nfet3/SOURCE"
+merge "nfet3/SOURCE" "li_10333_6001#"
+merge "nfet5/GATE" "pfet4/DRAIN" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pfet4/DRAIN" "nfet4/SOURCE"
+merge "nfet4/SOURCE" "pfet5/GATE"
+merge "pfet5/GATE" "li_8401_5797#"
+merge "pfet1/DRAIN" "pfet2/GATE" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pfet2/GATE" "nfet1/SOURCE"
+merge "nfet1/SOURCE" "nfet2/GATE"
+merge "nfet2/GATE" "li_12265_5865#"

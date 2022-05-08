@@ -46,7 +46,19 @@ MACRO sky130_asc_nfet_01v8_lvt_1
         RECT 0.520 3.000 0.750 7.000 ;
     END
   END DRAIN
-  PIN VNB
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER li1 ;
+        RECT 0.000 9.250 3.070 9.550 ;
+      LAYER mcon ;
+        RECT 1.340 9.250 1.640 9.550 ;
+      LAYER met1 ;
+        RECT 0.000 9.100 3.070 9.700 ;
+    END
+  END VPWR
+  PIN VGND
     DIRECTION INOUT ;
     USE GROUND ;
     PORT
@@ -60,19 +72,7 @@ MACRO sky130_asc_nfet_01v8_lvt_1
       LAYER met1 ;
         RECT 0.000 -0.300 3.070 0.300 ;
     END
-  END VNB
-  PIN VPWR
-    DIRECTION INOUT ;
-    USE POWER ;
-    PORT
-      LAYER li1 ;
-        RECT 0.000 9.250 3.070 9.550 ;
-      LAYER mcon ;
-        RECT 1.340 9.250 1.640 9.550 ;
-      LAYER met1 ;
-        RECT 0.000 9.100 3.070 9.700 ;
-    END
-  END VPWR
+  END VGND
 END sky130_asc_nfet_01v8_lvt_1
 END LIBRARY
 

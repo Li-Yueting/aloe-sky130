@@ -43,14 +43,14 @@ LEF read, Line 311 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF 
 LEF read: Processed 820 lines.
 Reading LEF data from file inputs/adk/stdcells.lef.
 This action cannot be undone.
-LEF read: Processed 171 lines.
+LEF read: Processed 159 lines.
 Reading DEF data from file design.def.
 This action cannot be undone.
   Processed 10 vias total.
   Processed 10 subcell instances total.
   Processed 10 special nets total.
-  Processed 8 nets total.
-DEF read: Processed 430 lines.
+  Processed 7 nets total.
+DEF read: Processed 440 lines.
 DEF Read: encountered 1 warning total.
 where option is one of:
   adjust			compensate R and C hierarchically
@@ -63,7 +63,7 @@ where option is one of:
   labelcheck		check for connections through sticky labels
   aliases		output all net name aliases
 Processing ringosc
-Extracting sky130_asc_pfet_01v8_lvt_1 into sky130_asc_pfet_01v8_lvt_1.ext:
 Extracting sky130_asc_nfet_01v8_lvt_1 into sky130_asc_nfet_01v8_lvt_1.ext:
+Extracting sky130_asc_pfet_01v8_lvt_1 into sky130_asc_pfet_01v8_lvt_1.ext:
 Extracting ringosc into ringosc.ext:
 exttospice finished.

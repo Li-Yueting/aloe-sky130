@@ -6,3 +6,4 @@ venv/
 inverter/build
 ringosc/build
 layout/
+debug/

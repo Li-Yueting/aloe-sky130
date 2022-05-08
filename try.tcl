@@ -1,1 +1,0 @@
-setenv REPO `pwd`

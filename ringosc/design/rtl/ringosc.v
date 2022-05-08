@@ -1,6 +1,4 @@
-module ringosc (
-    input clk
-);
+module ringosc ();
     wire out1;
     wire out2;
     wire out3;

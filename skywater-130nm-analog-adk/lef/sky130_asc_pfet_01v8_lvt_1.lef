@@ -49,7 +49,7 @@ MACRO sky130_asc_pfet_01v8_lvt_1
         RECT 0.700 1.775 0.930 8.225 ;
     END
   END DRAIN
-  PIN VPB
+  PIN VPWR
     DIRECTION INOUT ;
     USE POWER ;
     PORT
@@ -64,7 +64,7 @@ MACRO sky130_asc_pfet_01v8_lvt_1
       LAYER met1 ;
         RECT 0.000 9.100 3.430 9.700 ;
     END
-  END VPB
+  END VPWR
   PIN VGND
     DIRECTION INOUT ;
     USE GROUND ;

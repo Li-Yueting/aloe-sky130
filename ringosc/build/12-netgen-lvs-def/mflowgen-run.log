@@ -11,7 +11,7 @@ Comparison output logged to file outputs/lvs_results.log
 Logging to file "outputs/lvs_results.log" enabled
 Contents of circuit 1:  Circuit: 'sky130_asc_nfet_01v8_lvt_1'
 Circuit sky130_asc_nfet_01v8_lvt_1 contains 0 device instances.
-Circuit contains 0 nets, and 6 disconnected pins.
+Circuit contains 0 nets, and 5 disconnected pins.
 Contents of circuit 2:  Circuit: 'sky130_asc_nfet_01v8_lvt_1'
 Circuit sky130_asc_nfet_01v8_lvt_1 contains 0 device instances.
 Circuit contains 0 nets.
@@ -19,7 +19,7 @@ Circuit contains 0 nets.
 Circuit sky130_asc_nfet_01v8_lvt_1 contains no devices.
 Contents of circuit 1:  Circuit: 'sky130_asc_pfet_01v8_lvt_1'
 Circuit sky130_asc_pfet_01v8_lvt_1 contains 0 device instances.
-Circuit contains 0 nets, and 6 disconnected pins.
+Circuit contains 0 nets, and 5 disconnected pins.
 Contents of circuit 2:  Circuit: 'sky130_asc_pfet_01v8_lvt_1'
 Circuit sky130_asc_pfet_01v8_lvt_1 contains 0 device instances.
 Circuit contains 0 nets.
@@ -29,16 +29,21 @@ Contents of circuit 1:  Circuit: 'ringosc'
 Circuit ringosc contains 10 device instances.
   Class: sky130_asc_nfet_01v8_lvt_1 instances:   5
   Class: sky130_asc_pfet_01v8_lvt_1 instances:   5
-Circuit contains 13 nets.
+Circuit contains 7 nets.
 Contents of circuit 2:  Circuit: 'ringosc'
 Circuit ringosc contains 10 device instances.
   Class: sky130_asc_nfet_01v8_lvt_1 instances:   5
   Class: sky130_asc_pfet_01v8_lvt_1 instances:   5
-Circuit contains 7 nets, and 1 disconnected pin.
+Circuit contains 7 nets.
 
 Circuit 1 contains 10 devices, Circuit 2 contains 10 devices.
-Circuit 1 contains 13 nets,    Circuit 2 contains 7 nets. *** MISMATCH ***
+Circuit 1 contains 7 nets,    Circuit 2 contains 7 nets.
 
-Result: Netlists do not match.
+Circuits match with 3 symmetries.
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match with 3 symmetries.
+Circuits match correctly.
+Result: Circuits match uniquely.
 Logging to file "outputs/lvs_results.log" disabled
 LVS Done.

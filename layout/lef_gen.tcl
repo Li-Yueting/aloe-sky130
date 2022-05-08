@@ -35,11 +35,11 @@ proc addlef {inst_name output_folder} {
         port DRAIN make "nsew"
         port class inout 
         port use signal 
-        # VPB
-        findlabel VPB
-        port make
-        port class inout
-        port use power  
+        # # VPB
+        # findlabel VPB
+        # port make
+        # port class inout
+        # port use power  
         # VPWR
         findlabel VPWR
         port VPWR make "nsew"
@@ -53,8 +53,16 @@ proc addlef {inst_name output_folder} {
         # set mag_file [file join a b $output_folder sky130_asc_pfet_01v8_lvt_1.mag] 
         # set lef_file [file join a b $output_folder sky130_asc_pfet_01v8_lvt_1.lef]
         cd $output_folder
+        cd ./mag
         save sky130_asc_pfet_01v8_lvt_1.mag
+        cd ../lef
         lef write sky130_asc_pfet_01v8_lvt_1.lef
+        cd ../gds
+        gds write sky130_asc_pfet_01v8_lvt_1.gds
+        cd ../spi
+        extract all
+        ext2spice lvs
+        ext2spice -o sky130_asc_pfet_01v8_lvt_1.spice
         # puts "mag_file: $mag_file"
         # puts "lef_file: $lef_file"
         # save $mag_file
@@ -73,11 +81,11 @@ proc addlef {inst_name output_folder} {
         findlabel DRAIN
         port make 
         port class inout
-        # VNB
-        findlabel VNB
-        port make 
-        port class inout
-        port use ground
+        # # VNB
+        # findlabel VNB
+        # port make 
+        # port class inout
+        # port use ground
         # VPWR
         findlabel VPWR
         port make 
@@ -89,8 +97,16 @@ proc addlef {inst_name output_folder} {
         port class inout
         port use ground
         cd $output_folder
+        cd ./mag
         save sky130_asc_nfet_01v8_lvt_1.mag
+        cd ../lef
         lef write sky130_asc_nfet_01v8_lvt_1.lef
+        cd ../gds
+        gds write sky130_asc_nfet_01v8_lvt_1.gds
+        cd ../spi
+        extract all
+        ext2spice lvs
+        ext2spice -o sky130_asc_nfet_01v8_lvt_1.spice
     } else {
         puts "No inst lef generated ..."
     }
