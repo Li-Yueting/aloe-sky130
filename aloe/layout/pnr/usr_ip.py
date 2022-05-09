@@ -48,7 +48,7 @@ nout = 2    # Number of streamouts
 label_size = 0.1    # Streamout label size
 
 # Evolution algorithms parameters
-pop_size = 4 # Population size [20, 200]
+pop_size = 20 # Population size [20, 200]
 ngen  = 3 # Number of generations   [1, 100]
 cx_prob = 0.5    # Crossover probability [0, 1]
 mut_prob = 0.3    # Mutation probability  [0, 0.5]

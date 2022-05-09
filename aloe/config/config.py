@@ -10,7 +10,7 @@ group = False
 # Modify for each block
 #==============================================================================
 lib_name    = 'poc'
-blk_name    = 'ro_top'
+blk_name    = 'BGR_V1_'
 tb_name     = ''
 
 #=======
