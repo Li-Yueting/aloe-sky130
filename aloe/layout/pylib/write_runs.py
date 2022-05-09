@@ -88,7 +88,15 @@ def write_run(run_num, generation, gennum):
     if not generation == 'lucy':
         cstr_df = read_cstr('net', ['weight'], cstrin_path)
         net_wt_stubs = []
-        all_nets = ["clk", "en", "out1", "out2", "out3", "out4", "out5", "inv1/ds", "inv2/ds", "inv3/ds", "inv4/ds", "inv5/ds", "VDD", "VSS", "VNW", "VDDPST", "POC", "VDDCE", "VDDPE", "VPW", "VSSPST", "VSSE"]
+        all_nets = ['clk', 'porst', 'va', 'vb', 'vbg', 'vc', 'ground',
+            'power', 'l17', 'l18', 'l19', 'l20', 'amp/power', 'amp/ground',
+            'amp/vg', 'amp/vq', 'amp/vx', 'VNW', 'VDDPST', 'POC',
+            'VDDCE', 'VDDPE', 'VPW', 'VSSPST', 'VSSE', 'BGR_Core/ground', 
+            'BGR_Core/vbneg', 'BGR_Core/l6', 'BGR_Core/l7', 'BGR_Core/l8', 'BGR_Core/l10',
+            'BGR_Core/l11', 'BGR_Core/l1', 'BGR_Core/l2', 'BGR_Core/l4', 'BGR_Core/l5',
+            'BGR_Core/l12', 'BGR_Core/R6/l', 'BGR_Core/R7/l', 'BGR_Core/R8/l', 'BGR_Core/R10/l',
+            'BGR_Core/R11/l', 'BGR_Core/R3/l', 'BGR_Core/R1/l', 'BGR_Core/R2/l', 'BGR_Core/R4/l',
+            'BGR_Core/R5/l', 'BGR_Core/R12/l', 'CM/power', 'CM/ground', 'R17/l', 'R18/l', 'R19/l', 'R20/l']
         for idx, net in enumerate(all_nets):
             print(net)
             net_wt_stubs.append('createNetGroup group' + str(idx) + '\n')
@@ -108,7 +116,7 @@ def write_run(run_num, generation, gennum):
             #run_tcl.write('source {}\n'.format(os.path.join(ip.pnr_dir, 'sroute.tcl')))
         if flow.steps['place']:
             # ONETIME
-            run_tcl.write('loadFPlan /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/examples/ringosc/ro.fp\n')
+            run_tcl.write('loadFPlan /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/examples/BGR_Top/BGR_Top.fp\n')
             if not generation == 'lucy':
                 run_tcl.write('defIn ' + ip.fdef0 + '\n')
                 run_tcl.write(''.join(net_wt_stubs))

@@ -22,6 +22,7 @@ Xingyu Ni: xingyuni@stanford.edu
 ## Circuit specific aloe flow
 1. change config/config.py
 2. change pnr/def_ip.py, pnr/usr_ip.py
+3. change evaluate, examine
 3. change pylib/write_run.py
 
 

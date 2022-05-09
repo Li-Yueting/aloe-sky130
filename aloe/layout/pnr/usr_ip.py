@@ -17,8 +17,11 @@ cus_home  = '/home/pohsuan/custom'     # Custom home directory
 # perf = ['d0', 'd1', 'd2', 'd3', 'a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'a8', 'a9']
 # perf_type = ['min', 'min', 'min', 'min', 'min', 'min', 'min', 'min', 'min', 'min', 'min', 'min', 'min', 'min']
 
-perf = ['d0', 'd1', 'd2', 'd3', 'a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'a8', 'a9', 'a10', 'a11', 'a12', 'a13', 'a14', 'a15', 'a16', 'a17']
-perf_type = ['min', 'min', 'min', 'min', 'min', 'min', 'min', 'min', 'min', 'min', 'min', 'min', 'min', 'min', 'min', 'min', 'min', 'min', 'min', 'min', 'min', 'min']
+# perf = ['d0', 'd1', 'd2', 'd3', 'a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'a8', 'a9', 'a10', 'a11', 'a12', 'a13', 'a14', 'a15', 'a16', 'a17']
+# perf_type = ['min', 'min', 'min', 'min', 'min', 'min', 'min', 'min', 'min', 'min', 'min', 'min', 'min', 'min', 'min', 'min', 'min', 'min', 'min', 'min', 'min', 'min']
+
+perf = ['a0', 'a1', 'a2']
+perf_type = ['min', 'min', 'min']
 
 perf_group_type =['min']
 tb_name     = ''

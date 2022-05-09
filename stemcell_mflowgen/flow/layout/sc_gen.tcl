@@ -249,7 +249,7 @@ proc inst_param_customize {inst_name guard topc botc doverlap lmin wmin viagate}
 proc place_res {x_center y_center index} {
     set bx 1220
     # set by 
-    set height_half_center 440
+    set height_half_center 470
 	set power_half_w 30
 	set con_sep 100 ;#unit conversion
 	set con_w 30
@@ -345,7 +345,7 @@ proc place_res {x_center y_center index} {
 proc place_res_2 {x_center y_center index} {
     set bx 1507
     # set by 
-    set height_half_center 440
+    set height_half_center 470
 	set power_half_w 30
 	set con_sep 100 ;#unit conversion
 	set con_w 30
@@ -446,7 +446,7 @@ proc place_pnp_0 {x_center y_center index} {
 	magic::gencell sky130::sky130_fd_pr__pnp_05v5_W3p40L3p40 [format "xm%d" $index] 
     set box_size [shift_to_center]
 	set bx [expr {[lindex $box_size 0]/2}]
-    set height_half_center 440
+    set height_half_center 470
 	set power_half_w 30
 	set con_sep 100 ;#unit conversion
 	set con_w 30
@@ -520,7 +520,7 @@ proc place_pnp {x_center y_center mult index} {
 	set bx [expr {[lindex $box_size 0]/2}]
 	set x_center [expr 670*$mult/2]
 	set y_center 335
-    set height_half_center 440
+    set height_half_center 470
 	set power_half_w 30
 	set con_sep 100 ;#unit conversion
 	set con_w 30
