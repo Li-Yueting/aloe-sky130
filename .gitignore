@@ -4,4 +4,6 @@ layout/inv1/
 mflowgen/
 venv/
 inverter/build
+ringosc/build
 layout/
+debug/

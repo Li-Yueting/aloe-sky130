@@ -1,0 +1,94 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1651876893
+<< pwell >>
+rect -20 30 634 1426
+<< nmoslvt >>
+rect 156 600 556 1400
+<< ndiff >>
+rect 98 1388 156 1400
+rect 98 612 110 1388
+rect 144 612 156 1388
+rect 98 600 156 612
+rect 556 1388 614 1400
+rect 556 612 568 1388
+rect 602 612 614 1388
+rect 556 600 614 612
+<< ndiffc >>
+rect 110 612 144 1388
+rect 568 612 602 1388
+<< psubdiff >>
+rect 38 160 78 200
+rect 38 80 78 120
+<< psubdiffcont >>
+rect 38 120 78 160
+<< poly >>
+rect 156 1400 556 1426
+rect 156 574 556 600
+rect 304 224 424 574
+rect 178 204 614 224
+rect 178 144 268 204
+rect 328 144 614 204
+rect 178 124 614 144
+<< polycont >>
+rect 268 144 328 204
+<< locali >>
+rect 0 1850 268 1910
+rect 328 1850 614 1910
+rect 98 1690 614 1750
+rect 567 1404 601 1690
+rect 110 1388 144 1404
+rect 109 612 110 654
+rect 567 1388 602 1404
+rect 567 1386 568 1388
+rect 109 596 144 612
+rect 568 596 602 612
+rect 109 430 143 596
+rect 98 370 614 430
+rect 28 160 88 240
+rect 28 120 38 160
+rect 78 120 88 160
+rect 178 144 268 204
+rect 328 144 614 204
+rect 28 30 88 120
+rect 0 -30 268 30
+rect 328 -30 614 30
+<< viali >>
+rect 268 1850 328 1910
+rect 110 612 144 1388
+rect 568 612 602 1388
+rect 268 -30 328 30
+<< metal1 >>
+rect 0 1910 614 1940
+rect 0 1850 268 1910
+rect 328 1850 614 1910
+rect 0 1820 614 1850
+rect 104 1388 150 1400
+rect 104 612 110 1388
+rect 144 612 150 1388
+rect 104 600 150 612
+rect 562 1388 608 1400
+rect 562 612 568 1388
+rect 602 612 608 1388
+rect 562 600 608 612
+rect 0 30 614 60
+rect 0 -30 268 30
+rect 328 -30 614 30
+rect 0 -60 614 -30
+<< labels >>
+flabel metal1 98 1850 158 1910 1 FreeSans 800 0 0 0 VPWR
+port 4 n power bidirectional
+flabel metal1 98 -30 158 30 1 FreeSans 800 0 0 0 VGND
+port 5 n ground bidirectional
+flabel locali 554 1690 614 1750 1 FreeSans 800 0 0 0 SOURCE
+port 2 n default bidirectional
+flabel locali 554 370 614 430 1 FreeSans 800 0 0 0 DRAIN
+port 3 n default bidirectional
+flabel locali 554 144 614 204 1 FreeSans 800 0 0 0 GATE
+port 1 n default bidirectional
+<< properties >>
+string FIXED_BBOX 0 0 614 1880
+string LEFclass CORE
+string LEFsite unitasc
+<< end >>
