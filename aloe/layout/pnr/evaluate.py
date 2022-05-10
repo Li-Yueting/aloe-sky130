@@ -15,7 +15,7 @@ def eval_ro_top(individual, file_expr):
 
     s0 = float(nl['va'])
     s1 = float(nl['vb'])
-    s2 = float(nl['vc'])
+
 
     # print (s0)
 
@@ -30,5 +30,5 @@ def eval_ro_top(individual, file_expr):
     # s19 = float(nl['RO/INV9/sp']) + float(nl['RO/INV9/sn'])
     # s20 = float(nl['RO/INV10/sp']) + float(nl['RO/INV10/sn'])
     # s21 = float(nl['RO/INV11/sp']) + float(nl['RO/INV11/sn'])
-    individual.fitness.values = (s0, s1, s2)
+    individual.fitness.values = (s0, s1)
 

@@ -1,0 +1,6 @@
+Constant assertion and propagation to pin 'BGR_Core/pnp_va/Collector' leads to '0' and '1' values simultaneously, preserving '0' for view 'analysis_default'
+Constant assertion and propagation to pin 'BGR_Core/pnp_vb/b1/Base' leads to '0' and '1' values simultaneously, preserving '0' for view 'analysis_default'
+Constant assertion and propagation to pin 'BGR_Core/pnp_vb/b3/Base' leads to '0' and '1' values simultaneously, preserving '0' for view 'analysis_default'
+Constant assertion and propagation to pin 'BGR_Core/pnp_vb/b2/Base' leads to '0' and '1' values simultaneously, preserving '0' for view 'analysis_default'
+Constant assertion and propagation to pin 'BGR_Core/pnp_vb/b5/Base' leads to '0' and '1' values simultaneously, preserving '0' for view 'analysis_default'
+Constant assertion and propagation to pin 'BGR_Core/pnp_vb/b4/Base' leads to '0' and '1' values simultaneously, preserving '0' for view 'analysis_default'

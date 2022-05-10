@@ -1,3 +1,3 @@
 clk	porst	va	vb	vbg	vc	ground	power	l17	l18	l19	l20	amp/power	amp/ground	amp/vg	amp/vq	amp/vx	BGR_Core/power	VNW	VDDPST	POC	VDDCE	VDDPE	VPW	VSSPST	VSSE	BGR_Core/power	BGR_Core/ground	BGR_Core/vbneg	BGR_Core/l6	BGR_Core/l7	BGR_Core/l8	BGR_Core/l10	BGR_Core/l11	BGR_Core/l1	BGR_Core/l2	BGR_Core/l4	BGR_Core/l5	BGR_Core/l12	BGR_Core/R6/l	BGR_Core/R7/l	BGR_Core/R8/l	BGR_Core/R10/l	BGR_Core/R11/l	BGR_Core/R3/l	BGR_Core/R1/l	BGR_Core/R2/l	BGR_Core/R4/l	BGR_Core/R5/l	BGR_Core/R12/l	CM/power	CM/ground	R17/l	R18/l	R19/l	R20/l	VDD	VSS
-5	2	16	13	2	10	8	7	16	6	17	15	10	6	2	3	13	12	15	11	11	17	11	7	20	4	4	19	20	11	7	14	6	6	9	12	15	9	11	7	11	10	15	3	6	2	14	4	4	6	15	11	19	15	6	19	15	11
-6	13	4	17	9	2	9	3	2	9	12	4	3	13	15	6	8	16	15	6	13	8	7	12	14	13	2	12	10	19	19	16	3	19	7	16	14	7	3	15	15	16	11	2	12	17	11	17	3	7	16	7	4	13	3	19	6	3
+15	15	5	6	6	2	20	17	5	8	18	5	10	7	14	4	3	2	5	13	17	12	5	16	13	20	10	17	9	7	19	19	4	18	7	2	7	18	15	8	16	14	10	2	20	6	14	7	16	20	3	14	4	20	14	12	9	18
+15	15	5	6	6	2	20	18	5	8	18	5	10	7	14	4	3	2	5	13	17	12	5	16	13	20	10	17	9	7	19	19	4	18	7	2	7	18	15	8	16	14	10	2	20	6	14	7	16	20	3	14	4	20	14	12	9	18

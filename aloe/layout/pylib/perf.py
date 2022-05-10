@@ -42,12 +42,11 @@ def hypervol_hd(file_path, ref_pt):
     return hypervol
 
 def hypervol_c(file_path, ref_pt):
-    os.system('rm hv.txt')
-    os.system('cp {} /home/users/xingyuni/ee372/repo.git/hypervolume/hv/perf.txt'.format(file_path))
-    os.system('sed -i 1d /home/users/xingyuni/ee372/repo.git/hypervolume/hv/perf.txt')
-    # os.system('/home/users/xingyuni/ee372/repo.git/hypervolume/hv -q -r "{}" {} >> hv.txt'.format(' '.join(map(str, ref_pt)), 'perf.txt'))
-    # print ('/home/users/xingyuni/ee372/repo.git/hypervolume/hv -q -r "{}" {} >> hv.txt'.format(' '.join(map(str, ref_pt)), 'perf.txt'))
-    hypervol = pd.read_csv('/home/users/xingyuni/ee372/repo.git/hypervolume/hv/perf.txt', header=None)
+    os.system('rm /home/users/xingyuni/ee372/aloe-sky130/aloe/analyze/hv/hv.txt')
+    os.system('cp {} /home/users/xingyuni/ee372/aloe-sky130/aloe/analyze/hv/perf.txt'.format(file_path))
+    os.system('sed -i 1d /home/users/xingyuni/ee372/aloe-sky130/aloe/analyze/hv/perf.txt')
+    # os.system('cat /home/users/xingyuni/ee372/aloe-sky130/aloe/analyze/hv/perf.txt | tr -s '[:blank:]' ',' >/home/users/xingyuni/ee372/aloe-sky130/aloe/analyze/hv/perf.csv')
+    hypervol = pd.read_csv('/home/users/xingyuni/ee372/aloe-sky130/aloe/analyze/hv/perf.csv', header=None)
     print("********************************")
     print(hypervol.values)
     return float(hypervol.values)

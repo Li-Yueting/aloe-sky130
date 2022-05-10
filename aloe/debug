@@ -8,8 +8,8 @@
 #=======#
 # Envs  #
 #=======#
-setenv REPO `pwd`
-setenv ALOE_HOME `pwd`/aloe
+# setenv REPO `pwd`
+# setenv ALOE_HOME `pwd`/aloe
 
 #===============#
 # Function Test #

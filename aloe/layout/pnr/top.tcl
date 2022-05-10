@@ -2,7 +2,7 @@ set time_start_all [clock seconds]
 setDistributeHost -local
 set plot true
 set ngen 3
-set pop_size 20
+set pop_size 80
 set nout 2
 set ::env(repo) /home/users/xingyuni/ee372/aloe-sky130
 set ::env(gen) 0
