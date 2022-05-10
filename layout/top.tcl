@@ -15,9 +15,11 @@ puts "script_path: $script_path"
 # flush
 # place_nmos 0 0 2 1 1
 # addlef nmos $script_path
-flush
-place_cap_1 0 0 1
-addlef cap_1 $script_path
-flush
-place_cap_2 0 0 1
-addlef cap_2 $script_path
+# flush
+# place_cap_1 0 0 1
+# addlef cap_1 $script_path
+# flush
+# place_cap_2 0 0 1
+# addlef cap_2 $script_path
+place_pmos 0 0 2 60 1
+addlef pmos_60 $script_path
