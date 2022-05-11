@@ -67,6 +67,104 @@ proc addlef {inst_name output_folder} {
         # puts "lef_file: $lef_file"
         # save $mag_file
         # lef write $lef_file
+    } elseif {$inst_name=={pmos_6_flat}} {
+        property FIXED_BBOX {0 0 2975 1880}
+        # GATE
+        findlabel GATE
+        port GATE make "nsew"
+        port class inout
+        port use signal 
+        # SOURCE
+        findlabel SOURCE
+        port SOURCE make "nsew"
+        port class inout 
+        port use signal 
+        # DRAIN
+        findlabel DRAIN
+        port DRAIN make "nsew"
+        port class inout 
+        port use signal 
+        # # VPB
+        # findlabel VPB
+        # port make
+        # port class inout
+        # port use power  
+        # VPWR
+        findlabel VPWR
+        port VPWR make "nsew"
+        port class bidirectional
+        port use power
+        # VGND
+        findlabel VGND
+        port VGND make "nsew"
+        port class bidirectional
+        port use ground
+        # set mag_file [file join a b $output_folder sky130_asc_pfet_01v8_lvt_1.mag] 
+        # set lef_file [file join a b $output_folder sky130_asc_pfet_01v8_lvt_1.lef]
+        cd $output_folder
+        cd ./mag
+        save sky130_asc_pfet_01v8_lvt_6.mag
+        cd ../lef
+        lef write sky130_asc_pfet_01v8_lvt_6.lef
+        cd ../gds
+        gds write sky130_asc_pfet_01v8_lvt_6.gds
+        cd ../spi
+        extract all
+        ext2spice lvs
+        ext2spice -o sky130_asc_pfet_01v8_lvt_6.spice
+        # puts "mag_file: $mag_file"
+        # puts "lef_file: $lef_file"
+        # save $mag_file
+        # lef write $lef_file
+    } elseif {$inst_name=={pmos_9_flat}} {
+        property FIXED_BBOX {0 0 4350 1880}
+        # GATE
+        findlabel GATE
+        port GATE make "nsew"
+        port class inout
+        port use signal 
+        # SOURCE
+        findlabel SOURCE
+        port SOURCE make "nsew"
+        port class inout 
+        port use signal 
+        # DRAIN
+        findlabel DRAIN
+        port DRAIN make "nsew"
+        port class inout 
+        port use signal 
+        # # VPB
+        # findlabel VPB
+        # port make
+        # port class inout
+        # port use power  
+        # VPWR
+        findlabel VPWR
+        port VPWR make "nsew"
+        port class bidirectional
+        port use power
+        # VGND
+        findlabel VGND
+        port VGND make "nsew"
+        port class bidirectional
+        port use ground
+        # set mag_file [file join a b $output_folder sky130_asc_pfet_01v8_lvt_1.mag] 
+        # set lef_file [file join a b $output_folder sky130_asc_pfet_01v8_lvt_1.lef]
+        cd $output_folder
+        cd ./mag
+        save sky130_asc_pfet_01v8_lvt_9.mag
+        cd ../lef
+        lef write sky130_asc_pfet_01v8_lvt_9.lef
+        cd ../gds
+        gds write sky130_asc_pfet_01v8_lvt_9.gds
+        cd ../spi
+        extract all
+        ext2spice lvs
+        ext2spice -o sky130_asc_pfet_01v8_lvt_9.spice
+        # puts "mag_file: $mag_file"
+        # puts "lef_file: $lef_file"
+        # save $mag_file
+        # lef write $lef_file
     } elseif {$inst_name=={pmos_12_flat}} {
         property FIXED_BBOX {0 0 5723 1880}
         # GATE
@@ -289,15 +387,120 @@ proc addlef {inst_name output_folder} {
         port use ground
         cd $output_folder
         cd ./mag
-        save sky130_fd_pr__cap_mim_m3_1.mag
+        save sky130_asc_cap_mim_m3_1.mag
         cd ../lef
-        lef write sky130_fd_pr__cap_mim_m3_1.lef
+        lef write sky130_asc_cap_mim_m3_1.lef
         cd ../gds
-        gds write sky130_fd_pr__cap_mim_m3_1.gds
+        gds write sky130_asc_cap_mim_m3_1.gds
         cd ../spi
         extract all
         ext2spice lvs
-        ext2spice -o sky130_fd_pr__cap_mim_m3_1.spice
+        ext2spice -o sky130_asc_cap_mim_m3_1.spice
+    } elseif {$inst_name=={pnp_1_flat}} {
+        property FIXED_BBOX {0 0 1340 1880}
+        # Emitter
+        findlabel Emitter
+        port make
+        port class inout
+        # Base
+        findlabel Base
+        port make
+        port class inout
+        # Collector
+        findlabel Collector
+        port make
+        port class inout
+        # VPWR
+        findlabel VPWR
+        port make 
+        port class inout
+        port use power
+        # VGND
+        findlabel VGND
+        port make 
+        port class inout
+        port use ground
+        cd $output_folder
+        cd ./mag
+        save sky130_asc_pnp_05v5_W3p40L3p40_1.mag
+        cd ../lef
+        lef write sky130_asc_pnp_05v5_W3p40L3p40_1.lef
+        cd ../gds
+        gds write sky130_asc_pnp_05v5_W3p40L3p40_1.gds
+        cd ../spi
+        extract all
+        ext2spice lvs
+        ext2spice -o sky130_asc_pnp_05v5_W3p40L3p40_1.spice
+    } elseif {$inst_name=={pnp_7_flat}} {
+        property FIXED_BBOX {0 0 9380 1880}
+        # Emitter
+        findlabel Emitter
+        port make
+        port class inout
+        # Base
+        findlabel Base
+        port make
+        port class inout
+        # Collector
+        findlabel Collector
+        port make
+        port class inout
+        # VPWR
+        findlabel VPWR
+        port make 
+        port class inout
+        port use power
+        # VGND
+        findlabel VGND
+        port make 
+        port class inout
+        port use ground
+        cd $output_folder
+        cd ./mag
+        save sky130_asc_pnp_05v5_W3p40L3p40_7.mag
+        cd ../lef
+        lef write sky130_asc_pnp_05v5_W3p40L3p40_7.lef
+        cd ../gds
+        gds write sky130_asc_pnp_05v5_W3p40L3p40_7.gds
+        cd ../spi
+        extract all
+        ext2spice lvs
+        ext2spice -o sky130_asc_pnp_05v5_W3p40L3p40_7.spice
+    } elseif {$inst_name=={pnp_8_flat}} {
+        property FIXED_BBOX {0 0 10720 1880}
+        # Emitter
+        findlabel Emitter
+        port make
+        port class inout
+        # Base
+        findlabel Base
+        port make
+        port class inout
+        # Collector
+        findlabel Collector
+        port make
+        port class inout
+        # VPWR
+        findlabel VPWR
+        port make 
+        port class inout
+        port use power
+        # VGND
+        findlabel VGND
+        port make 
+        port class inout
+        port use ground
+        cd $output_folder
+        cd ./mag
+        save sky130_asc_pnp_05v5_W3p40L3p40_8.mag
+        cd ../lef
+        lef write sky130_asc_pnp_05v5_W3p40L3p40_8.lef
+        cd ../gds
+        gds write sky130_asc_pnp_05v5_W3p40L3p40_8.gds
+        cd ../spi
+        extract all
+        ext2spice lvs
+        ext2spice -o sky130_asc_pnp_05v5_W3p40L3p40_8.spice
     } else {
         puts "No inst lef generated ..."
     }

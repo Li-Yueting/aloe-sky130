@@ -1,0 +1,37 @@
+timestamp 1652146737
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+parameters sky130_fd_pr__cap_mim_m3_1 w=w l=l
+port "Cout" 2 2 210 62 270 m4
+port "Cin" 1 0 1630 60 1690 m3
+port "VGND" 4 2 -30 62 30 m1
+port "VPWR" 3 2 1850 62 1910 m1
+node "Cout" 4 2500.92 2 210 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4715712 39528 0 0 0 0
+node "Cin" 8 6372.62 0 1630 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9609000 17024 1105920 26880 0 0 0 0
+node "VGND" 1537 6628.94 2 -30 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 430080 14456 860160 14576 0 0 0 0 0 0 0 0 0 0
+node "VPWR" 1537 6628.94 2 1850 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 430080 14456 860160 14576 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "Cout" "Cin" 28147.7
+device csubckt sky130_fd_pr__cap_mim_m3_1 6572 450 6573 451 w=400 l=400 "None" "Cout" 1280 0 "Cin" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 5853 450 5854 451 w=400 l=400 "None" "Cout" 1280 0 "Cin" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 5134 450 5135 451 w=400 l=400 "None" "Cout" 1280 0 "Cin" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 4415 450 4416 451 w=400 l=400 "None" "Cout" 1280 0 "Cin" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 3696 450 3697 451 w=400 l=400 "None" "Cout" 1280 0 "Cin" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 2977 450 2978 451 w=400 l=400 "None" "Cout" 1280 0 "Cin" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 2258 450 2259 451 w=400 l=400 "None" "Cout" 1280 0 "Cin" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 1539 450 1540 451 w=400 l=400 "None" "Cout" 1280 0 "Cin" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 820 450 821 451 w=400 l=400 "None" "Cout" 1280 0 "Cin" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 101 450 102 451 w=400 l=400 "None" "Cout" 1280 0 "Cin" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 6572 1150 6573 1151 w=400 l=400 "None" "Cout" 1280 0 "Cin" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 5853 1150 5854 1151 w=400 l=400 "None" "Cout" 1280 0 "Cin" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 5134 1150 5135 1151 w=400 l=400 "None" "Cout" 1280 0 "Cin" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 4415 1150 4416 1151 w=400 l=400 "None" "Cout" 1280 0 "Cin" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 3696 1150 3697 1151 w=400 l=400 "None" "Cout" 1280 0 "Cin" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 2977 1150 2978 1151 w=400 l=400 "None" "Cout" 1280 0 "Cin" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 2258 1150 2259 1151 w=400 l=400 "None" "Cout" 1280 0 "Cin" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 1539 1150 1540 1151 w=400 l=400 "None" "Cout" 1280 0 "Cin" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 820 1150 821 1151 w=400 l=400 "None" "Cout" 1280 0 "Cin" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 101 1150 102 1151 w=400 l=400 "None" "Cout" 1280 0 "Cin" 0 0

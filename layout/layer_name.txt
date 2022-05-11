@@ -1,0 +1,139 @@
+Layer names are:
+    dnw or dnwell
+    isosub or isosubstrate
+    photo or photodiode
+    nw or nwell
+    pw or pwell
+    rpw or rpwell
+    obswell
+    npn or pbase
+    nbase or pnp
+    nfet or nmos or ntransistor
+    scnfet or scnmos or scntransistor
+    npd or npdfet or sramnfet
+    npass or npassfet or srampassfet
+    pfet or pmos or ptransistor
+    scpfet or scpmos or scptransistor
+    scpfethvt or scpmoshvt
+    ppu or ppufet or srampfet
+    nnfet or nnmos or nntransistor
+    mvnfet or mvnmos or mvntransistor
+    mvpfet or mvpmos or mvptransistor
+    mvnnfet or mvnnmos or mvnntransistor
+    mvnfetesd or mvnmosesd or mvntransistoresd
+    mvpfetesd or mvpmosesd or mvptransistoresd
+    var or varact or varactor
+    mvvar or mvvaract or mvvaractor
+    pfetlvt or pmoslvt
+    pfetmvt or pmosmvt
+    pfethvt or pmoshvt
+    nfetlvt or nmoslvt
+    varacthvt or varactorhvt or varhvt
+    nsonos or sonos
+    corenvar or corenvaractor or sramnvar
+    corepvar or corepvaractor or srampvar
+    fomfill
+    ndif or ndiff or ndiffusion
+    pdif or pdiff or pdiffusion
+    mvndif or mvndiff or mvndiffusion
+    mvpdif or mvpdiff or mvpdiffusion
+    ndc or ndcontact or ndiffc
+    pdc or pdcontact or pdiffc
+    mvndc or mvndcontact or mvndiffc
+    mvpdc or mvpdcontact or mvpdiffc
+    ppd or ppdiff or psd or psubdiff or psubstratepdiff or ptap
+    nnd or nndiff or nsd or nsubdiff or nsubstratendiff or ntap
+    mvppd or mvppdiff or mvpsd or mvpsubdiff or mvpsubstratepdiff or mvptap
+    mvnnd or mvnndiff or mvnsd or mvnsubdiff or mvnsubstratendiff or mvntap
+    psc or psubdiffcont or psubstratepcontact or ptapc
+    nsc or nsubdiffcont or nsubstratencontact or ntapc
+    mvpsc or mvpsubdiffcont or mvpsubstratepcontact or mvptapc
+    mvnsc or mvnsubdiffcont or mvnsubstratencontact or mvntapc
+    obsactive
+    mvobsactive
+    p or poly or polysilicon
+    pc or pcontact or polyc or polycont or polycut
+    xpc or xpolyc or xpolycontact
+    polyfill
+    mrp1 or npolyres or npres
+    ppolyres or ppres or xhrpoly
+    uhrpoly or xpolyres or xpres or xres
+    ndiffres or rdn or rnd or rndiff
+    pdiffres or rdp or rpd or rpdiff
+    mvndiffres or mvrdn or mvrnd or mvrndiff
+    mvpdiffres or mvrdp or mvrpd or mvrpdiff
+    rmp
+    pdi or pdiode
+    ndi or ndiode
+    nndi or nndiode
+    pdic or pdiodec
+    ndic or ndiodec
+    nndic or nndiodec
+    mvpdi or mvpdiode
+    mvndi or mvndiode
+    mvpdic or mvpdiodec
+    mvndic or mvndiodec
+    pdilvt or pdiodelvt
+    pdihvt or pdiodehvt
+    ndilvt or ndiodelvt
+    pdilvtc or pdiodelvtc
+    pdihvtc or pdiodehvtc
+    ndilvtc or ndiodelvtc
+    li or li1 or locali
+    coreli or coreli1 or corelocali
+    rli or rli1 or rlocali
+    m1c or mcon or v0 or vial or viali
+    obsli or obsli1
+    obsli1c or obsmcon
+    lifill
+    m1 or met1 or metal1
+    rm1 or rmet1 or rmetal1
+    m2c or m2contact or m2cut or v or v1 or via or via1
+    obsm1
+    padl
+    m1fill
+    m2 or met2 or metal2
+    rm2 or rmet2 or rmetal2
+    m3c or m3contact or m3cut or v2 or via2
+    obsm2
+    m2fill
+    m3 or met3 or metal3
+    rm3 or rmet3 or rmetal3
+    obsm3
+    v3 or via3
+    m3fill
+    capm or mim or mimcap
+    capmc or mimcapc or mimcapcontact or mimcc
+    m4 or met4 or metal4
+    rm4 or rmet4 or rmetal4
+    obsm4
+    v4 or via4
+    m4fill
+    capm2 or mim2 or mimcap2
+    capm2c or mim2cc or mimcap2c or mimcap2contact
+    m5 or met5 or metal5
+    rm5 or rmet5 or rmetal5
+    obsm5
+    m5fill
+    mrdlc or mrdlcontact or pi1
+    metalrdl or metrdl or mrdl or rdl
+    obsmrdl
+    pi2
+    ubm
+    glass
+    fillblock or fillblock4
+    comment
+    obscomment
+    res0p35
+    res0p69
+    res1p41
+    res2p85
+    res5p73
+    pnp0p68
+    pnp3p40
+    npn1p00
+    npn2p00
+    npn11p0
+    mag or magnet
+    f or fence
+    r or rotate

@@ -5,5 +5,5 @@ mflowgen/
 venv/
 inverter/build
 ringosc/build
-layout/
+bgr_top/build
 debug/

@@ -1,0 +1,12 @@
+* NGSPICE file created from sky130_asc_pnp_05v5_W3p40L3p40_7.ext - technology: sky130A
+
+.subckt sky130_asc_pnp_05v5_W3p40L3p40_7 Emitter Base VPWR VGND
+X0 Base Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+X1 Base Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+X2 Base Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+X3 Base Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+X4 Base Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+X5 Base Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+X6 Base Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+.ends
+
