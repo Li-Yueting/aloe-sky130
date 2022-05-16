@@ -113,7 +113,11 @@ module core (
     output vb
  );
  wire vbneg, l6, l7, l8, l10, l11;
-
+  
+ sky130_asc_cap_mim_m3_1 C2 (
+     .Cin(va),
+     .Cout(VSS)
+ );
  resistor R6 (
     .rin(va),
     .rout(l6)
@@ -230,7 +234,10 @@ module current_mirror (
     input vc,
     output vbg
  );
-
+ sky130_asc_cap_mim_m3_1 C1 (
+     .Cin(VDD),
+     .Cout(vc)
+ );
  sky130_asc_pfet_01v8_lvt_12 M17 (
      .GATE(VDD),
      .SOURCE(VDD),
