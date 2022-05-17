@@ -152,7 +152,7 @@ proc place_nmos {x_center y_center length nf index} {
 	set x_center [expr $x_center*100]
 	set y_center [expr $y_center*100]
 	### extend PWELL to VSS
-	box [expr $x_center-$bx/2-58.8] [expr $y_center+$by/2] [expr $x_center+$bx/2+9.8] [expr $y_center-$height_half_center+$con_w/2-120]
+	box [expr $x_center-$bx/2-49] [expr $y_center+$by/2] [expr $x_center+$bx/2] [expr $y_center-$height_half_center+$con_w/2-120]
 	paint pwell
 	# #------ Label VNB
 	# box [expr $x_center+$bx/2-30-$con_w] [expr $y_center-$height_half_center-$con_w/2-120] [expr $x_center+$bx/2-30] [expr $y_center-$height_half_center+$con_w/2-120]

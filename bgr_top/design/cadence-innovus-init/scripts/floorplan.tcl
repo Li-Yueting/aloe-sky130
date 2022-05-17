@@ -12,7 +12,7 @@
 # aspect ratio (height:width). An aspect ratio of 2.0 here will make a
 # rectangular chip with a height that is twice the width.
 
-set core_aspect_ratio   0.6; # Aspect ratio 1.0 for a square chip
+set core_aspect_ratio 1; # Aspect ratio 1.0 for a square chip
 set core_density_target 0.30; # Placement density of 70% is reasonable
 
 # Make room in the floorplan for the core power ring
@@ -23,7 +23,7 @@ set M1_min_width   [dbGet [dbGetLayerByZ 1].minWidth]
 set M1_min_spacing [dbGet [dbGetLayerByZ 1].minSpacing]
 
 set savedvars(p_ring_width)   [expr 48 * $M1_min_width];   # Arbitrary!
-set savedvars(p_ring_spacing) [expr 24 * $M1_min_spacing]; # Arbitrary!
+set savedvars(p_ring_spacing) [expr 48 * $M1_min_spacing]; # Arbitrary!
 
 # Core bounding box margins
 

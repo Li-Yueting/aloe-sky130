@@ -4,7 +4,7 @@ Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
 
 Version:	v20.13-s083_1, built Tue Jan 19 16:51:46 PST 2021
 Options:	-overwrite -nowin -init START.tcl -log logs/run.log 
-Date:		Sat May  7 23:53:41 2022
+Date:		Mon May 16 00:25:04 2022
 Host:		rice-503-20-north (x86_64 w/Linux 5.11.0-41-generic) (20cores*40cpus*Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz 28160KB)
 OS:		CentOS Linux release 7.9.2009 (Core)
 
@@ -20,11 +20,11 @@ The soft stacksize limit is either up to the hard limit or larger than 0.2% of R
 Sourcing file "START.tcl" ...
 <CMD> is_common_ui_mode
 <CMD> restoreDesign /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/6-cadence-innovus-power/checkpoints/design.checkpoint/save.enc.dat ringosc
-#% Begin load design ... (date=05/07 23:54:05, mem=666.1M)
+#% Begin load design ... (date=05/16 00:25:27, mem=670.2M)
 Set Default Input Pin Transition as 0.1 ps.
-Loading design 'ringosc' saved by 'Innovus' '20.13-s083_1' on 'Sat May 7 23:53:35 2022'.
-% Begin Load MMMC data ... (date=05/07 23:54:05, mem=668.1M)
-% End Load MMMC data ... (date=05/07 23:54:05, total cpu=0:00:00.0, real=0:00:00.0, peak res=669.1M, current mem=669.1M)
+Loading design 'ringosc' saved by 'Innovus' '20.13-s083_1' on 'Mon May 16 00:24:58 2022'.
+% Begin Load MMMC data ... (date=05/16 00:25:28, mem=672.2M)
+% End Load MMMC data ... (date=05/16 00:25:28, total cpu=0:00:00.0, real=0:00:00.0, peak res=673.2M, current mem=673.2M)
 typical
 
 Loading LEF file /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/6-cadence-innovus-power/checkpoints/design.checkpoint/save.enc.dat/libs/lef/rtk-tech.lef ...
@@ -33,6 +33,60 @@ Loading LEF file /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/6-cadence-i
 WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
 The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/6-cadence-innovus-power/checkpoints/design.checkpoint/save.enc.dat/libs/lef/stdcells.lef at line 2.
 Set DBUPerIGU to M1 pitch 460.
+**WARN: (IMPLF-201):	Pin 'GATE' in macro 'sky130_asc_pfet_01v8_lvt_9' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'SOURCE' in macro 'sky130_asc_pfet_01v8_lvt_9' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'DRAIN' in macro 'sky130_asc_pfet_01v8_lvt_9' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'Cin' in macro 'sky130_asc_cap_mim_m3_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'Cin' in macro 'sky130_asc_cap_mim_m3_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'Cout' in macro 'sky130_asc_cap_mim_m3_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'Cout' in macro 'sky130_asc_cap_mim_m3_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'Emitter' in macro 'sky130_asc_pnp_05v5_W3p40L3p40_7' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'GATE' in macro 'sky130_asc_pfet_01v8_lvt_6' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'SOURCE' in macro 'sky130_asc_pfet_01v8_lvt_6' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'DRAIN' in macro 'sky130_asc_pfet_01v8_lvt_6' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'GATE' in macro 'sky130_asc_pfet_01v8_lvt_12' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'SOURCE' in macro 'sky130_asc_pfet_01v8_lvt_12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'DRAIN' in macro 'sky130_asc_pfet_01v8_lvt_12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'Emitter' in macro 'sky130_asc_pnp_05v5_W3p40L3p40_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'Collector' in macro 'sky130_asc_pnp_05v5_W3p40L3p40_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'Rin' in macro 'sky130_asc_res_xhigh_po_2p85_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'Rin' in macro 'sky130_asc_res_xhigh_po_2p85_2' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'Rout' in macro 'sky130_asc_res_xhigh_po_2p85_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'Rout' in macro 'sky130_asc_res_xhigh_po_2p85_2' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'GATE' in macro 'sky130_asc_pfet_01v8_lvt_60' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'SOURCE' in macro 'sky130_asc_pfet_01v8_lvt_60' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'DRAIN' in macro 'sky130_asc_pfet_01v8_lvt_60' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'Rin' in macro 'sky130_asc_res_xhigh_po_2p85_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'Rin' in macro 'sky130_asc_res_xhigh_po_2p85_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'Rout' in macro 'sky130_asc_res_xhigh_po_2p85_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'Rout' in macro 'sky130_asc_res_xhigh_po_2p85_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
 **WARN: (IMPLF-201):	Pin 'GATE' in macro 'sky130_asc_pfet_01v8_lvt_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
 Type 'man IMPLF-201' for more detail.
 **WARN: (IMPLF-200):	Pin 'SOURCE' in macro 'sky130_asc_pfet_01v8_lvt_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
@@ -43,41 +97,45 @@ Type 'man IMPLF-200' for more detail.
 Type 'man IMPLF-201' for more detail.
 **WARN: (IMPLF-200):	Pin 'SOURCE' in macro 'sky130_asc_nfet_01v8_lvt_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
 Type 'man IMPLF-200' for more detail.
-**WARN: (IMPLF-200):	Pin 'DRAIN' in macro 'sky130_asc_nfet_01v8_lvt_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-Type 'man IMPLF-200' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
 
-viaInitial starts at Sat May  7 23:54:05 2022
-viaInitial ends at Sat May  7 23:54:05 2022
+viaInitial starts at Mon May 16 00:25:28 2022
+viaInitial ends at Mon May 16 00:25:28 2022
 
 ##  Check design process and node:  
 ##  Both design process and tech node are not set.
 
 Loading view definition file from /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/6-cadence-innovus-power/checkpoints/design.checkpoint/save.enc.dat/viewDefinition.tcl
 Reading libs_typical timing library '/home/users/lyt1314/ee372/aloe-sky130/ringosc/build/2-skywater-130nm/view-standard/stdcells.lib' ...
-Read 2 cells in library 'sky130_fd_sc_hd__tt_025C_1v80' 
-*** End library_loading (cpu=0.00min, real=0.00min, mem=21.0M, fe_cpu=0.26min, fe_real=0.40min, fe_mem=679.2M) ***
-% Begin Load netlist data ... (date=05/07 23:54:05, mem=683.7M)
-*** Begin netlist parsing (mem=679.2M) ***
-Created 2 new cells from 1 timing libraries.
+Read 12 cells in library 'sky130_fd_sc_hd__tt_025C_1v80' 
+*** End library_loading (cpu=0.00min, real=0.00min, mem=22.0M, fe_cpu=0.27min, fe_real=0.40min, fe_mem=688.2M) ***
+% Begin Load netlist data ... (date=05/16 00:25:28, mem=687.8M)
+*** Begin netlist parsing (mem=688.2M) ***
+**WARN: (IMPVL-159):	Pin 'Collector' of cell 'sky130_asc_pnp_05v5_W3p40L3p40_8' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+Created 12 new cells from 1 timing libraries.
 Reading netlist ...
 Backslashed names will retain backslash and a trailing blank character.
 Reading verilogBinary netlist '/home/users/lyt1314/ee372/aloe-sky130/ringosc/build/6-cadence-innovus-power/checkpoints/design.checkpoint/save.enc.dat/vbin/ringosc.v.bin'
 Reading binary database version 2 in 1-threaded mode
 
-*** Memory Usage v#2 (Current mem = 691.199M, initial mem = 275.727M) ***
-*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=691.2M) ***
-% End Load netlist data ... (date=05/07 23:54:05, total cpu=0:00:00.0, real=0:00:00.0, peak res=687.2M, current mem=687.2M)
+*** Memory Usage v#2 (Current mem = 699.191M, initial mem = 275.727M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=699.2M) ***
+% End Load netlist data ... (date=05/16 00:25:28, total cpu=0:00:00.0, real=0:00:00.0, peak res=691.3M, current mem=691.3M)
 Set top cell to ringosc.
-Hooked 2 DB cells to tlib cells.
+**WARN: (IMPTS-124):	Timing library description of pin 'Collector' is missing from cell 'sky130_asc_pnp_05v5_W3p40L3p40_8' in timing library 'sky130_fd_sc_hd__tt_025C_1v80'.
+Hooked 12 DB cells to tlib cells.
+** Removed 1 unused lib cells.
 Starting recursive module instantiation check.
 No recursion found.
 Building hierarchical netlist for Cell ringosc ...
 *** Netlist is unique.
 Set DBUPerIGU to techSite unitasc width 490.
-** info: there are 3 modules.
+** info: there are 13 modules.
 ** info: there are 10 stdCell insts.
 
-*** Memory Usage v#2 (Current mem = 722.613M, initial mem = 275.727M) ***
+*** Memory Usage v#2 (Current mem = 730.605M, initial mem = 275.727M) ***
 *info: set bottom ioPad orient R0
 **WARN: (IMPFP-3961):	The techSite 'unithddbl' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
 Type 'man IMPFP-3961' for more detail.
@@ -111,7 +169,7 @@ Setting -viarule_preference to default order. ViaGen will consider via rule prio
 **WARN: (IMPPSP-1003):	Found use of 'setRouteMode -earlyGlobalMaxRouteLayer'. This will continue to work in this release; however, it is recommended to use 'setDesignMode -topRoutingLayer' instead.
 Change floorplan default-technical-site to 'unitasc'.
 *Info: initialize multi-corner CTS.
-Total number of combinational cells: 2
+Total number of combinational cells: 10
 Total number of sequential cells: 0
 Total number of tristate cells: 0
 Total number of level shifter cells: 0
@@ -121,8 +179,8 @@ Total number of power switch cells: 0
 Total number of pulse generator cells: 0
 Total number of always on buffers: 0
 Total number of retention cells: 0
-List of usable buffers:
-Total number of usable buffers: 0
+List of usable buffers: sky130_asc_pnp_05v5_W3p40L3p40_7 sky130_asc_res_xhigh_po_2p85_1 sky130_asc_res_xhigh_po_2p85_2
+Total number of usable buffers: 3
 List of unusable buffers:
 Total number of unusable buffers: 0
 List of usable inverters:
@@ -134,12 +192,10 @@ Total number of identified usable delay cells: 0
 List of identified unusable delay cells:
 Total number of identified unusable delay cells: 0
 No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
-**WARN: (IMPOPT-3000):	Buffer footprint is not defined or is an invalid buffer footprint.
-Type 'man IMPOPT-3000' for more detail.
 **WARN: (IMPOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
 Type 'man IMPOPT-3001' for more detail.
-Reading floorplan file - /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/6-cadence-innovus-power/checkpoints/design.checkpoint/save.enc.dat/ringosc.fp.gz (mem = 931.2M).
-% Begin Load floorplan data ... (date=05/07 23:54:06, mem=916.1M)
+Reading floorplan file - /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/6-cadence-innovus-power/checkpoints/design.checkpoint/save.enc.dat/ringosc.fp.gz (mem = 933.2M).
+% Begin Load floorplan data ... (date=05/16 00:25:29, mem=917.5M)
 *info: reset 15 existing net BottomPreferredLayer and AvoidDetour
 **WARN: (IMPDB-2078):	Output pin DRAIN of instance nfet5 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
 **WARN: (IMPDB-2078):	Output pin DRAIN of instance nfet4 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
@@ -147,7 +203,7 @@ Reading floorplan file - /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/6-c
 **WARN: (IMPDB-2078):	Output pin DRAIN of instance nfet2 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
 **WARN: (IMPDB-2078):	Output pin DRAIN of instance nfet1 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
 Deleting old partition specification.
-Set FPlanBox to (0 0 112240 76160)
+Set FPlanBox to (0 0 127420 76160)
 **WARN: (IMPFP-3961):	The techSite 'unithddbl' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
 Type 'man IMPFP-3961' for more detail.
 **WARN: (IMPFP-3961):	The techSite 'unithd' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
@@ -159,38 +215,38 @@ Generated pitch 3.66 in met5 is different from 3.4 defined in technology file in
 Generated pitch 0.69 in met4 is different from 0.92 defined in technology file in preferred direction.
 Generated pitch 0.61 in met3 is different from 0.68 defined in technology file in preferred direction.
  ... processed partition successfully.
-Reading binary special route file /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/6-cadence-innovus-power/checkpoints/design.checkpoint/save.enc.dat/ringosc.fp.spr.gz (Created by Innovus v20.13-s083_1 on Sat May  7 23:53:34 2022, version: 1)
-Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=921.5M, current mem=921.5M)
+Reading binary special route file /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/6-cadence-innovus-power/checkpoints/design.checkpoint/save.enc.dat/ringosc.fp.spr.gz (Created by Innovus v20.13-s083_1 on Mon May 16 00:24:57 2022, version: 1)
+Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=922.9M, current mem=922.9M)
 Extracting standard cell pins and blockage ...... 
 Pin and blockage extraction finished
-% End Load floorplan data ... (date=05/07 23:54:07, total cpu=0:00:00.1, real=0:00:01.0, peak res=922.6M, current mem=922.6M)
-% Begin Load SymbolTable ... (date=05/07 23:54:07, mem=922.9M)
+% End Load floorplan data ... (date=05/16 00:25:29, total cpu=0:00:00.1, real=0:00:00.0, peak res=924.6M, current mem=924.6M)
+% Begin Load SymbolTable ... (date=05/16 00:25:29, mem=924.9M)
 Reading congestion map file /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/6-cadence-innovus-power/checkpoints/design.checkpoint/save.enc.dat/ringosc.route.congmap.gz ...
-% End Load SymbolTable ... (date=05/07 23:54:07, total cpu=0:00:00.0, real=0:00:00.0, peak res=923.0M, current mem=923.0M)
+% End Load SymbolTable ... (date=05/16 00:25:29, total cpu=0:00:00.0, real=0:00:00.0, peak res=925.0M, current mem=925.0M)
 Loading place ...
-% Begin Load placement data ... (date=05/07 23:54:07, mem=923.0M)
+% Begin Load placement data ... (date=05/16 00:25:29, mem=925.0M)
 Reading placement file - /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/6-cadence-innovus-power/checkpoints/design.checkpoint/save.enc.dat/ringosc.place.gz.
-** Reading stdCellPlacement_binary (Created by Innovus v20.13-s083_1 on Sat May  7 23:53:34 2022, version# 2) ...
+** Reading stdCellPlacement_binary (Created by Innovus v20.13-s083_1 on Mon May 16 00:24:57 2022, version# 2) ...
 Read Views for adaptive view pruning ...
 Read 0 views from Binary DB for adaptive view pruning
-*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=938.2M) ***
+*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=940.2M) ***
 Total net length = 1.000e-02 (5.000e-03 5.000e-03) (ext = 0.000e+00)
-% End Load placement data ... (date=05/07 23:54:07, total cpu=0:00:00.0, real=0:00:00.0, peak res=923.2M, current mem=923.2M)
-Reading PG file /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/6-cadence-innovus-power/checkpoints/design.checkpoint/save.enc.dat/ringosc.pg.gz, version#2, (Created by Innovus v20.13-s083_1 on       Sat May  7 23:53:34 2022)
-*** Completed restorePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=935.2M) ***
-% Begin Load routing data ... (date=05/07 23:54:07, mem=923.6M)
+% End Load placement data ... (date=05/16 00:25:30, total cpu=0:00:00.0, real=0:00:01.0, peak res=925.2M, current mem=925.2M)
+Reading PG file /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/6-cadence-innovus-power/checkpoints/design.checkpoint/save.enc.dat/ringosc.pg.gz, version#2, (Created by Innovus v20.13-s083_1 on       Mon May 16 00:24:57 2022)
+*** Completed restorePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=937.2M) ***
+% Begin Load routing data ... (date=05/16 00:25:30, mem=925.6M)
 Reading routing file - /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/6-cadence-innovus-power/checkpoints/design.checkpoint/save.enc.dat/ringosc.route.gz.
-Reading Innovus routing data (Created by Innovus v20.13-s083_1 on Sat May  7 23:53:34 2022 Format: 20.1) ...
+Reading Innovus routing data (Created by Innovus v20.13-s083_1 on Mon May 16 00:24:57 2022 Format: 20.1) ...
 *** Total 15 nets are successfully restored.
-*** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=935.2M) ***
-% End Load routing data ... (date=05/07 23:54:07, total cpu=0:00:00.0, real=0:00:01.0, peak res=924.8M, current mem=923.8M)
+*** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=937.2M) ***
+% End Load routing data ... (date=05/16 00:25:30, total cpu=0:00:00.0, real=0:00:00.0, peak res=926.7M, current mem=925.7M)
 Loading Drc markers ...
 ... 7 markers are loaded ...
 ... 0 geometry drc markers are loaded ...
 ... 0 antenna drc markers are loaded ...
 TAT_INFO: restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
 Reading property file /home/users/lyt1314/ee372/aloe-sky130/ringosc/build/6-cadence-innovus-power/checkpoints/design.checkpoint/save.enc.dat/ringosc.prop
-*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=940.2M) ***
+*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=942.2M) ***
 Set Default Input Pin Transition as 0.1 ps.
 Extraction setup Started 
 Initializing multi-corner RC extraction with 1 active RC Corners ...
@@ -223,16 +279,16 @@ Start generating vias ..
 Extracting standard cell pins and blockage ...... 
 Pin and blockage extraction finished
 Via generation completed.
-% Begin Load power constraints ... (date=05/07 23:54:08, mem=930.0M)
+% Begin Load power constraints ... (date=05/16 00:25:31, mem=931.8M)
 ** WARN:  (VOLTUS_POWR-3212): The 'set_power_analysis_mode -leakage_power_view |-dynamic_power_view|-analysis_view' will be obsolete in 18.20 release. Use 'set_analysis_view -leakage <> | -dynamic <>' to set leakage and dynamic power views.
 
-% End Load power constraints ... (date=05/07 23:54:08, total cpu=0:00:00.0, real=0:00:00.0, peak res=930.2M, current mem=930.2M)
+% End Load power constraints ... (date=05/16 00:25:31, total cpu=0:00:00.0, real=0:00:00.0, peak res=932.0M, current mem=932.0M)
 delay_default
-% Begin load AAE data ... (date=05/07 23:54:08, mem=937.1M)
+% Begin load AAE data ... (date=05/16 00:25:31, mem=938.9M)
 **WARN: (IMPESI-3505):	setDelayCalMode -eng_copyNetPropToNewNet true (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
-AAE DB initialization (MEM=969.707 CPU=0:00:00.0 REAL=0:00:00.0) 
-% End load AAE data ... (date=05/07 23:54:08, total cpu=0:00:00.3, real=0:00:00.0, peak res=942.8M, current mem=942.8M)
-Total number of combinational cells: 2
+AAE DB initialization (MEM=970.691 CPU=0:00:00.0 REAL=0:00:00.0) 
+% End load AAE data ... (date=05/16 00:25:31, total cpu=0:00:00.3, real=0:00:00.0, peak res=944.6M, current mem=944.6M)
+Total number of combinational cells: 10
 Total number of sequential cells: 0
 Total number of tristate cells: 0
 Total number of level shifter cells: 0
@@ -242,8 +298,8 @@ Total number of power switch cells: 0
 Total number of pulse generator cells: 0
 Total number of always on buffers: 0
 Total number of retention cells: 0
-List of usable buffers:
-Total number of usable buffers: 0
+List of usable buffers: sky130_asc_pnp_05v5_W3p40L3p40_7 sky130_asc_res_xhigh_po_2p85_1 sky130_asc_res_xhigh_po_2p85_2
+Total number of usable buffers: 3
 List of unusable buffers:
 Total number of unusable buffers: 0
 List of usable inverters:
@@ -257,21 +313,22 @@ Total number of identified unusable delay cells: 0
 No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
 **WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.13-s083_1. They will be removed in the next release. 
 timing_enable_default_delay_arc
-#% End load design ... (date=05/07 23:54:08, total cpu=0:00:01.9, real=0:00:03.0, peak res=967.6M, current mem=942.8M)
+#% End load design ... (date=05/16 00:25:31, total cpu=0:00:02.0, real=0:00:04.0, peak res=969.3M, current mem=944.6M)
 
 *** Summary of all messages that are not suppressed in this session:
 Severity  ID               Count  Summary                                  
-WARNING   IMPLF-200            4  Pin '%s' in macro '%s' has no ANTENNAGAT...
-WARNING   IMPLF-201            2  Pin '%s' in macro '%s' has no ANTENNADIF...
+WARNING   IMPLF-200           23  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPLF-201           12  Pin '%s' in macro '%s' has no ANTENNADIF...
 WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
 WARNING   IMPPTN-867           1  Found use of %s. This will continue to w...
+WARNING   IMPTS-124            1  Timing library description of pin '%s' i...
+WARNING   IMPVL-159            1  Pin '%s' of cell '%s' is defined in LEF ...
 WARNING   IMPDB-2078           5  Output pin %s of instance %s is connecte...
 WARNING   IMPESI-3505          1  setDelayCalMode -eng_%s (default=%s) wil...
-WARNING   IMPOPT-3000          1  Buffer footprint is not defined or is an...
 WARNING   IMPOPT-3001          1  Inverter footprint is not defined or is ...
 WARNING   IMPCTE-107           1  The following globals have been obsolete...
 WARNING   IMPPSP-1003          1  Found use of '%s'. This will continue to...
-*** Message Summary: 21 warning(s), 0 error(s)
+*** Message Summary: 51 warning(s), 0 error(s)
 
 <CMD> setDistributeHost -local
 The timeout for a remote job to respond is 3600 seconds.
@@ -406,9 +463,11 @@ Set Default Net Load as 0.5 pF.
 Deleted 0 physical inst  (cell - / prefix -).
 INFO: #ExclusiveGroups=0
 INFO: There are no Exclusive Groups.
-*** Starting "NanoPlace(TM) placement v#4 (mem=973.5M)" ...
-**WARN: (IMPTS-146):	Buffer footprint is not specified.
-*** Virtual Timing Model is not created.
+*** Starting "NanoPlace(TM) placement v#4 (mem=962.5M)" ...
+*** Build Buffered Sizing Timing Model
+(cpu=0:00:00.0 mem=994.5M) ***
+*** Build Virtual Sizing Timing Model
+(cpu=0:00:00.0 mem=994.5M) ***
 No user-set net weight.
 Net fanout histogram:
 2		: 0 (0.0%) nets
@@ -433,17 +492,16 @@ Scan chains were not defined.
 #std cell=10 (0 fixed + 10 movable) #buf cell=10 #inv cell=0 #block=0 (0 floating + 0 preplaced)
 #ioInst=0 #net=5 #term=20 #term/net=4.00, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=0
 stdCell: 10 single + 0 double + 0 multi
-Total standard cell length = 0.0374 (mm), area = 0.0004 (mm^2)
-**Info: (IMPSP-307): Design contains fractional 1 cell.
+Total standard cell length = 0.0415 (mm), area = 0.0004 (mm^2)
+**Info: (IMPSP-307): Design contains fractional 12 cells.
 Estimated cell power/ground rail width = 0.881 um
-Average module density = 0.347.
-Density for the design = 0.347.
-       = stdcell_area 76 sites (352 um^2) / alloc_area 220 sites (1013 um^2).
-Pin Density = 0.06061.
-            = total # of pins 20 / total area 330.
+Average module density = 0.300.
+Density for the design = 0.300.
+       = stdcell_area 85 sites (390 um^2) / alloc_area 282 sites (1299 um^2).
+Pin Density = 0.04728.
+            = total # of pins 20 / total area 423.
 Enabling multi-CPU acceleration with 16 CPU(s) for placement
 === lastAutoLevel = 4 
-**WARN: (IMPSP-1760):	Buffer footprint does not have non-inverting buffers.  Using inverter footprint for Virtual IPO. Verify you have buffers defined in the libraries you have read in and confirm they are usable by running reportDontUseCells. Run 'setDontUse bufferName false' to enable buffers which are currently unusable.  
 **WARN: (IMPDC-348):	The output pin nfet5/DRAIN is connected to power/ground net VSS. This can compromise the delay calculation. Fix the issue by correcting the netlist and rerun.  An output pin should not be connected to a power/ground net. In some cases, the pin direction may be incorrect, correcting pin direction to input instead of output fixes the issue in these cases.
 **WARN: (IMPDC-348):	The output pin nfet4/DRAIN is connected to power/ground net VSS. This can compromise the delay calculation. Fix the issue by correcting the netlist and rerun.  An output pin should not be connected to a power/ground net. In some cases, the pin direction may be incorrect, correcting pin direction to input instead of output fixes the issue in these cases.
 **WARN: (IMPDC-348):	The output pin nfet3/DRAIN is connected to power/ground net VSS. This can compromise the delay calculation. Fix the issue by correcting the netlist and rerun.  An output pin should not be connected to a power/ground net. In some cases, the pin direction may be incorrect, correcting pin direction to input instead of output fixes the issue in these cases.
@@ -452,26 +510,26 @@ Enabling multi-CPU acceleration with 16 CPU(s) for placement
 Clock gating cells determined by native netlist tracing.
 Iteration  1: Total net bbox = 0.000e+00 (0.00e+00 0.00e+00)
               Est.  stn bbox = 0.000e+00 (0.00e+00 0.00e+00)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1177.6M
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1213.6M
 Iteration  2: Total net bbox = 0.000e+00 (0.00e+00 0.00e+00)
               Est.  stn bbox = 0.000e+00 (0.00e+00 0.00e+00)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1177.6M
-Iteration  3: Total net bbox = 2.075e-02 (9.06e-03 1.17e-02)
-              Est.  stn bbox = 2.178e-02 (9.52e-03 1.23e-02)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1179.0M
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1213.6M
+Iteration  3: Total net bbox = 1.507e-02 (6.42e-03 8.65e-03)
+              Est.  stn bbox = 1.582e-02 (6.74e-03 9.08e-03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1215.0M
 Active setup views:
     analysis_default
-Iteration  4: Total net bbox = 3.229e-03 (1.26e-03 1.96e-03)
-              Est.  stn bbox = 3.390e-03 (1.33e-03 2.06e-03)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1179.0M
-Iteration  5: Total net bbox = 3.574e+01 (3.56e+01 1.83e-01)
-              Est.  stn bbox = 3.753e+01 (3.73e+01 1.92e-01)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1179.0M
-Iteration  6: Total net bbox = 5.784e+01 (4.50e+01 1.28e+01)
-              Est.  stn bbox = 6.073e+01 (4.73e+01 1.34e+01)
-              cpu = 0:00:00.1 real = 0:00:02.0 mem = 1179.0M
-*** cost = 5.784e+01 (4.50e+01 1.28e+01) (cpu for global=0:00:00.1) real=0:00:02.0***
-Placement multithread real runtime: 0:00:02.0 with 16 threads.
+Iteration  4: Total net bbox = 2.114e-03 (1.42e-03 6.94e-04)
+              Est.  stn bbox = 2.220e-03 (1.49e-03 7.29e-04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1215.0M
+Iteration  5: Total net bbox = 3.886e+01 (3.86e+01 2.63e-01)
+              Est.  stn bbox = 4.081e+01 (4.05e+01 2.77e-01)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1215.0M
+Iteration  6: Total net bbox = 6.023e+01 (4.74e+01 1.28e+01)
+              Est.  stn bbox = 6.324e+01 (4.98e+01 1.34e+01)
+              cpu = 0:00:00.1 real = 0:00:01.0 mem = 1215.0M
+*** cost = 6.023e+01 (4.74e+01 1.28e+01) (cpu for global=0:00:00.1) real=0:00:01.0***
+Placement multithread real runtime: 0:00:01.0 with 16 threads.
 Info: 0 clock gating cells identified, 0 (on average) moved 0/1
 **WARN: (IMPDB-2078):	Output pin DRAIN of instance nfet5 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
 **WARN: (IMPDB-2078):	Output pin DRAIN of instance nfet4 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
@@ -482,26 +540,27 @@ Solver runtime cpu: 0:00:00.0 real: 0:00:00.0
 Core Placement runtime cpu: 0:00:00.0 real: 0:00:01.0
 **WARN: (IMPSP-9025):	No scan chain specified/traced.
 Type 'man IMPSP-9025' for more detail.
-**Info: (IMPSP-307): Design contains fractional 1 cell.
-*** Starting refinePlace (0:00:18.3 mem=1179.0M) ***
-Total net bbox length = 5.784e+01 (4.504e+01 1.280e+01) (ext = 0.000e+00)
+**Info: (IMPSP-307): Design contains fractional 12 cells.
+*** Starting refinePlace (0:00:18.8 mem=1215.0M) ***
+Total net bbox length = 6.023e+01 (4.743e+01 1.280e+01) (ext = 0.000e+00)
 **WARN: (IMPSP-2035):	Cell-to-preRoute spacing and short violation checking has been switched off in this legalization run.  This will result in a non-legal placement.
-Move report: Detail placement moves 10 insts, mean move: 15.17 um, max move: 37.01 um 
-	Max move on inst (pfet5): (68.95, 35.40) --> (38.78, 28.56)
-	Runtime: CPU: 0:00:00.1 REAL: 0:00:00.0 MEM: 1184.1MB
+Move report: Detail placement moves 10 insts, mean move: 13.08 um, max move: 22.13 um 
+	Max move on inst (nfet4): (66.65, 35.44) --> (81.90, 28.56)
+	Runtime: CPU: 0:00:00.1 REAL: 0:00:00.0 MEM: 1219.1MB
 Summary Report:
 Instances move: 10 (out of 10 movable)
 Instances flipped: 0
-Mean displacement: 15.17 um
-Max displacement: 37.01 um (Instance: pfet5) (68.948, 35.401) -> (38.78, 28.56)
-	Length: 8 sites, height: 1 rows, site name: unitasc, cell type: sky130_asc_pfet_01v8_lvt_1
-Total net bbox length = 1.539e+02 (1.411e+02 1.280e+01) (ext = 0.000e+00)
-Runtime: CPU: 0:00:00.1 REAL: 0:00:00.0 MEM: 1184.1MB
-*** Finished refinePlace (0:00:18.4 mem=1184.1M) ***
-*** End of Placement (cpu=0:00:00.5, real=0:00:02.0, mem=1179.1M) ***
-**Info: (IMPSP-307): Design contains fractional 1 cell.
+Mean displacement: 13.08 um
+Max displacement: 22.13 um (Instance: nfet4) (66.646, 35.435) -> (81.9, 28.56)
+	Length: 9 sites, height: 1 rows, site name: unitasc, cell type: sky130_asc_nfet_01v8_lvt_1
+Total net bbox length = 1.224e+02 (1.096e+02 1.280e+01) (ext = 0.000e+00)
+Runtime: CPU: 0:00:00.1 REAL: 0:00:00.0 MEM: 1219.1MB
+*** Finished refinePlace (0:00:18.9 mem=1219.1M) ***
+*** End of Placement (cpu=0:00:00.5, real=0:00:01.0, mem=1214.1M) ***
+**Info: (IMPSP-307): Design contains fractional 12 cells.
 default core: bins with density > 0.750 =  0.00 % ( 0 / 1 )
-Density distribution unevenness ratio = 0.000%
+Density distribution unevenness ratio = 5.896%
+*** Free Virtual Timing Model ...(mem=1214.1M)
 UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
 UM:*                                                                   final
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
@@ -526,10 +585,10 @@ Starting congRepair ...
 [NR-eGR] met3 has single uniform track structure
 [NR-eGR] met4 has single uniform track structure
 [NR-eGR] met5 has single uniform track structure
-[NR-eGR] Read 101 PG shapes
+[NR-eGR] Read 114 PG shapes
 [NR-eGR] #Routing Blockages  : 0
 [NR-eGR] #Instance Blockages : 40
-[NR-eGR] #PG Blockages       : 101
+[NR-eGR] #PG Blockages       : 114
 [NR-eGR] #Halo Blockages     : 0
 [NR-eGR] #Boundary Blockages : 0
 [NR-eGR] Num Prerouted Nets = 0  Num Prerouted Wires = 0
@@ -539,7 +598,7 @@ Starting congRepair ...
 [NR-eGR] ========================================
 [NR-eGR] 
 [NR-eGR] Layer group 1: route 5 net(s) in layer range [2, 6]
-[NR-eGR] Early Global Route overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 1.316000e+02um
+[NR-eGR] Early Global Route overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 9.400000e+01um
 [NR-eGR] Congestion Analysis By layer: (blocked Gcells are excluded) 
 [NR-eGR]                        OverCon            
 [NR-eGR]                         #Gcell     %Gcell
@@ -556,43 +615,41 @@ Starting congRepair ...
 [NR-eGR] 
 [NR-eGR] Overflow after Early Global Route (GR compatible) 0.00% H + 0.00% V
 [NR-eGR] Overflow after Early Global Route 0.00% H + 0.00% V
-Early Global Route congestion estimation runtime: 0.03 seconds, mem = 1169.5M
+Early Global Route congestion estimation runtime: 0.05 seconds, mem = 1204.5M
 Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
 Skipped repairing congestion.
-[NR-eGR] Started Export DB wires ( Curr Mem: 1169.55 MB )
-[NR-eGR] Started Export all nets (16T) ( Curr Mem: 1169.55 MB )
-[NR-eGR] Finished Export all nets (16T) ( CPU: 0.01 sec, Real: 0.01 sec, Curr Mem: 1169.55 MB )
-[NR-eGR] Started Set wire vias (16T) ( Curr Mem: 1169.55 MB )
-[NR-eGR] Finished Set wire vias (16T) ( CPU: 0.00 sec, Real: 0.00 sec, Curr Mem: 1169.55 MB )
-[NR-eGR] Finished Export DB wires ( CPU: 0.01 sec, Real: 0.01 sec, Curr Mem: 1169.55 MB )
+[NR-eGR] Started Export DB wires ( Curr Mem: 1204.55 MB )
+[NR-eGR] Started Export all nets (16T) ( Curr Mem: 1204.55 MB )
+[NR-eGR] Finished Export all nets (16T) ( CPU: 0.00 sec, Real: 0.01 sec, Curr Mem: 1204.55 MB )
+[NR-eGR] Started Set wire vias (16T) ( Curr Mem: 1204.55 MB )
+[NR-eGR] Finished Set wire vias (16T) ( CPU: 0.01 sec, Real: 0.00 sec, Curr Mem: 1204.55 MB )
+[NR-eGR] Finished Export DB wires ( CPU: 0.01 sec, Real: 0.01 sec, Curr Mem: 1204.55 MB )
 [NR-eGR] --------------------------------------------------------------------------
 [NR-eGR]    li1  (1F) length: 0.000000e+00um, number of vias: 10
-[NR-eGR]   met1  (2H) length: 1.434100e+02um, number of vias: 34
-[NR-eGR]   met2  (3V) length: 3.706000e+01um, number of vias: 0
+[NR-eGR]   met1  (2H) length: 1.121600e+02um, number of vias: 38
+[NR-eGR]   met2  (3V) length: 1.870000e+01um, number of vias: 0
 [NR-eGR]   met3  (4H) length: 0.000000e+00um, number of vias: 0
 [NR-eGR]   met4  (5V) length: 0.000000e+00um, number of vias: 0
 [NR-eGR]   met5  (6H) length: 0.000000e+00um, number of vias: 0
-[NR-eGR] Total length: 1.804700e+02um, number of vias: 44
+[NR-eGR] Total length: 1.308600e+02um, number of vias: 48
 [NR-eGR] --------------------------------------------------------------------------
 [NR-eGR] Total eGR-routed clock nets wire length: 0.000000e+00um 
 [NR-eGR] --------------------------------------------------------------------------
-Early Global Route wiring runtime: 0.02 seconds, mem = 1164.5M
+Early Global Route wiring runtime: 0.03 seconds, mem = 1198.6M
 Tdgp not successfully inited but do clear! skip clearing
 End of congRepair (cpu=0:00:00.1, real=0:00:00.0)
 *** Finishing placeDesign default flow ***
-**placeDesign ... cpu = 0: 0: 1, real = 0: 0: 2, mem = 1164.5M **
+**placeDesign ... cpu = 0: 0: 1, real = 0: 0: 2, mem = 1198.5M **
 Tdgp not successfully inited but do clear! skip clearing
 
 *** Summary of all messages that are not suppressed in this session:
 Severity  ID               Count  Summary                                  
-WARNING   IMPTS-146            1  Buffer footprint is not specified.       
 WARNING   IMPDB-2078          10  Output pin %s of instance %s is connecte...
 WARNING   IMPDC-1629           2  The default delay limit was set to %d. T...
 WARNING   IMPDC-348            5  The output pin %s is connected to power/...
-WARNING   IMPSP-1760           1  Buffer footprint does not have non-inver...
 WARNING   IMPSP-9025           1  No scan chain specified/traced.          
 WARNING   IMPSP-2035           1  Cell-to-preRoute spacing and short viola...
-*** Message Summary: 21 warning(s), 0 error(s)
+*** Message Summary: 19 warning(s), 0 error(s)
 
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
 UM:*                                                                   final
@@ -606,7 +663,7 @@ Total FF Count       :            0
 Bits Per Flop        :         -nan
 ------------------------------------------------------------
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:           1.26              2                                      place_design
+UM:           1.33              3                                      place_design
 # puts "<FF> Plugin -> post_place_tcl"
 # foreach cell {sky130_fd_sc_hd__conb_1} {
    setDontUse $cell false
@@ -616,7 +673,7 @@ UM:           1.26              2                                      place_des
 Type 'man IMPOPT-3593' for more detail.
 # addTieHiLo
 <CMD> addTieHiLo
-**Info: (IMPSP-307): Design contains fractional 1 cell.
+**Info: (IMPSP-307): Design contains fractional 12 cells.
 Options: No distance constraint, No Fan-out constraint.
 # foreach cell {sky130_fd_sc_hd__conb_1} {
    setDontUse $cell true
@@ -637,72 +694,72 @@ Total Bit Count      :            0
 Total FF Count       :            0
 Bits Per Flop        :         -nan
 ------------------------------------------------------------
-<CMD> get_metric -raw -id current -uuid 3b894ad0-eddc-4f6d-8479-355e845b3e32 clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid 3b894ad0-eddc-4f6d-8479-355e845b3e32 clock.PostConditioning.area.total
-<CMD> get_metric -raw -id current -uuid 3b894ad0-eddc-4f6d-8479-355e845b3e32 clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid 3b894ad0-eddc-4f6d-8479-355e845b3e32 clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid 3b894ad0-eddc-4f6d-8479-355e845b3e32 clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid 3b894ad0-eddc-4f6d-8479-355e845b3e32 clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid 3b894ad0-eddc-4f6d-8479-355e845b3e32 clock.Construction.area.total
-<CMD> get_metric -raw -id current -uuid 3b894ad0-eddc-4f6d-8479-355e845b3e32 clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid d28a3a16-0def-4b26-8d62-b3784d27b3ac clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid d28a3a16-0def-4b26-8d62-b3784d27b3ac clock.PostConditioning.area.total
-<CMD> get_metric -raw -id current -uuid d28a3a16-0def-4b26-8d62-b3784d27b3ac clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid d28a3a16-0def-4b26-8d62-b3784d27b3ac clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid d28a3a16-0def-4b26-8d62-b3784d27b3ac clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid d28a3a16-0def-4b26-8d62-b3784d27b3ac clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid d28a3a16-0def-4b26-8d62-b3784d27b3ac clock.Construction.area.total
-<CMD> get_metric -raw -id current -uuid d28a3a16-0def-4b26-8d62-b3784d27b3ac clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid 1aefbeb8-97f3-4927-b6ad-48b8bb559fab clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid 1aefbeb8-97f3-4927-b6ad-48b8bb559fab clock.PostConditioning.area.total
-<CMD> get_metric -raw -id current -uuid 1aefbeb8-97f3-4927-b6ad-48b8bb559fab clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid 1aefbeb8-97f3-4927-b6ad-48b8bb559fab clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid 1aefbeb8-97f3-4927-b6ad-48b8bb559fab clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid 1aefbeb8-97f3-4927-b6ad-48b8bb559fab clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid 1aefbeb8-97f3-4927-b6ad-48b8bb559fab clock.Construction.area.total
-<CMD> get_metric -raw -id current -uuid 1aefbeb8-97f3-4927-b6ad-48b8bb559fab clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid a65dcdcc-a57e-4510-b6bd-70da1b761e33 clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid a65dcdcc-a57e-4510-b6bd-70da1b761e33 clock.PostConditioning.area.total
-<CMD> get_metric -raw -id current -uuid a65dcdcc-a57e-4510-b6bd-70da1b761e33 clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid a65dcdcc-a57e-4510-b6bd-70da1b761e33 clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid a65dcdcc-a57e-4510-b6bd-70da1b761e33 clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid a65dcdcc-a57e-4510-b6bd-70da1b761e33 clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid a65dcdcc-a57e-4510-b6bd-70da1b761e33 clock.Construction.area.total
-<CMD> get_metric -raw -id current -uuid a65dcdcc-a57e-4510-b6bd-70da1b761e33 clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid fac93f92-b75e-4fed-be63-bdd400480d50 clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid fac93f92-b75e-4fed-be63-bdd400480d50 clock.PostConditioning.area.total
-<CMD> get_metric -raw -id current -uuid fac93f92-b75e-4fed-be63-bdd400480d50 clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid fac93f92-b75e-4fed-be63-bdd400480d50 clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid fac93f92-b75e-4fed-be63-bdd400480d50 clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid fac93f92-b75e-4fed-be63-bdd400480d50 clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid fac93f92-b75e-4fed-be63-bdd400480d50 clock.Construction.area.total
-<CMD> get_metric -raw -id current -uuid fac93f92-b75e-4fed-be63-bdd400480d50 clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid dadd517b-ba4a-4aee-9182-d89bc17d4f05 clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid dadd517b-ba4a-4aee-9182-d89bc17d4f05 clock.PostConditioning.area.total
-<CMD> get_metric -raw -id current -uuid dadd517b-ba4a-4aee-9182-d89bc17d4f05 clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid dadd517b-ba4a-4aee-9182-d89bc17d4f05 clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid dadd517b-ba4a-4aee-9182-d89bc17d4f05 clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid dadd517b-ba4a-4aee-9182-d89bc17d4f05 clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid dadd517b-ba4a-4aee-9182-d89bc17d4f05 clock.Construction.area.total
-<CMD> get_metric -raw -id current -uuid dadd517b-ba4a-4aee-9182-d89bc17d4f05 clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid 18aa3f1c-3fbf-4b01-bdcc-96f120d5d7b5 clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid 18aa3f1c-3fbf-4b01-bdcc-96f120d5d7b5 clock.PostConditioning.area.total
-<CMD> get_metric -raw -id current -uuid 18aa3f1c-3fbf-4b01-bdcc-96f120d5d7b5 clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid 18aa3f1c-3fbf-4b01-bdcc-96f120d5d7b5 clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid 18aa3f1c-3fbf-4b01-bdcc-96f120d5d7b5 clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid 18aa3f1c-3fbf-4b01-bdcc-96f120d5d7b5 clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid 18aa3f1c-3fbf-4b01-bdcc-96f120d5d7b5 clock.Construction.area.total
-<CMD> get_metric -raw -id current -uuid 18aa3f1c-3fbf-4b01-bdcc-96f120d5d7b5 clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid 543a58cc-30b6-4b7b-acb3-f9952d0411f3 clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid 543a58cc-30b6-4b7b-acb3-f9952d0411f3 clock.PostConditioning.area.total
-<CMD> get_metric -raw -id current -uuid 543a58cc-30b6-4b7b-acb3-f9952d0411f3 clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid 543a58cc-30b6-4b7b-acb3-f9952d0411f3 clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid 543a58cc-30b6-4b7b-acb3-f9952d0411f3 clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid 543a58cc-30b6-4b7b-acb3-f9952d0411f3 clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid 543a58cc-30b6-4b7b-acb3-f9952d0411f3 clock.Construction.area.total
-<CMD> get_metric -raw -id current -uuid 543a58cc-30b6-4b7b-acb3-f9952d0411f3 clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 6272b8d6-6ed9-4a27-bd1a-0bf3e7038ec1 clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 6272b8d6-6ed9-4a27-bd1a-0bf3e7038ec1 clock.PostConditioning.area.total
+<CMD> get_metric -raw -id current -uuid 6272b8d6-6ed9-4a27-bd1a-0bf3e7038ec1 clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 6272b8d6-6ed9-4a27-bd1a-0bf3e7038ec1 clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 6272b8d6-6ed9-4a27-bd1a-0bf3e7038ec1 clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 6272b8d6-6ed9-4a27-bd1a-0bf3e7038ec1 clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 6272b8d6-6ed9-4a27-bd1a-0bf3e7038ec1 clock.Construction.area.total
+<CMD> get_metric -raw -id current -uuid 6272b8d6-6ed9-4a27-bd1a-0bf3e7038ec1 clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 8e8a408f-2d52-4f20-a9b4-17862e2fe07a clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 8e8a408f-2d52-4f20-a9b4-17862e2fe07a clock.PostConditioning.area.total
+<CMD> get_metric -raw -id current -uuid 8e8a408f-2d52-4f20-a9b4-17862e2fe07a clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 8e8a408f-2d52-4f20-a9b4-17862e2fe07a clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 8e8a408f-2d52-4f20-a9b4-17862e2fe07a clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 8e8a408f-2d52-4f20-a9b4-17862e2fe07a clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 8e8a408f-2d52-4f20-a9b4-17862e2fe07a clock.Construction.area.total
+<CMD> get_metric -raw -id current -uuid 8e8a408f-2d52-4f20-a9b4-17862e2fe07a clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 76213d75-23e4-41dc-a514-98b6b54f9daa clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 76213d75-23e4-41dc-a514-98b6b54f9daa clock.PostConditioning.area.total
+<CMD> get_metric -raw -id current -uuid 76213d75-23e4-41dc-a514-98b6b54f9daa clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 76213d75-23e4-41dc-a514-98b6b54f9daa clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 76213d75-23e4-41dc-a514-98b6b54f9daa clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 76213d75-23e4-41dc-a514-98b6b54f9daa clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 76213d75-23e4-41dc-a514-98b6b54f9daa clock.Construction.area.total
+<CMD> get_metric -raw -id current -uuid 76213d75-23e4-41dc-a514-98b6b54f9daa clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 4230af16-f6af-435b-8e0a-47ad54e5727c clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 4230af16-f6af-435b-8e0a-47ad54e5727c clock.PostConditioning.area.total
+<CMD> get_metric -raw -id current -uuid 4230af16-f6af-435b-8e0a-47ad54e5727c clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 4230af16-f6af-435b-8e0a-47ad54e5727c clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 4230af16-f6af-435b-8e0a-47ad54e5727c clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 4230af16-f6af-435b-8e0a-47ad54e5727c clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 4230af16-f6af-435b-8e0a-47ad54e5727c clock.Construction.area.total
+<CMD> get_metric -raw -id current -uuid 4230af16-f6af-435b-8e0a-47ad54e5727c clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 8eb296f7-fa0d-4f2e-aff6-9d865fa0372a clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 8eb296f7-fa0d-4f2e-aff6-9d865fa0372a clock.PostConditioning.area.total
+<CMD> get_metric -raw -id current -uuid 8eb296f7-fa0d-4f2e-aff6-9d865fa0372a clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 8eb296f7-fa0d-4f2e-aff6-9d865fa0372a clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 8eb296f7-fa0d-4f2e-aff6-9d865fa0372a clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 8eb296f7-fa0d-4f2e-aff6-9d865fa0372a clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 8eb296f7-fa0d-4f2e-aff6-9d865fa0372a clock.Construction.area.total
+<CMD> get_metric -raw -id current -uuid 8eb296f7-fa0d-4f2e-aff6-9d865fa0372a clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid f0d3df38-e416-451a-84e1-c5fcba6e2889 clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid f0d3df38-e416-451a-84e1-c5fcba6e2889 clock.PostConditioning.area.total
+<CMD> get_metric -raw -id current -uuid f0d3df38-e416-451a-84e1-c5fcba6e2889 clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid f0d3df38-e416-451a-84e1-c5fcba6e2889 clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid f0d3df38-e416-451a-84e1-c5fcba6e2889 clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid f0d3df38-e416-451a-84e1-c5fcba6e2889 clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid f0d3df38-e416-451a-84e1-c5fcba6e2889 clock.Construction.area.total
+<CMD> get_metric -raw -id current -uuid f0d3df38-e416-451a-84e1-c5fcba6e2889 clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid cda2f3a3-633e-42ae-877a-491963d0c780 clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid cda2f3a3-633e-42ae-877a-491963d0c780 clock.PostConditioning.area.total
+<CMD> get_metric -raw -id current -uuid cda2f3a3-633e-42ae-877a-491963d0c780 clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid cda2f3a3-633e-42ae-877a-491963d0c780 clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid cda2f3a3-633e-42ae-877a-491963d0c780 clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid cda2f3a3-633e-42ae-877a-491963d0c780 clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid cda2f3a3-633e-42ae-877a-491963d0c780 clock.Construction.area.total
+<CMD> get_metric -raw -id current -uuid cda2f3a3-633e-42ae-877a-491963d0c780 clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 06e07df4-aae0-401b-813d-403f2543c49a clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 06e07df4-aae0-401b-813d-403f2543c49a clock.PostConditioning.area.total
+<CMD> get_metric -raw -id current -uuid 06e07df4-aae0-401b-813d-403f2543c49a clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 06e07df4-aae0-401b-813d-403f2543c49a clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 06e07df4-aae0-401b-813d-403f2543c49a clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 06e07df4-aae0-401b-813d-403f2543c49a clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 06e07df4-aae0-401b-813d-403f2543c49a clock.Construction.area.total
+<CMD> get_metric -raw -id current -uuid 06e07df4-aae0-401b-813d-403f2543c49a clock.Implementation.area.total
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:           2.77              5                                      place
+UM:           2.86              6                                      place
 # report_metric -file reports/metrics.html -format html
 <CMD> um::get_metric_definition -name *.drc
 <CMD> um::get_metric_definition -name *.drc.layer:*
@@ -1001,28 +1058,28 @@ No cell matching given name found to have padding.
 ### Start verbose source output (echo mode) for 'scripts/reporting.tcl' ...
 # reportDensityMap > $vars(rpt_dir)/$vars(step).density.rpt
 <CMD> reportDensityMap > reports/place.density.rpt
-**Info: (IMPSP-307): Design contains fractional 1 cell.
+**Info: (IMPSP-307): Design contains fractional 12 cells.
 default core: bins with density > 0.750 =  0.00 % ( 0 / 1 )
 bin size: 192 sites by 10 row(s). total 1 bins ( 1 by 1 )
   density range     #bins    %
   total                 0   0.00
 
-Density distribution unevenness ratio = 0.000%
+Density distribution unevenness ratio = 5.896%
 ### End verbose source output for 'scripts/reporting.tcl'.
 <CMD> getVersion
 <CMD> saveDesign checkpoints/design.checkpoint/save.enc -user_path
-#% Begin save design ... (date=05/07 23:54:12, mem=1040.1M)
-% Begin Save ccopt configuration ... (date=05/07 23:54:12, mem=1043.2M)
-% End Save ccopt configuration ... (date=05/07 23:54:12, total cpu=0:00:00.0, real=0:00:00.0, peak res=1044.2M, current mem=1044.2M)
-% Begin Save netlist data ... (date=05/07 23:54:12, mem=1044.2M)
+#% Begin save design ... (date=05/16 00:25:34, mem=1052.2M)
+% Begin Save ccopt configuration ... (date=05/16 00:25:34, mem=1055.3M)
+% End Save ccopt configuration ... (date=05/16 00:25:34, total cpu=0:00:00.0, real=0:00:00.0, peak res=1057.1M, current mem=1057.1M)
+% Begin Save netlist data ... (date=05/16 00:25:34, mem=1057.1M)
 Writing Binary DB to checkpoints/design.checkpoint/save.enc.dat/vbin/ringosc.v.bin in multi-threaded mode...
-% End Save netlist data ... (date=05/07 23:54:12, total cpu=0:00:00.0, real=0:00:00.0, peak res=1053.3M, current mem=1053.3M)
+% End Save netlist data ... (date=05/16 00:25:34, total cpu=0:00:00.0, real=0:00:00.0, peak res=1066.3M, current mem=1066.3M)
 Saving symbol-table file in separate thread ...
 Saving congestion map file in separate thread ...
-% Begin Save AAE data ... (date=05/07 23:54:12, mem=1053.7M)
+% Begin Save AAE data ... (date=05/16 00:25:34, mem=1066.7M)
 Saving AAE Data ...
 Saving congestion map file checkpoints/design.checkpoint/save.enc.dat/ringosc.route.congmap.gz ...
-% End Save AAE data ... (date=05/07 23:54:12, total cpu=0:00:00.0, real=0:00:00.0, peak res=1053.8M, current mem=1053.8M)
+% End Save AAE data ... (date=05/16 00:25:34, total cpu=0:00:00.0, real=0:00:00.0, peak res=1066.8M, current mem=1066.8M)
 Saving preference file checkpoints/design.checkpoint/save.enc.dat/gui.pref.tcl ...
 Saving mode setting ...
 Saving global file ...
@@ -1038,26 +1095,26 @@ Saving property file in separate thread ...
 ** Saving stdCellPlacement_binary (version# 2) ...
 Save Adaptive View Pruning View Names to Binary file
 TAT_INFO: ::saveSpecialRoute REAL = 0 : CPU = 0 : MEM = 0.
-Saving PG file checkpoints/design.checkpoint/save.enc.dat/ringosc.pg.gz, version#2, (Created by Innovus v20.13-s083_1 on Sat May  7 23:54:12 2022)
+Saving PG file checkpoints/design.checkpoint/save.enc.dat/ringosc.pg.gz, version#2, (Created by Innovus v20.13-s083_1 on Mon May 16 00:25:35 2022)
 Saving property file checkpoints/design.checkpoint/save.enc.dat/ringosc.prop
-*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1193.1M) ***
-*** Completed savePGFile (cpu=0:00:00.0 real=0:00:01.0 mem=1193.1M) ***
-TAT_INFO: ::savePGFile REAL = 1 : CPU = 0 : MEM = 0.
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1229.1M) ***
+*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1229.1M) ***
+TAT_INFO: ::savePGFile REAL = 0 : CPU = 0 : MEM = 0.
 TAT_INFO: ::savePlace REAL = 0 : CPU = 0 : MEM = 0.
-*** Completed saveRoute (cpu=0:00:00.0 real=0:00:01.0 mem=1193.1M) ***
-TAT_INFO: ::saveRoute REAL = 1 : CPU = 0 : MEM = 0.
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1229.1M) ***
+TAT_INFO: ::saveRoute REAL = 0 : CPU = 0 : MEM = 0.
 TAT_INFO: ::db::saveAnnotationAndProp REAL = 0 : CPU = 0 : MEM = 0.
-TAT_INFO: ::db::saveSymbolTable REAL = 0 : CPU = 0 : MEM = 0.
-TAT_INFO: ::saveCongMap REAL = 0 : CPU = 0 : MEM = 0.
-% Begin Save power constraints data ... (date=05/07 23:54:13, mem=1057.0M)
-% End Save power constraints data ... (date=05/07 23:54:13, total cpu=0:00:00.0, real=0:00:00.0, peak res=1057.1M, current mem=1057.1M)
+TAT_INFO: ::db::saveSymbolTable REAL = 1 : CPU = 0 : MEM = 0.
+TAT_INFO: ::saveCongMap REAL = 1 : CPU = 0 : MEM = 0.
+% Begin Save power constraints data ... (date=05/16 00:25:35, mem=1070.0M)
+% End Save power constraints data ... (date=05/16 00:25:35, total cpu=0:00:00.0, real=0:00:00.0, peak res=1070.1M, current mem=1070.1M)
 typical
 Generated self-contained design save.enc.dat
-#% End save design ... (date=05/07 23:54:14, total cpu=0:00:00.6, real=0:00:02.0, peak res=1059.7M, current mem=1059.7M)
+#% End save design ... (date=05/16 00:25:36, total cpu=0:00:00.6, real=0:00:02.0, peak res=1071.9M, current mem=1071.9M)
 *** Message Summary: 0 warning(s), 0 error(s)
 
 
-*** Memory Usage v#2 (Current mem = 1187.320M, initial mem = 275.727M) ***
-*** Message Summary: 45 warning(s), 0 error(s)
+*** Memory Usage v#2 (Current mem = 1222.344M, initial mem = 275.727M) ***
+*** Message Summary: 73 warning(s), 0 error(s)
 
---- Ending "Innovus" (totcpu=0:00:19.8, real=0:00:33.0, mem=1187.3M) ---
+--- Ending "Innovus" (totcpu=0:00:20.4, real=0:00:32.0, mem=1222.3M) ---
