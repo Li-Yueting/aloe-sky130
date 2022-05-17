@@ -1,0 +1,31 @@
+
+
+# LEF File for Accumulated Process Antenna Effects at the Boundary Pins
+# *********************************************************************
+
+VERSION 5.5 ;
+NAMESCASESENSITIVE ON ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+
+MACRO bgr_top 
+  PIN porst 
+  END porst
+  PIN va 
+    ANTENNADIFFAREA 82.639 LAYER met3 ; 
+    ANTENNAPARTIALMETALAREA 6.2364 LAYER met3 ;
+    ANTENNAPARTIALMETALSIDEAREA 33.256 LAYER met3 ;
+  END va
+  PIN vb 
+    ANTENNADIFFAREA 57.9855 LAYER met3 ; 
+    ANTENNAPARTIALMETALAREA 13.8264 LAYER met3 ;
+    ANTENNAPARTIALMETALSIDEAREA 73.736 LAYER met3 ;
+  END vb
+  PIN vbg 
+    ANTENNADIFFAREA 57.9855 LAYER met3 ; 
+    ANTENNAPARTIALMETALAREA 20.0184 LAYER met3 ;
+    ANTENNAPARTIALMETALSIDEAREA 107.24 LAYER met3 ;
+  END vbg
+END bgr_top
+
+END LIBRARY

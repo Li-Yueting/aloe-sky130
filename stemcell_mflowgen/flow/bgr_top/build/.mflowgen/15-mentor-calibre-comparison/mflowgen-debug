@@ -1,0 +1,15 @@
+#! /usr/bin/env bash
+set -euo pipefail
+#=========================================================================
+# mflowgen-debug
+#=========================================================================
+# Generator : /home/users/xingyuni/ee372/mflowgen_flow/mflowgen/mflowgen/core/build_orchestrator.py
+
+# Pre
+
+export design_name=bgr_top
+
+# Debug
+
+calibre -rve -lvs svdb
+

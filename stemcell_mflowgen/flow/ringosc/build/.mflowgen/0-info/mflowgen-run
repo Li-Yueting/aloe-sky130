@@ -12,7 +12,7 @@ date +%Y-%m%d-%H%M-%S > .time_start
 MFLOWGEN_STEP_HOME=$PWD
 export design_name=ringosc
 export clock_period=10.0
-export construct_path=/home/users/xingyuni/ee372/mflowgen_flow/aloe-sky130/ringosc/design/construct.py
+export construct_path=/home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/design/construct.py
 export adk=skywater-130nm-analog-adk
 export adk_view=view-standard
 
@@ -23,7 +23,7 @@ echo "Clock period     -- 10.0"
 echo "ADK              -- skywater-130nm-analog-adk"
 echo "ADK view         -- view-standard"
 echo
-echo "Constructed from -- /home/users/xingyuni/ee372/mflowgen_flow/aloe-sky130/ringosc/design/construct.py"
+echo "Constructed from -- /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/design/construct.py"
 echo
 
 # Post

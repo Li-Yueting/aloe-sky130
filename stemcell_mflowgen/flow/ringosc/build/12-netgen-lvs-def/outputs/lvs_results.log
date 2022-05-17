@@ -1,0 +1,77 @@
+
+Cell sky130_asc_cap_mim_m3_1 disconnected node: Cin
+Cell sky130_asc_cap_mim_m3_1 disconnected node: Cout
+Cell sky130_asc_cap_mim_m3_1 disconnected node: VPWR
+Cell sky130_asc_cap_mim_m3_1 disconnected node: VGND
+Warning: Equate pins:  cell sky130_asc_cap_mim_m3_1 has no definition, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_asc_cap_mim_m3_1         |Circuit 2: sky130_asc_cap_mim_m3_1         
+-------------------------------------------|-------------------------------------------
+Cin                                        |Cin                                        
+Cout                                       |Cout                                       
+VPWR                                       |VPWR                                       
+VGND                                       |VGND                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_asc_cap_mim_m3_1 and sky130_asc_cap_mim_m3_1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: ringosc                         |Circuit 2: ringosc                         
+-------------------------------------------|-------------------------------------------
+sky130_asc_cap_mim_m3_1 (2)                |sky130_asc_cap_mim_m3_1 (2)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 1 **Mismatch**             |Number of nets: 3 **Mismatch**             
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: ringosc                         |Circuit 2: ringosc                         
+
+---------------------------------------------------------------------------------------
+Net: VDD                                   |Net: vc                                    
+  sky130_asc_cap_mim_m3_1/Cin = 2          |  sky130_asc_cap_mim_m3_1/Cout = 1         
+  sky130_asc_cap_mim_m3_1/Cout = 2         |  sky130_asc_cap_mim_m3_1/Cin = 1          
+  sky130_asc_cap_mim_m3_1/VPWR = 2         |                                           
+  sky130_asc_cap_mim_m3_1/VGND = 2         |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+(no matching net)                          |Net: VSS                                   
+                                           |  sky130_asc_cap_mim_m3_1/VGND = 2         
+                                           |  sky130_asc_cap_mim_m3_1/Cout = 1         
+                                           |                                           
+(no matching net)                          |Net: VDD                                   
+                                           |  sky130_asc_cap_mim_m3_1/Cin = 1          
+                                           |  sky130_asc_cap_mim_m3_1/VPWR = 2         
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: ringosc                         |Circuit 2: ringosc                         
+
+---------------------------------------------------------------------------------------
+(no matching instance)                     |Instance: C2                               
+                                           |  Cin = 2                                  
+                                           |  Cout = 3                                 
+                                           |  VPWR = 3                                 
+                                           |  VGND = 3                                 
+                                           |                                           
+(no matching instance)                     |Instance: C1                               
+                                           |  Cin = 3                                  
+                                           |  Cout = 2                                 
+                                           |  VPWR = 3                                 
+                                           |  VGND = 3                                 
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_asc_cap_mim_m3_1C1        |(no matching instance)                     
+  Cin = 8                                  |                                           
+  Cout = 8                                 |                                           
+  VPWR = 8                                 |                                           
+  VGND = 8                                 |                                           
+                                           |                                           
+Instance: sky130_asc_cap_mim_m3_1C2        |(no matching instance)                     
+  Cin = 8                                  |                                           
+  Cout = 8                                 |                                           
+  VPWR = 8                                 |                                           
+  VGND = 8                                 |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Netlists do not match.

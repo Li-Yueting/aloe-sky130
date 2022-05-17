@@ -1,0 +1,25 @@
+build_dir: 16-netgen-lvs-gds
+build_id: '16'
+commands:
+- sh run_lvs.sh
+edges_i:
+  adk:
+  - f: adk
+    step: 2-skywater-130nm
+  design.lvs.v:
+  - f: design.lvs.v
+    step: 9-cadence-innovus-signoff
+  design_extracted.spice:
+  - f: design_extracted.spice
+    step: 14-open-magic-gds2spice
+edges_o: {}
+inputs:
+- adk
+- design_extracted.spice
+- design.lvs.v
+name: netgen-lvs-gds
+outputs:
+- lvs_results.log
+parameters:
+  design_name: ringosc
+source: /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/design/netgen-lvs-gds

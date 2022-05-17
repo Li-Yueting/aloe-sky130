@@ -1,0 +1,33 @@
+(DELAYFILE
+  (SDFVERSION "3.0")
+  (DESIGN "ringosc")
+  (DATE "Tue May 17 01:02:41 2022")
+  (VENDOR "Cadence Design Systems, Inc.")
+  (PROGRAM "Innovus")
+  (VERSION "v20.13-s083_1 ((64bit) 01/19/2021 16:51 (Linux 2.6.32-431.11.2.el6.x86_64))")
+  (DIVIDER /)
+  (VOLTAGE 1.800000::1.800000)
+  (PROCESS "1.000000::1.000000")
+  (TEMPERATURE 25.000000::25.000000)
+  (TIMESCALE 1.0 ns)
+
+  (CELL
+    (CELLTYPE  "ringosc")
+    (INSTANCE)
+      (DELAY
+	(ABSOLUTE
+	(INTERCONNECT C1/Cout C2/Cin  (0.000::0.000) (0.000::0.000))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "sky130_asc_cap_mim_m3_1")
+    (INSTANCE  C1)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH Cin Cout  (0.131::0.131) (0.431::0.431))
+	)
+      )
+  )
+)

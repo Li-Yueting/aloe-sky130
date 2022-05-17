@@ -1,8 +1,0 @@
-name: rtl
-
-outputs:
-  - design_rtl.v
-  # - design.vcs.v
-
-commands:
-  - cat BGR_Top.v > outputs/design_rtl.v 

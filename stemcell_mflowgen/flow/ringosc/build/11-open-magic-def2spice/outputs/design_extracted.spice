@@ -1,0 +1,11 @@
+* NGSPICE file created from ringosc.ext - technology: sky130A
+
+* Black-box entry subcircuit for sky130_asc_cap_mim_m3_1 abstract view
+.subckt sky130_asc_cap_mim_m3_1 Cin Cout VPWR VGND
+.ends
+
+.subckt ringosc VDD
+XC1 VDD VDD VDD VDD sky130_asc_cap_mim_m3_1
+XC2 VDD VDD VDD VDD sky130_asc_cap_mim_m3_1
+.ends
+

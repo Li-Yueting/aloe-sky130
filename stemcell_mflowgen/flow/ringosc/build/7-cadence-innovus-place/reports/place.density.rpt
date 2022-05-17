@@ -1,0 +1,7 @@
+**Info: (IMPSP-307): Design contains fractional 12 cells.
+default core: bins with density > 0.750 =  0.00 % ( 0 / 1 )
+bin size: 192 sites by 10 row(s). total 1 bins ( 1 by 1 )
+  density range     #bins    %
+  total                 0   0.00
+
+Density distribution unevenness ratio = 1.034%

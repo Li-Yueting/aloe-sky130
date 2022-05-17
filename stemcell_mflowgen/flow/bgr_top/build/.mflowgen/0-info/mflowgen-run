@@ -1,0 +1,33 @@
+#! /usr/bin/env bash
+set -euo pipefail
+#=========================================================================
+# mflowgen-run
+#=========================================================================
+# Generator : /home/users/xingyuni/ee372/mflowgen_flow/mflowgen/mflowgen/core/build_orchestrator.py
+
+# Pre
+
+rm -f .time_end
+date +%Y-%m%d-%H%M-%S > .time_start
+MFLOWGEN_STEP_HOME=$PWD
+export design_name=bgr_top
+export clock_period=10.0
+export construct_path=/home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/yueting_git/bgr_top/design/construct.py
+export adk=skywater-130nm-analog-adk
+export adk_view=view-standard
+
+# Commands
+
+echo "Design name      -- bgr_top"
+echo "Clock period     -- 10.0"
+echo "ADK              -- skywater-130nm-analog-adk"
+echo "ADK view         -- view-standard"
+echo
+echo "Constructed from -- /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/yueting_git/bgr_top/design/construct.py"
+echo
+
+# Post
+
+cd $MFLOWGEN_STEP_HOME
+date +%Y-%m%d-%H%M-%S > .time_end
+

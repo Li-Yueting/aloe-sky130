@@ -1,0 +1,28 @@
+build_dir: 11-open-magic-def2spice
+build_id: '11'
+commands:
+- cp inputs/adk/magicrc .magicrc
+- cp -L inputs/design.def.gz design.def.gz
+- gunzip design.def.gz
+- sed -i 's/\//____/g' design.def
+- magic -noconsole -dnull extract.tcl | tee def2spice.log
+edges_i:
+  adk:
+  - f: adk
+    step: 2-skywater-130nm
+  design.def.gz:
+  - f: design.def.gz
+    step: 9-cadence-innovus-signoff
+edges_o:
+  design_extracted.spice:
+  - f: design_extracted.spice
+    step: 12-netgen-lvs-def
+inputs:
+- adk
+- design.def.gz
+name: open-magic-def2spice
+outputs:
+- design_extracted.spice
+parameters:
+  design_name: ringosc
+source: /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/design/open-magic-def2spice

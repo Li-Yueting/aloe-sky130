@@ -1,0 +1,55 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Fri Apr 29 21:41:31 2022                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v20.13-s083_1 (64bit) 01/19/2021 16:51 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.13-s083_1 NR201221-0721/20_13-UB (database version 18.20.538) {superthreading v2.13}
+#@(#)CDS: AAE 20.13-s024 (64bit) 01/19/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.13-s042_1 () Jan 14 2021 08:49:42 ( )
+#@(#)CDS: SYNTECH 20.13-s015_1 () Jan  6 2021 07:44:41 ( )
+#@(#)CDS: CPE v20.13-s092
+#@(#)CDS: IQuantus/TQuantus 20.1.1-s453 (64bit) Fri Nov 20 21:16:44 PST 2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+define_proc_arguments cal_nl -info {Writes TCL scripts to run.
+} -define_args {{-n "current run number" "int_value" int required}
+    {-l "length of zero-padding" "int_value" int required}
+    {-d "expression directory" "none" string required}
+    {-b "blk_name" "none" string optional}
+    }
+setDistributeHost -local
+set init_layout_view {}
+set init_verilog /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/inverter.v
+set init_mmmc_file /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/view_definition.tcl
+set init_lef_file {/home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/adk/rtk-tech.lef /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/adk/stdcells.lef /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/adk/rtk-tech.lef /home/users/lyt1314/ee372/aloe-sky130/aloe/inputs/adk/stdcells.lef}
+set init_top_cell inverter
+set init_gnd_net {VSS VPW VSSPST VSSE}
+set init_pwr_net {VDD VNW VDDPST POC VDDCE VDDPE}
+set init_design_uniquify 1
+init_design
+um::push_snapshot_stack
+win
+zoomBox -5.85000 -2.57800 28.23600 14.15900
+zoomBox -13.39600 -6.39400 42.11200 20.86100
+setLayerPreference node_cell -isVisible 1
+zoomBox -16.62900 -8.14800 48.67500 23.91700
+zoomBox -24.90400 -12.63900 65.48200 31.74100
+zoomBox -17.70700 -7.39800 37.80200 19.85700
+zoomBox -13.70400 -4.85300 20.38500 11.88500
+zoomBox -11.34500 -4.29700 17.63000 9.93000
+zoomBox -13.89200 -5.15300 20.19700 11.58500
+zoomBox -16.88800 -6.16000 23.21700 13.53200
+zoomBox -13.89300 -5.15400 20.19800 11.58500
+zoomBox -9.18200 -3.57100 15.44900 8.52300
+setLayerPreference node_power -isSelectable 1
+setLayerPreference node_power -isVisible 1
+setLayerPreference node_floorplan -isVisible 1
+setLayerPreference node_row -isVisible 1
+zoomBox -14.65600 -5.45000 19.43600 11.28900
+zoomBox -18.13700 -6.64500 21.97100 13.04800
+zoomBox -14.36000 -5.32300 19.73200 11.41600
+zoomBox -11.15000 -4.20000 17.82900 10.02900
