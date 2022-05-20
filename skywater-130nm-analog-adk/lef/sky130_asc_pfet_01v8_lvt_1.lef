@@ -23,8 +23,8 @@ MACRO sky130_asc_pfet_01v8_lvt_1
     ANTENNADIFFAREA 1.870500 ;
     PORT
       LAYER li1 ;
-        RECT 1.240 8.650 3.880 8.950 ;
-        RECT 3.465 8.245 3.635 8.650 ;
+        RECT 1.240 8.450 3.880 8.650 ;
+        RECT 3.465 8.245 3.635 8.450 ;
         RECT 3.465 8.130 3.640 8.245 ;
         RECT 3.470 1.755 3.640 8.130 ;
       LAYER mcon ;

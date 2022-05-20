@@ -70,7 +70,7 @@ setAddStripeMode -stacked_via_bottom_layer 2 \
 # Allow same-layer jogs to connect stripes to the core ring if some
 # blockage is in the way (e.g., connections from core ring to pads).
 # Restrict any routing around blockages to use only layers for power.
-
+set $pmesh_bot_str_intraset_spacing  50
 addStripe -nets {VSS VDD} -layer $pmesh_bot -direction vertical \
     -width $pmesh_bot_str_width                                 \
     -spacing $pmesh_bot_str_intraset_spacing                    \

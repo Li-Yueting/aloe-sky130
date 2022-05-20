@@ -5,7 +5,7 @@ module bgr_top (
     output vb,
     output vbg
  );
-
+ wire ground=VSS;
  wire vc;
  amplifier amp(
      .va(va),
@@ -14,6 +14,7 @@ module bgr_top (
  );
 
  core BGR_Core(
+     .ground(ground),
      .va(va),
      .vb(vb)
  );
@@ -110,6 +111,7 @@ endmodule
 
 // ===================================== module core =============================
 module core (
+    input ground,
     output va,
     output vb
  );
@@ -117,7 +119,7 @@ module core (
   
  sky130_asc_cap_mim_m3_1 C2 (
      .Cin(va),
-     .Cout(VSS)
+     .Cout(ground)
  );
  resistor R6 (
     .rin(va),
@@ -141,12 +143,12 @@ module core (
  );
  sky130_asc_res_xhigh_po_2p85_2 R9 (
      .Rin(l11),
-     .Rout(VSS)
+     .Rout(ground)
  );
  sky130_asc_pnp_05v5_W3p40L3p40_1 pnp_va (
      .Emitter(va),
-     .Base(VSS),
-     .Collector(VSS)
+     .Base(ground),
+     .Collector(ground)
  );
 
  resistor R3 (
@@ -156,7 +158,7 @@ module core (
 
  pnp_array pnp_vb (
      .emitter(vbneg),
-     .base(VSS)
+     .base(ground)
  );
 
  wire l1, l2, l4, l5, l12;
@@ -182,7 +184,7 @@ module core (
  );
  sky130_asc_res_xhigh_po_2p85_2 R13 (
      .Rin(l12),
-     .Rout(VSS)
+     .Rout(ground)
  );
 
 endmodule
@@ -208,22 +210,27 @@ module pnp_array (
  );
  sky130_asc_pnp_05v5_W3p40L3p40_8 b1(
      .Emitter(emitter),
+     .Collector(base),
      .Base(base)
  );
  sky130_asc_pnp_05v5_W3p40L3p40_8 b2(
      .Emitter(emitter),
+     .Collector(base),
      .Base(base)
  );
  sky130_asc_pnp_05v5_W3p40L3p40_8 b3(
      .Emitter(emitter),
+     .Collector(base),
      .Base(base)
  );
  sky130_asc_pnp_05v5_W3p40L3p40_8 b4(
      .Emitter(emitter),
+     .Collector(base),
      .Base(base)
  );
- sky130_asc_pnp_05v5_W3p40L3p40_8 b5(
+ sky130_asc_pnp_05v5_W3p40L3p40_7 b5(
      .Emitter(emitter),
+     .Collector(base),
      .Base(base)
  );
 endmodule
