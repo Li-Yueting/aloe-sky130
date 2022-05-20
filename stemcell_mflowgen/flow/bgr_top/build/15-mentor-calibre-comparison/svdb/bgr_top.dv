@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/bgr_top.dv
+dv_start matched                                  
+dv_cell {bgr_top} {bgr_top} matched
+dv_obj_count -transformed_nets {26 26} -transformed_inst {30 30} -transformed_port {6 6}
+dv_end

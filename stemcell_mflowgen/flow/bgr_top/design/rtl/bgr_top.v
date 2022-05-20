@@ -158,7 +158,8 @@ module core (
 
  pnp_array pnp_vb (
      .emitter(vbneg),
-     .base(ground)
+     .base(ground),
+     .Collector(ground)
  );
 
  wire l1, l2, l4, l5, l12;
@@ -206,27 +207,33 @@ endmodule
 
 module pnp_array (
     input emitter,
-    output base
+    output base,
+    output collector
  );
  sky130_asc_pnp_05v5_W3p40L3p40_8 b1(
      .Emitter(emitter),
-     .Base(base)
+     .Base(base),
+     .Collector(collector)
  );
  sky130_asc_pnp_05v5_W3p40L3p40_8 b2(
      .Emitter(emitter),
-     .Base(base)
+     .Base(base),
+     .Collector(collector)
  );
  sky130_asc_pnp_05v5_W3p40L3p40_8 b3(
      .Emitter(emitter),
-     .Base(base)
+     .Base(base),
+     .Collector(collector)
  );
  sky130_asc_pnp_05v5_W3p40L3p40_8 b4(
      .Emitter(emitter),
-     .Base(base)
+     .Base(base),
+     .Collector(collector)
  );
- sky130_asc_pnp_05v5_W3p40L3p40_8 b5(
+ sky130_asc_pnp_05v5_W3p40L3p40_7 b5(
      .Emitter(emitter),
-     .Base(base)
+     .Base(base),
+     .Collector(collector)
  );
 endmodule
 

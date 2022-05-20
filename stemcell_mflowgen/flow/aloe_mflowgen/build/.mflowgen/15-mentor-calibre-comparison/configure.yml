@@ -1,0 +1,27 @@
+build_dir: 15-mentor-calibre-comparison
+build_id: '15'
+commands:
+- sh run_lvs.sh
+debug:
+- calibre -rve -lvs svdb
+edges_i:
+  adk:
+  - f: adk
+    step: 2-skywater-130nm
+  design.lvs.v:
+  - f: design.lvs.v
+    step: 9-cadence-innovus-signoff
+  design_extracted.spice:
+  - f: design_extracted.spice
+    step: 14-open-magic-gds2spice
+edges_o: {}
+inputs:
+- adk
+- design_extracted.spice
+- design.lvs.v
+name: mentor-calibre-comparison
+outputs:
+- lvs.report
+parameters:
+  design_name: bgr_top
+source: /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/aloe_mflowgen/design/mentor-calibre-comparison

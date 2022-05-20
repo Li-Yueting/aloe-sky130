@@ -1,7 +1,7 @@
 (DELAYFILE
   (SDFVERSION "3.0")
   (DESIGN "bgr_top")
-  (DATE "Tue May 17 00:42:49 2022")
+  (DATE "Tue May 17 12:45:00 2022")
   (VENDOR "Cadence Design Systems, Inc.")
   (PROGRAM "Innovus")
   (VERSION "v20.13-s083_1 ((64bit) 01/19/2021 16:51 (Linux 2.6.32-431.11.2.el6.x86_64))")
@@ -17,21 +17,21 @@
       (DELAY
 	(ABSOLUTE
 	(INTERCONNECT CM/M1/DRAIN BGR_Core/R6/sub1/Rin  (0.000::0.000) (0.000::0.000))
-	(INTERCONNECT CM/M1/DRAIN BGR_Core/pnp_va/Emitter  (0.000::0.000) (0.000::0.000))
-	(INTERCONNECT CM/M1/DRAIN va  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT CM/M1/DRAIN BGR_Core/pnp_va/Emitter  (-0.000::-0.000) (-0.000::-0.000))
+	(INTERCONNECT CM/M1/DRAIN va  (0.000::0.000) (0.000::0.000))
 	(INTERCONNECT CM/M17/DRAIN BGR_Core/R6/sub1/Rin  (0.000::0.000) (0.000::0.000))
 	(INTERCONNECT CM/M17/DRAIN BGR_Core/pnp_va/Emitter  (0.000::0.000) (0.000::0.000))
 	(INTERCONNECT CM/M17/DRAIN va  (0.001::0.001) (0.001::0.001))
 	(INTERCONNECT CM/M2/DRAIN BGR_Core/R3/sub1/Rin  (0.000::0.000) (0.000::0.000))
 	(INTERCONNECT CM/M2/DRAIN vb  (0.000::0.000) (0.000::0.000))
-	(INTERCONNECT BGR_Core/R1/sub2/Rout BGR_Core/R3/sub1/Rin  (0.001::0.001) (0.001::0.001))
-	(INTERCONNECT BGR_Core/R1/sub2/Rout vb  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT BGR_Core/R1/sub2/Rout BGR_Core/R3/sub1/Rin  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT BGR_Core/R1/sub2/Rout vb  (0.002::0.002) (0.002::0.002))
 	(INTERCONNECT CM/M3/DRAIN vbg  (0.002::0.002) (0.002::0.002))
-	(INTERCONNECT CM/M3/DRAIN R20/sub2/Rin  (0.002::0.002) (0.002::0.002))
-	(INTERCONNECT amp/M8/DRAIN amp/M13/GATE  (0.000::0.000) (0.000::0.000))
-	(INTERCONNECT amp/M8/DRAIN CM/M1/GATE  (0.000::0.000) (0.000::0.000))
-	(INTERCONNECT amp/M8/DRAIN CM/M2/GATE  (0.000::0.000) (0.000::0.000))
-	(INTERCONNECT amp/M8/DRAIN CM/M3/GATE  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT CM/M3/DRAIN R20/sub2/Rin  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT amp/M8/DRAIN amp/M13/GATE  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT amp/M8/DRAIN CM/M1/GATE  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT amp/M8/DRAIN CM/M2/GATE  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT amp/M8/DRAIN CM/M3/GATE  (0.001::0.001) (0.001::0.001))
 	(INTERCONNECT amp/M4/DRAIN amp/M4/GATE  (0.000::0.000) (0.000::0.000))
 	(INTERCONNECT amp/M4/DRAIN amp/M8/GATE  (0.000::0.000) (0.000::0.000))
 	(INTERCONNECT amp/M13/DRAIN amp/M6/GATE  (0.000::0.000) (0.000::0.000))
@@ -47,12 +47,12 @@
 	(INTERCONNECT BGR_Core/R2/sub2/Rout BGR_Core/R4/sub1/Rin  (0.000::0.000) (0.000::0.000))
 	(INTERCONNECT BGR_Core/R4/sub2/Rout BGR_Core/R5/sub1/Rin  (0.000::0.000) (0.000::0.000))
 	(INTERCONNECT BGR_Core/R5/sub2/Rout BGR_Core/R12/sub1/Rin  (0.000::0.000) (0.000::0.000))
-	(INTERCONNECT BGR_Core/R12/sub2/Rout BGR_Core/R13/Rin  (0.000::0.001) (0.000::0.001))
-	(INTERCONNECT BGR_Core/R1/sub1/Rout BGR_Core/R1/sub2/Rin  (0.000::0.000) (0.000::0.000))
-	(INTERCONNECT BGR_Core/R2/sub1/Rout BGR_Core/R2/sub2/Rin  (0.000::0.000) (0.000::0.000))
-	(INTERCONNECT BGR_Core/R4/sub1/Rout BGR_Core/R4/sub2/Rin  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT BGR_Core/R12/sub2/Rout BGR_Core/R13/Rin  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT BGR_Core/R1/sub1/Rout BGR_Core/R1/sub2/Rin  (0.000::0.001) (0.000::0.001))
+	(INTERCONNECT BGR_Core/R2/sub1/Rout BGR_Core/R2/sub2/Rin  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT BGR_Core/R4/sub1/Rout BGR_Core/R4/sub2/Rin  (0.000::0.001) (0.000::0.001))
 	(INTERCONNECT BGR_Core/R5/sub1/Rout BGR_Core/R5/sub2/Rin  (0.000::0.000) (0.000::0.000))
-	(INTERCONNECT BGR_Core/R12/sub1/Rout BGR_Core/R12/sub2/Rin  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT BGR_Core/R12/sub1/Rout BGR_Core/R12/sub2/Rin  (0.001::0.001) (0.001::0.001))
 	)
       )
   )
@@ -62,7 +62,7 @@
     (INSTANCE  amp/M4)
       (DELAY
 	(ABSOLUTE
-	(IOPATH SOURCE DRAIN  (0.140::0.140) (0.440::0.440))
+	(IOPATH SOURCE DRAIN  (0.133::0.133) (0.432::0.432))
 	)
       )
   )
@@ -72,7 +72,7 @@
     (INSTANCE  amp/M8)
       (DELAY
 	(ABSOLUTE
-	(IOPATH SOURCE DRAIN  (0.172::0.172) (0.475::0.475))
+	(IOPATH SOURCE DRAIN  (0.176::0.176) (0.478::0.478))
 	)
       )
   )
@@ -92,7 +92,7 @@
     (INSTANCE  amp/M7)
       (DELAY
 	(ABSOLUTE
-	(IOPATH SOURCE DRAIN  (0.134::0.134) (0.440::0.440))
+	(IOPATH SOURCE DRAIN  (0.132::0.132) (0.438::0.438))
 	)
       )
   )
@@ -102,7 +102,7 @@
     (INSTANCE  amp/M13)
       (DELAY
 	(ABSOLUTE
-	(IOPATH SOURCE DRAIN  (0.134::0.134) (0.440::0.440))
+	(IOPATH SOURCE DRAIN  (0.132::0.132) (0.438::0.438))
 	)
       )
   )
@@ -112,7 +112,7 @@
     (INSTANCE  BGR_Core/R6/sub1)
       (DELAY
 	(ABSOLUTE
-	(IOPATH Rin Rout  (0.150::0.150) (0.452::0.452))
+	(IOPATH Rin Rout  (0.162::0.162) (0.465::0.465))
 	)
       )
   )
@@ -122,7 +122,7 @@
     (INSTANCE  BGR_Core/R3/sub1)
       (DELAY
 	(ABSOLUTE
-	(IOPATH Rin Rout  (0.217::0.222) (0.517::0.519))
+	(IOPATH Rin Rout  (0.212::0.212) (0.512::0.512))
 	)
       )
   )
@@ -132,7 +132,7 @@
     (INSTANCE  BGR_Core/R1/sub1)
       (DELAY
 	(ABSOLUTE
-	(IOPATH Rin Rout  (0.138::0.138) (0.440::0.440))
+	(IOPATH Rin Rout  (0.153::0.153) (0.456::0.456))
 	)
       )
   )
@@ -142,7 +142,7 @@
     (INSTANCE  BGR_Core/R1/sub2)
       (DELAY
 	(ABSOLUTE
-	(IOPATH Rin Rout  (0.188::0.193) (0.501::0.506))
+	(IOPATH Rin Rout  (0.206::0.206) (0.514::0.514))
 	)
       )
   )
@@ -152,7 +152,7 @@
     (INSTANCE  BGR_Core/R2/sub1)
       (DELAY
 	(ABSOLUTE
-	(IOPATH Rin Rout  (0.134::0.134) (0.434::0.434))
+	(IOPATH Rin Rout  (0.181::0.181) (0.485::0.485))
 	)
       )
   )
@@ -162,7 +162,7 @@
     (INSTANCE  BGR_Core/R2/sub2)
       (DELAY
 	(ABSOLUTE
-	(IOPATH Rin Rout  (0.146::0.146) (0.451::0.451))
+	(IOPATH Rin Rout  (0.161::0.161) (0.459::0.459))
 	)
       )
   )
@@ -172,7 +172,7 @@
     (INSTANCE  BGR_Core/R4/sub1)
       (DELAY
 	(ABSOLUTE
-	(IOPATH Rin Rout  (0.146::0.146) (0.451::0.451))
+	(IOPATH Rin Rout  (0.159::0.159) (0.467::0.467))
 	)
       )
   )
@@ -182,7 +182,7 @@
     (INSTANCE  BGR_Core/R4/sub2)
       (DELAY
 	(ABSOLUTE
-	(IOPATH Rin Rout  (0.143::0.143) (0.447::0.447))
+	(IOPATH Rin Rout  (0.151::0.151) (0.455::0.455))
 	)
       )
   )
@@ -192,7 +192,7 @@
     (INSTANCE  BGR_Core/R5/sub1)
       (DELAY
 	(ABSOLUTE
-	(IOPATH Rin Rout  (0.150::0.150) (0.456::0.456))
+	(IOPATH Rin Rout  (0.146::0.146) (0.451::0.451))
 	)
       )
   )
@@ -202,7 +202,7 @@
     (INSTANCE  BGR_Core/R5/sub2)
       (DELAY
 	(ABSOLUTE
-	(IOPATH Rin Rout  (0.147::0.147) (0.451::0.451))
+	(IOPATH Rin Rout  (0.146::0.146) (0.451::0.451))
 	)
       )
   )
@@ -212,7 +212,7 @@
     (INSTANCE  BGR_Core/R12/sub1)
       (DELAY
 	(ABSOLUTE
-	(IOPATH Rin Rout  (0.146::0.146) (0.451::0.451))
+	(IOPATH Rin Rout  (0.173::0.173) (0.482::0.482))
 	)
       )
   )
@@ -222,7 +222,7 @@
     (INSTANCE  BGR_Core/R12/sub2)
       (DELAY
 	(ABSOLUTE
-	(IOPATH Rin Rout  (0.155::0.155) (0.461::0.461))
+	(IOPATH Rin Rout  (0.177::0.177) (0.482::0.482))
 	)
       )
   )
@@ -232,7 +232,7 @@
     (INSTANCE  CM/M17)
       (DELAY
 	(ABSOLUTE
-	(IOPATH SOURCE DRAIN  (0.152::0.152) (0.455::0.455))
+	(IOPATH SOURCE DRAIN  (0.154::0.154) (0.459::0.459))
 	)
       )
   )
@@ -242,7 +242,7 @@
     (INSTANCE  CM/M1)
       (DELAY
 	(ABSOLUTE
-	(IOPATH SOURCE DRAIN  (0.152::0.152) (0.456::0.456))
+	(IOPATH SOURCE DRAIN  (0.154::0.154) (0.459::0.459))
 	)
       )
   )
@@ -252,7 +252,7 @@
     (INSTANCE  CM/M2)
       (DELAY
 	(ABSOLUTE
-	(IOPATH SOURCE DRAIN  (0.189::0.194) (0.501::0.507))
+	(IOPATH SOURCE DRAIN  (0.207::0.207) (0.516::0.516))
 	)
       )
   )
@@ -262,7 +262,7 @@
     (INSTANCE  CM/M3)
       (DELAY
 	(ABSOLUTE
-	(IOPATH SOURCE DRAIN  (0.207::0.207) (0.509::0.509))
+	(IOPATH SOURCE DRAIN  (0.205::0.205) (0.507::0.507))
 	)
       )
   )
@@ -272,7 +272,7 @@
     (INSTANCE  R20/sub2)
       (DELAY
 	(ABSOLUTE
-	(IOPATH Rin Rout  (0.154::0.154) (0.442::0.442))
+	(IOPATH Rin Rout  (0.153::0.153) (0.442::0.442))
 	)
       )
   )

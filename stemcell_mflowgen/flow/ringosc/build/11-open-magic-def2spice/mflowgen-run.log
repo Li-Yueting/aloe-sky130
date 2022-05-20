@@ -47,11 +47,11 @@ LEF read: Processed 2767 lines.
 Reading DEF data from file design.def.
 This action cannot be undone.
   Processed 10 vias total.
-DEF read, Line 194 (Warning): Number of pins read (16) does not match the number declared (2).
-  Processed 2 subcell instances total.
+DEF read, Line 218 (Warning): Number of pins read (20) does not match the number declared (6).
+  Processed 4 subcell instances total.
   Processed 10 special nets total.
-  Processed 3 nets total.
-DEF read: Processed 337 lines.
+  Processed 5 nets total.
+DEF read: Processed 624 lines.
 DEF Read: encountered 1 warning total.
 Usage: extract do option
    or  extract no option
@@ -66,6 +66,7 @@ where option is one of:
   labelcheck		check for connections through sticky labels
   aliases		output all net name aliases
 Processing ringosc
-Extracting sky130_asc_cap_mim_m3_1 into sky130_asc_cap_mim_m3_1.ext:
+Extracting sky130_asc_pfet_01v8_lvt_12 into sky130_asc_pfet_01v8_lvt_12.ext:
+Extracting sky130_asc_pfet_01v8_lvt_60 into sky130_asc_pfet_01v8_lvt_60.ext:
 Extracting ringosc into ringosc.ext:
 exttospice finished.

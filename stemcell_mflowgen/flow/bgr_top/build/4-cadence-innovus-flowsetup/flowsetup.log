@@ -68,7 +68,7 @@
 -------------------------------------------------
 <FF> CODE GENERATION COMPLETE
 <FF> ... VERSION  -> 18.1.0
-<FF> ... RUN DIRECTORY  -> /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/yueting_git/bgr_top/build/4-cadence-innovus-flowsetup
+<FF> ... RUN DIRECTORY  -> /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/bgr_top/build/4-cadence-innovus-flowsetup
 <FF> ... SCRIPTS  -> innovus-foundation-flow
 <FF> ... PLUGINS  -> 1 defined, 1 found
 <FF> ... REPORT   -> innovus-foundation-flow/check.rpt

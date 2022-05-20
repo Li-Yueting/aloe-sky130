@@ -5,14 +5,14 @@ Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
 
 Version:	v20.13-s083_1, built Tue Jan 19 16:51:46 PST 2021
 Options:	-overwrite -nowin -init START.tcl -log logs/run.log 
-Date:		Tue May 17 00:59:41 2022
+Date:		Tue May 17 12:36:43 2022
 Host:		rice-503-20-north (x86_64 w/Linux 5.11.0-41-generic) (20cores*40cpus*Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz 28160KB)
 OS:		CentOS Linux release 7.9.2009 (Core)
 
 License:
 		invs	Innovus Implementation System	20.1	checkout succeeded
 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
-Create and set the environment variable TMPDIR to /tmp/innovus_temp_3885084_rice-503-20-north_xingyuni_BBmTYX.
+Create and set the environment variable TMPDIR to /tmp/innovus_temp_4065874_rice-503-20-north_xingyuni_7Mtczh.
 
 The soft stacksize limit is either up to the hard limit or larger than 0.2% of RAM. No change is needed.
 
@@ -50,8 +50,8 @@ Submit command for task runs will be: local
 <FF> Plugin -> pre_init_tcl
 # source innovus-foundation-flow/init.tcl
 # init_design
-#% Begin Load MMMC data ... (date=05/17 01:00:06, mem=668.7M)
-#% End Load MMMC data ... (date=05/17 01:00:06, total cpu=0:00:00.0, real=0:00:00.0, peak res=669.7M, current mem=669.7M)
+#% Begin Load MMMC data ... (date=05/17 12:37:05, mem=665.7M)
+#% End Load MMMC data ... (date=05/17 12:37:05, total cpu=0:00:00.0, real=0:00:00.0, peak res=666.7M, current mem=666.7M)
 
 Loading LEF file inputs/adk/rtk-tech.lef ...
 
@@ -130,8 +130,8 @@ Type 'man IMPLF-201' for more detail.
 **WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
 To increase the message display limit, refer to the product command reference manual.
 
-viaInitial starts at Tue May 17 01:00:06 2022
-viaInitial ends at Tue May 17 01:00:06 2022
+viaInitial starts at Tue May 17 12:37:05 2022
+viaInitial ends at Tue May 17 12:37:05 2022
 
 ##  Check design process and node:  
 ##  Both design process and tech node are not set.
@@ -143,9 +143,9 @@ Threads Configured:16
 Reading libs_typical timing library /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/2-skywater-130nm/view-standard/stdcells.lib.
 Read 12 cells in library sky130_fd_sc_hd__tt_025C_1v80.
 Library reading multithread flow ended.
-*** End library_loading (cpu=0.01min, real=0.00min, mem=259.5M, fe_cpu=0.26min, fe_real=0.42min, fe_mem=920.2M) ***
-#% Begin Load netlist data ... (date=05/17 01:00:06, mem=695.2M)
-*** Begin netlist parsing (mem=920.2M) ***
+*** End library_loading (cpu=0.01min, real=0.00min, mem=256.0M, fe_cpu=0.26min, fe_real=0.37min, fe_mem=908.9M) ***
+#% Begin Load netlist data ... (date=05/17 12:37:05, mem=692.3M)
+*** Begin netlist parsing (mem=908.9M) ***
 **WARN: (IMPVL-159):	Pin 'Collector' of cell 'sky130_asc_pnp_05v5_W3p40L3p40_7' is defined in LEF but not in the timing library.
 Type 'man IMPVL-159' for more detail.
 **WARN: (IMPVL-159):	Pin 'Collector' of cell 'sky130_asc_pnp_05v5_W3p40L3p40_8' is defined in LEF but not in the timing library.
@@ -155,9 +155,9 @@ Reading netlist ...
 Backslashed names will retain backslash and a trailing blank character.
 Reading verilog netlist './inputs/design.v'
 
-*** Memory Usage v#2 (Current mem = 920.184M, initial mem = 275.727M) ***
-*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=920.2M) ***
-#% End Load netlist data ... (date=05/17 01:00:06, total cpu=0:00:00.0, real=0:00:00.0, peak res=700.3M, current mem=700.3M)
+*** Memory Usage v#2 (Current mem = 908.910M, initial mem = 275.727M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=908.9M) ***
+#% End Load netlist data ... (date=05/17 12:37:05, total cpu=0:00:00.0, real=0:00:00.0, peak res=697.3M, current mem=697.3M)
 Set top cell to ringosc.
 **WARN: (IMPTS-124):	Timing library description of pin 'Collector' is missing from cell 'sky130_asc_pnp_05v5_W3p40L3p40_7' in timing library 'sky130_fd_sc_hd__tt_025C_1v80'.
 **WARN: (IMPTS-124):	Timing library description of pin 'Collector' is missing from cell 'sky130_asc_pnp_05v5_W3p40L3p40_8' in timing library 'sky130_fd_sc_hd__tt_025C_1v80'.
@@ -168,13 +168,9 @@ Building hierarchical netlist for Cell ringosc ...
 *** Netlist is unique.
 Set DBUPerIGU to techSite unitasc width 490.
 ** info: there are 13 modules.
-** info: there are 2 stdCell insts.
+** info: there are 4 stdCell insts.
 
-*** Memory Usage v#2 (Current mem = 927.598M, initial mem = 275.727M) ***
-**WARN: (IMPFP-3961):	The techSite 'unithddbl' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
-Type 'man IMPFP-3961' for more detail.
-**WARN: (IMPFP-3961):	The techSite 'unithd' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
-Type 'man IMPFP-3961' for more detail.
+*** Memory Usage v#2 (Current mem = 920.324M, initial mem = 275.727M) ***
 **WARN: (IMPFP-3961):	The techSite 'unithddbl' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
 Type 'man IMPFP-3961' for more detail.
 **WARN: (IMPFP-3961):	The techSite 'unithd' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
@@ -216,10 +212,10 @@ Initializing multi-corner capacitance tables ...
 Initializing multi-corner resistance tables ...
 *Info: initialize multi-corner CTS.
 Reading timing constraints file './inputs/design.sdc' ...
-Current (total cpu=0:00:16.5, real=0:00:26.0, peak res=921.9M, current mem=916.6M)
+Current (total cpu=0:00:16.4, real=0:00:23.0, peak res=923.2M, current mem=923.2M)
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=917.4M, current mem=917.4M)
-Current (total cpu=0:00:16.5, real=0:00:26.0, peak res=921.9M, current mem=917.4M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=924.0M, current mem=924.0M)
+Current (total cpu=0:00:16.5, real=0:00:23.0, peak res=924.0M, current mem=924.0M)
 Total number of combinational cells: 10
 Total number of sequential cells: 0
 Total number of tristate cells: 0
@@ -245,19 +241,19 @@ Total number of identified unusable delay cells: 0
 No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
 **WARN: (IMPOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
 Type 'man IMPOPT-3001' for more detail.
-#% Begin Load MMMC data ... (date=05/17 01:00:07, mem=947.1M)
-#% End Load MMMC data ... (date=05/17 01:00:07, total cpu=0:00:00.0, real=0:00:00.0, peak res=947.1M, current mem=947.1M)
+#% Begin Load MMMC data ... (date=05/17 12:37:06, mem=953.7M)
+#% End Load MMMC data ... (date=05/17 12:37:06, total cpu=0:00:00.0, real=0:00:00.0, peak res=953.7M, current mem=953.7M)
 
 *** Summary of all messages that are not suppressed in this session:
 Severity  ID               Count  Summary                                  
 WARNING   IMPLF-63             2  The layer '%s' referenced %s is not foun...
 WARNING   IMPLF-200           24  Pin '%s' in macro '%s' has no ANTENNAGAT...
 WARNING   IMPLF-201           12  Pin '%s' in macro '%s' has no ANTENNADIF...
-WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
 WARNING   IMPTS-124            2  Timing library description of pin '%s' i...
 WARNING   IMPVL-159            2  Pin '%s' of cell '%s' is defined in LEF ...
 WARNING   IMPOPT-3001          1  Inverter footprint is not defined or is ...
-*** Message Summary: 47 warning(s), 0 error(s)
+*** Message Summary: 45 warning(s), 0 error(s)
 
 # um::enable_metrics -on
 # um::push_snapshot_stack
@@ -291,7 +287,7 @@ Applying the recommended capacitance filtering threshold values for 130nm proces
 # puts "<FF> Plugin -> post_init_tcl"
 <FF> Plugin -> post_init_tcl
 # timeDesign -preplace -prefix preplace -outDir reports -expandedViews
-*** timeDesign #1 [begin] : totSession cpu/real = 0:00:16.7/0:00:25.1 (0.7), mem = 1164.7M
+*** timeDesign #1 [begin] : totSession cpu/real = 0:00:16.6/0:00:22.6 (0.7), mem = 1170.5M
 
 **INFO: Power effort not set by setOptMode, so setting 'setOptMode -powerEffort high', as set by setDesignMode
 Setting timing_disable_library_data_to_data_checks to 'true'.
@@ -310,7 +306,7 @@ Set Default Net Delay as 0 ps.
 Set Default Net Load as 0 pF. 
 Starting delay calculation for Setup views
 **WARN: (IMPESI-3505):	setDelayCalMode -eng_copyNetPropToNewNet true (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
-AAE DB initialization (MEM=1309.35 CPU=0:00:00.0 REAL=0:00:00.0) 
+AAE DB initialization (MEM=1315.09 CPU=0:00:00.0 REAL=0:00:00.0) 
 #################################################################################
 # Design Stage: PreRoute
 # Design Name: ringosc
@@ -320,13 +316,13 @@ AAE DB initialization (MEM=1309.35 CPU=0:00:00.0 REAL=0:00:00.0)
 # Signoff Settings: SI Off 
 #################################################################################
 Calculate delays in Single mode...
-Start delay calculation (fullDC) (16 T). (MEM=1327.64)
+Start delay calculation (fullDC) (16 T). (MEM=1347.67)
 siFlow : Timing analysis mode is single, using late cdB files
-Total number of fetched objects 1
+Total number of fetched objects 6
 AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
-End delay calculation. (MEM=1365.77 CPU=0:00:00.0 REAL=0:00:00.0)
-End delay calculation (fullDC). (MEM=1365.77 CPU=0:00:00.3 REAL=0:00:01.0)
-*** Done Building Timing Graph (cpu=0:00:00.8 real=0:00:01.0 totSessionCpu=0:00:17.7 mem=1333.8M)
+End delay calculation. (MEM=1584.58 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1584.58 CPU=0:00:00.3 REAL=0:00:00.0)
+*** Done Building Timing Graph (cpu=0:00:00.9 real=0:00:01.0 totSessionCpu=0:00:17.7 mem=1544.6M)
 
 ------------------------------------------------------------------
           timeDesign Summary
@@ -349,80 +345,80 @@ Setup views included:
 |                    |    0    |    0    |
 +--------------------+---------+---------+
 
-Density: 70.624%
+Density: 70.086%
 ------------------------------------------------------------------
 Set Using Default Delay Limit as 1000.
 Resetting back High Fanout Nets as non-ideal
 Set Default Net Delay as 1000 ps.
 Set Default Net Load as 0.5 pF. 
 Reported timing to dir reports
-Total CPU time: 1.09 sec
+Total CPU time: 1.2 sec
 Total Real time: 1.0 sec
-Total Memory Usage: 1252.25 Mbytes
-*** timeDesign #1 [finish] : cpu/real = 0:00:01.1/0:00:01.1 (0.9), totSession cpu/real = 0:00:17.7/0:00:26.2 (0.7), mem = 1252.2M
+Total Memory Usage: 1362.058594 Mbytes
+*** timeDesign #1 [finish] : cpu/real = 0:00:01.2/0:00:01.2 (1.0), totSession cpu/real = 0:00:17.8/0:00:23.8 (0.7), mem = 1362.1M
 # checkDesign -all
 Creating directory checkDesign.
 **WARN: (IMPREPO-207):	There are 12 Cells dimensions not multiple integer of site.
 **Info: (IMPSP-307): Design contains fractional 12 cells.
-Begin checking placement ... (start mem=1252.3M, init mem=1282.3M)
+Begin checking placement ... (start mem=1362.1M, init mem=1392.1M)
 *info: Recommended don't use cell = 0           
 *info: Placed = 0             
-*info: Unplaced = 2           
-Placement Density:70.62%(693/981)
-Placement Density (including fixed std cells):70.62%(693/981)
-Finished checkPlace (total: cpu=0:00:00.1, real=0:00:00.0; vio checks: cpu=0:00:00.0, real=0:00:00.0; mem=1282.3M)
+*info: Unplaced = 4           
+Placement Density:70.09%(4210/6006)
+Placement Density (including fixed std cells):70.09%(4210/6006)
+Finished checkPlace (total: cpu=0:00:00.0, real=0:00:00.0; vio checks: cpu=0:00:00.0, real=0:00:00.0; mem=1392.1M)
 ############################################################################
 # Innovus Netlist Design Rule Check
-# Tue May 17 01:00:08 2022
+# Tue May 17 12:37:07 2022
 
 ############################################################################
 Design: ringosc
 
 ------ Design Summary:
-Total Standard Cell Number   (cells) : 2
+Total Standard Cell Number   (cells) : 4
 Total Block Cell Number      (cells) : 0
 Total I/O Pad Cell Number    (cells) : 0
-Total Standard Cell Area     ( um^2) : 692.87
+Total Standard Cell Area     ( um^2) : 4209.51
 Total Block Cell Area        ( um^2) : 0.00
 Total I/O Pad Cell Area      ( um^2) : 0.00
 
 ------ Design Statistics:
 
-Number of Instances            : 2
-Number of Non-uniquified Insts : 2
-Number of Nets                 : 11
-Average number of Pins per Net : 0.36
-Maximum number of Pins in Net  : 2
+Number of Instances            : 4
+Number of Non-uniquified Insts : 3
+Number of Nets                 : 14
+Average number of Pins per Net : 1.14
+Maximum number of Pins in Net  : 5
 
 ------ I/O Port summary
 
-Number of Primary I/O Ports    : 0
-Number of Input Ports          : 0
-Number of Output Ports         : 0
+Number of Primary I/O Ports    : 4
+Number of Input Ports          : 3
+Number of Output Ports         : 1
 Number of Bidirectional Ports  : 0
 Number of Power/Ground Ports   : 0
 Number of Floating Ports                     *: 0
 Number of Ports Connected to Multiple Pads   *: 0
-Number of Ports Connected to Core Instances   : 0
+Number of Ports Connected to Core Instances   : 4
+**WARN: (IMPREPO-202):	There are 4 Ports connected to core instances.
 
 ------ Design Rule Checking:
 
-Number of Output Pins connect to Power/Ground *: 1
-Number of Insts with Input Pins tied together ?: 0
+Number of Output Pins connect to Power/Ground *: 0
+Number of Insts with Input Pins tied together ?: 1
 Number of TieHi/Lo term nets not connected to instance's PG terms ?: 0
-**WARN: (IMPDB-2138):	Output term Cout of inst C2 connected to PG net VSS.
 Number of Input/InOut Floating Pins            : 0
 Number of Output Floating Pins                 : 0
 Number of Output Term Marked TieHi/Lo         *: 0
 
-**WARN: (IMPREPO-215):	There are 1 Output pins connected to Power Ground net.
-**WARN: (IMPREPO-221):	There are 1 Output term shorted to Power Ground net.
+**WARN: (IMPREPO-216):	There are 1 Instances with input pins tied together.
 Number of nets with tri-state drivers          : 0
-Number of nets with parallel drivers           : 0
-Number of nets with multiple drivers           : 0
+Number of nets with parallel drivers           : 1
+Number of nets with multiple drivers           : 1
 Number of nets with no driver (No FanIn)       : 0
-Number of Output Floating nets (No FanOut)     : 0
+Number of Output Floating nets (No FanOut)     : 2
 Number of High Fanout nets (>50)               : 0
+**WARN: (IMPREPO-213):	There are 4 I/O Pins connected to Non-IO Insts.
 Checking for any assigns in the netlist...
   No assigns found.
 Checking routing tracks.....
@@ -431,8 +427,8 @@ Checking FINFET Grid is on Manufacture Grid.....
 
 Checking core/die box is on Grid.....
 
-WARNING (IMPFP-7236): DIE's corner: (35.1000000000 , 28.2000000000) is NOT on PlacementGrid,  Please use command getFPlanMode to check current Grid settings, use command setFPlanMode to change which grid to snap to. And use command get_snap_grid_info to get grids' offset and pitch. Command floorplan can be used to fix this issue.
-WARNING (IMPFP-7238): CORE's corner: (35.1000000000 , 28.2000000000) is NOT on PlacementGrid,  Please use command getFPlanMode to check current Grid settings, use command setFPlanMode to change which grid to snap to. And use command get_snap_grid_info to get grids' offset and pitch. Command floorplan can be used to fix this issue.
+WARNING (IMPFP-7236): DIE's corner: (79.9700000000 , 75.2000000000) is NOT on PlacementGrid,  Please use command getFPlanMode to check current Grid settings, use command setFPlanMode to change which grid to snap to. And use command get_snap_grid_info to get grids' offset and pitch. Command floorplan can be used to fix this issue.
+WARNING (IMPFP-7238): CORE's corner: (79.9700000000 , 75.2000000000) is NOT on PlacementGrid,  Please use command getFPlanMode to check current Grid settings, use command setFPlanMode to change which grid to snap to. And use command get_snap_grid_info to get grids' offset and pitch. Command floorplan can be used to fix this issue.
 Checking snap rule ......
 
 Checking Row is on grid......
@@ -451,17 +447,17 @@ Report saved in file checkDesign/ringosc.main.htm.ascii
 
 *** Summary of all messages that are not suppressed in this session:
 Severity  ID               Count  Summary                                  
-WARNING   IMPDB-2138           1  %s term %s of %sinst %s connected to PG ...
+WARNING   IMPREPO-202          1  There are %d Ports connected to core ins...
 WARNING   IMPREPO-207          1  There are %d Cells dimensions not multip...
-WARNING   IMPREPO-215          1  There are %d Output pins connected to Po...
-WARNING   IMPREPO-221          1  There are %d Output term shorted to Powe...
+WARNING   IMPREPO-213          1  There are %d I/O Pins connected to Non-I...
+WARNING   IMPREPO-216          1  There are %d Instances with input pins t...
 *** Message Summary: 4 warning(s), 0 error(s)
 
 # check_timing
 ###############################################################
 #  Generated by:      Cadence Innovus 20.13-s083_1
 #  OS:                Linux x86_64(Host ID rice-503-20-north)
-#  Generated on:      Tue May 17 01:00:08 2022
+#  Generated on:      Tue May 17 12:37:08 2022
 #  Design:            ringosc
 #  Command:           check_timing
 ###############################################################
@@ -474,11 +470,22 @@ WARNING   IMPREPO-221          1  There are %d Output term shorted to Powe...
 # Signoff Settings: SI Off 
 #################################################################################
 Calculate delays in Single mode...
-Start delay calculation (fullDC) (16 T). (MEM=1282.25)
-Total number of fetched objects 1
+Start delay calculation (fullDC) (16 T). (MEM=1392.06)
+Total number of fetched objects 6
 AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
-End delay calculation. (MEM=1339.46 CPU=0:00:00.0 REAL=0:00:00.0)
-End delay calculation (fullDC). (MEM=1339.46 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation. (MEM=1598.54 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1598.54 CPU=0:00:00.1 REAL=0:00:00.0)
+     +-----------------------------------------------------------------------------+ 
+     |                            TIMING CHECK SUMMARY                             | 
+     |-----------------------------------------------------------------------------| 
+     |     Warning     |              Warning Description               |  Number  | 
+     |                 |                                                |    of    | 
+     |                 |                                                | Warnings | 
+     |-----------------+------------------------------------------------+----------| 
+     | no_drive        | No drive assertion                             |        3 | 
+     | no_input_delay  | No input delay assertion with respect to clock |        3 | 
+     | uncons_endpoint | Unconstrained signal arriving at end point     |        1 | 
+     +-----------------------------------------------------------------------------+ 
 # um::pop_snapshot_stack
 # create_snapshot -name init -categories design
 ------------------------------------------------------------
@@ -491,7 +498,7 @@ Total FF Count       :            0
 Bits Per Flop        :         -nan
 ------------------------------------------------------------
 UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:          18.05             27          0.000 ns          0.000 ns  init
+UM:          18.21             25          0.000 ns          0.000 ns  init
 # report_metric -file reports/metrics.html -format html
 # return
 ### End verbose source output for 'innovus-foundation-flow/INNOVUS/run_init.tcl'.
@@ -524,11 +531,7 @@ UM:          18.05             27          0.000 ns          0.000 ns  init
              $core_margin_l $core_margin_b $core_margin_r $core_margin_t
 Adjusting coreMargin left    to finFet grid (PlacementGrid) : after adjusting :28.98
 Adjusting coreMargin right   to finFet grid (PlacementGrid) : after adjusting :28.98
-Adjusting core size to PlacementGrid : width :82.34 height : 28.22
-**WARN: (IMPFP-3961):	The techSite 'unithddbl' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
-Type 'man IMPFP-3961' for more detail.
-**WARN: (IMPFP-3961):	The techSite 'unithd' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
-Type 'man IMPFP-3961' for more detail.
+Adjusting core size to PlacementGrid : width :166.06 height : 84.66
 **WARN: (IMPFP-3961):	The techSite 'unithddbl' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
 Type 'man IMPFP-3961' for more detail.
 **WARN: (IMPFP-3961):	The techSite 'unithd' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
@@ -549,12 +552,8 @@ Type 'man IMPFP-3961' for more detail.
 Type 'man IMPFP-3961' for more detail.
 **WARN: (IMPFP-3961):	The techSite 'unithd' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
 Type 'man IMPFP-3961' for more detail.
-**WARN: (IMPFP-3961):	The techSite 'unithddbl' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
-Type 'man IMPFP-3961' for more detail.
-**WARN: (IMPFP-3961):	The techSite 'unithd' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
-Type 'man IMPFP-3961' for more detail.
 # planDesign
-#% Begin planDesign (date=05/17 01:00:09, mem=1007.9M)
+#% Begin planDesign (date=05/17 12:37:08, mem=1109.4M)
 **WARN: (IMPAFP-9024):	This command is hidden and will be obsolete in the next major release. For module placement, use proto_design instead. For macro placement, use place_design -concurrent_macros to place both standard cells and macros together.
 **WARN: (IMPAFP-9024):	This command is hidden and will be obsolete in the next major release. For module placement, use proto_design instead. For macro placement, use place_design -concurrent_macros to place both standard cells and macros together.
 **WARN: (IMPTCM-77):	Option "-honorOrientation" for command getPlanDesignMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
@@ -572,16 +571,16 @@ Extracting standard cell pins and blockage ......
 Pin and blockage extraction finished
 Extracting macro/IO cell pins and blockage ...... 
 Pin and blockage extraction finished
-*** Starting "NanoPlace(TM) placement v#4 (mem=1298.5M)" ...
+*** Starting "NanoPlace(TM) placement v#4 (mem=1413.5M)" ...
 *** Build Buffered Sizing Timing Model
-(cpu=0:00:00.0 mem=1320.9M) ***
+(cpu=0:00:00.0 mem=1436.0M) ***
 *** Build Virtual Sizing Timing Model
-(cpu=0:00:00.0 mem=1320.9M) ***
+(cpu=0:00:00.0 mem=1436.0M) ***
 No user-set net weight.
 Net fanout histogram:
-2		: 1 (100.0%) nets
-3		: 0 (0.0%) nets
-4     -	14	: 0 (0.0%) nets
+2		: 2 (40.0%) nets
+3		: 1 (20.0%) nets
+4     -	14	: 2 (40.0%) nets
 15    -	39	: 0 (0.0%) nets
 40    -	79	: 0 (0.0%) nets
 80    -	159	: 0 (0.0%) nets
@@ -592,36 +591,42 @@ Net fanout histogram:
 2560  -	5119	: 0 (0.0%) nets
 5120+		: 0 (0.0%) nets
 Options: timingDriven clkGateAware pinGuide congEffort=auto gpeffort=medium 
-**WARN: (IMPDB-2078):	Output pin Cout of instance C2 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
-#std cell=2 (0 fixed + 2 movable) #buf cell=2 #inv cell=0 #block=0 (0 floating + 0 preplaced)
-#ioInst=0 #net=1 #term=2 #term/net=2.00, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=0
-stdCell: 2 single + 0 double + 0 multi
-Total standard cell length = 0.0737 (mm), area = 0.0007 (mm^2)
+#std cell=4 (0 fixed + 4 movable) #buf cell=4 #inv cell=0 #block=0 (0 floating + 0 preplaced)
+#ioInst=0 #net=4 #term=11 #term/net=2.75, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=4
+stdCell: 4 single + 0 double + 0 multi
+Total standard cell length = 0.4478 (mm), area = 0.0042 (mm^2)
 **Info: (IMPSP-307): Design contains fractional 12 cells.
-Average module density = 0.298.
-Density for the design = 0.298.
-       = stdcell_area 150 sites (693 um^2) / alloc_area 504 sites (2321 um^2).
-Pin Density = 0.003968.
-            = total # of pins 2 / total area 504.
+Average module density = 0.300.
+Density for the design = 0.300.
+       = stdcell_area 914 sites (4210 um^2) / alloc_area 3042 sites (14011 um^2).
+Pin Density = 0.003616.
+            = total # of pins 11 / total area 3042.
 Fence Initialization: numPrefixFence = 0,  numAutoFence = 0, numPrefixGuide = 0  numAutoGuide = 0 numNoCon = 0 
 Enabling multi-CPU acceleration with 16 CPU(s) for placement
-=== lastAutoLevel = 4 
+=== lastAutoLevel = 5 
 Iteration  1: Total net bbox = 0.000e+00 (0.00e+00 0.00e+00)
               Est.  stn bbox = 0.000e+00 (0.00e+00 0.00e+00)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1322.9M
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1438.0M
 User specified -module_cluster_mode =  0 
 
 Iteration  2: Total net bbox = 0.000e+00 (0.00e+00 0.00e+00)
               Est.  stn bbox = 0.000e+00 (0.00e+00 0.00e+00)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1322.9M
-Iteration  3: Total net bbox = 1.807e+01 (9.11e+00 8.96e+00)
-              Est.  stn bbox = 1.807e+01 (9.11e+00 8.96e+00)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1322.9M
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1438.0M
+Iteration  3: Total net bbox = 1.057e+02 (2.56e+01 8.01e+01)
+              Est.  stn bbox = 1.057e+02 (2.56e+01 8.01e+01)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1438.0M
+
+
+Iteration  4: Total net bbox = 1.057e+02 (2.56e+01 8.01e+01)
+              Est.  stn bbox = 1.057e+02 (2.56e+01 8.01e+01)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1438.0M
+Active setup views:
+    analysis_default
 
  RelinkConst: Total constraint = 0, Relinked 0 constraints . 
 User specified -fenceSpacing =  -1.0000 
 User specified fence spacing: -1.0000 um
-*** The nonConstraint instance area ratio is 0.057869 
+*** The nonConstraint instance area ratio is 0.132535 
 *** The prefixed-fenceArea/coreBoxArea is 0.000000, The auto-ConstraintArea/coreBoxArea is 0.000000 
 Start Auto fence creation, hasNoConInst = 1  .
 
@@ -647,7 +652,7 @@ Snap Spacing: X(0.4900 um), Y(9.4000 um)
 Fence2Core Spaceing: 0.0000 um
 
 ==== Design Information ====
-Core site: (28980, 28560) - (111320, 56760)
+Core site: (28980, 28560) - (195040, 113160)
 Design Whitespace% : 100.00%
 Maximum Logical Level: 0
 Has Non-constraint Instance: 1
@@ -658,17 +663,16 @@ Targets:
 Number of Total Targets: 0
 
 ================== Finished Auto-Fence Creation ===============
-*** Done Auto-Fence Creation, (cpu = 0:00:00.0, mem = 1334.4M, mem_delta = 11.5M) ***
+*** Done Auto-Fence Creation, (cpu = 0:00:00.0, mem = 1479.5M, mem_delta = 11.5M) ***
 End Auto fence creation 1.
-Iteration  4: Total net bbox = 1.845e+01 (8.88e+00 9.57e+00)
-              Est.  stn bbox = 1.845e+01 (8.88e+00 9.57e+00)
-              cpu = 0:00:00.0 real = 0:00:01.0 mem = 1334.4M
-*** cost = 1.845e+01 (8.88e+00 9.57e+00) (cpu for global=0:00:00.0) real=459104:00:10***
-Placement multithread real runtime: 459104:00:10 with 16 threads.
-**WARN: (IMPDB-2078):	Output pin Cout of instance C2 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+Iteration  5: Total net bbox = 6.027e+02 (3.07e+02 2.95e+02)
+              Est.  stn bbox = 6.136e+02 (3.14e+02 3.00e+02)
+              cpu = 0:00:00.1 real = 0:00:02.0 mem = 1479.5M
+*** cost = 6.027e+02 (3.07e+02 2.95e+02) (cpu for global=0:00:00.1) real=459115:37:10***
+Placement multithread real runtime: 459115:37:10 with 16 threads.
 Solver runtime cpu: 0:00:00.0 real: 0:00:00.0
-Core Placement runtime cpu: 0:00:00.0 real: 0:00:01.0
-*** Free Virtual Timing Model ...(mem=1334.4M)
+Core Placement runtime cpu: 0:00:00.0 real: 0:00:02.0
+*** Free Virtual Timing Model ...(mem=1479.5M)
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
 UM:*                                                                   final
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
@@ -680,7 +684,7 @@ Checking routing tracks.....
 Checking other grids.....
 Checking FINFET Grid is on Manufacture Grid.....
 Checking core/die box is on Grid.....
-**WARN: (IMPFP-7238):	CORE's corner: (111.3200000000 , 56.7600000000) is NOT on PlacementGrid,  Please use command getFPlanMode to check current Grid settings, use command setFPlanMode to change which grid to snap to. And use command get_snap_grid_info to get grids' offset and pitch. Command floorplan can be used to fix this issue.
+**WARN: (IMPFP-7238):	CORE's corner: (195.0400000000 , 113.1600000000) is NOT on PlacementGrid,  Please use command getFPlanMode to check current Grid settings, use command setFPlanMode to change which grid to snap to. And use command get_snap_grid_info to get grids' offset and pitch. Command floorplan can be used to fix this issue.
 Checking snap rule ......
 Checking Row is on grid......
 Checking AreaIO row.....
@@ -696,24 +700,23 @@ No. of regular pre-routes not on tracks : 0
 
 Reporting Utilizations.....
 
-Core utilization  = 29.839689
+Core utilization  = 29.963735
 Effective Utilizations
 **Info: (IMPSP-307): Design contains fractional 12 cells.
-Average module density = 0.298.
-Density for the design = 0.298.
-       = stdcell_area 150 sites (693 um^2) / alloc_area 504 sites (2321 um^2).
-Pin Density = 0.003968.
-            = total # of pins 2 / total area 504.
+Average module density = 0.300.
+Density for the design = 0.300.
+       = stdcell_area 914 sites (4210 um^2) / alloc_area 3042 sites (14011 um^2).
+Pin Density = 0.003616.
+            = total # of pins 11 / total area 3042.
 
 *** Summary of all messages that are not suppressed in this session:
 Severity  ID               Count  Summary                                  
 WARNING   IMPFP-7238           1  CORE's corner: %s is NOT on %s,  Please ...
-WARNING   IMPDB-2078           2  Output pin %s of instance %s is connecte...
 WARNING   IMPAFP-9024          3  This command is hidden and will be obsol...
 WARNING   IMPTCM-77            3  Option "%s" for command %s is obsolete a...
-*** Message Summary: 9 warning(s), 0 error(s)
+*** Message Summary: 7 warning(s), 0 error(s)
 
-#% End planDesign (date=05/17 01:00:10, total cpu=0:00:00.3, real=0:00:01.0, peak res=1023.8M, current mem=1011.0M)
+#% End planDesign (date=05/17 12:37:11, total cpu=0:00:00.3, real=0:00:03.0, peak res=1146.3M, current mem=1124.2M)
 ### End verbose source output for 'scripts/floorplan.tcl'.
 
   > Info: Sourcing "scripts/add-endcaps-welltaps.tcl"
@@ -733,9 +736,9 @@ skipping add-endcaps-welltaps.tcl
 # set pins_right_half [lrange $all_ports $half_ports_idx [expr $num_ports - 1]     ]
 # set half_left_idx   [expr [llength $pins_left_half] / 2]
 # puts "pins_left_half: $pins_left_half"
-pins_left_half: 
+pins_left_half: va vb
 # puts "half_left_idx: $pins_left_half"
-half_left_idx: 
+half_left_idx: va vb
 # set ports_layer M4
 ### End verbose source output for 'scripts/pin-assignments.tcl'.
 
@@ -743,7 +746,7 @@ half_left_idx:
 
 ### Start verbose source output (echo mode) for 'scripts/reporting.tcl' ...
 # timeDesign -preplace -hold -expandedViews -prefix preplace -outDir $vars(rpt_dir)
-*** timeDesign #2 [begin] : totSession cpu/real = 0:00:18.6/0:00:28.4 (0.7), mem = 1324.4M
+*** timeDesign #2 [begin] : totSession cpu/real = 0:00:18.8/0:00:27.2 (0.7), mem = 1468.5M
 
 **INFO: Power effort not set by setOptMode, so setting 'setOptMode -powerEffort high', as set by setDesignMode
 Set Using Default Delay Limit as 101.
@@ -761,12 +764,12 @@ Starting delay calculation for Hold views
 # Signoff Settings: SI Off 
 #################################################################################
 Calculate delays in Single mode...
-Start delay calculation (fullDC) (16 T). (MEM=1337.45)
-Total number of fetched objects 1
+Start delay calculation (fullDC) (16 T). (MEM=1490.06)
+Total number of fetched objects 6
 AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
-End delay calculation. (MEM=1394.66 CPU=0:00:00.0 REAL=0:00:00.0)
-End delay calculation (fullDC). (MEM=1394.66 CPU=0:00:00.0 REAL=0:00:00.0)
-*** Done Building Timing Graph (cpu=0:00:00.2 real=0:00:00.0 totSessionCpu=0:00:18.8 mem=1362.7M)
+End delay calculation. (MEM=1747.59 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1747.59 CPU=0:00:00.1 REAL=0:00:00.0)
+*** Done Building Timing Graph (cpu=0:00:00.3 real=0:00:00.0 totSessionCpu=0:00:19.1 mem=1715.6M)
 
 ------------------------------------------------------------------
           timeDesign Summary
@@ -789,17 +792,17 @@ Hold views included:
 |                    |    0    |    0    |
 +--------------------+---------+---------+
 
-Density: 29.847%
+Density: 30.043%
 ------------------------------------------------------------------
 Set Using Default Delay Limit as 1000.
 Resetting back High Fanout Nets as non-ideal
 Set Default Net Delay as 1000 ps.
 Set Default Net Load as 0.5 pF. 
 Reported timing to dir reports
-Total CPU time: 0.34 sec
-Total Real time: 1.0 sec
-Total Memory Usage: 1305.140625 Mbytes
-*** timeDesign #2 [finish] : cpu/real = 0:00:00.3/0:00:00.4 (0.9), totSession cpu/real = 0:00:18.9/0:00:28.8 (0.7), mem = 1305.1M
+Total CPU time: 0.4 sec
+Total Real time: 0.0 sec
+Total Memory Usage: 1470.070312 Mbytes
+*** timeDesign #2 [finish] : cpu/real = 0:00:00.4/0:00:00.4 (1.0), totSession cpu/real = 0:00:19.2/0:00:27.6 (0.7), mem = 1470.1M
 # report_ports > $vars(rpt_dir)/$vars(step).ports.rpt
 #################################################################################
 # Design Stage: PreRoute
@@ -810,24 +813,24 @@ Total Memory Usage: 1305.140625 Mbytes
 # Signoff Settings: SI Off 
 #################################################################################
 Calculate delays in Single mode...
-Start delay calculation (fullDC) (16 T). (MEM=1303.15)
-Total number of fetched objects 1
+Start delay calculation (fullDC) (16 T). (MEM=1468.08)
+Total number of fetched objects 6
 AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
-End delay calculation. (MEM=1392.36 CPU=0:00:00.0 REAL=0:00:00.0)
-End delay calculation (fullDC). (MEM=1392.36 CPU=0:00:00.1 REAL=0:00:00.0)
+End delay calculation. (MEM=1739.54 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1739.54 CPU=0:00:00.1 REAL=0:00:00.0)
 ### End verbose source output for 'scripts/reporting.tcl'.
-#% Begin save design ... (date=05/17 01:00:11, mem=1034.8M)
-% Begin Save ccopt configuration ... (date=05/17 01:00:11, mem=1037.8M)
-% End Save ccopt configuration ... (date=05/17 01:00:11, total cpu=0:00:00.0, real=0:00:00.0, peak res=1039.6M, current mem=1039.6M)
-% Begin Save netlist data ... (date=05/17 01:00:11, mem=1039.6M)
+#% Begin save design ... (date=05/17 12:37:11, mem=1158.6M)
+% Begin Save ccopt configuration ... (date=05/17 12:37:11, mem=1161.6M)
+% End Save ccopt configuration ... (date=05/17 12:37:11, total cpu=0:00:00.0, real=0:00:00.0, peak res=1163.4M, current mem=1163.4M)
+% Begin Save netlist data ... (date=05/17 12:37:12, mem=1163.4M)
 Writing Binary DB to checkpoints/design.checkpoint/save.enc.dat/vbin/ringosc.v.bin in multi-threaded mode...
-% End Save netlist data ... (date=05/17 01:00:11, total cpu=0:00:00.0, real=0:00:00.0, peak res=1048.5M, current mem=1048.5M)
+% End Save netlist data ... (date=05/17 12:37:12, total cpu=0:00:00.0, real=0:00:00.0, peak res=1172.3M, current mem=1172.3M)
 Saving symbol-table file in separate thread ...
 Saving congestion map file in separate thread ...
-% Begin Save AAE data ... (date=05/17 01:00:11, mem=1048.8M)
+% Begin Save AAE data ... (date=05/17 12:37:12, mem=1172.5M)
 Saving AAE Data ...
 Saving congestion map file checkpoints/design.checkpoint/save.enc.dat/ringosc.route.congmap.gz ...
-% End Save AAE data ... (date=05/17 01:00:11, total cpu=0:00:00.0, real=0:00:00.0, peak res=1048.9M, current mem=1048.9M)
+% End Save AAE data ... (date=05/17 12:37:12, total cpu=0:00:00.0, real=0:00:00.0, peak res=1172.7M, current mem=1172.7M)
 Saving preference file checkpoints/design.checkpoint/save.enc.dat/gui.pref.tcl ...
 Saving mode setting ...
 Saving global file ...
@@ -838,6 +841,7 @@ Saving Drc markers ...
 Saving special route data file in separate thread ...
 Saving PG Conn data in separate thread ...
 Saving placement file in separate thread ...
+Saving route file in separate thread ...
 Saving property file in separate thread ...
 ** Saving stdCellPlacement_binary (version# 2) ...
 Save Adaptive View Pruning View Names to Binary file
@@ -845,21 +849,21 @@ TAT_INFO: ::saveSpecialRoute REAL = 0 : CPU = 0 : MEM = 0.
 TAT_INFO: savePGConnFile REAL = 0 : CPU = 0 : MEM = 0.
 TAT_INFO: ::savePlace REAL = 0 : CPU = 0 : MEM = 0.
 Saving property file checkpoints/design.checkpoint/save.enc.dat/ringosc.prop
-*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1377.9M) ***
-*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1377.9M) ***
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1545.1M) ***
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1545.1M) ***
 TAT_INFO: ::saveRoute REAL = 0 : CPU = 0 : MEM = 0.
 TAT_INFO: ::db::saveAnnotationAndProp REAL = 0 : CPU = 0 : MEM = 0.
 TAT_INFO: ::db::saveSymbolTable REAL = 0 : CPU = 0 : MEM = 0.
 TAT_INFO: ::saveCongMap REAL = 0 : CPU = 0 : MEM = 0.
-% Begin Save power constraints data ... (date=05/17 01:00:12, mem=1053.7M)
-% End Save power constraints data ... (date=05/17 01:00:12, total cpu=0:00:00.0, real=0:00:00.0, peak res=1053.9M, current mem=1053.9M)
+% Begin Save power constraints data ... (date=05/17 12:37:13, mem=1177.6M)
+% End Save power constraints data ... (date=05/17 12:37:13, total cpu=0:00:00.0, real=0:00:00.0, peak res=1177.7M, current mem=1177.7M)
 Generated self-contained design save.enc.dat
-#% End save design ... (date=05/17 01:00:13, total cpu=0:00:00.7, real=0:00:02.0, peak res=1083.7M, current mem=1056.6M)
+#% End save design ... (date=05/17 12:37:13, total cpu=0:00:00.7, real=0:00:02.0, peak res=1209.3M, current mem=1180.5M)
 *** Message Summary: 0 warning(s), 0 error(s)
 
 
-*** Memory Usage v#2 (Current mem = 1389.266M, initial mem = 275.727M) ***
-*** Message Summary: 78 warning(s), 0 error(s)
+*** Memory Usage v#2 (Current mem = 1552.422M, initial mem = 275.727M) ***
+*** Message Summary: 70 warning(s), 0 error(s)
 
---- Ending "Innovus" (totcpu=0:00:19.7, real=0:00:32.0, mem=1389.3M) ---
+--- Ending "Innovus" (totcpu=0:00:20.1, real=0:00:30.0, mem=1552.4M) ---
 

@@ -104,7 +104,7 @@ Puts "<FF> RUNNING PLACEMENT ..."
 puts "<FF> Plugin -> pre_place_tcl"
 # <BEGIN TAG> place,place_design
 # place_opt_design -out_dir reports -prefix place
-saveFPlan aloe_place_debug.fp
+# ============================= saveFPlan aloe_place_debug.fp ===========================
 # set_interactive_constraint_modes {func1 test} > set_disable_timing -from out -to in [get_cells {inv5 inv1}] > set_interactive_constraint_modes {}
 # set_disable_timing
 set_interactive_constraint_modes [all_constraint_modes -active]

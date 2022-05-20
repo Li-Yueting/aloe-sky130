@@ -29,15 +29,15 @@ fndr = os.path.join(pnr_dir, 'ndr.tcl')
 # NDR(nets, width mutipliers, spacing multipliers, metal layers, bottom preferred layers, fndr)
 
 # ============================= ndr0 for BGR ============================
-ndr0 = NDR(['clk', 'porst', 'va', 'vb', 'vbg', 'vc', 'ground',
-            'power', 'l17', 'l18', 'l19', 'l20', 'amp/power', 'amp/ground',
+ndr0 = NDR(['porst', 'va', 'vb', 'vbg', 'vc', 
+            'l17', 'l18', 'l19', 'l20',
             'amp/vg', 'amp/vq', 'amp/vx', 'VNW', 'VDDPST', 'POC',
-            'VDDCE', 'VDDPE', 'VPW', 'VSSPST', 'VSSE', 'BGR_Core/power', 'BGR_Core/ground', 
+            'VDDCE', 'VDDPE', 'VPW', 'VSSPST', 'VSSE', 
             'BGR_Core/vbneg', 'BGR_Core/l6', 'BGR_Core/l7', 'BGR_Core/l8', 'BGR_Core/l10',
             'BGR_Core/l11', 'BGR_Core/l1', 'BGR_Core/l2', 'BGR_Core/l4', 'BGR_Core/l5',
             'BGR_Core/l12', 'BGR_Core/R6/l', 'BGR_Core/R7/l', 'BGR_Core/R8/l', 'BGR_Core/R10/l',
             'BGR_Core/R11/l', 'BGR_Core/R3/l', 'BGR_Core/R1/l', 'BGR_Core/R2/l', 'BGR_Core/R4/l',
-            'BGR_Core/R5/l', 'BGR_Core/R12/l', 'CM/power', 'CM/ground', 'R17/l', 'R18/l', 'R19/l', 'R20/l'], 
+            'BGR_Core/R5/l', 'BGR_Core/R12/l', 'R17/l', 'R18/l', 'R19/l', 'R20/l'], 
             [2, 2, 2, 2], [2, 2, 2, 2], [2,3,4,5], 2, fndr)
 # ndr1 = NDR(['out', 'net027'], 
 #             [5, 5, 5, 5], [5, 5, 5, 5], [2,3,4,5], 2, fndr)

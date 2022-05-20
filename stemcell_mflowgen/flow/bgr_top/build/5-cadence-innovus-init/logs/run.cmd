@@ -1,7 +1,7 @@
 #######################################################
 #                                                     
 #  Innovus Command Logging File                     
-#  Created on Tue May 17 00:40:13 2022                
+#  Created on Tue May 17 12:42:32 2022                
 #                                                     
 #######################################################
 
@@ -40,14 +40,14 @@ checkDesign -all
 check_timing
 um::pop_snapshot_stack
 reportMultiBitFFs -statistics
-get_metric -raw -id current -uuid ee79bfbf-fbf7-4d50-8cc3-8ca05758c4b0 clock.Routing.area.total
-get_metric -raw -id current -uuid ee79bfbf-fbf7-4d50-8cc3-8ca05758c4b0 clock.PostConditioning.area.total
-get_metric -raw -id current -uuid ee79bfbf-fbf7-4d50-8cc3-8ca05758c4b0 clock.eGRPC.area.total
-get_metric -raw -id current -uuid ee79bfbf-fbf7-4d50-8cc3-8ca05758c4b0 clock.Routing.area.total
-get_metric -raw -id current -uuid ee79bfbf-fbf7-4d50-8cc3-8ca05758c4b0 clock.Implementation.area.total
-get_metric -raw -id current -uuid ee79bfbf-fbf7-4d50-8cc3-8ca05758c4b0 clock.eGRPC.area.total
-get_metric -raw -id current -uuid ee79bfbf-fbf7-4d50-8cc3-8ca05758c4b0 clock.Construction.area.total
-get_metric -raw -id current -uuid ee79bfbf-fbf7-4d50-8cc3-8ca05758c4b0 clock.Implementation.area.total
+get_metric -raw -id current -uuid 26d020fb-e991-4b7c-8fd5-5f45d59429a2 clock.Routing.area.total
+get_metric -raw -id current -uuid 26d020fb-e991-4b7c-8fd5-5f45d59429a2 clock.PostConditioning.area.total
+get_metric -raw -id current -uuid 26d020fb-e991-4b7c-8fd5-5f45d59429a2 clock.eGRPC.area.total
+get_metric -raw -id current -uuid 26d020fb-e991-4b7c-8fd5-5f45d59429a2 clock.Routing.area.total
+get_metric -raw -id current -uuid 26d020fb-e991-4b7c-8fd5-5f45d59429a2 clock.Implementation.area.total
+get_metric -raw -id current -uuid 26d020fb-e991-4b7c-8fd5-5f45d59429a2 clock.eGRPC.area.total
+get_metric -raw -id current -uuid 26d020fb-e991-4b7c-8fd5-5f45d59429a2 clock.Construction.area.total
+get_metric -raw -id current -uuid 26d020fb-e991-4b7c-8fd5-5f45d59429a2 clock.Implementation.area.total
 um::get_metric_definition -name *.drc
 um::get_metric_definition -name *.drc.layer:*
 um::get_metric_definition -name *.drc.layer:*.type:*

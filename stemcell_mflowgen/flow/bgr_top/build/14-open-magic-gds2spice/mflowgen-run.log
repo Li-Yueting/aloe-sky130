@@ -1,0 +1,250 @@
+
+Magic 8.3 revision 285 - Compiled on Mon Apr  4 15:36:51 PDT 2022.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(vendor): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    mvobsactive ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Loading "extract.tcl" from command line.
+CIF input style is now "sky130(vendor)"
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 3.0
+Library name: stdcells
+Reading "bgr_top".
+Reading "sky130_asc_pfet_01v8_lvt_6".
+Reading "sky130_asc_nfet_01v8_lvt_1".
+Reading "sky130_asc_pfet_01v8_lvt_12".
+Reading "sky130_asc_res_xhigh_po_2p85_1".
+Reading "sky130_asc_res_xhigh_po_2p85_2".
+Reading "sky130_asc_pnp_05v5_W3p40L3p40_1".
+CIF file read warning: CIF style sky130(vendor): units rescaled by factor of 5 / 1
+Reading "sky130_asc_pnp_05v5_W3p40L3p40_8".
+Reading "sky130_asc_pnp_05v5_W3p40L3p40_7".
+Reading "sky130_asc_pfet_01v8_lvt_60".
+Reading "M2M3_PR".
+Saving contents of cell M2M3_PR
+Reading "M1M2_PR".
+Saving contents of cell M1M2_PR
+Reading "L1M1_PR".
+Saving contents of cell L1M1_PR
+Reading "M1M2_PR_MR".
+Saving contents of cell M1M2_PR_MR
+Reading "bgr_top_VIA0".
+Saving contents of cell bgr_top_VIA0
+Reading "bgr_top_VIA1".
+Saving contents of cell bgr_top_VIA1
+Reading "bgr_top_VIA2".
+Reading "bgr_top_VIA3".
+Reading "bgr_top_VIA4".
+Reading "bgr_top_VIA5".
+Reading "bgr_top_VIA6".
+Reading "bgr_top_VIA7".
+Reading "bgr_top_VIA8".
+Saving contents of cell bgr_top_VIA8
+Reading "bgr_top_VIA9".
+Saving contents of cell bgr_top_VIA9
+Error while reading cell "bgr_top" (byte position 43654): Cell "sky130_asc_pfet_01v8_lvt_6" was already defined in this file.
+Error while reading cell "bgr_top" (byte position 43654): Ignoring duplicate definition
+Reading "sky130_asc_pfet_01v8_lvt_6".
+Error while reading cell "bgr_top" Reading "sky130_asc_nfet_01v8_lvt_1".
+(byte position 65608): Cell "sky130_asc_nfet_01v8_lvt_1" was already defined in this file.
+Error while reading cell "bgr_top" (byte position 65608): Ignoring duplicate definition
+Error while reading cell "bgr_top" Reading "sky130_asc_pfet_01v8_lvt_12".
+(byte position 71052): Cell "sky130_asc_pfet_01v8_lvt_12" was already defined in this file.
+Error while reading cell "bgr_top" (byte position 71052): Ignoring duplicate definition
+Error while reading cell "bgr_top" (byte position 110546): Cell "sky130_asc_res_xhigh_po_2p85_1" was already defined in this file.
+Error while reading cell "bgr_top" (byte position 110546): Ignoring duplicate definition
+Reading "sky130_asc_res_xhigh_po_2p85_1".
+Error while reading cell "bgr_top" Reading "sky130_asc_res_xhigh_po_2p85_2".
+(byte position 128340): Cell "sky130_asc_res_xhigh_po_2p85_2" was already defined in this file.
+Error while reading cell "bgr_top" (byte position 128340): Ignoring duplicate definition
+Error while reading cell "bgr_top" Reading "sky130_asc_pnp_05v5_W3p40L3p40_1".
+(byte position 146520): Cell "sky130_asc_pnp_05v5_W3p40L3p40_1" was already defined in this file.
+Error while reading cell "bgr_top" (byte position 146520): Ignoring duplicate definition
+Error while reading cell "bgr_top" Reading "sky130_asc_pnp_05v5_W3p40L3p40_8".
+(byte position 161596): Cell "sky130_asc_pnp_05v5_W3p40L3p40_8" was already defined in this file.
+Error while reading cell "bgr_top" (byte position 161596): Ignoring duplicate definition
+Error while reading cell "bgr_top" (byte position 284306): Cell "sky130_asc_pnp_05v5_W3p40L3p40_7" was already defined in this file.
+Error while reading cell "bgr_top" (byte position 284306): Ignoring duplicate definition
+Reading "sky130_asc_pnp_05v5_W3p40L3p40_7".
+Error while reading cell "bgr_top" (byte position 391846): Cell "sky130_asc_pfet_01v8_lvt_60" was already defined in this file.
+Error while reading cell "bgr_top" (byte position 391846): Ignoring duplicate definition
+Reading "sky130_asc_pfet_01v8_lvt_60".
+Error while reading cell "bgr_top" (byte position 571350): Cell "M2M3_PR" was already defined in this file.
+Error while reading cell "bgr_top" (byte position 571350): Ignoring duplicate definition
+Error while reading cell "bgr_top" (byte position 571586): Cell "M1M2_PR" was already defined in this file.
+Reading "M2M3_PR".
+Reading "M1M2_PR".
+Error while reading cell "bgr_top" (byte position 571586): Ignoring duplicate definition
+Reading "L1M1_PR".
+Error while reading cell "bgr_top" (byte position 571822): Cell "L1M1_PR" was already defined in this file.
+Error while reading cell "bgr_top" (byte position 571822): Ignoring duplicate definition
+Error while reading cell "bgr_top" Reading "M1M2_PR_MR".
+(byte position 572060): Cell "M1M2_PR_MR" was already defined in this file.
+Error while reading cell "bgr_top" (byte position 572060): Ignoring duplicate definition
+Error while reading cell "bgr_top" (byte position 572300): Cell "bgr_top_VIA0" was already defined in this file.
+Error while reading cell "bgr_top" (byte position 572300): Ignoring duplicate definition
+Error while reading cell "bgr_top" (byte position 572732): Cell "bgr_top_VIA1" was already defined in this file.
+Error while reading cell "bgr_top" (byte position 572732): Ignoring duplicate definition
+Error while reading cell "bgr_top" (byte position 573164): Cell "bgr_top_VIA2" was already defined in this file.
+Error while reading cell "bgr_top" (byte position 573164): Ignoring duplicate definition
+Error while reading cell "bgr_top" (byte position 573852): Cell "bgr_top_VIA3" was already defined in this file.
+Error while reading cell "bgr_top" (byte position 573852): Ignoring duplicate definition
+Error while reading cell "bgr_top" (byte position 574540): Cell "bgr_top_VIA4" was already defined in this file.
+Error while reading cell "bgr_top" (byte position 574540): Ignoring duplicate definition
+Error while reading cell "bgr_top" (byte position 575996): Cell "bgr_top_VIA5" was already defined in this file.
+Error while reading cell "bgr_top" (byte position 575996): Ignoring duplicate definition
+Error while reading cell "bgr_top" (byte position 576684): Cell "bgr_top_VIA6" was already defined in this file.
+Error while reading cell "bgr_top" (byte position 576684): Ignoring duplicate definition
+Error while reading cell "bgr_top" (byte position 577372): Cell "bgr_top_VIA7" was already defined in this file.
+Error while reading cell "bgr_top" (byte position 577372): Ignoring duplicate definition
+Error while reading cell "bgr_top" (byte position 578828): Cell "bgr_top_VIA8" was already defined in this file.
+Error while reading cell "bgr_top" (byte position 578828): Ignoring duplicate definition
+Error while reading cell "bgr_top" Reading "bgr_top_VIA0".
+Reading "bgr_top_VIA1".
+Reading "bgr_top_VIA2".
+Reading "bgr_top_VIA3".
+Reading "bgr_top_VIA4".
+Reading "bgr_top_VIA5".
+Reading "bgr_top_VIA6".
+Reading "bgr_top_VIA7".
+Reading "bgr_top_VIA8".
+Reading "bgr_top_VIA9".
+(byte position 579260): Cell "bgr_top_VIA9" was already defined in this file.
+Error while reading cell "bgr_top" (byte position 579260): Ignoring duplicate definition
+$bgr_top
+Processing sky130_asc_pnp_05v5_W3p40L3p40_1
+Processing sky130_asc_pnp_05v5_W3p40L3p40_7
+Processing sky130_asc_pfet_01v8_lvt_60
+Processing sky130_asc_nfet_01v8_lvt_1
+Processing sky130_asc_pfet_01v8_lvt_12
+Processing sky130_asc_res_xhigh_po_2p85_2
+Processing sky130_asc_pfet_01v8_lvt_6
+Processing sky130_asc_pnp_05v5_W3p40L3p40_8
+Processing sky130_asc_res_xhigh_po_2p85_1
+Processing bgr_top_VIA5
+Processing bgr_top_VIA6
+Processing bgr_top_VIA7
+Processing bgr_top_VIA2
+Processing bgr_top_VIA3
+Processing bgr_top_VIA4
+Processing bgr_top
+Extracting sky130_asc_pnp_05v5_W3p40L3p40_1 into sky130_asc_pnp_05v5_W3p40L3p40_1.ext:
+Warning:  Ports "Emitter" and "xm1/Emitter" are electrically shorted.
+Warning:  Ports "Base" and "xm1/Base" are electrically shorted.
+Warning:  Ports "Collector" and "xm1/Collector" are electrically shorted.
+Extracting sky130_asc_pnp_05v5_W3p40L3p40_7 into sky130_asc_pnp_05v5_W3p40L3p40_7.ext:
+Warning:  Ports "Emitter" and "xm1/Emitter" are electrically shorted.
+Warning:  Ports "Emitter" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Emitter" are electrically shorted.
+Warning:  Ports "Emitter" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Emitter" are electrically shorted.
+Warning:  Ports "Emitter" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_2/Emitter" are electrically shorted.
+Warning:  Ports "Emitter" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_3/Emitter" are electrically shorted.
+Warning:  Ports "Emitter" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_4/Emitter" are electrically shorted.
+Warning:  Ports "Emitter" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_5/Emitter" are electrically shorted.
+Warning:  Ports "Base" and "xm1/Base" are electrically shorted.
+Warning:  Ports "Base" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Base" are electrically shorted.
+Warning:  Ports "Base" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Base" are electrically shorted.
+Warning:  Ports "Base" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_2/Base" are electrically shorted.
+Warning:  Ports "Base" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_3/Base" are electrically shorted.
+Warning:  Ports "Base" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_4/Base" are electrically shorted.
+Warning:  Ports "Base" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_5/Base" are electrically shorted.
+Warning:  Ports "Collector" and "xm1/Collector" are electrically shorted.
+Warning:  Ports "Collector" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Collector" are electrically shorted.
+Warning:  Ports "Collector" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Collector" are electrically shorted.
+Warning:  Ports "Collector" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_2/Collector" are electrically shorted.
+Warning:  Ports "Collector" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_3/Collector" are electrically shorted.
+Warning:  Ports "Collector" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_4/Collector" are electrically shorted.
+Warning:  Ports "Collector" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_5/Collector" are electrically shorted.
+Extracting sky130_asc_pfet_01v8_lvt_60 into sky130_asc_pfet_01v8_lvt_60.ext:
+Extracting sky130_asc_nfet_01v8_lvt_1 into sky130_asc_nfet_01v8_lvt_1.ext:
+Extracting sky130_asc_pfet_01v8_lvt_12 into sky130_asc_pfet_01v8_lvt_12.ext:
+Extracting sky130_asc_res_xhigh_po_2p85_2 into sky130_asc_res_xhigh_po_2p85_2.ext:
+Extracting sky130_asc_pfet_01v8_lvt_6 into sky130_asc_pfet_01v8_lvt_6.ext:
+Extracting sky130_asc_pnp_05v5_W3p40L3p40_8 into sky130_asc_pnp_05v5_W3p40L3p40_8.ext:
+Warning:  Ports "Emitter" and "xm1/Emitter" are electrically shorted.
+Warning:  Ports "Emitter" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Emitter" are electrically shorted.
+Warning:  Ports "Emitter" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Emitter" are electrically shorted.
+Warning:  Ports "Emitter" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_2/Emitter" are electrically shorted.
+Warning:  Ports "Emitter" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_3/Emitter" are electrically shorted.
+Warning:  Ports "Emitter" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_4/Emitter" are electrically shorted.
+Warning:  Ports "Emitter" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_5/Emitter" are electrically shorted.
+Warning:  Ports "Emitter" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_6/Emitter" are electrically shorted.
+Warning:  Ports "Base" and "xm1/Base" are electrically shorted.
+Warning:  Ports "Base" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Base" are electrically shorted.
+Warning:  Ports "Base" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Base" are electrically shorted.
+Warning:  Ports "Base" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_2/Base" are electrically shorted.
+Warning:  Ports "Base" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_3/Base" are electrically shorted.
+Warning:  Ports "Base" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_4/Base" are electrically shorted.
+Warning:  Ports "Base" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_5/Base" are electrically shorted.
+Warning:  Ports "Base" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_6/Base" are electrically shorted.
+Warning:  Ports "Collector" and "xm1/Collector" are electrically shorted.
+Warning:  Ports "Collector" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Collector" are electrically shorted.
+Warning:  Ports "Collector" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Collector" are electrically shorted.
+Warning:  Ports "Collector" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_2/Collector" are electrically shorted.
+Warning:  Ports "Collector" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_3/Collector" are electrically shorted.
+Warning:  Ports "Collector" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_4/Collector" are electrically shorted.
+Warning:  Ports "Collector" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_5/Collector" are electrically shorted.
+Warning:  Ports "Collector" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_6/Collector" are electrically shorted.
+Extracting sky130_asc_res_xhigh_po_2p85_1 into sky130_asc_res_xhigh_po_2p85_1.ext:
+Extracting bgr_top_VIA5 into bgr_top_VIA5.ext:
+Extracting bgr_top_VIA6 into bgr_top_VIA6.ext:
+Extracting bgr_top_VIA7 into bgr_top_VIA7.ext:
+Extracting bgr_top_VIA2 into bgr_top_VIA2.ext:
+Extracting bgr_top_VIA3 into bgr_top_VIA3.ext:
+Extracting bgr_top_VIA4 into bgr_top_VIA4.ext:
+Extracting bgr_top into bgr_top.ext:
+Warning:  Ports "Emitter" and "xm1/Emitter" are electrically shorted.
+Warning:  Ports "Emitter" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Emitter" are electrically shorted.
+Warning:  Ports "Emitter" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Emitter" are electrically shorted.
+Warning:  Ports "Emitter" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_2/Emitter" are electrically shorted.
+Warning:  Ports "Emitter" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_3/Emitter" are electrically shorted.
+Warning:  Ports "Emitter" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_4/Emitter" are electrically shorted.
+Warning:  Ports "Emitter" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_5/Emitter" are electrically shorted.
+Warning:  Ports "Base" and "xm1/Base" are electrically shorted.
+Warning:  Ports "Base" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Base" are electrically shorted.
+Warning:  Ports "Base" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Base" are electrically shorted.
+Warning:  Ports "Base" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_2/Base" are electrically shorted.
+Warning:  Ports "Base" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_3/Base" are electrically shorted.
+Warning:  Ports "Base" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_4/Base" are electrically shorted.
+Warning:  Ports "Base" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_5/Base" are electrically shorted.
+Warning:  Ports "Collector" and "xm1/Collector" are electrically shorted.
+Warning:  Ports "Collector" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Collector" are electrically shorted.
+Warning:  Ports "Collector" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Collector" are electrically shorted.
+Warning:  Ports "Collector" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_2/Collector" are electrically shorted.
+Warning:  Ports "Collector" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_3/Collector" are electrically shorted.
+Warning:  Ports "Collector" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_4/Collector" are electrically shorted.
+Warning:  Ports "Collector" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_5/Collector" are electrically shorted.
+Warning:  Ports "Emitter" and "xm1/Emitter" are electrically shorted.
+Warning:  Ports "Base" and "xm1/Base" are electrically shorted.
+Warning:  Ports "Collector" and "xm1/Collector" are electrically shorted.
+Warning:  Ports "Emitter" and "xm1/Emitter" are electrically shorted.
+Warning:  Ports "Emitter" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Emitter" are electrically shorted.
+Warning:  Ports "Emitter" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Emitter" are electrically shorted.
+Warning:  Ports "Emitter" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_2/Emitter" are electrically shorted.
+Warning:  Ports "Emitter" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_3/Emitter" are electrically shorted.
+Warning:  Ports "Emitter" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_4/Emitter" are electrically shorted.
+Warning:  Ports "Emitter" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_5/Emitter" are electrically shorted.
+Warning:  Ports "Emitter" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_6/Emitter" are electrically shorted.
+Warning:  Ports "Base" and "xm1/Base" are electrically shorted.
+Warning:  Ports "Base" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Base" are electrically shorted.
+Warning:  Ports "Base" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Base" are electrically shorted.
+Warning:  Ports "Base" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_2/Base" are electrically shorted.
+Warning:  Ports "Base" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_3/Base" are electrically shorted.
+Warning:  Ports "Base" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_4/Base" are electrically shorted.
+Warning:  Ports "Base" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_5/Base" are electrically shorted.
+Warning:  Ports "Base" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_6/Base" are electrically shorted.
+Warning:  Ports "Collector" and "xm1/Collector" are electrically shorted.
+Warning:  Ports "Collector" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Collector" are electrically shorted.
+Warning:  Ports "Collector" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Collector" are electrically shorted.
+Warning:  Ports "Collector" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_2/Collector" are electrically shorted.
+Warning:  Ports "Collector" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_3/Collector" are electrically shorted.
+Warning:  Ports "Collector" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_4/Collector" are electrically shorted.
+Warning:  Ports "Collector" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_5/Collector" are electrically shorted.
+Warning:  Ports "Collector" and "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_6/Collector" are electrically shorted.
+exttospice finished.

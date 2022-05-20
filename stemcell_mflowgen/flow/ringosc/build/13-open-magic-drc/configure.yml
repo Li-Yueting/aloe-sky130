@@ -1,0 +1,22 @@
+build_dir: 13-open-magic-drc
+build_id: '13'
+commands:
+- cp inputs/adk/magicrc .magicrc
+- magic -noconsole -dnull run_drc.tcl | tee outputs/drc_results.log
+edges_i:
+  adk:
+  - f: adk
+    step: 2-skywater-130nm
+  design_merged.gds:
+  - f: design_merged.gds
+    step: 10-mentor-calibre-gdsmerge
+edges_o: {}
+inputs:
+- adk
+- design_merged.gds
+name: open-magic-drc
+outputs:
+- drc_results.log
+parameters:
+  design_name: ringosc
+source: /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/design/open-magic-drc

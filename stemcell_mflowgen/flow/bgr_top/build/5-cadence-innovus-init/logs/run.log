@@ -4,7 +4,7 @@ Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
 
 Version:	v20.13-s083_1, built Tue Jan 19 16:51:46 PST 2021
 Options:	-overwrite -nowin -init START.tcl -log logs/run.log 
-Date:		Tue May 17 00:39:51 2022
+Date:		Tue May 17 12:42:12 2022
 Host:		rice-503-20-north (x86_64 w/Linux 5.11.0-41-generic) (20cores*40cpus*Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz 28160KB)
 OS:		CentOS Linux release 7.9.2009 (Core)
 
@@ -57,8 +57,8 @@ Submit command for task runs will be: local
 <CMD> set init_pwr_net {VDD VNW VDDPST POC VDDCE VDDPE}
 # init_design
 <CMD> init_design
-#% Begin Load MMMC data ... (date=05/17 00:40:15, mem=667.7M)
-#% End Load MMMC data ... (date=05/17 00:40:15, total cpu=0:00:00.0, real=0:00:00.0, peak res=668.7M, current mem=668.7M)
+#% Begin Load MMMC data ... (date=05/17 12:42:35, mem=669.5M)
+#% End Load MMMC data ... (date=05/17 12:42:35, total cpu=0:00:00.0, real=0:00:00.0, peak res=670.5M, current mem=670.5M)
 typical
 
 Loading LEF file inputs/adk/rtk-tech.lef ...
@@ -138,20 +138,20 @@ Type 'man IMPLF-201' for more detail.
 **WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
 To increase the message display limit, refer to the product command reference manual.
 
-viaInitial starts at Tue May 17 00:40:15 2022
-viaInitial ends at Tue May 17 00:40:15 2022
+viaInitial starts at Tue May 17 12:42:35 2022
+viaInitial ends at Tue May 17 12:42:35 2022
 
 ##  Check design process and node:  
 ##  Both design process and tech node are not set.
 
 Loading view definition file from innovus-foundation-flow/view_definition.tcl
 Starting library reading in 'Multi-threaded flow' (with '16' threads)
-Reading libs_typical timing library /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/yueting_git/bgr_top/build/2-skywater-130nm/view-standard/stdcells.lib.
+Reading libs_typical timing library /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/bgr_top/build/2-skywater-130nm/view-standard/stdcells.lib.
 Read 12 cells in library sky130_fd_sc_hd__tt_025C_1v80.
 Library reading multithread flow ended.
-*** End library_loading (cpu=0.01min, real=0.00min, mem=256.5M, fe_cpu=0.27min, fe_real=0.40min, fe_mem=917.2M) ***
-#% Begin Load netlist data ... (date=05/17 00:40:15, mem=694.4M)
-*** Begin netlist parsing (mem=917.2M) ***
+*** End library_loading (cpu=0.01min, real=0.00min, mem=259.5M, fe_cpu=0.26min, fe_real=0.38min, fe_mem=920.1M) ***
+#% Begin Load netlist data ... (date=05/17 12:42:35, mem=696.0M)
+*** Begin netlist parsing (mem=920.1M) ***
 **WARN: (IMPVL-159):	Pin 'Collector' of cell 'sky130_asc_pnp_05v5_W3p40L3p40_7' is defined in LEF but not in the timing library.
 Type 'man IMPVL-159' for more detail.
 **WARN: (IMPVL-159):	Pin 'Collector' of cell 'sky130_asc_pnp_05v5_W3p40L3p40_8' is defined in LEF but not in the timing library.
@@ -164,10 +164,14 @@ Reading verilog netlist './inputs/design.v'
 Type 'man IMPVL-346' for more detail.
 **WARN: (IMPVL-346):	Module 'sky130_asc_res' is instantiated in the netlist, but is not defined in the LEF files.  Since there is no real cell definition for such a cell, it will be treated as an empty module.
 Type 'man IMPVL-346' for more detail.
+**WARN: (IMPVL-209):	In Verilog file './inputs/design.v', check line 162 near the text ) for the issue: 'case mismatch in port name between cell definition and instance'.  Update the text accordingly.
+Type 'man IMPVL-209' for more detail.
+**WARN: (IMPVL-377):	Matching port Collector of instance pnp_vb in module core to port collector of cell pnp_array by case insensitivity.  Check the input data files to ensure the correct case.  Fix any case mismatches and re-run.
+Type 'man IMPVL-377' for more detail.
 
-*** Memory Usage v#2 (Current mem = 917.176M, initial mem = 275.727M) ***
-*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=917.2M) ***
-#% End Load netlist data ... (date=05/17 00:40:15, total cpu=0:00:00.0, real=0:00:00.0, peak res=699.6M, current mem=699.6M)
+*** Memory Usage v#2 (Current mem = 920.129M, initial mem = 275.727M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=920.1M) ***
+#% End Load netlist data ... (date=05/17 12:42:35, total cpu=0:00:00.0, real=0:00:00.0, peak res=701.3M, current mem=701.3M)
 Set top cell to bgr_top.
 **WARN: (IMPTS-124):	Timing library description of pin 'Collector' is missing from cell 'sky130_asc_pnp_05v5_W3p40L3p40_7' in timing library 'sky130_fd_sc_hd__tt_025C_1v80'.
 **WARN: (IMPTS-124):	Timing library description of pin 'Collector' is missing from cell 'sky130_asc_pnp_05v5_W3p40L3p40_8' in timing library 'sky130_fd_sc_hd__tt_025C_1v80'.
@@ -186,7 +190,7 @@ Set DBUPerIGU to techSite unitasc width 490.
 ** info: there are 20 modules.
 ** info: there are 47 stdCell insts.
 
-*** Memory Usage v#2 (Current mem = 928.590M, initial mem = 275.727M) ***
+*** Memory Usage v#2 (Current mem = 928.543M, initial mem = 275.727M) ***
 **WARN: (IMPFP-3961):	The techSite 'unithddbl' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
 Type 'man IMPFP-3961' for more detail.
 **WARN: (IMPFP-3961):	The techSite 'unithd' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
@@ -228,10 +232,10 @@ Initializing multi-corner capacitance tables ...
 Initializing multi-corner resistance tables ...
 *Info: initialize multi-corner CTS.
 Reading timing constraints file './inputs/design.sdc' ...
-Current (total cpu=0:00:16.7, real=0:00:25.0, peak res=927.4M, current mem=927.4M)
+Current (total cpu=0:00:16.3, real=0:00:24.0, peak res=929.2M, current mem=929.2M)
 INFO (CTE): Constraints read successfully.
-Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=928.1M, current mem=928.1M)
-Current (total cpu=0:00:16.7, real=0:00:25.0, peak res=928.1M, current mem=928.1M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=930.0M, current mem=930.0M)
+Current (total cpu=0:00:16.4, real=0:00:24.0, peak res=930.0M, current mem=930.0M)
 Total number of combinational cells: 10
 Total number of sequential cells: 0
 Total number of tristate cells: 0
@@ -257,8 +261,8 @@ Total number of identified unusable delay cells: 0
 No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
 **WARN: (IMPOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
 Type 'man IMPOPT-3001' for more detail.
-#% Begin Load MMMC data ... (date=05/17 00:40:16, mem=957.8M)
-#% End Load MMMC data ... (date=05/17 00:40:16, total cpu=0:00:00.0, real=0:00:00.0, peak res=957.9M, current mem=957.9M)
+#% Begin Load MMMC data ... (date=05/17 12:42:36, mem=959.7M)
+#% End Load MMMC data ... (date=05/17 12:42:36, total cpu=0:00:00.0, real=0:00:00.0, peak res=959.7M, current mem=959.7M)
 
 *** Summary of all messages that are not suppressed in this session:
 Severity  ID               Count  Summary                                  
@@ -267,11 +271,13 @@ WARNING   IMPLF-200           24  Pin '%s' in macro '%s' has no ANTENNAGAT...
 WARNING   IMPLF-201           12  Pin '%s' in macro '%s' has no ANTENNADIF...
 WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
 WARNING   IMPTS-124            2  Timing library description of pin '%s' i...
+WARNING   IMPVL-209            1  In Verilog file '%s', check line %d near...
 WARNING   IMPVL-346            2  Module '%s' is instantiated in the netli...
 WARNING   IMPVL-159            2  Pin '%s' of cell '%s' is defined in LEF ...
+WARNING   IMPVL-377            1  Matching port %s of instance %s in modul...
 WARNING   IMPDB-2504           2  Cell '%s' is instantiated in the Verilog...
 WARNING   IMPOPT-3001          1  Inverter footprint is not defined or is ...
-*** Message Summary: 49 warning(s), 0 error(s)
+*** Message Summary: 51 warning(s), 0 error(s)
 
 # um::enable_metrics -on
 # um::push_snapshot_stack
@@ -311,7 +317,7 @@ Applying the recommended capacitance filtering threshold values for 130nm proces
 # puts "<FF> Plugin -> post_init_tcl"
 # timeDesign -preplace -prefix preplace -outDir reports -expandedViews
 <CMD> timeDesign -preplace -prefix preplace -outDir reports -expandedViews
-*** timeDesign #1 [begin] : totSession cpu/real = 0:00:16.9/0:00:24.1 (0.7), mem = 1175.5M
+*** timeDesign #1 [begin] : totSession cpu/real = 0:00:16.5/0:00:23.2 (0.7), mem = 1175.4M
 
 **INFO: Power effort not set by setOptMode, so setting 'setOptMode -powerEffort high', as set by setDesignMode
 Setting timing_disable_library_data_to_data_checks to 'true'.
@@ -330,7 +336,7 @@ Set Default Net Delay as 0 ps.
 Set Default Net Load as 0 pF. 
 Starting delay calculation for Setup views
 **WARN: (IMPESI-3505):	setDelayCalMode -eng_copyNetPropToNewNet true (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
-AAE DB initialization (MEM=1320.12 CPU=0:00:00.0 REAL=0:00:00.0) 
+AAE DB initialization (MEM=1319.89 CPU=0:00:00.0 REAL=0:00:00.0) 
 #################################################################################
 # Design Stage: PreRoute
 # Design Name: bgr_top
@@ -340,12 +346,12 @@ AAE DB initialization (MEM=1320.12 CPU=0:00:00.0 REAL=0:00:00.0)
 # Signoff Settings: SI Off 
 #################################################################################
 Calculate delays in Single mode...
-Start delay calculation (fullDC) (16 T). (MEM=1484.05)
+Start delay calculation (fullDC) (16 T). (MEM=1483.82)
 siFlow : Timing analysis mode is single, using late cdB files
-Total number of fetched objects 41
-End delay calculation. (MEM=1891.39 CPU=0:00:00.1 REAL=0:00:00.0)
-End delay calculation (fullDC). (MEM=1891.39 CPU=0:00:00.4 REAL=0:00:00.0)
-*** Done Building Timing Graph (cpu=0:00:01.3 real=0:00:01.0 totSessionCpu=0:00:18.4 mem=1811.4M)
+Total number of fetched objects 36
+End delay calculation. (MEM=1892.09 CPU=0:00:00.1 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1892.09 CPU=0:00:00.4 REAL=0:00:01.0)
+*** Done Building Timing Graph (cpu=0:00:01.3 real=0:00:01.0 totSessionCpu=0:00:18.0 mem=1812.1M)
 
 ------------------------------------------------------------------
           timeDesign Summary
@@ -368,32 +374,32 @@ Setup views included:
 |                    |    0    |    0    |
 +--------------------+---------+---------+
 
-Density: 70.154%
+Density: 70.027%
 ------------------------------------------------------------------
 Set Using Default Delay Limit as 1000.
 Resetting back High Fanout Nets as non-ideal
 Set Default Net Delay as 1000 ps.
 Set Default Net Load as 0.5 pF. 
 Reported timing to dir reports
-Total CPU time: 1.67 sec
+Total CPU time: 1.66 sec
 Total Real time: 1.0 sec
-Total Memory Usage: 1562.867188 Mbytes
-*** timeDesign #1 [finish] : cpu/real = 0:00:01.7/0:00:01.3 (1.3), totSession cpu/real = 0:00:18.5/0:00:25.4 (0.7), mem = 1562.9M
+Total Memory Usage: 1566.5625 Mbytes
+*** timeDesign #1 [finish] : cpu/real = 0:00:01.6/0:00:01.3 (1.3), totSession cpu/real = 0:00:18.1/0:00:24.4 (0.7), mem = 1566.6M
 # checkDesign -all
 <CMD> checkDesign -all
 Creating directory checkDesign.
 **WARN: (IMPREPO-207):	There are 12 Cells dimensions not multiple integer of site.
 **Info: (IMPSP-307): Design contains fractional 12 cells.
-Begin checking placement ... (start mem=1562.9M, init mem=1592.9M)
+Begin checking placement ... (start mem=1566.6M, init mem=1596.6M)
 *info: Recommended don't use cell = 0           
 *info: Placed = 0             
 *info: Unplaced = 47          
-Placement Density:70.15%(11636/16586)
-Placement Density (including fixed std cells):70.15%(11636/16586)
-Finished checkPlace (total: cpu=0:00:00.1, real=0:00:00.0; vio checks: cpu=0:00:00.0, real=0:00:00.0; mem=1592.9M)
+Placement Density:70.03%(11573/16526)
+Placement Density (including fixed std cells):70.03%(11573/16526)
+Finished checkPlace (total: cpu=0:00:00.1, real=0:00:00.0; vio checks: cpu=0:00:00.0, real=0:00:00.0; mem=1596.6M)
 ############################################################################
 # Innovus Netlist Design Rule Check
-# Tue May 17 00:40:17 2022
+# Tue May 17 12:42:37 2022
 
 ############################################################################
 Design: bgr_top
@@ -402,17 +408,17 @@ Design: bgr_top
 Total Standard Cell Number   (cells) : 47
 Total Block Cell Number      (cells) : 0
 Total I/O Pad Cell Number    (cells) : 0
-Total Standard Cell Area     ( um^2) : 11635.93
+Total Standard Cell Area     ( um^2) : 11572.95
 Total Block Cell Area        ( um^2) : 0.00
 Total I/O Pad Cell Area      ( um^2) : 0.00
 
 ------ Design Statistics:
 
 Number of Instances            : 47
-Number of Non-uniquified Insts : 46
+Number of Non-uniquified Insts : 45
 Number of Nets                 : 52
-Average number of Pins per Net : 2.08
-Maximum number of Pins in Net  : 9
+Average number of Pins per Net : 2.27
+Maximum number of Pins in Net  : 19
 
 ------ I/O Port summary
 
@@ -429,14 +435,9 @@ Number of Ports Connected to Core Instances   : 3
 
 ------ Design Rule Checking:
 
-Number of Output Pins connect to Power/Ground *: 8
+Number of Output Pins connect to Power/Ground *: 13
 Number of Insts with Input Pins tied together ?: 1
 Number of TieHi/Lo term nets not connected to instance's PG terms ?: 0
-**WARN: (IMPDB-2136):	InOut term 'Collector' of  instance 'BGR_Core/pnp_vb/b5' does not connect to a '' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
-**WARN: (IMPDB-2136):	InOut term 'Collector' of  instance 'BGR_Core/pnp_vb/b4' does not connect to a '' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
-**WARN: (IMPDB-2136):	InOut term 'Collector' of  instance 'BGR_Core/pnp_vb/b3' does not connect to a '' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
-**WARN: (IMPDB-2136):	InOut term 'Collector' of  instance 'BGR_Core/pnp_vb/b2' does not connect to a '' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
-**WARN: (IMPDB-2136):	InOut term 'Collector' of  instance 'BGR_Core/pnp_vb/b1' does not connect to a '' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
 **WARN: (IMPDB-2138):	Output term Rout of inst BGR_Core/R13 connected to PG net VSS.
 **WARN: (IMPDB-2138):	Output term Base of inst BGR_Core/pnp_vb/b5 connected to PG net VSS.
 **WARN: (IMPDB-2138):	Output term Base of inst BGR_Core/pnp_vb/b4 connected to PG net VSS.
@@ -445,13 +446,12 @@ Number of TieHi/Lo term nets not connected to instance's PG terms ?: 0
 **WARN: (IMPDB-2138):	Output term Base of inst BGR_Core/pnp_vb/b1 connected to PG net VSS.
 **WARN: (IMPDB-2138):	Output term Collector of inst BGR_Core/pnp_va connected to PG net VSS.
 **WARN: (IMPDB-2138):	Output term Rout of inst BGR_Core/R9 connected to PG net VSS.
-Number of Input/InOut Floating Pins            : 5
+Number of Input/InOut Floating Pins            : 0
 Number of Output Floating Pins                 : 0
 Number of Output Term Marked TieHi/Lo         *: 0
 
-**WARN: (IMPREPO-215):	There are 8 Output pins connected to Power Ground net.
+**WARN: (IMPREPO-215):	There are 13 Output pins connected to Power Ground net.
 **WARN: (IMPREPO-216):	There are 1 Instances with input pins tied together.
-**WARN: (IMPREPO-218):	There are 5 Floating Instance terminals.
 **WARN: (IMPREPO-221):	There are 8 Output term shorted to Power Ground net.
 Number of nets with tri-state drivers          : 0
 Number of nets with parallel drivers           : 0
@@ -486,7 +486,6 @@ Report saved in file checkDesign/bgr_top.main.htm.ascii
 *** Summary of all messages that are not suppressed in this session:
 Severity  ID               Count  Summary                                  
 WARNING   IMPDB-2138           8  %s term %s of %sinst %s connected to PG ...
-WARNING   IMPDB-2136           5  %s term '%s' of %s instance '%s' does no...
 WARNING   IMPREPO-228          1  There are %d Verilog nets with multiple ...
 WARNING   IMPREPO-200          1  There are %d Floating Ports in the top d...
 WARNING   IMPREPO-104          5  Net '%s' in module '%s' corresponds to t...
@@ -496,9 +495,8 @@ WARNING   IMPREPO-212          1  There are %d Floating I/O Pins.
 WARNING   IMPREPO-213          1  There are %d I/O Pins connected to Non-I...
 WARNING   IMPREPO-215          1  There are %d Output pins connected to Po...
 WARNING   IMPREPO-216          1  There are %d Instances with input pins t...
-WARNING   IMPREPO-218          1  There are %d Floating Instance terminals...
 WARNING   IMPREPO-221          1  There are %d Output term shorted to Powe...
-*** Message Summary: 28 warning(s), 0 error(s)
+*** Message Summary: 22 warning(s), 0 error(s)
 
 # check_timing
 <CMD> check_timing
@@ -511,10 +509,10 @@ WARNING   IMPREPO-221          1  There are %d Output term shorted to Powe...
 # Signoff Settings: SI Off 
 #################################################################################
 Calculate delays in Single mode...
-Start delay calculation (fullDC) (16 T). (MEM=1592.87)
-Total number of fetched objects 41
-End delay calculation. (MEM=1951.29 CPU=0:00:00.1 REAL=0:00:00.0)
-End delay calculation (fullDC). (MEM=1951.29 CPU=0:00:00.1 REAL=0:00:00.0)
+Start delay calculation (fullDC) (16 T). (MEM=1596.56)
+Total number of fetched objects 36
+End delay calculation. (MEM=1951.98 CPU=0:00:00.1 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1951.98 CPU=0:00:00.1 REAL=0:00:00.0)
      +-----------------------------------------------------------------------------+ 
      |                            TIMING CHECK SUMMARY                             | 
      |-----------------------------------------------------------------------------| 
@@ -539,16 +537,16 @@ Total Bit Count      :            0
 Total FF Count       :            0
 Bits Per Flop        :         -nan
 ------------------------------------------------------------
-<CMD> get_metric -raw -id current -uuid ee79bfbf-fbf7-4d50-8cc3-8ca05758c4b0 clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid ee79bfbf-fbf7-4d50-8cc3-8ca05758c4b0 clock.PostConditioning.area.total
-<CMD> get_metric -raw -id current -uuid ee79bfbf-fbf7-4d50-8cc3-8ca05758c4b0 clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid ee79bfbf-fbf7-4d50-8cc3-8ca05758c4b0 clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid ee79bfbf-fbf7-4d50-8cc3-8ca05758c4b0 clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid ee79bfbf-fbf7-4d50-8cc3-8ca05758c4b0 clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid ee79bfbf-fbf7-4d50-8cc3-8ca05758c4b0 clock.Construction.area.total
-<CMD> get_metric -raw -id current -uuid ee79bfbf-fbf7-4d50-8cc3-8ca05758c4b0 clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 26d020fb-e991-4b7c-8fd5-5f45d59429a2 clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 26d020fb-e991-4b7c-8fd5-5f45d59429a2 clock.PostConditioning.area.total
+<CMD> get_metric -raw -id current -uuid 26d020fb-e991-4b7c-8fd5-5f45d59429a2 clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 26d020fb-e991-4b7c-8fd5-5f45d59429a2 clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 26d020fb-e991-4b7c-8fd5-5f45d59429a2 clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 26d020fb-e991-4b7c-8fd5-5f45d59429a2 clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 26d020fb-e991-4b7c-8fd5-5f45d59429a2 clock.Construction.area.total
+<CMD> get_metric -raw -id current -uuid 26d020fb-e991-4b7c-8fd5-5f45d59429a2 clock.Implementation.area.total
 UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:          19.03             27          0.000 ns          0.000 ns  init
+UM:          18.62             26          0.000 ns          0.000 ns  init
 # report_metric -file reports/metrics.html -format html
 <CMD> um::get_metric_definition -name *.drc
 <CMD> um::get_metric_definition -name *.drc.layer:*
@@ -890,7 +888,7 @@ Type 'man IMPFP-3961' for more detail.
 Type 'man IMPFP-3961' for more detail.
 # planDesign
 <CMD> planDesign
-#% Begin planDesign (date=05/17 00:40:18, mem=1255.3M)
+#% Begin planDesign (date=05/17 12:42:38, mem=1256.2M)
 **WARN: (IMPAFP-9024):	This command is hidden and will be obsolete in the next major release. For module placement, use proto_design instead. For macro placement, use place_design -concurrent_macros to place both standard cells and macros together.
 **WARN: (IMPAFP-9024):	This command is hidden and will be obsolete in the next major release. For module placement, use proto_design instead. For macro placement, use place_design -concurrent_macros to place both standard cells and macros together.
 **WARN: (IMPTCM-77):	Option "-honorOrientation" for command getPlanDesignMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
@@ -907,11 +905,11 @@ Extracting standard cell pins and blockage ......
 Pin and blockage extraction finished
 Extracting macro/IO cell pins and blockage ...... 
 Pin and blockage extraction finished
-*** Starting "NanoPlace(TM) placement v#4 (mem=1651.3M)" ...
+*** Starting "NanoPlace(TM) placement v#4 (mem=1651.0M)" ...
 *** Build Buffered Sizing Timing Model
-(cpu=0:00:00.0 mem=1673.8M) ***
+(cpu=0:00:00.0 mem=1673.5M) ***
 *** Build Virtual Sizing Timing Model
-(cpu=0:00:00.0 mem=1673.8M) ***
+(cpu=0:00:00.0 mem=1673.5M) ***
 No user-set net weight.
 Net fanout histogram:
 2		: 29 (74.4%) nets
@@ -928,43 +926,48 @@ Net fanout histogram:
 5120+		: 0 (0.0%) nets
 Options: timingDriven clkGateAware pinGuide congEffort=auto gpeffort=medium 
 **WARN: (IMPDB-2078):	Output pin Rout of instance BGR_Core/R13 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin Collector of instance BGR_Core/pnp_vb/b5 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
 **WARN: (IMPDB-2078):	Output pin Base of instance BGR_Core/pnp_vb/b5 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin Collector of instance BGR_Core/pnp_vb/b4 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
 **WARN: (IMPDB-2078):	Output pin Base of instance BGR_Core/pnp_vb/b4 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin Collector of instance BGR_Core/pnp_vb/b3 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
 **WARN: (IMPDB-2078):	Output pin Base of instance BGR_Core/pnp_vb/b3 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin Collector of instance BGR_Core/pnp_vb/b2 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
 **WARN: (IMPDB-2078):	Output pin Base of instance BGR_Core/pnp_vb/b2 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin Collector of instance BGR_Core/pnp_vb/b1 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
 **WARN: (IMPDB-2078):	Output pin Base of instance BGR_Core/pnp_vb/b1 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
 **WARN: (IMPDB-2078):	Output pin Collector of instance BGR_Core/pnp_va is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
 **WARN: (IMPDB-2078):	Output pin Rout of instance BGR_Core/R9 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
 #std cell=47 (0 fixed + 47 movable) #buf cell=47 #inv cell=0 #block=0 (0 floating + 0 preplaced)
 #ioInst=0 #net=38 #term=96 #term/net=2.53, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=3
 stdCell: 47 single + 0 double + 0 multi
-Total standard cell length = 1.2379 (mm), area = 0.0116 (mm^2)
+Total standard cell length = 1.2312 (mm), area = 0.0116 (mm^2)
 **Info: (IMPSP-307): Design contains fractional 12 cells.
 Average module density = 0.300.
 Density for the design = 0.300.
-       = stdcell_area 2526 sites (11636 um^2) / alloc_area 8420 sites (38783 um^2).
-Pin Density = 0.01140.
-            = total # of pins 96 / total area 8420.
+       = stdcell_area 2513 sites (11573 um^2) / alloc_area 8380 sites (38598 um^2).
+Pin Density = 0.01146.
+            = total # of pins 96 / total area 8380.
 Fence Initialization: numPrefixFence = 0,  numAutoFence = 0, numPrefixGuide = 0  numAutoGuide = 0 numNoCon = 0 
 Enabling multi-CPU acceleration with 16 CPU(s) for placement
 === lastAutoLevel = 6 
-Iteration  1: Total net bbox = 0.000e+00 (0.00e+00 0.00e+00)
-              Est.  stn bbox = 0.000e+00 (0.00e+00 0.00e+00)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1675.8M
+Iteration  1: Total net bbox = 3.492e-13 (3.49e-13 0.00e+00)
+              Est.  stn bbox = 3.580e-13 (3.58e-13 0.00e+00)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1673.5M
 User specified -module_cluster_mode =  0 
 Iteration  2: Total net bbox = 0.000e+00 (0.00e+00 0.00e+00)
               Est.  stn bbox = 0.000e+00 (0.00e+00 0.00e+00)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1675.8M
-Iteration  3: Total net bbox = 3.250e+03 (1.53e+03 1.72e+03)
-              Est.  stn bbox = 3.296e+03 (1.56e+03 1.74e+03)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1675.8M
-Iteration  4: Total net bbox = 3.250e+03 (1.53e+03 1.72e+03)
-              Est.  stn bbox = 3.296e+03 (1.56e+03 1.74e+03)
-              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1675.8M
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1673.5M
+Iteration  3: Total net bbox = 3.603e+03 (1.71e+03 1.89e+03)
+              Est.  stn bbox = 3.667e+03 (1.74e+03 1.92e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1674.9M
+Iteration  4: Total net bbox = 3.603e+03 (1.71e+03 1.89e+03)
+              Est.  stn bbox = 3.667e+03 (1.74e+03 1.92e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1674.9M
  RelinkConst: Total constraint = 0, Relinked 0 constraints . 
 User specified -fenceSpacing =  -1.0000 
 User specified fence spacing: -1.0000 um
-*** The nonConstraint instance area ratio is 0.149632 
+*** The nonConstraint instance area ratio is 0.149298 
 *** The prefixed-fenceArea/coreBoxArea is 0.000000, The auto-ConstraintArea/coreBoxArea is 0.000000 
 Start Auto fence creation, hasNoConInst = 1  .
 
@@ -990,7 +993,7 @@ Snap Spacing: X(0.4900 um), Y(9.4000 um)
 Fence2Core Spaceing: 0.0000 um
 
 ==== Design Information ====
-Core site: (40940, 40800) - (247480, 228800)
+Core site: (40940, 40800) - (246560, 228800)
 Design Whitespace% : 100.00%
 Maximum Logical Level: 0
 Has Non-constraint Instance: 1
@@ -1001,24 +1004,25 @@ Targets:
 Number of Total Targets: 0
 
 ================== Finished Auto-Fence Creation ===============
-*** Done Auto-Fence Creation, (cpu = 0:00:00.0, mem = 1687.2M, mem_delta = 11.5M) ***
+*** Done Auto-Fence Creation, (cpu = 0:00:00.0, mem = 1686.4M, mem_delta = 11.5M) ***
 End Auto fence creation 1.
-Iteration  5: Total net bbox = 3.802e+03 (1.76e+03 2.04e+03)
-              Est.  stn bbox = 3.901e+03 (1.81e+03 2.10e+03)
-              cpu = 0:00:00.0 real = 0:00:01.0 mem = 1687.2M
-*** cost = 3.802e+03 (1.76e+03 2.04e+03) (cpu for global=0:00:00.0) real=459103:40:19***
-Placement multithread real runtime: 459103:40:19 with 16 threads.
+Iteration  5: Total net bbox = 4.280e+03 (2.05e+03 2.23e+03)
+              Est.  stn bbox = 4.403e+03 (2.11e+03 2.30e+03)
+              cpu = 0:00:00.0 real = 0:00:01.0 mem = 1686.4M
+*** cost = 4.280e+03 (2.05e+03 2.23e+03) (cpu for global=0:00:00.0) real=459115:42:39***
+Placement multithread real runtime: 459115:42:39 with 16 threads.
 **WARN: (IMPDB-2078):	Output pin Rout of instance BGR_Core/R13 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin Collector of instance BGR_Core/pnp_vb/b5 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
 **WARN: (IMPDB-2078):	Output pin Base of instance BGR_Core/pnp_vb/b5 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin Collector of instance BGR_Core/pnp_vb/b4 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
 **WARN: (IMPDB-2078):	Output pin Base of instance BGR_Core/pnp_vb/b4 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin Collector of instance BGR_Core/pnp_vb/b3 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
 **WARN: (IMPDB-2078):	Output pin Base of instance BGR_Core/pnp_vb/b3 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
-**WARN: (IMPDB-2078):	Output pin Base of instance BGR_Core/pnp_vb/b2 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
-**WARN: (IMPDB-2078):	Output pin Base of instance BGR_Core/pnp_vb/b1 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
-**WARN: (IMPDB-2078):	Output pin Collector of instance BGR_Core/pnp_va is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
-**WARN: (IMPDB-2078):	Output pin Rout of instance BGR_Core/R9 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (EMS-27):	Message (IMPDB-2078) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
 Solver runtime cpu: 0:00:00.0 real: 0:00:00.0
 Core Placement runtime cpu: 0:00:00.0 real: 0:00:01.0
-*** Free Virtual Timing Model ...(mem=1687.2M)
+*** Free Virtual Timing Model ...(mem=1686.4M)
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
 UM:*                                                                   final
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
@@ -1028,7 +1032,7 @@ Checking routing tracks.....
 Checking other grids.....
 Checking FINFET Grid is on Manufacture Grid.....
 Checking core/die box is on Grid.....
-**WARN: (IMPFP-7238):	CORE's corner: (247.4800000000 , 228.8000000000) is NOT on PlacementGrid,  Please use command getFPlanMode to check current Grid settings, use command setFPlanMode to change which grid to snap to. And use command get_snap_grid_info to get grids' offset and pitch. Command floorplan can be used to fix this issue.
+**WARN: (IMPFP-7238):	CORE's corner: (246.5600000000 , 228.8000000000) is NOT on PlacementGrid,  Please use command getFPlanMode to check current Grid settings, use command setFPlanMode to change which grid to snap to. And use command get_snap_grid_info to get grids' offset and pitch. Command floorplan can be used to fix this issue.
 Checking snap rule ......
 Checking Row is on grid......
 Checking AreaIO row.....
@@ -1044,24 +1048,24 @@ No. of regular pre-routes not on tracks : 0
 
 Reporting Utilizations.....
 
-Core utilization  = 29.966713
+Core utilization  = 29.937871
 Effective Utilizations
 **Info: (IMPSP-307): Design contains fractional 12 cells.
 Average module density = 0.300.
 Density for the design = 0.300.
-       = stdcell_area 2526 sites (11636 um^2) / alloc_area 8420 sites (38783 um^2).
-Pin Density = 0.01164.
-            = total # of pins 98 / total area 8420.
+       = stdcell_area 2513 sites (11573 um^2) / alloc_area 8380 sites (38598 um^2).
+Pin Density = 0.01169.
+            = total # of pins 98 / total area 8380.
 
 *** Summary of all messages that are not suppressed in this session:
 Severity  ID               Count  Summary                                  
 WARNING   IMPFP-7238           1  CORE's corner: %s is NOT on %s,  Please ...
-WARNING   IMPDB-2078          16  Output pin %s of instance %s is connecte...
+WARNING   IMPDB-2078          26  Output pin %s of instance %s is connecte...
 WARNING   IMPAFP-9024          3  This command is hidden and will be obsol...
 WARNING   IMPTCM-77            3  Option "%s" for command %s is obsolete a...
-*** Message Summary: 23 warning(s), 0 error(s)
+*** Message Summary: 33 warning(s), 0 error(s)
 
-#% End planDesign (date=05/17 00:40:20, total cpu=0:00:00.3, real=0:00:02.0, peak res=1274.1M, current mem=1260.8M)
+#% End planDesign (date=05/17 12:42:39, total cpu=0:00:00.3, real=0:00:01.0, peak res=1274.3M, current mem=1261.5M)
 ### End verbose source output for 'scripts/floorplan.tcl'.
 ### Start verbose source output (echo mode) for 'scripts/add-endcaps-welltaps.tcl' ...
 # echo "skipping add-endcaps-welltaps.tcl"
@@ -1080,17 +1084,17 @@ WARNING   IMPTCM-77            3  Option "%s" for command %s is obsolete a...
 <CMD> editPin -layer M4 -pin {porst va} -side LEFT -spreadType SIDE
 To speed up, if you have to run multiple editPin commands then wrap all editPin commands within  'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
 Successfully spread [2] pins.
-editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1713.3M).
+editPin : finished (cpu = 0:00:00.1 real = 0:00:00.0, mem = 1711.4M).
 # editPin -layer $ports_layer -pin $pins_right_half -side RIGHT -spreadType SIDE
 <CMD> editPin -layer M4 -pin {vb vbg} -side RIGHT -spreadType SIDE
 To speed up, if you have to run multiple editPin commands then wrap all editPin commands within  'setPinAssignMode -pinEditInBatch true' (then editPin commands) and 'setPinAssignMode -pinEditInBatch false'
 Successfully spread [2] pins.
-editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1713.3M).
+editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1711.4M).
 ### End verbose source output for 'scripts/pin-assignments.tcl'.
 ### Start verbose source output (echo mode) for 'scripts/reporting.tcl' ...
 # timeDesign -preplace -hold -expandedViews -prefix preplace -outDir $vars(rpt_dir)
 <CMD> timeDesign -preplace -hold -expandedViews -prefix preplace -outDir reports
-*** timeDesign #2 [begin] : totSession cpu/real = 0:00:19.6/0:00:27.8 (0.7), mem = 1713.3M
+*** timeDesign #2 [begin] : totSession cpu/real = 0:00:19.2/0:00:26.8 (0.7), mem = 1711.4M
 
 **INFO: Power effort not set by setOptMode, so setting 'setOptMode -powerEffort high', as set by setDesignMode
 Set Using Default Delay Limit as 101.
@@ -1108,11 +1112,11 @@ Starting delay calculation for Hold views
 # Signoff Settings: SI Off 
 #################################################################################
 Calculate delays in Single mode...
-Start delay calculation (fullDC) (16 T). (MEM=1758)
-Total number of fetched objects 41
-End delay calculation. (MEM=2115.04 CPU=0:00:00.1 REAL=0:00:00.0)
-End delay calculation (fullDC). (MEM=2115.04 CPU=0:00:00.1 REAL=0:00:00.0)
-*** Done Building Timing Graph (cpu=0:00:00.4 real=0:00:00.0 totSessionCpu=0:00:20.1 mem=2083.0M)
+Start delay calculation (fullDC) (16 T). (MEM=1758.11)
+Total number of fetched objects 36
+End delay calculation. (MEM=2113.46 CPU=0:00:00.1 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2113.46 CPU=0:00:00.1 REAL=0:00:00.0)
+*** Done Building Timing Graph (cpu=0:00:00.4 real=0:00:01.0 totSessionCpu=0:00:19.7 mem=2081.5M)
 
 ------------------------------------------------------------------
           timeDesign Summary
@@ -1135,17 +1139,17 @@ Hold views included:
 |                    |    0    |    0    |
 +--------------------+---------+---------+
 
-Density: 30.003%
+Density: 29.983%
 ------------------------------------------------------------------
 Set Using Default Delay Limit as 1000.
 Resetting back High Fanout Nets as non-ideal
 Set Default Net Delay as 1000 ps.
 Set Default Net Load as 0.5 pF. 
 Reported timing to dir reports
-Total CPU time: 0.58 sec
-Total Real time: 0.0 sec
-Total Memory Usage: 1739.511719 Mbytes
-*** timeDesign #2 [finish] : cpu/real = 0:00:00.6/0:00:00.5 (1.3), totSession cpu/real = 0:00:20.2/0:00:28.3 (0.7), mem = 1739.5M
+Total CPU time: 0.57 sec
+Total Real time: 1.0 sec
+Total Memory Usage: 1734.933594 Mbytes
+*** timeDesign #2 [finish] : cpu/real = 0:00:00.6/0:00:00.4 (1.3), totSession cpu/real = 0:00:19.8/0:00:27.2 (0.7), mem = 1734.9M
 # report_ports > $vars(rpt_dir)/$vars(step).ports.rpt
 <CMD> report_ports > $vars(rpt_dir)/$vars(step).ports.rpt
 #################################################################################
@@ -1157,25 +1161,25 @@ Total Memory Usage: 1739.511719 Mbytes
 # Signoff Settings: SI Off 
 #################################################################################
 Calculate delays in Single mode...
-Start delay calculation (fullDC) (16 T). (MEM=1737.52)
-Total number of fetched objects 41
-End delay calculation. (MEM=2110.02 CPU=0:00:00.1 REAL=0:00:00.0)
-End delay calculation (fullDC). (MEM=2110.02 CPU=0:00:00.1 REAL=0:00:00.0)
+Start delay calculation (fullDC) (16 T). (MEM=1732.94)
+Total number of fetched objects 36
+End delay calculation. (MEM=2107.75 CPU=0:00:00.1 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2107.75 CPU=0:00:00.1 REAL=0:00:00.0)
 ### End verbose source output for 'scripts/reporting.tcl'.
 <CMD> getVersion
 <CMD> saveDesign checkpoints/design.checkpoint/save.enc -user_path
-#% Begin save design ... (date=05/17 00:40:20, mem=1334.4M)
-% Begin Save ccopt configuration ... (date=05/17 00:40:21, mem=1337.4M)
-% End Save ccopt configuration ... (date=05/17 00:40:21, total cpu=0:00:00.0, real=0:00:00.0, peak res=1339.3M, current mem=1339.3M)
-% Begin Save netlist data ... (date=05/17 00:40:21, mem=1339.3M)
+#% Begin save design ... (date=05/17 12:42:40, mem=1335.0M)
+% Begin Save ccopt configuration ... (date=05/17 12:42:40, mem=1338.0M)
+% End Save ccopt configuration ... (date=05/17 12:42:40, total cpu=0:00:00.0, real=0:00:00.0, peak res=1339.8M, current mem=1339.8M)
+% Begin Save netlist data ... (date=05/17 12:42:40, mem=1339.8M)
 Writing Binary DB to checkpoints/design.checkpoint/save.enc.dat/vbin/bgr_top.v.bin in multi-threaded mode...
-% End Save netlist data ... (date=05/17 00:40:21, total cpu=0:00:00.1, real=0:00:00.0, peak res=1348.1M, current mem=1348.1M)
+% End Save netlist data ... (date=05/17 12:42:40, total cpu=0:00:00.1, real=0:00:00.0, peak res=1348.6M, current mem=1348.6M)
 Saving symbol-table file in separate thread ...
 Saving congestion map file in separate thread ...
-% Begin Save AAE data ... (date=05/17 00:40:21, mem=1348.2M)
+% Begin Save AAE data ... (date=05/17 12:42:40, mem=1348.8M)
 Saving AAE Data ...
 Saving congestion map file checkpoints/design.checkpoint/save.enc.dat/bgr_top.route.congmap.gz ...
-% End Save AAE data ... (date=05/17 00:40:21, total cpu=0:00:00.0, real=0:00:00.0, peak res=1348.3M, current mem=1348.3M)
+% End Save AAE data ... (date=05/17 12:42:40, total cpu=0:00:00.0, real=0:00:00.0, peak res=1348.9M, current mem=1348.9M)
 Saving preference file checkpoints/design.checkpoint/save.enc.dat/gui.pref.tcl ...
 Saving mode setting ...
 Saving global file ...
@@ -1186,28 +1190,28 @@ Saving Drc markers ...
 Saving special route data file in separate thread ...
 Saving PG Conn data in separate thread ...
 Saving placement file in separate thread ...
-Saving route file in separate thread ...
+Saving property file in separate thread ...
 ** Saving stdCellPlacement_binary (version# 2) ...
 Save Adaptive View Pruning View Names to Binary file
 TAT_INFO: ::saveSpecialRoute REAL = 0 : CPU = 0 : MEM = 0.
 TAT_INFO: savePGConnFile REAL = 0 : CPU = 0 : MEM = 0.
 TAT_INFO: ::savePlace REAL = 0 : CPU = 0 : MEM = 0.
 Saving property file checkpoints/design.checkpoint/save.enc.dat/bgr_top.prop
-*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1839.7M) ***
-*** Completed saveRoute (cpu=0:00:00.0 real=0:00:01.0 mem=1839.7M) ***
-TAT_INFO: ::saveRoute REAL = 1 : CPU = 0 : MEM = 0.
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1838.4M) ***
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1838.4M) ***
+TAT_INFO: ::saveRoute REAL = 0 : CPU = 0 : MEM = 0.
 TAT_INFO: ::db::saveAnnotationAndProp REAL = 0 : CPU = 0 : MEM = 0.
 TAT_INFO: ::db::saveSymbolTable REAL = 0 : CPU = 0 : MEM = 0.
-TAT_INFO: ::saveCongMap REAL = 0 : CPU = 0 : MEM = 0.
-% Begin Save power constraints data ... (date=05/17 00:40:22, mem=1352.4M)
-% End Save power constraints data ... (date=05/17 00:40:22, total cpu=0:00:00.0, real=0:00:00.0, peak res=1352.6M, current mem=1352.6M)
+TAT_INFO: ::saveCongMap REAL = 1 : CPU = 0 : MEM = 0.
+% Begin Save power constraints data ... (date=05/17 12:42:41, mem=1353.0M)
+% End Save power constraints data ... (date=05/17 12:42:41, total cpu=0:00:00.0, real=0:00:00.0, peak res=1353.2M, current mem=1353.2M)
 typical
 Generated self-contained design save.enc.dat
-#% End save design ... (date=05/17 00:40:23, total cpu=0:00:00.8, real=0:00:02.0, peak res=1384.1M, current mem=1355.4M)
+#% End save design ... (date=05/17 12:42:42, total cpu=0:00:00.7, real=0:00:02.0, peak res=1384.7M, current mem=1356.0M)
 *** Message Summary: 0 warning(s), 0 error(s)
 
 
-*** Memory Usage v#2 (Current mem = 1846.012M, initial mem = 275.727M) ***
-*** Message Summary: 114 warning(s), 0 error(s)
+*** Memory Usage v#2 (Current mem = 1843.746M, initial mem = 275.727M) ***
+*** Message Summary: 120 warning(s), 0 error(s)
 
---- Ending "Innovus" (totcpu=0:00:21.3, real=0:00:32.0, mem=1846.0M) ---
+--- Ending "Innovus" (totcpu=0:00:20.8, real=0:00:30.0, mem=1843.7M) ---

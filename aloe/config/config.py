@@ -33,7 +33,7 @@ xpins = []#['VDD', 'VSS'] # don't care pins
 # pwr_nets = ['VDD']
 # gnd_nets = ['VSS']
 # all_nets = pos_nets + neg_nets + ckp_nets + ckn_nets + clk_nets + sgl_nets
-clk_nets = ['clk']    # Clock nets
+# clk_nets = ['clk']    # Clock nets
 
 # ========================= sgl nets for inverter ============================
 # sgl_nets = ['en', 'ds', 'in', 'out', 'VNW', 'VDDPST', 'POC', 'VDDCE', 'VDDPE', 'VPW', 'VSSPST', 'VSSE']  # Signal nets
@@ -42,12 +42,12 @@ clk_nets = ['clk']    # Clock nets
 # sgl_nets = ['en', 'out1', 'out2', 'out3', 'out4', 'out5', 'inv1/ds', 'inv2/ds', 'inv3/ds', 'inv4/ds', 'inv5/ds', 'VNW', 'VDDPST', 'POC', 'VDDCE', 'VDDPE', 'VPW', 'VSSPST', 'VSSE']
 
 # ========================= sgl nets for BGR =================================
-sgl_nets = ['porst', 'va', 'vb', 'vbg', 'vc', 'ground', 'power', 'l17', 'l18', 'l19', 'l20', 'amp/power', 'amp/ground', 'amp/vg', 'amp/vq', 'amp/vx', 'BGR_Core/power', 'VNW', 'VDDPST', 'POC', 'VDDCE', 'VDDPE', 'VPW', 'VSSPST', 'VSSE']
-core_nets = ['BGR_Core/power', 'BGR_Core/ground', 'BGR_Core/vbneg', 'BGR_Core/l6', 'BGR_Core/l7', 'BGR_Core/l8', 'BGR_Core/l10', 'BGR_Core/l11', 'BGR_Core/l1', 'BGR_Core/l2', 'BGR_Core/l4', 'BGR_Core/l5', 'BGR_Core/l12', 'BGR_Core/R6/l', 'BGR_Core/R7/l', 'BGR_Core/R8/l', 'BGR_Core/R10/l', 'BGR_Core/R11/l', 'BGR_Core/R3/l', 'BGR_Core/R1/l', 'BGR_Core/R2/l', 'BGR_Core/R4/l', 'BGR_Core/R5/l', 'BGR_Core/R12/l', 'CM/power', 'CM/ground', 'R17/l', 'R18/l', 'R19/l', 'R20/l']
+sgl_nets = ['porst', 'va', 'vb', 'vbg', 'vc', 'l17', 'l18', 'l19', 'l20', 'amp/vg', 'amp/vq', 'amp/vx', 'VNW', 'VDDPST', 'POC', 'VDDCE', 'VDDPE', 'VPW', 'VSSPST', 'VSSE']
+core_nets = ['BGR_Core/vbneg', 'BGR_Core/l6', 'BGR_Core/l7', 'BGR_Core/l8', 'BGR_Core/l10', 'BGR_Core/l11', 'BGR_Core/l1', 'BGR_Core/l2', 'BGR_Core/l4', 'BGR_Core/l5', 'BGR_Core/l12', 'BGR_Core/R6/l', 'BGR_Core/R7/l', 'BGR_Core/R8/l', 'BGR_Core/R10/l', 'BGR_Core/R11/l', 'BGR_Core/R3/l', 'BGR_Core/R1/l', 'BGR_Core/R2/l', 'BGR_Core/R4/l', 'BGR_Core/R5/l', 'BGR_Core/R12/l','R17/l', 'R18/l', 'R19/l', 'R20/l']
 
-pwr_nets = ['VDD']
-gnd_nets = ['VSS']
-all_nets = clk_nets + sgl_nets + core_nets + pwr_nets + gnd_nets
+pwr_nets = ['VDD', 'amp/VDD', 'CM/VDD']
+gnd_nets = ['VSS', 'amp/VSS']
+all_nets = sgl_nets + core_nets + pwr_nets + gnd_nets
 
 #==============================================================================
 # Directory paths

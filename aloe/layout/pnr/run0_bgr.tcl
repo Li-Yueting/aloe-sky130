@@ -3,7 +3,7 @@
 # Version : 19.11-s001_1
 ####################################################################
 
-loadFPlan /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/examples/BGR_Top/BGR_Top.fp
+loadFPlan /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/examples/bgr_top/bgr_top.fp
 
 # <BEGIN TAG> place,set_design_mode
 setDesignMode -process 130 -powerEffort high
@@ -48,9 +48,9 @@ setNanoRouteMode -quiet -routeSelectedNetOnly 1
 routeDesign -globalDetail
 
 # calculate net length
-cal_nl -n 3 -l 1 -d /home/users/xingyuni/ee372/aloe-sky130/aloe/output/nl -b BGR_Top
+cal_nl -n 3 -l 1 -d /home/users/xingyuni/ee372/aloe-sky130/aloe/output/nl -b bgr_top_0
 
 # write lef file
-write_lef_abstract -5.8 -extractBlockObs /home/users/xingyuni/ee372/aloe-sky130/aloe/output/lef/BGR_Top.lef
+write_lef_abstract -5.8 -extractBlockObs /home/users/xingyuni/ee372/aloe-sky130/aloe/output/lef/bgr_top_0.lef
 
 puts "===================== cal_nl and write lef file ================================"

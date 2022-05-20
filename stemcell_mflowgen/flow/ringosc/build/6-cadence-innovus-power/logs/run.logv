@@ -1,580 +1,570 @@
-[05/17 01:00:18      0s] 
-[05/17 01:00:18      0s] Cadence Innovus(TM) Implementation System.
-[05/17 01:00:18      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
-[05/17 01:00:18      0s] 
-[05/17 01:00:18      0s] Version:	v20.13-s083_1, built Tue Jan 19 16:51:46 PST 2021
-[05/17 01:00:18      0s] Options:	-overwrite -nowin -init START.tcl -log logs/run.log 
-[05/17 01:00:18      0s] Date:		Tue May 17 01:00:18 2022
-[05/17 01:00:18      0s] Host:		rice-503-20-north (x86_64 w/Linux 5.11.0-41-generic) (20cores*40cpus*Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz 28160KB)
-[05/17 01:00:18      0s] OS:		CentOS Linux release 7.9.2009 (Core)
-[05/17 01:00:18      0s] 
-[05/17 01:00:18      0s] License:
-[05/17 01:00:18      0s] 		invs	Innovus Implementation System	20.1	checkout succeeded
-[05/17 01:00:18      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
-[05/17 01:00:40     14s] @(#)CDS: Innovus v20.13-s083_1 (64bit) 01/19/2021 16:51 (Linux 2.6.32-431.11.2.el6.x86_64)
-[05/17 01:00:40     14s] @(#)CDS: NanoRoute 20.13-s083_1 NR201221-0721/20_13-UB (database version 18.20.538) {superthreading v2.13}
-[05/17 01:00:40     14s] @(#)CDS: AAE 20.13-s024 (64bit) 01/19/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
-[05/17 01:00:40     14s] @(#)CDS: CTE 20.13-s042_1 () Jan 14 2021 08:49:42 ( )
-[05/17 01:00:40     14s] @(#)CDS: SYNTECH 20.13-s015_1 () Jan  6 2021 07:44:41 ( )
-[05/17 01:00:40     14s] @(#)CDS: CPE v20.13-s092
-[05/17 01:00:40     14s] @(#)CDS: IQuantus/TQuantus 20.1.1-s453 (64bit) Fri Nov 20 21:16:44 PST 2020 (Linux 2.6.32-431.11.2.el6.x86_64)
-[05/17 01:00:40     14s] @(#)CDS: OA 22.60-p048 Wed Nov 11 13:31:42 2020
-[05/17 01:00:40     14s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
-[05/17 01:00:40     14s] @(#)CDS: RCDB 11.15.0
-[05/17 01:00:40     14s] @(#)CDS: STYLUS 20.10-p024_1 (12/01/2020 07:22 PST)
-[05/17 01:00:40     14s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_3885936_rice-503-20-north_xingyuni_ISNes8.
+[05/17 12:37:18      0s] 
+[05/17 12:37:18      0s] Cadence Innovus(TM) Implementation System.
+[05/17 12:37:18      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[05/17 12:37:18      0s] 
+[05/17 12:37:18      0s] Version:	v20.13-s083_1, built Tue Jan 19 16:51:46 PST 2021
+[05/17 12:37:18      0s] Options:	-overwrite -nowin -init START.tcl -log logs/run.log 
+[05/17 12:37:18      0s] Date:		Tue May 17 12:37:18 2022
+[05/17 12:37:18      0s] Host:		rice-503-20-north (x86_64 w/Linux 5.11.0-41-generic) (20cores*40cpus*Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz 28160KB)
+[05/17 12:37:18      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[05/17 12:37:18      0s] 
+[05/17 12:37:18      0s] License:
+[05/17 12:37:18      0s] 		invs	Innovus Implementation System	20.1	checkout succeeded
+[05/17 12:37:18      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[05/17 12:37:39     13s] @(#)CDS: Innovus v20.13-s083_1 (64bit) 01/19/2021 16:51 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/17 12:37:39     13s] @(#)CDS: NanoRoute 20.13-s083_1 NR201221-0721/20_13-UB (database version 18.20.538) {superthreading v2.13}
+[05/17 12:37:39     13s] @(#)CDS: AAE 20.13-s024 (64bit) 01/19/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/17 12:37:39     13s] @(#)CDS: CTE 20.13-s042_1 () Jan 14 2021 08:49:42 ( )
+[05/17 12:37:39     13s] @(#)CDS: SYNTECH 20.13-s015_1 () Jan  6 2021 07:44:41 ( )
+[05/17 12:37:39     13s] @(#)CDS: CPE v20.13-s092
+[05/17 12:37:39     13s] @(#)CDS: IQuantus/TQuantus 20.1.1-s453 (64bit) Fri Nov 20 21:16:44 PST 2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+[05/17 12:37:39     13s] @(#)CDS: OA 22.60-p048 Wed Nov 11 13:31:42 2020
+[05/17 12:37:39     13s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[05/17 12:37:39     13s] @(#)CDS: RCDB 11.15.0
+[05/17 12:37:39     13s] @(#)CDS: STYLUS 20.10-p024_1 (12/01/2020 07:22 PST)
+[05/17 12:37:39     13s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_4067022_rice-503-20-north_xingyuni_QBRK4q.
 
-[05/17 01:00:40     14s] The soft stacksize limit is either up to the hard limit or larger than 0.2% of RAM. No change is needed.
-[05/17 01:00:42     15s] 
-[05/17 01:00:42     15s] **INFO:  MMMC transition support version v31-84 
-[05/17 01:00:42     15s] 
-[05/17 01:00:42     15s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
-[05/17 01:00:42     15s] <CMD> suppressMessage ENCEXT-2799
-[05/17 01:00:42     15s] Sourcing file "START.tcl" ...
-[05/17 01:00:42     15s] <CMD> is_common_ui_mode
-[05/17 01:00:42     15s] <CMD> restoreDesign /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat ringosc
-[05/17 01:00:42     15s] #% Begin load design ... (date=05/17 01:00:42, mem=666.1M)
-[05/17 01:00:42     15s] Set Default Input Pin Transition as 0.1 ps.
-[05/17 01:00:42     15s] Loading design 'ringosc' saved by 'Innovus' '20.13-s083_1' on 'Tue May 17 01:00:13 2022'.
-[05/17 01:00:42     15s] % Begin Load MMMC data ... (date=05/17 01:00:42, mem=668.5M)
-[05/17 01:00:42     15s] % End Load MMMC data ... (date=05/17 01:00:42, total cpu=0:00:00.0, real=0:00:00.0, peak res=669.5M, current mem=669.5M)
-[05/17 01:00:42     15s] 
-[05/17 01:00:42     15s] Loading LEF file /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/libs/lef/rtk-tech.lef ...
-[05/17 01:00:42     15s] 
-[05/17 01:00:42     15s] Loading LEF file /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/libs/lef/stdcells.lef ...
-[05/17 01:00:42     15s] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
-[05/17 01:00:42     15s] The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/libs/lef/stdcells.lef at line 2.
-[05/17 01:00:42     15s] Set DBUPerIGU to M1 pitch 460.
-[05/17 01:00:42     15s] **WARN: (IMPLF-63):	The layer 'obsm4' referenced in OBS in macro 'sky130_asc_cap_mim_m3_1' is not found in the database. The obstruction geometries specified on the layer are being ignored. A layer must be defined in the LEF technology LAYER section before it can be referenced from a macro. Review the LEF files specified in the init_lef_file variable to see if the layer does not exist or is specified after the one that defines the macro.
-[05/17 01:00:42     15s] Type 'man IMPLF-63' for more detail.
-[05/17 01:00:42     15s] **WARN: (IMPLF-63):	The layer 'obsm5' referenced in OBS in macro 'sky130_asc_cap_mim_m3_1' is not found in the database. The obstruction geometries specified on the layer are being ignored. A layer must be defined in the LEF technology LAYER section before it can be referenced from a macro. Review the LEF files specified in the init_lef_file variable to see if the layer does not exist or is specified after the one that defines the macro.
-[05/17 01:00:42     15s] Type 'man IMPLF-63' for more detail.
-[05/17 01:00:42     15s] **WARN: (IMPLF-201):	Pin 'GATE' in macro 'sky130_asc_pfet_01v8_lvt_9' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-[05/17 01:00:42     15s] Type 'man IMPLF-201' for more detail.
-[05/17 01:00:42     15s] **WARN: (IMPLF-200):	Pin 'SOURCE' in macro 'sky130_asc_pfet_01v8_lvt_9' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-[05/17 01:00:42     15s] Type 'man IMPLF-200' for more detail.
-[05/17 01:00:42     15s] **WARN: (IMPLF-200):	Pin 'DRAIN' in macro 'sky130_asc_pfet_01v8_lvt_9' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-[05/17 01:00:42     15s] Type 'man IMPLF-200' for more detail.
-[05/17 01:00:42     15s] **WARN: (IMPLF-201):	Pin 'Cin' in macro 'sky130_asc_cap_mim_m3_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-[05/17 01:00:42     15s] Type 'man IMPLF-201' for more detail.
-[05/17 01:00:42     15s] **WARN: (IMPLF-200):	Pin 'Cin' in macro 'sky130_asc_cap_mim_m3_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-[05/17 01:00:42     15s] Type 'man IMPLF-200' for more detail.
-[05/17 01:00:42     15s] **WARN: (IMPLF-201):	Pin 'Cout' in macro 'sky130_asc_cap_mim_m3_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-[05/17 01:00:42     15s] Type 'man IMPLF-201' for more detail.
-[05/17 01:00:42     15s] **WARN: (IMPLF-200):	Pin 'Cout' in macro 'sky130_asc_cap_mim_m3_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-[05/17 01:00:42     15s] Type 'man IMPLF-200' for more detail.
-[05/17 01:00:42     15s] **WARN: (IMPLF-200):	Pin 'Emitter' in macro 'sky130_asc_pnp_05v5_W3p40L3p40_7' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-[05/17 01:00:42     15s] Type 'man IMPLF-200' for more detail.
-[05/17 01:00:42     15s] **WARN: (IMPLF-200):	Pin 'Collector' in macro 'sky130_asc_pnp_05v5_W3p40L3p40_7' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-[05/17 01:00:42     15s] Type 'man IMPLF-200' for more detail.
-[05/17 01:00:42     15s] **WARN: (IMPLF-201):	Pin 'GATE' in macro 'sky130_asc_pfet_01v8_lvt_6' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-[05/17 01:00:42     15s] Type 'man IMPLF-201' for more detail.
-[05/17 01:00:42     15s] **WARN: (IMPLF-200):	Pin 'SOURCE' in macro 'sky130_asc_pfet_01v8_lvt_6' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-[05/17 01:00:42     15s] Type 'man IMPLF-200' for more detail.
-[05/17 01:00:42     15s] **WARN: (IMPLF-200):	Pin 'DRAIN' in macro 'sky130_asc_pfet_01v8_lvt_6' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-[05/17 01:00:42     15s] Type 'man IMPLF-200' for more detail.
-[05/17 01:00:42     15s] **WARN: (IMPLF-201):	Pin 'GATE' in macro 'sky130_asc_pfet_01v8_lvt_12' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-[05/17 01:00:42     15s] Type 'man IMPLF-201' for more detail.
-[05/17 01:00:42     15s] **WARN: (IMPLF-200):	Pin 'SOURCE' in macro 'sky130_asc_pfet_01v8_lvt_12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-[05/17 01:00:42     15s] Type 'man IMPLF-200' for more detail.
-[05/17 01:00:42     15s] **WARN: (IMPLF-200):	Pin 'DRAIN' in macro 'sky130_asc_pfet_01v8_lvt_12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-[05/17 01:00:42     15s] Type 'man IMPLF-200' for more detail.
-[05/17 01:00:42     15s] **WARN: (IMPLF-200):	Pin 'Emitter' in macro 'sky130_asc_pnp_05v5_W3p40L3p40_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-[05/17 01:00:42     15s] Type 'man IMPLF-200' for more detail.
-[05/17 01:00:42     15s] **WARN: (IMPLF-200):	Pin 'Collector' in macro 'sky130_asc_pnp_05v5_W3p40L3p40_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-[05/17 01:00:42     15s] Type 'man IMPLF-200' for more detail.
-[05/17 01:00:42     15s] **WARN: (IMPLF-201):	Pin 'Rin' in macro 'sky130_asc_res_xhigh_po_2p85_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-[05/17 01:00:42     15s] Type 'man IMPLF-201' for more detail.
-[05/17 01:00:42     15s] **WARN: (IMPLF-200):	Pin 'Rin' in macro 'sky130_asc_res_xhigh_po_2p85_2' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-[05/17 01:00:42     15s] Type 'man IMPLF-200' for more detail.
-[05/17 01:00:42     15s] **WARN: (IMPLF-201):	Pin 'Rout' in macro 'sky130_asc_res_xhigh_po_2p85_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-[05/17 01:00:42     15s] Type 'man IMPLF-201' for more detail.
-[05/17 01:00:42     15s] **WARN: (IMPLF-200):	Pin 'Rout' in macro 'sky130_asc_res_xhigh_po_2p85_2' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-[05/17 01:00:42     15s] Type 'man IMPLF-200' for more detail.
-[05/17 01:00:42     15s] **WARN: (IMPLF-201):	Pin 'GATE' in macro 'sky130_asc_pfet_01v8_lvt_60' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-[05/17 01:00:42     15s] Type 'man IMPLF-201' for more detail.
-[05/17 01:00:42     15s] **WARN: (IMPLF-200):	Pin 'SOURCE' in macro 'sky130_asc_pfet_01v8_lvt_60' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-[05/17 01:00:42     15s] Type 'man IMPLF-200' for more detail.
-[05/17 01:00:42     15s] **WARN: (IMPLF-200):	Pin 'DRAIN' in macro 'sky130_asc_pfet_01v8_lvt_60' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-[05/17 01:00:42     15s] Type 'man IMPLF-200' for more detail.
-[05/17 01:00:42     15s] **WARN: (IMPLF-201):	Pin 'Rin' in macro 'sky130_asc_res_xhigh_po_2p85_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-[05/17 01:00:42     15s] Type 'man IMPLF-201' for more detail.
-[05/17 01:00:42     15s] **WARN: (IMPLF-200):	Pin 'Rin' in macro 'sky130_asc_res_xhigh_po_2p85_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-[05/17 01:00:42     15s] Type 'man IMPLF-200' for more detail.
-[05/17 01:00:42     15s] **WARN: (IMPLF-201):	Pin 'Rout' in macro 'sky130_asc_res_xhigh_po_2p85_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-[05/17 01:00:42     15s] Type 'man IMPLF-201' for more detail.
-[05/17 01:00:42     15s] **WARN: (IMPLF-200):	Pin 'Rout' in macro 'sky130_asc_res_xhigh_po_2p85_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-[05/17 01:00:42     15s] Type 'man IMPLF-200' for more detail.
-[05/17 01:00:42     15s] **WARN: (IMPLF-201):	Pin 'GATE' in macro 'sky130_asc_pfet_01v8_lvt_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-[05/17 01:00:42     15s] Type 'man IMPLF-201' for more detail.
-[05/17 01:00:42     15s] **WARN: (IMPLF-200):	Pin 'SOURCE' in macro 'sky130_asc_pfet_01v8_lvt_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-[05/17 01:00:42     15s] Type 'man IMPLF-200' for more detail.
-[05/17 01:00:42     15s] **WARN: (IMPLF-200):	Pin 'DRAIN' in macro 'sky130_asc_pfet_01v8_lvt_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-[05/17 01:00:42     15s] Type 'man IMPLF-200' for more detail.
-[05/17 01:00:42     15s] **WARN: (IMPLF-201):	Pin 'GATE' in macro 'sky130_asc_nfet_01v8_lvt_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-[05/17 01:00:42     15s] Type 'man IMPLF-201' for more detail.
-[05/17 01:00:42     15s] **WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
-[05/17 01:00:42     15s] To increase the message display limit, refer to the product command reference manual.
-[05/17 01:00:42     15s] 
-[05/17 01:00:42     15s] viaInitial starts at Tue May 17 01:00:42 2022
-viaInitial ends at Tue May 17 01:00:42 2022
+[05/17 12:37:39     13s] The soft stacksize limit is either up to the hard limit or larger than 0.2% of RAM. No change is needed.
+[05/17 12:37:40     15s] 
+[05/17 12:37:40     15s] **INFO:  MMMC transition support version v31-84 
+[05/17 12:37:40     15s] 
+[05/17 12:37:40     15s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[05/17 12:37:40     15s] <CMD> suppressMessage ENCEXT-2799
+[05/17 12:37:40     15s] Sourcing file "START.tcl" ...
+[05/17 12:37:40     15s] <CMD> is_common_ui_mode
+[05/17 12:37:40     15s] <CMD> restoreDesign /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat ringosc
+[05/17 12:37:40     15s] #% Begin load design ... (date=05/17 12:37:40, mem=668.4M)
+[05/17 12:37:40     15s] Set Default Input Pin Transition as 0.1 ps.
+[05/17 12:37:41     15s] Loading design 'ringosc' saved by 'Innovus' '20.13-s083_1' on 'Tue May 17 12:37:13 2022'.
+[05/17 12:37:41     15s] % Begin Load MMMC data ... (date=05/17 12:37:41, mem=670.8M)
+[05/17 12:37:41     15s] % End Load MMMC data ... (date=05/17 12:37:41, total cpu=0:00:00.0, real=0:00:00.0, peak res=671.8M, current mem=671.8M)
+[05/17 12:37:41     15s] 
+[05/17 12:37:41     15s] Loading LEF file /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/libs/lef/rtk-tech.lef ...
+[05/17 12:37:41     15s] 
+[05/17 12:37:41     15s] Loading LEF file /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/libs/lef/stdcells.lef ...
+[05/17 12:37:41     15s] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+[05/17 12:37:41     15s] The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/libs/lef/stdcells.lef at line 2.
+[05/17 12:37:41     15s] Set DBUPerIGU to M1 pitch 460.
+[05/17 12:37:41     15s] **WARN: (IMPLF-63):	The layer 'obsm4' referenced in OBS in macro 'sky130_asc_cap_mim_m3_1' is not found in the database. The obstruction geometries specified on the layer are being ignored. A layer must be defined in the LEF technology LAYER section before it can be referenced from a macro. Review the LEF files specified in the init_lef_file variable to see if the layer does not exist or is specified after the one that defines the macro.
+[05/17 12:37:41     15s] Type 'man IMPLF-63' for more detail.
+[05/17 12:37:41     15s] **WARN: (IMPLF-63):	The layer 'obsm5' referenced in OBS in macro 'sky130_asc_cap_mim_m3_1' is not found in the database. The obstruction geometries specified on the layer are being ignored. A layer must be defined in the LEF technology LAYER section before it can be referenced from a macro. Review the LEF files specified in the init_lef_file variable to see if the layer does not exist or is specified after the one that defines the macro.
+[05/17 12:37:41     15s] Type 'man IMPLF-63' for more detail.
+[05/17 12:37:41     15s] **WARN: (IMPLF-201):	Pin 'GATE' in macro 'sky130_asc_pfet_01v8_lvt_9' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/17 12:37:41     15s] Type 'man IMPLF-201' for more detail.
+[05/17 12:37:41     15s] **WARN: (IMPLF-200):	Pin 'SOURCE' in macro 'sky130_asc_pfet_01v8_lvt_9' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/17 12:37:41     15s] Type 'man IMPLF-200' for more detail.
+[05/17 12:37:41     15s] **WARN: (IMPLF-200):	Pin 'DRAIN' in macro 'sky130_asc_pfet_01v8_lvt_9' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/17 12:37:41     15s] Type 'man IMPLF-200' for more detail.
+[05/17 12:37:41     15s] **WARN: (IMPLF-201):	Pin 'Cin' in macro 'sky130_asc_cap_mim_m3_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/17 12:37:41     15s] Type 'man IMPLF-201' for more detail.
+[05/17 12:37:41     15s] **WARN: (IMPLF-200):	Pin 'Cin' in macro 'sky130_asc_cap_mim_m3_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/17 12:37:41     15s] Type 'man IMPLF-200' for more detail.
+[05/17 12:37:41     15s] **WARN: (IMPLF-201):	Pin 'Cout' in macro 'sky130_asc_cap_mim_m3_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/17 12:37:41     15s] Type 'man IMPLF-201' for more detail.
+[05/17 12:37:41     15s] **WARN: (IMPLF-200):	Pin 'Cout' in macro 'sky130_asc_cap_mim_m3_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/17 12:37:41     15s] Type 'man IMPLF-200' for more detail.
+[05/17 12:37:41     15s] **WARN: (IMPLF-200):	Pin 'Emitter' in macro 'sky130_asc_pnp_05v5_W3p40L3p40_7' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/17 12:37:41     15s] Type 'man IMPLF-200' for more detail.
+[05/17 12:37:41     15s] **WARN: (IMPLF-200):	Pin 'Collector' in macro 'sky130_asc_pnp_05v5_W3p40L3p40_7' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/17 12:37:41     15s] Type 'man IMPLF-200' for more detail.
+[05/17 12:37:41     15s] **WARN: (IMPLF-201):	Pin 'GATE' in macro 'sky130_asc_pfet_01v8_lvt_6' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/17 12:37:41     15s] Type 'man IMPLF-201' for more detail.
+[05/17 12:37:41     15s] **WARN: (IMPLF-200):	Pin 'SOURCE' in macro 'sky130_asc_pfet_01v8_lvt_6' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/17 12:37:41     15s] Type 'man IMPLF-200' for more detail.
+[05/17 12:37:41     15s] **WARN: (IMPLF-200):	Pin 'DRAIN' in macro 'sky130_asc_pfet_01v8_lvt_6' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/17 12:37:41     15s] Type 'man IMPLF-200' for more detail.
+[05/17 12:37:41     15s] **WARN: (IMPLF-201):	Pin 'GATE' in macro 'sky130_asc_pfet_01v8_lvt_12' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/17 12:37:41     15s] Type 'man IMPLF-201' for more detail.
+[05/17 12:37:41     15s] **WARN: (IMPLF-200):	Pin 'SOURCE' in macro 'sky130_asc_pfet_01v8_lvt_12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/17 12:37:41     15s] Type 'man IMPLF-200' for more detail.
+[05/17 12:37:41     15s] **WARN: (IMPLF-200):	Pin 'DRAIN' in macro 'sky130_asc_pfet_01v8_lvt_12' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/17 12:37:41     15s] Type 'man IMPLF-200' for more detail.
+[05/17 12:37:41     15s] **WARN: (IMPLF-200):	Pin 'Emitter' in macro 'sky130_asc_pnp_05v5_W3p40L3p40_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/17 12:37:41     15s] Type 'man IMPLF-200' for more detail.
+[05/17 12:37:41     15s] **WARN: (IMPLF-200):	Pin 'Collector' in macro 'sky130_asc_pnp_05v5_W3p40L3p40_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/17 12:37:41     15s] Type 'man IMPLF-200' for more detail.
+[05/17 12:37:41     15s] **WARN: (IMPLF-201):	Pin 'Rin' in macro 'sky130_asc_res_xhigh_po_2p85_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/17 12:37:41     15s] Type 'man IMPLF-201' for more detail.
+[05/17 12:37:41     15s] **WARN: (IMPLF-200):	Pin 'Rin' in macro 'sky130_asc_res_xhigh_po_2p85_2' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/17 12:37:41     15s] Type 'man IMPLF-200' for more detail.
+[05/17 12:37:41     15s] **WARN: (IMPLF-201):	Pin 'Rout' in macro 'sky130_asc_res_xhigh_po_2p85_2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/17 12:37:41     15s] Type 'man IMPLF-201' for more detail.
+[05/17 12:37:41     15s] **WARN: (IMPLF-200):	Pin 'Rout' in macro 'sky130_asc_res_xhigh_po_2p85_2' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/17 12:37:41     15s] Type 'man IMPLF-200' for more detail.
+[05/17 12:37:41     15s] **WARN: (IMPLF-201):	Pin 'GATE' in macro 'sky130_asc_pfet_01v8_lvt_60' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/17 12:37:41     15s] Type 'man IMPLF-201' for more detail.
+[05/17 12:37:41     15s] **WARN: (IMPLF-200):	Pin 'SOURCE' in macro 'sky130_asc_pfet_01v8_lvt_60' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/17 12:37:41     15s] Type 'man IMPLF-200' for more detail.
+[05/17 12:37:41     15s] **WARN: (IMPLF-200):	Pin 'DRAIN' in macro 'sky130_asc_pfet_01v8_lvt_60' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/17 12:37:41     15s] Type 'man IMPLF-200' for more detail.
+[05/17 12:37:41     15s] **WARN: (IMPLF-201):	Pin 'Rin' in macro 'sky130_asc_res_xhigh_po_2p85_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/17 12:37:41     15s] Type 'man IMPLF-201' for more detail.
+[05/17 12:37:41     15s] **WARN: (IMPLF-200):	Pin 'Rin' in macro 'sky130_asc_res_xhigh_po_2p85_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/17 12:37:41     15s] Type 'man IMPLF-200' for more detail.
+[05/17 12:37:41     15s] **WARN: (IMPLF-201):	Pin 'Rout' in macro 'sky130_asc_res_xhigh_po_2p85_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/17 12:37:41     15s] Type 'man IMPLF-201' for more detail.
+[05/17 12:37:41     15s] **WARN: (IMPLF-200):	Pin 'Rout' in macro 'sky130_asc_res_xhigh_po_2p85_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/17 12:37:41     15s] Type 'man IMPLF-200' for more detail.
+[05/17 12:37:41     15s] **WARN: (IMPLF-201):	Pin 'GATE' in macro 'sky130_asc_pfet_01v8_lvt_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/17 12:37:41     15s] Type 'man IMPLF-201' for more detail.
+[05/17 12:37:41     15s] **WARN: (IMPLF-200):	Pin 'SOURCE' in macro 'sky130_asc_pfet_01v8_lvt_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/17 12:37:41     15s] Type 'man IMPLF-200' for more detail.
+[05/17 12:37:41     15s] **WARN: (IMPLF-200):	Pin 'DRAIN' in macro 'sky130_asc_pfet_01v8_lvt_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/17 12:37:41     15s] Type 'man IMPLF-200' for more detail.
+[05/17 12:37:41     15s] **WARN: (IMPLF-201):	Pin 'GATE' in macro 'sky130_asc_nfet_01v8_lvt_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[05/17 12:37:41     15s] Type 'man IMPLF-201' for more detail.
+[05/17 12:37:41     15s] **WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+[05/17 12:37:41     15s] To increase the message display limit, refer to the product command reference manual.
+[05/17 12:37:41     15s] 
+[05/17 12:37:41     15s] viaInitial starts at Tue May 17 12:37:41 2022
+viaInitial ends at Tue May 17 12:37:41 2022
 
 ##  Check design process and node:  
 ##  Both design process and tech node are not set.
 
-[05/17 01:00:42     15s] Loading view definition file from /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/viewDefinition.tcl
-[05/17 01:00:42     15s] Reading libs_typical timing library '/home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/2-skywater-130nm/view-standard/stdcells.lib' ...
-[05/17 01:00:42     16s] Read 12 cells in library 'sky130_fd_sc_hd__tt_025C_1v80' 
-[05/17 01:00:42     16s] Ending "PreSetAnalysisView" (total cpu=0:00:00.1, real=0:00:00.0, peak res=710.6M, current mem=684.0M)
-[05/17 01:00:42     16s] *** End library_loading (cpu=0.00min, real=0.00min, mem=22.0M, fe_cpu=0.27min, fe_real=0.40min, fe_mem=680.7M) ***
-[05/17 01:00:42     16s] % Begin Load netlist data ... (date=05/17 01:00:42, mem=684.1M)
-[05/17 01:00:42     16s] *** Begin netlist parsing (mem=680.7M) ***
-[05/17 01:00:42     16s] **WARN: (IMPVL-159):	Pin 'Collector' of cell 'sky130_asc_pnp_05v5_W3p40L3p40_7' is defined in LEF but not in the timing library.
-[05/17 01:00:42     16s] Type 'man IMPVL-159' for more detail.
-[05/17 01:00:42     16s] **WARN: (IMPVL-159):	Pin 'Collector' of cell 'sky130_asc_pnp_05v5_W3p40L3p40_8' is defined in LEF but not in the timing library.
-[05/17 01:00:42     16s] Type 'man IMPVL-159' for more detail.
-[05/17 01:00:42     16s] Created 12 new cells from 1 timing libraries.
-[05/17 01:00:42     16s] Reading netlist ...
-[05/17 01:00:42     16s] Backslashed names will retain backslash and a trailing blank character.
-[05/17 01:00:42     16s] Reading verilogBinary netlist '/home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/vbin/ringosc.v.bin'
-[05/17 01:00:42     16s] Reading binary database version 2 in 1-threaded mode
-[05/17 01:00:42     16s] 
-[05/17 01:00:42     16s] *** Memory Usage v#2 (Current mem = 691.715M, initial mem = 275.727M) ***
-[05/17 01:00:42     16s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=691.7M) ***
-[05/17 01:00:42     16s] % End Load netlist data ... (date=05/17 01:00:42, total cpu=0:00:00.0, real=0:00:00.0, peak res=687.6M, current mem=687.6M)
-[05/17 01:00:42     16s] Set top cell to ringosc.
-[05/17 01:00:42     16s] **WARN: (IMPTS-124):	Timing library description of pin 'Collector' is missing from cell 'sky130_asc_pnp_05v5_W3p40L3p40_7' in timing library 'sky130_fd_sc_hd__tt_025C_1v80'.
-[05/17 01:00:42     16s] **WARN: (IMPTS-124):	Timing library description of pin 'Collector' is missing from cell 'sky130_asc_pnp_05v5_W3p40L3p40_8' in timing library 'sky130_fd_sc_hd__tt_025C_1v80'.
-[05/17 01:00:42     16s] Hooked 12 DB cells to tlib cells.
-[05/17 01:00:42     16s] Ending "BindLib:" (total cpu=0:00:00.0, real=0:00:00.0, peak res=689.0M, current mem=689.0M)
-[05/17 01:00:42     16s] Starting recursive module instantiation check.
-[05/17 01:00:42     16s] No recursion found.
-[05/17 01:00:42     16s] Building hierarchical netlist for Cell ringosc ...
-[05/17 01:00:42     16s] *** Netlist is unique.
-[05/17 01:00:42     16s] Set DBUPerIGU to techSite unitasc width 490.
-[05/17 01:00:42     16s] Setting Std. cell height to 9400 DBU (smallest netlist inst).
-[05/17 01:00:42     16s] ** info: there are 13 modules.
-[05/17 01:00:42     16s] ** info: there are 2 stdCell insts.
-[05/17 01:00:43     16s] 
-[05/17 01:00:43     16s] *** Memory Usage v#2 (Current mem = 722.129M, initial mem = 275.727M) ***
-[05/17 01:00:43     16s] *info: set bottom ioPad orient R0
-[05/17 01:00:43     16s] **WARN: (IMPFP-3961):	The techSite 'unithddbl' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
-[05/17 01:00:43     16s] Type 'man IMPFP-3961' for more detail.
-[05/17 01:00:43     16s] **WARN: (IMPFP-3961):	The techSite 'unithd' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
-[05/17 01:00:43     16s] Type 'man IMPFP-3961' for more detail.
-[05/17 01:00:43     16s] **WARN: (IMPFP-3961):	The techSite 'unithddbl' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
-[05/17 01:00:43     16s] Type 'man IMPFP-3961' for more detail.
-[05/17 01:00:43     16s] **WARN: (IMPFP-3961):	The techSite 'unithd' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
-[05/17 01:00:43     16s] Type 'man IMPFP-3961' for more detail.
-[05/17 01:00:43     16s] Adjust met3 preferred direction offset from 0.34 to 0.17.
-[05/17 01:00:43     16s] Adjust met4 preferred direction offset from 0.46 to 0.23.
-[05/17 01:00:43     16s] Adjust met5 preferred direction offset from 1.7 to 0.17.
-[05/17 01:00:43     16s] Generated pitch 3.66 in met5 is different from 3.4 defined in technology file in preferred direction.
-[05/17 01:00:43     16s] Generated pitch 0.69 in met4 is different from 0.92 defined in technology file in preferred direction.
-[05/17 01:00:43     16s] Generated pitch 0.61 in met3 is different from 0.68 defined in technology file in preferred direction.
-[05/17 01:00:43     16s] Set Default Net Delay as 1000 ps.
-[05/17 01:00:43     16s] Set Default Net Load as 0.5 pF. 
-[05/17 01:00:43     16s] Set Default Input Pin Transition as 0.1 ps.
-[05/17 01:00:43     16s] Loading preference file /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/gui.pref.tcl ...
-[05/17 01:00:43     16s] ##  Process: 130           (User Set)               
-[05/17 01:00:43     16s] ##     Node: (not set)                           
-[05/17 01:00:43     16s] 
+[05/17 12:37:41     15s] Loading view definition file from /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/viewDefinition.tcl
+[05/17 12:37:41     15s] Reading libs_typical timing library '/home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/2-skywater-130nm/view-standard/stdcells.lib' ...
+[05/17 12:37:41     15s] Read 12 cells in library 'sky130_fd_sc_hd__tt_025C_1v80' 
+[05/17 12:37:41     15s] Ending "PreSetAnalysisView" (total cpu=0:00:00.1, real=0:00:00.0, peak res=712.9M, current mem=686.4M)
+[05/17 12:37:41     15s] *** End library_loading (cpu=0.00min, real=0.00min, mem=22.0M, fe_cpu=0.26min, fe_real=0.38min, fe_mem=688.9M) ***
+[05/17 12:37:41     15s] % Begin Load netlist data ... (date=05/17 12:37:41, mem=686.4M)
+[05/17 12:37:41     15s] *** Begin netlist parsing (mem=688.9M) ***
+[05/17 12:37:41     15s] **WARN: (IMPVL-159):	Pin 'Collector' of cell 'sky130_asc_pnp_05v5_W3p40L3p40_7' is defined in LEF but not in the timing library.
+[05/17 12:37:41     15s] Type 'man IMPVL-159' for more detail.
+[05/17 12:37:41     15s] **WARN: (IMPVL-159):	Pin 'Collector' of cell 'sky130_asc_pnp_05v5_W3p40L3p40_8' is defined in LEF but not in the timing library.
+[05/17 12:37:41     15s] Type 'man IMPVL-159' for more detail.
+[05/17 12:37:41     15s] Created 12 new cells from 1 timing libraries.
+[05/17 12:37:41     15s] Reading netlist ...
+[05/17 12:37:41     15s] Backslashed names will retain backslash and a trailing blank character.
+[05/17 12:37:41     15s] Reading verilogBinary netlist '/home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/vbin/ringosc.v.bin'
+[05/17 12:37:41     15s] Reading binary database version 2 in 1-threaded mode
+[05/17 12:37:41     15s] 
+[05/17 12:37:41     15s] *** Memory Usage v#2 (Current mem = 699.934M, initial mem = 275.727M) ***
+[05/17 12:37:41     15s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=699.9M) ***
+[05/17 12:37:41     15s] % End Load netlist data ... (date=05/17 12:37:41, total cpu=0:00:00.0, real=0:00:00.0, peak res=689.9M, current mem=689.9M)
+[05/17 12:37:41     15s] Set top cell to ringosc.
+[05/17 12:37:41     15s] **WARN: (IMPTS-124):	Timing library description of pin 'Collector' is missing from cell 'sky130_asc_pnp_05v5_W3p40L3p40_7' in timing library 'sky130_fd_sc_hd__tt_025C_1v80'.
+[05/17 12:37:41     15s] **WARN: (IMPTS-124):	Timing library description of pin 'Collector' is missing from cell 'sky130_asc_pnp_05v5_W3p40L3p40_8' in timing library 'sky130_fd_sc_hd__tt_025C_1v80'.
+[05/17 12:37:41     15s] Hooked 12 DB cells to tlib cells.
+[05/17 12:37:41     15s] Ending "BindLib:" (total cpu=0:00:00.0, real=0:00:00.0, peak res=691.3M, current mem=691.3M)
+[05/17 12:37:41     15s] Starting recursive module instantiation check.
+[05/17 12:37:41     15s] No recursion found.
+[05/17 12:37:41     15s] Building hierarchical netlist for Cell ringosc ...
+[05/17 12:37:41     15s] *** Netlist is unique.
+[05/17 12:37:41     15s] Set DBUPerIGU to techSite unitasc width 490.
+[05/17 12:37:41     15s] Setting Std. cell height to 9400 DBU (smallest netlist inst).
+[05/17 12:37:41     15s] ** info: there are 13 modules.
+[05/17 12:37:41     15s] ** info: there are 4 stdCell insts.
+[05/17 12:37:41     15s] 
+[05/17 12:37:41     15s] *** Memory Usage v#2 (Current mem = 731.348M, initial mem = 275.727M) ***
+[05/17 12:37:41     15s] *info: set bottom ioPad orient R0
+[05/17 12:37:41     15s] **WARN: (IMPFP-3961):	The techSite 'unithddbl' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/17 12:37:41     15s] Type 'man IMPFP-3961' for more detail.
+[05/17 12:37:41     15s] **WARN: (IMPFP-3961):	The techSite 'unithd' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/17 12:37:41     15s] Type 'man IMPFP-3961' for more detail.
+[05/17 12:37:41     15s] Adjust met3 preferred direction offset from 0.34 to 0.17.
+[05/17 12:37:41     15s] Adjust met4 preferred direction offset from 0.46 to 0.23.
+[05/17 12:37:41     15s] Adjust met5 preferred direction offset from 1.7 to 0.17.
+[05/17 12:37:41     15s] Generated pitch 3.66 in met5 is different from 3.4 defined in technology file in preferred direction.
+[05/17 12:37:41     15s] Generated pitch 0.69 in met4 is different from 0.92 defined in technology file in preferred direction.
+[05/17 12:37:41     15s] Generated pitch 0.61 in met3 is different from 0.68 defined in technology file in preferred direction.
+[05/17 12:37:41     15s] Set Default Net Delay as 1000 ps.
+[05/17 12:37:41     15s] Set Default Net Load as 0.5 pF. 
+[05/17 12:37:41     15s] Set Default Input Pin Transition as 0.1 ps.
+[05/17 12:37:41     15s] Loading preference file /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/gui.pref.tcl ...
+[05/17 12:37:41     15s] ##  Process: 130           (User Set)               
+[05/17 12:37:41     15s] ##     Node: (not set)                           
+[05/17 12:37:41     15s] 
 ##  Check design process and node:  
 ##  Design tech node is not set.
 
-[05/17 01:00:43     16s] Applying the recommended capacitance filtering threshold values for 130nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.4.
-[05/17 01:00:43     16s] 	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
-[05/17 01:00:43     16s] 	Capacitance filtering mode(-capFilterMode option of the setExtractRCMode) is 'relAndCoup' for all engines.
-[05/17 01:00:43     16s] 	The accuracy mode for postRoute effortLevel low extraction will be set to 'standard'.
-[05/17 01:00:43     16s] 	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode is 'low'.
-[05/17 01:00:43     16s] #WARNING (NRIF-91) Option setNanoRouteMode -routeTopRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -topRoutingLayer instead.
-[05/17 01:00:43     16s] **WARN: (IMPPTN-867):	Found use of setPinAssignMode -maxLayer. This will continue to work in this release; however, it is recommended to use setDesignMode -topRoutingLayer instead.
-[05/17 01:00:43     16s] **WARN: (IMPPSP-1003):	Found use of 'setRouteMode -earlyGlobalMaxRouteLayer'. This will continue to work in this release; however, it is recommended to use 'setDesignMode -topRoutingLayer' instead.
-[05/17 01:00:43     16s] Change floorplan default-technical-site to 'unitasc'.
-[05/17 01:00:43     16s] Extraction setup Delayed 
-[05/17 01:00:43     16s] *Info: initialize multi-corner CTS.
-[05/17 01:00:43     16s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=916.3M, current mem=720.9M)
-[05/17 01:00:43     16s] 
-[05/17 01:00:43     16s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
-[05/17 01:00:43     16s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
-[05/17 01:00:43     16s] Summary for sequential cells identification: 
-[05/17 01:00:43     16s]   Identified SBFF number: 0
-[05/17 01:00:43     16s]   Identified MBFF number: 0
-[05/17 01:00:43     16s]   Identified SB Latch number: 0
-[05/17 01:00:43     16s]   Identified MB Latch number: 0
-[05/17 01:00:43     16s]   Not identified SBFF number: 0
-[05/17 01:00:43     16s]   Not identified MBFF number: 0
-[05/17 01:00:43     16s]   Not identified SB Latch number: 0
-[05/17 01:00:43     16s]   Not identified MB Latch number: 0
-[05/17 01:00:43     16s]   Number of sequential cells which are not FFs: 0
-[05/17 01:00:43     16s] Total number of combinational cells: 10
-[05/17 01:00:43     16s] Total number of sequential cells: 0
-[05/17 01:00:43     16s] Total number of tristate cells: 0
-[05/17 01:00:43     16s] Total number of level shifter cells: 0
-[05/17 01:00:43     16s] Total number of power gating cells: 0
-[05/17 01:00:43     16s] Total number of isolation cells: 0
-[05/17 01:00:43     16s] Total number of power switch cells: 0
-[05/17 01:00:43     16s] Total number of pulse generator cells: 0
-[05/17 01:00:43     16s] Total number of always on buffers: 0
-[05/17 01:00:43     16s] Total number of retention cells: 0
-[05/17 01:00:43     16s] List of usable buffers: sky130_asc_cap_mim_m3_1 sky130_asc_res_xhigh_po_2p85_1 sky130_asc_res_xhigh_po_2p85_2
-[05/17 01:00:43     16s] Total number of usable buffers: 3
-[05/17 01:00:43     16s] List of unusable buffers:
-[05/17 01:00:43     16s] Total number of unusable buffers: 0
-[05/17 01:00:43     16s] List of usable inverters:
-[05/17 01:00:43     16s] Total number of usable inverters: 0
-[05/17 01:00:43     16s] List of unusable inverters:
-[05/17 01:00:43     16s] Total number of unusable inverters: 0
-[05/17 01:00:43     16s] List of identified usable delay cells:
-[05/17 01:00:43     16s] Total number of identified usable delay cells: 0
-[05/17 01:00:43     16s] List of identified unusable delay cells:
-[05/17 01:00:43     16s] Total number of identified unusable delay cells: 0
-[05/17 01:00:43     16s] 
-[05/17 01:00:43     16s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
-[05/17 01:00:43     16s] No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
-[05/17 01:00:43     16s] 
-[05/17 01:00:43     16s] TimeStamp Deleting Cell Server Begin ...
-[05/17 01:00:43     16s] 
-[05/17 01:00:43     16s] TimeStamp Deleting Cell Server End ...
-[05/17 01:00:43     16s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=915.8M, current mem=915.8M)
-[05/17 01:00:43     16s] 
-[05/17 01:00:43     16s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
-[05/17 01:00:43     16s] Summary for sequential cells identification: 
-[05/17 01:00:43     16s]   Identified SBFF number: 0
-[05/17 01:00:43     16s]   Identified MBFF number: 0
-[05/17 01:00:43     16s]   Identified SB Latch number: 0
-[05/17 01:00:43     16s]   Identified MB Latch number: 0
-[05/17 01:00:43     16s]   Not identified SBFF number: 0
-[05/17 01:00:43     16s]   Not identified MBFF number: 0
-[05/17 01:00:43     16s]   Not identified SB Latch number: 0
-[05/17 01:00:43     16s]   Not identified MB Latch number: 0
-[05/17 01:00:43     16s]   Number of sequential cells which are not FFs: 0
-[05/17 01:00:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:43     16s] **WARN: (IMPOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
-[05/17 01:00:43     16s] Type 'man IMPOPT-3001' for more detail.
-[05/17 01:00:43     16s]  Visiting view : analysis_default
-[05/17 01:00:43     16s]    : PowerDomain = none : Weighted F : unweighted  = 466.50 (1.000) with rcCorner = 0
-[05/17 01:00:43     16s]    : PowerDomain = none : Weighted F : unweighted  = 431.50 (1.000) with rcCorner = -1
-[05/17 01:00:43     16s]  Visiting view : analysis_default
-[05/17 01:00:43     16s]    : PowerDomain = none : Weighted F : unweighted  = 466.50 (1.000) with rcCorner = 0
-[05/17 01:00:43     16s]    : PowerDomain = none : Weighted F : unweighted  = 431.50 (1.000) with rcCorner = -1
-[05/17 01:00:43     16s] 
-[05/17 01:00:43     16s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
-[05/17 01:00:43     16s] Reading floorplan file - /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/ringosc.fp.gz (mem = 931.7M).
-[05/17 01:00:43     16s] % Begin Load floorplan data ... (date=05/17 01:00:43, mem=916.8M)
-[05/17 01:00:43     16s] *info: reset 11 existing net BottomPreferredLayer and AvoidDetour
-[05/17 01:00:43     16s] **WARN: (IMPDB-2078):	Output pin Cout of instance C2 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
-[05/17 01:00:43     16s] Deleting old partition specification.
-[05/17 01:00:44     16s] Set FPlanBox to (0 0 140300 85340)
-[05/17 01:00:44     16s] **WARN: (IMPFP-3961):	The techSite 'unithddbl' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
-[05/17 01:00:44     16s] Type 'man IMPFP-3961' for more detail.
-[05/17 01:00:44     16s] **WARN: (IMPFP-3961):	The techSite 'unithd' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
-[05/17 01:00:44     16s] Type 'man IMPFP-3961' for more detail.
-[05/17 01:00:44     16s] **WARN: (IMPFP-3961):	The techSite 'unithddbl' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
-[05/17 01:00:44     16s] Type 'man IMPFP-3961' for more detail.
-[05/17 01:00:44     16s] **WARN: (IMPFP-3961):	The techSite 'unithd' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
-[05/17 01:00:44     16s] Type 'man IMPFP-3961' for more detail.
-[05/17 01:00:44     16s] Adjust met3 preferred direction offset from 0.34 to 0.17.
-[05/17 01:00:44     16s] Adjust met4 preferred direction offset from 0.46 to 0.23.
-[05/17 01:00:44     16s] Adjust met5 preferred direction offset from 1.7 to 0.17.
-[05/17 01:00:44     16s] Generated pitch 3.66 in met5 is different from 3.4 defined in technology file in preferred direction.
-[05/17 01:00:44     16s] Generated pitch 0.69 in met4 is different from 0.92 defined in technology file in preferred direction.
-[05/17 01:00:44     16s] Generated pitch 0.61 in met3 is different from 0.68 defined in technology file in preferred direction.
-[05/17 01:00:44     16s]  ... processed partition successfully.
-[05/17 01:00:44     16s] Reading binary special route file /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/ringosc.fp.spr.gz (Created by Innovus v20.13-s083_1 on Tue May 17 01:00:12 2022, version: 1)
-[05/17 01:00:44     16s] Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=921.9M, current mem=921.9M)
-[05/17 01:00:44     16s] Extracting standard cell pins and blockage ...... 
-[05/17 01:00:44     16s] Pin and blockage extraction finished
-[05/17 01:00:44     16s] % End Load floorplan data ... (date=05/17 01:00:44, total cpu=0:00:00.0, real=0:00:01.0, peak res=922.7M, current mem=922.5M)
-[05/17 01:00:44     16s] % Begin Load SymbolTable ... (date=05/17 01:00:44, mem=922.8M)
-[05/17 01:00:44     16s] Reading congestion map file /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/ringosc.route.congmap.gz ...
-[05/17 01:00:44     16s] % End Load SymbolTable ... (date=05/17 01:00:44, total cpu=0:00:00.0, real=0:00:00.0, peak res=922.9M, current mem=922.9M)
-[05/17 01:00:44     16s] Loading place ...
-[05/17 01:00:44     16s] % Begin Load placement data ... (date=05/17 01:00:44, mem=922.9M)
-[05/17 01:00:44     16s] Reading placement file - /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/ringosc.place.gz.
-[05/17 01:00:44     16s] ** Reading stdCellPlacement_binary (Created by Innovus v20.13-s083_1 on Tue May 17 01:00:12 2022, version# 2) ...
-[05/17 01:00:44     16s] Read Views for adaptive view pruning ...
-[05/17 01:00:44     16s] Read 0 views from Binary DB for adaptive view pruning
-[05/17 01:00:44     16s] *** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=938.7M) ***
-[05/17 01:00:44     16s] Total net length = 2.000e-03 (1.000e-03 1.000e-03) (ext = 0.000e+00)
-[05/17 01:00:44     16s] % End Load placement data ... (date=05/17 01:00:44, total cpu=0:00:00.0, real=0:00:00.0, peak res=923.1M, current mem=923.1M)
-[05/17 01:00:44     16s] % Begin Load routing data ... (date=05/17 01:00:44, mem=923.4M)
-[05/17 01:00:44     16s] Reading routing file - /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/ringosc.route.gz.
-[05/17 01:00:44     16s] Reading Innovus routing data (Created by Innovus v20.13-s083_1 on Tue May 17 01:00:12 2022 Format: 20.1) ...
-[05/17 01:00:44     16s] *** Total 11 nets are successfully restored.
-[05/17 01:00:44     16s] *** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=935.7M) ***
-[05/17 01:00:44     16s] % End Load routing data ... (date=05/17 01:00:44, total cpu=0:00:00.0, real=0:00:00.0, peak res=924.5M, current mem=923.5M)
-[05/17 01:00:44     16s] Loading Drc markers ...
-[05/17 01:00:44     16s] ... 1 markers are loaded ...
-[05/17 01:00:44     16s] ... 0 geometry drc markers are loaded ...
-[05/17 01:00:44     16s] ... 0 antenna drc markers are loaded ...
-[05/17 01:00:44     16s] TAT_INFO: restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
-[05/17 01:00:44     16s] Reading property file /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/ringosc.prop
-[05/17 01:00:44     16s] *** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=940.7M) ***
-[05/17 01:00:44     16s] Set Default Input Pin Transition as 0.1 ps.
-[05/17 01:00:45     17s] eee: readRCCornerMetaData, file read unsuccessful: /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/extraction/extractionMetaData.gz
-[05/17 01:00:45     17s] Extraction setup Started 
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] Initializing multi-corner RC extraction with 1 active RC Corners ...
-[05/17 01:00:45     17s] Reading Capacitance Table File /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/libs/mmmc/rtk-typical.captable ...
-[05/17 01:00:45     17s] Process name: (null).
-[05/17 01:00:45     17s] Allocated an empty WireEdgeEnlargement table in typical [6].
-[05/17 01:00:45     17s] Allocated an empty WireEdgeEnlargement table in typical [6].
-[05/17 01:00:45     17s] Importing multi-corner RC tables ... 
-[05/17 01:00:45     17s] Summary of Active RC-Corners : 
-[05/17 01:00:45     17s]  
-[05/17 01:00:45     17s]  Analysis View: analysis_default
-[05/17 01:00:45     17s]     RC-Corner Name        : typical
-[05/17 01:00:45     17s]     RC-Corner Index       : 0
-[05/17 01:00:45     17s]     RC-Corner Temperature : 25 Celsius
-[05/17 01:00:45     17s]     RC-Corner Cap Table   : '/home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/libs/mmmc/rtk-typical.captable'
-[05/17 01:00:45     17s]     RC-Corner PreRoute Res Factor         : 1
-[05/17 01:00:45     17s]     RC-Corner PreRoute Cap Factor         : 1
-[05/17 01:00:45     17s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
-[05/17 01:00:45     17s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
-[05/17 01:00:45     17s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
-[05/17 01:00:45     17s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
-[05/17 01:00:45     17s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
-[05/17 01:00:45     17s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
-[05/17 01:00:45     17s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] LayerId::1 widthSet size::4
-[05/17 01:00:45     17s] LayerId::2 widthSet size::4
-[05/17 01:00:45     17s] LayerId::3 widthSet size::5
-[05/17 01:00:45     17s] LayerId::4 widthSet size::4
-[05/17 01:00:45     17s] LayerId::5 widthSet size::5
-[05/17 01:00:45     17s] LayerId::6 widthSet size::2
-[05/17 01:00:45     17s] Updating RC grid for preRoute extraction ...
-[05/17 01:00:45     17s] Initializing multi-corner capacitance tables ... 
-[05/17 01:00:45     17s] Initializing multi-corner resistance tables ...
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
-[05/17 01:00:45     17s] {RT typical 0 6 6 {4 0} {5 0} 2}
-[05/17 01:00:45     17s] Preroute length aware model : n: 40 ; LLS: 2-3 ; HLS: 3-5 ; rDens: 0.000000 ; uaWl: 0.000000 ; uaWlH: 0.000000 ; aWlH: 0.000000 ; Pmax: 0.850000 ; wcR: 0.000000 ; newSi: 0.000000 ; pMod: 82 ; 
-[05/17 01:00:45     17s] Start generating vias ..
-[05/17 01:00:45     17s] #create default rule from bind_ndr_rule rule=0x14e2c6b923d0 0x14e2c7f04fc0
-[05/17 01:00:45     17s] ### import design signature (1): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 halo=0
-[05/17 01:00:45     17s] #Skip building auto via since it is not turned on.
-[05/17 01:00:45     17s] Extracting standard cell pins and blockage ...... 
-[05/17 01:00:45     17s] Pin and blockage extraction finished
-[05/17 01:00:45     17s] Via generation completed.
-[05/17 01:00:45     17s] % Begin Load power constraints ... (date=05/17 01:00:45, mem=929.9M)
-[05/17 01:00:45     17s] % End Load power constraints ... (date=05/17 01:00:45, total cpu=0:00:00.0, real=0:00:00.0, peak res=930.1M, current mem=930.1M)
-[05/17 01:00:45     17s] % Begin load AAE data ... (date=05/17 01:00:45, mem=936.9M)
-[05/17 01:00:45     17s] **WARN: (IMPESI-3505):	setDelayCalMode -eng_copyNetPropToNewNet true (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
-[05/17 01:00:45     17s] AAE DB initialization (MEM=969.215 CPU=0:00:00.0 REAL=0:00:00.0) 
-[05/17 01:00:45     17s] % End load AAE data ... (date=05/17 01:00:45, total cpu=0:00:00.3, real=0:00:00.0, peak res=942.7M, current mem=942.7M)
-[05/17 01:00:45     17s] 
-[05/17 01:00:45     17s] TimeStamp Deleting Cell Server Begin ...
-[05/17 01:00:45     17s] 
-[05/17 01:00:45     17s] TimeStamp Deleting Cell Server End ...
-[05/17 01:00:45     17s] 
-[05/17 01:00:45     17s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
-[05/17 01:00:45     17s] Summary for sequential cells identification: 
-[05/17 01:00:45     17s]   Identified SBFF number: 0
-[05/17 01:00:45     17s]   Identified MBFF number: 0
-[05/17 01:00:45     17s]   Identified SB Latch number: 0
-[05/17 01:00:45     17s]   Identified MB Latch number: 0
-[05/17 01:00:45     17s]   Not identified SBFF number: 0
-[05/17 01:00:45     17s]   Not identified MBFF number: 0
-[05/17 01:00:45     17s]   Not identified SB Latch number: 0
-[05/17 01:00:45     17s]   Not identified MB Latch number: 0
-[05/17 01:00:45     17s]   Number of sequential cells which are not FFs: 0
-[05/17 01:00:45     17s] Total number of combinational cells: 10
-[05/17 01:00:45     17s] Total number of sequential cells: 0
-[05/17 01:00:45     17s] Total number of tristate cells: 0
-[05/17 01:00:45     17s] Total number of level shifter cells: 0
-[05/17 01:00:45     17s] Total number of power gating cells: 0
-[05/17 01:00:45     17s] Total number of isolation cells: 0
-[05/17 01:00:45     17s] Total number of power switch cells: 0
-[05/17 01:00:45     17s] Total number of pulse generator cells: 0
-[05/17 01:00:45     17s] Total number of always on buffers: 0
-[05/17 01:00:45     17s] Total number of retention cells: 0
-[05/17 01:00:45     17s] List of usable buffers: sky130_asc_cap_mim_m3_1 sky130_asc_res_xhigh_po_2p85_1 sky130_asc_res_xhigh_po_2p85_2
-[05/17 01:00:45     17s] Total number of usable buffers: 3
-[05/17 01:00:45     17s] List of unusable buffers:
-[05/17 01:00:45     17s] Total number of unusable buffers: 0
-[05/17 01:00:45     17s] List of usable inverters:
-[05/17 01:00:45     17s] Total number of usable inverters: 0
-[05/17 01:00:45     17s] List of unusable inverters:
-[05/17 01:00:45     17s] Total number of unusable inverters: 0
-[05/17 01:00:45     17s] List of identified usable delay cells:
-[05/17 01:00:45     17s] Total number of identified usable delay cells: 0
-[05/17 01:00:45     17s] List of identified unusable delay cells:
-[05/17 01:00:45     17s] Total number of identified unusable delay cells: 0
-[05/17 01:00:45     17s] 
-[05/17 01:00:45     17s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
-[05/17 01:00:45     17s] No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
-[05/17 01:00:45     17s] 
-[05/17 01:00:45     17s] TimeStamp Deleting Cell Server Begin ...
-[05/17 01:00:45     17s] 
-[05/17 01:00:45     17s] TimeStamp Deleting Cell Server End ...
-[05/17 01:00:45     17s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.13-s083_1. They will be removed in the next release. 
-[05/17 01:00:45     17s] timing_enable_default_delay_arc
-[05/17 01:00:45     17s] #% End load design ... (date=05/17 01:00:45, total cpu=0:00:01.9, real=0:00:03.0, peak res=968.0M, current mem=942.7M)
-[05/17 01:00:45     17s] 
-[05/17 01:00:45     17s] *** Summary of all messages that are not suppressed in this session:
-[05/17 01:00:45     17s] Severity  ID               Count  Summary                                  
-[05/17 01:00:45     17s] WARNING   IMPLF-63             2  The layer '%s' referenced %s is not foun...
-[05/17 01:00:45     17s] WARNING   IMPLF-200           24  Pin '%s' in macro '%s' has no ANTENNAGAT...
-[05/17 01:00:45     17s] WARNING   IMPLF-201           12  Pin '%s' in macro '%s' has no ANTENNADIF...
-[05/17 01:00:45     17s] WARNING   IMPFP-3961           8  The techSite '%s' has no related standar...
-[05/17 01:00:45     17s] WARNING   IMPPTN-867           1  Found use of %s. This will continue to w...
-[05/17 01:00:45     17s] WARNING   IMPTS-124            2  Timing library description of pin '%s' i...
-[05/17 01:00:45     17s] WARNING   IMPVL-159            2  Pin '%s' of cell '%s' is defined in LEF ...
-[05/17 01:00:45     17s] WARNING   IMPDB-2078           1  Output pin %s of instance %s is connecte...
-[05/17 01:00:45     17s] WARNING   IMPESI-3505          1  setDelayCalMode -eng_%s (default=%s) wil...
-[05/17 01:00:45     17s] WARNING   IMPOPT-3001          1  Inverter footprint is not defined or is ...
-[05/17 01:00:45     17s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
-[05/17 01:00:45     17s] WARNING   IMPPSP-1003          1  Found use of '%s'. This will continue to...
-[05/17 01:00:45     17s] *** Message Summary: 56 warning(s), 0 error(s)
-[05/17 01:00:45     17s] 
-[05/17 01:00:45     17s] <CMD> setDistributeHost -local
-[05/17 01:00:45     17s] The timeout for a remote job to respond is 3600 seconds.
-[05/17 01:00:45     17s] Submit command for task runs will be: local
-[05/17 01:00:45     17s] <CMD> setMultiCpuUsage -localCpu 16
-[05/17 01:00:45     17s] <FF> LOADING 'always_source_tcl' PLUG-IN FILE(s) 
-[05/17 01:00:45     17s] <FF> -> innovus-foundation-flow/custom-scripts/always-source.tcl
-[05/17 01:00:45     17s] ### Start verbose source output (echo mode) for 'scripts/globalnetconnect.tcl' ...
-[05/17 01:00:45     17s] # globalNetConnect VDD    -type pgpin -pin VPWR    -inst * -verbose
+[05/17 12:37:41     15s] Applying the recommended capacitance filtering threshold values for 130nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.4.
+[05/17 12:37:41     15s] 	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+[05/17 12:37:41     15s] 	Capacitance filtering mode(-capFilterMode option of the setExtractRCMode) is 'relAndCoup' for all engines.
+[05/17 12:37:41     15s] 	The accuracy mode for postRoute effortLevel low extraction will be set to 'standard'.
+[05/17 12:37:41     15s] 	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode is 'low'.
+[05/17 12:37:41     15s] #WARNING (NRIF-91) Option setNanoRouteMode -routeTopRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -topRoutingLayer instead.
+[05/17 12:37:41     15s] **WARN: (IMPPTN-867):	Found use of setPinAssignMode -maxLayer. This will continue to work in this release; however, it is recommended to use setDesignMode -topRoutingLayer instead.
+[05/17 12:37:41     15s] **WARN: (IMPPSP-1003):	Found use of 'setRouteMode -earlyGlobalMaxRouteLayer'. This will continue to work in this release; however, it is recommended to use 'setDesignMode -topRoutingLayer' instead.
+[05/17 12:37:41     15s] Change floorplan default-technical-site to 'unitasc'.
+[05/17 12:37:41     15s] Extraction setup Delayed 
+[05/17 12:37:41     15s] *Info: initialize multi-corner CTS.
+[05/17 12:37:41     16s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=914.3M, current mem=720.6M)
+[05/17 12:37:42     16s] 
+[05/17 12:37:42     16s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[05/17 12:37:42     16s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[05/17 12:37:42     16s] Summary for sequential cells identification: 
+[05/17 12:37:42     16s]   Identified SBFF number: 0
+[05/17 12:37:42     16s]   Identified MBFF number: 0
+[05/17 12:37:42     16s]   Identified SB Latch number: 0
+[05/17 12:37:42     16s]   Identified MB Latch number: 0
+[05/17 12:37:42     16s]   Not identified SBFF number: 0
+[05/17 12:37:42     16s]   Not identified MBFF number: 0
+[05/17 12:37:42     16s]   Not identified SB Latch number: 0
+[05/17 12:37:42     16s]   Not identified MB Latch number: 0
+[05/17 12:37:42     16s]   Number of sequential cells which are not FFs: 0
+[05/17 12:37:42     16s] Total number of combinational cells: 10
+[05/17 12:37:42     16s] Total number of sequential cells: 0
+[05/17 12:37:42     16s] Total number of tristate cells: 0
+[05/17 12:37:42     16s] Total number of level shifter cells: 0
+[05/17 12:37:42     16s] Total number of power gating cells: 0
+[05/17 12:37:42     16s] Total number of isolation cells: 0
+[05/17 12:37:42     16s] Total number of power switch cells: 0
+[05/17 12:37:42     16s] Total number of pulse generator cells: 0
+[05/17 12:37:42     16s] Total number of always on buffers: 0
+[05/17 12:37:42     16s] Total number of retention cells: 0
+[05/17 12:37:42     16s] List of usable buffers: sky130_asc_cap_mim_m3_1 sky130_asc_res_xhigh_po_2p85_1 sky130_asc_res_xhigh_po_2p85_2
+[05/17 12:37:42     16s] Total number of usable buffers: 3
+[05/17 12:37:42     16s] List of unusable buffers:
+[05/17 12:37:42     16s] Total number of unusable buffers: 0
+[05/17 12:37:42     16s] List of usable inverters:
+[05/17 12:37:42     16s] Total number of usable inverters: 0
+[05/17 12:37:42     16s] List of unusable inverters:
+[05/17 12:37:42     16s] Total number of unusable inverters: 0
+[05/17 12:37:42     16s] List of identified usable delay cells:
+[05/17 12:37:42     16s] Total number of identified usable delay cells: 0
+[05/17 12:37:42     16s] List of identified unusable delay cells:
+[05/17 12:37:42     16s] Total number of identified unusable delay cells: 0
+[05/17 12:37:42     16s] 
+[05/17 12:37:42     16s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[05/17 12:37:42     16s] No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+[05/17 12:37:42     16s] 
+[05/17 12:37:42     16s] TimeStamp Deleting Cell Server Begin ...
+[05/17 12:37:42     16s] 
+[05/17 12:37:42     16s] TimeStamp Deleting Cell Server End ...
+[05/17 12:37:42     16s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=921.6M, current mem=921.6M)
+[05/17 12:37:42     16s] 
+[05/17 12:37:42     16s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[05/17 12:37:42     16s] Summary for sequential cells identification: 
+[05/17 12:37:42     16s]   Identified SBFF number: 0
+[05/17 12:37:42     16s]   Identified MBFF number: 0
+[05/17 12:37:42     16s]   Identified SB Latch number: 0
+[05/17 12:37:42     16s]   Identified MB Latch number: 0
+[05/17 12:37:42     16s]   Not identified SBFF number: 0
+[05/17 12:37:42     16s]   Not identified MBFF number: 0
+[05/17 12:37:42     16s]   Not identified SB Latch number: 0
+[05/17 12:37:42     16s]   Not identified MB Latch number: 0
+[05/17 12:37:42     16s]   Number of sequential cells which are not FFs: 0
+[05/17 12:37:42     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:42     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:42     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:42     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:42     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:42     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:42     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:42     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:42     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:42     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:42     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:42     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:42     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:42     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:42     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:42     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:42     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:42     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:42     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:42     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:42     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:42     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:42     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:42     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:42     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:42     16s] **WARN: (IMPOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
+[05/17 12:37:42     16s] Type 'man IMPOPT-3001' for more detail.
+[05/17 12:37:42     16s]  Visiting view : analysis_default
+[05/17 12:37:42     16s]    : PowerDomain = none : Weighted F : unweighted  = 466.50 (1.000) with rcCorner = 0
+[05/17 12:37:42     16s]    : PowerDomain = none : Weighted F : unweighted  = 431.50 (1.000) with rcCorner = -1
+[05/17 12:37:42     16s]  Visiting view : analysis_default
+[05/17 12:37:42     16s]    : PowerDomain = none : Weighted F : unweighted  = 466.50 (1.000) with rcCorner = 0
+[05/17 12:37:42     16s]    : PowerDomain = none : Weighted F : unweighted  = 431.50 (1.000) with rcCorner = -1
+[05/17 12:37:42     16s] 
+[05/17 12:37:42     16s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[05/17 12:37:42     16s] Reading floorplan file - /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/ringosc.fp.gz (mem = 939.0M).
+[05/17 12:37:42     16s] % Begin Load floorplan data ... (date=05/17 12:37:42, mem=922.5M)
+[05/17 12:37:42     16s] *info: reset 14 existing net BottomPreferredLayer and AvoidDetour
+[05/17 12:37:42     16s] Deleting old partition specification.
+[05/17 12:37:42     16s] Set FPlanBox to (0 0 224020 141780)
+[05/17 12:37:42     16s] **WARN: (IMPFP-3961):	The techSite 'unithddbl' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/17 12:37:42     16s] Type 'man IMPFP-3961' for more detail.
+[05/17 12:37:42     16s] **WARN: (IMPFP-3961):	The techSite 'unithd' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[05/17 12:37:42     16s] Type 'man IMPFP-3961' for more detail.
+[05/17 12:37:42     16s] Adjust met3 preferred direction offset from 0.34 to 0.17.
+[05/17 12:37:42     16s] Adjust met4 preferred direction offset from 0.46 to 0.23.
+[05/17 12:37:42     16s] Adjust met5 preferred direction offset from 1.7 to 0.17.
+[05/17 12:37:42     16s] Generated pitch 3.66 in met5 is different from 3.4 defined in technology file in preferred direction.
+[05/17 12:37:42     16s] Generated pitch 0.69 in met4 is different from 0.92 defined in technology file in preferred direction.
+[05/17 12:37:42     16s] Generated pitch 0.61 in met3 is different from 0.68 defined in technology file in preferred direction.
+[05/17 12:37:42     16s]  ... processed partition successfully.
+[05/17 12:37:42     16s] Reading binary special route file /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/ringosc.fp.spr.gz (Created by Innovus v20.13-s083_1 on Tue May 17 12:37:12 2022, version: 1)
+[05/17 12:37:42     16s] Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=927.8M, current mem=927.8M)
+[05/17 12:37:42     16s] Extracting standard cell pins and blockage ...... 
+[05/17 12:37:42     16s] Pin and blockage extraction finished
+[05/17 12:37:42     16s] % End Load floorplan data ... (date=05/17 12:37:42, total cpu=0:00:00.1, real=0:00:00.0, peak res=928.8M, current mem=928.4M)
+[05/17 12:37:42     16s] % Begin Load SymbolTable ... (date=05/17 12:37:42, mem=928.7M)
+[05/17 12:37:42     16s] Reading congestion map file /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/ringosc.route.congmap.gz ...
+[05/17 12:37:42     16s] % End Load SymbolTable ... (date=05/17 12:37:42, total cpu=0:00:00.0, real=0:00:00.0, peak res=928.8M, current mem=928.8M)
+[05/17 12:37:42     16s] Loading place ...
+[05/17 12:37:42     16s] % Begin Load placement data ... (date=05/17 12:37:42, mem=928.8M)
+[05/17 12:37:42     16s] Reading placement file - /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/ringosc.place.gz.
+[05/17 12:37:42     16s] ** Reading stdCellPlacement_binary (Created by Innovus v20.13-s083_1 on Tue May 17 12:37:12 2022, version# 2) ...
+[05/17 12:37:42     16s] Read Views for adaptive view pruning ...
+[05/17 12:37:42     16s] Read 0 views from Binary DB for adaptive view pruning
+[05/17 12:37:42     16s] *** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=946.0M) ***
+[05/17 12:37:42     16s] Total net length = 8.000e-03 (4.000e-03 4.000e-03) (ext = 8.000e-03)
+[05/17 12:37:42     16s] % End Load placement data ... (date=05/17 12:37:42, total cpu=0:00:00.0, real=0:00:00.0, peak res=929.0M, current mem=929.0M)
+[05/17 12:37:42     16s] % Begin Load routing data ... (date=05/17 12:37:42, mem=929.3M)
+[05/17 12:37:42     16s] Reading routing file - /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/ringosc.route.gz.
+[05/17 12:37:43     16s] Reading Innovus routing data (Created by Innovus v20.13-s083_1 on Tue May 17 12:37:12 2022 Format: 20.1) ...
+[05/17 12:37:43     16s] *** Total 14 nets are successfully restored.
+[05/17 12:37:43     16s] *** Completed restoreRoute (cpu=0:00:00.0 real=0:00:01.0 mem=943.0M) ***
+[05/17 12:37:43     16s] % End Load routing data ... (date=05/17 12:37:43, total cpu=0:00:00.0, real=0:00:01.0, peak res=930.5M, current mem=929.5M)
+[05/17 12:37:43     16s] Loading Drc markers ...
+[05/17 12:37:43     16s] ... 1 markers are loaded ...
+[05/17 12:37:43     16s] ... 0 geometry drc markers are loaded ...
+[05/17 12:37:43     16s] ... 0 antenna drc markers are loaded ...
+[05/17 12:37:43     16s] TAT_INFO: restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+[05/17 12:37:43     16s] Reading property file /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/ringosc.prop
+[05/17 12:37:43     16s] *** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=948.0M) ***
+[05/17 12:37:43     16s] Set Default Input Pin Transition as 0.1 ps.
+[05/17 12:37:43     16s] eee: readRCCornerMetaData, file read unsuccessful: /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/extraction/extractionMetaData.gz
+[05/17 12:37:43     16s] Extraction setup Started 
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[05/17 12:37:43     16s] Reading Capacitance Table File /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/libs/mmmc/rtk-typical.captable ...
+[05/17 12:37:43     16s] Process name: (null).
+[05/17 12:37:43     16s] Allocated an empty WireEdgeEnlargement table in typical [6].
+[05/17 12:37:43     16s] Allocated an empty WireEdgeEnlargement table in typical [6].
+[05/17 12:37:43     16s] Importing multi-corner RC tables ... 
+[05/17 12:37:43     16s] Summary of Active RC-Corners : 
+[05/17 12:37:43     16s]  
+[05/17 12:37:43     16s]  Analysis View: analysis_default
+[05/17 12:37:43     16s]     RC-Corner Name        : typical
+[05/17 12:37:43     16s]     RC-Corner Index       : 0
+[05/17 12:37:43     16s]     RC-Corner Temperature : 25 Celsius
+[05/17 12:37:43     16s]     RC-Corner Cap Table   : '/home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/libs/mmmc/rtk-typical.captable'
+[05/17 12:37:43     16s]     RC-Corner PreRoute Res Factor         : 1
+[05/17 12:37:43     16s]     RC-Corner PreRoute Cap Factor         : 1
+[05/17 12:37:43     16s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[05/17 12:37:43     16s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[05/17 12:37:43     16s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[05/17 12:37:43     16s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[05/17 12:37:43     16s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[05/17 12:37:43     16s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[05/17 12:37:43     16s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] LayerId::1 widthSet size::4
+[05/17 12:37:43     16s] LayerId::2 widthSet size::4
+[05/17 12:37:43     16s] LayerId::3 widthSet size::5
+[05/17 12:37:43     16s] LayerId::4 widthSet size::4
+[05/17 12:37:43     16s] LayerId::5 widthSet size::5
+[05/17 12:37:43     16s] LayerId::6 widthSet size::2
+[05/17 12:37:43     16s] Updating RC grid for preRoute extraction ...
+[05/17 12:37:43     16s] Initializing multi-corner capacitance tables ... 
+[05/17 12:37:43     16s] Initializing multi-corner resistance tables ...
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] RC grid size has been reduced in this design, max wire length is 16777215.000000.
+[05/17 12:37:43     16s] {RT typical 0 6 6 {4 0} {5 0} 2}
+[05/17 12:37:43     16s] Preroute length aware model : n: 40 ; LLS: 2-3 ; HLS: 3-5 ; rDens: 0.000000 ; uaWl: 0.000000 ; uaWlH: 0.000000 ; aWlH: 0.000000 ; Pmax: 0.850000 ; wcR: 0.000000 ; newSi: 0.000000 ; pMod: 82 ; 
+[05/17 12:37:43     16s] Start generating vias ..
+[05/17 12:37:43     16s] #create default rule from bind_ndr_rule rule=0x1475728823d0 0x147573d1cfc0
+[05/17 12:37:43     16s] ### import design signature (1): route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 halo=0
+[05/17 12:37:43     16s] #Skip building auto via since it is not turned on.
+[05/17 12:37:43     16s] Extracting standard cell pins and blockage ...... 
+[05/17 12:37:43     16s] Pin and blockage extraction finished
+[05/17 12:37:43     16s] Via generation completed.
+[05/17 12:37:43     16s] % Begin Load power constraints ... (date=05/17 12:37:43, mem=935.9M)
+[05/17 12:37:43     16s] % End Load power constraints ... (date=05/17 12:37:43, total cpu=0:00:00.0, real=0:00:00.0, peak res=936.0M, current mem=936.0M)
+[05/17 12:37:43     16s] % Begin load AAE data ... (date=05/17 12:37:43, mem=943.0M)
+[05/17 12:37:43     16s] **WARN: (IMPESI-3505):	setDelayCalMode -eng_copyNetPropToNewNet true (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
+[05/17 12:37:43     16s] AAE DB initialization (MEM=976.949 CPU=0:00:00.0 REAL=0:00:00.0) 
+[05/17 12:37:43     16s] % End load AAE data ... (date=05/17 12:37:43, total cpu=0:00:00.3, real=0:00:00.0, peak res=948.7M, current mem=948.7M)
+[05/17 12:37:43     16s] 
+[05/17 12:37:43     16s] TimeStamp Deleting Cell Server Begin ...
+[05/17 12:37:43     16s] 
+[05/17 12:37:43     16s] TimeStamp Deleting Cell Server End ...
+[05/17 12:37:43     16s] 
+[05/17 12:37:43     16s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[05/17 12:37:43     16s] Summary for sequential cells identification: 
+[05/17 12:37:43     16s]   Identified SBFF number: 0
+[05/17 12:37:43     16s]   Identified MBFF number: 0
+[05/17 12:37:43     16s]   Identified SB Latch number: 0
+[05/17 12:37:43     16s]   Identified MB Latch number: 0
+[05/17 12:37:43     16s]   Not identified SBFF number: 0
+[05/17 12:37:43     16s]   Not identified MBFF number: 0
+[05/17 12:37:43     16s]   Not identified SB Latch number: 0
+[05/17 12:37:43     16s]   Not identified MB Latch number: 0
+[05/17 12:37:43     16s]   Number of sequential cells which are not FFs: 0
+[05/17 12:37:43     16s] Total number of combinational cells: 10
+[05/17 12:37:43     16s] Total number of sequential cells: 0
+[05/17 12:37:43     16s] Total number of tristate cells: 0
+[05/17 12:37:43     16s] Total number of level shifter cells: 0
+[05/17 12:37:43     16s] Total number of power gating cells: 0
+[05/17 12:37:43     16s] Total number of isolation cells: 0
+[05/17 12:37:43     16s] Total number of power switch cells: 0
+[05/17 12:37:43     16s] Total number of pulse generator cells: 0
+[05/17 12:37:43     16s] Total number of always on buffers: 0
+[05/17 12:37:43     16s] Total number of retention cells: 0
+[05/17 12:37:43     16s] List of usable buffers: sky130_asc_cap_mim_m3_1 sky130_asc_res_xhigh_po_2p85_1 sky130_asc_res_xhigh_po_2p85_2
+[05/17 12:37:43     16s] Total number of usable buffers: 3
+[05/17 12:37:43     16s] List of unusable buffers:
+[05/17 12:37:43     16s] Total number of unusable buffers: 0
+[05/17 12:37:43     16s] List of usable inverters:
+[05/17 12:37:43     16s] Total number of usable inverters: 0
+[05/17 12:37:43     16s] List of unusable inverters:
+[05/17 12:37:43     16s] Total number of unusable inverters: 0
+[05/17 12:37:43     16s] List of identified usable delay cells:
+[05/17 12:37:43     16s] Total number of identified usable delay cells: 0
+[05/17 12:37:43     16s] List of identified unusable delay cells:
+[05/17 12:37:43     16s] Total number of identified unusable delay cells: 0
+[05/17 12:37:43     16s] 
+[05/17 12:37:43     16s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[05/17 12:37:43     16s] No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+[05/17 12:37:43     16s] 
+[05/17 12:37:43     16s] TimeStamp Deleting Cell Server Begin ...
+[05/17 12:37:43     16s] 
+[05/17 12:37:43     16s] TimeStamp Deleting Cell Server End ...
+[05/17 12:37:43     16s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.13-s083_1. They will be removed in the next release. 
+[05/17 12:37:43     16s] timing_enable_default_delay_arc
+[05/17 12:37:43     17s] #% End load design ... (date=05/17 12:37:43, total cpu=0:00:01.8, real=0:00:03.0, peak res=975.0M, current mem=948.7M)
+[05/17 12:37:43     17s] 
+[05/17 12:37:43     17s] *** Summary of all messages that are not suppressed in this session:
+[05/17 12:37:43     17s] Severity  ID               Count  Summary                                  
+[05/17 12:37:43     17s] WARNING   IMPLF-63             2  The layer '%s' referenced %s is not foun...
+[05/17 12:37:43     17s] WARNING   IMPLF-200           24  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[05/17 12:37:43     17s] WARNING   IMPLF-201           12  Pin '%s' in macro '%s' has no ANTENNADIF...
+[05/17 12:37:43     17s] WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+[05/17 12:37:43     17s] WARNING   IMPPTN-867           1  Found use of %s. This will continue to w...
+[05/17 12:37:44     17s] WARNING   IMPTS-124            2  Timing library description of pin '%s' i...
+[05/17 12:37:44     17s] WARNING   IMPVL-159            2  Pin '%s' of cell '%s' is defined in LEF ...
+[05/17 12:37:44     17s] WARNING   IMPESI-3505          1  setDelayCalMode -eng_%s (default=%s) wil...
+[05/17 12:37:44     17s] WARNING   IMPOPT-3001          1  Inverter footprint is not defined or is ...
+[05/17 12:37:44     17s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[05/17 12:37:44     17s] WARNING   IMPPSP-1003          1  Found use of '%s'. This will continue to...
+[05/17 12:37:44     17s] *** Message Summary: 51 warning(s), 0 error(s)
+[05/17 12:37:44     17s] 
+[05/17 12:37:44     17s] <CMD> setDistributeHost -local
+[05/17 12:37:44     17s] The timeout for a remote job to respond is 3600 seconds.
+[05/17 12:37:44     17s] Submit command for task runs will be: local
+[05/17 12:37:44     17s] <CMD> setMultiCpuUsage -localCpu 16
+[05/17 12:37:44     17s] <FF> LOADING 'always_source_tcl' PLUG-IN FILE(s) 
+[05/17 12:37:44     17s] <FF> -> innovus-foundation-flow/custom-scripts/always-source.tcl
+[05/17 12:37:44     17s] ### Start verbose source output (echo mode) for 'scripts/globalnetconnect.tcl' ...
+[05/17 12:37:44     17s] # globalNetConnect VDD    -type pgpin -pin VPWR    -inst * -verbose
 <CMD> globalNetConnect VDD -type pgpin -pin VPWR -inst * -verbose
-[05/17 01:00:45     17s] 2 new pwr-pin connections were made to global net 'VDD'.
-[05/17 01:00:45     17s] # globalNetConnect VSS    -type pgpin -pin VGND    -inst * -verbose
+[05/17 12:37:44     17s] 4 new pwr-pin connections were made to global net 'VDD'.
+[05/17 12:37:44     17s] # globalNetConnect VSS    -type pgpin -pin VGND    -inst * -verbose
 <CMD> globalNetConnect VSS -type pgpin -pin VGND -inst * -verbose
-[05/17 01:00:45     17s] 2 new gnd-pin connections were made to global net 'VSS'.
-[05/17 01:00:45     17s] # globalNetConnect VSS    -type pgpin -pin VNB    -inst * -verbose
+[05/17 12:37:44     17s] 4 new gnd-pin connections were made to global net 'VSS'.
+[05/17 12:37:44     17s] # globalNetConnect VSS    -type pgpin -pin VNB    -inst * -verbose
 <CMD> globalNetConnect VSS -type pgpin -pin VNB -inst * -verbose
-[05/17 01:00:45     17s] **WARN: (IMPDB-1261):	No PG pin 'VNB' in instances with basename '*' in the design.
-[05/17 01:00:45     17s] **ERROR: (IMPDB-1221):	A global net connection rule was specified to connect ground pins with the name pattern 'VNB' to a global net.  But the connections cannot be made because there is no such ground pin with name matching the pattern in any cell.  Check the pin name in Lef or liberty and make sure it is correct.
+[05/17 12:37:44     17s] **WARN: (IMPDB-1261):	No PG pin 'VNB' in instances with basename '*' in the design.
+[05/17 12:37:44     17s] **ERROR: (IMPDB-1221):	A global net connection rule was specified to connect ground pins with the name pattern 'VNB' to a global net.  But the connections cannot be made because there is no such ground pin with name matching the pattern in any cell.  Check the pin name in Lef or liberty and make sure it is correct.
 # globalNetConnect VDD    -type pgpin -pin VPB    -inst * -verbose
 <CMD> globalNetConnect VDD -type pgpin -pin VPB -inst * -verbose
-[05/17 01:00:45     17s] **WARN: (IMPDB-1261):	No PG pin 'VPB' in instances with basename '*' in the design.
-[05/17 01:00:45     17s] **ERROR: (IMPDB-1221):	A global net connection rule was specified to connect power pins with the name pattern 'VPB' to a global net.  But the connections cannot be made because there is no such power pin with name matching the pattern in any cell.  Check the pin name in Lef or liberty and make sure it is correct.
+[05/17 12:37:44     17s] **WARN: (IMPDB-1261):	No PG pin 'VPB' in instances with basename '*' in the design.
+[05/17 12:37:44     17s] **ERROR: (IMPDB-1221):	A global net connection rule was specified to connect power pins with the name pattern 'VPB' to a global net.  But the connections cannot be made because there is no such power pin with name matching the pattern in any cell.  Check the pin name in Lef or liberty and make sure it is correct.
 ### End verbose source output for 'scripts/globalnetconnect.tcl'.
-[05/17 01:00:45     17s] ### Start verbose source output (echo mode) for 'scripts/main.tcl' ...
-[05/17 01:00:45     17s] # set M2_direction [dbGet [dbGet head.layers.name 3 -p].direction]
+[05/17 12:37:44     17s] ### Start verbose source output (echo mode) for 'scripts/main.tcl' ...
+[05/17 12:37:44     17s] # set M2_direction [dbGet [dbGet head.layers.name 3 -p].direction]
 # puts " ******************** M2_direction is"
 # puts $M2_direction
 # if { $M2_direction == "Vertical" } {
@@ -595,61 +585,63 @@ viaInitial ends at Tue May 17 01:00:42 2022
   }
 }
 ### Start verbose source output (echo mode) for 'scripts/power-strategy-singlemesh.tcl' ...
-[05/17 01:00:45     17s] # sroute -nets {VDD VSS} -connect {corePin}
+[05/17 12:37:44     17s] # sroute -nets {VDD VSS} -connect {corePin}
 <CMD> sroute -nets {VDD VSS} -connect corePin
-[05/17 01:00:45     17s] #% Begin sroute (date=05/17 01:00:45, mem=943.3M)
-[05/17 01:00:45     17s] *** Begin SPECIAL ROUTE on Tue May 17 01:00:45 2022 ***
-[05/17 01:00:45     17s] SPECIAL ROUTE ran on directory: /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/6-cadence-innovus-power
-[05/17 01:00:45     17s] SPECIAL ROUTE ran on machine: rice-503-20-north (Linux 5.11.0-41-generic Xeon 2.40Ghz)
-[05/17 01:00:45     17s] 
-[05/17 01:00:45     17s] Begin option processing ...
-[05/17 01:00:45     17s] srouteConnectPowerBump set to false
-[05/17 01:00:45     17s] routeSelectNet set to "VDD VSS"
-[05/17 01:00:45     17s] routeSpecial set to true
-[05/17 01:00:45     17s] srouteConnectBlockPin set to false
-[05/17 01:00:45     17s] srouteConnectConverterPin set to false
-[05/17 01:00:45     17s] srouteConnectPadPin set to false
-[05/17 01:00:45     17s] srouteConnectStripe set to false
-[05/17 01:00:45     17s] srouteFollowCorePinEnd set to 3
-[05/17 01:00:45     17s] srouteFollowPadPin set to false
-[05/17 01:00:45     17s] srouteJogControl set to "preferWithChanges differentLayer"
-[05/17 01:00:45     17s] sroutePadPinAllPorts set to true
-[05/17 01:00:45     17s] sroutePreserveExistingRoutes set to true
-[05/17 01:00:45     17s] srouteRoutePowerBarPortOnBothDir set to true
-[05/17 01:00:45     17s] End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1942.00 megs.
-[05/17 01:00:45     17s] 
-[05/17 01:00:45     17s] Reading DB technology information...
-[05/17 01:00:45     17s] Finished reading DB technology information.
-[05/17 01:00:45     17s] Reading floorplan and netlist information...
-[05/17 01:00:45     17s] Finished reading floorplan and netlist information.
-[05/17 01:00:45     17s] Read in 13 layers, 6 routing layers, 1 overlap layer
-[05/17 01:00:45     17s] Read in 12 macros, 1 used
-[05/17 01:00:45     17s] Read in 1 components
-[05/17 01:00:45     17s]   1 core components: 1 unplaced, 0 placed, 0 fixed
-[05/17 01:00:45     17s] Read in 10 special nets
-[05/17 01:00:45     17s] Read in 2 terminals
-[05/17 01:00:45     17s] 2 nets selected.
-[05/17 01:00:45     17s] 
-[05/17 01:00:45     17s] Begin power routing ...
-[05/17 01:00:45     17s] CPU time for FollowPin 0 seconds
-[05/17 01:00:45     17s] CPU time for FollowPin 0 seconds
-[05/17 01:00:45     17s]   Number of Core ports routed: 0  open: 8
-[05/17 01:00:45     17s]   Number of Followpin connections: 4
-[05/17 01:00:45     17s] End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1948.00 megs.
-[05/17 01:00:45     17s] 
-[05/17 01:00:45     17s] 
-[05/17 01:00:45     17s] 
-[05/17 01:00:45     17s]  Begin updating DB with routing results ...
-[05/17 01:00:45     17s]  Updating DB with 0 via definition ...
-[05/17 01:00:45     17s] sroute created 4 wires.
-[05/17 01:00:45     17s] ViaGen created 0 via, deleted 0 via to avoid violation.
-[05/17 01:00:45     17s] +--------+----------------+----------------+
-[05/17 01:00:45     17s] |  Layer |     Created    |     Deleted    |
-[05/17 01:00:45     17s] +--------+----------------+----------------+
-[05/17 01:00:45     17s] |  met1  |        4       |       NA       |
-[05/17 01:00:45     17s] +--------+----------------+----------------+
-[05/17 01:00:45     17s] #% End sroute (date=05/17 01:00:45, total cpu=0:00:00.1, real=0:00:00.0, peak res=951.0M, current mem=951.0M)
-[05/17 01:00:45     17s] # set pmesh_bot $ADK_POWER_MESH_BOT_LAYER
+[05/17 12:37:44     17s] #% Begin sroute (date=05/17 12:37:44, mem=949.4M)
+[05/17 12:37:44     17s] *** Begin SPECIAL ROUTE on Tue May 17 12:37:44 2022 ***
+[05/17 12:37:44     17s] SPECIAL ROUTE ran on directory: /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/6-cadence-innovus-power
+[05/17 12:37:44     17s] SPECIAL ROUTE ran on machine: rice-503-20-north (Linux 5.11.0-41-generic Xeon 2.40Ghz)
+[05/17 12:37:44     17s] 
+[05/17 12:37:44     17s] Begin option processing ...
+[05/17 12:37:44     17s] srouteConnectPowerBump set to false
+[05/17 12:37:44     17s] routeSelectNet set to "VDD VSS"
+[05/17 12:37:44     17s] routeSpecial set to true
+[05/17 12:37:44     17s] srouteConnectBlockPin set to false
+[05/17 12:37:44     17s] srouteConnectConverterPin set to false
+[05/17 12:37:44     17s] srouteConnectPadPin set to false
+[05/17 12:37:44     17s] srouteConnectStripe set to false
+[05/17 12:37:44     17s] srouteFollowCorePinEnd set to 3
+[05/17 12:37:44     17s] srouteFollowPadPin set to false
+[05/17 12:37:44     17s] srouteJogControl set to "preferWithChanges differentLayer"
+[05/17 12:37:44     17s] sroutePadPinAllPorts set to true
+[05/17 12:37:44     17s] sroutePreserveExistingRoutes set to true
+[05/17 12:37:44     17s] srouteRoutePowerBarPortOnBothDir set to true
+[05/17 12:37:44     17s] End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1950.00 megs.
+[05/17 12:37:44     17s] 
+[05/17 12:37:44     17s] Reading DB technology information...
+[05/17 12:37:44     17s] Finished reading DB technology information.
+[05/17 12:37:44     17s] Reading floorplan and netlist information...
+[05/17 12:37:44     17s] Finished reading floorplan and netlist information.
+[05/17 12:37:44     17s] Read in 13 layers, 6 routing layers, 1 overlap layer
+[05/17 12:37:44     17s] Read in 12 macros, 2 used
+[05/17 12:37:44     17s] Read in 2 components
+[05/17 12:37:44     17s]   2 core components: 2 unplaced, 0 placed, 0 fixed
+[05/17 12:37:44     17s] Read in 4 logical pins
+[05/17 12:37:44     17s] Read in 4 nets
+[05/17 12:37:44     17s] Read in 10 special nets
+[05/17 12:37:44     17s] Read in 4 terminals
+[05/17 12:37:44     17s] 2 nets selected.
+[05/17 12:37:44     17s] 
+[05/17 12:37:44     17s] Begin power routing ...
+[05/17 12:37:44     17s] CPU time for FollowPin 0 seconds
+[05/17 12:37:44     17s] CPU time for FollowPin 0 seconds
+[05/17 12:37:44     17s]   Number of Core ports routed: 0  open: 20
+[05/17 12:37:44     17s]   Number of Followpin connections: 10
+[05/17 12:37:44     17s] End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1955.00 megs.
+[05/17 12:37:44     17s] 
+[05/17 12:37:44     17s] 
+[05/17 12:37:44     17s] 
+[05/17 12:37:44     17s]  Begin updating DB with routing results ...
+[05/17 12:37:44     17s]  Updating DB with 0 via definition ...
+[05/17 12:37:44     17s] sroute created 10 wires.
+[05/17 12:37:44     17s] ViaGen created 0 via, deleted 0 via to avoid violation.
+[05/17 12:37:44     17s] +--------+----------------+----------------+
+[05/17 12:37:44     17s] |  Layer |     Created    |     Deleted    |
+[05/17 12:37:44     17s] +--------+----------------+----------------+
+[05/17 12:37:44     17s] |  met1  |       10       |       NA       |
+[05/17 12:37:44     17s] +--------+----------------+----------------+
+[05/17 12:37:44     17s] #% End sroute (date=05/17 12:37:44, total cpu=0:00:00.1, real=0:00:00.0, peak res=957.2M, current mem=957.2M)
+[05/17 12:37:44     17s] # set pmesh_bot $ADK_POWER_MESH_BOT_LAYER
 # set pmesh_top $ADK_POWER_MESH_TOP_LAYER
 # addRing -nets {VDD VSS} -type core_rings -follow core   \
         -layer [list top  $pmesh_top bottom $pmesh_top  \
@@ -659,22 +651,22 @@ viaInitial ends at Tue May 17 01:00:42 2022
         -offset $savedvars(p_ring_spacing)              \
         -extend_corner {tl tr bl br lt lb rt rb}
 <CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top 6 bottom 6 left 5 right 5} -width 4 -spacing 8 -offset 8 -extend_corner {tl tr bl br lt lb rt rb}
-[05/17 01:00:45     17s] #% Begin addRing (date=05/17 01:00:45, mem=951.0M)
-[05/17 01:00:45     17s] 
-[05/17 01:00:45     17s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 975.5M)
-[05/17 01:00:45     17s] Ring generation is complete.
-[05/17 01:00:45     17s] vias are now being generated.
-[05/17 01:00:45     17s] addRing created 8 wires.
-[05/17 01:00:45     17s] ViaGen created 8 vias, deleted 0 via to avoid violation.
-[05/17 01:00:45     17s] +--------+----------------+----------------+
-[05/17 01:00:45     17s] |  Layer |     Created    |     Deleted    |
-[05/17 01:00:45     17s] +--------+----------------+----------------+
-[05/17 01:00:45     17s] |  met4  |        4       |       NA       |
-[05/17 01:00:45     17s] |  via4  |        8       |        0       |
-[05/17 01:00:45     17s] |  met5  |        4       |       NA       |
-[05/17 01:00:45     17s] +--------+----------------+----------------+
-[05/17 01:00:45     17s] #% End addRing (date=05/17 01:00:45, total cpu=0:00:00.0, real=0:00:00.0, peak res=953.4M, current mem=953.4M)
-[05/17 01:00:45     17s] # set M1_min_width    [dbGet [dbGetLayerByZ 2].minWidth]
+[05/17 12:37:44     17s] #% Begin addRing (date=05/17 12:37:44, mem=957.2M)
+[05/17 12:37:44     17s] 
+[05/17 12:37:44     17s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 982.2M)
+[05/17 12:37:44     17s] Ring generation is complete.
+[05/17 12:37:44     17s] vias are now being generated.
+[05/17 12:37:44     17s] addRing created 8 wires.
+[05/17 12:37:44     17s] ViaGen created 8 vias, deleted 0 via to avoid violation.
+[05/17 12:37:44     17s] +--------+----------------+----------------+
+[05/17 12:37:44     17s] |  Layer |     Created    |     Deleted    |
+[05/17 12:37:44     17s] +--------+----------------+----------------+
+[05/17 12:37:44     17s] |  met4  |        4       |       NA       |
+[05/17 12:37:44     17s] |  via4  |        8       |        0       |
+[05/17 12:37:44     17s] |  met5  |        4       |       NA       |
+[05/17 12:37:44     17s] +--------+----------------+----------------+
+[05/17 12:37:44     17s] #% End addRing (date=05/17 12:37:44, total cpu=0:00:00.0, real=0:00:00.0, peak res=959.7M, current mem=959.7M)
+[05/17 12:37:44     17s] # set M1_min_width    [dbGet [dbGetLayerByZ 2].minWidth]
 # set M1_route_pitchX [dbGet [dbGetLayerByZ 2].pitchX]
 # set pmesh_bot_str_width [expr  8 *  3 * $M1_min_width   ]
 # set pmesh_bot_str_pitch [expr 4 * 10 * $M1_route_pitchX]
@@ -682,18 +674,18 @@ viaInitial ends at Tue May 17 01:00:42 2022
 # set pmesh_bot_str_interset_pitch   [expr 2*$pmesh_bot_str_pitch]
 # setViaGenMode -reset
 <CMD> setViaGenMode -reset
-[05/17 01:00:45     17s] # setViaGenMode -viarule_preference default
+[05/17 12:37:44     17s] # setViaGenMode -viarule_preference default
 <CMD> setViaGenMode -viarule_preference default
-[05/17 01:00:45     17s] Setting -viarule_preference to default order. ViaGen will consider via rule priority based on the order of appearance in the technology file.
-[05/17 01:00:45     17s] # setViaGenMode -ignore_DRC false
+[05/17 12:37:44     17s] Setting -viarule_preference to default order. ViaGen will consider via rule priority based on the order of appearance in the technology file.
+[05/17 12:37:44     17s] # setViaGenMode -ignore_DRC false
 <CMD> setViaGenMode -ignore_DRC false
-[05/17 01:00:45     17s] Setting -ignore_DRC to 0. ViaGen will do DRC check while creating vias.
-[05/17 01:00:45     17s] # setAddStripeMode -reset
+[05/17 12:37:44     17s] Setting -ignore_DRC to 0. ViaGen will do DRC check while creating vias.
+[05/17 12:37:44     17s] # setAddStripeMode -reset
 <CMD> setAddStripeMode -reset
-[05/17 01:00:45     17s] # setAddStripeMode -stacked_via_bottom_layer 2 \
+[05/17 12:37:44     17s] # setAddStripeMode -stacked_via_bottom_layer 2 \
                  -stacked_via_top_layer    $pmesh_top
 <CMD> setAddStripeMode -stacked_via_bottom_layer 2 -stacked_via_top_layer 6
-[05/17 01:00:45     17s] # addStripe -nets {VSS VDD} -layer $pmesh_bot -direction vertical \
+[05/17 12:37:44     17s] # addStripe -nets {VSS VDD} -layer $pmesh_bot -direction vertical \
     -width $pmesh_bot_str_width                                 \
     -spacing $pmesh_bot_str_intraset_spacing                    \
     -set_to_set_distance $pmesh_bot_str_interset_pitch          \
@@ -702,51 +694,51 @@ viaInitial ends at Tue May 17 01:00:42 2022
     -padcore_ring_top_layer_limit $pmesh_top                    \
     -start [expr $pmesh_bot_str_pitch]
 <CMD> addStripe -nets {VSS VDD} -layer 5 -direction vertical -width 3.36 -spacing 10.24 -set_to_set_distance 27.2 -max_same_layer_jog_length 13.6 -padcore_ring_bottom_layer_limit 5 -padcore_ring_top_layer_limit 6 -start 13.6
-[05/17 01:00:45     17s] #% Begin addStripe (date=05/17 01:00:45, mem=953.6M)
-[05/17 01:00:45     17s] 
-[05/17 01:00:45     17s] Initialize fgc environment(mem: 976.5M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 976.5M)
-[05/17 01:00:45     17s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 976.5M)
-[05/17 01:00:45     17s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 976.5M)
-[05/17 01:00:45     17s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 976.5M)
-[05/17 01:00:45     17s] Starting stripe generation ...
-[05/17 01:00:45     17s] Non-Default Mode Option Settings :
-[05/17 01:00:45     17s]   NONE
-[05/17 01:00:45     17s] **WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 15.280000 4.560000 15.280000 76.760002 with width 3.360000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, or the stripe would break the design rule.
-[05/17 01:00:45     17s] Type 'man IMPPP-354' for more detail.
-[05/17 01:00:45     17s] Stripe generation is complete.
-[05/17 01:00:45     17s] vias are now being generated.
-[05/17 01:00:45     17s] addStripe created 6 wires.
-[05/17 01:00:45     17s] ViaGen created 48 vias, deleted 0 via to avoid violation.
-[05/17 01:00:45     17s] +--------+----------------+----------------+
-[05/17 01:00:45     17s] |  Layer |     Created    |     Deleted    |
-[05/17 01:00:45     17s] +--------+----------------+----------------+
-[05/17 01:00:45     17s] |   via  |       12       |        0       |
-[05/17 01:00:45     17s] |  via2  |       12       |        0       |
-[05/17 01:00:45     17s] |  via3  |       12       |        0       |
-[05/17 01:00:45     17s] |  met4  |        6       |       NA       |
-[05/17 01:00:45     17s] |  via4  |       12       |        0       |
-[05/17 01:00:45     17s] +--------+----------------+----------------+
-[05/17 01:00:45     17s] #% End addStripe (date=05/17 01:00:45, total cpu=0:00:00.0, real=0:00:00.0, peak res=953.6M, current mem=953.5M)
-[05/17 01:00:45     17s] # set pmesh_top_str_width [expr  8 *  3 * $M1_min_width   ]
+[05/17 12:37:44     17s] #% Begin addStripe (date=05/17 12:37:44, mem=959.8M)
+[05/17 12:37:44     17s] 
+[05/17 12:37:44     17s] Initialize fgc environment(mem: 983.2M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 983.2M)
+[05/17 12:37:44     17s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 983.2M)
+[05/17 12:37:44     17s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 983.2M)
+[05/17 12:37:44     17s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 983.2M)
+[05/17 12:37:44     17s] Starting stripe generation ...
+[05/17 12:37:44     17s] Non-Default Mode Option Settings :
+[05/17 12:37:44     17s]   NONE
+[05/17 12:37:44     17s] **WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 15.280000 4.560000 15.280000 133.160004 with width 3.360000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, or the stripe would break the design rule.
+[05/17 12:37:44     17s] Type 'man IMPPP-354' for more detail.
+[05/17 12:37:44     17s] Stripe generation is complete.
+[05/17 12:37:44     17s] vias are now being generated.
+[05/17 12:37:44     17s] addStripe created 13 wires.
+[05/17 12:37:44     17s] ViaGen created 221 vias, deleted 0 via to avoid violation.
+[05/17 12:37:44     17s] +--------+----------------+----------------+
+[05/17 12:37:44     17s] |  Layer |     Created    |     Deleted    |
+[05/17 12:37:44     17s] +--------+----------------+----------------+
+[05/17 12:37:44     17s] |   via  |       65       |        0       |
+[05/17 12:37:44     17s] |  via2  |       65       |        0       |
+[05/17 12:37:44     17s] |  via3  |       65       |        0       |
+[05/17 12:37:44     17s] |  met4  |       13       |       NA       |
+[05/17 12:37:44     17s] |  via4  |       26       |        0       |
+[05/17 12:37:44     17s] +--------+----------------+----------------+
+[05/17 12:37:44     17s] #% End addStripe (date=05/17 12:37:44, total cpu=0:00:00.0, real=0:00:00.0, peak res=959.9M, current mem=959.9M)
+[05/17 12:37:44     17s] # set pmesh_top_str_width [expr  8 *  3 * $M1_min_width   ]
 # set pmesh_top_str_pitch [expr 4 * 10 * $M1_route_pitchX]
 # set pmesh_top_str_intraset_spacing [expr $pmesh_top_str_pitch - $pmesh_top_str_width]
 # set pmesh_top_str_interset_pitch   [expr 2*$pmesh_top_str_pitch]
 # setViaGenMode -reset
 <CMD> setViaGenMode -reset
-[05/17 01:00:45     17s] # setViaGenMode -viarule_preference default
+[05/17 12:37:44     17s] # setViaGenMode -viarule_preference default
 <CMD> setViaGenMode -viarule_preference default
-[05/17 01:00:45     17s] Setting -viarule_preference to default order. ViaGen will consider via rule priority based on the order of appearance in the technology file.
-[05/17 01:00:45     17s] # setViaGenMode -ignore_DRC false
+[05/17 12:37:44     17s] Setting -viarule_preference to default order. ViaGen will consider via rule priority based on the order of appearance in the technology file.
+[05/17 12:37:44     17s] # setViaGenMode -ignore_DRC false
 <CMD> setViaGenMode -ignore_DRC false
-[05/17 01:00:45     17s] Setting -ignore_DRC to 0. ViaGen will do DRC check while creating vias.
-[05/17 01:00:45     17s] # setAddStripeMode -reset
+[05/17 12:37:44     17s] Setting -ignore_DRC to 0. ViaGen will do DRC check while creating vias.
+[05/17 12:37:44     17s] # setAddStripeMode -reset
 <CMD> setAddStripeMode -reset
-[05/17 01:00:45     17s] -stacked_via_bottom_layer bottomLayer
-[05/17 01:00:45     17s] -stacked_via_top_layer topLayer
-[05/17 01:00:45     17s] # setAddStripeMode -stacked_via_bottom_layer $pmesh_bot \
+[05/17 12:37:44     17s] -stacked_via_bottom_layer bottomLayer
+[05/17 12:37:44     17s] -stacked_via_top_layer topLayer
+[05/17 12:37:44     17s] # setAddStripeMode -stacked_via_bottom_layer $pmesh_bot \
                  -stacked_via_top_layer    $pmesh_top
 <CMD> setAddStripeMode -stacked_via_bottom_layer 5 -stacked_via_top_layer 6
-[05/17 01:00:45     17s] # addStripe -nets {VSS VDD} -layer $pmesh_top -direction horizontal \
+[05/17 12:37:44     17s] # addStripe -nets {VSS VDD} -layer $pmesh_top -direction horizontal \
     -width $pmesh_top_str_width                                   \
     -spacing $pmesh_top_str_intraset_spacing                      \
     -set_to_set_distance $pmesh_top_str_interset_pitch            \
@@ -755,111 +747,110 @@ viaInitial ends at Tue May 17 01:00:42 2022
     -padcore_ring_top_layer_limit $pmesh_top                      \
     -start [expr $pmesh_top_str_pitch]
 <CMD> addStripe -nets {VSS VDD} -layer 6 -direction horizontal -width 3.36 -spacing 10.24 -set_to_set_distance 27.2 -max_same_layer_jog_length 13.6 -padcore_ring_bottom_layer_limit 5 -padcore_ring_top_layer_limit 6 -start 13.6
-[05/17 01:00:45     17s] #% Begin addStripe (date=05/17 01:00:45, mem=953.5M)
-[05/17 01:00:45     17s] 
-[05/17 01:00:45     17s] Initialize fgc environment(mem: 976.5M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 976.5M)
-[05/17 01:00:45     17s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 976.5M)
-[05/17 01:00:45     17s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 976.5M)
-[05/17 01:00:45     17s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 976.5M)
-[05/17 01:00:45     17s] Starting stripe generation ...
-[05/17 01:00:45     17s] Non-Default Mode Option Settings :
-[05/17 01:00:45     17s]   NONE
-[05/17 01:00:45     17s] **WARN: (IMPPP-531):	ViaGen Warning: Due to SPACING rule violation, viaGen fail to generate via on layer via4 at (5.60, 13.60) (8.98, 14.96).
-[05/17 01:00:45     17s] **WARN: (IMPPP-531):	ViaGen Warning: Due to SPACING rule violation, viaGen fail to generate via on layer via4 at (131.30, 13.60) (135.30, 14.96).
-[05/17 01:00:45     17s] **WARN: (IMPPP-354):	The power planner did not generate the horizontal stripe at 4.980000 15.280000 131.300003 15.280000 with width 3.360000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, or the stripe would break the design rule.
-[05/17 01:00:45     17s] Type 'man IMPPP-354' for more detail.
-[05/17 01:00:45     17s] Stripe generation is complete.
-[05/17 01:00:45     17s] vias are now being generated.
-[05/17 01:00:45     17s] **WARN: (IMPPP-4063):	Multi-CPU is set to 14 in addStripe automatically according to the free memory on the current machine.  When the number of CPU in setMultiCpuUsage is more than 14, addStripe gets worse runtime caused by data exchange and other time consuming operations
-[05/17 01:00:45     17s] Total CPU(s) requested: 14
-[05/17 01:00:45     17s] Total CPU(s) enabled with current License(s): 8
-[05/17 01:00:45     17s] Current free CPU(s): 8
-[05/17 01:00:46     17s] Additional license(s) checked out: 1 Innovus_CPU_Opt license(s) for 8 CPU(s)
-[05/17 01:00:46     17s] Total CPU(s) now enabled: 16
-[05/17 01:00:46     17s] Multi-CPU acceleration using 14 CPU(s).
-[05/17 01:00:46     17s] Multi-CPU acceleration using 14 CPU(s).
-[05/17 01:00:46     17s] Multi-CPU acceleration using 14 CPU(s).
-[05/17 01:00:46     18s] Multi-CPU acceleration using 14 CPU(s).
-[05/17 01:00:46     18s] addStripe created 2 wires.
-[05/17 01:00:46     18s] ViaGen created 10 vias, deleted 0 via to avoid violation.
-[05/17 01:00:46     18s] +--------+----------------+----------------+
-[05/17 01:00:46     18s] |  Layer |     Created    |     Deleted    |
-[05/17 01:00:46     18s] +--------+----------------+----------------+
-[05/17 01:00:46     18s] |  via4  |       10       |        0       |
-[05/17 01:00:46     18s] |  met5  |        2       |       NA       |
-[05/17 01:00:46     18s] +--------+----------------+----------------+
-[05/17 01:00:46     18s] #% End addStripe (date=05/17 01:00:46, total cpu=0:00:00.5, real=0:00:01.0, peak res=954.1M, current mem=954.1M)
-[05/17 01:00:46     18s] ### End verbose source output for 'scripts/power-strategy-singlemesh.tcl'.
-[05/17 01:00:46     18s] ### End verbose source output for 'scripts/main.tcl'.
-[05/17 01:00:46     18s] <CMD> getVersion
-[05/17 01:00:46     18s] <CMD> saveDesign checkpoints/design.checkpoint/save.enc -user_path
-[05/17 01:00:46     18s] #% Begin save design ... (date=05/17 01:00:46, mem=954.3M)
-[05/17 01:00:46     18s] % Begin Save ccopt configuration ... (date=05/17 01:00:46, mem=957.3M)
-[05/17 01:00:46     18s] % End Save ccopt configuration ... (date=05/17 01:00:46, total cpu=0:00:00.0, real=0:00:00.0, peak res=959.2M, current mem=959.2M)
-[05/17 01:00:46     18s] % Begin Save netlist data ... (date=05/17 01:00:46, mem=979.3M)
-[05/17 01:00:46     18s] Writing Binary DB to checkpoints/design.checkpoint/save.enc.dat/vbin/ringosc.v.bin in multi-threaded mode...
-[05/17 01:00:46     18s] % End Save netlist data ... (date=05/17 01:00:46, total cpu=0:00:00.0, real=0:00:00.0, peak res=980.9M, current mem=980.2M)
-[05/17 01:00:46     18s] Saving symbol-table file in separate thread ...
-[05/17 01:00:46     18s] Saving congestion map file in separate thread ...
-[05/17 01:00:46     18s] % Begin Save AAE data ... (date=05/17 01:00:46, mem=980.5M)
-[05/17 01:00:46     18s] Saving AAE Data ...
-[05/17 01:00:46     18s] Saving congestion map file checkpoints/design.checkpoint/save.enc.dat/ringosc.route.congmap.gz ...
-[05/17 01:00:46     18s] % End Save AAE data ... (date=05/17 01:00:46, total cpu=0:00:00.0, real=0:00:00.0, peak res=980.6M, current mem=980.6M)
-[05/17 01:00:46     18s] Saving preference file checkpoints/design.checkpoint/save.enc.dat/gui.pref.tcl ...
-[05/17 01:00:46     18s] Saving mode setting ...
-[05/17 01:00:47     18s] Saving global file ...
-[05/17 01:00:47     18s] Saving Drc markers ...
-[05/17 01:00:47     18s] ... 9 markers are saved ...
-[05/17 01:00:47     18s] ... 0 geometry drc markers are saved ...
-[05/17 01:00:47     18s] ... 0 antenna drc markers are saved ...
-[05/17 01:00:47     18s] Saving special route data file in separate thread ...
-[05/17 01:00:47     18s] Saving PG file in separate thread ...
-[05/17 01:00:47     18s] Saving placement file in separate thread ...
-[05/17 01:00:47     18s] Saving route file in separate thread ...
-[05/17 01:00:47     18s] Saving property file in separate thread ...
-[05/17 01:00:47     18s] ** Saving stdCellPlacement_binary (version# 2) ...
-[05/17 01:00:47     18s] Save Adaptive View Pruning View Names to Binary file
-[05/17 01:00:47     18s] TAT_INFO: ::saveSpecialRoute REAL = 0 : CPU = 0 : MEM = 0.
-[05/17 01:00:47     18s] Saving PG file checkpoints/design.checkpoint/save.enc.dat/ringosc.pg.gz, version#2, (Created by Innovus v20.13-s083_1 on Tue May 17 01:00:47 2022)
-[05/17 01:00:47     18s] *** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=1037.1M) ***
-[05/17 01:00:47     18s] Saving property file checkpoints/design.checkpoint/save.enc.dat/ringosc.prop
-[05/17 01:00:47     18s] *** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1037.1M) ***
-[05/17 01:00:47     18s] *** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1037.1M) ***
-[05/17 01:00:47     18s] TAT_INFO: ::savePGFile REAL = 0 : CPU = 0 : MEM = 0.
-[05/17 01:00:47     18s] TAT_INFO: ::savePlace REAL = 0 : CPU = 0 : MEM = 0.
-[05/17 01:00:47     18s] *** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1037.1M) ***
-[05/17 01:00:47     18s] TAT_INFO: ::saveRoute REAL = 0 : CPU = 0 : MEM = 0.
-[05/17 01:00:47     18s] TAT_INFO: ::db::saveAnnotationAndProp REAL = 0 : CPU = 0 : MEM = 0.
-[05/17 01:00:47     18s] TAT_INFO: ::db::saveSymbolTable REAL = 1 : CPU = 0 : MEM = 0.
-[05/17 01:00:47     18s] TAT_INFO: ::saveCongMap REAL = 1 : CPU = 0 : MEM = 0.
-[05/17 01:00:48     18s] % Begin Save power constraints data ... (date=05/17 01:00:47, mem=988.9M)
-[05/17 01:00:48     18s] % End Save power constraints data ... (date=05/17 01:00:48, total cpu=0:00:00.0, real=0:00:00.0, peak res=989.1M, current mem=989.1M)
-[05/17 01:00:48     18s] Generated self-contained design save.enc.dat
-[05/17 01:00:48     18s] #% End save design ... (date=05/17 01:00:48, total cpu=0:00:00.7, real=0:00:02.0, peak res=1019.7M, current mem=992.1M)
-[05/17 01:00:48     18s] *** Message Summary: 0 warning(s), 0 error(s)
-[05/17 01:00:48     18s] 
-[05/17 01:00:48     18s] 
-[05/17 01:00:48     18s] *** Memory Usage v#2 (Current mem = 1047.473M, initial mem = 275.727M) ***
-[05/17 01:00:48     18s] 
-[05/17 01:00:48     18s] *** Summary of all messages that are not suppressed in this session:
-[05/17 01:00:48     18s] Severity  ID               Count  Summary                                  
-[05/17 01:00:48     18s] WARNING   IMPLF-63             2  The layer '%s' referenced %s is not foun...
-[05/17 01:00:48     18s] WARNING   IMPLF-200           24  Pin '%s' in macro '%s' has no ANTENNAGAT...
-[05/17 01:00:48     18s] WARNING   IMPLF-201           12  Pin '%s' in macro '%s' has no ANTENNADIF...
-[05/17 01:00:48     18s] WARNING   IMPFP-3961           8  The techSite '%s' has no related standar...
-[05/17 01:00:48     18s] WARNING   IMPPTN-867           1  Found use of %s. This will continue to w...
-[05/17 01:00:48     18s] WARNING   IMPTS-124            2  Timing library description of pin '%s' i...
-[05/17 01:00:48     18s] WARNING   IMPVL-159            2  Pin '%s' of cell '%s' is defined in LEF ...
-[05/17 01:00:48     18s] WARNING   IMPDB-2078           1  Output pin %s of instance %s is connecte...
-[05/17 01:00:48     18s] ERROR     IMPDB-1221           2  A global net connection rule was specifi...
-[05/17 01:00:48     18s] WARNING   IMPDB-1261           2  No PG pin '%s' in instances with basenam...
-[05/17 01:00:48     18s] WARNING   IMPESI-3505          1  setDelayCalMode -eng_%s (default=%s) wil...
-[05/17 01:00:48     18s] WARNING   IMPPP-531            2  ViaGen Warning: Due to %s rule violation...
-[05/17 01:00:48     18s] WARNING   IMPPP-354            2  The power planner did not generate the %...
-[05/17 01:00:48     18s] WARNING   IMPPP-4063           1  Multi-CPU is set to %d in addStripe auto...
-[05/17 01:00:48     18s] WARNING   IMPOPT-3001          1  Inverter footprint is not defined or is ...
-[05/17 01:00:48     18s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
-[05/17 01:00:48     18s] WARNING   IMPPSP-1003          1  Found use of '%s'. This will continue to...
-[05/17 01:00:48     18s] *** Message Summary: 63 warning(s), 2 error(s)
-[05/17 01:00:48     18s] 
-[05/17 01:00:48     18s] --- Ending "Innovus" (totcpu=0:00:18.9, real=0:00:30.0, mem=1047.5M) ---
+[05/17 12:37:44     17s] #% Begin addStripe (date=05/17 12:37:44, mem=959.9M)
+[05/17 12:37:44     17s] 
+[05/17 12:37:44     17s] Initialize fgc environment(mem: 983.2M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 983.2M)
+[05/17 12:37:44     17s] Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 983.2M)
+[05/17 12:37:44     17s] Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 983.2M)
+[05/17 12:37:44     17s] Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 983.2M)
+[05/17 12:37:44     17s] Starting stripe generation ...
+[05/17 12:37:44     17s] Non-Default Mode Option Settings :
+[05/17 12:37:44     17s]   NONE
+[05/17 12:37:44     17s] **WARN: (IMPPP-531):	ViaGen Warning: Due to SPACING rule violation, viaGen fail to generate via on layer via4 at (5.60, 13.60) (8.98, 14.96).
+[05/17 12:37:44     17s] **WARN: (IMPPP-531):	ViaGen Warning: Due to SPACING rule violation, viaGen fail to generate via on layer via4 at (214.60, 13.60) (218.60, 14.96).
+[05/17 12:37:44     17s] **WARN: (IMPPP-354):	The power planner did not generate the horizontal stripe at 4.980000 15.280000 214.600006 15.280000 with width 3.360000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, or the stripe would break the design rule.
+[05/17 12:37:44     17s] Type 'man IMPPP-354' for more detail.
+[05/17 12:37:44     17s] Stripe generation is complete.
+[05/17 12:37:44     17s] vias are now being generated.
+[05/17 12:37:44     17s] **WARN: (IMPPP-4063):	Multi-CPU is set to 15 in addStripe automatically according to the free memory on the current machine.  When the number of CPU in setMultiCpuUsage is more than 15, addStripe gets worse runtime caused by data exchange and other time consuming operations
+[05/17 12:37:44     17s] Total CPU(s) requested: 15
+[05/17 12:37:44     17s] Total CPU(s) enabled with current License(s): 8
+[05/17 12:37:44     17s] Current free CPU(s): 8
+[05/17 12:37:44     17s] Additional license(s) checked out: 1 Innovus_CPU_Opt license(s) for 8 CPU(s)
+[05/17 12:37:44     17s] Total CPU(s) now enabled: 16
+[05/17 12:37:44     17s] Multi-CPU acceleration using 15 CPU(s).
+[05/17 12:37:44     17s] Multi-CPU acceleration using 15 CPU(s).
+[05/17 12:37:44     17s] Multi-CPU acceleration using 15 CPU(s).
+[05/17 12:37:44     17s] Multi-CPU acceleration using 15 CPU(s).
+[05/17 12:37:44     17s] addStripe created 7 wires.
+[05/17 12:37:44     17s] ViaGen created 60 vias, deleted 0 via to avoid violation.
+[05/17 12:37:44     17s] +--------+----------------+----------------+
+[05/17 12:37:44     17s] |  Layer |     Created    |     Deleted    |
+[05/17 12:37:44     17s] +--------+----------------+----------------+
+[05/17 12:37:44     17s] |  via4  |       60       |        0       |
+[05/17 12:37:44     17s] |  met5  |        7       |       NA       |
+[05/17 12:37:44     17s] +--------+----------------+----------------+
+[05/17 12:37:44     17s] #% End addStripe (date=05/17 12:37:44, total cpu=0:00:00.5, real=0:00:00.0, peak res=960.7M, current mem=960.7M)
+[05/17 12:37:44     17s] ### End verbose source output for 'scripts/power-strategy-singlemesh.tcl'.
+[05/17 12:37:44     17s] ### End verbose source output for 'scripts/main.tcl'.
+[05/17 12:37:44     17s] <CMD> getVersion
+[05/17 12:37:44     17s] <CMD> saveDesign checkpoints/design.checkpoint/save.enc -user_path
+[05/17 12:37:45     17s] #% Begin save design ... (date=05/17 12:37:45, mem=960.9M)
+[05/17 12:37:45     17s] % Begin Save ccopt configuration ... (date=05/17 12:37:45, mem=963.9M)
+[05/17 12:37:45     17s] % End Save ccopt configuration ... (date=05/17 12:37:45, total cpu=0:00:00.0, real=0:00:00.0, peak res=965.8M, current mem=965.8M)
+[05/17 12:37:45     17s] % Begin Save netlist data ... (date=05/17 12:37:45, mem=985.9M)
+[05/17 12:37:45     17s] Writing Binary DB to checkpoints/design.checkpoint/save.enc.dat/vbin/ringosc.v.bin in multi-threaded mode...
+[05/17 12:37:45     17s] % End Save netlist data ... (date=05/17 12:37:45, total cpu=0:00:00.0, real=0:00:00.0, peak res=987.4M, current mem=986.8M)
+[05/17 12:37:45     17s] Saving symbol-table file in separate thread ...
+[05/17 12:37:45     17s] Saving congestion map file in separate thread ...
+[05/17 12:37:45     17s] % Begin Save AAE data ... (date=05/17 12:37:45, mem=987.0M)
+[05/17 12:37:45     17s] Saving AAE Data ...
+[05/17 12:37:45     17s] Saving congestion map file checkpoints/design.checkpoint/save.enc.dat/ringosc.route.congmap.gz ...
+[05/17 12:37:45     17s] % End Save AAE data ... (date=05/17 12:37:45, total cpu=0:00:00.0, real=0:00:00.0, peak res=987.1M, current mem=987.1M)
+[05/17 12:37:45     17s] Saving preference file checkpoints/design.checkpoint/save.enc.dat/gui.pref.tcl ...
+[05/17 12:37:45     17s] Saving mode setting ...
+[05/17 12:37:45     17s] Saving global file ...
+[05/17 12:37:45     17s] Saving Drc markers ...
+[05/17 12:37:45     17s] ... 21 markers are saved ...
+[05/17 12:37:45     17s] ... 0 geometry drc markers are saved ...
+[05/17 12:37:45     17s] ... 0 antenna drc markers are saved ...
+[05/17 12:37:45     17s] Saving special route data file in separate thread ...
+[05/17 12:37:45     17s] Saving PG file in separate thread ...
+[05/17 12:37:45     17s] Saving placement file in separate thread ...
+[05/17 12:37:45     17s] Saving route file in separate thread ...
+[05/17 12:37:45     17s] Saving property file in separate thread ...
+[05/17 12:37:45     17s] ** Saving stdCellPlacement_binary (version# 2) ...
+[05/17 12:37:45     17s] Save Adaptive View Pruning View Names to Binary file
+[05/17 12:37:45     17s] TAT_INFO: ::saveSpecialRoute REAL = 0 : CPU = 0 : MEM = 0.
+[05/17 12:37:45     17s] Saving PG file checkpoints/design.checkpoint/save.enc.dat/ringosc.pg.gz, version#2, (Created by Innovus v20.13-s083_1 on Tue May 17 12:37:45 2022)
+[05/17 12:37:45     17s] Saving property file checkpoints/design.checkpoint/save.enc.dat/ringosc.prop
+[05/17 12:37:45     17s] *** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=1042.9M) ***
+[05/17 12:37:45     17s] *** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1042.9M) ***
+[05/17 12:37:45     17s] *** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1042.8M) ***
+[05/17 12:37:45     17s] TAT_INFO: ::savePGFile REAL = 0 : CPU = 0 : MEM = 0.
+[05/17 12:37:45     17s] TAT_INFO: ::savePlace REAL = 0 : CPU = 0 : MEM = 0.
+[05/17 12:37:45     17s] *** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1042.8M) ***
+[05/17 12:37:45     17s] TAT_INFO: ::saveRoute REAL = 0 : CPU = 0 : MEM = 0.
+[05/17 12:37:45     17s] TAT_INFO: ::db::saveAnnotationAndProp REAL = 0 : CPU = 0 : MEM = 0.
+[05/17 12:37:46     18s] TAT_INFO: ::db::saveSymbolTable REAL = 0 : CPU = 0 : MEM = 0.
+[05/17 12:37:46     18s] TAT_INFO: ::saveCongMap REAL = 0 : CPU = 0 : MEM = 0.
+[05/17 12:37:46     18s] % Begin Save power constraints data ... (date=05/17 12:37:46, mem=995.5M)
+[05/17 12:37:46     18s] % End Save power constraints data ... (date=05/17 12:37:46, total cpu=0:00:00.0, real=0:00:00.0, peak res=995.6M, current mem=995.6M)
+[05/17 12:37:46     18s] Generated self-contained design save.enc.dat
+[05/17 12:37:46     18s] #% End save design ... (date=05/17 12:37:46, total cpu=0:00:00.7, real=0:00:01.0, peak res=1026.3M, current mem=998.6M)
+[05/17 12:37:46     18s] *** Message Summary: 0 warning(s), 0 error(s)
+[05/17 12:37:46     18s] 
+[05/17 12:37:46     18s] 
+[05/17 12:37:46     18s] *** Memory Usage v#2 (Current mem = 1053.207M, initial mem = 275.727M) ***
+[05/17 12:37:46     18s] 
+[05/17 12:37:46     18s] *** Summary of all messages that are not suppressed in this session:
+[05/17 12:37:46     18s] Severity  ID               Count  Summary                                  
+[05/17 12:37:46     18s] WARNING   IMPLF-63             2  The layer '%s' referenced %s is not foun...
+[05/17 12:37:46     18s] WARNING   IMPLF-200           24  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[05/17 12:37:46     18s] WARNING   IMPLF-201           12  Pin '%s' in macro '%s' has no ANTENNADIF...
+[05/17 12:37:46     18s] WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+[05/17 12:37:46     18s] WARNING   IMPPTN-867           1  Found use of %s. This will continue to w...
+[05/17 12:37:46     18s] WARNING   IMPTS-124            2  Timing library description of pin '%s' i...
+[05/17 12:37:46     18s] WARNING   IMPVL-159            2  Pin '%s' of cell '%s' is defined in LEF ...
+[05/17 12:37:46     18s] ERROR     IMPDB-1221           2  A global net connection rule was specifi...
+[05/17 12:37:46     18s] WARNING   IMPDB-1261           2  No PG pin '%s' in instances with basenam...
+[05/17 12:37:46     18s] WARNING   IMPESI-3505          1  setDelayCalMode -eng_%s (default=%s) wil...
+[05/17 12:37:46     18s] WARNING   IMPPP-531            2  ViaGen Warning: Due to %s rule violation...
+[05/17 12:37:46     18s] WARNING   IMPPP-354            2  The power planner did not generate the %...
+[05/17 12:37:46     18s] WARNING   IMPPP-4063           1  Multi-CPU is set to %d in addStripe auto...
+[05/17 12:37:46     18s] WARNING   IMPOPT-3001          1  Inverter footprint is not defined or is ...
+[05/17 12:37:46     18s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[05/17 12:37:46     18s] WARNING   IMPPSP-1003          1  Found use of '%s'. This will continue to...
+[05/17 12:37:46     18s] *** Message Summary: 58 warning(s), 2 error(s)
+[05/17 12:37:46     18s] 
+[05/17 12:37:46     18s] --- Ending "Innovus" (totcpu=0:00:18.4, real=0:00:28.0, mem=1053.2M) ---

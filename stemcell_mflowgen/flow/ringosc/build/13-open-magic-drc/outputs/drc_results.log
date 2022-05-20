@@ -1,0 +1,36 @@
+
+Magic 8.3 revision 285 - Compiled on Mon Apr  4 15:36:51 PDT 2022.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(vendor): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    mvobsactive ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Loading "run_drc.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 3.0
+Library name: stdcells
+Reading "ringosc".
+Reading "sky130_asc_pfet_01v8_lvt_12".
+Reading "sky130_asc_pfet_01v8_lvt_60".
+Reading "M1M2_PR".
+Reading "L1M1_PR".
+Reading "ringosc_VIA0".
+Reading "ringosc_VIA1".
+Reading "ringosc_VIA2".
+Reading "ringosc_VIA3".
+Reading "ringosc_VIA4".
+Reading "ringosc_VIA5".
+Reading "ringosc_VIA6".
+Reading "ringosc_VIA7".
+Reading "ringosc_VIA8".
+Reading "ringosc_VIA9".
+DRC style is now "drc(full)"
+Loading DRC CIF style.
+Cell ringosc has 168 error tiles.
+Total DRC errors found: 0

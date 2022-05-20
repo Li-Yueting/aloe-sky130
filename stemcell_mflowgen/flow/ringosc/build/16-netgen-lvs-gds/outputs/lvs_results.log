@@ -1,0 +1,63 @@
+
+Cell sky130_asc_pfet_01v8_lvt_60 disconnected node: VGND
+Class sky130_asc_pfet_01v8_lvt_60:  Merged 59 devices.
+Warning: Equate pins:  cell sky130_asc_pfet_01v8_lvt_60 has no definition, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_asc_pfet_01v8_lvt_60     |Circuit 2: sky130_asc_pfet_01v8_lvt_60     
+-------------------------------------------|-------------------------------------------
+GATE                                       |GATE                                       
+SOURCE                                     |SOURCE                                     
+DRAIN                                      |DRAIN                                      
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_asc_pfet_01v8_lvt_60 and sky130_asc_pfet_01v8_lvt_60 are equivalent.
+
+Cell sky130_asc_pfet_01v8_lvt_12 disconnected node: VGND
+Class sky130_asc_pfet_01v8_lvt_12:  Merged 11 devices.
+Warning: Equate pins:  cell sky130_asc_pfet_01v8_lvt_12 has no definition, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_asc_pfet_01v8_lvt_12     |Circuit 2: sky130_asc_pfet_01v8_lvt_12     
+-------------------------------------------|-------------------------------------------
+GATE                                       |GATE                                       
+SOURCE                                     |SOURCE                                     
+DRAIN                                      |DRAIN                                      
+VGND                                       |VGND                                       
+VPWR                                       |VPWR                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_asc_pfet_01v8_lvt_12 and sky130_asc_pfet_01v8_lvt_12 are equivalent.
+
+Cell ringosc disconnected node: va
+Cell ringosc disconnected node: vb
+Cell ringosc disconnected node: vc
+Cell ringosc disconnected node: vbg
+
+Subcircuit summary:
+Circuit 1: ringosc                         |Circuit 2: ringosc                         
+-------------------------------------------|-------------------------------------------
+sky130_asc_pfet_01v8_lvt_60 (3)            |sky130_asc_pfet_01v8_lvt_60 (3)            
+sky130_asc_pfet_01v8_lvt_12 (1)            |sky130_asc_pfet_01v8_lvt_12 (1)            
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match with 2 symmetries.
+Circuits match correctly.
+
+Subcircuit pins:
+Circuit 1: ringosc                         |Circuit 2: ringosc                         
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+(no matching pin)                          |va                                         
+(no matching pin)                          |vb                                         
+(no matching pin)                          |vc                                         
+(no matching pin)                          |vbg                                        
+---------------------------------------------------------------------------------------
+Cell pin lists for ringosc and ringosc altered to match.
+The top level cell failed pin matching.

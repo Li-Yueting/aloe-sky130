@@ -1,0 +1,58 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/ringosc.dv
+dv_start unmatched                                
+dv_cell {ringosc} {ringosc} unmatched
+dv_obj_count -transformed_nets {10 6} -transformed_inst {4 4} -transformed_port {6 6}
+dv_discrep 1 {Incorrect Nets} -inst_count { 1 2}
+dv_discrep_line {Net } -lnet {vb} {                                                    } -snet {vb} {}
+dv_discrep_line {--- 1 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  } -sinst {XM2} {:}  {DRAIN} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 2 {Incorrect Nets} -inst_count { 1 2}
+dv_discrep_line {Net } -lnet {vbg} {                                                   } -snet {vbg} {}
+dv_discrep_line {--- 1 Connections On This Net ---                         --- 2 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  } -sinst {XM3} {:}  {DRAIN} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 3 {Incorrect Nets} -inst_count { 4 4}
+dv_discrep_line {Net } -lnet {vc} {                                                    } -snet {vc} {}
+dv_discrep_line {    } -lnet {sky130_asc_pfet_01v8_lvt_60_2/GATE} {                   }
+dv_discrep_line {--- 4 Connections On This Net ---                         --- 4 Connections On This Net ---}
+dv_discrep_line {}
+dv_discrep 4 {Incorrect Nets} -inst_count { 3 3}
+dv_discrep_line {Net } -lnet {va} {                                                    } -snet {va} {}
+dv_discrep_line {    } -lnet {sky130_asc_pfet_01v8_lvt_60_2/DRAIN} {                  }
+dv_discrep_line {--- 3 Connections On This Net ---                         --- 3 Connections On This Net ---}
+dv_discrep_line {}
+dv_discrep 5 {Incorrect Nets} -inst_count { 1 0}
+dv_discrep_line {Net } -lnet {sky130_asc_pfet_01v8_lvt_60_0/DRAIN} {                   ** missing net **}
+dv_discrep_line {}
+dv_discrep 6 {Incorrect Nets} -inst_count { 1 0}
+dv_discrep_line {Net } -lnet {sky130_asc_pfet_01v8_lvt_60_1/DRAIN} {                   ** missing net **}
+dv_discrep_line {}
+dv_discrep -1 {Detailed Instance Connections}
+dv_discrep_line {}
+dv_discrep_line {} -linst {Xsky130_asc_pfet_01v8_lvt_60_0} {  sky130_asc_pfet_01v8_lvt_60    } -sinst {XM2} {  sky130_asc_pfet_01v8_lvt_60}
+dv_discrep_line {  } -lport {GATE} {: } -lnet {sky130_asc_pfet_01v8_lvt_60_2/GATE} {                  } -sport {GATE} {: } -snet {vc} {}
+dv_discrep_line {  } -lport {SOURCE} {: } -lnet {VDD} {                                               } -sport {SOURCE} {: } -snet {VDD} {}
+dv_discrep_line {  } -lport {VGND} {: } -lnet {VSS} {                                                 } -sport {VGND} {: } -snet {VSS} {}
+dv_discrep_line {  } -lport {VPWR} {: } -lnet {VDD} {                                                 } -sport {VPWR} {: } -snet {VDD} {}
+dv_discrep_line {  } -lport {DRAIN} {: } -lnet {sky130_asc_pfet_01v8_lvt_60_0/DRAIN} {                ** missing net **}
+dv_discrep_line {  ** } -lnet {vb} { **                                                  } -sport {DRAIN} {: } -snet {vb} {}
+dv_discrep_line {}
+dv_discrep_line {--------------------------------------------------------------------------------------------------------------}
+dv_discrep_line {}
+dv_discrep_line {} -linst {Xsky130_asc_pfet_01v8_lvt_60_1} {  sky130_asc_pfet_01v8_lvt_60    } -sinst {XM3} {  sky130_asc_pfet_01v8_lvt_60}
+dv_discrep_line {  } -lport {GATE} {: } -lnet {sky130_asc_pfet_01v8_lvt_60_2/GATE} {                  } -sport {GATE} {: } -snet {vc} {}
+dv_discrep_line {  } -lport {SOURCE} {: } -lnet {VDD} {                                               } -sport {SOURCE} {: } -snet {VDD} {}
+dv_discrep_line {  } -lport {VGND} {: } -lnet {VSS} {                                                 } -sport {VGND} {: } -snet {VSS} {}
+dv_discrep_line {  } -lport {VPWR} {: } -lnet {VDD} {                                                 } -sport {VPWR} {: } -snet {VDD} {}
+dv_discrep_line {  } -lport {DRAIN} {: } -lnet {sky130_asc_pfet_01v8_lvt_60_1/DRAIN} {                ** missing net **}
+dv_discrep_line {  ** } -lnet {vbg} { **                                                 } -sport {DRAIN} {: } -snet {vbg} {}
+dv_discrep_line {}
+dv_end

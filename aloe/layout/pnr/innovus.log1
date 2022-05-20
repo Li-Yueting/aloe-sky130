@@ -1,0 +1,271 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.13-s083_1, built Tue Jan 19 16:51:46 PST 2021
+Options:	-nologv -init top.tcl -cpus 4 
+Date:		Tue May 17 16:07:06 2022
+Host:		rice-503-20-north (x86_64 w/Linux 5.11.0-41-generic) (20cores*40cpus*Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz 28160KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+**WARN: (IMPSYT-1507):	The display is invalid and will start in no window mode
+Change the soft stacksize limit to 0.2%RAM (383 mbytes). Set global soft_stack_size_limit to change the value.
+setMultiCpuUsage -localCpu 4
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+Sourcing file "top.tcl" ...
+<CMD> setDistributeHost -local
+The timeout for a remote job to respond is 3600 seconds.
+Submit command for task runs will be: local
+<CMD> define_proc_arguments cal_nl -info {Writes TCL scripts to run.
+} -define_args {{-n "current run number" "int_value" int required}
+    {-l "length of zero-padding" "int_value" int required}
+    {-d "expression directory" "none" string required}
+    {-b "blk_name" "none" string optional}
+    }
+<CMD> define_proc_arguments areaRatio -info {Compute the ratio of the group-elements-cumulated-area to the group-bounding-box-area. 
+} -define_args {
+    {-group "Group name" "none" string {required}}
+  }
+<CMD> define_proc_arguments swap_cells -info {Writes TCL scripts to run.
+} -define_args {{-net "net name" "none" string required}
+    {-tail "tied cell identifying string" "none" string optional}
+    }
+<CMD> define_proc_arguments pnr -info {Writes TCL scripts to run.
+} -define_args {{-g "generation" "none" string required}
+	{-gennum "generation num" "int_value" int required}
+	{-n "population size" "int_value" int required}
+	{-pnr_dir "place and route directroy" "none" string required}
+	{-t "timed" "" boolean optional}
+	}
+<CMD> define_proc_arguments save_lvs_netlist -define_args {{-dcapNamePattern "regex pattern of dcaps" "none" string required} {-fVerilog "file name to be saved" "none" string required} {-flat "export flat or hierarchical verilog" "" boolean optional} }
+<CMD> set_message -id NRIG-39 -suppress
+<CMD> set_message -id IMPLF-201 -suppress
+<CMD> set_message -id IMPLF-44 -suppress
+<CMD> set_message -id IMPSP-9513 -suppress
+<CMD> set_message -id IMPSP-9514 -suppress
+<CMD> set_message -id IMPDB-2078 -suppress
+<CMD> setMessageLimit 5
+<CMD> set ::TimeLib::tsgMarkCellLatchConstructFlag 1
+<CMD> get_message -id GLOBAL-100 -suppress
+<CMD> get_message -id GLOBAL-100 -suppress
+<CMD> set _timing_save_restore_compression_mode hybrid
+<CMD> set conf_qxconf_file NULL
+<CMD> set conf_qxlib_file NULL
+<CMD> set defHierChar /
+<CMD> set distributed_client_message_echo 1
+<CMD> set distributed_mmmc_disable_reports_auto_redirection 0
+<CMD> set gpsPrivate::dpgNewAddBufsDBUpdate 1
+<CMD> set gpsPrivate::lsgEnableNewDbApiInRestruct 1
+<CMD> set init_gnd_net VSS
+<CMD> set init_io_file {}
+<CMD> set init_lef_file {/home/users/xingyuni/ee372/aloe-sky130/aloe/stemcell/rtk-tech.tlef  /home/users/xingyuni/ee372/aloe-sky130/aloe/stemcell/stdcells.lef}
+<CMD> set init_pwr_net VDD
+<CMD> set init_top_cell bgr_top
+<CMD> set init_verilog /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/examples/bgr_top/bgr_top.v
+<CMD> get_message -id GLOBAL-100 -suppress
+<CMD> get_message -id GLOBAL-100 -suppress
+<CMD> set latch_time_borrow_mode max_borrow
+<CMD> set pegDefaultResScaleFactor 1.000000
+<CMD> set pegDetailResScaleFactor 1.000000
+<CMD> get_message -id GLOBAL-100 -suppress
+<CMD> get_message -id GLOBAL-100 -suppress
+<CMD> set report_inactive_arcs_format {from to when arc_type sense reason}
+<CMD> set timing_library_load_pin_cap_indices {}
+<CMD> set timing_library_write_library_to_directory {}
+<CMD> set tso_post_client_restore_command {update_timing ; write_eco_opt_db ;}
+<CMD> set init_design_uniquify 1
+<CMD> init_design
+
+Loading LEF file /home/users/xingyuni/ee372/aloe-sky130/aloe/stemcell/rtk-tech.tlef ...
+
+Loading LEF file /home/users/xingyuni/ee372/aloe-sky130/aloe/stemcell/stdcells.lef ...
+WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/users/xingyuni/ee372/aloe-sky130/aloe/stemcell/stdcells.lef at line 2.
+Set DBUPerIGU to M1 pitch 460.
+**WARN: (IMPLF-63):	The layer 'obsm4' referenced in OBS in macro 'sky130_asc_cap_mim_m3_1' is not found in the database. The obstruction geometries specified on the layer are being ignored. A layer must be defined in the LEF technology LAYER section before it can be referenced from a macro. Review the LEF files specified in the init_lef_file variable to see if the layer does not exist or is specified after the one that defines the macro.
+Type 'man IMPLF-63' for more detail.
+**WARN: (IMPLF-63):	The layer 'obsm5' referenced in OBS in macro 'sky130_asc_cap_mim_m3_1' is not found in the database. The obstruction geometries specified on the layer are being ignored. A layer must be defined in the LEF technology LAYER section before it can be referenced from a macro. Review the LEF files specified in the init_lef_file variable to see if the layer does not exist or is specified after the one that defines the macro.
+Type 'man IMPLF-63' for more detail.
+**WARN: (IMPLF-201):	Pin 'GATE' in macro 'sky130_asc_pfet_01v8_lvt_9' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'SOURCE' in macro 'sky130_asc_pfet_01v8_lvt_9' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'DRAIN' in macro 'sky130_asc_pfet_01v8_lvt_9' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'Cin' in macro 'sky130_asc_cap_mim_m3_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'Cin' in macro 'sky130_asc_cap_mim_m3_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'Cout' in macro 'sky130_asc_cap_mim_m3_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'Cout' in macro 'sky130_asc_cap_mim_m3_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'Emitter' in macro 'sky130_asc_pnp_05v5_W3p40L3p40_7' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'GATE' in macro 'sky130_asc_pfet_01v8_lvt_6' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'GATE' in macro 'sky130_asc_pfet_01v8_lvt_12' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+
+viaInitial starts at Tue May 17 16:07:35 2022
+viaInitial ends at Tue May 17 16:07:35 2022
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+*** End library_loading (cpu=0.00min, real=0.00min, mem=0.0M, fe_cpu=0.27min, fe_real=0.48min, fe_mem=700.9M) ***
+#% Begin Load netlist data ... (date=05/17 16:07:35, mem=678.6M)
+*** Begin netlist parsing (mem=700.9M) ***
+Created 0 new cells from 0 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '/home/users/xingyuni/ee372/aloe-sky130/aloe/layout/examples/bgr_top/bgr_top.v'
+**WARN: (IMPVL-346):	Module 'sky130_asc_nfet_01v8_lvt_9' is instantiated in the netlist, but is not defined in the LEF files.  Since there is no real cell definition for such a cell, it will be treated as an empty module.
+Type 'man IMPVL-346' for more detail.
+**WARN: (IMPVL-346):	Module 'sky130_asc_res' is instantiated in the netlist, but is not defined in the LEF files.  Since there is no real cell definition for such a cell, it will be treated as an empty module.
+Type 'man IMPVL-346' for more detail.
+
+*** Memory Usage v#2 (Current mem = 703.922M, initial mem = 287.723M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=703.9M) ***
+#% End Load netlist data ... (date=05/17 16:07:35, total cpu=0:00:00.0, real=0:00:00.0, peak res=682.3M, current mem=682.3M)
+Set top cell to bgr_top.
+Hooked 0 DB cells to tlib cells.
+**WARN: (IMPDB-2504):	Cell 'sky130_asc_nfet_01v8_lvt_9' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+Type 'man IMPDB-2504' for more detail.
+**WARN: (IMPDB-2504):	Cell 'sky130_asc_res' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+Type 'man IMPDB-2504' for more detail.
+2 empty module found.
+Starting recursive module instantiation check.
+No recursion found.
+Term dir updated for 0 vinsts of 2 cells.
+Building hierarchical netlist for Cell bgr_top ...
+*** Netlist is NOT unique.
+Set DBUPerIGU to techSite unitasc width 490.
+** info: there are 20 modules.
+** info: there are 47 stdCell insts.
+
+*** Memory Usage v#2 (Current mem = 746.336M, initial mem = 287.723M) ***
+**WARN: (IMPFP-3961):	The techSite 'unithddbl' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'unithd' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Adjust met3 preferred direction offset from 0.34 to 0.17.
+Adjust met4 preferred direction offset from 0.46 to 0.23.
+Adjust met5 preferred direction offset from 1.7 to 0.17.
+Generated pitch 3.66 in met5 is different from 3.4 defined in technology file in preferred direction.
+Generated pitch 0.69 in met4 is different from 0.92 defined in technology file in preferred direction.
+Generated pitch 0.61 in met3 is different from 0.68 defined in technology file in preferred direction.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: (IMPSYT-7328):	The design has been initialized in physical-only mode because the init_mmmc_file global variable was not defined. Timing analysis will not be possible within this session. You can only use commands that do not depend on timing data. If you need to use timing, you need to restart with an init_mmmc_file to define the timing setup, or you can save this design and use restoreDesign -mmmc_file <viewDef.tcl> to add the timing setup information.
+Extraction setup Started 
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-63             2  The layer '%s' referenced %s is not foun...
+WARNING   IMPLF-200           24  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPLF-201           12  Pin '%s' in macro '%s' has no ANTENNADIF...
+WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+WARNING   IMPSYT-7328          1  The design has been initialized in physi...
+WARNING   IMPVL-346            2  Module '%s' is instantiated in the netli...
+WARNING   IMPDB-2504           2  Cell '%s' is instantiated in the Verilog...
+*** Message Summary: 45 warning(s), 0 error(s)
+
+<CMD> setRouteMode -earlyGlobalMaxRouteLayer 5
+**WARN: (IMPPSP-1003):	Found use of 'setRouteMode -earlyGlobalMaxRouteLayer'. This will continue to work in this release; however, it is recommended to use 'setDesignMode -topRoutingLayer' instead.
+<CMD> setPinAssignMode -maxLayer 5
+**WARN: (IMPPTN-867):	Found use of setPinAssignMode -maxLayer. This will continue to work in this release; however, it is recommended to use setDesignMode -topRoutingLayer instead.
+<CMD> setNanoRouteMode -routeTopRoutingLayer 5
+#WARNING (NRIF-91) Option setNanoRouteMode -routeTopRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -topRoutingLayer instead.
+<CMD> setDesignMode -topRoutingLayer met4
+**WARN: (IMPSYT-21024):	Command "setMaxRouteLayer" has become obsolete. It will be removed in the next release and is replaced by "setDesignMode -topRoutingLayer". The obsolete command still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your scripts.
+<CMD> setDesignMode -process 16 -flowEffort standard
+##  Process: 16            (User Set)               
+##     Node: (not set)                           
+
+##  Check design process and node:  
+##  Design tech node is not set.
+
+Applying the recommended capacitance filtering threshold values for 16nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.1.
+	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+	Capacitance filtering mode(-capFilterMode option of the setExtractRCMode) is 'relAndCoup' for all engines.
+	The accuracy mode for postRoute effortLevel low extraction will be set to 'high'.
+	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode will be 'medium' if Quantus QRC technology file is specified else 'low'.
+<CMD> setViaGenMode -reset
+<CMD> setViaGenMode -optimize_cross_via true
+Setting -optimize_cross_via to 1. ViaGen will try to generate vias with the minimum enclosure.
+<CMD> setViaGenMode -optimize_via_on_routing_track true
+Setting -optimize_via_on_routing_track to 1. ViaGen will try to position vias to optimize routing tracks nearby.
+<CMD> setViaGenMode -viarule_preference default
+Setting -viarule_preference to default order. ViaGen will consider via rule priority based on the order of appearance in the technology file.
+<CMD> setViaGenMode -ignore_DRC false
+Setting -ignore_DRC to 0. ViaGen will do DRC check while creating vias.
+<CMD> setPlaceMode -checkDiffusionWidth true
+<CMD> setPlaceMode -coreEffort high
+<CMD> setStreamOutMode -textSize 0.1
+<CMD> setStreamOutMode -virtualConnection false
+<CMD> globalNetConnect VDD -type tiehi -pin VPWR -inst *
+<CMD> globalNetConnect VSS -type tielo -pin VGND -inst *
+<CMD> globalNetConnect VDD -type tiehi -pin VPB -inst *
+<CMD> globalNetConnect VSS -type tielo -pin VNB -inst *
+<CMD> globalNetConnect VDD -type pgpin -pin VPWR -inst *
+<CMD> globalNetConnect VSS -type pgpin -pin VGND -inst *
+<CMD> globalNetConnect VDD -type pgpin -pin VPB -inst *
+**ERROR: (IMPDB-1221):	A global net connection rule was specified to connect power pins with the name pattern 'VPB' to a global net.  But the connections cannot be made because there is no such power pin with name matching the pattern in any cell.  Check the pin name in Lef or liberty and make sure it is correct.
+<CMD> globalNetConnect VSS -type pgpin -pin VNB -inst *
+**ERROR: (IMPDB-1221):	A global net connection rule was specified to connect ground pins with the name pattern 'VNB' to a global net.  But the connections cannot be made because there is no such ground pin with name matching the pattern in any cell.  Check the pin name in Lef or liberty and make sure it is correct.
+<CMD> loadFPlan /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/examples/BGR_Top/BGR_Top.fp
+Reading floorplan file - /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/examples/BGR_Top/BGR_Top.fp (mem = 949.8M).
+#% Begin Load floorplan data ... (date=05/17 16:07:37, mem=905.5M)
+**ERROR: (IMPSYUTIL-96):	Cannot open (for read) floor plan file: '/home/users/xingyuni/ee372/aloe-sky130/aloe/layout/examples/BGR_Top/BGR_Top.fp'. The reason is: No such file or directory
+Type 'man IMPSYUTIL-96' for more detail.
+**ERROR: (IMPSYT-6692):	Invalid return code while executing 'top.tcl' was returned and script processing was stopped. Review the following error in 'top.tcl' then restart.
+Error info: top.tcl: 
+    while executing
+"loadFPlan /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/examples/BGR_Top/BGR_Top.fp"
+    (file "/home/users/xingyuni/ee372/aloe-sky130/aloe/layout/pnr/run.tcl" line 1)
+    invoked from within
+"::se_source_orig /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/pnr/run.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel [concat ::se_source_orig $args]"
+    (procedure "source" line 176)
+    invoked from within
+"source $options(-pnr_dir)/run.tcl"
+    (procedure "pnr" line 24)
+    invoked from within
+"pnr -g lucy -gennum 0 -n $pop_size -pnr_dir $env(pnr_dir) -t"
+    (file "top.tcl" line 33)
+    invoked from within
+"::se_source_orig top.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel [concat ::se_source_orig $args]"
+    (procedure "source" line 176)
+    invoked from within
+"source top.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 source top.tcl"
+    ("eval" body line 1)
+    invoked from within
+"eval {uplevel #0 source top.tcl}"
+    (in namespace inscope "::" script line 1)
+    invoked from within
+"namespace inscope :: eval "uplevel #0 source $fileName"".
+**INFO (INTERRUPT): The current script will stop before next command.
+**INFO (INTERRUPT): One more Ctrl-C to exit Innovus ...
+Innovus terminated by user interrupt.
+
+*** Memory Usage v#2 (Current mem = 950.812M, initial mem = 287.723M) ***
+*** Message Summary: 48 warning(s), 4 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:16.6, real=0:00:42.0, mem=950.8M) ---

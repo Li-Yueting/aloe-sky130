@@ -4,7 +4,7 @@ Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
 
 Version:	v20.13-s083_1, built Tue Jan 19 16:51:46 PST 2021
 Options:	-no_gui -no_logv -batch -execute writeFlowTemplate 
-Date:		Tue May 17 00:59:08 2022
+Date:		Tue May 17 12:36:13 2022
 Host:		rice-503-20-north (x86_64 w/Linux 5.11.0-41-generic) (20cores*40cpus*Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz 28160KB)
 OS:		CentOS Linux release 7.9.2009 (Core)
 
@@ -21,7 +21,7 @@ Executing cmd 'writeFlowTemplate' ...
 <CMD> writeFlowTemplate
 Saved Foundation Flow Templates to .
 
-*** Memory Usage v#2 (Current mem = 652.281M, initial mem = 275.723M) ***
+*** Memory Usage v#2 (Current mem = 652.258M, initial mem = 275.723M) ***
 *** Message Summary: 0 warning(s), 0 error(s)
 
---- Ending "Innovus" (totcpu=0:00:15.8, real=0:00:27.0, mem=652.3M) ---
+--- Ending "Innovus" (totcpu=0:00:15.4, real=0:00:24.0, mem=652.3M) ---

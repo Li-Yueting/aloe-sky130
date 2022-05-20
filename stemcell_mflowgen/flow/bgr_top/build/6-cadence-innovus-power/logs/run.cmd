@@ -1,7 +1,7 @@
 #######################################################
 #                                                     
 #  Innovus Command Logging File                     
-#  Created on Tue May 17 00:40:49 2022                
+#  Created on Tue May 17 12:43:07 2022                
 #                                                     
 #######################################################
 
@@ -16,7 +16,7 @@
 set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
 suppressMessage ENCEXT-2799
 is_common_ui_mode
-restoreDesign /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/yueting_git/bgr_top/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat bgr_top
+restoreDesign /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/bgr_top/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat bgr_top
 setDistributeHost -local
 setMultiCpuUsage -localCpu 16
 globalNetConnect VDD -type pgpin -pin VPWR -inst * -verbose

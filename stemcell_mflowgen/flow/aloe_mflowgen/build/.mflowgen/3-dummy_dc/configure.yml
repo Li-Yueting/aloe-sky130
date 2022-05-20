@@ -1,0 +1,31 @@
+build_dir: 3-dummy_dc
+build_id: '3'
+commands:
+- cat inputs/design_rtl.v > outputs/design.v
+- cat inverter.sdc > outputs/design.sdc
+edges_i:
+  design_rtl.v:
+  - f: design_rtl.v
+    step: 1-rtl
+edges_o:
+  design.sdc:
+  - f: design.sdc
+    step: 4-cadence-innovus-flowsetup
+  - f: design.sdc
+    step: 5-cadence-innovus-init
+  - f: design.sdc
+    step: 6-cadence-innovus-power
+  - f: design.sdc
+    step: 7-cadence-innovus-place
+  design.v:
+  - f: design.v
+    step: 4-cadence-innovus-flowsetup
+  - f: design.v
+    step: 5-cadence-innovus-init
+inputs:
+- design_rtl.v
+name: dummy_dc
+outputs:
+- design.sdc
+- design.v
+source: /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/aloe_mflowgen/design/dummy_dc

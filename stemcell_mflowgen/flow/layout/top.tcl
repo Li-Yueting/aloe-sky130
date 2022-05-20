@@ -38,8 +38,8 @@ puts "script_path: $script_path"
 # flush 
 # place_pnp 0 0 7 1
 # addlef pnp_7 $script_path
-# flush 
-# place_pnp 0 0 8 1
+flush 
+place_pnp 0 0 8 1
 # addlef pnp_8 $script_path
 # ### resistor
 # flush
@@ -49,6 +49,6 @@ puts "script_path: $script_path"
 # place_res_2 0 0 1
 # addlef res_2 $script_path
 # ### capacitor
-flush
-place_cap_1 0 0 1
-addlef cap_1 $script_path
+# flush
+# place_cap_1 0 0 1
+# addlef cap_1 $script_path

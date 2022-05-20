@@ -1,0 +1,10 @@
+name: dummy_dc
+inputs:
+  - design_rtl.v
+outputs:
+  - design.sdc
+  - design.v
+commands:
+  - cat inputs/design_rtl.v > outputs/design.v
+  - cat inverter.sdc > outputs/design.sdc
+  
