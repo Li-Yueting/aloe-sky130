@@ -5,14 +5,14 @@ Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
 
 Version:	v20.13-s083_1, built Tue Jan 19 16:51:46 PST 2021
 Options:	-no_gui -no_logv -batch -execute writeFlowTemplate 
-Date:		Sat May  7 23:51:53 2022
+Date:		Mon May 16 00:23:17 2022
 Host:		rice-503-20-north (x86_64 w/Linux 5.11.0-41-generic) (20cores*40cpus*Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz 28160KB)
 OS:		CentOS Linux release 7.9.2009 (Core)
 
 License:
 		invs	Innovus Implementation System	20.1	checkout succeeded
 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
-Create and set the environment variable TMPDIR to /tmp/innovus_temp_112629_rice-503-20-north_lyt1314_XMs1wG.
+Create and set the environment variable TMPDIR to /tmp/innovus_temp_3590750_rice-503-20-north_lyt1314_GlIBOK.
 
 The soft stacksize limit is either up to the hard limit or larger than 0.2% of RAM. No change is needed.
 
@@ -21,10 +21,10 @@ The soft stacksize limit is either up to the hard limit or larger than 0.2% of R
 Executing cmd 'writeFlowTemplate' ...
 Saved Foundation Flow Templates to .
 
-*** Memory Usage v#2 (Current mem = 644.289M, initial mem = 275.723M) ***
+*** Memory Usage v#2 (Current mem = 644.320M, initial mem = 275.723M) ***
 *** Message Summary: 0 warning(s), 0 error(s)
 
---- Ending "Innovus" (totcpu=0:00:16.1, real=0:00:28.0, mem=644.3M) ---
+--- Ending "Innovus" (totcpu=0:00:16.2, real=0:00:26.0, mem=644.3M) ---
 
 ++ ./SCRIPTS/gen_flow.tcl -m flat --Verbose --nomake --setup . --dir innovus-foundation-flow all
 ++ tee flowsetup.log
