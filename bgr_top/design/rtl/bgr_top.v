@@ -117,9 +117,9 @@ module core (
  );
  wire vbneg, l6, l7, l8, l10, l11;
   
- sky130_asc_cap_mim_m3_1 C2 (
+ cap_array C2 (
      .Cin(va),
-     .Cout(ground)
+     .Cout(VSS)
  );
  resistor R6 (
     .rin(va),
@@ -204,6 +204,32 @@ module resistor (
   );
 endmodule
 
+module cap_array(
+    input Cin,
+    output Cout
+);
+sky130_asc_cap_mim_m3_1 CA1 (
+    .Cin(Cin),
+    .Cout(Cout)
+);
+sky130_asc_cap_mim_m3_1 CA2 (
+    .Cin(Cin),
+    .Cout(Cout)
+);
+sky130_asc_cap_mim_m3_1 CA3 (
+    .Cin(Cin),
+    .Cout(Cout)
+);
+sky130_asc_cap_mim_m3_1 CA4 (
+    .Cin(Cin),
+    .Cout(Cout)
+);
+sky130_asc_cap_mim_m3_1 CA5 (
+    .Cin(Cin),
+    .Cout(Cout)
+);
+endmodule
+
 module pnp_array (
     input emitter,
     output base
@@ -242,7 +268,7 @@ module current_mirror (
     input vc,
     output vbg
  );
- sky130_asc_cap_mim_m3_1 C1 (
+ cap_array C1 (
      .Cin(VDD),
      .Cout(vc)
  );
