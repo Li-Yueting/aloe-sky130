@@ -395,7 +395,7 @@ proc addlef {inst_name output_folder} {
         cd ./mag
         save sky130_asc_cap_mim_m3_1.mag
         cd ../lef
-        lef write sky130_asc_cap_mim_m3_1 -hide 0 
+        lef write sky130_asc_cap_mim_m3_1.lef
         cd ../gds
         gds write sky130_asc_cap_mim_m3_1.gds
         cd ../spi

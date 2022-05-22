@@ -273,35 +273,38 @@ proc place_cap_1 {x_center y_center index} {
 	set x_center [expr $x_center*100]
 	set y_center [expr $y_center*100]
 	### connect parrallel caps
-	box [expr -$bx/2] [expr -$by/2] [expr $bx/2+1] [expr $by/2]
-	paint m3
 	# ------ label Cin
 	box [expr -$bx/2] [expr $by/2-40] [expr -$bx/2+100] [expr $by/2]
 	paint m2
+	label Cin FreeSans 50
+	box [expr -$bx/2] [expr -$by/2] [expr $bx/2+1] [expr $by/2]
+	paint m3
 	box [expr -$bx/2+10] [expr $by/2-35] [expr -$bx/2+90] [expr $by/2-5]
 	paint via2
-	label Cin FreeSans 50
     ### m4 vertical connections
 	set m4_w 160
 	for {set x [expr -$bx/2+70]} {$x+$m4_w<=$bx/2} {set x [expr $x + 360]} {
 		box [expr $x] [expr -$by/2-40] [expr $x+$m4_w]  [expr $by/2-60]
 		paint m4
 	}
+	
+	#------ label Cout
+	box [expr $x_center-$bx/2+10] [expr -$by/2-45] [expr $x_center - $bx/2+90] [expr -$by/2-95]
+	paint m2
+	label Cout FreeSans 50
 	### m4 horizontal rail
 	box [expr $x_center-$bx/2] [expr -$by/2-30] [expr $x_center + $bx/2] [expr -$by/2-100]
 	paint m4
-	#------ label Cout
 	box [expr $x_center-$bx/2] [expr -$by/2-40] [expr $x_center - $bx/2+100] [expr -$by/2-100]
 	paint m3
 	box [expr $x_center-$bx/2+10] [expr -$by/2-45] [expr $x_center - $bx/2+90] [expr -$by/2-95]
 	paint via3
-	paint m2
 	box [expr $x_center-$bx/2+20] [expr -$by/2-50] [expr $x_center - $bx/2+80] [expr -$by/2-90]
     paint via2
 	# paint m3
 	# paint via2
 	# paint m2
-	label Cout FreeSans 50
+	
 	### paint VDD
 	box [expr $x_center-$bx/2] [expr $y_center+$height_half_center - $power_half_w+60] [expr $x_center + $bx/2] [expr $y_center + $height_half_center + $power_half_w+60]
 	paint m1
