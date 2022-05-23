@@ -49,6 +49,6 @@ puts "script_path: $script_path"
 # place_res_2 0 0 1
 # addlef res_2 $script_path
 # ### capacitor
-flush
-place_cap_1 0 0 1
-addlef cap_1 $script_path
+# flush
+# place_cap_1 0 0 1
+# addlef cap_1 $script_path

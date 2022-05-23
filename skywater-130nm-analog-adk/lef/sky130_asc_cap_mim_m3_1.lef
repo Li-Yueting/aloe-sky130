@@ -157,6 +157,10 @@ MACRO sky130_asc_cap_mim_m3_1
       LAYER met3 ;
         RECT 0.450 1.750 36.310 8.250 ;
         RECT 0.460 0.750 1.460 1.350 ;
+      LAYER met4 ;
+        RECT 0.450 1.300 36.310 8.250 ;
+      LAYER met5 ;
+        RECT 0.450 1.300 36.310 8.250 ;
       LAYER via3 ;
         RECT 3.530 5.390 3.850 8.110 ;
         RECT 7.125 5.390 7.445 8.110 ;
