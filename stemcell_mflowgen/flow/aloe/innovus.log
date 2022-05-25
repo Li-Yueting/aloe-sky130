@@ -1,0 +1,13 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.13-s083_1, built Tue Jan 19 16:51:46 PST 2021
+Options:	-nologv -init top0.tcl -cpus 4 
+Date:		Mon May 23 20:53:13 2022
+Host:		iron-502-28 (x86_64 w/Linux 5.13.0-35-generic) (64cores*256cpus*AMD EPYC 7742 64-Core Processor 512KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		Fail to find any innovus license...
+		Check your Innovus license status.

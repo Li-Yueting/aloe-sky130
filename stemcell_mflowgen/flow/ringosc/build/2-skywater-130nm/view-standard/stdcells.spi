@@ -164,14 +164,14 @@ X5 DRAIN GATE SOURCE VPWR sky130_fd_pr__pfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=
 
 
 .subckt sky130_asc_pnp_05v5_W3p40L3p40_8 Emitter Base Collector VPWR VGND
-X0 Collector Base Emitter VGND sky130_fd_pr__pnp_05v5_W3p40L3p40
-X1 Collector Base Emitter VGND sky130_fd_pr__pnp_05v5_W3p40L3p40
-X2 Collector Base Emitter VGND sky130_fd_pr__pnp_05v5_W3p40L3p40
-X3 Collector Base Emitter VGND sky130_fd_pr__pnp_05v5_W3p40L3p40
-X4 Collector Base Emitter VGND sky130_fd_pr__pnp_05v5_W3p40L3p40
-X5 Collector Base Emitter VGND sky130_fd_pr__pnp_05v5_W3p40L3p40
-X6 Collector Base Emitter VGND sky130_fd_pr__pnp_05v5_W3p40L3p40
-X7 Collector Base Emitter VGND sky130_fd_pr__pnp_05v5_W3p40L3p40
+X0 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+X1 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+X2 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+X3 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+X4 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+X5 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+X6 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+X7 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
 .ends
 
 

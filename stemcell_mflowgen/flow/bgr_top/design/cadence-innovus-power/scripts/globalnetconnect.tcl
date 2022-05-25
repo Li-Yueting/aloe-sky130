@@ -12,3 +12,4 @@ globalNetConnect VDD    -type pgpin -pin VPWR    -inst * -verbose
 globalNetConnect VSS    -type pgpin -pin VGND    -inst * -verbose
 globalNetConnect VSS    -type pgpin -pin VNB    -inst * -verbose
 globalNetConnect VDD    -type pgpin -pin VPB    -inst * -verbose
+# globalNetConnect VSS    -type pgpin -pin Base   -inst * -verbose

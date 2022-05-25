@@ -4,7 +4,7 @@ Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
 
 Version:	v20.13-s083_1, built Tue Jan 19 16:51:46 PST 2021
 Options:	-overwrite -nowin -init START.tcl -log logs/run.log 
-Date:		Tue May 17 12:37:18 2022
+Date:		Fri May 20 16:51:46 2022
 Host:		rice-503-20-north (x86_64 w/Linux 5.11.0-41-generic) (20cores*40cpus*Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz 28160KB)
 OS:		CentOS Linux release 7.9.2009 (Core)
 
@@ -20,11 +20,11 @@ The soft stacksize limit is either up to the hard limit or larger than 0.2% of R
 Sourcing file "START.tcl" ...
 <CMD> is_common_ui_mode
 <CMD> restoreDesign /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat ringosc
-#% Begin load design ... (date=05/17 12:37:40, mem=668.4M)
+#% Begin load design ... (date=05/20 16:52:09, mem=665.6M)
 Set Default Input Pin Transition as 0.1 ps.
-Loading design 'ringosc' saved by 'Innovus' '20.13-s083_1' on 'Tue May 17 12:37:13 2022'.
-% Begin Load MMMC data ... (date=05/17 12:37:41, mem=670.8M)
-% End Load MMMC data ... (date=05/17 12:37:41, total cpu=0:00:00.0, real=0:00:00.0, peak res=671.8M, current mem=671.8M)
+Loading design 'ringosc' saved by 'Innovus' '20.13-s083_1' on 'Fri May 20 16:51:42 2022'.
+% Begin Load MMMC data ... (date=05/20 16:52:09, mem=668.0M)
+% End Load MMMC data ... (date=05/20 16:52:09, total cpu=0:00:00.0, real=0:00:00.0, peak res=669.0M, current mem=669.0M)
 typical
 
 Loading LEF file /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/libs/lef/rtk-tech.lef ...
@@ -33,23 +33,19 @@ Loading LEF file /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/r
 WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
 The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/libs/lef/stdcells.lef at line 2.
 Set DBUPerIGU to M1 pitch 460.
-**WARN: (IMPLF-63):	The layer 'obsm4' referenced in OBS in macro 'sky130_asc_cap_mim_m3_1' is not found in the database. The obstruction geometries specified on the layer are being ignored. A layer must be defined in the LEF technology LAYER section before it can be referenced from a macro. Review the LEF files specified in the init_lef_file variable to see if the layer does not exist or is specified after the one that defines the macro.
-Type 'man IMPLF-63' for more detail.
-**WARN: (IMPLF-63):	The layer 'obsm5' referenced in OBS in macro 'sky130_asc_cap_mim_m3_1' is not found in the database. The obstruction geometries specified on the layer are being ignored. A layer must be defined in the LEF technology LAYER section before it can be referenced from a macro. Review the LEF files specified in the init_lef_file variable to see if the layer does not exist or is specified after the one that defines the macro.
-Type 'man IMPLF-63' for more detail.
 **WARN: (IMPLF-201):	Pin 'GATE' in macro 'sky130_asc_pfet_01v8_lvt_9' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
 Type 'man IMPLF-201' for more detail.
 **WARN: (IMPLF-200):	Pin 'SOURCE' in macro 'sky130_asc_pfet_01v8_lvt_9' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
 Type 'man IMPLF-200' for more detail.
 **WARN: (IMPLF-200):	Pin 'DRAIN' in macro 'sky130_asc_pfet_01v8_lvt_9' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
 Type 'man IMPLF-200' for more detail.
-**WARN: (IMPLF-201):	Pin 'Cin' in macro 'sky130_asc_cap_mim_m3_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-Type 'man IMPLF-201' for more detail.
-**WARN: (IMPLF-200):	Pin 'Cin' in macro 'sky130_asc_cap_mim_m3_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-Type 'man IMPLF-200' for more detail.
 **WARN: (IMPLF-201):	Pin 'Cout' in macro 'sky130_asc_cap_mim_m3_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
 Type 'man IMPLF-201' for more detail.
 **WARN: (IMPLF-200):	Pin 'Cout' in macro 'sky130_asc_cap_mim_m3_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'Cin' in macro 'sky130_asc_cap_mim_m3_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'Cin' in macro 'sky130_asc_cap_mim_m3_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
 Type 'man IMPLF-200' for more detail.
 **WARN: (IMPLF-200):	Pin 'Emitter' in macro 'sky130_asc_pnp_05v5_W3p40L3p40_7' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
 Type 'man IMPLF-200' for more detail.
@@ -104,8 +100,8 @@ Type 'man IMPLF-201' for more detail.
 **WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
 To increase the message display limit, refer to the product command reference manual.
 
-viaInitial starts at Tue May 17 12:37:41 2022
-viaInitial ends at Tue May 17 12:37:41 2022
+viaInitial starts at Fri May 20 16:52:09 2022
+viaInitial ends at Fri May 20 16:52:09 2022
 
 ##  Check design process and node:  
 ##  Both design process and tech node are not set.
@@ -113,9 +109,9 @@ viaInitial ends at Tue May 17 12:37:41 2022
 Loading view definition file from /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/viewDefinition.tcl
 Reading libs_typical timing library '/home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/2-skywater-130nm/view-standard/stdcells.lib' ...
 Read 12 cells in library 'sky130_fd_sc_hd__tt_025C_1v80' 
-*** End library_loading (cpu=0.00min, real=0.00min, mem=22.0M, fe_cpu=0.26min, fe_real=0.38min, fe_mem=688.9M) ***
-% Begin Load netlist data ... (date=05/17 12:37:41, mem=686.4M)
-*** Begin netlist parsing (mem=688.9M) ***
+*** End library_loading (cpu=0.00min, real=0.00min, mem=22.0M, fe_cpu=0.26min, fe_real=0.38min, fe_mem=688.7M) ***
+% Begin Load netlist data ... (date=05/20 16:52:09, mem=686.6M)
+*** Begin netlist parsing (mem=688.7M) ***
 **WARN: (IMPVL-159):	Pin 'Collector' of cell 'sky130_asc_pnp_05v5_W3p40L3p40_7' is defined in LEF but not in the timing library.
 Type 'man IMPVL-159' for more detail.
 **WARN: (IMPVL-159):	Pin 'Collector' of cell 'sky130_asc_pnp_05v5_W3p40L3p40_8' is defined in LEF but not in the timing library.
@@ -126,9 +122,9 @@ Backslashed names will retain backslash and a trailing blank character.
 Reading verilogBinary netlist '/home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/vbin/ringosc.v.bin'
 Reading binary database version 2 in 1-threaded mode
 
-*** Memory Usage v#2 (Current mem = 699.934M, initial mem = 275.727M) ***
-*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=699.9M) ***
-% End Load netlist data ... (date=05/17 12:37:41, total cpu=0:00:00.0, real=0:00:00.0, peak res=689.9M, current mem=689.9M)
+*** Memory Usage v#2 (Current mem = 700.723M, initial mem = 275.727M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=700.7M) ***
+% End Load netlist data ... (date=05/20 16:52:09, total cpu=0:00:00.0, real=0:00:00.0, peak res=690.1M, current mem=690.1M)
 Set top cell to ringosc.
 **WARN: (IMPTS-124):	Timing library description of pin 'Collector' is missing from cell 'sky130_asc_pnp_05v5_W3p40L3p40_7' in timing library 'sky130_fd_sc_hd__tt_025C_1v80'.
 **WARN: (IMPTS-124):	Timing library description of pin 'Collector' is missing from cell 'sky130_asc_pnp_05v5_W3p40L3p40_8' in timing library 'sky130_fd_sc_hd__tt_025C_1v80'.
@@ -139,10 +135,14 @@ Building hierarchical netlist for Cell ringosc ...
 *** Netlist is unique.
 Set DBUPerIGU to techSite unitasc width 490.
 ** info: there are 13 modules.
-** info: there are 4 stdCell insts.
+** info: there are 1 stdCell insts.
 
-*** Memory Usage v#2 (Current mem = 731.348M, initial mem = 275.727M) ***
+*** Memory Usage v#2 (Current mem = 731.137M, initial mem = 275.727M) ***
 *info: set bottom ioPad orient R0
+**WARN: (IMPFP-3961):	The techSite 'unithddbl' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'unithd' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
 **WARN: (IMPFP-3961):	The techSite 'unithddbl' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
 Type 'man IMPFP-3961' for more detail.
 **WARN: (IMPFP-3961):	The techSite 'unithd' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
@@ -198,11 +198,15 @@ Total number of identified unusable delay cells: 0
 No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
 **WARN: (IMPOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
 Type 'man IMPOPT-3001' for more detail.
-Reading floorplan file - /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/ringosc.fp.gz (mem = 939.0M).
-% Begin Load floorplan data ... (date=05/17 12:37:42, mem=922.5M)
-*info: reset 14 existing net BottomPreferredLayer and AvoidDetour
+Reading floorplan file - /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/ringosc.fp.gz (mem = 938.8M).
+% Begin Load floorplan data ... (date=05/20 16:52:10, mem=922.8M)
+*info: reset 11 existing net BottomPreferredLayer and AvoidDetour
 Deleting old partition specification.
-Set FPlanBox to (0 0 224020 141780)
+Set FPlanBox to (0 0 119600 76160)
+**WARN: (IMPFP-3961):	The techSite 'unithddbl' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'unithd' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
 **WARN: (IMPFP-3961):	The techSite 'unithddbl' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
 Type 'man IMPFP-3961' for more detail.
 **WARN: (IMPFP-3961):	The techSite 'unithd' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
@@ -214,36 +218,36 @@ Generated pitch 3.66 in met5 is different from 3.4 defined in technology file in
 Generated pitch 0.69 in met4 is different from 0.92 defined in technology file in preferred direction.
 Generated pitch 0.61 in met3 is different from 0.68 defined in technology file in preferred direction.
  ... processed partition successfully.
-Reading binary special route file /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/ringosc.fp.spr.gz (Created by Innovus v20.13-s083_1 on Tue May 17 12:37:12 2022, version: 1)
-Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=927.8M, current mem=927.8M)
+Reading binary special route file /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/ringosc.fp.spr.gz (Created by Innovus v20.13-s083_1 on Fri May 20 16:51:41 2022, version: 1)
+Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=928.0M, current mem=928.0M)
 Extracting standard cell pins and blockage ...... 
 Pin and blockage extraction finished
-% End Load floorplan data ... (date=05/17 12:37:42, total cpu=0:00:00.1, real=0:00:00.0, peak res=928.8M, current mem=928.4M)
-% Begin Load SymbolTable ... (date=05/17 12:37:42, mem=928.7M)
+% End Load floorplan data ... (date=05/20 16:52:10, total cpu=0:00:00.1, real=0:00:00.0, peak res=928.9M, current mem=928.9M)
+% Begin Load SymbolTable ... (date=05/20 16:52:10, mem=929.2M)
 Reading congestion map file /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/ringosc.route.congmap.gz ...
-% End Load SymbolTable ... (date=05/17 12:37:42, total cpu=0:00:00.0, real=0:00:00.0, peak res=928.8M, current mem=928.8M)
+% End Load SymbolTable ... (date=05/20 16:52:11, total cpu=0:00:00.0, real=0:00:00.0, peak res=929.3M, current mem=929.3M)
 Loading place ...
-% Begin Load placement data ... (date=05/17 12:37:42, mem=928.8M)
+% Begin Load placement data ... (date=05/20 16:52:11, mem=929.3M)
 Reading placement file - /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/ringosc.place.gz.
-** Reading stdCellPlacement_binary (Created by Innovus v20.13-s083_1 on Tue May 17 12:37:12 2022, version# 2) ...
+** Reading stdCellPlacement_binary (Created by Innovus v20.13-s083_1 on Fri May 20 16:51:41 2022, version# 2) ...
 Read Views for adaptive view pruning ...
 Read 0 views from Binary DB for adaptive view pruning
-*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=946.0M) ***
-Total net length = 8.000e-03 (4.000e-03 4.000e-03) (ext = 8.000e-03)
-% End Load placement data ... (date=05/17 12:37:42, total cpu=0:00:00.0, real=0:00:00.0, peak res=929.0M, current mem=929.0M)
-% Begin Load routing data ... (date=05/17 12:37:42, mem=929.3M)
+*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=945.8M) ***
+Total net length = 2.000e-03 (1.000e-03 1.000e-03) (ext = 2.000e-03)
+% End Load placement data ... (date=05/20 16:52:11, total cpu=0:00:00.0, real=0:00:00.0, peak res=929.5M, current mem=929.5M)
+% Begin Load routing data ... (date=05/20 16:52:11, mem=929.8M)
 Reading routing file - /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/ringosc.route.gz.
-Reading Innovus routing data (Created by Innovus v20.13-s083_1 on Tue May 17 12:37:12 2022 Format: 20.1) ...
-*** Total 14 nets are successfully restored.
-*** Completed restoreRoute (cpu=0:00:00.0 real=0:00:01.0 mem=943.0M) ***
-% End Load routing data ... (date=05/17 12:37:43, total cpu=0:00:00.0, real=0:00:01.0, peak res=930.5M, current mem=929.5M)
+Reading Innovus routing data (Created by Innovus v20.13-s083_1 on Fri May 20 16:51:41 2022 Format: 20.1) ...
+*** Total 11 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=942.8M) ***
+% End Load routing data ... (date=05/20 16:52:11, total cpu=0:00:00.0, real=0:00:00.0, peak res=930.9M, current mem=929.9M)
 Loading Drc markers ...
 ... 1 markers are loaded ...
 ... 0 geometry drc markers are loaded ...
 ... 0 antenna drc markers are loaded ...
-TAT_INFO: restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+TAT_INFO: restoreCongMap REAL = 1 : CPU = 0 : MEM = 0.
 Reading property file /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/5-cadence-innovus-init/checkpoints/design.checkpoint/save.enc.dat/ringosc.prop
-*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=948.0M) ***
+*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=947.8M) ***
 Set Default Input Pin Transition as 0.1 ps.
 Extraction setup Started 
 Initializing multi-corner RC extraction with 1 active RC Corners ...
@@ -276,15 +280,15 @@ Start generating vias ..
 Extracting standard cell pins and blockage ...... 
 Pin and blockage extraction finished
 Via generation completed.
-% Begin Load power constraints ... (date=05/17 12:37:43, mem=935.9M)
+% Begin Load power constraints ... (date=05/20 16:52:12, mem=936.2M)
 ** WARN:  (VOLTUS_POWR-3212): The 'set_power_analysis_mode -leakage_power_view |-dynamic_power_view|-analysis_view' will be obsolete in 18.20 release. Use 'set_analysis_view -leakage <> | -dynamic <>' to set leakage and dynamic power views.
 
-% End Load power constraints ... (date=05/17 12:37:43, total cpu=0:00:00.0, real=0:00:00.0, peak res=936.0M, current mem=936.0M)
+% End Load power constraints ... (date=05/20 16:52:12, total cpu=0:00:00.0, real=0:00:00.0, peak res=936.4M, current mem=936.4M)
 delay_default
-% Begin load AAE data ... (date=05/17 12:37:43, mem=943.0M)
+% Begin load AAE data ... (date=05/20 16:52:12, mem=943.3M)
 **WARN: (IMPESI-3505):	setDelayCalMode -eng_copyNetPropToNewNet true (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
-AAE DB initialization (MEM=976.949 CPU=0:00:00.0 REAL=0:00:00.0) 
-% End load AAE data ... (date=05/17 12:37:43, total cpu=0:00:00.3, real=0:00:00.0, peak res=948.7M, current mem=948.7M)
+AAE DB initialization (MEM=976.23 CPU=0:00:00.0 REAL=0:00:00.0) 
+% End load AAE data ... (date=05/20 16:52:12, total cpu=0:00:00.3, real=0:00:00.0, peak res=949.1M, current mem=949.1M)
 Total number of combinational cells: 10
 Total number of sequential cells: 0
 Total number of tristate cells: 0
@@ -310,14 +314,13 @@ Total number of identified unusable delay cells: 0
 No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
 **WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.13-s083_1. They will be removed in the next release. 
 timing_enable_default_delay_arc
-#% End load design ... (date=05/17 12:37:43, total cpu=0:00:01.8, real=0:00:03.0, peak res=975.0M, current mem=948.7M)
+#% End load design ... (date=05/20 16:52:12, total cpu=0:00:01.9, real=0:00:03.0, peak res=973.9M, current mem=949.1M)
 
 *** Summary of all messages that are not suppressed in this session:
 Severity  ID               Count  Summary                                  
-WARNING   IMPLF-63             2  The layer '%s' referenced %s is not foun...
 WARNING   IMPLF-200           24  Pin '%s' in macro '%s' has no ANTENNAGAT...
 WARNING   IMPLF-201           12  Pin '%s' in macro '%s' has no ANTENNADIF...
-WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+WARNING   IMPFP-3961           8  The techSite '%s' has no related standar...
 WARNING   IMPPTN-867           1  Found use of %s. This will continue to w...
 WARNING   IMPTS-124            2  Timing library description of pin '%s' i...
 WARNING   IMPVL-159            2  Pin '%s' of cell '%s' is defined in LEF ...
@@ -325,7 +328,7 @@ WARNING   IMPESI-3505          1  setDelayCalMode -eng_%s (default=%s) wil...
 WARNING   IMPOPT-3001          1  Inverter footprint is not defined or is ...
 WARNING   IMPCTE-107           1  The following globals have been obsolete...
 WARNING   IMPPSP-1003          1  Found use of '%s'. This will continue to...
-*** Message Summary: 51 warning(s), 0 error(s)
+*** Message Summary: 53 warning(s), 0 error(s)
 
 <CMD> setDistributeHost -local
 The timeout for a remote job to respond is 3600 seconds.
@@ -336,10 +339,10 @@ Submit command for task runs will be: local
 ### Start verbose source output (echo mode) for 'scripts/globalnetconnect.tcl' ...
 # globalNetConnect VDD    -type pgpin -pin VPWR    -inst * -verbose
 <CMD> globalNetConnect VDD -type pgpin -pin VPWR -inst * -verbose
-4 new pwr-pin connections were made to global net 'VDD'.
+1 new pwr-pin connection was made to global net 'VDD'.
 # globalNetConnect VSS    -type pgpin -pin VGND    -inst * -verbose
 <CMD> globalNetConnect VSS -type pgpin -pin VGND -inst * -verbose
-4 new gnd-pin connections were made to global net 'VSS'.
+1 new gnd-pin connection was made to global net 'VSS'.
 # globalNetConnect VSS    -type pgpin -pin VNB    -inst * -verbose
 <CMD> globalNetConnect VSS -type pgpin -pin VNB -inst * -verbose
 **WARN: (IMPDB-1261):	No PG pin 'VNB' in instances with basename '*' in the design.
@@ -373,8 +376,8 @@ Submit command for task runs will be: local
 ### Start verbose source output (echo mode) for 'scripts/power-strategy-singlemesh.tcl' ...
 # sroute -nets {VDD VSS} -connect {corePin}
 <CMD> sroute -nets {VDD VSS} -connect corePin
-#% Begin sroute (date=05/17 12:37:44, mem=949.4M)
-*** Begin SPECIAL ROUTE on Tue May 17 12:37:44 2022 ***
+#% Begin sroute (date=05/20 16:52:12, mem=949.7M)
+*** Begin SPECIAL ROUTE on Fri May 20 16:52:12 2022 ***
 SPECIAL ROUTE ran on directory: /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/6-cadence-innovus-power
 SPECIAL ROUTE ran on machine: rice-503-20-north (Linux 5.11.0-41-generic Xeon 2.40Ghz)
 
@@ -392,41 +395,41 @@ srouteJogControl set to "preferWithChanges differentLayer"
 sroutePadPinAllPorts set to true
 sroutePreserveExistingRoutes set to true
 srouteRoutePowerBarPortOnBothDir set to true
-End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1950.00 megs.
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1949.00 megs.
 
 Reading DB technology information...
 Finished reading DB technology information.
 Reading floorplan and netlist information...
 Finished reading floorplan and netlist information.
 Read in 13 layers, 6 routing layers, 1 overlap layer
-Read in 12 macros, 2 used
-Read in 2 components
-  2 core components: 2 unplaced, 0 placed, 0 fixed
-Read in 4 logical pins
-Read in 4 nets
+Read in 12 macros, 1 used
+Read in 1 components
+  1 core components: 1 unplaced, 0 placed, 0 fixed
+Read in 1 logical pins
+Read in 1 nets
 Read in 10 special nets
-Read in 4 terminals
+Read in 2 terminals
 2 nets selected.
 
 Begin power routing ...
 CPU time for FollowPin 0 seconds
 CPU time for FollowPin 0 seconds
-  Number of Core ports routed: 0  open: 20
-  Number of Followpin connections: 10
+  Number of Core ports routed: 0  open: 6
+  Number of Followpin connections: 3
 End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1955.00 megs.
 
 
 
  Begin updating DB with routing results ...
  Updating DB with 0 via definition ...
-sroute created 10 wires.
+sroute created 3 wires.
 ViaGen created 0 via, deleted 0 via to avoid violation.
 +--------+----------------+----------------+
 |  Layer |     Created    |     Deleted    |
 +--------+----------------+----------------+
-|  met1  |       10       |       NA       |
+|  met1  |        3       |       NA       |
 +--------+----------------+----------------+
-#% End sroute (date=05/17 12:37:44, total cpu=0:00:00.1, real=0:00:00.0, peak res=957.2M, current mem=957.2M)
+#% End sroute (date=05/20 16:52:12, total cpu=0:00:00.1, real=0:00:00.0, peak res=957.4M, current mem=957.4M)
 # set pmesh_bot $ADK_POWER_MESH_BOT_LAYER
 # set pmesh_top $ADK_POWER_MESH_TOP_LAYER
 # addRing -nets {VDD VSS} -type core_rings -follow core   \
@@ -437,9 +440,9 @@ ViaGen created 0 via, deleted 0 via to avoid violation.
         -offset $savedvars(p_ring_spacing)              \
         -extend_corner {tl tr bl br lt lb rt rb}
 <CMD> addRing -nets {VDD VSS} -type core_rings -follow core -layer {top 6 bottom 6 left 5 right 5} -width 4 -spacing 8 -offset 8 -extend_corner {tl tr bl br lt lb rt rb}
-#% Begin addRing (date=05/17 12:37:44, mem=957.2M)
+#% Begin addRing (date=05/20 16:52:12, mem=957.4M)
 
-Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 982.2M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 982.5M)
 Ring generation is complete.
 vias are now being generated.
 addRing created 8 wires.
@@ -451,7 +454,7 @@ ViaGen created 8 vias, deleted 0 via to avoid violation.
 |  via4  |        8       |        0       |
 |  met5  |        4       |       NA       |
 +--------+----------------+----------------+
-#% End addRing (date=05/17 12:37:44, total cpu=0:00:00.0, real=0:00:00.0, peak res=959.7M, current mem=959.7M)
+#% End addRing (date=05/20 16:52:12, total cpu=0:00:00.0, real=0:00:00.0, peak res=959.9M, current mem=959.9M)
 # set M1_min_width    [dbGet [dbGetLayerByZ 2].minWidth]
 # set M1_route_pitchX [dbGet [dbGetLayerByZ 2].pitchX]
 # set pmesh_bot_str_width [expr  8 *  3 * $M1_min_width   ]
@@ -480,31 +483,31 @@ Setting -ignore_DRC to 0. ViaGen will do DRC check while creating vias.
     -padcore_ring_top_layer_limit $pmesh_top                    \
     -start [expr $pmesh_bot_str_pitch]
 <CMD> addStripe -nets {VSS VDD} -layer 5 -direction vertical -width 3.36 -spacing 10.24 -set_to_set_distance 27.2 -max_same_layer_jog_length 13.6 -padcore_ring_bottom_layer_limit 5 -padcore_ring_top_layer_limit 6 -start 13.6
-#% Begin addStripe (date=05/17 12:37:44, mem=959.8M)
+#% Begin addStripe (date=05/20 16:52:12, mem=960.0M)
 
-Initialize fgc environment(mem: 983.2M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 983.2M)
-Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 983.2M)
-Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 983.2M)
-Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 983.2M)
+Initialize fgc environment(mem: 982.5M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 982.5M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 982.5M)
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 982.5M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 982.5M)
 Starting stripe generation ...
 Non-Default Mode Option Settings :
   NONE
-**WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 15.280000 4.560000 15.280000 133.160004 with width 3.360000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, or the stripe would break the design rule.
+**WARN: (IMPPP-354):	The power planner did not generate the vertical stripe at 15.280000 4.560000 15.280000 67.360001 with width 3.360000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, or the stripe would break the design rule.
 Type 'man IMPPP-354' for more detail.
 Stripe generation is complete.
 vias are now being generated.
-addStripe created 13 wires.
-ViaGen created 221 vias, deleted 0 via to avoid violation.
+addStripe created 5 wires.
+ViaGen created 31 vias, deleted 0 via to avoid violation.
 +--------+----------------+----------------+
 |  Layer |     Created    |     Deleted    |
 +--------+----------------+----------------+
-|   via  |       65       |        0       |
-|  via2  |       65       |        0       |
-|  via3  |       65       |        0       |
-|  met4  |       13       |       NA       |
-|  via4  |       26       |        0       |
+|   via  |        7       |        0       |
+|  via2  |        7       |        0       |
+|  via3  |        7       |        0       |
+|  met4  |        5       |       NA       |
+|  via4  |       10       |        0       |
 +--------+----------------+----------------+
-#% End addStripe (date=05/17 12:37:44, total cpu=0:00:00.0, real=0:00:00.0, peak res=959.9M, current mem=959.9M)
+#% End addStripe (date=05/20 16:52:12, total cpu=0:00:00.0, real=0:00:00.0, peak res=960.0M, current mem=959.9M)
 # set pmesh_top_str_width [expr  8 *  3 * $M1_min_width   ]
 # set pmesh_top_str_pitch [expr 4 * 10 * $M1_route_pitchX]
 # set pmesh_top_str_intraset_spacing [expr $pmesh_top_str_pitch - $pmesh_top_str_width]
@@ -533,91 +536,85 @@ Setting -ignore_DRC to 0. ViaGen will do DRC check while creating vias.
     -padcore_ring_top_layer_limit $pmesh_top                      \
     -start [expr $pmesh_top_str_pitch]
 <CMD> addStripe -nets {VSS VDD} -layer 6 -direction horizontal -width 3.36 -spacing 10.24 -set_to_set_distance 27.2 -max_same_layer_jog_length 13.6 -padcore_ring_bottom_layer_limit 5 -padcore_ring_top_layer_limit 6 -start 13.6
-#% Begin addStripe (date=05/17 12:37:44, mem=959.9M)
+#% Begin addStripe (date=05/20 16:52:12, mem=959.9M)
 
-Initialize fgc environment(mem: 983.2M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 983.2M)
-Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 983.2M)
-Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 983.2M)
-Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 983.2M)
+Initialize fgc environment(mem: 982.5M) ...  fail and won't use fgc to check drc(cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 982.5M)
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 982.5M)
+Loading wires (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 982.5M)
+Loading via instances (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 982.5M)
 Starting stripe generation ...
 Non-Default Mode Option Settings :
   NONE
 **WARN: (IMPPP-531):	ViaGen Warning: Due to SPACING rule violation, viaGen fail to generate via on layer via4 at (5.60, 13.60) (8.98, 14.96).
-**WARN: (IMPPP-531):	ViaGen Warning: Due to SPACING rule violation, viaGen fail to generate via on layer via4 at (214.60, 13.60) (218.60, 14.96).
-**WARN: (IMPPP-354):	The power planner did not generate the horizontal stripe at 4.980000 15.280000 214.600006 15.280000 with width 3.360000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, or the stripe would break the design rule.
+**WARN: (IMPPP-531):	ViaGen Warning: Due to SPACING rule violation, viaGen fail to generate via on layer via4 at (110.23, 13.60) (114.23, 14.96).
+**WARN: (IMPPP-354):	The power planner did not generate the horizontal stripe at 4.980000 15.280000 110.230003 15.280000 with width 3.360000 due to one of these reasons: the stripe would merge with rings, the stripe could not connect to any legal target, or the stripe would break the design rule.
 Type 'man IMPPP-354' for more detail.
 Stripe generation is complete.
 vias are now being generated.
-**WARN: (IMPPP-4063):	Multi-CPU is set to 15 in addStripe automatically according to the free memory on the current machine.  When the number of CPU in setMultiCpuUsage is more than 15, addStripe gets worse runtime caused by data exchange and other time consuming operations
-Total CPU(s) requested: 15
-Total CPU(s) enabled with current License(s): 8
-Current free CPU(s): 8
-Additional license(s) checked out: 1 Innovus_CPU_Opt license(s) for 8 CPU(s)
-Total CPU(s) now enabled: 16
-Multi-CPU acceleration using 15 CPU(s).
-Multi-CPU acceleration using 15 CPU(s).
-Multi-CPU acceleration using 15 CPU(s).
-Multi-CPU acceleration using 15 CPU(s).
-addStripe created 7 wires.
-ViaGen created 60 vias, deleted 0 via to avoid violation.
+**WARN: (IMPPP-4063):	Multi-CPU is set to 2 in addStripe automatically according to the free memory on the current machine.  When the number of CPU in setMultiCpuUsage is more than 2, addStripe gets worse runtime caused by data exchange and other time consuming operations
+Multi-CPU acceleration using 2 CPU(s).
+Multi-CPU acceleration using 2 CPU(s).
+Multi-CPU acceleration using 2 CPU(s).
+Multi-CPU acceleration using 2 CPU(s).
+addStripe created 2 wires.
+ViaGen created 9 vias, deleted 0 via to avoid violation.
 +--------+----------------+----------------+
 |  Layer |     Created    |     Deleted    |
 +--------+----------------+----------------+
-|  via4  |       60       |        0       |
-|  met5  |        7       |       NA       |
+|  via4  |        9       |        0       |
+|  met5  |        2       |       NA       |
 +--------+----------------+----------------+
-#% End addStripe (date=05/17 12:37:44, total cpu=0:00:00.5, real=0:00:00.0, peak res=960.7M, current mem=960.7M)
+#% End addStripe (date=05/20 16:52:13, total cpu=0:00:00.1, real=0:00:01.0, peak res=960.1M, current mem=960.1M)
 ### End verbose source output for 'scripts/power-strategy-singlemesh.tcl'.
 ### End verbose source output for 'scripts/main.tcl'.
 <CMD> getVersion
 <CMD> saveDesign checkpoints/design.checkpoint/save.enc -user_path
-#% Begin save design ... (date=05/17 12:37:45, mem=960.9M)
-% Begin Save ccopt configuration ... (date=05/17 12:37:45, mem=963.9M)
-% End Save ccopt configuration ... (date=05/17 12:37:45, total cpu=0:00:00.0, real=0:00:00.0, peak res=965.8M, current mem=965.8M)
-% Begin Save netlist data ... (date=05/17 12:37:45, mem=985.9M)
+#% Begin save design ... (date=05/20 16:52:13, mem=960.2M)
+% Begin Save ccopt configuration ... (date=05/20 16:52:13, mem=963.2M)
+% End Save ccopt configuration ... (date=05/20 16:52:13, total cpu=0:00:00.0, real=0:00:00.0, peak res=965.2M, current mem=965.2M)
+% Begin Save netlist data ... (date=05/20 16:52:13, mem=985.2M)
 Writing Binary DB to checkpoints/design.checkpoint/save.enc.dat/vbin/ringosc.v.bin in multi-threaded mode...
-% End Save netlist data ... (date=05/17 12:37:45, total cpu=0:00:00.0, real=0:00:00.0, peak res=987.4M, current mem=986.8M)
+% End Save netlist data ... (date=05/20 16:52:13, total cpu=0:00:00.0, real=0:00:00.0, peak res=986.8M, current mem=986.1M)
 Saving symbol-table file in separate thread ...
 Saving congestion map file in separate thread ...
-% Begin Save AAE data ... (date=05/17 12:37:45, mem=987.0M)
+% Begin Save AAE data ... (date=05/20 16:52:13, mem=986.4M)
 Saving AAE Data ...
 Saving congestion map file checkpoints/design.checkpoint/save.enc.dat/ringosc.route.congmap.gz ...
-% End Save AAE data ... (date=05/17 12:37:45, total cpu=0:00:00.0, real=0:00:00.0, peak res=987.1M, current mem=987.1M)
+% End Save AAE data ... (date=05/20 16:52:13, total cpu=0:00:00.0, real=0:00:00.0, peak res=986.5M, current mem=986.5M)
 Saving preference file checkpoints/design.checkpoint/save.enc.dat/gui.pref.tcl ...
 Saving mode setting ...
 Saving global file ...
 Saving Drc markers ...
-... 21 markers are saved ...
+... 7 markers are saved ...
 ... 0 geometry drc markers are saved ...
 ... 0 antenna drc markers are saved ...
 Saving special route data file in separate thread ...
 Saving PG file in separate thread ...
 Saving placement file in separate thread ...
 Saving route file in separate thread ...
-Saving property file in separate thread ...
 ** Saving stdCellPlacement_binary (version# 2) ...
 Save Adaptive View Pruning View Names to Binary file
 TAT_INFO: ::saveSpecialRoute REAL = 0 : CPU = 0 : MEM = 0.
-Saving PG file checkpoints/design.checkpoint/save.enc.dat/ringosc.pg.gz, version#2, (Created by Innovus v20.13-s083_1 on Tue May 17 12:37:45 2022)
+Saving PG file checkpoints/design.checkpoint/save.enc.dat/ringosc.pg.gz, version#2, (Created by Innovus v20.13-s083_1 on Fri May 20 16:52:13 2022)
 Saving property file checkpoints/design.checkpoint/save.enc.dat/ringosc.prop
-*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1042.9M) ***
-*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1042.8M) ***
-TAT_INFO: ::savePGFile REAL = 0 : CPU = 0 : MEM = 0.
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1042.1M) ***
+*** Completed savePGFile (cpu=0:00:00.0 real=0:00:01.0 mem=1042.1M) ***
+TAT_INFO: ::savePGFile REAL = 1 : CPU = 0 : MEM = 0.
 TAT_INFO: ::savePlace REAL = 0 : CPU = 0 : MEM = 0.
-*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1042.8M) ***
-TAT_INFO: ::saveRoute REAL = 0 : CPU = 0 : MEM = 0.
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:01.0 mem=1042.1M) ***
+TAT_INFO: ::saveRoute REAL = 1 : CPU = 0 : MEM = 0.
 TAT_INFO: ::db::saveAnnotationAndProp REAL = 0 : CPU = 0 : MEM = 0.
 TAT_INFO: ::db::saveSymbolTable REAL = 0 : CPU = 0 : MEM = 0.
 TAT_INFO: ::saveCongMap REAL = 0 : CPU = 0 : MEM = 0.
-% Begin Save power constraints data ... (date=05/17 12:37:46, mem=995.5M)
-% End Save power constraints data ... (date=05/17 12:37:46, total cpu=0:00:00.0, real=0:00:00.0, peak res=995.6M, current mem=995.6M)
+% Begin Save power constraints data ... (date=05/20 16:52:14, mem=994.7M)
+% End Save power constraints data ... (date=05/20 16:52:14, total cpu=0:00:00.0, real=0:00:00.0, peak res=994.9M, current mem=994.9M)
 typical
 Generated self-contained design save.enc.dat
-#% End save design ... (date=05/17 12:37:46, total cpu=0:00:00.7, real=0:00:01.0, peak res=1026.3M, current mem=998.6M)
+#% End save design ... (date=05/20 16:52:14, total cpu=0:00:00.6, real=0:00:01.0, peak res=1025.4M, current mem=997.9M)
 *** Message Summary: 0 warning(s), 0 error(s)
 
 
-*** Memory Usage v#2 (Current mem = 1053.207M, initial mem = 275.727M) ***
-*** Message Summary: 58 warning(s), 2 error(s)
+*** Memory Usage v#2 (Current mem = 1052.488M, initial mem = 275.727M) ***
+*** Message Summary: 60 warning(s), 2 error(s)
 
---- Ending "Innovus" (totcpu=0:00:18.4, real=0:00:28.0, mem=1053.2M) ---
+--- Ending "Innovus" (totcpu=0:00:18.2, real=0:00:28.0, mem=1052.5M) ---

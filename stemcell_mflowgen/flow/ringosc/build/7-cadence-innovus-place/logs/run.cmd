@@ -1,7 +1,7 @@
 #######################################################
 #                                                     
 #  Innovus Command Logging File                     
-#  Created on Tue May 17 12:38:12 2022                
+#  Created on Fri May 20 16:52:40 2022                
 #                                                     
 #######################################################
 
@@ -38,70 +38,70 @@ addTieHiLo
 setDontUse sky130_fd_sc_hd__conb_1 true
 um::pop_snapshot_stack
 reportMultiBitFFs -statistics
-get_metric -raw -id current -uuid c8860116-c980-4912-99fe-7a9d797f50f2 clock.Routing.area.total
-get_metric -raw -id current -uuid c8860116-c980-4912-99fe-7a9d797f50f2 clock.PostConditioning.area.total
-get_metric -raw -id current -uuid c8860116-c980-4912-99fe-7a9d797f50f2 clock.eGRPC.area.total
-get_metric -raw -id current -uuid c8860116-c980-4912-99fe-7a9d797f50f2 clock.Routing.area.total
-get_metric -raw -id current -uuid c8860116-c980-4912-99fe-7a9d797f50f2 clock.Implementation.area.total
-get_metric -raw -id current -uuid c8860116-c980-4912-99fe-7a9d797f50f2 clock.eGRPC.area.total
-get_metric -raw -id current -uuid c8860116-c980-4912-99fe-7a9d797f50f2 clock.Construction.area.total
-get_metric -raw -id current -uuid c8860116-c980-4912-99fe-7a9d797f50f2 clock.Implementation.area.total
-get_metric -raw -id current -uuid 17ed7625-64be-417c-8056-03e941b858df clock.Routing.area.total
-get_metric -raw -id current -uuid 17ed7625-64be-417c-8056-03e941b858df clock.PostConditioning.area.total
-get_metric -raw -id current -uuid 17ed7625-64be-417c-8056-03e941b858df clock.eGRPC.area.total
-get_metric -raw -id current -uuid 17ed7625-64be-417c-8056-03e941b858df clock.Routing.area.total
-get_metric -raw -id current -uuid 17ed7625-64be-417c-8056-03e941b858df clock.Implementation.area.total
-get_metric -raw -id current -uuid 17ed7625-64be-417c-8056-03e941b858df clock.eGRPC.area.total
-get_metric -raw -id current -uuid 17ed7625-64be-417c-8056-03e941b858df clock.Construction.area.total
-get_metric -raw -id current -uuid 17ed7625-64be-417c-8056-03e941b858df clock.Implementation.area.total
-get_metric -raw -id current -uuid 36366d72-83b8-440f-915c-69bfabde2793 clock.Routing.area.total
-get_metric -raw -id current -uuid 36366d72-83b8-440f-915c-69bfabde2793 clock.PostConditioning.area.total
-get_metric -raw -id current -uuid 36366d72-83b8-440f-915c-69bfabde2793 clock.eGRPC.area.total
-get_metric -raw -id current -uuid 36366d72-83b8-440f-915c-69bfabde2793 clock.Routing.area.total
-get_metric -raw -id current -uuid 36366d72-83b8-440f-915c-69bfabde2793 clock.Implementation.area.total
-get_metric -raw -id current -uuid 36366d72-83b8-440f-915c-69bfabde2793 clock.eGRPC.area.total
-get_metric -raw -id current -uuid 36366d72-83b8-440f-915c-69bfabde2793 clock.Construction.area.total
-get_metric -raw -id current -uuid 36366d72-83b8-440f-915c-69bfabde2793 clock.Implementation.area.total
-get_metric -raw -id current -uuid 84dd2efc-9d8d-4998-a8a2-d1b10fa18157 clock.Routing.area.total
-get_metric -raw -id current -uuid 84dd2efc-9d8d-4998-a8a2-d1b10fa18157 clock.PostConditioning.area.total
-get_metric -raw -id current -uuid 84dd2efc-9d8d-4998-a8a2-d1b10fa18157 clock.eGRPC.area.total
-get_metric -raw -id current -uuid 84dd2efc-9d8d-4998-a8a2-d1b10fa18157 clock.Routing.area.total
-get_metric -raw -id current -uuid 84dd2efc-9d8d-4998-a8a2-d1b10fa18157 clock.Implementation.area.total
-get_metric -raw -id current -uuid 84dd2efc-9d8d-4998-a8a2-d1b10fa18157 clock.eGRPC.area.total
-get_metric -raw -id current -uuid 84dd2efc-9d8d-4998-a8a2-d1b10fa18157 clock.Construction.area.total
-get_metric -raw -id current -uuid 84dd2efc-9d8d-4998-a8a2-d1b10fa18157 clock.Implementation.area.total
-get_metric -raw -id current -uuid 5d6940d8-d30d-4e68-a34c-46d2749296ed clock.Routing.area.total
-get_metric -raw -id current -uuid 5d6940d8-d30d-4e68-a34c-46d2749296ed clock.PostConditioning.area.total
-get_metric -raw -id current -uuid 5d6940d8-d30d-4e68-a34c-46d2749296ed clock.eGRPC.area.total
-get_metric -raw -id current -uuid 5d6940d8-d30d-4e68-a34c-46d2749296ed clock.Routing.area.total
-get_metric -raw -id current -uuid 5d6940d8-d30d-4e68-a34c-46d2749296ed clock.Implementation.area.total
-get_metric -raw -id current -uuid 5d6940d8-d30d-4e68-a34c-46d2749296ed clock.eGRPC.area.total
-get_metric -raw -id current -uuid 5d6940d8-d30d-4e68-a34c-46d2749296ed clock.Construction.area.total
-get_metric -raw -id current -uuid 5d6940d8-d30d-4e68-a34c-46d2749296ed clock.Implementation.area.total
-get_metric -raw -id current -uuid 45206baf-1efc-403b-b2a6-e5495aa91cf9 clock.Routing.area.total
-get_metric -raw -id current -uuid 45206baf-1efc-403b-b2a6-e5495aa91cf9 clock.PostConditioning.area.total
-get_metric -raw -id current -uuid 45206baf-1efc-403b-b2a6-e5495aa91cf9 clock.eGRPC.area.total
-get_metric -raw -id current -uuid 45206baf-1efc-403b-b2a6-e5495aa91cf9 clock.Routing.area.total
-get_metric -raw -id current -uuid 45206baf-1efc-403b-b2a6-e5495aa91cf9 clock.Implementation.area.total
-get_metric -raw -id current -uuid 45206baf-1efc-403b-b2a6-e5495aa91cf9 clock.eGRPC.area.total
-get_metric -raw -id current -uuid 45206baf-1efc-403b-b2a6-e5495aa91cf9 clock.Construction.area.total
-get_metric -raw -id current -uuid 45206baf-1efc-403b-b2a6-e5495aa91cf9 clock.Implementation.area.total
-get_metric -raw -id current -uuid 6a0f4bb9-f8bd-46f7-bb9d-c23c8ac6ffa1 clock.Routing.area.total
-get_metric -raw -id current -uuid 6a0f4bb9-f8bd-46f7-bb9d-c23c8ac6ffa1 clock.PostConditioning.area.total
-get_metric -raw -id current -uuid 6a0f4bb9-f8bd-46f7-bb9d-c23c8ac6ffa1 clock.eGRPC.area.total
-get_metric -raw -id current -uuid 6a0f4bb9-f8bd-46f7-bb9d-c23c8ac6ffa1 clock.Routing.area.total
-get_metric -raw -id current -uuid 6a0f4bb9-f8bd-46f7-bb9d-c23c8ac6ffa1 clock.Implementation.area.total
-get_metric -raw -id current -uuid 6a0f4bb9-f8bd-46f7-bb9d-c23c8ac6ffa1 clock.eGRPC.area.total
-get_metric -raw -id current -uuid 6a0f4bb9-f8bd-46f7-bb9d-c23c8ac6ffa1 clock.Construction.area.total
-get_metric -raw -id current -uuid 6a0f4bb9-f8bd-46f7-bb9d-c23c8ac6ffa1 clock.Implementation.area.total
-get_metric -raw -id current -uuid dab6bb4b-9aa6-4101-9d24-d5ac13a63fdc clock.Routing.area.total
-get_metric -raw -id current -uuid dab6bb4b-9aa6-4101-9d24-d5ac13a63fdc clock.PostConditioning.area.total
-get_metric -raw -id current -uuid dab6bb4b-9aa6-4101-9d24-d5ac13a63fdc clock.eGRPC.area.total
-get_metric -raw -id current -uuid dab6bb4b-9aa6-4101-9d24-d5ac13a63fdc clock.Routing.area.total
-get_metric -raw -id current -uuid dab6bb4b-9aa6-4101-9d24-d5ac13a63fdc clock.Implementation.area.total
-get_metric -raw -id current -uuid dab6bb4b-9aa6-4101-9d24-d5ac13a63fdc clock.eGRPC.area.total
-get_metric -raw -id current -uuid dab6bb4b-9aa6-4101-9d24-d5ac13a63fdc clock.Construction.area.total
-get_metric -raw -id current -uuid dab6bb4b-9aa6-4101-9d24-d5ac13a63fdc clock.Implementation.area.total
+get_metric -raw -id current -uuid 1ec5b034-7f79-497b-a7c6-dfc60bad749b clock.Routing.area.total
+get_metric -raw -id current -uuid 1ec5b034-7f79-497b-a7c6-dfc60bad749b clock.PostConditioning.area.total
+get_metric -raw -id current -uuid 1ec5b034-7f79-497b-a7c6-dfc60bad749b clock.eGRPC.area.total
+get_metric -raw -id current -uuid 1ec5b034-7f79-497b-a7c6-dfc60bad749b clock.Routing.area.total
+get_metric -raw -id current -uuid 1ec5b034-7f79-497b-a7c6-dfc60bad749b clock.Implementation.area.total
+get_metric -raw -id current -uuid 1ec5b034-7f79-497b-a7c6-dfc60bad749b clock.eGRPC.area.total
+get_metric -raw -id current -uuid 1ec5b034-7f79-497b-a7c6-dfc60bad749b clock.Construction.area.total
+get_metric -raw -id current -uuid 1ec5b034-7f79-497b-a7c6-dfc60bad749b clock.Implementation.area.total
+get_metric -raw -id current -uuid 8e714634-f277-477e-ac5a-dfae2d2aa096 clock.Routing.area.total
+get_metric -raw -id current -uuid 8e714634-f277-477e-ac5a-dfae2d2aa096 clock.PostConditioning.area.total
+get_metric -raw -id current -uuid 8e714634-f277-477e-ac5a-dfae2d2aa096 clock.eGRPC.area.total
+get_metric -raw -id current -uuid 8e714634-f277-477e-ac5a-dfae2d2aa096 clock.Routing.area.total
+get_metric -raw -id current -uuid 8e714634-f277-477e-ac5a-dfae2d2aa096 clock.Implementation.area.total
+get_metric -raw -id current -uuid 8e714634-f277-477e-ac5a-dfae2d2aa096 clock.eGRPC.area.total
+get_metric -raw -id current -uuid 8e714634-f277-477e-ac5a-dfae2d2aa096 clock.Construction.area.total
+get_metric -raw -id current -uuid 8e714634-f277-477e-ac5a-dfae2d2aa096 clock.Implementation.area.total
+get_metric -raw -id current -uuid 140032d5-c388-40d5-b4bd-f73298252201 clock.Routing.area.total
+get_metric -raw -id current -uuid 140032d5-c388-40d5-b4bd-f73298252201 clock.PostConditioning.area.total
+get_metric -raw -id current -uuid 140032d5-c388-40d5-b4bd-f73298252201 clock.eGRPC.area.total
+get_metric -raw -id current -uuid 140032d5-c388-40d5-b4bd-f73298252201 clock.Routing.area.total
+get_metric -raw -id current -uuid 140032d5-c388-40d5-b4bd-f73298252201 clock.Implementation.area.total
+get_metric -raw -id current -uuid 140032d5-c388-40d5-b4bd-f73298252201 clock.eGRPC.area.total
+get_metric -raw -id current -uuid 140032d5-c388-40d5-b4bd-f73298252201 clock.Construction.area.total
+get_metric -raw -id current -uuid 140032d5-c388-40d5-b4bd-f73298252201 clock.Implementation.area.total
+get_metric -raw -id current -uuid 410811a8-54b1-46c9-9f07-76996c9db5a6 clock.Routing.area.total
+get_metric -raw -id current -uuid 410811a8-54b1-46c9-9f07-76996c9db5a6 clock.PostConditioning.area.total
+get_metric -raw -id current -uuid 410811a8-54b1-46c9-9f07-76996c9db5a6 clock.eGRPC.area.total
+get_metric -raw -id current -uuid 410811a8-54b1-46c9-9f07-76996c9db5a6 clock.Routing.area.total
+get_metric -raw -id current -uuid 410811a8-54b1-46c9-9f07-76996c9db5a6 clock.Implementation.area.total
+get_metric -raw -id current -uuid 410811a8-54b1-46c9-9f07-76996c9db5a6 clock.eGRPC.area.total
+get_metric -raw -id current -uuid 410811a8-54b1-46c9-9f07-76996c9db5a6 clock.Construction.area.total
+get_metric -raw -id current -uuid 410811a8-54b1-46c9-9f07-76996c9db5a6 clock.Implementation.area.total
+get_metric -raw -id current -uuid c97acbd6-ed59-4ee1-b0df-fe73676c7cd1 clock.Routing.area.total
+get_metric -raw -id current -uuid c97acbd6-ed59-4ee1-b0df-fe73676c7cd1 clock.PostConditioning.area.total
+get_metric -raw -id current -uuid c97acbd6-ed59-4ee1-b0df-fe73676c7cd1 clock.eGRPC.area.total
+get_metric -raw -id current -uuid c97acbd6-ed59-4ee1-b0df-fe73676c7cd1 clock.Routing.area.total
+get_metric -raw -id current -uuid c97acbd6-ed59-4ee1-b0df-fe73676c7cd1 clock.Implementation.area.total
+get_metric -raw -id current -uuid c97acbd6-ed59-4ee1-b0df-fe73676c7cd1 clock.eGRPC.area.total
+get_metric -raw -id current -uuid c97acbd6-ed59-4ee1-b0df-fe73676c7cd1 clock.Construction.area.total
+get_metric -raw -id current -uuid c97acbd6-ed59-4ee1-b0df-fe73676c7cd1 clock.Implementation.area.total
+get_metric -raw -id current -uuid e3389982-5fdc-45f3-afe8-b5165a9ff3de clock.Routing.area.total
+get_metric -raw -id current -uuid e3389982-5fdc-45f3-afe8-b5165a9ff3de clock.PostConditioning.area.total
+get_metric -raw -id current -uuid e3389982-5fdc-45f3-afe8-b5165a9ff3de clock.eGRPC.area.total
+get_metric -raw -id current -uuid e3389982-5fdc-45f3-afe8-b5165a9ff3de clock.Routing.area.total
+get_metric -raw -id current -uuid e3389982-5fdc-45f3-afe8-b5165a9ff3de clock.Implementation.area.total
+get_metric -raw -id current -uuid e3389982-5fdc-45f3-afe8-b5165a9ff3de clock.eGRPC.area.total
+get_metric -raw -id current -uuid e3389982-5fdc-45f3-afe8-b5165a9ff3de clock.Construction.area.total
+get_metric -raw -id current -uuid e3389982-5fdc-45f3-afe8-b5165a9ff3de clock.Implementation.area.total
+get_metric -raw -id current -uuid 069f636c-458d-487e-9cf4-d0e821a8de65 clock.Routing.area.total
+get_metric -raw -id current -uuid 069f636c-458d-487e-9cf4-d0e821a8de65 clock.PostConditioning.area.total
+get_metric -raw -id current -uuid 069f636c-458d-487e-9cf4-d0e821a8de65 clock.eGRPC.area.total
+get_metric -raw -id current -uuid 069f636c-458d-487e-9cf4-d0e821a8de65 clock.Routing.area.total
+get_metric -raw -id current -uuid 069f636c-458d-487e-9cf4-d0e821a8de65 clock.Implementation.area.total
+get_metric -raw -id current -uuid 069f636c-458d-487e-9cf4-d0e821a8de65 clock.eGRPC.area.total
+get_metric -raw -id current -uuid 069f636c-458d-487e-9cf4-d0e821a8de65 clock.Construction.area.total
+get_metric -raw -id current -uuid 069f636c-458d-487e-9cf4-d0e821a8de65 clock.Implementation.area.total
+get_metric -raw -id current -uuid 76313c6e-657e-487f-a3ff-cb8cfa3e7e70 clock.Routing.area.total
+get_metric -raw -id current -uuid 76313c6e-657e-487f-a3ff-cb8cfa3e7e70 clock.PostConditioning.area.total
+get_metric -raw -id current -uuid 76313c6e-657e-487f-a3ff-cb8cfa3e7e70 clock.eGRPC.area.total
+get_metric -raw -id current -uuid 76313c6e-657e-487f-a3ff-cb8cfa3e7e70 clock.Routing.area.total
+get_metric -raw -id current -uuid 76313c6e-657e-487f-a3ff-cb8cfa3e7e70 clock.Implementation.area.total
+get_metric -raw -id current -uuid 76313c6e-657e-487f-a3ff-cb8cfa3e7e70 clock.eGRPC.area.total
+get_metric -raw -id current -uuid 76313c6e-657e-487f-a3ff-cb8cfa3e7e70 clock.Construction.area.total
+get_metric -raw -id current -uuid 76313c6e-657e-487f-a3ff-cb8cfa3e7e70 clock.Implementation.area.total
 um::get_metric_definition -name *.drc
 um::get_metric_definition -name *.drc.layer:*
 um::get_metric_definition -name *.drc.layer:*.type:*

@@ -4,47 +4,30 @@ Warning: netgen command 'global' use fully-qualified name '::netgen::global'
 Reading netlist file inputs/design_extracted.spice
 Reading netlist file inputs/design.lvs.v
 Warning:  A case-insensitive file has been read and so the	verilog file must be treated case-insensitive to match.
-Creating placeholder cell definition for module sky130_asc_pfet_01v8_lvt_12.
-Creating placeholder cell definition for module sky130_asc_pfet_01v8_lvt_60.
+Creating placeholder cell definition for module sky130_asc_cap_mim_m3_1.
 Reading setup file inputs/adk/netgen_setup.tcl
 Comparison output logged to file outputs/lvs_results.log
 Logging to file "outputs/lvs_results.log" enabled
-Contents of circuit 1:  Circuit: 'sky130_asc_pfet_01v8_lvt_60'
-Circuit sky130_asc_pfet_01v8_lvt_60 contains 0 device instances.
-Circuit contains 0 nets, and 5 disconnected pins.
-Contents of circuit 2:  Circuit: 'sky130_asc_pfet_01v8_lvt_60'
-Circuit sky130_asc_pfet_01v8_lvt_60 contains 0 device instances.
+Contents of circuit 1:  Circuit: 'sky130_asc_cap_mim_m3_1'
+Circuit sky130_asc_cap_mim_m3_1 contains 0 device instances.
+Circuit contains 0 nets, and 4 disconnected pins.
+Contents of circuit 2:  Circuit: 'sky130_asc_cap_mim_m3_1'
+Circuit sky130_asc_cap_mim_m3_1 contains 0 device instances.
 Circuit contains 0 nets.
 
-Circuit sky130_asc_pfet_01v8_lvt_60 contains no devices.
-Contents of circuit 1:  Circuit: 'sky130_asc_pfet_01v8_lvt_12'
-Circuit sky130_asc_pfet_01v8_lvt_12 contains 0 device instances.
-Circuit contains 0 nets, and 5 disconnected pins.
-Contents of circuit 2:  Circuit: 'sky130_asc_pfet_01v8_lvt_12'
-Circuit sky130_asc_pfet_01v8_lvt_12 contains 0 device instances.
-Circuit contains 0 nets.
-
-Circuit sky130_asc_pfet_01v8_lvt_12 contains no devices.
+Circuit sky130_asc_cap_mim_m3_1 contains no devices.
 Contents of circuit 1:  Circuit: 'ringosc'
-Circuit ringosc contains 4 device instances.
-  Class: sky130_asc_pfet_01v8_lvt_60 instances:   3
-  Class: sky130_asc_pfet_01v8_lvt_12 instances:   1
-Circuit contains 6 nets.
+Circuit ringosc contains 1 device instances.
+  Class: sky130_asc_cap_mim_m3_1 instances:   1
+Circuit contains 2 nets.
 Contents of circuit 2:  Circuit: 'ringosc'
-Circuit ringosc contains 4 device instances.
-  Class: sky130_asc_pfet_01v8_lvt_60 instances:   3
-  Class: sky130_asc_pfet_01v8_lvt_12 instances:   1
-Circuit contains 6 nets.
+Circuit ringosc contains 1 device instances.
+  Class: sky130_asc_cap_mim_m3_1 instances:   1
+Circuit contains 3 nets.
 
-Circuit 1 contains 4 devices, Circuit 2 contains 4 devices.
-Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
+Circuit 1 contains 1 devices, Circuit 2 contains 1 devices.
+Circuit 1 contains 2 nets,    Circuit 2 contains 3 nets. *** MISMATCH ***
 
-Circuits match with 2 symmetries.
-Resolving automorphisms by property value.
-Resolving automorphisms by pin name.
-Netlists match with 2 symmetries.
-Circuits match correctly.
-Result: The top level cell failed pin matching.
-
+Result: Netlists do not match.
 Logging to file "outputs/lvs_results.log" disabled
 LVS Done.

@@ -1,5 +1,0 @@
-Puts "<FF> DERATING DELAY CORNERS ..."
-#
-#  DERATING DELAY CORNERS (mmmc) ...
-#
-

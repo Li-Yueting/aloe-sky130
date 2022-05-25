@@ -1,17 +1,10 @@
 * NGSPICE file created from ringosc.ext - technology: sky130A
 
-* Black-box entry subcircuit for sky130_asc_pfet_01v8_lvt_60 abstract view
-.subckt sky130_asc_pfet_01v8_lvt_60 GATE SOURCE DRAIN VPWR VGND
+* Black-box entry subcircuit for sky130_asc_cap_mim_m3_1 abstract view
+.subckt sky130_asc_cap_mim_m3_1 Cout Cin VPWR VGND
 .ends
 
-* Black-box entry subcircuit for sky130_asc_pfet_01v8_lvt_12 abstract view
-.subckt sky130_asc_pfet_01v8_lvt_12 GATE SOURCE DRAIN VPWR VGND
-.ends
-
-.subckt ringosc VSS VDD
-XM1 M3/GATE VDD M1/DRAIN VDD VSS sky130_asc_pfet_01v8_lvt_60
-XM17 VDD VDD M1/DRAIN VDD VSS sky130_asc_pfet_01v8_lvt_12
-XM2 M3/GATE VDD M2/DRAIN VDD VSS sky130_asc_pfet_01v8_lvt_60
-XM3 M3/GATE VDD M3/DRAIN VDD VSS sky130_asc_pfet_01v8_lvt_60
+.subckt ringosc VDD
+XC1 C1/Cout VDD VDD VDD sky130_asc_cap_mim_m3_1
 .ends
 

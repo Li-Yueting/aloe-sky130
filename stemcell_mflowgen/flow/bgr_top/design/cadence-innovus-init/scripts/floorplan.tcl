@@ -23,7 +23,7 @@ set M1_min_width   [dbGet [dbGetLayerByZ 1].minWidth]
 set M1_min_spacing [dbGet [dbGetLayerByZ 1].minSpacing]
 
 set savedvars(p_ring_width)   [expr 48 * $M1_min_width];   # Arbitrary!
-set savedvars(p_ring_spacing) [expr 48 * $M1_min_spacing]; # Arbitrary!
+set savedvars(p_ring_spacing) [expr 24 * $M1_min_spacing]; # Arbitrary!
 
 # Core bounding box margins
 

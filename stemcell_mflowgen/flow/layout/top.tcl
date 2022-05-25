@@ -33,13 +33,13 @@ puts "script_path: $script_path"
 # addlef nmos_1 $script_path
 # ### pnp
 # flush
-# place_pnp_1 0 0 1
-# addlef pnp_1 $script_path
+place_pnp_1 0 0 1
+addlef pnp_1 $script_path
 # flush 
 # place_pnp 0 0 7 1
 # addlef pnp_7 $script_path
-flush 
-place_pnp 0 0 8 1
+# flush 
+# place_pnp 0 0 8 1
 # addlef pnp_8 $script_path
 # ### resistor
 # flush

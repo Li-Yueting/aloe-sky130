@@ -580,8 +580,10 @@ proc place_pnp_1 {x_center y_center index} {
 	paint li
 	label Collector FreeSans 30
 	### label Base
-	box 52 216 112 236
-	paint li
+	box 72 218 90 234
+	paint viali
+    box 52 216 112 236
+	paint m1
 	label Base FreeSans 30
 	### label Emitter
 	box -54 35 60 100

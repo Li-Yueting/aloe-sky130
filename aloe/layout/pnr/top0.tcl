@@ -16,8 +16,10 @@ source $env(pnr_dir)/suppr_msg.tcl
 # python -m aloe.layout.pylib.write_pins
 cd $env(pnr_dir)
 source $env(pnr_dir)/ini.tcl
+source $env(pnr_dir)/tech.tcl
 # if {[file exists $env(pnr_dir)/ndr.tcl]} {
 #     source $env(pnr_dir)/ndr.tcl
 # }
 source $env(pnr_dir)/run0_bgr.tcl
+source $env(pnr_dir)/run_signoff.tcl
 

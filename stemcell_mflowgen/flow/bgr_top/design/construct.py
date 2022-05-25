@@ -135,7 +135,7 @@ def construct():
   # g.connect_by_name( iflow,           postroute       )
   g.connect_by_name( iflow,           signoff         )
   # Core place and route flow
-  g.connect_by_name( init,            power           )
+  g.connect_by_name( init,            power          )
   g.connect_by_name( power,           place           )
   # g.connect_by_name( route,           postroute       )
   # g.connect_by_name( postroute,       signoff         )

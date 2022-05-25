@@ -43,17 +43,17 @@ setPlaceMode -coreEffort high ;
 # # tech lib variables
 # #setFillerMode -core {FILL128_A9TL_C16 FILL4_A9TL_C16 FILLSGCAP3_A9TL_C16 FILLSGCAP8_A9TL_C16 FILLXGCAP4_A9TL_C16 FILL16_A9TL_C16 FILL64_A9TL_C16 FILLSGCAP4_A9TL_C16 FILLTIE14_A9TL_C16 FILLXGCAP5_A9TL_C16 FILL1_A9TL_C16 FILL8_A9TL_C16 FILLSGCAP5_A9TL_C16 FILLXGCAP128_A9TL_C16 FILLXGCAP64_A9TL_C16 FILL2_A9TL_C16 FILLSGCAP128_A9TL_C16 FILLSGCAP64_A9TL_C16 FILLXGCAP16_A9TL_C16 FILLXGCAP6_A9TL_C16 FILL32_A9TL_C16 FILLSGCAP16_A9TL_C16 FILLSGCAP6_A9TL_C16 FILLXGCAP32_A9TL_C16 FILLXGCAP7_A9TL_C16 FILL3_A9TL_C16 FILLSGCAP32_A9TL_C16 FILLSGCAP7_A9TL_C16 FILLXGCAP3_A9TL_C16 FILLXGCAP8_A9TL_C16} -corePrefix FILLER
 # # nanoroute mode
-# setNanoRouteMode -routeExpAdvancedTechnology true ;  # mainly for metal patching; it may be default later
+setNanoRouteMode -routeExpAdvancedTechnology true ;  # mainly for metal patching; it may be default later
 # #setNanoRouteMode -routeTopRoutingLayer 6 
-# setNanoRouteMode -routeBottomRoutingLayer 2 \
-# 				 -drouteAutoStop false \
-# 				 -drouteExpAdvancedMarFix true \
-# 				 -drouteFixAntenna true \
-# 				 -drouteUseMultiCutViaEffort high \
-# 				 -routeWithTimingDriven false \
-# 				 -routeWithSiDriven false \
-# 				 -routeAutoPinAccessForBlockPin true \
-# 				 -routeConcurrentMinimizeViaCountEffort high
+setNanoRouteMode -routeBottomRoutingLayer 2 \
+				 -drouteAutoStop false \
+				 -drouteExpAdvancedMarFix true \
+				 -drouteFixAntenna true \
+				 -drouteUseMultiCutViaEffort high \
+				 -routeWithTimingDriven false \
+				 -routeWithSiDriven false \
+				 -routeAutoPinAccessForBlockPin true \
+				 -routeConcurrentMinimizeViaCountEffort high
 # 				 #-routeWithViaInPin 1:1
 # 				 # Always use vias for access to Metal1 standard cell pins. Metal2 and above can use vias or planar access.
 # # register all tech sites
@@ -88,14 +88,14 @@ setStreamOutMode -virtualConnection false
 #floorPlan -site Core -r 2 0.2 0.0 0.0 0.0 0.0
 # sroute
 # ONETIME
-# globalNetConnect VDD -type tiehi -pin VDD -inst *
-# globalNetConnect VSS -type tielo -pin VSS -inst *
-# globalNetConnect VDD -type tiehi -pin VNW -inst *
-# globalNetConnect VSS -type tielo -pin VPW -inst *
-# globalNetConnect VDD -type pgpin -pin VDD -inst *
-# globalNetConnect VSS -type pgpin -pin VSS -inst *
+globalNetConnect VDD -type tiehi -pin VDD -inst *
+globalNetConnect VSS -type tielo -pin VSS -inst *
+globalNetConnect VDD -type pgpin -pin VDD -inst *
+globalNetConnect VSS -type pgpin -pin VSS -inst *
 # globalNetConnect VDD -type pgpin -pin VNW -inst *
 # globalNetConnect VSS -type pgpin -pin VPW -inst *
+# globalNetConnect VDD -type tiehi -pin SOURCE -inst *pfet*
+# globalNetConnect VSS -type tielo -pin SOURCE -inst M10
 
 globalNetConnect VDD -type tiehi -pin VPWR -inst *
 globalNetConnect VSS -type tielo -pin VGND -inst *
@@ -106,7 +106,7 @@ globalNetConnect VSS -type pgpin -pin VGND -inst *
 globalNetConnect VDD -type pgpin -pin VPB -inst *
 globalNetConnect VSS -type pgpin -pin VNB -inst *
 
-
-
+globalNetConnect VSS -type pgpin -net VSS -inst *
+globalNetConnect VSS -type net -pin SOURCE -inst *nfet*
 
 #sroute -connect { corePin } -layerChangeRange { M1(1) M1(1) } -blockPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -allowJogging 0 -crossoverViaLayerRange { M1(1) M1(1) } -nets { VDD VSS } -allowLayerChange 0 -targetViaLayerRange { M1(1) M1(1) }

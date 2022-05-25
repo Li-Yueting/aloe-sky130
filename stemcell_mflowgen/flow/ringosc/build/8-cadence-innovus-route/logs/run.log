@@ -4,7 +4,7 @@ Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
 
 Version:	v20.13-s083_1, built Tue Jan 19 16:51:46 PST 2021
 Options:	-overwrite -nowin -init START.tcl -log logs/run.log 
-Date:		Tue May 17 12:38:25 2022
+Date:		Fri May 20 16:52:54 2022
 Host:		rice-503-20-north (x86_64 w/Linux 5.11.0-41-generic) (20cores*40cpus*Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz 28160KB)
 OS:		CentOS Linux release 7.9.2009 (Core)
 
@@ -20,11 +20,11 @@ The soft stacksize limit is either up to the hard limit or larger than 0.2% of R
 Sourcing file "START.tcl" ...
 <CMD> is_common_ui_mode
 <CMD> restoreDesign /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/7-cadence-innovus-place/checkpoints/design.checkpoint/save.enc.dat ringosc
-#% Begin load design ... (date=05/17 12:38:49, mem=669.2M)
+#% Begin load design ... (date=05/20 16:53:17, mem=666.1M)
 Set Default Input Pin Transition as 0.1 ps.
-Loading design 'ringosc' saved by 'Innovus' '20.13-s083_1' on 'Tue May 17 12:38:21 2022'.
-% Begin Load MMMC data ... (date=05/17 12:38:49, mem=671.6M)
-% End Load MMMC data ... (date=05/17 12:38:49, total cpu=0:00:00.0, real=0:00:00.0, peak res=672.6M, current mem=672.6M)
+Loading design 'ringosc' saved by 'Innovus' '20.13-s083_1' on 'Fri May 20 16:52:49 2022'.
+% Begin Load MMMC data ... (date=05/20 16:53:17, mem=668.9M)
+% End Load MMMC data ... (date=05/20 16:53:17, total cpu=0:00:00.0, real=0:00:00.0, peak res=669.9M, current mem=669.9M)
 typical
 
 Loading LEF file /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/7-cadence-innovus-place/checkpoints/design.checkpoint/save.enc.dat/libs/lef/rtk-tech.lef ...
@@ -33,23 +33,19 @@ Loading LEF file /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/r
 WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
 The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/7-cadence-innovus-place/checkpoints/design.checkpoint/save.enc.dat/libs/lef/stdcells.lef at line 2.
 Set DBUPerIGU to M1 pitch 460.
-**WARN: (IMPLF-63):	The layer 'obsm4' referenced in OBS in macro 'sky130_asc_cap_mim_m3_1' is not found in the database. The obstruction geometries specified on the layer are being ignored. A layer must be defined in the LEF technology LAYER section before it can be referenced from a macro. Review the LEF files specified in the init_lef_file variable to see if the layer does not exist or is specified after the one that defines the macro.
-Type 'man IMPLF-63' for more detail.
-**WARN: (IMPLF-63):	The layer 'obsm5' referenced in OBS in macro 'sky130_asc_cap_mim_m3_1' is not found in the database. The obstruction geometries specified on the layer are being ignored. A layer must be defined in the LEF technology LAYER section before it can be referenced from a macro. Review the LEF files specified in the init_lef_file variable to see if the layer does not exist or is specified after the one that defines the macro.
-Type 'man IMPLF-63' for more detail.
 **WARN: (IMPLF-201):	Pin 'GATE' in macro 'sky130_asc_pfet_01v8_lvt_9' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
 Type 'man IMPLF-201' for more detail.
 **WARN: (IMPLF-200):	Pin 'SOURCE' in macro 'sky130_asc_pfet_01v8_lvt_9' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
 Type 'man IMPLF-200' for more detail.
 **WARN: (IMPLF-200):	Pin 'DRAIN' in macro 'sky130_asc_pfet_01v8_lvt_9' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
 Type 'man IMPLF-200' for more detail.
-**WARN: (IMPLF-201):	Pin 'Cin' in macro 'sky130_asc_cap_mim_m3_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-Type 'man IMPLF-201' for more detail.
-**WARN: (IMPLF-200):	Pin 'Cin' in macro 'sky130_asc_cap_mim_m3_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
-Type 'man IMPLF-200' for more detail.
 **WARN: (IMPLF-201):	Pin 'Cout' in macro 'sky130_asc_cap_mim_m3_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
 Type 'man IMPLF-201' for more detail.
 **WARN: (IMPLF-200):	Pin 'Cout' in macro 'sky130_asc_cap_mim_m3_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'Cin' in macro 'sky130_asc_cap_mim_m3_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'Cin' in macro 'sky130_asc_cap_mim_m3_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
 Type 'man IMPLF-200' for more detail.
 **WARN: (IMPLF-200):	Pin 'Emitter' in macro 'sky130_asc_pnp_05v5_W3p40L3p40_7' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
 Type 'man IMPLF-200' for more detail.
@@ -104,8 +100,8 @@ Type 'man IMPLF-201' for more detail.
 **WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
 To increase the message display limit, refer to the product command reference manual.
 
-viaInitial starts at Tue May 17 12:38:49 2022
-viaInitial ends at Tue May 17 12:38:49 2022
+viaInitial starts at Fri May 20 16:53:18 2022
+viaInitial ends at Fri May 20 16:53:18 2022
 
 ##  Check design process and node:  
 ##  Both design process and tech node are not set.
@@ -113,9 +109,9 @@ viaInitial ends at Tue May 17 12:38:49 2022
 Loading view definition file from /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/7-cadence-innovus-place/checkpoints/design.checkpoint/save.enc.dat/viewDefinition.tcl
 Reading libs_typical timing library '/home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/2-skywater-130nm/view-standard/stdcells.lib' ...
 Read 12 cells in library 'sky130_fd_sc_hd__tt_025C_1v80' 
-*** End library_loading (cpu=0.00min, real=0.00min, mem=22.0M, fe_cpu=0.26min, fe_real=0.40min, fe_mem=689.0M) ***
-% Begin Load netlist data ... (date=05/17 12:38:49, mem=687.2M)
-*** Begin netlist parsing (mem=689.0M) ***
+*** End library_loading (cpu=0.00min, real=0.00min, mem=31.0M, fe_cpu=0.27min, fe_real=0.40min, fe_mem=689.7M) ***
+% Begin Load netlist data ... (date=05/20 16:53:18, mem=687.5M)
+*** Begin netlist parsing (mem=689.7M) ***
 **WARN: (IMPVL-159):	Pin 'Collector' of cell 'sky130_asc_pnp_05v5_W3p40L3p40_7' is defined in LEF but not in the timing library.
 Type 'man IMPVL-159' for more detail.
 **WARN: (IMPVL-159):	Pin 'Collector' of cell 'sky130_asc_pnp_05v5_W3p40L3p40_8' is defined in LEF but not in the timing library.
@@ -126,9 +122,9 @@ Backslashed names will retain backslash and a trailing blank character.
 Reading verilogBinary netlist '/home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/7-cadence-innovus-place/checkpoints/design.checkpoint/save.enc.dat/vbin/ringosc.v.bin'
 Reading binary database version 2 in 1-threaded mode
 
-*** Memory Usage v#2 (Current mem = 699.980M, initial mem = 275.727M) ***
-*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=700.0M) ***
-% End Load netlist data ... (date=05/17 12:38:49, total cpu=0:00:00.0, real=0:00:00.0, peak res=690.8M, current mem=690.8M)
+*** Memory Usage v#2 (Current mem = 700.715M, initial mem = 275.727M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=700.7M) ***
+% End Load netlist data ... (date=05/20 16:53:18, total cpu=0:00:00.0, real=0:00:00.0, peak res=691.0M, current mem=691.0M)
 Set top cell to ringosc.
 **WARN: (IMPTS-124):	Timing library description of pin 'Collector' is missing from cell 'sky130_asc_pnp_05v5_W3p40L3p40_7' in timing library 'sky130_fd_sc_hd__tt_025C_1v80'.
 **WARN: (IMPTS-124):	Timing library description of pin 'Collector' is missing from cell 'sky130_asc_pnp_05v5_W3p40L3p40_8' in timing library 'sky130_fd_sc_hd__tt_025C_1v80'.
@@ -139,10 +135,14 @@ Building hierarchical netlist for Cell ringosc ...
 *** Netlist is unique.
 Set DBUPerIGU to techSite unitasc width 490.
 ** info: there are 13 modules.
-** info: there are 4 stdCell insts.
+** info: there are 1 stdCell insts.
 
-*** Memory Usage v#2 (Current mem = 731.395M, initial mem = 275.727M) ***
+*** Memory Usage v#2 (Current mem = 731.129M, initial mem = 275.727M) ***
 *info: set bottom ioPad orient R0
+**WARN: (IMPFP-3961):	The techSite 'unithddbl' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'unithd' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
 **WARN: (IMPFP-3961):	The techSite 'unithddbl' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
 Type 'man IMPFP-3961' for more detail.
 **WARN: (IMPFP-3961):	The techSite 'unithd' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
@@ -200,13 +200,17 @@ Total number of identified unusable delay cells: 0
 No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
 **WARN: (IMPOPT-3001):	Inverter footprint is not defined or is an invalid inverter footprint.
 Type 'man IMPOPT-3001' for more detail.
-% Begin Load MMMC data ... (date=05/17 12:38:50, mem=923.6M)
-% End Load MMMC data ... (date=05/17 12:38:50, total cpu=0:00:00.0, real=0:00:00.0, peak res=923.6M, current mem=923.5M)
-Reading floorplan file - /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/7-cadence-innovus-place/checkpoints/design.checkpoint/save.enc.dat/ringosc.fp.gz (mem = 936.0M).
-% Begin Load floorplan data ... (date=05/17 12:38:50, mem=924.0M)
-*info: reset 14 existing net BottomPreferredLayer and AvoidDetour
+% Begin Load MMMC data ... (date=05/20 16:53:19, mem=923.4M)
+% End Load MMMC data ... (date=05/20 16:53:19, total cpu=0:00:00.0, real=0:00:00.0, peak res=923.4M, current mem=923.4M)
+Reading floorplan file - /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/7-cadence-innovus-place/checkpoints/design.checkpoint/save.enc.dat/ringosc.fp.gz (mem = 935.8M).
+% Begin Load floorplan data ... (date=05/20 16:53:19, mem=923.8M)
+*info: reset 11 existing net BottomPreferredLayer and AvoidDetour
 Deleting old partition specification.
-Set FPlanBox to (0 0 224020 141780)
+Set FPlanBox to (0 0 119600 76160)
+**WARN: (IMPFP-3961):	The techSite 'unithddbl' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'unithd' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
 **WARN: (IMPFP-3961):	The techSite 'unithddbl' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
 Type 'man IMPFP-3961' for more detail.
 **WARN: (IMPFP-3961):	The techSite 'unithd' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
@@ -218,40 +222,40 @@ Generated pitch 3.66 in met5 is different from 3.4 defined in technology file in
 Generated pitch 0.69 in met4 is different from 0.92 defined in technology file in preferred direction.
 Generated pitch 0.61 in met3 is different from 0.68 defined in technology file in preferred direction.
  ... processed partition successfully.
-Reading binary special route file /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/7-cadence-innovus-place/checkpoints/design.checkpoint/save.enc.dat/ringosc.fp.spr.gz (Created by Innovus v20.13-s083_1 on Tue May 17 12:38:20 2022, version: 1)
-Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=929.8M, current mem=929.8M)
+Reading binary special route file /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/7-cadence-innovus-place/checkpoints/design.checkpoint/save.enc.dat/ringosc.fp.spr.gz (Created by Innovus v20.13-s083_1 on Fri May 20 16:52:48 2022, version: 1)
+Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=929.6M, current mem=929.6M)
 Extracting standard cell pins and blockage ...... 
 Pin and blockage extraction finished
-% End Load floorplan data ... (date=05/17 12:38:50, total cpu=0:00:00.1, real=0:00:00.0, peak res=930.9M, current mem=930.6M)
-% Begin Load SymbolTable ... (date=05/17 12:38:50, mem=930.9M)
+% End Load floorplan data ... (date=05/20 16:53:19, total cpu=0:00:00.1, real=0:00:00.0, peak res=930.6M, current mem=930.6M)
+% Begin Load SymbolTable ... (date=05/20 16:53:19, mem=931.0M)
 Reading congestion map file /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/7-cadence-innovus-place/checkpoints/design.checkpoint/save.enc.dat/ringosc.route.congmap.gz ...
 Suppress "**WARN ..." messages.
 Un-suppress "**WARN ..." messages.
-% End Load SymbolTable ... (date=05/17 12:38:51, total cpu=0:00:00.0, real=0:00:01.0, peak res=931.4M, current mem=931.4M)
+% End Load SymbolTable ... (date=05/20 16:53:19, total cpu=0:00:00.0, real=0:00:00.0, peak res=931.5M, current mem=931.5M)
 Loading place ...
-% Begin Load placement data ... (date=05/17 12:38:51, mem=931.4M)
+% Begin Load placement data ... (date=05/20 16:53:19, mem=931.5M)
 Reading placement file - /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/7-cadence-innovus-place/checkpoints/design.checkpoint/save.enc.dat/ringosc.place.gz.
-** Reading stdCellPlacement_binary (Created by Innovus v20.13-s083_1 on Tue May 17 12:38:20 2022, version# 2) ...
+** Reading stdCellPlacement_binary (Created by Innovus v20.13-s083_1 on Fri May 20 16:52:48 2022, version# 2) ...
 Read Views for adaptive view pruning ...
 Read 0 views from Binary DB for adaptive view pruning
-*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=944.0M) ***
-Total net length = 1.306e+02 (5.537e+01 7.520e+01) (ext = 1.306e+02)
-% End Load placement data ... (date=05/17 12:38:51, total cpu=0:00:00.0, real=0:00:00.0, peak res=932.1M, current mem=932.1M)
-Reading PG file /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/7-cadence-innovus-place/checkpoints/design.checkpoint/save.enc.dat/ringosc.pg.gz, version#2, (Created by Innovus v20.13-s083_1 on       Tue May 17 12:38:20 2022)
-*** Completed restorePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=940.0M) ***
-% Begin Load routing data ... (date=05/17 12:38:51, mem=932.5M)
+*** Completed restorePlace (cpu=0:00:00.0 real=0:00:01.0 mem=944.8M) ***
+Total net length = 0.000e+00 (0.000e+00 0.000e+00) (ext = 0.000e+00)
+% End Load placement data ... (date=05/20 16:53:20, total cpu=0:00:00.0, real=0:00:01.0, peak res=932.2M, current mem=932.2M)
+Reading PG file /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/7-cadence-innovus-place/checkpoints/design.checkpoint/save.enc.dat/ringosc.pg.gz, version#2, (Created by Innovus v20.13-s083_1 on       Fri May 20 16:52:48 2022)
+*** Completed restorePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=940.8M) ***
+% Begin Load routing data ... (date=05/20 16:53:20, mem=932.6M)
 Reading routing file - /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/7-cadence-innovus-place/checkpoints/design.checkpoint/save.enc.dat/ringosc.route.gz.
-Reading Innovus routing data (Created by Innovus v20.13-s083_1 on Tue May 17 12:38:20 2022 Format: 20.1) ...
-*** Total 14 nets are successfully restored.
-*** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=941.0M) ***
-% End Load routing data ... (date=05/17 12:38:51, total cpu=0:00:00.0, real=0:00:00.0, peak res=934.1M, current mem=933.1M)
+Reading Innovus routing data (Created by Innovus v20.13-s083_1 on Fri May 20 16:52:48 2022 Format: 20.1) ...
+*** Total 11 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=941.8M) ***
+% End Load routing data ... (date=05/20 16:53:20, total cpu=0:00:00.0, real=0:00:00.0, peak res=933.8M, current mem=932.8M)
 Loading Drc markers ...
-... 21 markers are loaded ...
+... 7 markers are loaded ...
 ... 0 geometry drc markers are loaded ...
 ... 0 antenna drc markers are loaded ...
-TAT_INFO: restoreCongMap REAL = 1 : CPU = 0 : MEM = 0.
+TAT_INFO: restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
 Reading property file /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/ringosc/build/7-cadence-innovus-place/checkpoints/design.checkpoint/save.enc.dat/ringosc.prop
-*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=947.1M) ***
+*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=946.8M) ***
 Set Default Input Pin Transition as 0.1 ps.
 Extraction setup Started 
 Initializing multi-corner RC extraction with 1 active RC Corners ...
@@ -284,15 +288,15 @@ Start generating vias ..
 Extracting standard cell pins and blockage ...... 
 Pin and blockage extraction finished
 Via generation completed.
-% Begin Load power constraints ... (date=05/17 12:38:52, mem=939.8M)
+% Begin Load power constraints ... (date=05/20 16:53:21, mem=939.4M)
 ** WARN:  (VOLTUS_POWR-3212): The 'set_power_analysis_mode -leakage_power_view |-dynamic_power_view|-analysis_view' will be obsolete in 18.20 release. Use 'set_analysis_view -leakage <> | -dynamic <>' to set leakage and dynamic power views.
 
-% End Load power constraints ... (date=05/17 12:38:52, total cpu=0:00:00.0, real=0:00:00.0, peak res=940.0M, current mem=940.0M)
+% End Load power constraints ... (date=05/20 16:53:21, total cpu=0:00:00.0, real=0:00:00.0, peak res=939.6M, current mem=939.6M)
 delay_default
-% Begin load AAE data ... (date=05/17 12:38:52, mem=946.8M)
+% Begin load AAE data ... (date=05/20 16:53:21, mem=946.4M)
 **WARN: (IMPESI-3505):	setDelayCalMode -eng_copyNetPropToNewNet true (default=false) will be obsoleted along with its sgs2set equivalent.  This parameter will continue to be supported in the current release, but will be removed in the next major release of the software.
-AAE DB initialization (MEM=976.52 CPU=0:00:00.0 REAL=0:00:00.0) 
-% End load AAE data ... (date=05/17 12:38:52, total cpu=0:00:00.3, real=0:00:00.0, peak res=952.5M, current mem=952.5M)
+AAE DB initialization (MEM=976.246 CPU=0:00:00.0 REAL=0:00:00.0) 
+% End load AAE data ... (date=05/20 16:53:21, total cpu=0:00:00.3, real=0:00:00.0, peak res=952.1M, current mem=952.1M)
 Total number of combinational cells: 10
 Total number of sequential cells: 0
 Total number of tristate cells: 0
@@ -318,14 +322,13 @@ Total number of identified unusable delay cells: 0
 No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
 **WARN: (IMPCTE-107):	The following globals have been obsoleted since version 20.13-s083_1. They will be removed in the next release. 
 timing_enable_default_delay_arc
-#% End load design ... (date=05/17 12:38:52, total cpu=0:00:02.0, real=0:00:03.0, peak res=977.3M, current mem=952.5M)
+#% End load design ... (date=05/20 16:53:21, total cpu=0:00:02.0, real=0:00:04.0, peak res=976.9M, current mem=952.1M)
 
 *** Summary of all messages that are not suppressed in this session:
 Severity  ID               Count  Summary                                  
-WARNING   IMPLF-63             2  The layer '%s' referenced %s is not foun...
 WARNING   IMPLF-200           24  Pin '%s' in macro '%s' has no ANTENNAGAT...
 WARNING   IMPLF-201           12  Pin '%s' in macro '%s' has no ANTENNADIF...
-WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+WARNING   IMPFP-3961           8  The techSite '%s' has no related standar...
 WARNING   IMPPTN-867           1  Found use of %s. This will continue to w...
 WARNING   IMPTS-124            2  Timing library description of pin '%s' i...
 WARNING   IMPVL-159            2  Pin '%s' of cell '%s' is defined in LEF ...
@@ -333,7 +336,7 @@ WARNING   IMPESI-3505          1  setDelayCalMode -eng_%s (default=%s) wil...
 WARNING   IMPOPT-3001          1  Inverter footprint is not defined or is ...
 WARNING   IMPCTE-107           1  The following globals have been obsolete...
 WARNING   IMPPSP-1003          1  Found use of '%s'. This will continue to...
-*** Message Summary: 51 warning(s), 0 error(s)
+*** Message Summary: 53 warning(s), 0 error(s)
 
 <CMD> setDistributeHost -local
 The timeout for a remote job to respond is 3600 seconds.
@@ -399,8 +402,8 @@ Type 'man IMPSP-5123' for more detail.
 # puts "<FF> Plugin -> pre_route_tcl"
 # routeDesign -placementCheck
 <CMD> routeDesign -placementCheck
-#% Begin routeDesign (date=05/17 12:38:52, mem=952.6M)
-#routeDesign: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 952.58 (MB), peak = 977.34 (MB)
+#% Begin routeDesign (date=05/20 16:53:21, mem=952.1M)
+#routeDesign: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 952.14 (MB), peak = 976.91 (MB)
 **INFO: User settings:
 setNanoRouteMode -drouteUseMultiCutViaEffort                    high
 setNanoRouteMode -extractThirdPartyCompatible                   false
@@ -436,58 +439,55 @@ Additional license(s) checked out: 1 Innovus_CPU_Opt license(s) for 8 CPU(s)
 Total CPU(s) now enabled: 16
 Multithreaded Timing Analysis is initialized with 16 threads
 
-Begin checking placement ... (start mem=1046.2M, init mem=1078.2M)
-*info: Placed = 4             
+Begin checking placement ... (start mem=1045.9M, init mem=1077.9M)
+*info: Placed = 1             
 *info: Unplaced = 0           
-Placement Density:30.04%(4210/14011)
-Placement Density (including fixed std cells):30.04%(4210/14011)
-Finished checkPlace (total: cpu=0:00:00.0, real=0:00:00.0; vio checks: cpu=0:00:00.0, real=0:00:00.0; mem=1078.2M)
+Placement Density:30.09%(346/1152)
+Placement Density (including fixed std cells):30.09%(346/1152)
+Finished checkPlace (total: cpu=0:00:00.0, real=0:00:00.0; vio checks: cpu=0:00:00.0, real=0:00:00.0; mem=1077.9M)
 
 changeUseClockNetStatus Option :  -noFixedNetWires 
 *** Changed status on (0) nets in Clock.
-*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=1078.2M) ***
+*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=1077.9M) ***
 #**INFO: auto set of droutePostRouteSwapVia to multiCut
-% Begin globalDetailRoute (date=05/17 12:38:53, mem=1024.6M)
+% Begin globalDetailRoute (date=05/20 16:53:21, mem=1023.6M)
 
 globalDetailRoute
 
-#Start globalDetailRoute on Tue May 17 12:38:53 2022
+#Start globalDetailRoute on Fri May 20 16:53:22 2022
 #
 #Generating timing data, please wait...
-#4 total nets, 2 already routed, 2 will ignore in trialRoute
+#1 total nets, 0 already routed, 0 will ignore in trialRoute
 #Dump tif for version 2.1
-Total number of fetched objects 6
-End delay calculation. (MEM=1350.98 CPU=0:00:00.0 REAL=0:00:00.0)
-#Generating timing data took: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1061.62 (MB), peak = 1079.44 (MB)
+Total number of fetched objects 1
+End delay calculation. (MEM=1158.91 CPU=0:00:00.0 REAL=0:00:00.0)
+#Generating timing data took: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 972.11 (MB), peak = 1072.46 (MB)
 #Done generating timing data.
-#create default rule from bind_ndr_rule rule=0x1535a688c3d0 0x1535a6960fc0
+#create default rule from bind_ndr_rule rule=0x152dc33563d0 0x152da6ef8fc0
 #WARNING (NRIG-1303) Congestion map does not match the GCELL grid, clearing map.
-#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/va of net va because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
-#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/vb of net vb because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
 #WARNING (NRIG-39) NanoRoute cannot route to pin PIN/vc of net vc because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
-#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/vbg of net vbg because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
 #num needed restored net=0
-#need_extraction net=0 (total=14)
+#need_extraction net=0 (total=11)
 #WARNING (NRDB-976) The TRACK STEP 0.6100 for preferred direction tracks is smaller than the PITCH 0.6800 for LAYER met3. This will cause routability problems for NanoRoute.
 #WARNING (NRDB-976) The TRACK STEP 0.6900 for preferred direction tracks is smaller than the PITCH 0.9200 for LAYER met4. This will cause routability problems for NanoRoute.
-#Start reading timing information from file .timing_file_4069189.tif.gz ...
+#Start reading timing information from file .timing_file_816089.tif.gz ...
 #WARNING (NRDB-194) 
 #No setup time constraints read in
-#Read in timing information for 4 ports, 4 instances from timing file .timing_file_4069189.tif.gz.
+#Read in timing information for 1 ports, 1 instances from timing file .timing_file_816089.tif.gz.
 #NanoRoute Version 20.13-s083_1 NR201221-0721/20_13-UB
-#Total number of trivial nets (e.g. < 2 pins) = 11 (skipped).
-#Total number of routable nets = 3.
-#Total number of nets in the design = 14.
-#3 routable nets do not have any wires.
-#3 nets will be global routed.
+#Total number of trivial nets (e.g. < 2 pins) = 10 (skipped).
+#Total number of routable nets = 1.
+#Total number of nets in the design = 11.
+#1 routable net do not has any wires.
+#1 net will be global routed.
 #Using multithreading with 16 threads.
-#Start routing data preparation on Tue May 17 12:38:53 2022
+#Start routing data preparation on Fri May 20 16:53:22 2022
 #
 #WARNING (NRDB-2040) Rule LEF_DEFAULT doesn't specify any vias that satisfy all of the area rules for layer met3 
 #Minimum voltage of a net in the design = 0.000.
 #Maximum voltage of a net in the design = 1.800.
+#Voltage range [0.000 - 1.800] has 1 net.
 #Voltage range [1.800 - 1.800] has 6 nets.
-#Voltage range [0.000 - 1.800] has 4 nets.
 #Voltage range [0.000 - 0.000] has 4 nets.
 #Rebuild pin access data for design.
 #Initial pin access analysis.
@@ -499,96 +499,96 @@ End delay calculation. (MEM=1350.98 CPU=0:00:00.0 REAL=0:00:00.0)
 # met4         V   Track-Pitch = 0.6900    Line-2-Via Pitch = 0.6150
 # met5         H   Track-Pitch = 3.6600    Line-2-Via Pitch = 3.2000
 #Monitoring time of adding inner blkg by smac
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1083.32 (MB), peak = 1154.74 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 993.95 (MB), peak = 1072.46 (MB)
 #Regenerating Ggrids automatically.
 #Auto generating G-grids with size=15 tracks, using layer met2's pitch = 0.4600.
 #Using automatically generated G-grids.
 #Done routing data preparation.
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1087.43 (MB), peak = 1154.74 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 998.11 (MB), peak = 1072.46 (MB)
 #
 #Connectivity extraction summary:
-#3 (21.43%) nets are without wires.
-#11 nets are fixed|skipped|trivial (not extracted).
-#Total number of nets = 14.
+#1 (9.09%) nets are without wires.
+#10 nets are fixed|skipped|trivial (not extracted).
+#Total number of nets = 11.
 #
 #
-#Finished routing data preparation on Tue May 17 12:38:54 2022
+#Finished routing data preparation on Fri May 20 16:53:22 2022
 #
 #Cpu time = 00:00:00
 #Elapsed time = 00:00:00
-#Increased memory = 10.30 (MB)
-#Total memory = 1087.49 (MB)
-#Peak memory = 1154.74 (MB)
+#Increased memory = 10.42 (MB)
+#Total memory = 998.11 (MB)
+#Peak memory = 1072.46 (MB)
 #
 #
-#Start global routing on Tue May 17 12:38:54 2022
+#Start global routing on Fri May 20 16:53:22 2022
 #
 #
-#Start global routing initialization on Tue May 17 12:38:54 2022
+#Start global routing initialization on Fri May 20 16:53:22 2022
 #
 #Number of eco nets is 0
 #
-#Start global routing data preparation on Tue May 17 12:38:54 2022
+#Start global routing data preparation on Fri May 20 16:53:22 2022
 #
-#Start routing resource analysis on Tue May 17 12:38:54 2022
+#Start routing resource analysis on Fri May 20 16:53:22 2022
 #
-#Routing resource analysis is done on Tue May 17 12:38:54 2022
+#Routing resource analysis is done on Fri May 20 16:53:22 2022
 #
 #  Resource Analysis:
 #
 #               Routing  #Avail      #Track     #Total     %Gcell
 #  Layer      Direction   Track     Blocked      Gcell    Blocked
 #  --------------------------------------------------------------
-#  li1            V         487           0         672    22.02%
-#  met1           H         417           0         672     0.00%
-#  met2           V         487           0         672     0.00%
-#  met3           H         226           0         672     0.00%
-#  met4           V         220         104         672     0.00%
-#  met5           H          12          26         672    45.83%
+#  li1            V         260           0         187     5.35%
+#  met1           H         212          12         187     0.00%
+#  met2           V         260           0         187     0.00%
+#  met3           H         115           6         187     2.14%
+#  met4           V         117          55         187     5.35%
+#  met5           H           4          16         187    59.36%
 #  --------------------------------------------------------------
-#  Total                   1849      16.73%        4032    11.31%
+#  Total                    969      19.88%        1122    12.03%
 #
 #
 #
 #
-#Global routing data preparation is done on Tue May 17 12:38:54 2022
+#Global routing data preparation is done on Fri May 20 16:53:22 2022
 #
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1093.85 (MB), peak = 1154.74 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1005.66 (MB), peak = 1072.46 (MB)
 #
 #
-#Global routing initialization is done on Tue May 17 12:38:54 2022
+#Global routing initialization is done on Fri May 20 16:53:22 2022
 #
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1093.91 (MB), peak = 1154.74 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1005.73 (MB), peak = 1072.46 (MB)
 #
 #start global routing iteration 1...
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1095.33 (MB), peak = 1154.74 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1006.53 (MB), peak = 1072.46 (MB)
 #
 #start global routing iteration 2...
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1095.33 (MB), peak = 1154.74 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1006.53 (MB), peak = 1072.46 (MB)
 #
 #
-#Total number of trivial nets (e.g. < 2 pins) = 11 (skipped).
-#Total number of routable nets = 3.
-#Total number of nets in the design = 14.
+#Total number of trivial nets (e.g. < 2 pins) = 10 (skipped).
+#Total number of routable nets = 1.
+#Total number of nets in the design = 11.
 #
-#3 routable nets have routed wires.
+#1 routable net has routed wires.
 #
-#Routed nets constraints summary:
+#Routed net constraints summary:
 #-----------------------------
 #        Rules   Unconstrained  
 #-----------------------------
-#      Default               3  
+#      Default               1  
 #-----------------------------
-#        Total               3  
+#        Total               1  
 #-----------------------------
 #
 #Routing constraints summary of the whole design:
 #-----------------------------
 #        Rules   Unconstrained  
 #-----------------------------
-#      Default               3  
+#      Default               1  
 #-----------------------------
-#        Total               3  
+#        Total               1  
 #-----------------------------
 #
 #
@@ -614,35 +614,34 @@ End delay calculation. (MEM=1350.98 CPU=0:00:00.0 REAL=0:00:00.0)
 [hotspot] +----------------+-------------------+-------------------+-------------------------------------+
 [hotspot] |      layer     |    max hotspot    |   total hotspot   |            hotspot bbox             |
 [hotspot] +----------------+-------------------+-------------------+-------------------------------------+
-[hotspot] |      li1(V)    |              2.00 |              2.00 |    75.20    37.59   150.40    75.20 |
+[hotspot] |      li1(V)    |              0.00 |              0.00 |   (none)                            |
 [hotspot] |     met1(H)    |              0.00 |              0.00 |   (none)                            |
 [hotspot] |     met2(V)    |              0.00 |              0.00 |   (none)                            |
 [hotspot] |     met3(H)    |              0.00 |              0.00 |   (none)                            |
 [hotspot] |     met4(V)    |              0.00 |              0.00 |   (none)                            |
 [hotspot] |     met5(H)    |              0.00 |              0.00 |   (none)                            |
 [hotspot] +----------------+-------------------+-------------------+-------------------------------------+
-[hotspot] |      worst     |    (li1)     2.00 |    (li1)     2.00 |                                     |
+[hotspot] |      worst     |              0.00 |              0.00 |                                     |
 [hotspot] +----------------+-------------------+-------------------+-------------------------------------+
 [hotspot] |   all layers   |              0.00 |              0.00 |                                     |
 [hotspot] +----------------+-------------------+-------------------+-------------------------------------+
 Local HotSpot Analysis (3d): normalized congestion max/total hotspot area = 0.00/0.00 (area is in unit of 4 std-cell row bins)
 #Complete Global Routing.
-#Total wire length = 69 um.
-#Total half perimeter of net bounding box = 561 um.
+#Total wire length = 14 um.
+#Total half perimeter of net bounding box = 1 um.
 #Total wire length on LAYER li1 = 0 um.
 #Total wire length on LAYER met1 = 0 um.
-#Total wire length on LAYER met2 = 69 um.
+#Total wire length on LAYER met2 = 0 um.
 #Total wire length on LAYER met3 = 0 um.
-#Total wire length on LAYER met4 = 0 um.
+#Total wire length on LAYER met4 = 14 um.
 #Total wire length on LAYER met5 = 0 um.
-#Total number of vias = 13
-#Up-Via Summary (total 13):
+#Total number of vias = 1
+#Up-Via Summary (total 1):
 #           
 #-----------------------
-# li1                 4
-# met1                9
+# met4                1
 #-----------------------
-#                    13 
+#                     1 
 #
 #Max overcon = 0 track.
 #Total overcon = 0.00%.
@@ -651,16 +650,16 @@ Local HotSpot Analysis (3d): normalized congestion max/total hotspot area = 0.00
 #Global routing statistics:
 #Cpu time = 00:00:00
 #Elapsed time = 00:00:00
-#Increased memory = 5.32 (MB)
-#Total memory = 1092.81 (MB)
-#Peak memory = 1154.74 (MB)
+#Increased memory = 5.86 (MB)
+#Total memory = 1003.96 (MB)
+#Peak memory = 1072.46 (MB)
 #
-#Finished global routing on Tue May 17 12:38:54 2022
+#Finished global routing on Fri May 20 16:53:22 2022
 #
 #
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1092.81 (MB), peak = 1154.74 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1003.96 (MB), peak = 1072.46 (MB)
 #Start Track Assignment.
-#Done with 0 horizontal wires in 1 hboxes and 3 vertical wires in 1 hboxes.
+#Done with 0 horizontal wires in 1 hboxes and 1 vertical wires in 1 hboxes.
 #Done with 0 horizontal wires in 1 hboxes and 0 vertical wires in 1 hboxes.
 #Done with 1 horizontal wires in 1 hboxes and 1 vertical wires in 1 hboxes.
 #
@@ -669,240 +668,521 @@ Local HotSpot Analysis (3d): normalized congestion max/total hotspot area = 0.00
 #------------------------------------------------------------------------
 # li1            0.00 	  0.00%  	  0.00% 	  0.00%
 # met1           0.00 	  0.00%  	  0.00% 	  0.00%
-# met2          69.42 	  0.00%  	  0.00% 	  0.00%
+# met2           0.00 	  0.00%  	  0.00% 	  0.00%
 # met3           0.00 	  0.00%  	  0.00% 	  0.00%
-# met4           0.00 	  0.00%  	  0.00% 	  0.00%
+# met4          14.10 	 20.35%  	  0.00% 	 20.35%
 # met5           0.00 	  0.00%  	  0.00% 	  0.00%
 #------------------------------------------------------------------------
-# All          69.42  	  0.00% 	  0.00% 	  0.00%
+# All          14.10  	 20.35% 	  0.00% 	  0.00%
 #Complete Track Assignment.
-#Total wire length = 69 um.
-#Total half perimeter of net bounding box = 561 um.
+#Total wire length = 14 um.
+#Total half perimeter of net bounding box = 1 um.
 #Total wire length on LAYER li1 = 0 um.
 #Total wire length on LAYER met1 = 0 um.
-#Total wire length on LAYER met2 = 69 um.
+#Total wire length on LAYER met2 = 0 um.
 #Total wire length on LAYER met3 = 0 um.
-#Total wire length on LAYER met4 = 0 um.
+#Total wire length on LAYER met4 = 14 um.
 #Total wire length on LAYER met5 = 0 um.
-#Total number of vias = 13
-#Up-Via Summary (total 13):
+#Total number of vias = 1
+#Up-Via Summary (total 1):
 #           
 #-----------------------
-# li1                 4
-# met1                9
+# met4                1
 #-----------------------
-#                    13 
+#                     1 
 #
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1092.96 (MB), peak = 1154.74 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1004.13 (MB), peak = 1072.46 (MB)
 #
 #Routing data preparation, pin analysis, global routing and track assignment statistics:
-#Cpu time = 00:00:01
-#Elapsed time = 00:00:01
-#Increased memory = 15.88 (MB)
-#Total memory = 1092.96 (MB)
-#Peak memory = 1154.74 (MB)
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = 16.56 (MB)
+#Total memory = 1004.13 (MB)
+#Peak memory = 1072.46 (MB)
 #Using multithreading with 16 threads.
 #
 #Start Detail Routing..
 #
 #Start litho driven routing to prevent litho hotspot patterns.
 #start initial detail routing ...
-#   number of violations = 0
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1100.87 (MB), peak = 1196.12 (MB)
+#   number of violations = 1
+#
+#    By Layer and Type :
+#	          Short   Totals
+#	li1           0        0
+#	met1          0        0
+#	met2          0        0
+#	met3          0        0
+#	met4          1        1
+#	Totals        1        1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1008.84 (MB), peak = 1072.46 (MB)
+#start 1st optimization iteration ...
+#   number of violations = 1
+#
+#    By Layer and Type :
+#	          Short   Totals
+#	li1           0        0
+#	met1          0        0
+#	met2          0        0
+#	met3          0        0
+#	met4          1        1
+#	Totals        1        1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1009.19 (MB), peak = 1072.46 (MB)
+#start 2nd optimization iteration ...
+#   number of violations = 1
+#
+#    By Layer and Type :
+#	          Short   Totals
+#	li1           0        0
+#	met1          0        0
+#	met2          0        0
+#	met3          0        0
+#	met4          1        1
+#	Totals        1        1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1009.30 (MB), peak = 1072.46 (MB)
+#start 3rd optimization iteration ...
+#   number of violations = 1
+#
+#    By Layer and Type :
+#	          Short   Totals
+#	li1           0        0
+#	met1          0        0
+#	met2          0        0
+#	met3          0        0
+#	met4          1        1
+#	Totals        1        1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1010.39 (MB), peak = 1072.46 (MB)
+#start 4th optimization iteration ...
+#   number of violations = 1
+#
+#    By Layer and Type :
+#	          Short   Totals
+#	li1           0        0
+#	met1          0        0
+#	met2          0        0
+#	met3          0        0
+#	met4          1        1
+#	Totals        1        1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1011.56 (MB), peak = 1072.46 (MB)
+#start 5th optimization iteration ...
+#   number of violations = 1
+#
+#    By Layer and Type :
+#	          Short   Totals
+#	li1           0        0
+#	met1          0        0
+#	met2          0        0
+#	met3          0        0
+#	met4          1        1
+#	Totals        1        1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1011.49 (MB), peak = 1072.46 (MB)
+#start 6th optimization iteration ...
+#   number of violations = 1
+#
+#    By Layer and Type :
+#	          Short   Totals
+#	li1           0        0
+#	met1          0        0
+#	met2          0        0
+#	met3          0        0
+#	met4          1        1
+#	Totals        1        1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1011.73 (MB), peak = 1072.46 (MB)
+#start 7th optimization iteration ...
+#   number of violations = 1
+#
+#    By Layer and Type :
+#	          Short   Totals
+#	li1           0        0
+#	met1          0        0
+#	met2          0        0
+#	met3          0        0
+#	met4          1        1
+#	Totals        1        1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1012.14 (MB), peak = 1072.46 (MB)
+#start 8th optimization iteration ...
+#   number of violations = 1
+#
+#    By Layer and Type :
+#	          Short   Totals
+#	li1           0        0
+#	met1          0        0
+#	met2          0        0
+#	met3          0        0
+#	met4          1        1
+#	Totals        1        1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1012.89 (MB), peak = 1072.46 (MB)
+#start 9th optimization iteration ...
+#   number of violations = 1
+#
+#    By Layer and Type :
+#	          Short   Totals
+#	li1           0        0
+#	met1          0        0
+#	met2          0        0
+#	met3          0        0
+#	met4          1        1
+#	Totals        1        1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1013.06 (MB), peak = 1072.46 (MB)
+#start 10th optimization iteration ...
+#   number of violations = 1
+#
+#    By Layer and Type :
+#	          Short   Totals
+#	li1           0        0
+#	met1          0        0
+#	met2          0        0
+#	met3          0        0
+#	met4          1        1
+#	Totals        1        1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1013.60 (MB), peak = 1072.46 (MB)
+#start 11th optimization iteration ...
+#   number of violations = 1
+#
+#    By Layer and Type :
+#	          Short   Totals
+#	li1           0        0
+#	met1          0        0
+#	met2          0        0
+#	met3          0        0
+#	met4          1        1
+#	Totals        1        1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1014.75 (MB), peak = 1072.46 (MB)
+#start 12th optimization iteration ...
+#   number of violations = 2
+#
+#    By Layer and Type :
+#	          Short   Totals
+#	li1           0        0
+#	met1          0        0
+#	met2          0        0
+#	met3          0        0
+#	met4          2        2
+#	Totals        2        2
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1014.88 (MB), peak = 1072.46 (MB)
+#start 13th optimization iteration ...
+#   number of violations = 1
+#
+#    By Layer and Type :
+#	          Short   Totals
+#	li1           0        0
+#	met1          0        0
+#	met2          0        0
+#	met3          0        0
+#	met4          1        1
+#	Totals        1        1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1015.02 (MB), peak = 1072.46 (MB)
+#start 14th optimization iteration ...
+#   number of violations = 1
+#
+#    By Layer and Type :
+#	          Short   Totals
+#	li1           0        0
+#	met1          0        0
+#	met2          0        0
+#	met3          0        0
+#	met4          1        1
+#	Totals        1        1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1015.22 (MB), peak = 1072.46 (MB)
+#start 15th optimization iteration ...
+#   number of violations = 1
+#
+#    By Layer and Type :
+#	          Short   Totals
+#	li1           0        0
+#	met1          0        0
+#	met2          0        0
+#	met3          0        0
+#	met4          1        1
+#	Totals        1        1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1015.66 (MB), peak = 1072.46 (MB)
+#start 16th optimization iteration ...
+#   number of violations = 1
+#
+#    By Layer and Type :
+#	          Short   Totals
+#	li1           0        0
+#	met1          0        0
+#	met2          0        0
+#	met3          0        0
+#	met4          1        1
+#	Totals        1        1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1015.94 (MB), peak = 1072.46 (MB)
 #Complete Detail Routing.
-#Total wire length = 86 um.
-#Total half perimeter of net bounding box = 561 um.
-#Total wire length on LAYER li1 = 41 um.
-#Total wire length on LAYER met1 = 15 um.
-#Total wire length on LAYER met2 = 31 um.
+#Total wire length = 0 um.
+#Total half perimeter of net bounding box = 1 um.
+#Total wire length on LAYER li1 = 0 um.
+#Total wire length on LAYER met1 = 0 um.
+#Total wire length on LAYER met2 = 0 um.
 #Total wire length on LAYER met3 = 0 um.
-#Total wire length on LAYER met4 = 0 um.
+#Total wire length on LAYER met4 = 1 um.
 #Total wire length on LAYER met5 = 0 um.
-#Total number of vias = 5
-#Up-Via Summary (total 5):
+#Total number of vias = 1
+#Up-Via Summary (total 1):
 #           
 #-----------------------
-# li1                 3
-# met1                2
+# met4                1
 #-----------------------
-#                     5 
+#                     1 
 #
-#Total number of DRC violations = 0
-#Cpu time = 00:00:00
-#Elapsed time = 00:00:00
-#Increased memory = 5.25 (MB)
-#Total memory = 1098.20 (MB)
-#Peak memory = 1196.12 (MB)
+#Total number of DRC violations = 1
+#Total number of violations on LAYER li1 = 0
+#Total number of violations on LAYER met1 = 0
+#Total number of violations on LAYER met2 = 0
+#Total number of violations on LAYER met3 = 0
+#Total number of violations on LAYER met4 = 1
+#Total number of violations on LAYER met5 = 0
+#Cpu time = 00:00:02
+#Elapsed time = 00:00:02
+#Increased memory = 9.15 (MB)
+#Total memory = 1013.28 (MB)
+#Peak memory = 1072.46 (MB)
 #
 #start routing for process antenna violation fix ...
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1100.48 (MB), peak = 1196.12 (MB)
 #
-#Total wire length = 86 um.
-#Total half perimeter of net bounding box = 561 um.
-#Total wire length on LAYER li1 = 41 um.
-#Total wire length on LAYER met1 = 15 um.
-#Total wire length on LAYER met2 = 31 um.
+#    By Layer and Type :
+#	          Short   Totals
+#	li1           0        0
+#	met1          0        0
+#	met2          0        0
+#	met3          0        0
+#	met4          1        1
+#	Totals        1        1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1015.95 (MB), peak = 1072.46 (MB)
+#
+#Total wire length = 0 um.
+#Total half perimeter of net bounding box = 1 um.
+#Total wire length on LAYER li1 = 0 um.
+#Total wire length on LAYER met1 = 0 um.
+#Total wire length on LAYER met2 = 0 um.
 #Total wire length on LAYER met3 = 0 um.
-#Total wire length on LAYER met4 = 0 um.
+#Total wire length on LAYER met4 = 1 um.
 #Total wire length on LAYER met5 = 0 um.
-#Total number of vias = 5
-#Up-Via Summary (total 5):
+#Total number of vias = 1
+#Up-Via Summary (total 1):
 #           
 #-----------------------
-# li1                 3
-# met1                2
+# met4                1
 #-----------------------
-#                     5 
+#                     1 
 #
-#Total number of DRC violations = 0
+#Total number of DRC violations = 1
 #Total number of process antenna violations = 0
 #Total number of net violated process antenna rule = 0 ant fix stage
+#Total number of violations on LAYER li1 = 0
+#Total number of violations on LAYER met1 = 0
+#Total number of violations on LAYER met2 = 0
+#Total number of violations on LAYER met3 = 0
+#Total number of violations on LAYER met4 = 1
+#Total number of violations on LAYER met5 = 0
 #
 #WARNING (NRDB-104) Cannot find antenna cell. Please set option 'route_antenna_cell_name', or change your LEF file.
 #WARNING (NRDB-104) Cannot find antenna cell. Please set option 'route_antenna_cell_name', or change your LEF file.
 #
-#Total wire length = 86 um.
-#Total half perimeter of net bounding box = 561 um.
-#Total wire length on LAYER li1 = 41 um.
-#Total wire length on LAYER met1 = 15 um.
-#Total wire length on LAYER met2 = 31 um.
+#Total wire length = 0 um.
+#Total half perimeter of net bounding box = 1 um.
+#Total wire length on LAYER li1 = 0 um.
+#Total wire length on LAYER met1 = 0 um.
+#Total wire length on LAYER met2 = 0 um.
 #Total wire length on LAYER met3 = 0 um.
-#Total wire length on LAYER met4 = 0 um.
+#Total wire length on LAYER met4 = 1 um.
 #Total wire length on LAYER met5 = 0 um.
-#Total number of vias = 5
-#Up-Via Summary (total 5):
+#Total number of vias = 1
+#Up-Via Summary (total 1):
 #           
 #-----------------------
-# li1                 3
-# met1                2
+# met4                1
 #-----------------------
-#                     5 
+#                     1 
 #
-#Total number of DRC violations = 0
+#Total number of DRC violations = 1
 #Total number of process antenna violations = 0
 #Total number of net violated process antenna rule = 0 ant fix stage
+#Total number of violations on LAYER li1 = 0
+#Total number of violations on LAYER met1 = 0
+#Total number of violations on LAYER met2 = 0
+#Total number of violations on LAYER met3 = 0
+#Total number of violations on LAYER met4 = 1
+#Total number of violations on LAYER met5 = 0
 #
 #WARNING (NRDB-104) Cannot find antenna cell. Please set option 'route_antenna_cell_name', or change your LEF file.
 #
 #Start Post Route via swapping...
-#54.09% of area are rerouted by ECO routing.
-#   number of violations = 0
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1097.87 (MB), peak = 1196.12 (MB)
-#CELL_VIEW ringosc,init has no DRC violation.
-#Total number of DRC violations = 0
+#39.36% of area are rerouted by ECO routing.
+#   number of violations = 1
+#
+#    By Layer and Type :
+#	          Short   Totals
+#	li1           0        0
+#	met1          0        0
+#	met2          0        0
+#	met3          0        0
+#	met4          1        1
+#	Totals        1        1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1013.58 (MB), peak = 1072.46 (MB)
+#CELL_VIEW ringosc,init has 1 DRC violations
+#Total number of DRC violations = 1
 #Total number of process antenna violations = 0
 #Total number of net violated process antenna rule = 0 ant fix stage
+#Total number of violations on LAYER li1 = 0
+#Total number of violations on LAYER met1 = 0
+#Total number of violations on LAYER met2 = 0
+#Total number of violations on LAYER met3 = 0
+#Total number of violations on LAYER met4 = 1
+#Total number of violations on LAYER met5 = 0
 #No via is swapped.
 #Post Route via swapping is done.
-#Total wire length = 86 um.
-#Total half perimeter of net bounding box = 561 um.
-#Total wire length on LAYER li1 = 41 um.
-#Total wire length on LAYER met1 = 15 um.
-#Total wire length on LAYER met2 = 31 um.
+#Total wire length = 0 um.
+#Total half perimeter of net bounding box = 1 um.
+#Total wire length on LAYER li1 = 0 um.
+#Total wire length on LAYER met1 = 0 um.
+#Total wire length on LAYER met2 = 0 um.
 #Total wire length on LAYER met3 = 0 um.
-#Total wire length on LAYER met4 = 0 um.
+#Total wire length on LAYER met4 = 1 um.
 #Total wire length on LAYER met5 = 0 um.
-#Total number of vias = 5
-#Up-Via Summary (total 5):
+#Total number of vias = 1
+#Up-Via Summary (total 1):
 #           
 #-----------------------
-# li1                 3
-# met1                2
+# met4                1
 #-----------------------
-#                     5 
+#                     1 
 #
 #WARNING (NRDB-104) Cannot find antenna cell. Please set option 'route_antenna_cell_name', or change your LEF file.
 #
 #Start Post Route wire spreading..
 #
 #Start DRC checking..
-#   number of violations = 0
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1101.50 (MB), peak = 1196.12 (MB)
-#CELL_VIEW ringosc,init has no DRC violation.
-#Total number of DRC violations = 0
+#   number of violations = 1
+#
+#    By Layer and Type :
+#	          Short   Totals
+#	li1           0        0
+#	met1          0        0
+#	met2          0        0
+#	met3          0        0
+#	met4          1        1
+#	Totals        1        1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1016.71 (MB), peak = 1072.46 (MB)
+#CELL_VIEW ringosc,init has 1 DRC violations
+#Total number of DRC violations = 1
 #Total number of process antenna violations = 0
 #Total number of net violated process antenna rule = 0 ant fix stage
+#Total number of violations on LAYER li1 = 0
+#Total number of violations on LAYER met1 = 0
+#Total number of violations on LAYER met2 = 0
+#Total number of violations on LAYER met3 = 0
+#Total number of violations on LAYER met4 = 1
+#Total number of violations on LAYER met5 = 0
 #
 #Start data preparation for wire spreading...
 #
-#Data preparation is done on Tue May 17 12:38:54 2022
+#Data preparation is done on Fri May 20 16:53:24 2022
 #
 #WARNING (NRDB-104) Cannot find antenna cell. Please set option 'route_antenna_cell_name', or change your LEF file.
 #
 #Start Post Route Wire Spread.
-#Done with 0 horizontal wires in 1 hboxes and 0 vertical wires in 2 hboxes.
+#Done with 0 horizontal wires in 1 hboxes and 0 vertical wires in 1 hboxes.
 #Complete Post Route Wire Spread.
 #
-#Total wire length = 86 um.
-#Total half perimeter of net bounding box = 561 um.
-#Total wire length on LAYER li1 = 41 um.
-#Total wire length on LAYER met1 = 15 um.
-#Total wire length on LAYER met2 = 31 um.
+#Total wire length = 0 um.
+#Total half perimeter of net bounding box = 1 um.
+#Total wire length on LAYER li1 = 0 um.
+#Total wire length on LAYER met1 = 0 um.
+#Total wire length on LAYER met2 = 0 um.
 #Total wire length on LAYER met3 = 0 um.
-#Total wire length on LAYER met4 = 0 um.
+#Total wire length on LAYER met4 = 1 um.
 #Total wire length on LAYER met5 = 0 um.
-#Total number of vias = 5
-#Up-Via Summary (total 5):
+#Total number of vias = 1
+#Up-Via Summary (total 1):
 #           
 #-----------------------
-# li1                 3
-# met1                2
+# met4                1
 #-----------------------
-#                     5 
+#                     1 
 #
 #
 #Start DRC checking..
-#   number of violations = 0
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1112.09 (MB), peak = 1196.12 (MB)
-#CELL_VIEW ringosc,init has no DRC violation.
-#Total number of DRC violations = 0
+#   number of violations = 1
+#
+#    By Layer and Type :
+#	          Short   Totals
+#	li1           0        0
+#	met1          0        0
+#	met2          0        0
+#	met3          0        0
+#	met4          1        1
+#	Totals        1        1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1025.41 (MB), peak = 1072.46 (MB)
+#CELL_VIEW ringosc,init has 1 DRC violations
+#Total number of DRC violations = 1
 #Total number of process antenna violations = 0
 #Total number of net violated process antenna rule = 0 ant fix stage
+#Total number of violations on LAYER li1 = 0
+#Total number of violations on LAYER met1 = 0
+#Total number of violations on LAYER met2 = 0
+#Total number of violations on LAYER met3 = 0
+#Total number of violations on LAYER met4 = 1
+#Total number of violations on LAYER met5 = 0
 #WARNING (NRDB-104) Cannot find antenna cell. Please set option 'route_antenna_cell_name', or change your LEF file.
-#   number of violations = 0
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1112.09 (MB), peak = 1196.12 (MB)
-#CELL_VIEW ringosc,init has no DRC violation.
-#Total number of DRC violations = 0
+#   number of violations = 1
+#
+#    By Layer and Type :
+#	          Short   Totals
+#	li1           0        0
+#	met1          0        0
+#	met2          0        0
+#	met3          0        0
+#	met4          1        1
+#	Totals        1        1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1025.41 (MB), peak = 1072.46 (MB)
+#CELL_VIEW ringosc,init has 1 DRC violations
+#Total number of DRC violations = 1
 #Total number of process antenna violations = 0
 #Total number of net violated process antenna rule = 0 ant fix stage
+#Total number of violations on LAYER li1 = 0
+#Total number of violations on LAYER met1 = 0
+#Total number of violations on LAYER met2 = 0
+#Total number of violations on LAYER met3 = 0
+#Total number of violations on LAYER met4 = 1
+#Total number of violations on LAYER met5 = 0
 #Post Route wire spread is done.
-#Total wire length = 86 um.
-#Total half perimeter of net bounding box = 561 um.
-#Total wire length on LAYER li1 = 41 um.
-#Total wire length on LAYER met1 = 15 um.
-#Total wire length on LAYER met2 = 31 um.
+#Total wire length = 0 um.
+#Total half perimeter of net bounding box = 1 um.
+#Total wire length on LAYER li1 = 0 um.
+#Total wire length on LAYER met1 = 0 um.
+#Total wire length on LAYER met2 = 0 um.
 #Total wire length on LAYER met3 = 0 um.
-#Total wire length on LAYER met4 = 0 um.
+#Total wire length on LAYER met4 = 1 um.
 #Total wire length on LAYER met5 = 0 um.
-#Total number of vias = 5
-#Up-Via Summary (total 5):
+#Total number of vias = 1
+#Up-Via Summary (total 1):
 #           
 #-----------------------
-# li1                 3
-# met1                2
+# met4                1
 #-----------------------
-#                     5 
+#                     1 
 #
 #detailRoute Statistics:
-#Cpu time = 00:00:01
-#Elapsed time = 00:00:01
-#Increased memory = 16.47 (MB)
-#Total memory = 1109.43 (MB)
-#Peak memory = 1196.12 (MB)
-#
-#globalDetailRoute statistics:
 #Cpu time = 00:00:02
 #Elapsed time = 00:00:02
-#Increased memory = 93.98 (MB)
-#Total memory = 1118.57 (MB)
-#Peak memory = 1196.12 (MB)
-#Number of warnings = 15
-#Total number of warnings = 17
+#Increased memory = 18.45 (MB)
+#Total memory = 1022.57 (MB)
+#Peak memory = 1072.46 (MB)
+#
+#globalDetailRoute statistics:
+#Cpu time = 00:00:03
+#Elapsed time = 00:00:03
+#Increased memory = 6.49 (MB)
+#Total memory = 1030.05 (MB)
+#Peak memory = 1072.46 (MB)
+#Number of warnings = 12
+#Total number of warnings = 14
 #Number of fails = 0
 #Total number of fails = 0
-#Complete globalDetailRoute on Tue May 17 12:38:54 2022
+#Complete globalDetailRoute on Fri May 20 16:53:24 2022
 #
-% End globalDetailRoute (date=05/17 12:38:54, total cpu=0:00:02.1, real=0:00:01.0, peak res=1196.1M, current mem=1104.5M)
+% End globalDetailRoute (date=05/20 16:53:24, total cpu=0:00:03.1, real=0:00:04.0, peak res=1072.5M, current mem=1015.1M)
 #Default setup view is reset to analysis_default.
 #Default setup view is reset to analysis_default.
 UM:   flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
@@ -923,17 +1203,17 @@ Bits Per Flop        :         -nan
 [hotspot] +------------+---------------+---------------+
 Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:           2.64              3                                      route_design
-#routeDesign: cpu time = 00:00:03, elapsed time = 00:00:02, memory = 1094.61 (MB), peak = 1196.12 (MB)
+UM:           3.68              4                                      route_design
+#routeDesign: cpu time = 00:00:04, elapsed time = 00:00:04, memory = 1005.15 (MB), peak = 1072.46 (MB)
 *** Message Summary: 0 warning(s), 0 error(s)
 
-#% End routeDesign (date=05/17 12:38:55, total cpu=0:00:02.6, real=0:00:03.0, peak res=1196.1M, current mem=1094.7M)
+#% End routeDesign (date=05/20 16:53:25, total cpu=0:00:03.7, real=0:00:04.0, peak res=1072.5M, current mem=1005.2M)
 # setNanoRouteMode -droutePostRouteSpreadWire true -routeWithTimingDriven false
 <CMD> setNanoRouteMode -droutePostRouteSpreadWire true -routeWithTimingDriven false
 # routeDesign -wireOpt
 <CMD> routeDesign -wireOpt
-#% Begin routeDesign (date=05/17 12:38:55, mem=1094.7M)
-#routeDesign: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1094.67 (MB), peak = 1196.12 (MB)
+#% Begin routeDesign (date=05/20 16:53:25, mem=1005.2M)
+#routeDesign: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1005.21 (MB), peak = 1072.46 (MB)
 **INFO: User settings:
 setNanoRouteMode -droutePostRouteSpreadWire                     true
 setNanoRouteMode -drouteUseMultiCutViaEffort                    high
@@ -963,37 +1243,34 @@ setSIMode -separate_delta_delay_on_data                         true
 #**INFO: setDesignMode -flowEffort standard
 #**INFO: multi-cut via swapping will not be performed after routing.
 #**INFO: All auto set options tuned by routeDesign will be restored to their original settings on command completion.
-Begin checking placement ... (start mem=1164.9M, init mem=1164.9M)
-*info: Placed = 4             
+Begin checking placement ... (start mem=1074.4M, init mem=1074.4M)
+*info: Placed = 1             
 *info: Unplaced = 0           
-Placement Density:30.04%(4210/14011)
-Placement Density (including fixed std cells):30.04%(4210/14011)
-Finished checkPlace (total: cpu=0:00:00.0, real=0:00:00.0; vio checks: cpu=0:00:00.0, real=0:00:00.0; mem=1164.9M)
+Placement Density:30.09%(346/1152)
+Placement Density (including fixed std cells):30.09%(346/1152)
+Finished checkPlace (total: cpu=0:00:00.0, real=0:00:00.0; vio checks: cpu=0:00:00.0, real=0:00:00.0; mem=1074.4M)
 
 changeUseClockNetStatus Option :  -noFixedNetWires 
 *** Changed status on (0) nets in Clock.
-*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=1164.9M) ***
-% Begin detailRoute (date=05/17 12:38:55, mem=1094.7M)
+*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=1074.4M) ***
+% Begin detailRoute (date=05/20 16:53:25, mem=1005.2M)
 
 detailRoute
 
-#Start detailRoute on Tue May 17 12:38:55 2022
+#Start detailRoute on Fri May 20 16:53:25 2022
 #
-#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/va of net va because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
-#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/vb of net vb because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
 #WARNING (NRIG-39) NanoRoute cannot route to pin PIN/vc of net vc because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
-#WARNING (NRIG-39) NanoRoute cannot route to pin PIN/vbg of net vbg because it might be a logical pin and does not have physical shapes. To fix the problem, check the pin connection in the netlist and ensure the pin shapes exist in the floorplan.
 #num needed restored net=0
-#need_extraction net=0 (total=14)
+#need_extraction net=0 (total=11)
 #WARNING (NRDB-976) The TRACK STEP 0.6100 for preferred direction tracks is smaller than the PITCH 0.6800 for LAYER met3. This will cause routability problems for NanoRoute.
 #WARNING (NRDB-976) The TRACK STEP 0.6900 for preferred direction tracks is smaller than the PITCH 0.9200 for LAYER met4. This will cause routability problems for NanoRoute.
 #NanoRoute Version 20.13-s083_1 NR201221-0721/20_13-UB
-#Start routing data preparation on Tue May 17 12:38:55 2022
+#Start routing data preparation on Fri May 20 16:53:25 2022
 #
 #Minimum voltage of a net in the design = 0.000.
 #Maximum voltage of a net in the design = 1.800.
+#Voltage range [0.000 - 1.800] has 1 net.
 #Voltage range [1.800 - 1.800] has 6 nets.
-#Voltage range [0.000 - 1.800] has 4 nets.
 #Voltage range [0.000 - 0.000] has 4 nets.
 #Initial pin access analysis.
 #Detail pin access analysis.
@@ -1004,82 +1281,95 @@ detailRoute
 # met4         V   Track-Pitch = 0.6900    Line-2-Via Pitch = 0.6150
 # met5         H   Track-Pitch = 3.6600    Line-2-Via Pitch = 3.2000
 #Monitoring time of adding inner blkg by smac
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1108.79 (MB), peak = 1196.12 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1019.65 (MB), peak = 1072.46 (MB)
 #Regenerating Ggrids automatically.
 #Auto generating G-grids with size=15 tracks, using layer met2's pitch = 0.4600.
 #Using automatically generated G-grids.
 #Done routing data preparation.
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1111.46 (MB), peak = 1196.12 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1022.32 (MB), peak = 1072.46 (MB)
 #WARNING (NRDB-104) Cannot find antenna cell. Please set option 'route_antenna_cell_name', or change your LEF file.
 #
 #Start Post Route wire spreading..
 #
 #Start data preparation for wire spreading...
 #
-#Data preparation is done on Tue May 17 12:38:55 2022
+#Data preparation is done on Fri May 20 16:53:25 2022
 #
 #WARNING (NRDB-104) Cannot find antenna cell. Please set option 'route_antenna_cell_name', or change your LEF file.
 #
 #Start Post Route Wire Spread.
-#Done with 0 horizontal wires in 1 hboxes and 0 vertical wires in 2 hboxes.
+#Done with 0 horizontal wires in 1 hboxes and 0 vertical wires in 1 hboxes.
 #Complete Post Route Wire Spread.
 #
-#Total wire length = 86 um.
-#Total half perimeter of net bounding box = 561 um.
-#Total wire length on LAYER li1 = 41 um.
-#Total wire length on LAYER met1 = 15 um.
-#Total wire length on LAYER met2 = 31 um.
+#Total wire length = 0 um.
+#Total half perimeter of net bounding box = 1 um.
+#Total wire length on LAYER li1 = 0 um.
+#Total wire length on LAYER met1 = 0 um.
+#Total wire length on LAYER met2 = 0 um.
 #Total wire length on LAYER met3 = 0 um.
-#Total wire length on LAYER met4 = 0 um.
+#Total wire length on LAYER met4 = 1 um.
 #Total wire length on LAYER met5 = 0 um.
-#Total number of vias = 5
-#Up-Via Summary (total 5):
+#Total number of vias = 1
+#Up-Via Summary (total 1):
 #           
 #-----------------------
-# li1                 3
-# met1                2
+# met4                1
 #-----------------------
-#                     5 
+#                     1 
 #
 #WARNING (NRDB-104) Cannot find antenna cell. Please set option 'route_antenna_cell_name', or change your LEF file.
-#   number of violations = 0
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1122.57 (MB), peak = 1196.12 (MB)
-#CELL_VIEW ringosc,init has no DRC violation.
-#Total number of DRC violations = 0
+#   number of violations = 1
+#
+#    By Layer and Type :
+#	          Short   Totals
+#	li1           0        0
+#	met1          0        0
+#	met2          0        0
+#	met3          0        0
+#	met4          1        1
+#	Totals        1        1
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1033.59 (MB), peak = 1072.46 (MB)
+#CELL_VIEW ringosc,init has 1 DRC violations
+#Total number of DRC violations = 1
 #Total number of process antenna violations = 0
 #Total number of net violated process antenna rule = 0 ant fix stage
+#Total number of violations on LAYER li1 = 0
+#Total number of violations on LAYER met1 = 0
+#Total number of violations on LAYER met2 = 0
+#Total number of violations on LAYER met3 = 0
+#Total number of violations on LAYER met4 = 1
+#Total number of violations on LAYER met5 = 0
 #Post Route wire spread is done.
-#Total wire length = 86 um.
-#Total half perimeter of net bounding box = 561 um.
-#Total wire length on LAYER li1 = 41 um.
-#Total wire length on LAYER met1 = 15 um.
-#Total wire length on LAYER met2 = 31 um.
+#Total wire length = 0 um.
+#Total half perimeter of net bounding box = 1 um.
+#Total wire length on LAYER li1 = 0 um.
+#Total wire length on LAYER met1 = 0 um.
+#Total wire length on LAYER met2 = 0 um.
 #Total wire length on LAYER met3 = 0 um.
-#Total wire length on LAYER met4 = 0 um.
+#Total wire length on LAYER met4 = 1 um.
 #Total wire length on LAYER met5 = 0 um.
-#Total number of vias = 5
-#Up-Via Summary (total 5):
+#Total number of vias = 1
+#Up-Via Summary (total 1):
 #           
 #-----------------------
-# li1                 3
-# met1                2
+# met4                1
 #-----------------------
-#                     5 
+#                     1 
 #
 #
 #detailRoute statistics:
 #Cpu time = 00:00:00
 #Elapsed time = 00:00:00
-#Increased memory = 21.52 (MB)
-#Total memory = 1116.22 (MB)
-#Peak memory = 1196.12 (MB)
-#Number of warnings = 9
-#Total number of warnings = 26
+#Increased memory = 22.52 (MB)
+#Total memory = 1027.77 (MB)
+#Peak memory = 1072.46 (MB)
+#Number of warnings = 6
+#Total number of warnings = 20
 #Number of fails = 0
 #Total number of fails = 0
-#Complete detailRoute on Tue May 17 12:38:55 2022
+#Complete detailRoute on Fri May 20 16:53:25 2022
 #
-% End detailRoute (date=05/17 12:38:55, total cpu=0:00:00.3, real=0:00:00.0, peak res=1108.5M, current mem=1108.5M)
+% End detailRoute (date=05/20 16:53:25, total cpu=0:00:00.3, real=0:00:00.0, peak res=1019.9M, current mem=1019.9M)
 #Default setup view is reset to analysis_default.
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
 UM:*                                                                   final
@@ -1099,11 +1389,11 @@ Bits Per Flop        :         -nan
 [hotspot] +------------+---------------+---------------+
 Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:            0.6              1                                      route_design
-#routeDesign: cpu time = 00:00:01, elapsed time = 00:00:01, memory = 1098.08 (MB), peak = 1196.12 (MB)
+UM:           0.56              1                                      route_design
+#routeDesign: cpu time = 00:00:01, elapsed time = 00:00:01, memory = 1009.47 (MB), peak = 1072.46 (MB)
 *** Message Summary: 0 warning(s), 0 error(s)
 
-#% End routeDesign (date=05/17 12:38:56, total cpu=0:00:00.6, real=0:00:01.0, peak res=1108.5M, current mem=1098.1M)
+#% End routeDesign (date=05/20 16:53:26, total cpu=0:00:00.5, real=0:00:01.0, peak res=1019.9M, current mem=1009.5M)
 # setNanoRouteMode -droutePostRouteSpreadWire false
 <CMD> setNanoRouteMode -droutePostRouteSpreadWire false
 # setExtractRCMode -engine postRoute -effortLevel low
@@ -1129,112 +1419,112 @@ Bits Per Flop        :         -nan
 [hotspot] | normalized |          0.00 |          0.00 |
 [hotspot] +------------+---------------+---------------+
 Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
-<CMD> get_metric -raw -id current -uuid c8860116-c980-4912-99fe-7a9d797f50f2 clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid c8860116-c980-4912-99fe-7a9d797f50f2 clock.PostConditioning.area.total
-<CMD> get_metric -raw -id current -uuid c8860116-c980-4912-99fe-7a9d797f50f2 clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid c8860116-c980-4912-99fe-7a9d797f50f2 clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid c8860116-c980-4912-99fe-7a9d797f50f2 clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid c8860116-c980-4912-99fe-7a9d797f50f2 clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid c8860116-c980-4912-99fe-7a9d797f50f2 clock.Construction.area.total
-<CMD> get_metric -raw -id current -uuid c8860116-c980-4912-99fe-7a9d797f50f2 clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid 17ed7625-64be-417c-8056-03e941b858df clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid 17ed7625-64be-417c-8056-03e941b858df clock.PostConditioning.area.total
-<CMD> get_metric -raw -id current -uuid 17ed7625-64be-417c-8056-03e941b858df clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid 17ed7625-64be-417c-8056-03e941b858df clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid 17ed7625-64be-417c-8056-03e941b858df clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid 17ed7625-64be-417c-8056-03e941b858df clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid 17ed7625-64be-417c-8056-03e941b858df clock.Construction.area.total
-<CMD> get_metric -raw -id current -uuid 17ed7625-64be-417c-8056-03e941b858df clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid 36366d72-83b8-440f-915c-69bfabde2793 clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid 36366d72-83b8-440f-915c-69bfabde2793 clock.PostConditioning.area.total
-<CMD> get_metric -raw -id current -uuid 36366d72-83b8-440f-915c-69bfabde2793 clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid 36366d72-83b8-440f-915c-69bfabde2793 clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid 36366d72-83b8-440f-915c-69bfabde2793 clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid 36366d72-83b8-440f-915c-69bfabde2793 clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid 36366d72-83b8-440f-915c-69bfabde2793 clock.Construction.area.total
-<CMD> get_metric -raw -id current -uuid 36366d72-83b8-440f-915c-69bfabde2793 clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid 84dd2efc-9d8d-4998-a8a2-d1b10fa18157 clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid 84dd2efc-9d8d-4998-a8a2-d1b10fa18157 clock.PostConditioning.area.total
-<CMD> get_metric -raw -id current -uuid 84dd2efc-9d8d-4998-a8a2-d1b10fa18157 clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid 84dd2efc-9d8d-4998-a8a2-d1b10fa18157 clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid 84dd2efc-9d8d-4998-a8a2-d1b10fa18157 clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid 84dd2efc-9d8d-4998-a8a2-d1b10fa18157 clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid 84dd2efc-9d8d-4998-a8a2-d1b10fa18157 clock.Construction.area.total
-<CMD> get_metric -raw -id current -uuid 84dd2efc-9d8d-4998-a8a2-d1b10fa18157 clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid 5d6940d8-d30d-4e68-a34c-46d2749296ed clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid 5d6940d8-d30d-4e68-a34c-46d2749296ed clock.PostConditioning.area.total
-<CMD> get_metric -raw -id current -uuid 5d6940d8-d30d-4e68-a34c-46d2749296ed clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid 5d6940d8-d30d-4e68-a34c-46d2749296ed clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid 5d6940d8-d30d-4e68-a34c-46d2749296ed clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid 5d6940d8-d30d-4e68-a34c-46d2749296ed clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid 5d6940d8-d30d-4e68-a34c-46d2749296ed clock.Construction.area.total
-<CMD> get_metric -raw -id current -uuid 5d6940d8-d30d-4e68-a34c-46d2749296ed clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid 45206baf-1efc-403b-b2a6-e5495aa91cf9 clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid 45206baf-1efc-403b-b2a6-e5495aa91cf9 clock.PostConditioning.area.total
-<CMD> get_metric -raw -id current -uuid 45206baf-1efc-403b-b2a6-e5495aa91cf9 clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid 45206baf-1efc-403b-b2a6-e5495aa91cf9 clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid 45206baf-1efc-403b-b2a6-e5495aa91cf9 clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid 45206baf-1efc-403b-b2a6-e5495aa91cf9 clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid 45206baf-1efc-403b-b2a6-e5495aa91cf9 clock.Construction.area.total
-<CMD> get_metric -raw -id current -uuid 45206baf-1efc-403b-b2a6-e5495aa91cf9 clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid 6a0f4bb9-f8bd-46f7-bb9d-c23c8ac6ffa1 clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid 6a0f4bb9-f8bd-46f7-bb9d-c23c8ac6ffa1 clock.PostConditioning.area.total
-<CMD> get_metric -raw -id current -uuid 6a0f4bb9-f8bd-46f7-bb9d-c23c8ac6ffa1 clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid 6a0f4bb9-f8bd-46f7-bb9d-c23c8ac6ffa1 clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid 6a0f4bb9-f8bd-46f7-bb9d-c23c8ac6ffa1 clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid 6a0f4bb9-f8bd-46f7-bb9d-c23c8ac6ffa1 clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid 6a0f4bb9-f8bd-46f7-bb9d-c23c8ac6ffa1 clock.Construction.area.total
-<CMD> get_metric -raw -id current -uuid 6a0f4bb9-f8bd-46f7-bb9d-c23c8ac6ffa1 clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid dab6bb4b-9aa6-4101-9d24-d5ac13a63fdc clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid dab6bb4b-9aa6-4101-9d24-d5ac13a63fdc clock.PostConditioning.area.total
-<CMD> get_metric -raw -id current -uuid dab6bb4b-9aa6-4101-9d24-d5ac13a63fdc clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid dab6bb4b-9aa6-4101-9d24-d5ac13a63fdc clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid dab6bb4b-9aa6-4101-9d24-d5ac13a63fdc clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid dab6bb4b-9aa6-4101-9d24-d5ac13a63fdc clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid dab6bb4b-9aa6-4101-9d24-d5ac13a63fdc clock.Construction.area.total
-<CMD> get_metric -raw -id current -uuid dab6bb4b-9aa6-4101-9d24-d5ac13a63fdc clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid e5bf7d15-d94d-4a2a-b79c-4b22dd2e97d8 clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid e5bf7d15-d94d-4a2a-b79c-4b22dd2e97d8 clock.PostConditioning.area.total
-<CMD> get_metric -raw -id current -uuid e5bf7d15-d94d-4a2a-b79c-4b22dd2e97d8 clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid e5bf7d15-d94d-4a2a-b79c-4b22dd2e97d8 clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid e5bf7d15-d94d-4a2a-b79c-4b22dd2e97d8 clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid e5bf7d15-d94d-4a2a-b79c-4b22dd2e97d8 clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid e5bf7d15-d94d-4a2a-b79c-4b22dd2e97d8 clock.Construction.area.total
-<CMD> get_metric -raw -id current -uuid e5bf7d15-d94d-4a2a-b79c-4b22dd2e97d8 clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid dc1749f4-c76b-450b-8285-b9e78dab2927 clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid dc1749f4-c76b-450b-8285-b9e78dab2927 clock.PostConditioning.area.total
-<CMD> get_metric -raw -id current -uuid dc1749f4-c76b-450b-8285-b9e78dab2927 clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid dc1749f4-c76b-450b-8285-b9e78dab2927 clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid dc1749f4-c76b-450b-8285-b9e78dab2927 clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid dc1749f4-c76b-450b-8285-b9e78dab2927 clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid dc1749f4-c76b-450b-8285-b9e78dab2927 clock.Construction.area.total
-<CMD> get_metric -raw -id current -uuid dc1749f4-c76b-450b-8285-b9e78dab2927 clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid 82c976fc-6d33-4d29-86fd-b426f9e1ed85 clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid 82c976fc-6d33-4d29-86fd-b426f9e1ed85 clock.PostConditioning.area.total
-<CMD> get_metric -raw -id current -uuid 82c976fc-6d33-4d29-86fd-b426f9e1ed85 clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid 82c976fc-6d33-4d29-86fd-b426f9e1ed85 clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid 82c976fc-6d33-4d29-86fd-b426f9e1ed85 clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid 82c976fc-6d33-4d29-86fd-b426f9e1ed85 clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid 82c976fc-6d33-4d29-86fd-b426f9e1ed85 clock.Construction.area.total
-<CMD> get_metric -raw -id current -uuid 82c976fc-6d33-4d29-86fd-b426f9e1ed85 clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid 5f4224e6-99a0-4969-83f4-d4d922e67c54 clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid 5f4224e6-99a0-4969-83f4-d4d922e67c54 clock.PostConditioning.area.total
-<CMD> get_metric -raw -id current -uuid 5f4224e6-99a0-4969-83f4-d4d922e67c54 clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid 5f4224e6-99a0-4969-83f4-d4d922e67c54 clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid 5f4224e6-99a0-4969-83f4-d4d922e67c54 clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid 5f4224e6-99a0-4969-83f4-d4d922e67c54 clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid 5f4224e6-99a0-4969-83f4-d4d922e67c54 clock.Construction.area.total
-<CMD> get_metric -raw -id current -uuid 5f4224e6-99a0-4969-83f4-d4d922e67c54 clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid ff9cac4e-6fb2-4bdf-ab00-37167209098b clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid ff9cac4e-6fb2-4bdf-ab00-37167209098b clock.PostConditioning.area.total
-<CMD> get_metric -raw -id current -uuid ff9cac4e-6fb2-4bdf-ab00-37167209098b clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid ff9cac4e-6fb2-4bdf-ab00-37167209098b clock.Routing.area.total
-<CMD> get_metric -raw -id current -uuid ff9cac4e-6fb2-4bdf-ab00-37167209098b clock.Implementation.area.total
-<CMD> get_metric -raw -id current -uuid ff9cac4e-6fb2-4bdf-ab00-37167209098b clock.eGRPC.area.total
-<CMD> get_metric -raw -id current -uuid ff9cac4e-6fb2-4bdf-ab00-37167209098b clock.Construction.area.total
-<CMD> get_metric -raw -id current -uuid ff9cac4e-6fb2-4bdf-ab00-37167209098b clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 1ec5b034-7f79-497b-a7c6-dfc60bad749b clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 1ec5b034-7f79-497b-a7c6-dfc60bad749b clock.PostConditioning.area.total
+<CMD> get_metric -raw -id current -uuid 1ec5b034-7f79-497b-a7c6-dfc60bad749b clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 1ec5b034-7f79-497b-a7c6-dfc60bad749b clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 1ec5b034-7f79-497b-a7c6-dfc60bad749b clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 1ec5b034-7f79-497b-a7c6-dfc60bad749b clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 1ec5b034-7f79-497b-a7c6-dfc60bad749b clock.Construction.area.total
+<CMD> get_metric -raw -id current -uuid 1ec5b034-7f79-497b-a7c6-dfc60bad749b clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 8e714634-f277-477e-ac5a-dfae2d2aa096 clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 8e714634-f277-477e-ac5a-dfae2d2aa096 clock.PostConditioning.area.total
+<CMD> get_metric -raw -id current -uuid 8e714634-f277-477e-ac5a-dfae2d2aa096 clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 8e714634-f277-477e-ac5a-dfae2d2aa096 clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 8e714634-f277-477e-ac5a-dfae2d2aa096 clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 8e714634-f277-477e-ac5a-dfae2d2aa096 clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 8e714634-f277-477e-ac5a-dfae2d2aa096 clock.Construction.area.total
+<CMD> get_metric -raw -id current -uuid 8e714634-f277-477e-ac5a-dfae2d2aa096 clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 140032d5-c388-40d5-b4bd-f73298252201 clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 140032d5-c388-40d5-b4bd-f73298252201 clock.PostConditioning.area.total
+<CMD> get_metric -raw -id current -uuid 140032d5-c388-40d5-b4bd-f73298252201 clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 140032d5-c388-40d5-b4bd-f73298252201 clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 140032d5-c388-40d5-b4bd-f73298252201 clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 140032d5-c388-40d5-b4bd-f73298252201 clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 140032d5-c388-40d5-b4bd-f73298252201 clock.Construction.area.total
+<CMD> get_metric -raw -id current -uuid 140032d5-c388-40d5-b4bd-f73298252201 clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 410811a8-54b1-46c9-9f07-76996c9db5a6 clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 410811a8-54b1-46c9-9f07-76996c9db5a6 clock.PostConditioning.area.total
+<CMD> get_metric -raw -id current -uuid 410811a8-54b1-46c9-9f07-76996c9db5a6 clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 410811a8-54b1-46c9-9f07-76996c9db5a6 clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 410811a8-54b1-46c9-9f07-76996c9db5a6 clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 410811a8-54b1-46c9-9f07-76996c9db5a6 clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 410811a8-54b1-46c9-9f07-76996c9db5a6 clock.Construction.area.total
+<CMD> get_metric -raw -id current -uuid 410811a8-54b1-46c9-9f07-76996c9db5a6 clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid c97acbd6-ed59-4ee1-b0df-fe73676c7cd1 clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid c97acbd6-ed59-4ee1-b0df-fe73676c7cd1 clock.PostConditioning.area.total
+<CMD> get_metric -raw -id current -uuid c97acbd6-ed59-4ee1-b0df-fe73676c7cd1 clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid c97acbd6-ed59-4ee1-b0df-fe73676c7cd1 clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid c97acbd6-ed59-4ee1-b0df-fe73676c7cd1 clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid c97acbd6-ed59-4ee1-b0df-fe73676c7cd1 clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid c97acbd6-ed59-4ee1-b0df-fe73676c7cd1 clock.Construction.area.total
+<CMD> get_metric -raw -id current -uuid c97acbd6-ed59-4ee1-b0df-fe73676c7cd1 clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid e3389982-5fdc-45f3-afe8-b5165a9ff3de clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid e3389982-5fdc-45f3-afe8-b5165a9ff3de clock.PostConditioning.area.total
+<CMD> get_metric -raw -id current -uuid e3389982-5fdc-45f3-afe8-b5165a9ff3de clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid e3389982-5fdc-45f3-afe8-b5165a9ff3de clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid e3389982-5fdc-45f3-afe8-b5165a9ff3de clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid e3389982-5fdc-45f3-afe8-b5165a9ff3de clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid e3389982-5fdc-45f3-afe8-b5165a9ff3de clock.Construction.area.total
+<CMD> get_metric -raw -id current -uuid e3389982-5fdc-45f3-afe8-b5165a9ff3de clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 069f636c-458d-487e-9cf4-d0e821a8de65 clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 069f636c-458d-487e-9cf4-d0e821a8de65 clock.PostConditioning.area.total
+<CMD> get_metric -raw -id current -uuid 069f636c-458d-487e-9cf4-d0e821a8de65 clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 069f636c-458d-487e-9cf4-d0e821a8de65 clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 069f636c-458d-487e-9cf4-d0e821a8de65 clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 069f636c-458d-487e-9cf4-d0e821a8de65 clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 069f636c-458d-487e-9cf4-d0e821a8de65 clock.Construction.area.total
+<CMD> get_metric -raw -id current -uuid 069f636c-458d-487e-9cf4-d0e821a8de65 clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 76313c6e-657e-487f-a3ff-cb8cfa3e7e70 clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 76313c6e-657e-487f-a3ff-cb8cfa3e7e70 clock.PostConditioning.area.total
+<CMD> get_metric -raw -id current -uuid 76313c6e-657e-487f-a3ff-cb8cfa3e7e70 clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 76313c6e-657e-487f-a3ff-cb8cfa3e7e70 clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 76313c6e-657e-487f-a3ff-cb8cfa3e7e70 clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 76313c6e-657e-487f-a3ff-cb8cfa3e7e70 clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 76313c6e-657e-487f-a3ff-cb8cfa3e7e70 clock.Construction.area.total
+<CMD> get_metric -raw -id current -uuid 76313c6e-657e-487f-a3ff-cb8cfa3e7e70 clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 01978fef-32f6-4034-add0-7bac24ddcb14 clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 01978fef-32f6-4034-add0-7bac24ddcb14 clock.PostConditioning.area.total
+<CMD> get_metric -raw -id current -uuid 01978fef-32f6-4034-add0-7bac24ddcb14 clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 01978fef-32f6-4034-add0-7bac24ddcb14 clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 01978fef-32f6-4034-add0-7bac24ddcb14 clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 01978fef-32f6-4034-add0-7bac24ddcb14 clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 01978fef-32f6-4034-add0-7bac24ddcb14 clock.Construction.area.total
+<CMD> get_metric -raw -id current -uuid 01978fef-32f6-4034-add0-7bac24ddcb14 clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid fb8a32f4-47c5-44be-8fc8-db41c0d4fca1 clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid fb8a32f4-47c5-44be-8fc8-db41c0d4fca1 clock.PostConditioning.area.total
+<CMD> get_metric -raw -id current -uuid fb8a32f4-47c5-44be-8fc8-db41c0d4fca1 clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid fb8a32f4-47c5-44be-8fc8-db41c0d4fca1 clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid fb8a32f4-47c5-44be-8fc8-db41c0d4fca1 clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid fb8a32f4-47c5-44be-8fc8-db41c0d4fca1 clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid fb8a32f4-47c5-44be-8fc8-db41c0d4fca1 clock.Construction.area.total
+<CMD> get_metric -raw -id current -uuid fb8a32f4-47c5-44be-8fc8-db41c0d4fca1 clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 8e9f03fa-0d00-40bf-8cf2-8dfa6f1665d5 clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 8e9f03fa-0d00-40bf-8cf2-8dfa6f1665d5 clock.PostConditioning.area.total
+<CMD> get_metric -raw -id current -uuid 8e9f03fa-0d00-40bf-8cf2-8dfa6f1665d5 clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 8e9f03fa-0d00-40bf-8cf2-8dfa6f1665d5 clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 8e9f03fa-0d00-40bf-8cf2-8dfa6f1665d5 clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 8e9f03fa-0d00-40bf-8cf2-8dfa6f1665d5 clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 8e9f03fa-0d00-40bf-8cf2-8dfa6f1665d5 clock.Construction.area.total
+<CMD> get_metric -raw -id current -uuid 8e9f03fa-0d00-40bf-8cf2-8dfa6f1665d5 clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 8d19d7fa-a459-4bed-9bb7-1130d7c8a4e7 clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 8d19d7fa-a459-4bed-9bb7-1130d7c8a4e7 clock.PostConditioning.area.total
+<CMD> get_metric -raw -id current -uuid 8d19d7fa-a459-4bed-9bb7-1130d7c8a4e7 clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 8d19d7fa-a459-4bed-9bb7-1130d7c8a4e7 clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 8d19d7fa-a459-4bed-9bb7-1130d7c8a4e7 clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 8d19d7fa-a459-4bed-9bb7-1130d7c8a4e7 clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 8d19d7fa-a459-4bed-9bb7-1130d7c8a4e7 clock.Construction.area.total
+<CMD> get_metric -raw -id current -uuid 8d19d7fa-a459-4bed-9bb7-1130d7c8a4e7 clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 610a350c-6bc9-4461-b88c-9b69efb3e193 clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 610a350c-6bc9-4461-b88c-9b69efb3e193 clock.PostConditioning.area.total
+<CMD> get_metric -raw -id current -uuid 610a350c-6bc9-4461-b88c-9b69efb3e193 clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 610a350c-6bc9-4461-b88c-9b69efb3e193 clock.Routing.area.total
+<CMD> get_metric -raw -id current -uuid 610a350c-6bc9-4461-b88c-9b69efb3e193 clock.Implementation.area.total
+<CMD> get_metric -raw -id current -uuid 610a350c-6bc9-4461-b88c-9b69efb3e193 clock.eGRPC.area.total
+<CMD> get_metric -raw -id current -uuid 610a350c-6bc9-4461-b88c-9b69efb3e193 clock.Construction.area.total
+<CMD> get_metric -raw -id current -uuid 610a350c-6bc9-4461-b88c-9b69efb3e193 clock.Implementation.area.total
       flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
-UM:           4.75              6                                      route
+UM:            5.8              8                                      route
 # report_metric -file reports/metrics.html -format html
 <CMD> um::get_metric_definition -name *.drc
 <CMD> um::get_metric_definition -name *.drc.layer:*
@@ -1527,55 +1817,56 @@ UM:           4.75              6                                      route
 ### End verbose source output for 'scripts/main.tcl'.
 <CMD> getVersion
 <CMD> saveDesign checkpoints/design.checkpoint/save.enc -user_path
-#% Begin save design ... (date=05/17 12:38:56, mem=1098.9M)
-% Begin Save ccopt configuration ... (date=05/17 12:38:56, mem=1101.9M)
-% End Save ccopt configuration ... (date=05/17 12:38:56, total cpu=0:00:00.0, real=0:00:00.0, peak res=1103.7M, current mem=1103.7M)
-% Begin Save netlist data ... (date=05/17 12:38:56, mem=1123.6M)
+#% Begin save design ... (date=05/20 16:53:26, mem=1010.9M)
+% Begin Save ccopt configuration ... (date=05/20 16:53:26, mem=1013.9M)
+% End Save ccopt configuration ... (date=05/20 16:53:26, total cpu=0:00:00.0, real=0:00:00.0, peak res=1015.8M, current mem=1015.8M)
+% Begin Save netlist data ... (date=05/20 16:53:26, mem=1035.7M)
 Writing Binary DB to checkpoints/design.checkpoint/save.enc.dat/vbin/ringosc.v.bin in multi-threaded mode...
-% End Save netlist data ... (date=05/17 12:38:56, total cpu=0:00:00.0, real=0:00:00.0, peak res=1132.8M, current mem=1132.8M)
+% End Save netlist data ... (date=05/20 16:53:26, total cpu=0:00:00.0, real=0:00:00.0, peak res=1044.8M, current mem=1044.8M)
 Saving symbol-table file in separate thread ...
 Saving congestion map file in separate thread ...
-Saving congestion map file checkpoints/design.checkpoint/save.enc.dat/ringosc.route.congmap.gz ...
-% Begin Save AAE data ... (date=05/17 12:38:56, mem=1133.1M)
+% Begin Save AAE data ... (date=05/20 16:53:26, mem=1045.2M)
 Saving AAE Data ...
-AAE DB initialization (MEM=1196.07 CPU=0:00:00.0 REAL=0:00:00.0) 
-% End Save AAE data ... (date=05/17 12:38:56, total cpu=0:00:00.0, real=0:00:00.0, peak res=1133.7M, current mem=1133.7M)
+Saving congestion map file checkpoints/design.checkpoint/save.enc.dat/ringosc.route.congmap.gz ...
+AAE DB initialization (MEM=1110.58 CPU=0:00:00.0 REAL=0:00:00.0) 
+% End Save AAE data ... (date=05/20 16:53:26, total cpu=0:00:00.0, real=0:00:00.0, peak res=1045.7M, current mem=1045.7M)
 Saving preference file checkpoints/design.checkpoint/save.enc.dat/gui.pref.tcl ...
 Saving mode setting ...
 Saving global file ...
 Saving Drc markers ...
-... 1 markers are saved ...
-... 0 geometry drc markers are saved ...
+... 2 markers are saved ...
+... 1 geometry drc markers are saved ...
 ... 0 antenna drc markers are saved ...
 Saving special route data file in separate thread ...
 Saving PG file in separate thread ...
 Saving placement file in separate thread ...
 Saving route file in separate thread ...
+Saving property file in separate thread ...
 ** Saving stdCellPlacement_binary (version# 2) ...
 Save Adaptive View Pruning View Names to Binary file
 TAT_INFO: ::saveSpecialRoute REAL = 0 : CPU = 0 : MEM = 0.
-Saving PG file checkpoints/design.checkpoint/save.enc.dat/ringosc.pg.gz, version#2, (Created by Innovus v20.13-s083_1 on Tue May 17 12:38:57 2022)
+Saving PG file checkpoints/design.checkpoint/save.enc.dat/ringosc.pg.gz, version#2, (Created by Innovus v20.13-s083_1 on Fri May 20 16:53:27 2022)
 Saving property file checkpoints/design.checkpoint/save.enc.dat/ringosc.prop
-*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1226.6M) ***
-*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1226.6M) ***
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1141.1M) ***
+*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1141.1M) ***
 TAT_INFO: ::savePGFile REAL = 0 : CPU = 0 : MEM = 0.
 TAT_INFO: ::savePlace REAL = 0 : CPU = 0 : MEM = 0.
-*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1226.6M) ***
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=1141.1M) ***
 TAT_INFO: ::saveRoute REAL = 0 : CPU = 0 : MEM = 0.
 TAT_INFO: ::db::saveAnnotationAndProp REAL = 0 : CPU = 0 : MEM = 0.
 #Saving pin access data to file checkpoints/design.checkpoint/save.enc.dat/ringosc.apa ...
 #
 TAT_INFO: ::db::saveSymbolTable REAL = 0 : CPU = 0 : MEM = 0.
 TAT_INFO: ::saveCongMap REAL = 0 : CPU = 0 : MEM = 0.
-% Begin Save power constraints data ... (date=05/17 12:38:58, mem=1138.8M)
-% End Save power constraints data ... (date=05/17 12:38:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=1139.0M, current mem=1139.0M)
+% Begin Save power constraints data ... (date=05/20 16:53:28, mem=1048.8M)
+% End Save power constraints data ... (date=05/20 16:53:28, total cpu=0:00:00.0, real=0:00:00.0, peak res=1049.0M, current mem=1049.0M)
 typical
 Generated self-contained design save.enc.dat
-#% End save design ... (date=05/17 12:38:58, total cpu=0:00:00.7, real=0:00:02.0, peak res=1140.3M, current mem=1140.3M)
+#% End save design ... (date=05/20 16:53:28, total cpu=0:00:00.7, real=0:00:02.0, peak res=1081.8M, current mem=1051.5M)
 *** Message Summary: 0 warning(s), 0 error(s)
 
 
-*** Memory Usage v#2 (Current mem = 1241.000M, initial mem = 275.727M) ***
-*** Message Summary: 55 warning(s), 0 error(s)
+*** Memory Usage v#2 (Current mem = 1154.500M, initial mem = 275.727M) ***
+*** Message Summary: 57 warning(s), 0 error(s)
 
---- Ending "Innovus" (totcpu=0:00:21.6, real=0:00:33.0, mem=1241.0M) ---
+--- Ending "Innovus" (totcpu=0:00:22.9, real=0:00:34.0, mem=1154.5M) ---

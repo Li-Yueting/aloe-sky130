@@ -70,12 +70,13 @@ setAddStripeMode -stacked_via_bottom_layer 2 \
 # Allow same-layer jogs to connect stripes to the core ring if some
 # blockage is in the way (e.g., connections from core ring to pads).
 # Restrict any routing around blockages to use only layers for power.
-
-addStripe -nets {VSS VDD} -layer $pmesh_bot -direction vertical \
+set $pmesh_bot_str_intraset_spacing  50
+# addStripe -nets {VSS VDD} -layer $pmesh_bot -direction vertical \
     -width $pmesh_bot_str_width                                 \
     -spacing $pmesh_bot_str_intraset_spacing                    \
     -set_to_set_distance $pmesh_bot_str_interset_pitch          \
-    -max_same_layer_jog_length $pmesh_bot_str_pitch             \
+    -max_same_layer_jog_length $pmesh_bot_str_pitch \
+    -stop 45             \
     -padcore_ring_bottom_layer_limit $pmesh_bot                 \
     -padcore_ring_top_layer_limit $pmesh_top                    \
     -start [expr $pmesh_bot_str_pitch]
@@ -110,7 +111,7 @@ setAddStripeMode -stacked_via_bottom_layer $pmesh_bot \
 # blockage is in the way (e.g., connections from core ring to pads).
 # Restrict any routing around blockages to use only layers for power.
 
-addStripe -nets {VSS VDD} -layer $pmesh_top -direction horizontal \
+# addStripe -nets {VSS VDD} -layer $pmesh_top -direction horizontal \
     -width $pmesh_top_str_width                                   \
     -spacing $pmesh_top_str_intraset_spacing                      \
     -set_to_set_distance $pmesh_top_str_interset_pitch            \

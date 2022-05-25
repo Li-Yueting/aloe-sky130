@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1652752820
+timestamp 1652936778
 << nwell >>
 rect 90 294 776 1940
 rect 188 293 776 294
@@ -40,9 +40,9 @@ rect 418 1850 776 1910
 rect 118 1760 178 1850
 rect 118 1720 128 1760
 rect 168 1720 178 1760
-rect 248 1730 776 1790
 rect 118 1640 178 1720
-rect 693 1649 727 1730
+rect 248 1690 776 1730
+rect 693 1649 727 1690
 rect 236 1633 270 1649
 rect 235 367 236 374
 rect 693 1633 728 1649
@@ -82,7 +82,7 @@ flabel nwell 90 1850 150 1910 1 FreeSans 800 0 0 0 VPWR
 port 4 n power bidirectional
 flabel metal1 90 -30 248 30 1 FreeSans 800 0 0 0 VGND
 port 5 n ground bidirectional
-flabel locali 716 1730 776 1790 1 FreeSans 800 0 0 0 SOURCE
+flabel locali 716 1690 776 1730 1 FreeSans 800 0 0 0 SOURCE
 port 2 n signal bidirectional
 flabel locali 716 210 776 270 1 FreeSans 800 0 0 0 DRAIN
 port 3 n signal bidirectional

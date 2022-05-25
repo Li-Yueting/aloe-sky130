@@ -111,7 +111,8 @@ set_interactive_constraint_modes [all_constraint_modes -active]
 setPlaceMode -checkCellDRCFromPreRoute false
 # set_disable_timing {inv5 inv1 inv2 inv3 inv4}
 # setPlaceMode -prerouteAsObs
-place_design 
+place_design -noPrePlaceOpt
+
 #-out_dir reports -prefix place
 # <END TAG> place,place_design
 puts "<FF> Plugin -> post_place_tcl"

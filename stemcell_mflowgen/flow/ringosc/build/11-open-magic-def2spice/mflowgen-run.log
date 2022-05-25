@@ -43,15 +43,15 @@ LEF read, Line 311 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF 
 LEF read: Processed 820 lines.
 Reading LEF data from file inputs/adk/stdcells.lef.
 This action cannot be undone.
-LEF read: Processed 2767 lines.
+LEF read: Processed 2669 lines.
 Reading DEF data from file design.def.
 This action cannot be undone.
   Processed 10 vias total.
-DEF read, Line 218 (Warning): Number of pins read (20) does not match the number declared (6).
-  Processed 4 subcell instances total.
+DEF read, Line 192 (Warning): Number of pins read (17) does not match the number declared (3).
+  Processed 1 subcell instances total.
   Processed 10 special nets total.
-  Processed 5 nets total.
-DEF read: Processed 624 lines.
+  Processed 2 nets total.
+DEF read: Processed 305 lines.
 DEF Read: encountered 1 warning total.
 Usage: extract do option
    or  extract no option
@@ -66,7 +66,17 @@ where option is one of:
   labelcheck		check for connections through sticky labels
   aliases		output all net name aliases
 Processing ringosc
-Extracting sky130_asc_pfet_01v8_lvt_12 into sky130_asc_pfet_01v8_lvt_12.ext:
-Extracting sky130_asc_pfet_01v8_lvt_60 into sky130_asc_pfet_01v8_lvt_60.ext:
+Extracting sky130_asc_cap_mim_m3_1 into sky130_asc_cap_mim_m3_1.ext:
 Extracting ringosc into ringosc.ext:
+Warning:  Ports "VDD" and "VSS" are electrically shorted.
+Warning:  Ports "VDD" and "VSS" are electrically shorted.
+Warning:  Ports "VDD" and "VSS" are electrically shorted.
+Warning:  Ports "VDD" and "VSS" are electrically shorted.
+Warning:  Ports "VDD" and "VSS" are electrically shorted.
+Warning:  Ports "VDD" and "VSS" are electrically shorted.
+Warning:  Ports "VDD" and "VSS" are electrically shorted.
+Warning:  Ports "VDD" and "VSS" are electrically shorted.
+Total of 161 errors (check feedback entries).
+ringosc: 161 errors
+Warning:  Ports "VDD" and "VSS" are electrically shorted.
 exttospice finished.

@@ -1,0 +1,890 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.13-s083_1, built Tue Jan 19 16:51:46 PST 2021
+Options:	-nologv -init top0.tcl -cpus 4 
+Date:		Mon May 23 20:01:08 2022
+Host:		rice-503-20-north (x86_64 w/Linux 5.11.0-41-generic) (20cores*40cpus*Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz 28160KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (383 mbytes). Set global soft_stack_size_limit to change the value.
+setMultiCpuUsage -localCpu 4
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+Sourcing file "top0.tcl" ...
+<CMD> setDistributeHost -local
+The timeout for a remote job to respond is 3600 seconds.
+Submit command for task runs will be: local
+<CMD> define_proc_arguments cal_nl -info {Writes TCL scripts to run.
+} -define_args {{-n "current run number" "int_value" int required}
+    {-l "length of zero-padding" "int_value" int required}
+    {-d "expression directory" "none" string required}
+    {-b "blk_name" "none" string optional}
+    }
+<CMD> define_proc_arguments areaRatio -info {Compute the ratio of the group-elements-cumulated-area to the group-bounding-box-area. 
+} -define_args {
+    {-group "Group name" "none" string {required}}
+  }
+<CMD> define_proc_arguments swap_cells -info {Writes TCL scripts to run.
+} -define_args {{-net "net name" "none" string required}
+    {-tail "tied cell identifying string" "none" string optional}
+    }
+<CMD> define_proc_arguments pnr -info {Writes TCL scripts to run.
+} -define_args {{-g "generation" "none" string required}
+	{-gennum "generation num" "int_value" int required}
+	{-n "population size" "int_value" int required}
+	{-pnr_dir "place and route directroy" "none" string required}
+	{-t "timed" "" boolean optional}
+	}
+<CMD> define_proc_arguments save_lvs_netlist -define_args {{-dcapNamePattern "regex pattern of dcaps" "none" string required} {-fVerilog "file name to be saved" "none" string required} {-flat "export flat or hierarchical verilog" "" boolean optional} }
+<CMD> set_message -id NRIG-39 -suppress
+<CMD> set_message -id IMPLF-201 -suppress
+<CMD> set_message -id IMPLF-44 -suppress
+<CMD> set_message -id IMPSP-9513 -suppress
+<CMD> set_message -id IMPSP-9514 -suppress
+<CMD> set_message -id IMPDB-2078 -suppress
+<CMD> setMessageLimit 5
+<CMD> set ::TimeLib::tsgMarkCellLatchConstructFlag 1
+<CMD> get_message -id GLOBAL-100 -suppress
+<CMD> get_message -id GLOBAL-100 -suppress
+<CMD> set _timing_save_restore_compression_mode hybrid
+<CMD> set conf_qxconf_file NULL
+<CMD> set conf_qxlib_file NULL
+<CMD> set defHierChar /
+<CMD> set distributed_client_message_echo 1
+<CMD> set distributed_mmmc_disable_reports_auto_redirection 0
+<CMD> set gpsPrivate::dpgNewAddBufsDBUpdate 1
+<CMD> set gpsPrivate::lsgEnableNewDbApiInRestruct 1
+<CMD> set init_gnd_net VSS
+<CMD> set init_io_file {}
+<CMD> set init_lef_file {/home/users/xingyuni/ee372/aloe-sky130/aloe/stemcell/rtk-tech.tlef  /home/users/xingyuni/ee372/aloe-sky130/aloe/stemcell/stdcells.lef}
+<CMD> set init_pwr_net VDD
+<CMD> set init_top_cell bgr_top
+<CMD> set init_verilog /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/examples/bgr_top/bgr_top.v
+<CMD> get_message -id GLOBAL-100 -suppress
+<CMD> get_message -id GLOBAL-100 -suppress
+<CMD> set latch_time_borrow_mode max_borrow
+<CMD> set pegDefaultResScaleFactor 1.000000
+<CMD> set pegDetailResScaleFactor 1.000000
+<CMD> get_message -id GLOBAL-100 -suppress
+<CMD> get_message -id GLOBAL-100 -suppress
+<CMD> set report_inactive_arcs_format {from to when arc_type sense reason}
+<CMD> set timing_library_load_pin_cap_indices {}
+<CMD> set timing_library_write_library_to_directory {}
+<CMD> set tso_post_client_restore_command {update_timing ; write_eco_opt_db ;}
+<CMD> set init_design_uniquify 1
+<CMD> init_design
+
+Loading LEF file /home/users/xingyuni/ee372/aloe-sky130/aloe/stemcell/rtk-tech.tlef ...
+
+Loading LEF file /home/users/xingyuni/ee372/aloe-sky130/aloe/stemcell/stdcells.lef ...
+WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/users/xingyuni/ee372/aloe-sky130/aloe/stemcell/stdcells.lef at line 2.
+Set DBUPerIGU to M1 pitch 460.
+**WARN: (IMPLF-201):	Pin 'GATE' in macro 'sky130_asc_pfet_01v8_lvt_9' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'SOURCE' in macro 'sky130_asc_pfet_01v8_lvt_9' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'DRAIN' in macro 'sky130_asc_pfet_01v8_lvt_9' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'Cin' in macro 'sky130_asc_cap_mim_m3_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'Cin' in macro 'sky130_asc_cap_mim_m3_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'Cout' in macro 'sky130_asc_cap_mim_m3_1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-200):	Pin 'Cout' in macro 'sky130_asc_cap_mim_m3_1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'Emitter' in macro 'sky130_asc_pnp_05v5_W3p40L3p40_7' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-201):	Pin 'GATE' in macro 'sky130_asc_pfet_01v8_lvt_6' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'GATE' in macro 'sky130_asc_nfet_01v8_lvt_9' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+
+viaInitial starts at Mon May 23 20:01:38 2022
+viaInitial ends at Mon May 23 20:01:38 2022
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+*** End library_loading (cpu=0.00min, real=0.00min, mem=0.0M, fe_cpu=0.29min, fe_real=0.50min, fe_mem=744.3M) ***
+#% Begin Load netlist data ... (date=05/23 20:01:38, mem=725.6M)
+*** Begin netlist parsing (mem=744.3M) ***
+Created 0 new cells from 0 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '/home/users/xingyuni/ee372/aloe-sky130/aloe/layout/examples/bgr_top/bgr_top.v'
+
+*** Memory Usage v#2 (Current mem = 746.297M, initial mem = 295.723M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=746.3M) ***
+#% End Load netlist data ... (date=05/23 20:01:38, total cpu=0:00:00.0, real=0:00:00.0, peak res=729.2M, current mem=729.2M)
+Set top cell to bgr_top.
+Hooked 0 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell bgr_top ...
+*** Netlist is NOT unique.
+Set DBUPerIGU to techSite unitasc width 490.
+** info: there are 20 modules.
+** info: there are 56 stdCell insts.
+
+*** Memory Usage v#2 (Current mem = 791.711M, initial mem = 295.723M) ***
+**WARN: (IMPFP-3961):	The techSite 'unithddbl' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'unithd' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Adjust met3 preferred direction offset from 0.34 to 0.17.
+Adjust met4 preferred direction offset from 0.46 to 0.23.
+Adjust met5 preferred direction offset from 1.7 to 0.17.
+Generated pitch 3.66 in met5 is different from 3.4 defined in technology file in preferred direction.
+Generated pitch 0.69 in met4 is different from 0.92 defined in technology file in preferred direction.
+Generated pitch 0.61 in met3 is different from 0.68 defined in technology file in preferred direction.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: (IMPSYT-7328):	The design has been initialized in physical-only mode because the init_mmmc_file global variable was not defined. Timing analysis will not be possible within this session. You can only use commands that do not depend on timing data. If you need to use timing, you need to restart with an init_mmmc_file to define the timing setup, or you can save this design and use restoreDesign -mmmc_file <viewDef.tcl> to add the timing setup information.
+Extraction setup Started 
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-200           26  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPLF-201           13  Pin '%s' in macro '%s' has no ANTENNADIF...
+WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+WARNING   IMPSYT-7328          1  The design has been initialized in physi...
+*** Message Summary: 42 warning(s), 0 error(s)
+
+<CMD> setRouteMode -earlyGlobalMaxRouteLayer 5
+**WARN: (IMPPSP-1003):	Found use of 'setRouteMode -earlyGlobalMaxRouteLayer'. This will continue to work in this release; however, it is recommended to use 'setDesignMode -topRoutingLayer' instead.
+<CMD> setPinAssignMode -maxLayer 5
+**WARN: (IMPPTN-867):	Found use of setPinAssignMode -maxLayer. This will continue to work in this release; however, it is recommended to use setDesignMode -topRoutingLayer instead.
+<CMD> setNanoRouteMode -routeTopRoutingLayer 5
+#WARNING (NRIF-91) Option setNanoRouteMode -routeTopRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -topRoutingLayer instead.
+<CMD> setDesignMode -topRoutingLayer met4
+**WARN: (IMPSYT-21024):	Command "setMaxRouteLayer" has become obsolete. It will be removed in the next release and is replaced by "setDesignMode -topRoutingLayer". The obsolete command still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your scripts.
+<CMD> setDesignMode -process 16 -flowEffort standard
+##  Process: 16            (User Set)               
+##     Node: (not set)                           
+
+##  Check design process and node:  
+##  Design tech node is not set.
+
+Applying the recommended capacitance filtering threshold values for 16nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.1.
+	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+	Capacitance filtering mode(-capFilterMode option of the setExtractRCMode) is 'relAndCoup' for all engines.
+	The accuracy mode for postRoute effortLevel low extraction will be set to 'high'.
+	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode will be 'medium' if Quantus QRC technology file is specified else 'low'.
+<CMD> setViaGenMode -reset
+<CMD> setViaGenMode -optimize_cross_via true
+Setting -optimize_cross_via to 1. ViaGen will try to generate vias with the minimum enclosure.
+<CMD> setViaGenMode -optimize_via_on_routing_track true
+Setting -optimize_via_on_routing_track to 1. ViaGen will try to position vias to optimize routing tracks nearby.
+<CMD> setViaGenMode -viarule_preference default
+Setting -viarule_preference to default order. ViaGen will consider via rule priority based on the order of appearance in the technology file.
+<CMD> setViaGenMode -ignore_DRC false
+Setting -ignore_DRC to 0. ViaGen will do DRC check while creating vias.
+<CMD> setPlaceMode -checkDiffusionWidth true
+<CMD> setPlaceMode -coreEffort high
+<CMD> setStreamOutMode -textSize 0.1
+<CMD> setStreamOutMode -virtualConnection false
+<CMD> globalNetConnect VDD -type tiehi -pin VPWR -inst *
+<CMD> globalNetConnect VSS -type tielo -pin VGND -inst *
+<CMD> globalNetConnect VDD -type tiehi -pin VPB -inst *
+<CMD> globalNetConnect VSS -type tielo -pin VNB -inst *
+<CMD> globalNetConnect VDD -type pgpin -pin VPWR -inst *
+<CMD> globalNetConnect VSS -type pgpin -pin VGND -inst *
+<CMD> globalNetConnect VDD -type pgpin -pin VPB -inst *
+**ERROR: (IMPDB-1221):	A global net connection rule was specified to connect power pins with the name pattern 'VPB' to a global net.  But the connections cannot be made because there is no such power pin with name matching the pattern in any cell.  Check the pin name in Lef or liberty and make sure it is correct.
+<CMD> globalNetConnect VSS -type pgpin -pin VNB -inst *
+**ERROR: (IMPDB-1221):	A global net connection rule was specified to connect ground pins with the name pattern 'VNB' to a global net.  But the connections cannot be made because there is no such ground pin with name matching the pattern in any cell.  Check the pin name in Lef or liberty and make sure it is correct.
+<CMD> loadFPlan /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/examples/bgr_top/bgr_top.fp
+Reading floorplan file - /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/examples/bgr_top/bgr_top.fp (mem = 991.2M).
+#% Begin Load floorplan data ... (date=05/23 20:01:39, mem=950.9M)
+*info: reset 44 existing net BottomPreferredLayer and AvoidDetour
+**WARN: (IMPDB-2078):	Output pin Rout of instance R21 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin SOURCE of instance M10 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+Deleting old partition specification.
+Set FPlanBox to (0 0 288420 269620)
+**WARN: (IMPFP-3961):	The techSite 'unithddbl' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'unithd' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Adjust met3 preferred direction offset from 0.34 to 0.17.
+Adjust met4 preferred direction offset from 0.46 to 0.23.
+Adjust met5 preferred direction offset from 1.7 to 0.17.
+Generated pitch 3.66 in met5 is different from 3.4 defined in technology file in preferred direction.
+Generated pitch 0.69 in met4 is different from 0.92 defined in technology file in preferred direction.
+Generated pitch 0.61 in met3 is different from 0.68 defined in technology file in preferred direction.
+ ... processed partition successfully.
+Reading binary special route file /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/examples/bgr_top/bgr_top.fp.spr (Created by Innovus v20.13-s083_1 on Tue May 17 10:45:42 2022, version: 1)
+Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=956.7M, current mem=956.7M)
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+#% End Load floorplan data ... (date=05/23 20:01:39, total cpu=0:00:00.1, real=0:00:00.0, peak res=957.8M, current mem=957.7M)
+<CMD> setDesignMode -process 130 -powerEffort high
+##  Process: 130           (User Set)               
+##     Node: (not set)                           
+
+##  Check design process and node:  
+##  Design tech node is not set.
+
+Applying the recommended capacitance filtering threshold values for 130nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.4.
+	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+	Capacitance filtering mode(-capFilterMode option of the setExtractRCMode) is 'relAndCoup' for all engines.
+	The accuracy mode for postRoute effortLevel low extraction will be set to 'standard'.
+	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode is 'low'.
+<CMD> setAnalysisMode -analysisType onChipVariation
+<CMD> setPlaceMode -place_global_cong_effort low -place_global_clock_gate_aware true -place_global_place_io_pins false
+<FF> RUNNING PLACEMENT ...
+<CMD> all_constraint_modes -active
+<CMD> set_interactive_constraint_modes [all_constraint_modes -active]
+<CMD> setPlaceMode -checkCellDRCFromPreRoute false
+<CMD> place_design
+**WARN: (IMPSP-9513):	Timing constraint file does not exist
+**WARN: (IMPSP-9514):	Non-TimingDriven placement will be performed.
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+*** Starting placeDesign default flow ***
+Deleted 0 physical inst  (cell - / prefix -).
+Multithreaded Timing Analysis is initialized with 4 threads
+
+INFO: #ExclusiveGroups=0
+INFO: There are no Exclusive Groups.
+*** Starting "NanoPlace(TM) placement v#4 (mem=1097.7M)" ...
+No user-set net weight.
+Net fanout histogram:
+2		: 31 (75.6%) nets
+3		: 3 (7.3%) nets
+4     -	14	: 7 (17.1%) nets
+15    -	39	: 0 (0.0%) nets
+40    -	79	: 0 (0.0%) nets
+80    -	159	: 0 (0.0%) nets
+160   -	319	: 0 (0.0%) nets
+320   -	639	: 0 (0.0%) nets
+640   -	1279	: 0 (0.0%) nets
+1280  -	2559	: 0 (0.0%) nets
+2560  -	5119	: 0 (0.0%) nets
+5120+		: 0 (0.0%) nets
+Options: clkGateAware ignoreScan pinGuide congEffort=low gpeffort=medium 
+Scan chains were not defined.
+**WARN: (IMPDB-2078):	Output pin Rout of instance R21 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin SOURCE of instance M10 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+#std cell=56 (0 fixed + 56 movable) #buf cell=0 #inv cell=0 #block=0 (0 floating + 0 preplaced)
+#ioInst=0 #net=41 #term=122 #term/net=2.98, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=4
+stdCell: 56 single + 0 double + 0 multi
+Total standard cell length = 1.4150 (mm), area = 0.0133 (mm^2)
+**Info: (IMPSP-307): Design contains fractional 13 cells.
+Estimated cell power/ground rail width = 0.881 um
+Average module density = 0.343.
+Density for the design = 0.343.
+       = stdcell_area 2888 sites (13301 um^2) / alloc_area 8420 sites (38783 um^2).
+Pin Density = 0.01449.
+            = total # of pins 122 / total area 8420.
+Enabling multi-CPU acceleration with 4 CPU(s) for placement
+=== lastAutoLevel = 6 
+**WARN: (IMPSP-9531):	Turning off clkGateAware when timingDriven is off
+Iteration  1: Total net bbox = 2.395e+03 (1.04e+03 1.35e+03)
+              Est.  stn bbox = 2.698e+03 (1.19e+03 1.51e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1177.7M
+Iteration  2: Total net bbox = 2.395e+03 (1.04e+03 1.35e+03)
+              Est.  stn bbox = 2.698e+03 (1.19e+03 1.51e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1177.7M
+Iteration  3: Total net bbox = 1.450e+03 (8.84e+02 5.65e+02)
+              Est.  stn bbox = 1.753e+03 (1.03e+03 7.24e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1179.2M
+Iteration  4: Total net bbox = 1.575e+03 (8.67e+02 7.08e+02)
+              Est.  stn bbox = 1.896e+03 (1.02e+03 8.80e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1179.2M
+Iteration  5: Total net bbox = 1.576e+03 (8.16e+02 7.60e+02)
+              Est.  stn bbox = 1.894e+03 (9.62e+02 9.32e+02)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1179.2M
+Iteration  6: Total net bbox = 1.842e+03 (1.01e+03 8.29e+02)
+              Est.  stn bbox = 2.188e+03 (1.18e+03 1.00e+03)
+              cpu = 0:00:00.1 real = 0:00:01.0 mem = 1179.2M
+*** cost = 1.842e+03 (1.01e+03 8.29e+02) (cpu for global=0:00:00.1) real=0:00:01.0***
+Placement multithread real runtime: 0:00:01.0 with 4 threads.
+**WARN: (IMPDB-2078):	Output pin Rout of instance R21 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+**WARN: (IMPDB-2078):	Output pin SOURCE of instance M10 is connected to ground net VSS.  Usually it is not right to connect an output signal pin to a P/G net, unless the pin is meant to be the driver of the net. This can create a short circuit if the output is power.  Check the connectivity in the netlist.
+Solver runtime cpu: 0:00:00.0 real: 0:00:00.0
+Core Placement runtime cpu: 0:00:00.0 real: 0:00:01.0
+**WARN: (IMPSP-9025):	No scan chain specified/traced.
+Type 'man IMPSP-9025' for more detail.
+**Info: (IMPSP-307): Design contains fractional 13 cells.
+*** Starting refinePlace (0:00:18.3 mem=1202.4M) ***
+Total net bbox length = 1.860e+03 (1.029e+03 8.303e+02) (ext = 4.164e+02)
+**WARN: (IMPSP-2035):	Cell-to-preRoute spacing and short violation checking has been switched off in this legalization run.  This will result in a non-legal placement.
+Move report: Detail placement moves 56 insts, mean move: 52.03 um, max move: 124.23 um 
+	Max move on inst (BGR_Core/R6/sub1): (105.53, 195.72) --> (168.83, 134.80)
+	Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 1202.4MB
+Summary Report:
+Instances move: 56 (out of 56 movable)
+Instances flipped: 0
+Mean displacement: 52.03 um
+Max displacement: 124.23 um (Instance: BGR_Core/R6/sub1) (105.525, 195.721) -> (168.83, 134.8)
+	Length: 28 sites, height: 1 rows, site name: unitasc, cell type: sky130_asc_res_xhigh_po_2p85_1
+Total net bbox length = 3.814e+03 (2.105e+03 1.708e+03) (ext = 4.144e+02)
+Runtime: CPU: 0:00:00.0 REAL: 0:00:00.0 MEM: 1202.4MB
+*** Finished refinePlace (0:00:18.3 mem=1202.4M) ***
+*** End of Placement (cpu=0:00:00.1, real=0:00:01.0, mem=1179.4M) ***
+**Info: (IMPSP-307): Design contains fractional 13 cells.
+default core: bins with density > 0.750 =  0.00 % ( 0 / 6 )
+Density distribution unevenness ratio = 16.318%
+Info: Disable timing driven in postCTS congRepair.
+
+Starting congRepair ...
+[NR-eGR] Track table information for default rule: 
+[NR-eGR] li1 has no routable track
+[NR-eGR] met1 has single uniform track structure
+[NR-eGR] met2 has single uniform track structure
+[NR-eGR] met3 has single uniform track structure
+[NR-eGR] met4 has single uniform track structure
+[NR-eGR] Read 1159 PG shapes
+[NR-eGR] #Routing Blockages  : 0
+[NR-eGR] #Instance Blockages : 1254
+[NR-eGR] #PG Blockages       : 1159
+[NR-eGR] #Halo Blockages     : 0
+[NR-eGR] #Boundary Blockages : 0
+[NR-eGR] Num Prerouted Nets = 0  Num Prerouted Wires = 0
+[NR-eGR] Read numTotalNets=41  numIgnoredNets=0
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id: 0  Nets: 41 
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 41 net(s) in layer range [2, 5]
+[NR-eGR] Early Global Route overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 4.220600e+03um
+[NR-eGR] Congestion Analysis By layer: (blocked Gcells are excluded) 
+[NR-eGR]                        OverCon            
+[NR-eGR]                         #Gcell     %Gcell
+[NR-eGR]       Layer                (2)    OverCon 
+[NR-eGR] ----------------------------------------------
+[NR-eGR]     li1  (1)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]    met1  (2)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]    met2  (3)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]    met3  (4)         1( 0.11%)   ( 0.11%) 
+[NR-eGR]    met4  (5)         3( 0.37%)   ( 0.37%) 
+[NR-eGR] ----------------------------------------------
+[NR-eGR] Total                4( 0.12%)   ( 0.12%) 
+[NR-eGR] 
+[NR-eGR] Overflow after Early Global Route (GR compatible) 0.00% H + 0.00% V
+[NR-eGR] Overflow after Early Global Route 0.00% H + 0.00% V
+Early Global Route congestion estimation runtime: 0.02 seconds, mem = 1179.4M
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+Skipped repairing congestion.
+[NR-eGR] Started Export DB wires ( Curr Mem: 1179.38 MB )
+[NR-eGR] Started Export all nets (4T) ( Curr Mem: 1179.38 MB )
+[NR-eGR] Finished Export all nets (4T) ( CPU: 0.00 sec, Real: 0.00 sec, Curr Mem: 1179.38 MB )
+[NR-eGR] Started Set wire vias (4T) ( Curr Mem: 1179.38 MB )
+[NR-eGR] Finished Set wire vias (4T) ( CPU: 0.00 sec, Real: 0.00 sec, Curr Mem: 1179.38 MB )
+[NR-eGR] Finished Export DB wires ( CPU: 0.00 sec, Real: 0.00 sec, Curr Mem: 1179.38 MB )
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR]    li1  (1F) length: 0.000000e+00um, number of vias: 12
+[NR-eGR]   met1  (2H) length: 1.930250e+03um, number of vias: 189
+[NR-eGR]   met2  (3V) length: 1.661150e+03um, number of vias: 33
+[NR-eGR]   met3  (4H) length: 5.064600e+02um, number of vias: 37
+[NR-eGR]   met4  (5V) length: 4.015200e+02um, number of vias: 0
+[NR-eGR] Total length: 4.499380e+03um, number of vias: 271
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total eGR-routed clock nets wire length: 0.000000e+00um 
+[NR-eGR] --------------------------------------------------------------------------
+Early Global Route wiring runtime: 0.01 seconds, mem = 1179.4M
+Tdgp not successfully inited but do clear! skip clearing
+End of congRepair (cpu=0:00:00.1, real=0:00:00.0)
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 0: 0, real = 0: 0: 1, mem = 1179.4M **
+Tdgp not successfully inited but do clear! skip clearing
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPDB-2078           4  Output pin %s of instance %s is connecte...
+WARNING   IMPSP-9513           1  Timing constraint file does not exist    
+WARNING   IMPSP-9514           1  Non-TimingDriven placement will be perfo...
+WARNING   IMPSP-9531           1  Turning off clkGateAware when timingDriv...
+WARNING   IMPSP-9025           1  No scan chain specified/traced.          
+WARNING   IMPSP-2035           1  Cell-to-preRoute spacing and short viola...
+*** Message Summary: 9 warning(s), 0 error(s)
+
+<CMD> selectNet *
+<CMD> deselectNet VDD
+<CMD> deselectNet VSS
+<CMD> setNanoRouteMode -quiet -routeSelectedNetOnly 1
+<CMD> routeDesign -globalDetail
+#% Begin routeDesign (date=05/23 20:01:40, mem=1061.8M)
+#routeDesign: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1061.84 (MB), peak = 1077.17 (MB)
+#WARNING (NRIG-96) Selected single pass global detail route "-globalDetail". Clock eco and post optimizations will not be run. See "man NRIG-96" for more details.
+**INFO: User settings:
+setNanoRouteMode -extractThirdPartyCompatible                   false
+setNanoRouteMode -grouteExpTdUseTifTimingEngineForImportDesign  true
+setNanoRouteMode -routeSelectedNetOnly                          true
+setNanoRouteMode -routeTopRoutingLayer                          5
+setDesignMode -flowEffort                                       standard
+setDesignMode -powerEffort                                      high
+setDesignMode -process                                          130
+setDesignMode -topRoutingLayer                                  met4
+setExtractRCMode -coupling_c_th                                 0.4
+setExtractRCMode -engine                                        preRoute
+setExtractRCMode -relative_c_th                                 1
+setExtractRCMode -total_c_th                                    0
+setDelayCalMode -engine                                         aae
+setDelayCalMode -ignoreNetLoad                                  false
+
+#**INFO: setDesignMode -flowEffort standard
+#**INFO: multi-cut via swapping will not be performed after routing.
+#**INFO: All auto set options tuned by routeDesign will be restored to their original settings on command completion.
+Begin checking placement ... (start mem=1179.4M, init mem=1180.4M)
+*info: Placed = 56            
+*info: Unplaced = 0           
+Placement Density:34.30%(13301/38783)
+Placement Density (including fixed std cells):34.30%(13301/38783)
+Finished checkPlace (total: cpu=0:00:00.0, real=0:00:00.0; vio checks: cpu=0:00:00.0, real=0:00:00.0; mem=1180.4M)
+
+changeUseClockNetStatus Option :  -noFixedNetWires 
+*** Changed status on (0) nets in Clock.
+*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=1180.4M) ***
+% Begin globalDetailRoute (date=05/23 20:01:40, mem=1061.8M)
+
+globalDetailRoute
+
+#Start globalDetailRoute on Mon May 23 20:01:40 2022
+#
+#Generating timing data, please wait...
+#42 total nets, 41 already routed, 41 will ignore in trialRoute
+**WARN: (IMPEXT-6197):	The Cap table file is not specified. This will result in lower parasitic accuracy when using preRoute extraction or postRoute extraction with effort level 'low'. It is recommended to generate the Cap table file using the 'generateCapTbl' command and specify it before extraction using 'create_rc_corner/update_rc_corner -cap_table'.
+#Dump tif for version 2.1
+**ERROR: (IMPDC-634):	Failed to build the timing graph since timing library files have not yet been loaded. To resolve this, check that timing library files have been correctly specified in the loaded design database.
+**ERROR: (IMPDC-634):	Failed to build the timing graph since timing library files have not yet been loaded. To resolve this, check that timing library files have been correctly specified in the loaded design database.
+**WARN: (IMPEXT-2882):	Unable to find the resistance for via 'M2M3_PR_R' in Cap table or LEF or OA files. The default value of 4.0 ohms is being assigned. To avoid this, check the Cap table and LEF and OA files, provide the resistance and read the files again.
+**WARN: (IMPEXT-2882):	Unable to find the resistance for via 'M1M2_PR_M' in Cap table or LEF or OA files. The default value of 4.0 ohms is being assigned. To avoid this, check the Cap table and LEF and OA files, provide the resistance and read the files again.
+**WARN: (IMPEXT-2882):	Unable to find the resistance for via 'L1M1_PR' in Cap table or LEF or OA files. The default value of 4.0 ohms is being assigned. To avoid this, check the Cap table and LEF and OA files, provide the resistance and read the files again.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net BGR_Core/l12 is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net BGR_Core/R6/l is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2882):	Unable to find the resistance for via 'M3M4_PR' in Cap table or LEF or OA files. The default value of 4.0 ohms is being assigned. To avoid this, check the Cap table and LEF and OA files, provide the resistance and read the files again.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net amp/vx is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net amp/vx is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (IMPEXT-2883):	The resistance extracted for a wire belonging to net BGR_Core/l12 is 0 ohms. Therefore, a small value of 0.1 ohms is assigned to it.
+**WARN: (EMS-27):	Message (IMPEXT-2883) has exceeded the current message display limit of 5.
+To increase the message display limit, refer to the product command reference manual.
+Total number of fetched objects 85
+End delay calculation. (MEM=1362.49 CPU=0:00:00.0 REAL=0:00:00.0)
+#Generating timing data took: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1102.93 (MB), peak = 1126.10 (MB)
+#Done generating timing data.
+#WARNING (NRIG-1303) Congestion map does not match the GCELL grid, clearing map.
+#num needed restored net=0
+#need_extraction net=0 (total=52)
+#WARNING (NRDB-976) The TRACK STEP 0.6100 for preferred direction tracks is smaller than the PITCH 0.6800 for LAYER met3. This will cause routability problems for NanoRoute.
+#WARNING (NRDB-976) The TRACK STEP 0.6900 for preferred direction tracks is smaller than the PITCH 0.9200 for LAYER met4. This will cause routability problems for NanoRoute.
+#Start reading timing information from file .timing_file_1880780.tif.gz ...
+#WARNING (NRDB-194) 
+#No setup time constraints read in
+#Read in timing information for 4 ports, 56 instances from timing file .timing_file_1880780.tif.gz.
+#NanoRoute Version 20.13-s083_1 NR201221-0721/20_13-UB
+#Total number of trivial nets (e.g. < 2 pins) = 10 (skipped).
+#Total number of selected nets for routing = 41.
+#Total number of unselected nets (but routable) for routing = 1 (skipped).
+#Total number of nets in the design = 52.
+#41 routable nets do not have any wires.
+#1 skipped net do not has any wires.
+#41 nets will be global routed.
+#Using multithreading with 4 threads.
+#Start routing data preparation on Mon May 23 20:01:41 2022
+#
+#WARNING (NRDB-2040) Rule LEF_DEFAULT doesn't specify any vias that satisfy all of the area rules for layer met3 
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 3.300.
+#Voltage range [0.000 - 3.300] has 42 nets.
+#Voltage range [0.000 - 0.000] has 10 nets.
+#Initial pin access analysis.
+#Detail pin access analysis.
+# li1          V   Track-Pitch = 0.4600    Line-2-Via Pitch = 0.3400
+# met1         H   Track-Pitch = 0.3400    Line-2-Via Pitch = 0.3250
+# met2         V   Track-Pitch = 0.4600    Line-2-Via Pitch = 0.3400
+# met3         H   Track-Pitch = 0.6100    Line-2-Via Pitch = 0.6100
+# met4         V   Track-Pitch = 0.6900    Line-2-Via Pitch = 0.6150
+# met5         H   Track-Pitch = 3.6600    Line-2-Via Pitch = 3.2000
+#Monitoring time of adding inner blkg by smac
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1115.75 (MB), peak = 1248.63 (MB)
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer met2's pitch = 0.4600.
+#Using automatically generated G-grids.
+#Done routing data preparation.
+#cpu time = 00:00:01, elapsed time = 00:00:00, memory = 1119.29 (MB), peak = 1248.63 (MB)
+#
+#Connectivity extraction summary:
+#41 (80.39%) nets are without wires.
+#10 nets are fixed|skipped|trivial (not extracted).
+#Total number of nets = 51.
+#
+#
+#Finished routing data preparation on Mon May 23 20:01:41 2022
+#
+#Cpu time = 00:00:01
+#Elapsed time = 00:00:00
+#Increased memory = 12.34 (MB)
+#Total memory = 1119.35 (MB)
+#Peak memory = 1248.63 (MB)
+#
+#
+#Start global routing on Mon May 23 20:01:41 2022
+#
+#
+#Start global routing initialization on Mon May 23 20:01:41 2022
+#
+#Number of eco nets is 0
+#
+#Start global routing data preparation on Mon May 23 20:01:41 2022
+#
+#Start routing resource analysis on Mon May 23 20:01:41 2022
+#
+#Routing resource analysis is done on Mon May 23 20:01:41 2022
+#
+#  Resource Analysis:
+#
+#               Routing  #Avail      #Track     #Total     %Gcell
+#  Layer      Direction   Track     Blocked      Gcell    Blocked
+#  --------------------------------------------------------------
+#  li1            V         627           0        1638    22.22%
+#  met1           H         793           0        1638     0.67%
+#  met2           V         627           0        1638     0.00%
+#  met3           H         412          18        1638     1.04%
+#  met4           V         306         112        1638     6.17%
+#  --------------------------------------------------------------
+#  Total                   2765       6.17%        8190     6.02%
+#
+#
+#
+#
+#Global routing data preparation is done on Mon May 23 20:01:41 2022
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1124.02 (MB), peak = 1248.63 (MB)
+#
+#
+#Global routing initialization is done on Mon May 23 20:01:41 2022
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1124.08 (MB), peak = 1248.63 (MB)
+#
+#start global routing iteration 1...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1124.88 (MB), peak = 1248.63 (MB)
+#
+#start global routing iteration 2...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1124.88 (MB), peak = 1248.63 (MB)
+#
+#
+#Total number of trivial nets (e.g. < 2 pins) = 10 (skipped).
+#Total number of selected nets for routing = 41.
+#Total number of unselected nets (but routable) for routing = 1 (skipped).
+#Total number of nets in the design = 52.
+#
+#1 skipped net do not has any wires.
+#41 routable nets have routed wires.
+#
+#Routed nets constraints summary:
+#-----------------------------
+#        Rules   Unconstrained  
+#-----------------------------
+#      Default              41  
+#-----------------------------
+#        Total              41  
+#-----------------------------
+#
+#Routing constraints summary of the whole design:
+#-----------------------------
+#        Rules   Unconstrained  
+#-----------------------------
+#      Default              42  
+#-----------------------------
+#        Total              42  
+#-----------------------------
+#
+#
+#  Congestion Analysis: (blocked Gcells are excluded)
+#
+#                 OverCon          
+#                  #Gcell    %Gcell
+#     Layer           (1)   OverCon
+#  --------------------------------
+#  li1           0(0.00%)   (0.00%)
+#  met1          0(0.00%)   (0.00%)
+#  met2          0(0.00%)   (0.00%)
+#  met3          0(0.00%)   (0.00%)
+#  met4          0(0.00%)   (0.00%)
+#  --------------------------------
+#     Total      0(0.00%)   (0.00%)
+#
+#  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 1
+#  Overflow after GR: 0.00% H + 0.00% V
+#
+#Hotspot report including placement blocked areas
+[hotspot] +----------------+-------------------+-------------------+-------------------------------------+
+[hotspot] |      layer     |    max hotspot    |   total hotspot   |            hotspot bbox             |
+[hotspot] +----------------+-------------------+-------------------+-------------------------------------+
+[hotspot] |      li1(V)    |              0.00 |              0.00 |   (none)                            |
+[hotspot] |     met1(H)    |              0.00 |              0.00 |   (none)                            |
+[hotspot] |     met2(V)    |              0.00 |              0.00 |   (none)                            |
+[hotspot] |     met3(H)    |              0.00 |              0.00 |   (none)                            |
+[hotspot] |     met4(V)    |              0.00 |              0.00 |   (none)                            |
+[hotspot] +----------------+-------------------+-------------------+-------------------------------------+
+[hotspot] |      worst     |              0.00 |              0.00 |                                     |
+[hotspot] +----------------+-------------------+-------------------+-------------------------------------+
+[hotspot] |   all layers   |              0.00 |              0.00 |                                     |
+[hotspot] +----------------+-------------------+-------------------+-------------------------------------+
+Local HotSpot Analysis (3d): normalized congestion max/total hotspot area = 0.00/0.00 (area is in unit of 4 std-cell row bins)
+#Complete Global Routing.
+#Total wire length = 2945 um.
+#Total half perimeter of net bounding box = 4213 um.
+#Total wire length on LAYER li1 = 7 um.
+#Total wire length on LAYER met1 = 1145 um.
+#Total wire length on LAYER met2 = 1504 um.
+#Total wire length on LAYER met3 = 130 um.
+#Total wire length on LAYER met4 = 159 um.
+#Total wire length on LAYER met5 = 0 um.
+#Total number of vias = 182
+#Up-Via Summary (total 182):
+#           
+#-----------------------
+# li1                30
+# met1              116
+# met2               17
+# met3               13
+# met4                6
+#-----------------------
+#                   182 
+#
+#Max overcon = 0 track.
+#Total overcon = 0.00%.
+#Worst layer Gcell overcon rate = 0.00%.
+#
+#Global routing statistics:
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = 5.00 (MB)
+#Total memory = 1124.35 (MB)
+#Peak memory = 1248.63 (MB)
+#
+#Finished global routing on Mon May 23 20:01:41 2022
+#
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1123.66 (MB), peak = 1248.63 (MB)
+#Start Track Assignment.
+#Done with 53 horizontal wires in 2 hboxes and 78 vertical wires in 2 hboxes.
+#Done with 2 horizontal wires in 2 hboxes and 8 vertical wires in 2 hboxes.
+#Complete Track Assignment.
+#Total wire length = 3021 um.
+#Total half perimeter of net bounding box = 4213 um.
+#Total wire length on LAYER li1 = 17 um.
+#Total wire length on LAYER met1 = 1191 um.
+#Total wire length on LAYER met2 = 1521 um.
+#Total wire length on LAYER met3 = 132 um.
+#Total wire length on LAYER met4 = 159 um.
+#Total wire length on LAYER met5 = 0 um.
+#Total number of vias = 182
+#Up-Via Summary (total 182):
+#           
+#-----------------------
+# li1                30
+# met1              116
+# met2               17
+# met3               13
+# met4                6
+#-----------------------
+#                   182 
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1123.85 (MB), peak = 1248.63 (MB)
+#
+#Routing data preparation, pin analysis, global routing and track assignment statistics:
+#Cpu time = 00:00:01
+#Elapsed time = 00:00:00
+#Increased memory = 16.96 (MB)
+#Total memory = 1123.85 (MB)
+#Peak memory = 1248.63 (MB)
+#Using multithreading with 4 threads.
+#
+#Start Detail Routing..
+#start initial detail routing ...
+#   number of violations = 0
+#cpu time = 00:00:01, elapsed time = 00:00:00, memory = 1136.14 (MB), peak = 1321.33 (MB)
+#Complete Detail Routing.
+#Total wire length = 3170 um.
+#Total half perimeter of net bounding box = 4213 um.
+#Total wire length on LAYER li1 = 132 um.
+#Total wire length on LAYER met1 = 1220 um.
+#Total wire length on LAYER met2 = 1339 um.
+#Total wire length on LAYER met3 = 247 um.
+#Total wire length on LAYER met4 = 232 um.
+#Total wire length on LAYER met5 = 0 um.
+#Total number of vias = 200
+#Up-Via Summary (total 200):
+#           
+#-----------------------
+# li1                33
+# met1              118
+# met2               21
+# met3               28
+#-----------------------
+#                   200 
+#
+#Total number of DRC violations = 0
+#Cpu time = 00:00:01
+#Elapsed time = 00:00:00
+#Increased memory = 10.01 (MB)
+#Total memory = 1133.86 (MB)
+#Peak memory = 1321.33 (MB)
+#
+#start routing for process antenna violation fix ...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 1136.15 (MB), peak = 1321.33 (MB)
+#
+#Total wire length = 3170 um.
+#Total half perimeter of net bounding box = 4213 um.
+#Total wire length on LAYER li1 = 132 um.
+#Total wire length on LAYER met1 = 1220 um.
+#Total wire length on LAYER met2 = 1339 um.
+#Total wire length on LAYER met3 = 247 um.
+#Total wire length on LAYER met4 = 232 um.
+#Total wire length on LAYER met5 = 0 um.
+#Total number of vias = 200
+#Up-Via Summary (total 200):
+#           
+#-----------------------
+# li1                33
+# met1              118
+# met2               21
+# met3               28
+#-----------------------
+#                   200 
+#
+#Total number of DRC violations = 0
+#Total number of process antenna violations = 0
+#Total number of net violated process antenna rule = 0 ant fix stage
+#
+#
+#Total wire length = 3170 um.
+#Total half perimeter of net bounding box = 4213 um.
+#Total wire length on LAYER li1 = 132 um.
+#Total wire length on LAYER met1 = 1220 um.
+#Total wire length on LAYER met2 = 1339 um.
+#Total wire length on LAYER met3 = 247 um.
+#Total wire length on LAYER met4 = 232 um.
+#Total wire length on LAYER met5 = 0 um.
+#Total number of vias = 200
+#Up-Via Summary (total 200):
+#           
+#-----------------------
+# li1                33
+# met1              118
+# met2               21
+# met3               28
+#-----------------------
+#                   200 
+#
+#Total number of DRC violations = 0
+#Total number of process antenna violations = 0
+#Total number of net violated process antenna rule = 0 ant fix stage
+#
+#detailRoute Statistics:
+#Cpu time = 00:00:01
+#Elapsed time = 00:00:00
+#Increased memory = 8.50 (MB)
+#Total memory = 1132.35 (MB)
+#Peak memory = 1321.33 (MB)
+#
+#globalDetailRoute statistics:
+#Cpu time = 00:00:02
+#Elapsed time = 00:00:01
+#Increased memory = 79.61 (MB)
+#Total memory = 1141.44 (MB)
+#Peak memory = 1321.33 (MB)
+#Number of warnings = 5
+#Total number of warnings = 9
+#Number of fails = 0
+#Total number of fails = 0
+#Complete globalDetailRoute on Mon May 23 20:01:42 2022
+#
+% End globalDetailRoute (date=05/23 20:01:42, total cpu=0:00:02.4, real=0:00:02.0, peak res=1321.3M, current mem=1135.0M)
+#routeDesign: cpu time = 00:00:02, elapsed time = 00:00:01, memory = 1133.82 (MB), peak = 1321.33 (MB)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPEXT-6197          1  The Cap table file is not specified. Thi...
+WARNING   IMPEXT-2882          4  Unable to find the resistance for via '%...
+WARNING   IMPEXT-2883        262  The resistance extracted for a wire belo...
+ERROR     IMPDC-634            2  Failed to build the timing graph since t...
+*** Message Summary: 267 warning(s), 2 error(s)
+
+#% End routeDesign (date=05/23 20:01:42, total cpu=0:00:02.5, real=0:00:02.0, peak res=1321.3M, current mem=1133.8M)
+<CMD> write_lef_abstract -5.8 -extractBlockObs /home/users/xingyuni/ee372/aloe-sky130/aloe/output/lef/bgr_top_0.lef
+<CMD> win
+<CMD> deselectAll
+<CMD> zoomBox -50.29800 -32.61900 311.74100 142.20700
+<CMD> setLayerPreference node_cell -isVisible 1
+<CMD> fit
+<CMD> zoomBox -126.13900 20.91900 395.91400 273.01500
+<CMD> zoomBox 8.30700 142.01600 205.20800 237.09800
+<CMD> zoomBox -45.40200 96.67700 275.21800 251.50200
+<CMD> zoomBox -70.12500 76.04700 307.07500 258.19400
+<CMD> zoomBox -99.21100 51.77600 344.55400 266.06700
+<CMD> zoomBox -221.04700 -49.89000 501.55000 299.04700
+<CMD> zoomBox -276.89000 -96.26000 573.22400 314.25400
+<CMD> zoomBox -342.73500 -150.66700 657.40000 332.29200
+<CMD> zoomBox -342.73600 -150.66700 657.40000 332.29200
+<CMD> zoomBox -211.42800 -52.18600 511.17000 296.75200
+<CMD> zoomBox -116.55800 18.96600 405.51900 271.07400
+<CMD> zoomBox -152.67400 0.23300 461.53600 296.83100
+<CMD> zoomBox -195.69100 -21.80500 526.90900 327.13400
+<CMD> zoomBox -280.20600 -69.04800 569.91500 341.47000
+<CMD> zoomBox -280.20600 -69.04800 569.91500 341.47000
+<CMD> zoomBox -121.09100 17.65900 493.12300 314.25900
+<CMD> zoomBox 77.00500 120.76300 397.63100 275.59100
+<CMD> zoomBox 108.88000 138.62800 381.41200 270.23200
+<CMD> zoomBox 108.87800 138.62800 381.41300 270.23300
+<CMD> zoomBox 39.50300 99.74400 416.71500 281.89700
+<CMD> zoomBox -4.61500 75.01700 439.16400 289.31500
+<CMD> zoomBox -119.91300 15.36800 494.31400 311.97400
+<CMD> zoomBox -1.28200 55.52200 442.49700 269.82000
+<CMD> zoomBox -120.08000 15.36800 494.14700 311.97400
+<CMD> zoomBox -195.52100 -10.16700 527.09900 338.78100
+<CMD> zoomBox 43.19100 112.39700 420.40500 294.55100
+<CMD> zoomBox 113.07900 150.46400 385.61700 282.07100
+<CMD> zoomBox 139.81300 166.80700 371.47200 278.67400
+<CMD> zoomBox 162.46800 181.65100 359.37900 276.73800
+<CMD> zoomBox -109.54400 3.30100 504.69900 299.91500
+<CMD> zoomBox 1.75800 53.12000 445.54900 267.42400
+<CMD> zoomBox 1.75700 52.81300 445.55000 267.11800
+<CMD> zoomBox -48.54100 37.65500 473.56900 289.77800
+<CMD> zoomBox -106.90400 21.62300 507.34400 318.23900
+<CMD> zoomBox -175.03600 15.79400 547.60900 364.75500
+<CMD> pan 19.07300 29.77200
+<CMD> zoomBox 93.96200 -65.49300 414.60500 89.34300
+<CMD> zoomBox 58.78300 -76.72200 436.01200 105.43900
+<CMD> zoomBox 145.15300 -44.99200 376.81900 66.87800
+<CMD> zoomBox 184.55300 -31.98500 351.93300 48.84200
+<CMD> zoomBox 234.91600 -16.50200 322.29300 25.69200
+<CMD> zoomBox 256.04200 -10.00900 309.70400 15.90400
+<CMD> zoomBox 265.03700 -7.06900 303.80800 11.65300
+<CMD> zoomBox 279.38800 -2.23100 294.01200 4.83100
+<CMD> zoomBox 277.85400 -2.74800 295.05900 5.56000
+<CMD> zoomBox 280.69200 -1.79100 293.12200 4.21100
+<CMD> fit
+<CMD> setLayerPreference violation -isVisible 1
+<CMD> violationBrowser -all -no_display_false -displayByLayer
+<CMD_INTERNAL> violationBrowserClose
+<CMD> setDesignMode -process 130
+##  Process: 130           (User Set)               
+##     Node: (not set)                           
+
+##  Check design process and node:  
+##  Design tech node is not set.
+
+Applying the recommended capacitance filtering threshold values for 130nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.4.
+	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+	Capacitance filtering mode(-capFilterMode option of the setExtractRCMode) is 'relAndCoup' for all engines.
+	The accuracy mode for postRoute effortLevel low extraction will be set to 'standard'.
+	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode is 'low'.
+<CMD> setExtractRCMode -coupled true -effortLevel low
+**ERROR: (IMPEXT-7069):	The '-coupled' option is not allowed in the preRoute mode. To see a full list of options that are allowed in preRoute and postRoute modes, see the setExtractRCMode command documentation in the Innovus System Text Command Reference. If the desired engine is postRoute, then set the engine to postRoute before using this option.
+
+<CMD> streamOut /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/output/gds/bgr-v0-merged.gds -units 1000 -mapFile /home/users/xingyuni/ee372/aloe-sky130/aloe/stemcell/rtk-stream-out.map -merge /home/users/xingyuni/ee372/aloe-sky130/aloe/stemcell/stdcells.gds
