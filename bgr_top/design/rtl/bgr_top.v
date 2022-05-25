@@ -1,35 +1,27 @@
-
 module bgr_top (
     input porst,
     output va, 
     output vb,
     output vbg
  );
-    supply1 VPWR;
-    supply0 VGND;
     wire vc;
+    // ============================= amp ===============================
     amplifier amp(
         .va(va),
         .vb(vb),
         .vc(vc)
     );
-
-    core BGRCore(
-        .va(va),
-        .vb(vb)
-    );
-
+    // ======================== current_mirror ========================
     current_mirror CM(
         .va(va),
         .vb(vb),
         .vc(vc),
         .vbg(vbg)
     );
-
     // =================================set up ========================
     sky130_asc_nfet_01v8_lvt_9 M10(
         .GATE(porst),
-        .SOURCE(VGND),
+        .SOURCE(VSS),
         .DRAIN(vc)
     );
 
@@ -50,73 +42,16 @@ module bgr_top (
         .Rin(l19),
         .Rout(l20)
     );
-    sky130_asc_res R21(
+    sky130_asc_res_xhigh_po_2p85_2 R21(
         .Rin(l20),
-        .Rout(VGND)
+        .Rout(VSS)
     );
-endmodule
-
-// ============================================ module amplifier =====================================
-module amplifier (
-    output va,
-    output vb,
-    output vc
- );
-    wire vg, vq, vx;
-
-    sky130_asc_pfet_01v8_lvt_6 M4 (
-        .GATE(vg),
-        .SOURCE(VPWR),
-        .DRAIN(vg)
-    );
-
-    sky130_asc_pfet_01v8_lvt_6 M8 (
-        .GATE(vg),
-        .SOURCE(VPWR),
-        .DRAIN(vc)
-    );
-
-    sky130_asc_nfet_01v8_lvt_9 M9 (
-        .GATE(vb),
-        .SOURCE(vq),
-        .DRAIN(vg)
-    );
-
-    sky130_asc_nfet_01v8_lvt_9 M5 (
-        .GATE(va),
-        .SOURCE(vq),
-        .DRAIN(vc)
-    );
-
-    sky130_asc_nfet_01v8_lvt_1 M6 (
-        .GATE(vx),
-        .SOURCE(VGND),
-        .DRAIN(vq)
-    );
-
-    sky130_asc_nfet_01v8_lvt_1 M7 (
-        .GATE(vx),
-        .SOURCE(VGND),
-        .DRAIN(vx)
-    );
-
-    sky130_asc_pfet_01v8_lvt_12 M13 (
-        .GATE(vc),
-        .SOURCE(VPWR),
-        .DRAIN(vx)
-    );
-endmodule
-
-// ===================================== module core =============================
-module core (
-    output va,
-    output vb
-);
+    // ===================================== module core =============================
     wire vbneg, l6, l7, l8, l10, l11;
     wire l1, l2, l4, l5, l12;
     cap_array C2 (
         .Cin(va),
-        .Cout(VGND)
+        .Cout(VSS)
     );
     resistor R6 (
         .Rin(va),
@@ -140,22 +75,23 @@ module core (
     );
     sky130_asc_res_xhigh_po_2p85_2 R9 (
         .Rin(l11),
-        .Rout(VGND)
+        .Rout(VSS)
     );
     sky130_asc_pnp_05v5_W3p40L3p40_1 pnp_va (
         .Emitter(va),
-        .Base(VGND),
-        .Collector(VGND)
+        .Base(VSS),
+        .Collector(VSS)
     );
     resistor R3 (
         .Rin(vb),
         .Rout(vbneg)
     );
     pnp_array pnp_vb (
-        .emitter(vbneg),
-        .base(VGND)
+        .Emitter(vbneg),
+        .Collector(VSS),
+        .Base(VSS)
     );
-    
+
     resistor R1 (
         .Rin(l1),
         .Rout(vb)
@@ -178,9 +114,60 @@ module core (
     );
     sky130_asc_res_xhigh_po_2p85_2 R13 (
         .Rin(l12),
-        .Rout(VGND)
+        .Rout(VSS)
     );
 endmodule
+
+// ============================================ module amplifier =====================================
+module amplifier (
+    output va,
+    output vb,
+    output vc
+ );
+    wire vg, vq, vx;
+    sky130_asc_pfet_01v8_lvt_6 M4 (
+        .GATE(vg),
+        .SOURCE(VDD),
+        .DRAIN(vg)
+    );
+
+    sky130_asc_pfet_01v8_lvt_6 M8 (
+        .GATE(vg),
+        .SOURCE(VDD),
+        .DRAIN(vc)
+    );
+
+    sky130_asc_nfet_01v8_lvt_9 M9 (
+        .GATE(vb),
+        .SOURCE(vq),
+        .DRAIN(vg)
+    );
+
+    sky130_asc_nfet_01v8_lvt_9 M5 (
+        .GATE(va),
+        .SOURCE(vq),
+        .DRAIN(vc)
+    );
+
+    sky130_asc_nfet_01v8_lvt_1 M6 (
+        .GATE(vx),
+        .SOURCE(VSS),
+        .DRAIN(vq)
+    );
+
+    sky130_asc_nfet_01v8_lvt_1 M7 (
+        .GATE(vx),
+        .SOURCE(VSS),
+        .DRAIN(vx)
+    );
+
+    sky130_asc_pfet_01v8_lvt_12 M13 (
+        .GATE(vc),
+        .SOURCE(VDD),
+        .DRAIN(vx)
+    );
+endmodule
+
 
 module resistor (
     input Rin,
@@ -224,34 +211,35 @@ module cap_array(
 endmodule
 
 module pnp_array (
-    input emitter,
-    output base
-);
-    sky130_asc_pnp_05v5_W3p40L3p40_8 b1(
-        .Emitter(emitter),
-        .Collector(base),
-        .Base(base)
-    );
-    sky130_asc_pnp_05v5_W3p40L3p40_8 b2(
-        .Emitter(emitter),
-        .Collector(base),
-        .Base(base)
-    );
-    sky130_asc_pnp_05v5_W3p40L3p40_8 b3(
-        .Emitter(emitter),
-        .Collector(base),
-        .Base(base)
-    );
-    sky130_asc_pnp_05v5_W3p40L3p40_8 b4(
-        .Emitter(emitter),
-        .Collector(base),
-        .Base(base)
-    );
-    sky130_asc_pnp_05v5_W3p40L3p40_7 b5(
-        .Emitter(emitter),
-        .Collector(base),
-        .Base(base)
-    );
+    input Emitter,
+    input Base,
+    output Collector
+ );
+ sky130_asc_pnp_05v5_W3p40L3p40_8 PA1(
+     .Emitter(Emitter),
+     .Collector(Collector),
+     .Base(Base)
+ );
+ sky130_asc_pnp_05v5_W3p40L3p40_8 PA2(
+     .Emitter(Emitter),
+     .Collector(Collector),
+     .Base(Base)
+ );
+ sky130_asc_pnp_05v5_W3p40L3p40_8 PA3(
+     .Emitter(Emitter),
+     .Collector(Collector),
+     .Base(Base)
+ );
+ sky130_asc_pnp_05v5_W3p40L3p40_8 PA4(
+     .Emitter(Emitter),
+     .Collector(Collector),
+     .Base(Base)
+ );
+ sky130_asc_pnp_05v5_W3p40L3p40_7 PA5(
+     .Emitter(Emitter),
+     .Collector(Collector),
+     .Base(Base)
+ );
 endmodule
 
 // ============================================== current mirror =================================
@@ -262,27 +250,27 @@ module current_mirror (
     output vbg
  );
     cap_array C1 (
-        .Cin(VPWR),
+        .Cin(VDD),
         .Cout(vc)
     );
     sky130_asc_pfet_01v8_lvt_12 M17 (
-        .GATE(VPWR),
-        .SOURCE(VPWR),
+        .GATE(VDD),
+        .SOURCE(VDD),
         .DRAIN(va)
     );
     sky130_asc_pfet_01v8_lvt_60 M1 (
         .GATE(vc),
-        .SOURCE(VPWR),
+        .SOURCE(VDD),
         .DRAIN(va)
     );
     sky130_asc_pfet_01v8_lvt_60 M2 (
         .GATE(vc),
-        .SOURCE(VPWR),
+        .SOURCE(VDD),
         .DRAIN(vb)
     );
     sky130_asc_pfet_01v8_lvt_60 M3 (
         .GATE(vc),
-        .SOURCE(VPWR),
+        .SOURCE(VDD),
         .DRAIN(vbg)
     );
 endmodule

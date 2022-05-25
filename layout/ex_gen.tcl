@@ -303,6 +303,46 @@ proc addlef {inst_name output_folder} {
         extract all
         ext2spice lvs
         ext2spice -o sky130_asc_nfet_01v8_lvt_1.spice
+    } elseif {$inst_name=={nmos_9_flat}} {
+        property FIXED_BBOX {0 0 4518 1880} ;#4278+240 to avoid drc
+        # GATE
+        findlabel GATE
+        port make 
+        port class inout
+        # SOURCE
+        findlabel SOURCE
+        port make 
+        port class inout
+        # DRAIN
+        findlabel DRAIN
+        port make 
+        port class inout
+        # # VNB
+        # findlabel VNB
+        # port make 
+        # port class inout
+        # port use ground
+        # VPWR
+        findlabel VPWR
+        port make 
+        port class inout
+        port use power
+        # VGND
+        findlabel VGND
+        port make 
+        port class inout
+        port use ground
+        cd $output_folder
+        cd ./mag
+        save sky130_asc_nfet_01v8_lvt_9.mag
+        cd ../lef
+        lef write sky130_asc_nfet_01v8_lvt_9.lef
+        cd ../gds
+        gds write sky130_asc_nfet_01v8_lvt_9.gds
+        cd ../spi
+        extract all
+        ext2spice lvs
+        ext2spice -o sky130_asc_nfet_01v8_lvt_9.spice
     } elseif {$inst_name=={res_1_flat}} {
         box -1000 -1000 1000 1000
         select cell
@@ -395,7 +435,7 @@ proc addlef {inst_name output_folder} {
         cd ./mag
         save sky130_asc_cap_mim_m3_1.mag
         cd ../lef
-        lef write sky130_asc_cap_mim_m3_1 -toplayer
+        lef write sky130_asc_cap_mim_m3_1.lef
         cd ../gds
         gds write sky130_asc_cap_mim_m3_1.gds
         cd ../spi

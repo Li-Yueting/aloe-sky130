@@ -198,29 +198,28 @@ proc place_nmos {x_center y_center length nf index} {
 	paint li
 	label SOURCE FreeSans 50
 	### paint DRAIN rail
-	box [expr $x_center-$bx/2] [expr $y_center-$height_half_center-$con_w/2+80] [expr $x_center+$bx/2] [expr $y_center-$height_half_center+$con_w/2+80]
+	box [expr $x_center-$bx/2] [expr $y_center-$height_half_center-$con_w/2+80+50] [expr $x_center+$bx/2] [expr $y_center-$height_half_center+$con_w/2+80+50]
 	paint li
 	#------ Label DRAIN
-	box [expr $x_center+$bx/2-$con_w] [expr $y_center-$height_half_center-$con_w/2+80] [expr $x_center+$bx/2] [expr $y_center-$height_half_center+$con_w/2+80]
-	paint li
+	box [expr $x_center+$bx/2-$con_w] [expr $y_center-$height_half_center-$con_w/2+80+50] [expr $x_center+$bx/2] [expr $y_center-$height_half_center+$con_w/2+80+50]
 	label DRAIN FreeSans 50
 	### paint GATE rail
 	set gate_w 50  
-	box [expr $x_center-$bx/2+40] [expr $y_center-$by/2-$gate_w/2-200] [expr $x_center+$bx/2] [expr $y_center-$by/2+$gate_w/2-200]
+	box [expr $x_center-$bx/2+40] [expr $y_center-$by/2-$gate_w/2-200+80] [expr $x_center+$bx/2] [expr $y_center-$by/2+$gate_w/2-200+80]
 	paint p
-	box [expr $x_center-$bx/2+40] [expr $y_center-$by/2-200-15] [expr $x_center+$bx/2] [expr $y_center-$by/2-200+15]
+	box [expr $x_center-$bx/2+40] [expr $y_center-$by/2-200-15+80] [expr $x_center+$bx/2] [expr $y_center-$by/2-200+15+80]
 	paint li
 	for {set x 100} {$x+$con_w<=$bx} {set x [expr $x + $con_sep]} {
-		box [expr $x_center - $bx/2 + $x - $con_w/2] [expr $y_center - $by/2 - $con_w/2 - 200] [expr $x_center - $bx/2 + $x+$con_w/2] [expr $y_center - $by/2 + $con_w/2 - 200]
+		box [expr $x_center - $bx/2 + $x - $con_w/2] [expr $y_center - $by/2 - $con_w/2 - 200+80] [expr $x_center - $bx/2 + $x+$con_w/2] [expr $y_center - $by/2 + $con_w/2 - 200+80]
 		paint pcontact
 	}
 	#------ Label GATE
-	box [expr $x_center+$bx/2-$con_w] [expr $y_center - $by/2 - $con_w/2 - 200] [expr $x_center+$bx/2] [expr $y_center - $by/2 + $con_w/2 - 200]
+	box [expr $x_center+$bx/2-$con_w] [expr $y_center - $by/2 - $con_w/2 - 200+80] [expr $x_center+$bx/2] [expr $y_center - $by/2 + $con_w/2 - 200+80]
 	paint li
 	label GATE FreeSans 50
 	### paint GATE connection
 	for {set x 133} {$x+$con_w + 28<=$bx} {set x [expr $x + $con_sep + 28]} {
-		box [expr $x_center-$bx/2+$x-$con_w] [expr $y_center-$by/2-200] [expr $x_center-$bx/2+$x+$con_w] [expr $y_center-$by/2+$con_w]
+		box [expr $x_center-$bx/2+$x-$con_w] [expr $y_center-$by/2-200+80] [expr $x_center-$bx/2+$x+$con_w] [expr $y_center-$by/2+$con_w]
 		paint p
 	}
 	### paint source connection
@@ -230,10 +229,19 @@ proc place_nmos {x_center y_center length nf index} {
 	}
 	### paint drain connection
 	for {set x 5.5} {$x+29<=$bx} {set x [expr $x+2*$con_sep+2*29]} {
-		box [expr $x_center-$bx/2+$x] [expr $y_center-$by/2+40] [expr $x_center-$bx/2+$x+17] [expr $y_center-$height_half_center+80]
+		box [expr $x_center-$bx/2+$x] [expr $y_center-$by/2+40] [expr $x_center-$bx/2+$x+17] [expr $y_center-$height_half_center+80+50]
 		paint li
 	}
 	### paint tapvpwr
+	### paint tapvpwr
+	for {set x 500} {$x+650<$bx} {set x [expr $x+650]} {
+		box [expr -$bx/2+$x] [expr $y_center-$height_half_center+40-120] [expr -$bx/2+$x+60] [expr $y_center-$height_half_center+65-120]
+		paint psubstratepdiff
+		box [expr -$bx/2+$x-10] [expr $y_center-$height_half_center+5-120] [expr -$bx/2+$x+60+10] [expr $y_center-$height_half_center+$con_w/2+60-120]
+		paint li
+		box [expr -$bx/2+$x+20] [expr $y_center-$height_half_center+46-120] [expr -$bx/2+$x+42] [expr $y_center-$height_half_center+64-120]
+		paint psubstratepcontact
+	}
 	# PWR
 	box [expr $x_center-$bx/2-49] [expr $y_center+$height_half_center - $power_half_w+60] [expr $x_center-$bx/2] [expr $y_center + $height_half_center + $power_half_w+60]
 	paint m1
@@ -284,23 +292,24 @@ proc place_cap_1 {x_center y_center index} {
     ### m4 vertical connections
 	set m4_w 160
 	for {set x [expr -$bx/2+70]} {$x+$m4_w<=$bx/2} {set x [expr $x + 360]} {
-		box [expr $x] [expr -$by/2-40] [expr $x+$m4_w]  [expr $by/2-60]
+		box [expr $x] [expr -$by/2-60] [expr $x+$m4_w]  [expr $by/2-60]
 		paint m4
 	}
 	
 	#------ label Cout
-	box [expr $x_center-$bx/2+10] [expr -$by/2-45] [expr $x_center - $bx/2+90] [expr -$by/2-95]
+	
+	### m4 horizontal rail
+	box [expr $x_center-$bx/2] [expr -$by/2-50] [expr $x_center + $bx/2] [expr -$by/2-110]
+	paint m4
+	box [expr $x_center-$bx/2] [expr -$by/2-50] [expr $x_center - $bx/2+100] [expr -$by/2-110]
+	paint m3
+	box [expr $x_center-$bx/2+10] [expr -$by/2-55] [expr $x_center - $bx/2+90] [expr -$by/2-105]
+	paint via3
+	box [expr $x_center-$bx/2+20] [expr -$by/2-60] [expr $x_center - $bx/2+80] [expr -$by/2-100]
+    paint via2
+	box [expr $x_center-$bx/2+10] [expr -$by/2-55] [expr $x_center - $bx/2+90] [expr -$by/2-105]
 	paint m2
 	label Cout FreeSans 50
-	### m4 horizontal rail
-	box [expr $x_center-$bx/2] [expr -$by/2-30] [expr $x_center + $bx/2] [expr -$by/2-100]
-	paint m4
-	box [expr $x_center-$bx/2] [expr -$by/2-40] [expr $x_center - $bx/2+100] [expr -$by/2-100]
-	paint m3
-	box [expr $x_center-$bx/2+10] [expr -$by/2-45] [expr $x_center - $bx/2+90] [expr -$by/2-95]
-	paint via3
-	box [expr $x_center-$bx/2+20] [expr -$by/2-50] [expr $x_center - $bx/2+80] [expr -$by/2-90]
-    paint via2
 	# paint m3
 	# paint via2
 	# paint m2
