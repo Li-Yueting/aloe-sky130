@@ -435,7 +435,7 @@ proc addlef {inst_name output_folder} {
         cd ./mag
         save sky130_asc_cap_mim_m3_1.mag
         cd ../lef
-        lef write sky130_asc_cap_mim_m3_1.lef
+        lef write sky130_asc_cap_mim_m3_1 -toplayer
         cd ../gds
         gds write sky130_asc_cap_mim_m3_1.gds
         cd ../spi
@@ -476,6 +476,8 @@ proc addlef {inst_name output_folder} {
         cd ../spi
         extract all
         ext2spice lvs
+        ext2spice subcircuit on
+        ext2spice subcircuit top on
         ext2spice -o sky130_asc_pnp_05v5_W3p40L3p40_1.spice
     } elseif {$inst_name=={pnp_7_flat}} {
         property FIXED_BBOX {0 0 9620 1880} ;#9380+240 to avoid drc
@@ -511,6 +513,8 @@ proc addlef {inst_name output_folder} {
         cd ../spi
         extract all
         ext2spice lvs
+        ext2spice subcircuit on
+        ext2spice subcircuit top on
         ext2spice -o sky130_asc_pnp_05v5_W3p40L3p40_7.spice
     } elseif {$inst_name=={pnp_8_flat}} {
         property FIXED_BBOX {0 0 10960 1880} ;#10720+240 to avoid drc

@@ -76,11 +76,11 @@ setDesignMode -process 130
 
 # <END TAG> signoff,set_design_mode
 # <BEGIN TAG> signoff,set_extract_rc_mode
-setExtractRCMode -coupled true -effortLevel low
+# setExtractRCMode -coupled true -effortLevel low
 
-# <END TAG> signoff,set_extract_rc_mode
-# <BEGIN TAG> signoff,set_analysis_mode
-setAnalysisMode -analysisType onChipVariation -cppr both
+# # <END TAG> signoff,set_extract_rc_mode
+# # <BEGIN TAG> signoff,set_analysis_mode
+# setAnalysisMode -analysisType onChipVariation -cppr both
 
 # <END TAG> signoff,set_analysis_mode
 set vars(active_rc_corners) [list]
@@ -249,4 +249,3 @@ puts "<FF> Plugin -> final_always_source_tcl"
 if {![info exists vars(single)]} {
    exit 0
 }
-

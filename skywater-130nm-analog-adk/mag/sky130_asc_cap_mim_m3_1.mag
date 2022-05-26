@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1653421270
+timestamp 1653530608
 << locali >>
 rect 122 1850 292 1910
 rect 352 1850 692 1910
@@ -492,7 +492,7 @@ rect 122 130 7290 140
 << labels >>
 flabel metal2 120 1570 320 1650 1 FreeSans 800 0 0 0 Cin
 port 1 n default bidirectional
-flabel metal2 142 140 302 240 1 FreeSans 800 0 0 0 Cout
+flabel metal4 142 140 302 240 1 FreeSans 800 0 0 0 Cout
 port 2 n default bidirectional
 flabel metal1 122 1850 182 1910 1 FreeSans 800 0 0 0 VPWR
 port 3 n power bidirectional
