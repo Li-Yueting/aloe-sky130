@@ -42,7 +42,7 @@ def construct():
   # constraints     = Step( this_dir + '/constraints'                     )
   init            = Step( this_dir + '/cadence-innovus-init'            )
   # power           = Step( this_dir + '/cadence-innovus-power'           )
-  pnr           = Step( this_dir + '/cadence-innovus-place'           )
+  pnr           = Step( this_dir + '/aloe-PnR'           )
   # route           = Step( this_dir + '/cadence-innovus-route'            )
   # Signoff is custom because it has to output def that the default step does
   # not do. This is because we use the def instead of gds for generating spice

@@ -46,7 +46,7 @@ parameters:
     # - add-endcaps-welltaps.tcl
     # - pin-assignments.tcl
     # # - make-path-groups.tcl
-    # - reporting.tcl
+    - reporting.tcl
 
 #-------------------------------------------------------------------------
 # Debug

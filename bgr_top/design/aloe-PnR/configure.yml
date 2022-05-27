@@ -43,6 +43,7 @@ parameters:
   order:
     - floorplan.tcl
     - pin-assignments.tcl
+    - tech.tcl
     - power.tcl
     - pnr.tcl
     - reporting.tcl

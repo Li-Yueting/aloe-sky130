@@ -2,7 +2,7 @@ module bgr_top (
     inout porst,
     inout va, 
     inout vb,
-    inout vbg
+    inout vbg,
  );
  
  wire vc;
@@ -67,8 +67,8 @@ module amplifier (
     inout va,
     inout vb,
     inout vc,
-     inout VSS,
-     inout VDD
+    inout VSS,
+    inout VDD
  );
  wire vg, vq, vx;
 
@@ -120,8 +120,8 @@ endmodule
 module core (
     inout va,
     inout vb,
-     inout VSS,
-     inout VDD
+    inout VSS,
+    inout VDD
  );
  wire vbneg, l6, l7, l8, l10, l11;
 //  supply0 ground;
@@ -275,8 +275,8 @@ module current_mirror (
     inout vb,
     inout vc,
     inout vbg,
-     inout VSS,
-     inout VDD
+    inout VSS,
+    inout VDD
  );
  cap_array C1 (
      .Cin(VDD),
