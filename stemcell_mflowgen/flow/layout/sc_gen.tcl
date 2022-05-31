@@ -370,6 +370,10 @@ proc place_cap_2 {x_center y_center index} {
 	label VGND FreeSans 50 
 }
 
+
+proc place_res_final {x_center y_center index}
+
+
 proc place_res_1 {x_center y_center index} {
     set bx 1220
     # set by 

@@ -1,0 +1,1659 @@
+
+No compatibility mode selected!
+
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3037
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss0.raw"
+Reset re-loads circuit **.subckt tsmc_bandgap_real_tran_gauss
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3037
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss1.raw"
+Reset re-loads circuit **.subckt tsmc_bandgap_real_tran_gauss
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3038
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss2.raw"
+Reset re-loads circuit **.subckt tsmc_bandgap_real_tran_gauss
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3038
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss3.raw"
+Reset re-loads circuit **.subckt tsmc_bandgap_real_tran_gauss
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3037
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss4.raw"
+Reset re-loads circuit **.subckt tsmc_bandgap_real_tran_gauss
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3038
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss5.raw"
+Reset re-loads circuit **.subckt tsmc_bandgap_real_tran_gauss
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3037
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss6.raw"
+Reset re-loads circuit **.subckt tsmc_bandgap_real_tran_gauss
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3037
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss7.raw"
+Reset re-loads circuit **.subckt tsmc_bandgap_real_tran_gauss
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3038
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss8.raw"
+Reset re-loads circuit **.subckt tsmc_bandgap_real_tran_gauss
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3037
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss9.raw"
+Reset re-loads circuit **.subckt tsmc_bandgap_real_tran_gauss
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3037
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss10.raw"
+Reset re-loads circuit **.subckt tsmc_bandgap_real_tran_gauss
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3038
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss11.raw"
+Reset re-loads circuit **.subckt tsmc_bandgap_real_tran_gauss
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3038
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss12.raw"
+Reset re-loads circuit **.subckt tsmc_bandgap_real_tran_gauss
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3037
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss13.raw"
+Reset re-loads circuit **.subckt tsmc_bandgap_real_tran_gauss
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3036
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss14.raw"
+Reset re-loads circuit **.subckt tsmc_bandgap_real_tran_gauss
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3037
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss15.raw"
+Reset re-loads circuit **.subckt tsmc_bandgap_real_tran_gauss
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3036
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss16.raw"
+Reset re-loads circuit **.subckt tsmc_bandgap_real_tran_gauss
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3037
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss17.raw"
+Reset re-loads circuit **.subckt tsmc_bandgap_real_tran_gauss
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3037
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss18.raw"
+Reset re-loads circuit **.subckt tsmc_bandgap_real_tran_gauss
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3037
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss19.raw"
+Reset re-loads circuit **.subckt tsmc_bandgap_real_tran_gauss
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3038
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss20.raw"
+Reset re-loads circuit **.subckt tsmc_bandgap_real_tran_gauss
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3038
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss21.raw"
+Reset re-loads circuit **.subckt tsmc_bandgap_real_tran_gauss
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3037
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss22.raw"
+Reset re-loads circuit **.subckt tsmc_bandgap_real_tran_gauss
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3037
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss23.raw"
+Reset re-loads circuit **.subckt tsmc_bandgap_real_tran_gauss
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3037
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss24.raw"
+Reset re-loads circuit **.subckt tsmc_bandgap_real_tran_gauss
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3038
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss25.raw"
+Reset re-loads circuit **.subckt tsmc_bandgap_real_tran_gauss
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3037
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss26.raw"
+Reset re-loads circuit **.subckt tsmc_bandgap_real_tran_gauss
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3036
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss27.raw"
+Reset re-loads circuit **.subckt tsmc_bandgap_real_tran_gauss
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3037
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss28.raw"
+Reset re-loads circuit **.subckt tsmc_bandgap_real_tran_gauss
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3038
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss29.raw"
+Reset re-loads circuit **.subckt tsmc_bandgap_real_tran_gauss
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3038
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss30.raw"
+Reset re-loads circuit **.subckt tsmc_bandgap_real_tran_gauss
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3037
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss31.raw"
+Reset re-loads circuit **.subckt tsmc_bandgap_real_tran_gauss
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3038
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss32.raw"
+Reset re-loads circuit **.subckt tsmc_bandgap_real_tran_gauss
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3036
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss33.raw"
+Reset re-loads circuit **.subckt tsmc_bandgap_real_tran_gauss
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3037
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss34.raw"
+Reset re-loads circuit **.subckt tsmc_bandgap_real_tran_gauss
+
+Circuit: **.subckt tsmc_bandgap_real_tran_gauss
+
+Doing analysis at TEMP = 0.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+veb                                4.52674e-52
+vb                                -5.15128e-28
+net2                              -5.15128e-28
+net1                              -5.15128e-28
+net5                               4.52674e-52
+va                                 4.52674e-52
+net4                              -5.15128e-28
+net6                              -3.25406e-94
+vbg                               -3.25406e-94
+net3                               4.52674e-52
+vbneg                             -5.15129e-28
+vgate                             -1.74661e-18
+vq                                -1.00337e-18
+vx                                 6.32226e-18
+vg                                 3.32391e-18
+xr1.xsky130_fd_pr__res_xhigh_po_0p35.ra      2.0377e-54
+xr2.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.31883e-30
+xr3.xsky130_fd_pr__res_xhigh_po_0p35.ra    -5.15129e-28
+xr4.xsky130_fd_pr__res_xhigh_po_0p35.ra    -1.87448e-96
+porst                                        0
+v2#branch                                    0
+vq2#branch                        -3.46843e-57
+vr1#branch                         3.46662e-57
+vm3#branch                        -3.07465e-99
+vm2#branch                        -3.94488e-33
+vm1#branch                        -1.80613e-60
+vr2#branch                         2.12245e-38
+vr4#branch                         -3.9449e-33
+v1#branch                          1.15869e-28
+
+
+No. of Data Rows : 3038
+binary raw file "./sims/tsmc_bandgap_real_tran_gauss35.raw"
+ngspice-36 done

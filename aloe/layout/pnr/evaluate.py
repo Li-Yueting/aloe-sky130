@@ -13,9 +13,10 @@ def eval_symmetry(file_expr):
 def eval_ro_top(individual, file_expr):
     nl = read_expr(file_expr, 'nl')
 
-    s0 = float(nl['va'])
-    s1 = float(nl['vb'])
-
+    # s0 = float(nl['va'])
+    # s1 = float(nl['vb'])
+    s0 = float(nl['amp/vg']) + float(nl['amp/vq'])
+    s1 = float(nl['vc'])
 
     # print (s0)
 

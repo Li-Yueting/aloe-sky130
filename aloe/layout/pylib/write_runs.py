@@ -89,14 +89,14 @@ def write_run(run_num, generation, gennum):
         cstr_df = read_cstr('net', ['weight'], cstrin_path)
         net_wt_stubs = []
         all_nets = ['porst', 'va', 'vb', 'vbg', 'VSS', 'vc', 
-            'l17', 'l18', 'l19', 'l20', 'amp/VDD', 'amp/VSS',
+            'l17', 'l18', 'l19', 'l20',
             'amp/vg', 'amp/vq', 'amp/vx', 'VNW', 'VDDPST', 'POC',
             'VDDCE', 'VDDPE', 'VPW', 'VSSPST', 'VSSE', 
             'BGR_Core/vbneg', 'BGR_Core/l6', 'BGR_Core/l7', 'BGR_Core/l8', 'BGR_Core/l10',
             'BGR_Core/l11', 'BGR_Core/l1', 'BGR_Core/l2', 'BGR_Core/l4', 'BGR_Core/l5',
             'BGR_Core/l12', 'BGR_Core/R6/l', 'BGR_Core/R7/l', 'BGR_Core/R8/l', 'BGR_Core/R10/l',
             'BGR_Core/R11/l', 'BGR_Core/R3/l', 'BGR_Core/R1/l', 'BGR_Core/R2/l', 'BGR_Core/R4/l',
-            'BGR_Core/R5/l', 'BGR_Core/R12/l', 'CM/VDD', 'R17/l', 'R18/l', 'R19/l', 'R20/l', 'VDD']
+            'BGR_Core/R5/l', 'BGR_Core/R12/l', 'R17/l', 'R18/l', 'R19/l', 'R20/l', 'VDD']
         for idx, net in enumerate(all_nets):
             print(net)
             net_wt_stubs.append('createNetGroup group' + str(idx) + '\n')
@@ -114,6 +114,11 @@ def write_run(run_num, generation, gennum):
             #run_tcl.write('source {}\n'.format(os.path.join(ip.pnr_dir, 'fp.tcl')))
             #ONETIME comment
             #run_tcl.write('source {}\n'.format(os.path.join(ip.pnr_dir, 'sroute.tcl')))
+
+        # run_tcl.write('set ::env(stemcell_dir) /home/users/xingyuni/ee372/aloe-sky130/aloe/stemcell\n')
+        # run_tcl.write('set ::env(gds_dir) /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/output/gds\n')
+        # run_tcl.write('set merge_files [concat [lsort [glob -nocomplain $env(stemcell_dir)/*.gds*]]]\n')
+
         if flow.steps['place']:
             # ONETIME
             run_tcl.write('loadFPlan /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/examples/bgr_top/bgr_top.fp\n')
@@ -134,8 +139,8 @@ def write_run(run_num, generation, gennum):
 
         if flow.steps['route']:
             run_tcl.write('selectNet *\n')
-            run_tcl.write('deselectNet {{{}}}\n'.format(' '.join(ip.pwr_nets)))
-            run_tcl.write('deselectNet {{{}}}\n'.format(' '.join(ip.gnd_nets)))
+            # run_tcl.write('deselectNet {{{}}}\n'.format(' '.join(ip.pwr_nets)))
+            # run_tcl.write('deselectNet {{{}}}\n'.format(' '.join(ip.gnd_nets)))
             run_tcl.write('setNanoRouteMode -quiet -routeSelectedNetOnly 1\n')
             run_tcl.write('routeDesign -globalDetail\n')
             #TODO: If there is open in regular wires, change aspect ratio or decrease TU
@@ -185,6 +190,10 @@ def write_run(run_num, generation, gennum):
                 0, ip.run_num_len, ip.expr_hof_dir, ip.blk_name))
             run_tcl.write(cmd_defout())
             run_tcl.write(cmd_lefout(run_num, gennum))
+        
+
+        # run_tcl.write('streamOut $env(gds_dir)/bgr-gen{}-pop{}-merged.gds -units 1000 -mapFile $env(stemcell_dir)/rtk-stream-out.map -merge $merge_files\n'.format(str(gennum), str(run_num)))
+
 
 if __name__ == '__main__':
     run_num, generation, gennum = sys.argv[1:4]

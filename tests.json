@@ -1,5 +1,4 @@
 {
-    "tempsweep": "./sims/tsmc_bandgap_real_tempsweep.spice",
-    "op": "./sims/tsmc_bandgap_real_op.spice",
-    "tran": "sims/tsmc_bandgap_real_tran.spice"
+    "post_tran": "./sims/post_tran_gauss.spice"
 }
+ 

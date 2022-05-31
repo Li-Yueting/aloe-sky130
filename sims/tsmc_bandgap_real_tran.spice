@@ -51,8 +51,8 @@ C1 VDD vgate 20p m=1
 C2 Va GND 20p m=1
 **** begin user architecture code
 
-.lib /farmshare/home/classes/ee/272/PDKs/open_pdks/sky130/sky130A/libs.tech/ngspice/sky130.lib.spice tt
-
+* .lib /farmshare/home/classes/ee/272/PDKs/open_pdks/sky130/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.lib /farmshare/home/classes/ee/372/PDKs/open_pdks_1.0.310/sky130/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 
 
 .option savecurrents
@@ -64,7 +64,8 @@ C2 Va GND 20p m=1
 .param R4val='R2val*R4R2ratio'
 .param VDD=1.8
 .control
-save all  @m.xm1.msky130_fd_pr__pfet_01v8_lvt[gm]  @m.xm2.msky130_fd_pr__pfet_01v8_lvt[gm]  @m.xm3.msky130_fd_pr__pfet_01v8_lvt[gm]  @m.xm4.msky130_fd_pr__pfet_01v8_lvt[gm]  @m.xm5.msky130_fd_pr__nfet_01v8_lvt[gm]  @m.xm6.msky130_fd_pr__nfet_01v8_lvt[gm]  @m.xm7.msky130_fd_pr__nfet_01v8_lvt[gm]  @m.xm8.msky130_fd_pr__pfet_01v8_lvt[gm]  @m.xm9.msky130_fd_pr__nfet_01v8_lvt[gm]  @m.xm13.msky130_fd_pr__pfet_01v8_lvt[gm]
+* save all  @m.xm1.msky130_fd_pr__pfet_01v8_lvt[gm]  @m.xm2.msky130_fd_pr__pfet_01v8_lvt[gm]  @m.xm3.msky130_fd_pr__pfet_01v8_lvt[gm]  @m.xm4.msky130_fd_pr__pfet_01v8_lvt[gm]  @m.xm5.msky130_fd_pr__nfet_01v8_lvt[gm]  @m.xm6.msky130_fd_pr__nfet_01v8_lvt[gm]  @m.xm7.msky130_fd_pr__nfet_01v8_lvt[gm]  @m.xm8.msky130_fd_pr__pfet_01v8_lvt[gm]  @m.xm9.msky130_fd_pr__nfet_01v8_lvt[gm]  @m.xm13.msky130_fd_pr__pfet_01v8_lvt[gm]
+save all
 
 option temp=27
 tran 0.1n 20u

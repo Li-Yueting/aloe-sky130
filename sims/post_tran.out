@@ -1,0 +1,612 @@
+
+No compatibility mode selected!
+
+
+Circuit: **.subckt tsmc_bandgap_real_tran
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Warning: singular matrix:  check nodes vgate and vgate
+
+Note: Starting dynamic gmin stepping
+Trying gmin =   1.0000E-03 Note: One successful gmin step
+Trying gmin =   1.0000E-04 Note: One successful gmin step
+Trying gmin =   1.0000E-05 Note: One successful gmin step
+Trying gmin =   1.0000E-06 Note: One successful gmin step
+Trying gmin =   1.0000E-07 Note: One successful gmin step
+Trying gmin =   1.0000E-08 Note: One successful gmin step
+Trying gmin =   1.0000E-09 Note: One successful gmin step
+Trying gmin =   1.0000E-10 Note: One successful gmin step
+Trying gmin =   1.0000E-11 Note: One successful gmin step
+Trying gmin =   1.0000E-12 Note: One successful gmin step
+Trying gmin =   1.0000E-12 Note: One successful gmin step
+Warning: singular matrix:  check nodes vgate and vgate
+
+Warning: Dynamic gmin stepping failed
+Note: Starting true gmin stepping
+Trying gmin =   1.0000E-03 Warning: singular matrix:  check nodes vgate and vgate
+
+Warning: Further gmin increment
+Trying gmin =   5.6234E-03 Warning: singular matrix:  check nodes vgate and vgate
+
+Warning: Further gmin increment
+Trying gmin =   8.6596E-03 Warning: singular matrix:  check nodes vgate and vgate
+
+Warning: Further gmin increment
+Trying gmin =   9.6466E-03 Warning: singular matrix:  check nodes vgate and vgate
+
+Warning: Further gmin increment
+Trying gmin =   9.9105E-03 Warning: singular matrix:  check nodes vgate and vgate
+
+Warning: Further gmin increment
+Trying gmin =   9.9775E-03 Warning: singular matrix:  check nodes vgate and vgate
+
+Warning: Further gmin increment
+Trying gmin =   9.9944E-03 Warning: singular matrix:  check nodes vgate and vgate
+
+Warning: Further gmin increment
+Trying gmin =   9.9986E-03 Warning: singular matrix:  check nodes vgate and vgate
+
+Warning: Further gmin increment
+Trying gmin =   9.9996E-03 Warning: singular matrix:  check nodes vgate and vgate
+
+Warning: Last gmin step failed
+Warning: singular matrix:  check nodes vgate and vgate
+
+Warning: True gmin stepping failed
+Note: Starting source stepping
+Supplies reduced to   0.0000% Warning: singular matrix:  check nodes vgate and vgate
+
+
+Trying gmin =   1.0000E-02 Note: One successful gmin step
+Trying gmin =   1.0000E-03 Note: One successful gmin step
+Trying gmin =   1.0000E-04 Note: One successful gmin step
+Trying gmin =   1.0000E-05 Note: One successful gmin step
+Trying gmin =   1.0000E-06 Note: One successful gmin step
+Trying gmin =   1.0000E-07 Note: One successful gmin step
+Trying gmin =   1.0000E-08 Note: One successful gmin step
+Trying gmin =   1.0000E-09 Note: One successful gmin step
+Trying gmin =   1.0000E-10 Note: One successful gmin step
+Trying gmin =   1.0000E-11 Note: One successful gmin step
+Trying gmin =   1.0000E-12 Note: One successful gmin step
+Note: One successful source step
+Supplies reduced to   0.1000% Warning: singular matrix:  check nodes vgate and vgate
+
+Supplies reduced to   0.0000% Warning: singular matrix:  check nodes vgate and vgate
+
+Warning: source stepping failed
+Note: Transient op started
+Note: Transient op finished successfully
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                          0
+vb                                -2.93938e-17
+net2                              -2.93938e-17
+net1                              -2.93938e-17
+net5                              -8.85955e-18
+va                                -8.85955e-18
+net4                              -2.93938e-17
+net6                              -1.47268e-18
+vbg                               -1.47268e-18
+net3                              -8.85955e-18
+veb                               -8.85955e-18
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_7.x0.xsky130_fd_pr__res_xhigh_po_2p85.ra    -3.49561e-18
+xbgr.sky130_asc_res_xhigh_po_2p85_1_7/rin    -3.48528e-18
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_7.x1.xsky130_fd_pr__res_xhigh_po_2p85.ra    -4.13701e-18
+xbgr.sky130_asc_res_xhigh_po_2p85_1_6/rin     -4.1419e-18
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_8.x0.xsky130_fd_pr__res_xhigh_po_2p85.ra    -1.50071e-18
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_8.x1.xsky130_fd_pr__res_xhigh_po_2p85.ra    -3.46665e-18
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_9.x0.xsky130_fd_pr__res_xhigh_po_2p85.ra    -8.22437e-18
+xbgr.sky130_asc_res_xhigh_po_2p85_1_9/rin    -8.26415e-18
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_9.x1.xsky130_fd_pr__res_xhigh_po_2p85.ra    -4.83861e-18
+xbgr.sky130_asc_res_xhigh_po_2p85_2_0/rin    -4.79803e-18
+xbgr.sky130_asc_cap_mim_m3_1_4/cout     1.08405e-15
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_30.x0.xsky130_fd_pr__res_xhigh_po_2p85.ra    -8.84416e-18
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_30.x1.xsky130_fd_pr__res_xhigh_po_2p85.ra    -7.56369e-18
+xbgr.sky130_asc_res_xhigh_po_2p85_1_29/rin    -7.54869e-18
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_20.x0.xsky130_fd_pr__res_xhigh_po_2p85.ra    -2.95882e-17
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_20.x1.xsky130_fd_pr__res_xhigh_po_2p85.ra    -4.47219e-17
+xbgr.sky130_asc_res_xhigh_po_2p85_1_19/rin    -4.48867e-17
+xbgr.sky130_asc_res_xhigh_po_2p85_1_19/rout    -5.68516e-17
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_10.x0.xsky130_fd_pr__res_xhigh_po_2p85.ra    -1.16819e-17
+xbgr.sky130_asc_res_xhigh_po_2p85_1_10/rin    -1.17221e-17
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_10.x1.xsky130_fd_pr__res_xhigh_po_2p85.ra    -8.30408e-18
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_21.x0.xsky130_fd_pr__res_xhigh_po_2p85.ra    -8.01342e-19
+xbgr.sky130_asc_res_xhigh_po_2p85_1_21/rin    -8.08442e-19
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_21.x1.xsky130_fd_pr__res_xhigh_po_2p85.ra    -2.58195e-19
+xbgr.sky130_asc_res_xhigh_po_2p85_2_1/rin    -2.52405e-19
+xbgr.xsky130_asc_res_xhigh_po_2p85_2_0.x0.xsky130_fd_pr__res_xhigh_po_0p35.ra    -4.11942e-20
+xbgr.xsky130_asc_res_xhigh_po_2p85_2_0.x1.xsky130_fd_pr__res_xhigh_po_0p35.ra    -4.75719e-18
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_11.x0.xsky130_fd_pr__res_xhigh_po_2p85.ra    -1.51637e-17
+xbgr.sky130_asc_res_xhigh_po_2p85_1_11/rin    -1.52044e-17
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_11.x1.xsky130_fd_pr__res_xhigh_po_2p85.ra    -1.17622e-17
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_22.x0.xsky130_fd_pr__res_xhigh_po_2p85.ra    -1.92163e-18
+xbgr.sky130_asc_res_xhigh_po_2p85_1_22/rin    -1.93322e-18
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_22.x1.xsky130_fd_pr__res_xhigh_po_2p85.ra    -8.22926e-19
+xbgr.xsky130_asc_res_xhigh_po_2p85_2_1.x0.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.97389e-21
+xbgr.xsky130_asc_res_xhigh_po_2p85_2_1.x1.xsky130_fd_pr__res_xhigh_po_0p35.ra    -2.51063e-19
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_12.x0.xsky130_fd_pr__res_xhigh_po_2p85.ra    -1.86254e-17
+xbgr.sky130_asc_res_xhigh_po_2p85_1_12/rin    -1.86653e-17
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_12.x1.xsky130_fd_pr__res_xhigh_po_2p85.ra    -1.52446e-17
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_23.x0.xsky130_fd_pr__res_xhigh_po_2p85.ra    -2.70144e-18
+xbgr.sky130_asc_res_xhigh_po_2p85_1_23/rin     -2.7096e-18
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_23.x1.xsky130_fd_pr__res_xhigh_po_2p85.ra    -1.94307e-18
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_13.x0.xsky130_fd_pr__res_xhigh_po_2p85.ra    -2.20589e-17
+xbgr.sky130_asc_res_xhigh_po_2p85_1_13/rin    -2.20988e-17
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_13.x1.xsky130_fd_pr__res_xhigh_po_2p85.ra    -1.87051e-17
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_24.x0.xsky130_fd_pr__res_xhigh_po_2p85.ra    -3.56715e-18
+xbgr.sky130_asc_res_xhigh_po_2p85_1_24/rin    -3.57662e-18
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_24.x1.xsky130_fd_pr__res_xhigh_po_2p85.ra    -2.72023e-18
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_14.x0.xsky130_fd_pr__res_xhigh_po_2p85.ra    -2.54646e-17
+xbgr.sky130_asc_res_xhigh_po_2p85_1_14/rin    -2.55038e-17
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_14.x1.xsky130_fd_pr__res_xhigh_po_2p85.ra    -2.21385e-17
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_25.x0.xsky130_fd_pr__res_xhigh_po_2p85.ra    -4.26676e-18
+xbgr.sky130_asc_res_xhigh_po_2p85_1_25/rin    -4.27432e-18
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_25.x1.xsky130_fd_pr__res_xhigh_po_2p85.ra    -3.58524e-18
+xbgr.sky130_asc_nfet_01v8_lvt_1_1/gate    -4.22003e-16
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_15.x0.xsky130_fd_pr__res_xhigh_po_2p85.ra     -2.8696e-17
+xbgr.sky130_asc_res_xhigh_po_2p85_1_15/rin    -2.87326e-17
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_15.x1.xsky130_fd_pr__res_xhigh_po_2p85.ra    -2.55421e-17
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_26.x0.xsky130_fd_pr__res_xhigh_po_2p85.ra    -4.79376e-18
+xbgr.sky130_asc_res_xhigh_po_2p85_1_26/rin    -4.79902e-18
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_26.x1.xsky130_fd_pr__res_xhigh_po_2p85.ra    -4.28122e-18
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_16.x0.xsky130_fd_pr__res_xhigh_po_2p85.ra    -3.13609e-17
+xbgr.sky130_asc_res_xhigh_po_2p85_1_18/rin    -3.13891e-17
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_16.x1.xsky130_fd_pr__res_xhigh_po_2p85.ra     -2.8766e-17
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_27.x0.xsky130_fd_pr__res_xhigh_po_2p85.ra    -5.71442e-18
+xbgr.sky130_asc_res_xhigh_po_2p85_1_27/rin     -5.7266e-18
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_27.x1.xsky130_fd_pr__res_xhigh_po_2p85.ra    -4.80835e-18
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_17.x0.xsky130_fd_pr__res_xhigh_po_2p85.ra    -3.23871e-17
+xbgr.sky130_asc_res_xhigh_po_2p85_1_17/rin    -3.24059e-17
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_17.x1.xsky130_fd_pr__res_xhigh_po_2p85.ra    -2.94448e-17
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_28.x0.xsky130_fd_pr__res_xhigh_po_2p85.ra    -6.53762e-18
+xbgr.sky130_asc_res_xhigh_po_2p85_1_28/rin    -6.54627e-18
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_28.x1.xsky130_fd_pr__res_xhigh_po_2p85.ra    -5.73695e-18
+porst                                        0
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_18.x0.xsky130_fd_pr__res_xhigh_po_2p85.ra    -3.14074e-17
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_18.x1.xsky130_fd_pr__res_xhigh_po_2p85.ra    -3.24006e-17
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_29.x0.xsky130_fd_pr__res_xhigh_po_2p85.ra    -7.53777e-18
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_29.x1.xsky130_fd_pr__res_xhigh_po_2p85.ra    -6.55858e-18
+xbgr.sky130_asc_pfet_01v8_lvt_6_1/gate    -3.04669e-15
+xbgr.sky130_asc_nfet_01v8_lvt_1_1/drain     1.75102e-15
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_19.x0.xsky130_fd_pr__res_xhigh_po_2p85.ra    -4.50284e-17
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_19.x1.xsky130_fd_pr__res_xhigh_po_2p85.ra    -5.67159e-17
+xbgr.xsky130_asc_cap_mim_m3_1_0.x0.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_0.x0.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_0.x1.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_0.x1.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_0.x2.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_0.x2.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_0.x3.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_0.x3.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_0.x4.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_0.x4.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_0.x5.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_0.x5.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_0.x6.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_0.x6.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_0.x7.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_0.x7.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_0.x8.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_0.x8.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_0.x9.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_0.x9.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_0.x10.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_0.x10.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_0.x11.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_0.x11.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_0.x12.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_0.x12.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_0.x13.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_0.x13.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_0.x14.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_0.x14.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_0.x15.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_0.x15.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_0.x16.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_0.x16.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_0.x17.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_0.x17.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_0.x18.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_0.x18.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_0.x19.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_0.x19.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_1.x0.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_1.x0.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_1.x1.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_1.x1.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_1.x2.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_1.x2.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_1.x3.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_1.x3.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_1.x4.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_1.x4.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_1.x5.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_1.x5.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_1.x6.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_1.x6.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_1.x7.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_1.x7.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_1.x8.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_1.x8.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_1.x9.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_1.x9.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_1.x10.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_1.x10.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_1.x11.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_1.x11.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_1.x12.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_1.x12.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_1.x13.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_1.x13.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_1.x14.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_1.x14.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_1.x15.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_1.x15.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_1.x16.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_1.x16.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_1.x17.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_1.x17.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_1.x18.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_1.x18.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_1.x19.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_1.x19.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_2.x0.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_2.x0.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_2.x1.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_2.x1.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_2.x2.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_2.x2.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_2.x3.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_2.x3.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_2.x4.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_2.x4.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_2.x5.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_2.x5.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_2.x6.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_2.x6.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_2.x7.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_2.x7.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_2.x8.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_2.x8.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_2.x9.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_2.x9.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_2.x10.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_2.x10.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_2.x11.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_2.x11.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_2.x12.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_2.x12.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_2.x13.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_2.x13.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_2.x14.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_2.x14.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_2.x15.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_2.x15.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_2.x16.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_2.x16.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_2.x17.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_2.x17.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_2.x18.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_2.x18.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_2.x19.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_2.x19.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_3.x0.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_3.x0.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_3.x1.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_3.x1.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_3.x2.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_3.x2.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_3.x3.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_3.x3.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_3.x4.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_3.x4.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_3.x5.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_3.x5.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_3.x6.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_3.x6.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_3.x7.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_3.x7.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_3.x8.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_3.x8.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_3.x9.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_3.x9.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_3.x10.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_3.x10.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_3.x11.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_3.x11.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_3.x12.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_3.x12.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_3.x13.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_3.x13.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_3.x14.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_3.x14.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_3.x15.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_3.x15.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_3.x16.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_3.x16.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_3.x17.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_3.x17.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_3.x18.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_3.x18.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_3.x19.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_3.x19.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_4.x0.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_4.x0.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_4.x1.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_4.x1.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_4.x2.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_4.x2.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_4.x3.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_4.x3.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_4.x4.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_4.x4.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_4.x5.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_4.x5.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_4.x6.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_4.x6.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_4.x7.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_4.x7.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_4.x8.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_4.x8.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_4.x9.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_4.x9.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_4.x10.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_4.x10.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_4.x11.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_4.x11.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_4.x12.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_4.x12.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_4.x13.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_4.x13.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_4.x14.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_4.x14.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_4.x15.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_4.x15.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_4.x16.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_4.x16.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_4.x17.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_4.x17.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_4.x18.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_4.x18.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_4.x19.a     1.16003e-22
+xbgr.xsky130_asc_cap_mim_m3_1_4.x19.b1      9.9026e-23
+xbgr.xsky130_asc_cap_mim_m3_1_5.x0.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x0.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x1.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x1.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x2.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x2.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x3.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x3.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x4.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x4.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x5.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x5.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x6.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x6.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x7.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x7.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x8.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x8.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x9.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x9.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x10.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x10.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x11.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x11.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x12.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x12.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x13.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x13.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x14.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x14.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x15.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x15.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x16.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x16.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x17.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x17.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x18.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x18.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x19.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_5.x19.b1    -8.85955e-18
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_0.x0.xsky130_fd_pr__res_xhigh_po_2p85.ra    -7.03388e-19
+xbgr.sky130_asc_res_xhigh_po_2p85_1_0/rin    -7.11636e-19
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_0.x1.xsky130_fd_pr__res_xhigh_po_2p85.ra    -8.24865e-21
+xbgr.xsky130_asc_cap_mim_m3_1_6.x0.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x0.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x1.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x1.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x2.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x2.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x3.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x3.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x4.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x4.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x5.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x5.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x6.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x6.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x7.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x7.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x8.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x8.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x9.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x9.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x10.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x10.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x11.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x11.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x12.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x12.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x13.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x13.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x14.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x14.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x15.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x15.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x16.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x16.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x17.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x17.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x18.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x18.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x19.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_6.x19.b1    -8.85955e-18
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_1.x0.xsky130_fd_pr__res_xhigh_po_2p85.ra    -1.42143e-18
+xbgr.sky130_asc_res_xhigh_po_2p85_1_1/rin    -1.42974e-18
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_1.x1.xsky130_fd_pr__res_xhigh_po_2p85.ra    -7.19971e-19
+xbgr.xsky130_asc_cap_mim_m3_1_7.x0.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x0.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x1.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x1.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x2.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x2.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x3.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x3.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x4.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x4.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x5.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x5.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x6.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x6.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x7.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x7.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x8.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x8.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x9.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x9.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x10.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x10.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x11.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x11.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x12.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x12.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x13.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x13.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x14.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x14.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x15.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x15.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x16.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x16.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x17.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x17.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x18.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x18.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x19.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_7.x19.b1    -8.85955e-18
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_2.x0.xsky130_fd_pr__res_xhigh_po_2p85.ra    -2.15984e-18
+xbgr.sky130_asc_res_xhigh_po_2p85_1_2/rin    -2.16846e-18
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_2.x1.xsky130_fd_pr__res_xhigh_po_2p85.ra    -1.43825e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x0.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x0.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x1.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x1.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x2.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x2.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x3.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x3.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x4.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x4.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x5.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x5.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x6.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x6.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x7.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x7.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x8.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x8.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x9.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x9.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x10.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x10.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x11.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x11.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x12.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x12.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x13.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x13.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x14.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x14.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x15.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x15.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x16.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x16.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x17.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x17.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x18.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x18.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x19.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_8.x19.b1    -8.85955e-18
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_3.x0.xsky130_fd_pr__res_xhigh_po_2p85.ra    -2.87914e-18
+xbgr.sky130_asc_res_xhigh_po_2p85_1_3/rin    -2.88734e-18
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_3.x1.xsky130_fd_pr__res_xhigh_po_2p85.ra    -2.17693e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x0.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x0.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x1.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x1.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x2.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x2.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x3.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x3.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x4.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x4.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x5.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x5.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x6.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x6.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x7.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x7.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x8.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x8.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x9.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x9.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x10.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x10.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x11.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x11.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x12.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x12.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x13.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x13.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x14.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x14.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x15.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x15.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x16.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x16.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x17.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x17.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x18.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x18.b1    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x19.a    -8.85955e-18
+xbgr.xsky130_asc_cap_mim_m3_1_9.x19.b1    -8.85955e-18
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_4.x0.xsky130_fd_pr__res_xhigh_po_2p85.ra    -3.51845e-18
+xbgr.sky130_asc_res_xhigh_po_2p85_1_4/rin    -3.52553e-18
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_4.x1.xsky130_fd_pr__res_xhigh_po_2p85.ra    -2.89505e-18
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_5.x0.xsky130_fd_pr__res_xhigh_po_2p85.ra    -3.99551e-18
+xbgr.sky130_asc_res_xhigh_po_2p85_1_5/rin    -4.00045e-18
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_5.x1.xsky130_fd_pr__res_xhigh_po_2p85.ra    -3.53161e-18
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_6.x0.xsky130_fd_pr__res_xhigh_po_2p85.ra    -4.14167e-18
+xbgr.xsky130_asc_res_xhigh_po_2p85_1_6.x1.xsky130_fd_pr__res_xhigh_po_2p85.ra     -4.0035e-18
+vgate                                        0
+v2#branch                          6.20733e-21
+vq2#branch                                   0
+vr1#branch                                   0
+vm3#branch                                   0
+vm2#branch                                   0
+vm1#branch                                   0
+vr2#branch                                   0
+vr4#branch                                   0
+v1#branch                         -1.31863e-20
+
+
+No. of Data Rows : 200033
+binary raw file "./sims/post_bandgap_real_27degc_vbg.raw"
+ngspice-36 done

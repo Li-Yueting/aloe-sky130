@@ -45,8 +45,8 @@ xpins = []#['VDD', 'VSS'] # don't care pins
 sgl_nets = ['porst', 'va', 'vb', 'vbg', 'vc', 'l17', 'l18', 'l19', 'l20', 'amp/vg', 'amp/vq', 'amp/vx', 'VNW', 'VDDPST', 'POC', 'VDDCE', 'VDDPE', 'VPW', 'VSSPST', 'VSSE']
 core_nets = ['BGR_Core/vbneg', 'BGR_Core/l6', 'BGR_Core/l7', 'BGR_Core/l8', 'BGR_Core/l10', 'BGR_Core/l11', 'BGR_Core/l1', 'BGR_Core/l2', 'BGR_Core/l4', 'BGR_Core/l5', 'BGR_Core/l12', 'BGR_Core/R6/l', 'BGR_Core/R7/l', 'BGR_Core/R8/l', 'BGR_Core/R10/l', 'BGR_Core/R11/l', 'BGR_Core/R3/l', 'BGR_Core/R1/l', 'BGR_Core/R2/l', 'BGR_Core/R4/l', 'BGR_Core/R5/l', 'BGR_Core/R12/l','R17/l', 'R18/l', 'R19/l', 'R20/l']
 
-pwr_nets = ['VDD', 'amp/VDD', 'CM/VDD']
-gnd_nets = ['VSS', 'amp/VSS']
+pwr_nets = ['VDD']
+gnd_nets = ['VSS']
 all_nets = sgl_nets + core_nets + pwr_nets + gnd_nets
 
 #==============================================================================

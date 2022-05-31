@@ -1,13 +1,23 @@
 set time_start_all [clock seconds]
 setDistributeHost -local
 set plot true
-set ngen 3
+set ngen 6
 set pop_size 80
 set nout 2
 set ::env(repo) /home/users/xingyuni/ee372/aloe-sky130
 set ::env(gen) 0
 set ::env(pnr_dir) /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/pnr
 set tcllib /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/tcllib
+
+set ::env(stemcell_dir) /home/users/xingyuni/ee372/aloe-sky130/aloe/stemcell
+set ::env(gds_dir) /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/output/gds
+set ::env(lvs_dir) /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/output/lvs
+set ::env(def_dir) /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/output/def
+set merge_files \
+[concat \
+[lsort [glob -nocomplain $env(stemcell_dir)/*.gds*]] \
+]
+
 source $tcllib/cal_nl.tcl
 source $tcllib/areaRatio.tcl
 source $tcllib/swap_cells.tcl
@@ -56,6 +66,7 @@ while {$env(gen)<$ngen} {
   python -m aloe.layout.pylib.examine -gen $env(gen) -type_cstr_in new -type_pop_out new
   python -m aloe.layout.pylib.choose -gen $env(gen) -type_pop_in both -type_pop_out old
   python -m aloe.layout.pnr.save -gen $env(gen) -type_pop_out old
+  streamOut $env(gds_dir)/bgr-gen-$env(gen)-merged.gds -units 1000 -mapFile $env(stemcell_dir)/rtk-stream-out.map -merge $merge_files
 }
 
 # Calculate total time spent. This is the pnr time for ngen-1

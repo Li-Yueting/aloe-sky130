@@ -49,7 +49,7 @@ label_size = 0.1    # Streamout label size
 
 # Evolution algorithms parameters
 pop_size = 80 # Population size [20, 200]
-ngen  = 3 # Number of generations   [1, 100]
+ngen  = 6 # Number of generations   [1, 100]
 cx_prob = 0.5    # Crossover probability [0, 1]
 mut_prob = 0.3    # Mutation probability  [0, 0.5]
 eta = 1    # Crowding degree       [1, 50]

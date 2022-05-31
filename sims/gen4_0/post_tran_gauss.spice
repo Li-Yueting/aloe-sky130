@@ -1,0 +1,87 @@
+**.subckt tsmc_bandgap_real_tran_gauss
+V1 VDD GND 'VDD' pwl 0us 0 5us 'VDD' 
+Vr4 Vb net2 0
+Vr2 Vb net1 0
+Vm1 net5 Va 0
+Vm2 net4 Vb 0
+Vm3 net6 vbg 0
+Vr1 Va net3 0
+Vq2 Va Veb 0
+
+XBGR porst Va Vb vbg GND VDD bgr_top
+V2 porst GND 0 pulse(0V 1.8V 10us 0us 0us 5us)
+C1 VDD vgate 20p m=1
+C2 Va GND 20p m=1
+**** begin user architecture code
+.option wnflag=1
+.param MC_switch=1.0
+.param mc_mm_switch=1
+* .lib /farmshare/home/classes/ee/272/PDKs/open_pdks/sky130/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.lib /farmshare/home/classes/ee/372/PDKs/open_pdks_1.0.310/sky130/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.include /home/users/xingyuni/ee372/aloe-sky130/aloe/output/gds/gen4/test_gen4.spice
+* .option seed=13
+
+.param ABSVAR=0.03
+.param VDDGAUSS=agauss(1.8, 'ABSVAR', 1)
+.param VDD=VDDGAUSS
+*.param VDD=1.8
+* variation parameters:
+.param sky130_fd_pr__nfet_01v8_lvt__vth0_slope_spectre='agauss(0, ABSVAR, 3)/sky130_fd_pr__nfet_01v8_lvt__vth0_slope'
+.param sky130_fd_pr__pfet_01v8_lvt__vth0_slope_spectre='agauss(0, ABSVAR, 3)/sky130_fd_pr__pfet_01v8_lvt__vth0_slope'
+.param sky130_fd_pr__pfet_01v8_lvt__toxe_slope_spectre='agauss(0, ABSVAR*2, 3)/sky130_fd_pr__pfet_01v8_lvt__toxe_slope'
+.param sky130_fd_pr__nfet_01v8_lvt__toxe_slope_spectre='agauss(0, ABSVAR*2, 3)/sky130_fd_pr__nfet_01v8_lvt__toxe_slope'
+.param sky130_fd_pr__pfet_01v8_lvt__voff_slope_spectre='agauss(0, ABSVAR, 3)/sky130_fd_pr__pfet_01v8_lvt__voff_slope'
+.param sky130_fd_pr__nfet_01v8_lvt__voff_slope_spectre='agauss(0, ABSVAR, 3)/sky130_fd_pr__nfet_01v8_lvt__voff_slope'
+.param sky130_fd_pr__pfet_01v8_lvt__nfactor_slope_spectre='agauss(0, ABSVAR, 3)/sky130_fd_pr__pfet_01v8_lvt__nfactor_slope'
+.param sky130_fd_pr__nfet_01v8_lvt__nfactor_slope_spectre='agauss(0, ABSVAR, 3)/sky130_fd_pr__nfet_01v8_lvt__nfactor_slope'
+
+.param sky130_fd_pr__res_xhigh_po__var_mult=agauss(0, 'ABSVAR*8', 1)
+.param sky130_fd_pr__res_high_po_var=agauss(0, 'ABSVAR*8', 1)
+
+.param sky130_fd_pr__pnp_05v5_W3p40L3p40__bf_slope=agauss(0, 0.05537, 1)
+.param sky130_fd_pr__pnp_05v5_W3p40L3p40__is_slope=agauss(0, 0.01662, 1)
+.param sky130_fd_pr__pnp_05v5_W3p40L3p40__xti_slope=agauss(0, 0.06, 1)
+.options savecurrents
+.control
+  set appendwrite
+  let run=218
+  dowhile run <= 500
+    if run > 0
+      reset
+      set appendwrite
+    end
+    save all
+    * if run % 3 = 0
+    *   set temp=0
+    * end
+    * if run % 3 = 1
+    *   set temp=27
+    * end
+    * if run % 3 = 2
+    *   set temp=70
+    * end
+    option temp = 0
+    tran 0.05u 150u
+    write ./sims/gen4_0/post_temp0_bandgap_real_tran_gauss{$&run}.raw vbg vdd
+    let run = run + 1
+  end
+  set nolegend
+  *plot all.vbg
+  unset askquit
+  quit
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL VDD
+.GLOBAL GND
+** flattened .save nodes
+.save I(Vr4)
+.save I(Vr2)
+.save I(Vm1)
+.save I(Vm2)
+.save I(Vm3)
+.save I(Vr1)
+.save I(Vq2)
+.end

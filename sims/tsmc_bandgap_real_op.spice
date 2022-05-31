@@ -1,6 +1,6 @@
 **.subckt tsmc_bandgap_real_op
 V1 VDD GND 'VDD' pwl 0us 0 5us 'VDD' 
-XQ2 GND GND Veb sky130_fd_pr__pnp_05v5_W3p40L3p40
+V2 porst GND 0 pulse(0V 1.8V 10us 0us 0us 5us)
 Vr4 Vb net2 0
 Vr2 Vb net1 0
 Vm1 net5 Va 0
@@ -8,51 +8,55 @@ Vm2 net4 Vb 0
 Vm3 net6 vbg 0
 Vr1 Va net3 0
 Vq2 Va Veb 0
-XQ1 GND GND vbneg sky130_fd_pr__pnp_05v5_W3p40L3p40 m=39
-XM5 vgate Va Vq GND sky130_fd_pr__nfet_01v8_lvt L='2' W='1' nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=26.95 m=26.95 
-XM6 Vq Vx GND GND sky130_fd_pr__nfet_01v8_lvt L=2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=3.65 m=3.65 
-XM9 vg Vb Vq GND sky130_fd_pr__nfet_01v8_lvt L='2' W='1' nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=26.95 m=26.95 
-XM7 Vx Vx GND GND sky130_fd_pr__nfet_01v8_lvt L=2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=3.65 m=3.65 
-XM13 Vx vgate VDD VDD sky130_fd_pr__pfet_01v8_lvt L=2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=77.32 m=77.32 
-XM1 net5 vgate VDD VDD sky130_fd_pr__pfet_01v8_lvt L=2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=386.6 m=386.6 
-XM2 net4 vgate VDD VDD sky130_fd_pr__pfet_01v8_lvt L=2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=386.6 m=386.6 
-XM3 net6 vgate VDD VDD sky130_fd_pr__pfet_01v8_lvt L=2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=386.6 m=386.6 
-XR1 GND net3 GND sky130_fd_pr__res_xhigh_po_0p35 L=21.839 mult=1 m=1
-XR2 GND net2 GND sky130_fd_pr__res_xhigh_po_0p35 L=21.839 mult=1 m=1
-XR3 vbneg net1 GND sky130_fd_pr__res_xhigh_po_0p35 L=3.763 mult=1 m=1
-XR4 GND vbg GND sky130_fd_pr__res_xhigh_po_0p35 L=17.38 mult=1 m=1
-XM4 vg vg VDD VDD sky130_fd_pr__pfet_01v8_lvt L=2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=38.66 m=38.66 
-XM8 vgate vg VDD VDD sky130_fd_pr__pfet_01v8_lvt L=2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=38.66 m=38.66 
-XM10 vgate porst GND GND sky130_fd_pr__nfet_01v8_lvt L='2' W='1' nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
-+ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
-+ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=34 m=34 
-V2 porst GND 0 pulse(0V 1.8V 10us 0us 0us 5us)
-C1 VDD vgate 20p m=1
-C2 Va GND 20p m=1
+
+XBGR porst Va Vb vbg GND VDD bgr_top
+
+* XQ2 GND GND Veb sky130_fd_pr__pnp_05v5_W3p40L3p40
+* XQ1 GND GND vbneg sky130_fd_pr__pnp_05v5_W3p40L3p40 m=39
+* XM5 vgate Va Vq GND sky130_fd_pr__nfet_01v8_lvt L='2' W='1' nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+* + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
+* + sa=0 sb=0 sd=0 mult=26.95 m=26.95 
+* XM6 Vq Vx GND GND sky130_fd_pr__nfet_01v8_lvt L=2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+* + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
+* + sa=0 sb=0 sd=0 mult=3.65 m=3.65 
+* XM9 vg Vb Vq GND sky130_fd_pr__nfet_01v8_lvt L='2' W='1' nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+* + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
+* + sa=0 sb=0 sd=0 mult=26.95 m=26.95 
+* XM7 Vx Vx GND GND sky130_fd_pr__nfet_01v8_lvt L=2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+* + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
+* + sa=0 sb=0 sd=0 mult=3.65 m=3.65 
+* XM13 Vx vgate VDD VDD sky130_fd_pr__pfet_01v8_lvt L=2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+* + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
+* + sa=0 sb=0 sd=0 mult=77.32 m=77.32 
+* XM1 net5 vgate VDD VDD sky130_fd_pr__pfet_01v8_lvt L=2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+* + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
+* + sa=0 sb=0 sd=0 mult=386.6 m=386.6 
+* XM2 net4 vgate VDD VDD sky130_fd_pr__pfet_01v8_lvt L=2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+* + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
+* + sa=0 sb=0 sd=0 mult=386.6 m=386.6 
+* XM3 net6 vgate VDD VDD sky130_fd_pr__pfet_01v8_lvt L=2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+* + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
+* + sa=0 sb=0 sd=0 mult=386.6 m=386.6 
+* XR1 GND net3 GND sky130_fd_pr__res_xhigh_po_0p35 L=21.839 mult=1 m=1
+* XR2 GND net2 GND sky130_fd_pr__res_xhigh_po_0p35 L=21.839 mult=1 m=1
+* XR3 vbneg net1 GND sky130_fd_pr__res_xhigh_po_0p35 L=3.763 mult=1 m=1
+* XR4 GND vbg GND sky130_fd_pr__res_xhigh_po_0p35 L=17.38 mult=1 m=1
+* XM4 vg vg VDD VDD sky130_fd_pr__pfet_01v8_lvt L=2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+* + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
+* + sa=0 sb=0 sd=0 mult=38.66 m=38.66 
+* XM8 vgate vg VDD VDD sky130_fd_pr__pfet_01v8_lvt L=2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+* + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
+* + sa=0 sb=0 sd=0 mult=38.66 m=38.66 
+* XM10 vgate porst GND GND sky130_fd_pr__nfet_01v8_lvt L='2' W='1' nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
+* + as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
+* + nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=34 m=34 
+
+
 **** begin user architecture code
 
-.lib /farmshare/home/classes/ee/272/PDKs/open_pdks/sky130/sky130A/libs.tech/ngspice/sky130.lib.spice tt
-
+.lib /farmshare/home/classes/ee/372/PDKs/open_pdks_1.0.310/sky130/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+* .lib /farmshare/home/classes/ee/272/PDKs/open_pdks/sky130/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.include /home/users/xingyuni/ee372/aloe-sky130/aloe/output/gds/test3.spice
 
 
 .option savecurrents
@@ -69,9 +73,12 @@ save all  @m.xm1.msky130_fd_pr__pfet_01v8_lvt[gm]  @m.xm2.msky130_fd_pr__pfet_01
 
 op
 
+
+
 let id8=@m.xm8.msky130_fd_pr__pfet_01v8_lvt[id]
 let id1=@m.xm1.msky130_fd_pr__pfet_01v8_lvt[id]
-let vth5=@m.xm5.msky130_fd_pr__nfet_01v8_lvt[vth]
+let vth5=@m.xbgr.xsky130_asc_nfet_01v8_lvt_9_1.x0.msky130_fd_pr__nfet_01v8_lvt[vth]
+* let vth5=@m.xm5.msky130_fd_pr__nfet_01v8_lvt[vth]
 let vth6=@m.xm6.msky130_fd_pr__nfet_01v8_lvt[vth]
 let wm8=@m.xm8.msky130_fd_pr__pfet_01v8_lvt[w]
 let mm8=@m.xm8.msky130_fd_pr__pfet_01v8_lvt[m]

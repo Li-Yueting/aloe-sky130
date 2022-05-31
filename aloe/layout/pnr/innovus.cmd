@@ -1,0 +1,143 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Sat May 28 19:08:14 2022                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v20.13-s083_1 (64bit) 01/19/2021 16:51 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: NanoRoute 20.13-s083_1 NR201221-0721/20_13-UB (database version 18.20.538) {superthreading v2.13}
+#@(#)CDS: AAE 20.13-s024 (64bit) 01/19/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+#@(#)CDS: CTE 20.13-s042_1 () Jan 14 2021 08:49:42 ( )
+#@(#)CDS: SYNTECH 20.13-s015_1 () Jan  6 2021 07:44:41 ( )
+#@(#)CDS: CPE v20.13-s092
+#@(#)CDS: IQuantus/TQuantus 20.1.1-s453 (64bit) Fri Nov 20 21:16:44 PST 2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+setDistributeHost -local
+define_proc_arguments cal_nl -info {Writes TCL scripts to run.
+} -define_args {{-n "current run number" "int_value" int required}
+    {-l "length of zero-padding" "int_value" int required}
+    {-d "expression directory" "none" string required}
+    {-b "blk_name" "none" string optional}
+    }
+define_proc_arguments areaRatio -info {Compute the ratio of the group-elements-cumulated-area to the group-bounding-box-area. 
+} -define_args {
+    {-group "Group name" "none" string {required}}
+  }
+define_proc_arguments swap_cells -info {Writes TCL scripts to run.
+} -define_args {{-net "net name" "none" string required}
+    {-tail "tied cell identifying string" "none" string optional}
+    }
+define_proc_arguments pnr -info {Writes TCL scripts to run.
+} -define_args {{-g "generation" "none" string required}
+	{-gennum "generation num" "int_value" int required}
+	{-n "population size" "int_value" int required}
+	{-pnr_dir "place and route directroy" "none" string required}
+	{-t "timed" "" boolean optional}
+	}
+define_proc_arguments save_lvs_netlist -define_args {{-dcapNamePattern "regex pattern of dcaps" "none" string required} {-fVerilog "file name to be saved" "none" string required} {-flat "export flat or hierarchical verilog" "" boolean optional} }
+set_message -id NRIG-39 -suppress
+set_message -id IMPLF-201 -suppress
+set_message -id IMPLF-44 -suppress
+set_message -id IMPSP-9513 -suppress
+set_message -id IMPSP-9514 -suppress
+set_message -id IMPDB-2078 -suppress
+setMessageLimit 5
+set ::TimeLib::tsgMarkCellLatchConstructFlag 1
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+set _timing_save_restore_compression_mode hybrid
+set conf_qxconf_file NULL
+set conf_qxlib_file NULL
+set defHierChar /
+set distributed_client_message_echo 1
+set distributed_mmmc_disable_reports_auto_redirection 0
+set gpsPrivate::dpgNewAddBufsDBUpdate 1
+set gpsPrivate::lsgEnableNewDbApiInRestruct 1
+set init_gnd_net VSS
+set init_io_file {}
+set init_lef_file {/home/users/xingyuni/ee372/aloe-sky130/aloe/stemcell/rtk-tech.tlef  /home/users/xingyuni/ee372/aloe-sky130/aloe/stemcell/stdcells.lef}
+set init_pwr_net VDD
+set init_top_cell bgr_top
+set init_verilog /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/examples/bgr_top/bgr_top.v
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+set latch_time_borrow_mode max_borrow
+set pegDefaultResScaleFactor 1.000000
+set pegDetailResScaleFactor 1.000000
+get_message -id GLOBAL-100 -suppress
+get_message -id GLOBAL-100 -suppress
+set report_inactive_arcs_format {from to when arc_type sense reason}
+set timing_library_load_pin_cap_indices {}
+set timing_library_write_library_to_directory {}
+set tso_post_client_restore_command {update_timing ; write_eco_opt_db ;}
+set init_design_uniquify 1
+init_design
+setRouteMode -earlyGlobalMaxRouteLayer 5
+setPinAssignMode -maxLayer 5
+setNanoRouteMode -routeTopRoutingLayer 5
+setDesignMode -topRoutingLayer met4
+setDesignMode -process 16 -flowEffort standard
+setViaGenMode -reset
+setViaGenMode -optimize_cross_via true
+setViaGenMode -optimize_via_on_routing_track true
+setViaGenMode -viarule_preference default
+setViaGenMode -ignore_DRC false
+setPlaceMode -checkDiffusionWidth true
+setPlaceMode -coreEffort high
+setNanoRouteMode -routeExpAdvancedTechnology true
+setNanoRouteMode -routeBottomRoutingLayer 2 -drouteAutoStop false -drouteExpAdvancedMarFix true -drouteFixAntenna true -drouteUseMultiCutViaEffort high -routeWithTimingDriven false -routeWithSiDriven false -routeAutoPinAccessForBlockPin true -routeConcurrentMinimizeViaCountEffort high
+setStreamOutMode -textSize 0.1
+setStreamOutMode -virtualConnection false
+globalNetConnect VDD -type tiehi -pin VDD -inst *
+globalNetConnect VSS -type tielo -pin VSS -inst *
+globalNetConnect VDD -type pgpin -pin VDD -inst *
+globalNetConnect VSS -type pgpin -pin VSS -inst *
+globalNetConnect VDD -type tiehi -pin VPWR -inst *
+globalNetConnect VSS -type tielo -pin VGND -inst *
+globalNetConnect VDD -type tiehi -pin VPB -inst *
+globalNetConnect VSS -type tielo -pin VNB -inst *
+globalNetConnect VDD -type pgpin -pin VPWR -inst *
+globalNetConnect VSS -type pgpin -pin VGND -inst *
+globalNetConnect VDD -type pgpin -pin VPB -inst *
+globalNetConnect VSS -type pgpin -pin VNB -inst *
+globalNetConnect VSS -type pgpin -net VSS -inst *
+globalNetConnect VSS -type net -pin SOURCE -inst *nfet*
+setFillerMode -core { } -corePrefix FILLER
+setEndCapMode -rightEdge ENDCAPTIE10_A9TUL_C16 -rightBottomEdge INCNRCAPNWINTIE10_A9TUL_C16 -rightTopEdge INCNRCAPNWINTIE10_A9TUL_C16 -bottomEdge {TBCAPNWIN1_A9TUL_C16 TBCAPNWIN2_A9TUL_C16 TBCAPNWIN3_A9TUL_C16 TBCAPNWINTIENW16_A9TUL_C16} -topEdge {TBCAPNWIN1_A9TUL_C16 TBCAPNWIN2_A9TUL_C16 TBCAPNWIN3_A9TUL_C16 TBCAPNWINTIENW16_A9TUL_C16} -rightBottomCorner CNRCAPNWINTIENW10_A9TUL_C16 -rightTopCorner CNRCAPNWINTIENW10_A9TUL_C16 -fitGap true
+loadFPlan /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/examples/bgr_top/bgr_top.fp
+setDesignMode -process 130 -powerEffort high
+setAnalysisMode -analysisType onChipVariation
+setPlaceMode -place_global_cong_effort low -place_global_clock_gate_aware true -place_global_place_io_pins false
+all_constraint_modes -active
+set_interactive_constraint_modes [all_constraint_modes -active]
+setPlaceMode -checkCellDRCFromPreRoute false
+setPlaceMode -place_detail_color_aware_legal true -place_global_place_io_pins true
+place_design
+selectNet *
+setNanoRouteMode -quiet -routeSelectedNetOnly 1
+routeDesign -globalDetail
+verify_connectivity -selected -type regular -error 1000 -warning 50 -report /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/output/rpt/bgr_top_0.conn.rpt
+set_verify_drc_mode -check_implant true -exclude_pg_net true -report /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/output/rpt/bgr_top_0.drc.rpt
+write_lef_abstract -5.8 -extractBlockObs /home/users/xingyuni/ee372/aloe-sky130/aloe/output/lef/bgr_top_0.lef
+streamOut /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/output/gds/bgr-v0.gds.gz -units 1000 -mapFile /home/users/xingyuni/ee372/aloe-sky130/aloe/stemcell/rtk-stream-out.map
+streamOut /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/output/gds/bgr-v0-merged.gds -units 1000 -mapFile /home/users/xingyuni/ee372/aloe-sky130/aloe/stemcell/rtk-stream-out.map -merge {/home/users/xingyuni/ee372/aloe-sky130/aloe/stemcell/stdcells.gds /home/users/xingyuni/ee372/aloe-sky130/aloe/stemcell/stdcells_0.gds /home/users/xingyuni/ee372/aloe-sky130/aloe/stemcell/stdcells_1.gds}
+saveNetlist -excludeLeafCell -flat -phys /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/output/lvs/bgr-v0.lvs.v
+defOut -routing /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/output/def/bgr-v0.def.gz
+win
+zoomBox -119.32500 -52.58200 352.88300 175.44400
+fit
+setLayerPreference node_cell -isVisible 1
+deselectAll
+zoomBox -15.13200 46.56600 354.44400 225.03200
+zoomBox 50.43200 73.53300 317.45100 202.47500
+zoomBox 76.03700 84.06500 303.00400 193.66600
+zoomBox 56.18600 70.08700 323.20800 199.03000
+pan -11.22400 65.84300
+fit
+streamOut /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/output/gds/bgr-v0.gds.gz -units 1000 -mapFile /home/users/xingyuni/ee372/aloe-sky130/aloe/stemcell/rtk-stream-out.map
+streamOut /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/output/gds/bgr-v0-merged.gds -units 1000 -mapFile /home/users/xingyuni/ee372/aloe-sky130/aloe/stemcell/rtk-stream-out.map -merge {/home/users/xingyuni/ee372/aloe-sky130/aloe/stemcell/stdcells.gds /home/users/xingyuni/ee372/aloe-sky130/aloe/stemcell/stdcells_0.gds /home/users/xingyuni/ee372/aloe-sky130/aloe/stemcell/stdcells_1.gds}
+saveNetlist -excludeLeafCell -flat -phys /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/output/lvs/bgr-v0.lvs.v
+defOut -routing /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/output/def/bgr-v0.def.gz
