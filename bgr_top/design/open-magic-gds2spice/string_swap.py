@@ -2,7 +2,7 @@ print("************************************")
 print("replacing pnp strings now ...")
 # creating a variable and storing the text that we want to search
 search_text = "sky130_fd_pr__pnp_05v5 area=0p"
-# creating a variable and storing the textthat we want to add
+# creating a variable and storing the text that we want to add
 replace_text = "sky130_fd_pr__pnp_05v5_W3p40L3p40"
   
 # Opening our text file in read only

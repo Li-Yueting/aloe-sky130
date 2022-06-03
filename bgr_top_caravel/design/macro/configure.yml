@@ -1,0 +1,18 @@
+name: macro
+
+commands:
+  - lc_shell -f lc_shell_gen_db.tcl
+  - cp macro.sp outputs/macro.sp
+  - cp macro.lib outputs/macro.lib
+  - cp macro.gds outputs/macro.gds
+  - cp macro.lef outputs/macro.lef
+  - cp macro.db outputs/macro.db
+
+outputs:
+  - macro.sp
+  - macro.lib
+  - macro.lef
+  - macro.gds
+  - macro.db
+
+

@@ -2,7 +2,7 @@ module bgr_top (
     inout porst,
     inout va, 
     inout vb,
-    inout vbg,
+    inout vbg
  );
  
  wire vc;

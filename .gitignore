@@ -6,4 +6,5 @@ venv/
 inverter/build
 ringosc/build
 bgr_top/build
+5to32_demux/build
 debug/

@@ -57,6 +57,7 @@ def construct():
   netgen_lvs_def  = Step( this_dir + '/netgen-lvs-def'                  )
   magic_antenna   = Step( this_dir + '/open-magic-antenna'              )
   calibre_lvs     = Step( this_dir + '/mentor-calibre-comparison'       )
+  macro           = Step( this_dir + '/macro')
   # pt_power        = Step( this_dir + '/synopsys-pt-power')
   # pt_power_rtl    = pt_power.clone()
   # pt_power_gl     = pt_power.clone()
@@ -99,6 +100,7 @@ def construct():
   g.add_step( netgen_lvs_gds  )
   g.add_step( netgen_lvs_gds_device  )
   g.add_step( calibre_lvs     )
+  g.add_step( macro)
   #-----------------------------------------------------------------------
   # Graph -- Add edges
   #-----------------------------------------------------------------------
@@ -119,6 +121,7 @@ def construct():
   g.connect_by_name( adk,             netgen_lvs_gds  )
   g.connect_by_name( adk,             netgen_lvs_gds_device  )
   g.connect_by_name( adk,             calibre_lvs     )
+  g.connect_by_name( adk,             macro           )
   # g.connect_by_name( adk,             pt_timing       )
   # g.connect_by_name( adk,             pt_power_rtl    )
   # g.connect_by_name( adk,             pt_power_gl     )
@@ -157,6 +160,7 @@ def construct():
   # LVS comparision using Calibre
   g.connect_by_name( signoff,         calibre_lvs     )
   g.connect_by_name( magic_gds2spice, calibre_lvs     )
+  g.connect_by_name( signoff,         macro         )
   # Timing signoff
   # g.connect( signoff.o('design.spef.gz'),   pt_timing.i('design.spef.gz' ) )
   # g.connect( signoff.o('design.vcs.v'  ),   pt_timing.i('design.vcs.v'   ) )

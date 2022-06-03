@@ -1,0 +1,51 @@
+#=========================================================================
+# Cadence Innovus
+#=========================================================================
+# Author : Christopher Torng
+# Date   : October 30, 2019
+#
+
+name: bgr_top
+
+#-------------------------------------------------------------------------
+# Inputs and Outputs
+#-------------------------------------------------------------------------
+
+inputs:
+  - adk
+  - design-merged.gds
+  - design.lef
+
+outputs:
+  - design-merged.gds
+  - design.lef
+
+
+#-------------------------------------------------------------------------
+# Commands
+#-------------------------------------------------------------------------
+
+commands:
+  - cp inputs/adk/magicrc .magicrc
+  - cp inputs/design-merged.gds outputs/bgr_top.gds
+  - cp inputs/design.lef outputs/bgr_top.lef
+  - magic -noconsole -dnull gen_spice.tcl | tee gds2spice.log
+  - python string_swap.py
+  - cp macro.lib outputs/macro.lib
+  - lc_shell -f lc_shell_gen_db.tcl
+#-------------------------------------------------------------------------
+# Assertions
+#-------------------------------------------------------------------------
+
+preconditions:
+
+  - assert Tool( 'innovus' )                         # tool check
+  # - assert File( 'inputs/innovus-foundation-flow' )  # must exist
+  - assert File( 'inputs/adk' )                      # must exist
+  # - assert File( 'inputs/design.checkpoint' )        # must exist
+
+# postconditions:
+
+#   - assert File( 'outputs/design.checkpoint' )       # must exist
+
+
