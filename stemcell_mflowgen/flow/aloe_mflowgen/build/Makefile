@@ -58,7 +58,64 @@ endef
 
 # Default
 
-default: cadence-innovus-signoff skywater-130nm mentor-calibre-gdsmerge open-magic-def2spice netgen-lvs-def open-magic-antenna open-magic-drc open-magic-gds2spice mentor-calibre-comparison netgen-lvs-gds netgen-lvs-gds-device
+default: analog-skywater-130nm cadence-innovus-signoff mentor-calibre-gdsmerge open-magic-def2spice netgen-lvs-def open-magic-antenna open-magic-drc open-magic-gds2spice mentor-calibre-comparison netgen-lvs-gds netgen-lvs-gds-device
+
+# ------------------------------------------------------------------------
+# analog-skywater-130nm
+# ------------------------------------------------------------------------
+
+# build dir
+
+ifeq ("$(wildcard 0-analog-skywater-130nm/.prebuilt)","")
+0-analog-skywater-130nm/.stamp:
+	$(call cpdir-and-parameterize,0-analog-skywater-130nm,../../../../../mflowgen_flow/mflowgen/adks/skywater-130nm-analog-adk,0-analog-skywater-130nm/.stamp)
+endif
+
+# collect inputs
+
+# execute
+
+ifeq ("$(wildcard 0-analog-skywater-130nm/.prebuilt)","")
+
+define 0_analog_skywater_130nm_commands_rule
+	mkdir -p 0-analog-skywater-130nm/outputs && set -o pipefail && /home/users/xingyuni/ee372/mflowgen_flow/mflowgen/mflowgen/scripts/mflowgen-letters -c -t analog-skywater-130nm && chmod +x .mflowgen/0-analog-skywater-130nm/mflowgen-run && cp -f .mflowgen/0-analog-skywater-130nm/mflowgen-run 0-analog-skywater-130nm && if [[ -e .mflowgen/0-analog-skywater-130nm/mflowgen-debug ]]; then chmod +x .mflowgen/0-analog-skywater-130nm/mflowgen-debug && cp -f .mflowgen/0-analog-skywater-130nm/mflowgen-debug 0-analog-skywater-130nm; fi && if [[ -e .mflowgen/0-analog-skywater-130nm/mflowgen-check-preconditions.py ]]; then chmod +x .mflowgen/0-analog-skywater-130nm/mflowgen-check-preconditions.py && cp -f .mflowgen/0-analog-skywater-130nm/mflowgen-check-preconditions.py 0-analog-skywater-130nm; fi && if [[ -e .mflowgen/0-analog-skywater-130nm/mflowgen-check-postconditions.py ]]; then chmod +x .mflowgen/0-analog-skywater-130nm/mflowgen-check-postconditions.py && cp -f .mflowgen/0-analog-skywater-130nm/mflowgen-check-postconditions.py 0-analog-skywater-130nm; fi && cd 0-analog-skywater-130nm && if [[ -e mflowgen-check-preconditions.py ]]; then ./mflowgen-check-preconditions.py || exit 1; fi && ./mflowgen-run 2>&1 | tee mflowgen-run.log || exit 1 && cd .. && touch -c 0-analog-skywater-130nm/outputs/*
+endef
+
+0-analog-skywater-130nm/.execstamp: 0-analog-skywater-130nm/.stamp
+	$(call 0_analog_skywater_130nm_commands_rule)
+	touch $@
+
+0-analog-skywater-130nm/outputs/.execstamp.adk: 0-analog-skywater-130nm/.execstamp
+	touch $@
+
+endif
+
+# collect outputs
+
+0-analog-skywater-130nm/outputs/.stamp.adk: 0-analog-skywater-130nm/.execstamp 0-analog-skywater-130nm/outputs/.execstamp.adk
+	$(call stamp,0-analog-skywater-130nm/outputs/.stamp.adk)
+
+# post-conditions
+
+define 0_analog_skywater_130nm_post_conditions_commands_rule
+	cd 0-analog-skywater-130nm && if [[ -e mflowgen-check-postconditions.py ]]; then ./mflowgen-check-postconditions.py || exit 1; fi && cd ..
+endef
+
+0-analog-skywater-130nm/.postconditions.stamp: 0-analog-skywater-130nm/.execstamp 0-analog-skywater-130nm/outputs/.execstamp.adk 0-analog-skywater-130nm/outputs/.stamp.adk
+	$(call 0_analog_skywater_130nm_post_conditions_commands_rule)
+	touch $@
+
+# alias
+
+.PHONY: analog-skywater-130nm
+
+analog-skywater-130nm: 0-analog-skywater-130nm/.execstamp 0-analog-skywater-130nm/.postconditions.stamp 0-analog-skywater-130nm/outputs/.execstamp.adk 0-analog-skywater-130nm/outputs/.stamp.adk
+
+.PHONY: 0
+
+0: 0-analog-skywater-130nm/.execstamp 0-analog-skywater-130nm/.postconditions.stamp 0-analog-skywater-130nm/outputs/.execstamp.adk 0-analog-skywater-130nm/outputs/.stamp.adk
+
+# debug
 
 # ------------------------------------------------------------------------
 # cadence-innovus-signoff
@@ -66,126 +123,69 @@ default: cadence-innovus-signoff skywater-130nm mentor-calibre-gdsmerge open-mag
 
 # build dir
 
-ifeq ("$(wildcard 0-cadence-innovus-signoff/.prebuilt)","")
-0-cadence-innovus-signoff/.stamp:
-	$(call cpdir-and-parameterize,0-cadence-innovus-signoff,../design/cadence-innovus-signoff,0-cadence-innovus-signoff/.stamp)
+ifeq ("$(wildcard 1-cadence-innovus-signoff/.prebuilt)","")
+1-cadence-innovus-signoff/.stamp:
+	$(call cpdir-and-parameterize,1-cadence-innovus-signoff,../design/cadence-innovus-signoff,1-cadence-innovus-signoff/.stamp)
 endif
 
 # collect inputs
 
 # execute
 
-ifeq ("$(wildcard 0-cadence-innovus-signoff/.prebuilt)","")
+ifeq ("$(wildcard 1-cadence-innovus-signoff/.prebuilt)","")
 
-define 0_cadence_innovus_signoff_commands_rule
-	mkdir -p 0-cadence-innovus-signoff/outputs && set -o pipefail && /home/users/xingyuni/ee372/mflowgen_flow/mflowgen/mflowgen/scripts/mflowgen-letters -c -t cadence-innovus-signoff && chmod +x .mflowgen/0-cadence-innovus-signoff/mflowgen-run && cp -f .mflowgen/0-cadence-innovus-signoff/mflowgen-run 0-cadence-innovus-signoff && if [[ -e .mflowgen/0-cadence-innovus-signoff/mflowgen-debug ]]; then chmod +x .mflowgen/0-cadence-innovus-signoff/mflowgen-debug && cp -f .mflowgen/0-cadence-innovus-signoff/mflowgen-debug 0-cadence-innovus-signoff; fi && if [[ -e .mflowgen/0-cadence-innovus-signoff/mflowgen-check-preconditions.py ]]; then chmod +x .mflowgen/0-cadence-innovus-signoff/mflowgen-check-preconditions.py && cp -f .mflowgen/0-cadence-innovus-signoff/mflowgen-check-preconditions.py 0-cadence-innovus-signoff; fi && if [[ -e .mflowgen/0-cadence-innovus-signoff/mflowgen-check-postconditions.py ]]; then chmod +x .mflowgen/0-cadence-innovus-signoff/mflowgen-check-postconditions.py && cp -f .mflowgen/0-cadence-innovus-signoff/mflowgen-check-postconditions.py 0-cadence-innovus-signoff; fi && cd 0-cadence-innovus-signoff && if [[ -e mflowgen-check-preconditions.py ]]; then ./mflowgen-check-preconditions.py || exit 1; fi && ./mflowgen-run 2>&1 | tee mflowgen-run.log || exit 1 && cd .. && touch -c 0-cadence-innovus-signoff/outputs/*
+define 1_cadence_innovus_signoff_commands_rule
+	mkdir -p 1-cadence-innovus-signoff/outputs && set -o pipefail && /home/users/xingyuni/ee372/mflowgen_flow/mflowgen/mflowgen/scripts/mflowgen-letters -c -t cadence-innovus-signoff && chmod +x .mflowgen/1-cadence-innovus-signoff/mflowgen-run && cp -f .mflowgen/1-cadence-innovus-signoff/mflowgen-run 1-cadence-innovus-signoff && if [[ -e .mflowgen/1-cadence-innovus-signoff/mflowgen-debug ]]; then chmod +x .mflowgen/1-cadence-innovus-signoff/mflowgen-debug && cp -f .mflowgen/1-cadence-innovus-signoff/mflowgen-debug 1-cadence-innovus-signoff; fi && if [[ -e .mflowgen/1-cadence-innovus-signoff/mflowgen-check-preconditions.py ]]; then chmod +x .mflowgen/1-cadence-innovus-signoff/mflowgen-check-preconditions.py && cp -f .mflowgen/1-cadence-innovus-signoff/mflowgen-check-preconditions.py 1-cadence-innovus-signoff; fi && if [[ -e .mflowgen/1-cadence-innovus-signoff/mflowgen-check-postconditions.py ]]; then chmod +x .mflowgen/1-cadence-innovus-signoff/mflowgen-check-postconditions.py && cp -f .mflowgen/1-cadence-innovus-signoff/mflowgen-check-postconditions.py 1-cadence-innovus-signoff; fi && cd 1-cadence-innovus-signoff && if [[ -e mflowgen-check-preconditions.py ]]; then ./mflowgen-check-preconditions.py || exit 1; fi && ./mflowgen-run 2>&1 | tee mflowgen-run.log || exit 1 && cd .. && touch -c 1-cadence-innovus-signoff/outputs/*
 endef
 
-0-cadence-innovus-signoff/.execstamp: 0-cadence-innovus-signoff/.stamp
-	$(call 0_cadence_innovus_signoff_commands_rule)
+1-cadence-innovus-signoff/.execstamp: 1-cadence-innovus-signoff/.stamp
+	$(call 1_cadence_innovus_signoff_commands_rule)
 	touch $@
 
-0-cadence-innovus-signoff/outputs/.execstamp.design.gds.gz: 0-cadence-innovus-signoff/.execstamp
+1-cadence-innovus-signoff/outputs/.execstamp.design.gds.gz: 1-cadence-innovus-signoff/.execstamp
 	touch $@
-0-cadence-innovus-signoff/outputs/.execstamp.design-merged.gds: 0-cadence-innovus-signoff/.execstamp
+1-cadence-innovus-signoff/outputs/.execstamp.design-merged.gds: 1-cadence-innovus-signoff/.execstamp
 	touch $@
-0-cadence-innovus-signoff/outputs/.execstamp.design.lvs.v: 0-cadence-innovus-signoff/.execstamp
+1-cadence-innovus-signoff/outputs/.execstamp.design.lvs.v: 1-cadence-innovus-signoff/.execstamp
 	touch $@
-0-cadence-innovus-signoff/outputs/.execstamp.design.def.gz: 0-cadence-innovus-signoff/.execstamp
+1-cadence-innovus-signoff/outputs/.execstamp.design.def.gz: 1-cadence-innovus-signoff/.execstamp
 	touch $@
 
 endif
 
 # collect outputs
 
-0-cadence-innovus-signoff/outputs/.stamp.design.gds.gz: 0-cadence-innovus-signoff/.execstamp 0-cadence-innovus-signoff/outputs/.execstamp.design-merged.gds 0-cadence-innovus-signoff/outputs/.execstamp.design.def.gz 0-cadence-innovus-signoff/outputs/.execstamp.design.gds.gz 0-cadence-innovus-signoff/outputs/.execstamp.design.lvs.v
-	$(call stamp,0-cadence-innovus-signoff/outputs/.stamp.design.gds.gz)
+1-cadence-innovus-signoff/outputs/.stamp.design.gds.gz: 1-cadence-innovus-signoff/.execstamp 1-cadence-innovus-signoff/outputs/.execstamp.design-merged.gds 1-cadence-innovus-signoff/outputs/.execstamp.design.def.gz 1-cadence-innovus-signoff/outputs/.execstamp.design.gds.gz 1-cadence-innovus-signoff/outputs/.execstamp.design.lvs.v
+	$(call stamp,1-cadence-innovus-signoff/outputs/.stamp.design.gds.gz)
 
-0-cadence-innovus-signoff/outputs/.stamp.design-merged.gds: 0-cadence-innovus-signoff/.execstamp 0-cadence-innovus-signoff/outputs/.execstamp.design-merged.gds 0-cadence-innovus-signoff/outputs/.execstamp.design.def.gz 0-cadence-innovus-signoff/outputs/.execstamp.design.gds.gz 0-cadence-innovus-signoff/outputs/.execstamp.design.lvs.v
-	$(call stamp,0-cadence-innovus-signoff/outputs/.stamp.design-merged.gds)
+1-cadence-innovus-signoff/outputs/.stamp.design-merged.gds: 1-cadence-innovus-signoff/.execstamp 1-cadence-innovus-signoff/outputs/.execstamp.design-merged.gds 1-cadence-innovus-signoff/outputs/.execstamp.design.def.gz 1-cadence-innovus-signoff/outputs/.execstamp.design.gds.gz 1-cadence-innovus-signoff/outputs/.execstamp.design.lvs.v
+	$(call stamp,1-cadence-innovus-signoff/outputs/.stamp.design-merged.gds)
 
-0-cadence-innovus-signoff/outputs/.stamp.design.lvs.v: 0-cadence-innovus-signoff/.execstamp 0-cadence-innovus-signoff/outputs/.execstamp.design-merged.gds 0-cadence-innovus-signoff/outputs/.execstamp.design.def.gz 0-cadence-innovus-signoff/outputs/.execstamp.design.gds.gz 0-cadence-innovus-signoff/outputs/.execstamp.design.lvs.v
-	$(call stamp,0-cadence-innovus-signoff/outputs/.stamp.design.lvs.v)
+1-cadence-innovus-signoff/outputs/.stamp.design.lvs.v: 1-cadence-innovus-signoff/.execstamp 1-cadence-innovus-signoff/outputs/.execstamp.design-merged.gds 1-cadence-innovus-signoff/outputs/.execstamp.design.def.gz 1-cadence-innovus-signoff/outputs/.execstamp.design.gds.gz 1-cadence-innovus-signoff/outputs/.execstamp.design.lvs.v
+	$(call stamp,1-cadence-innovus-signoff/outputs/.stamp.design.lvs.v)
 
-0-cadence-innovus-signoff/outputs/.stamp.design.def.gz: 0-cadence-innovus-signoff/.execstamp 0-cadence-innovus-signoff/outputs/.execstamp.design-merged.gds 0-cadence-innovus-signoff/outputs/.execstamp.design.def.gz 0-cadence-innovus-signoff/outputs/.execstamp.design.gds.gz 0-cadence-innovus-signoff/outputs/.execstamp.design.lvs.v
-	$(call stamp,0-cadence-innovus-signoff/outputs/.stamp.design.def.gz)
+1-cadence-innovus-signoff/outputs/.stamp.design.def.gz: 1-cadence-innovus-signoff/.execstamp 1-cadence-innovus-signoff/outputs/.execstamp.design-merged.gds 1-cadence-innovus-signoff/outputs/.execstamp.design.def.gz 1-cadence-innovus-signoff/outputs/.execstamp.design.gds.gz 1-cadence-innovus-signoff/outputs/.execstamp.design.lvs.v
+	$(call stamp,1-cadence-innovus-signoff/outputs/.stamp.design.def.gz)
 
 # post-conditions
 
-define 0_cadence_innovus_signoff_post_conditions_commands_rule
-	cd 0-cadence-innovus-signoff && if [[ -e mflowgen-check-postconditions.py ]]; then ./mflowgen-check-postconditions.py || exit 1; fi && cd ..
+define 1_cadence_innovus_signoff_post_conditions_commands_rule
+	cd 1-cadence-innovus-signoff && if [[ -e mflowgen-check-postconditions.py ]]; then ./mflowgen-check-postconditions.py || exit 1; fi && cd ..
 endef
 
-0-cadence-innovus-signoff/.postconditions.stamp: 0-cadence-innovus-signoff/.execstamp 0-cadence-innovus-signoff/outputs/.execstamp.design-merged.gds 0-cadence-innovus-signoff/outputs/.execstamp.design.def.gz 0-cadence-innovus-signoff/outputs/.execstamp.design.gds.gz 0-cadence-innovus-signoff/outputs/.execstamp.design.lvs.v 0-cadence-innovus-signoff/outputs/.stamp.design-merged.gds 0-cadence-innovus-signoff/outputs/.stamp.design.def.gz 0-cadence-innovus-signoff/outputs/.stamp.design.gds.gz 0-cadence-innovus-signoff/outputs/.stamp.design.lvs.v
-	$(call 0_cadence_innovus_signoff_post_conditions_commands_rule)
+1-cadence-innovus-signoff/.postconditions.stamp: 1-cadence-innovus-signoff/.execstamp 1-cadence-innovus-signoff/outputs/.execstamp.design-merged.gds 1-cadence-innovus-signoff/outputs/.execstamp.design.def.gz 1-cadence-innovus-signoff/outputs/.execstamp.design.gds.gz 1-cadence-innovus-signoff/outputs/.execstamp.design.lvs.v 1-cadence-innovus-signoff/outputs/.stamp.design-merged.gds 1-cadence-innovus-signoff/outputs/.stamp.design.def.gz 1-cadence-innovus-signoff/outputs/.stamp.design.gds.gz 1-cadence-innovus-signoff/outputs/.stamp.design.lvs.v
+	$(call 1_cadence_innovus_signoff_post_conditions_commands_rule)
 	touch $@
 
 # alias
 
 .PHONY: cadence-innovus-signoff
 
-cadence-innovus-signoff: 0-cadence-innovus-signoff/.execstamp 0-cadence-innovus-signoff/.postconditions.stamp 0-cadence-innovus-signoff/outputs/.execstamp.design-merged.gds 0-cadence-innovus-signoff/outputs/.execstamp.design.def.gz 0-cadence-innovus-signoff/outputs/.execstamp.design.gds.gz 0-cadence-innovus-signoff/outputs/.execstamp.design.lvs.v 0-cadence-innovus-signoff/outputs/.stamp.design-merged.gds 0-cadence-innovus-signoff/outputs/.stamp.design.def.gz 0-cadence-innovus-signoff/outputs/.stamp.design.gds.gz 0-cadence-innovus-signoff/outputs/.stamp.design.lvs.v
-
-.PHONY: 0
-
-0: 0-cadence-innovus-signoff/.execstamp 0-cadence-innovus-signoff/.postconditions.stamp 0-cadence-innovus-signoff/outputs/.execstamp.design-merged.gds 0-cadence-innovus-signoff/outputs/.execstamp.design.def.gz 0-cadence-innovus-signoff/outputs/.execstamp.design.gds.gz 0-cadence-innovus-signoff/outputs/.execstamp.design.lvs.v 0-cadence-innovus-signoff/outputs/.stamp.design-merged.gds 0-cadence-innovus-signoff/outputs/.stamp.design.def.gz 0-cadence-innovus-signoff/outputs/.stamp.design.gds.gz 0-cadence-innovus-signoff/outputs/.stamp.design.lvs.v
-
-# debug
-
-# ------------------------------------------------------------------------
-# skywater-130nm
-# ------------------------------------------------------------------------
-
-# build dir
-
-ifeq ("$(wildcard 1-skywater-130nm/.prebuilt)","")
-1-skywater-130nm/.stamp:
-	$(call cpdir-and-parameterize,1-skywater-130nm,../../../../../mflowgen_flow/mflowgen/adks/skywater-130nm-analog-adk,1-skywater-130nm/.stamp)
-endif
-
-# collect inputs
-
-# execute
-
-ifeq ("$(wildcard 1-skywater-130nm/.prebuilt)","")
-
-define 1_skywater_130nm_commands_rule
-	mkdir -p 1-skywater-130nm/outputs && set -o pipefail && /home/users/xingyuni/ee372/mflowgen_flow/mflowgen/mflowgen/scripts/mflowgen-letters -c -t skywater-130nm && chmod +x .mflowgen/1-skywater-130nm/mflowgen-run && cp -f .mflowgen/1-skywater-130nm/mflowgen-run 1-skywater-130nm && if [[ -e .mflowgen/1-skywater-130nm/mflowgen-debug ]]; then chmod +x .mflowgen/1-skywater-130nm/mflowgen-debug && cp -f .mflowgen/1-skywater-130nm/mflowgen-debug 1-skywater-130nm; fi && if [[ -e .mflowgen/1-skywater-130nm/mflowgen-check-preconditions.py ]]; then chmod +x .mflowgen/1-skywater-130nm/mflowgen-check-preconditions.py && cp -f .mflowgen/1-skywater-130nm/mflowgen-check-preconditions.py 1-skywater-130nm; fi && if [[ -e .mflowgen/1-skywater-130nm/mflowgen-check-postconditions.py ]]; then chmod +x .mflowgen/1-skywater-130nm/mflowgen-check-postconditions.py && cp -f .mflowgen/1-skywater-130nm/mflowgen-check-postconditions.py 1-skywater-130nm; fi && cd 1-skywater-130nm && if [[ -e mflowgen-check-preconditions.py ]]; then ./mflowgen-check-preconditions.py || exit 1; fi && ./mflowgen-run 2>&1 | tee mflowgen-run.log || exit 1 && cd .. && touch -c 1-skywater-130nm/outputs/*
-endef
-
-1-skywater-130nm/.execstamp: 1-skywater-130nm/.stamp
-	$(call 1_skywater_130nm_commands_rule)
-	touch $@
-
-1-skywater-130nm/outputs/.execstamp.adk: 1-skywater-130nm/.execstamp
-	touch $@
-
-endif
-
-# collect outputs
-
-1-skywater-130nm/outputs/.stamp.adk: 1-skywater-130nm/.execstamp 1-skywater-130nm/outputs/.execstamp.adk
-	$(call stamp,1-skywater-130nm/outputs/.stamp.adk)
-
-# post-conditions
-
-define 1_skywater_130nm_post_conditions_commands_rule
-	cd 1-skywater-130nm && if [[ -e mflowgen-check-postconditions.py ]]; then ./mflowgen-check-postconditions.py || exit 1; fi && cd ..
-endef
-
-1-skywater-130nm/.postconditions.stamp: 1-skywater-130nm/.execstamp 1-skywater-130nm/outputs/.execstamp.adk 1-skywater-130nm/outputs/.stamp.adk
-	$(call 1_skywater_130nm_post_conditions_commands_rule)
-	touch $@
-
-# alias
-
-.PHONY: skywater-130nm
-
-skywater-130nm: 1-skywater-130nm/.execstamp 1-skywater-130nm/.postconditions.stamp 1-skywater-130nm/outputs/.execstamp.adk 1-skywater-130nm/outputs/.stamp.adk
+cadence-innovus-signoff: 1-cadence-innovus-signoff/.execstamp 1-cadence-innovus-signoff/.postconditions.stamp 1-cadence-innovus-signoff/outputs/.execstamp.design-merged.gds 1-cadence-innovus-signoff/outputs/.execstamp.design.def.gz 1-cadence-innovus-signoff/outputs/.execstamp.design.gds.gz 1-cadence-innovus-signoff/outputs/.execstamp.design.lvs.v 1-cadence-innovus-signoff/outputs/.stamp.design-merged.gds 1-cadence-innovus-signoff/outputs/.stamp.design.def.gz 1-cadence-innovus-signoff/outputs/.stamp.design.gds.gz 1-cadence-innovus-signoff/outputs/.stamp.design.lvs.v
 
 .PHONY: 1
 
-1: 1-skywater-130nm/.execstamp 1-skywater-130nm/.postconditions.stamp 1-skywater-130nm/outputs/.execstamp.adk 1-skywater-130nm/outputs/.stamp.adk
+1: 1-cadence-innovus-signoff/.execstamp 1-cadence-innovus-signoff/.postconditions.stamp 1-cadence-innovus-signoff/outputs/.execstamp.design-merged.gds 1-cadence-innovus-signoff/outputs/.execstamp.design.def.gz 1-cadence-innovus-signoff/outputs/.execstamp.design.gds.gz 1-cadence-innovus-signoff/outputs/.execstamp.design.lvs.v 1-cadence-innovus-signoff/outputs/.stamp.design-merged.gds 1-cadence-innovus-signoff/outputs/.stamp.design.def.gz 1-cadence-innovus-signoff/outputs/.stamp.design.gds.gz 1-cadence-innovus-signoff/outputs/.stamp.design.lvs.v
 
 # debug
 
@@ -196,8 +196,8 @@ skywater-130nm: 1-skywater-130nm/.execstamp 1-skywater-130nm/.postconditions.sta
 # build dir
 
 ifeq ("$(wildcard 2-mentor-calibre-gdsmerge/.prebuilt)","")
-2-mentor-calibre-gdsmerge/.stamp: 0-cadence-innovus-signoff/.execstamp 0-cadence-innovus-signoff/.postconditions.stamp 0-cadence-innovus-signoff/outputs/.execstamp.design-merged.gds 0-cadence-innovus-signoff/outputs/.execstamp.design.def.gz 0-cadence-innovus-signoff/outputs/.execstamp.design.gds.gz 0-cadence-innovus-signoff/outputs/.execstamp.design.lvs.v 0-cadence-innovus-signoff/outputs/.stamp.design-merged.gds 0-cadence-innovus-signoff/outputs/.stamp.design.def.gz 0-cadence-innovus-signoff/outputs/.stamp.design.gds.gz 0-cadence-innovus-signoff/outputs/.stamp.design.lvs.v
-2-mentor-calibre-gdsmerge/.stamp: 1-skywater-130nm/.execstamp 1-skywater-130nm/.postconditions.stamp 1-skywater-130nm/outputs/.execstamp.adk 1-skywater-130nm/outputs/.stamp.adk
+2-mentor-calibre-gdsmerge/.stamp: 0-analog-skywater-130nm/.execstamp 0-analog-skywater-130nm/.postconditions.stamp 0-analog-skywater-130nm/outputs/.execstamp.adk 0-analog-skywater-130nm/outputs/.stamp.adk
+2-mentor-calibre-gdsmerge/.stamp: 1-cadence-innovus-signoff/.execstamp 1-cadence-innovus-signoff/.postconditions.stamp 1-cadence-innovus-signoff/outputs/.execstamp.design-merged.gds 1-cadence-innovus-signoff/outputs/.execstamp.design.def.gz 1-cadence-innovus-signoff/outputs/.execstamp.design.gds.gz 1-cadence-innovus-signoff/outputs/.execstamp.design.lvs.v 1-cadence-innovus-signoff/outputs/.stamp.design-merged.gds 1-cadence-innovus-signoff/outputs/.stamp.design.def.gz 1-cadence-innovus-signoff/outputs/.stamp.design.gds.gz 1-cadence-innovus-signoff/outputs/.stamp.design.lvs.v
 2-mentor-calibre-gdsmerge/.stamp:
 	$(call cpdir-and-parameterize,2-mentor-calibre-gdsmerge,../../../../../mflowgen_flow/mflowgen/steps/mentor-calibre-gdsmerge,2-mentor-calibre-gdsmerge/.stamp)
 endif
@@ -205,13 +205,13 @@ endif
 # collect inputs
 
 ifeq ("$(wildcard 2-mentor-calibre-gdsmerge/.prebuilt)","")
-2-mentor-calibre-gdsmerge/inputs/.stamp.adk: 2-mentor-calibre-gdsmerge/.stamp 1-skywater-130nm/outputs/.stamp.adk
-	$(call symlink,2-mentor-calibre-gdsmerge/inputs,adk,../../1-skywater-130nm/outputs/adk,.stamp.adk)
+2-mentor-calibre-gdsmerge/inputs/.stamp.adk: 2-mentor-calibre-gdsmerge/.stamp 0-analog-skywater-130nm/outputs/.stamp.adk
+	$(call symlink,2-mentor-calibre-gdsmerge/inputs,adk,../../0-analog-skywater-130nm/outputs/adk,.stamp.adk)
 endif
 
 ifeq ("$(wildcard 2-mentor-calibre-gdsmerge/.prebuilt)","")
-2-mentor-calibre-gdsmerge/inputs/.stamp.design.gds.gz: 2-mentor-calibre-gdsmerge/.stamp 0-cadence-innovus-signoff/outputs/.stamp.design.gds.gz
-	$(call symlink,2-mentor-calibre-gdsmerge/inputs,design.gds.gz,../../0-cadence-innovus-signoff/outputs/design.gds.gz,.stamp.design.gds.gz)
+2-mentor-calibre-gdsmerge/inputs/.stamp.design.gds.gz: 2-mentor-calibre-gdsmerge/.stamp 1-cadence-innovus-signoff/outputs/.stamp.design.gds.gz
+	$(call symlink,2-mentor-calibre-gdsmerge/inputs,design.gds.gz,../../1-cadence-innovus-signoff/outputs/design.gds.gz,.stamp.design.gds.gz)
 endif
 
 # execute
@@ -276,8 +276,8 @@ debug-2: debug-mentor-calibre-gdsmerge
 # build dir
 
 ifeq ("$(wildcard 3-open-magic-def2spice/.prebuilt)","")
-3-open-magic-def2spice/.stamp: 0-cadence-innovus-signoff/.execstamp 0-cadence-innovus-signoff/.postconditions.stamp 0-cadence-innovus-signoff/outputs/.execstamp.design-merged.gds 0-cadence-innovus-signoff/outputs/.execstamp.design.def.gz 0-cadence-innovus-signoff/outputs/.execstamp.design.gds.gz 0-cadence-innovus-signoff/outputs/.execstamp.design.lvs.v 0-cadence-innovus-signoff/outputs/.stamp.design-merged.gds 0-cadence-innovus-signoff/outputs/.stamp.design.def.gz 0-cadence-innovus-signoff/outputs/.stamp.design.gds.gz 0-cadence-innovus-signoff/outputs/.stamp.design.lvs.v
-3-open-magic-def2spice/.stamp: 1-skywater-130nm/.execstamp 1-skywater-130nm/.postconditions.stamp 1-skywater-130nm/outputs/.execstamp.adk 1-skywater-130nm/outputs/.stamp.adk
+3-open-magic-def2spice/.stamp: 0-analog-skywater-130nm/.execstamp 0-analog-skywater-130nm/.postconditions.stamp 0-analog-skywater-130nm/outputs/.execstamp.adk 0-analog-skywater-130nm/outputs/.stamp.adk
+3-open-magic-def2spice/.stamp: 1-cadence-innovus-signoff/.execstamp 1-cadence-innovus-signoff/.postconditions.stamp 1-cadence-innovus-signoff/outputs/.execstamp.design-merged.gds 1-cadence-innovus-signoff/outputs/.execstamp.design.def.gz 1-cadence-innovus-signoff/outputs/.execstamp.design.gds.gz 1-cadence-innovus-signoff/outputs/.execstamp.design.lvs.v 1-cadence-innovus-signoff/outputs/.stamp.design-merged.gds 1-cadence-innovus-signoff/outputs/.stamp.design.def.gz 1-cadence-innovus-signoff/outputs/.stamp.design.gds.gz 1-cadence-innovus-signoff/outputs/.stamp.design.lvs.v
 3-open-magic-def2spice/.stamp:
 	$(call cpdir-and-parameterize,3-open-magic-def2spice,../design/open-magic-def2spice,3-open-magic-def2spice/.stamp)
 endif
@@ -285,13 +285,13 @@ endif
 # collect inputs
 
 ifeq ("$(wildcard 3-open-magic-def2spice/.prebuilt)","")
-3-open-magic-def2spice/inputs/.stamp.adk: 3-open-magic-def2spice/.stamp 1-skywater-130nm/outputs/.stamp.adk
-	$(call symlink,3-open-magic-def2spice/inputs,adk,../../1-skywater-130nm/outputs/adk,.stamp.adk)
+3-open-magic-def2spice/inputs/.stamp.adk: 3-open-magic-def2spice/.stamp 0-analog-skywater-130nm/outputs/.stamp.adk
+	$(call symlink,3-open-magic-def2spice/inputs,adk,../../0-analog-skywater-130nm/outputs/adk,.stamp.adk)
 endif
 
 ifeq ("$(wildcard 3-open-magic-def2spice/.prebuilt)","")
-3-open-magic-def2spice/inputs/.stamp.design.def.gz: 3-open-magic-def2spice/.stamp 0-cadence-innovus-signoff/outputs/.stamp.design.def.gz
-	$(call symlink,3-open-magic-def2spice/inputs,design.def.gz,../../0-cadence-innovus-signoff/outputs/design.def.gz,.stamp.design.def.gz)
+3-open-magic-def2spice/inputs/.stamp.design.def.gz: 3-open-magic-def2spice/.stamp 1-cadence-innovus-signoff/outputs/.stamp.design.def.gz
+	$(call symlink,3-open-magic-def2spice/inputs,design.def.gz,../../1-cadence-innovus-signoff/outputs/design.def.gz,.stamp.design.def.gz)
 endif
 
 # execute
@@ -345,8 +345,8 @@ open-magic-def2spice: 3-open-magic-def2spice/.execstamp 3-open-magic-def2spice/.
 # build dir
 
 ifeq ("$(wildcard 4-netgen-lvs-def/.prebuilt)","")
-4-netgen-lvs-def/.stamp: 0-cadence-innovus-signoff/.execstamp 0-cadence-innovus-signoff/.postconditions.stamp 0-cadence-innovus-signoff/outputs/.execstamp.design-merged.gds 0-cadence-innovus-signoff/outputs/.execstamp.design.def.gz 0-cadence-innovus-signoff/outputs/.execstamp.design.gds.gz 0-cadence-innovus-signoff/outputs/.execstamp.design.lvs.v 0-cadence-innovus-signoff/outputs/.stamp.design-merged.gds 0-cadence-innovus-signoff/outputs/.stamp.design.def.gz 0-cadence-innovus-signoff/outputs/.stamp.design.gds.gz 0-cadence-innovus-signoff/outputs/.stamp.design.lvs.v
-4-netgen-lvs-def/.stamp: 1-skywater-130nm/.execstamp 1-skywater-130nm/.postconditions.stamp 1-skywater-130nm/outputs/.execstamp.adk 1-skywater-130nm/outputs/.stamp.adk
+4-netgen-lvs-def/.stamp: 0-analog-skywater-130nm/.execstamp 0-analog-skywater-130nm/.postconditions.stamp 0-analog-skywater-130nm/outputs/.execstamp.adk 0-analog-skywater-130nm/outputs/.stamp.adk
+4-netgen-lvs-def/.stamp: 1-cadence-innovus-signoff/.execstamp 1-cadence-innovus-signoff/.postconditions.stamp 1-cadence-innovus-signoff/outputs/.execstamp.design-merged.gds 1-cadence-innovus-signoff/outputs/.execstamp.design.def.gz 1-cadence-innovus-signoff/outputs/.execstamp.design.gds.gz 1-cadence-innovus-signoff/outputs/.execstamp.design.lvs.v 1-cadence-innovus-signoff/outputs/.stamp.design-merged.gds 1-cadence-innovus-signoff/outputs/.stamp.design.def.gz 1-cadence-innovus-signoff/outputs/.stamp.design.gds.gz 1-cadence-innovus-signoff/outputs/.stamp.design.lvs.v
 4-netgen-lvs-def/.stamp: 3-open-magic-def2spice/.execstamp 3-open-magic-def2spice/.postconditions.stamp 3-open-magic-def2spice/outputs/.execstamp.design_extracted.spice 3-open-magic-def2spice/outputs/.stamp.design_extracted.spice
 4-netgen-lvs-def/.stamp:
 	$(call cpdir-and-parameterize,4-netgen-lvs-def,../design/netgen-lvs-def,4-netgen-lvs-def/.stamp)
@@ -355,13 +355,13 @@ endif
 # collect inputs
 
 ifeq ("$(wildcard 4-netgen-lvs-def/.prebuilt)","")
-4-netgen-lvs-def/inputs/.stamp.adk: 4-netgen-lvs-def/.stamp 1-skywater-130nm/outputs/.stamp.adk
-	$(call symlink,4-netgen-lvs-def/inputs,adk,../../1-skywater-130nm/outputs/adk,.stamp.adk)
+4-netgen-lvs-def/inputs/.stamp.adk: 4-netgen-lvs-def/.stamp 0-analog-skywater-130nm/outputs/.stamp.adk
+	$(call symlink,4-netgen-lvs-def/inputs,adk,../../0-analog-skywater-130nm/outputs/adk,.stamp.adk)
 endif
 
 ifeq ("$(wildcard 4-netgen-lvs-def/.prebuilt)","")
-4-netgen-lvs-def/inputs/.stamp.design.lvs.v: 4-netgen-lvs-def/.stamp 0-cadence-innovus-signoff/outputs/.stamp.design.lvs.v
-	$(call symlink,4-netgen-lvs-def/inputs,design.lvs.v,../../0-cadence-innovus-signoff/outputs/design.lvs.v,.stamp.design.lvs.v)
+4-netgen-lvs-def/inputs/.stamp.design.lvs.v: 4-netgen-lvs-def/.stamp 1-cadence-innovus-signoff/outputs/.stamp.design.lvs.v
+	$(call symlink,4-netgen-lvs-def/inputs,design.lvs.v,../../1-cadence-innovus-signoff/outputs/design.lvs.v,.stamp.design.lvs.v)
 endif
 
 ifeq ("$(wildcard 4-netgen-lvs-def/.prebuilt)","")
@@ -420,7 +420,7 @@ netgen-lvs-def: 4-netgen-lvs-def/.execstamp 4-netgen-lvs-def/.postconditions.sta
 # build dir
 
 ifeq ("$(wildcard 5-open-magic-antenna/.prebuilt)","")
-5-open-magic-antenna/.stamp: 1-skywater-130nm/.execstamp 1-skywater-130nm/.postconditions.stamp 1-skywater-130nm/outputs/.execstamp.adk 1-skywater-130nm/outputs/.stamp.adk
+5-open-magic-antenna/.stamp: 0-analog-skywater-130nm/.execstamp 0-analog-skywater-130nm/.postconditions.stamp 0-analog-skywater-130nm/outputs/.execstamp.adk 0-analog-skywater-130nm/outputs/.stamp.adk
 5-open-magic-antenna/.stamp: 2-mentor-calibre-gdsmerge/.execstamp 2-mentor-calibre-gdsmerge/.postconditions.stamp 2-mentor-calibre-gdsmerge/outputs/.execstamp.design_merged.gds 2-mentor-calibre-gdsmerge/outputs/.stamp.design_merged.gds
 5-open-magic-antenna/.stamp:
 	$(call cpdir-and-parameterize,5-open-magic-antenna,../design/open-magic-antenna,5-open-magic-antenna/.stamp)
@@ -429,8 +429,8 @@ endif
 # collect inputs
 
 ifeq ("$(wildcard 5-open-magic-antenna/.prebuilt)","")
-5-open-magic-antenna/inputs/.stamp.adk: 5-open-magic-antenna/.stamp 1-skywater-130nm/outputs/.stamp.adk
-	$(call symlink,5-open-magic-antenna/inputs,adk,../../1-skywater-130nm/outputs/adk,.stamp.adk)
+5-open-magic-antenna/inputs/.stamp.adk: 5-open-magic-antenna/.stamp 0-analog-skywater-130nm/outputs/.stamp.adk
+	$(call symlink,5-open-magic-antenna/inputs,adk,../../0-analog-skywater-130nm/outputs/adk,.stamp.adk)
 endif
 
 ifeq ("$(wildcard 5-open-magic-antenna/.prebuilt)","")
@@ -489,7 +489,7 @@ open-magic-antenna: 5-open-magic-antenna/.execstamp 5-open-magic-antenna/.postco
 # build dir
 
 ifeq ("$(wildcard 6-open-magic-drc/.prebuilt)","")
-6-open-magic-drc/.stamp: 1-skywater-130nm/.execstamp 1-skywater-130nm/.postconditions.stamp 1-skywater-130nm/outputs/.execstamp.adk 1-skywater-130nm/outputs/.stamp.adk
+6-open-magic-drc/.stamp: 0-analog-skywater-130nm/.execstamp 0-analog-skywater-130nm/.postconditions.stamp 0-analog-skywater-130nm/outputs/.execstamp.adk 0-analog-skywater-130nm/outputs/.stamp.adk
 6-open-magic-drc/.stamp: 2-mentor-calibre-gdsmerge/.execstamp 2-mentor-calibre-gdsmerge/.postconditions.stamp 2-mentor-calibre-gdsmerge/outputs/.execstamp.design_merged.gds 2-mentor-calibre-gdsmerge/outputs/.stamp.design_merged.gds
 6-open-magic-drc/.stamp:
 	$(call cpdir-and-parameterize,6-open-magic-drc,../design/open-magic-drc,6-open-magic-drc/.stamp)
@@ -498,8 +498,8 @@ endif
 # collect inputs
 
 ifeq ("$(wildcard 6-open-magic-drc/.prebuilt)","")
-6-open-magic-drc/inputs/.stamp.adk: 6-open-magic-drc/.stamp 1-skywater-130nm/outputs/.stamp.adk
-	$(call symlink,6-open-magic-drc/inputs,adk,../../1-skywater-130nm/outputs/adk,.stamp.adk)
+6-open-magic-drc/inputs/.stamp.adk: 6-open-magic-drc/.stamp 0-analog-skywater-130nm/outputs/.stamp.adk
+	$(call symlink,6-open-magic-drc/inputs,adk,../../0-analog-skywater-130nm/outputs/adk,.stamp.adk)
 endif
 
 ifeq ("$(wildcard 6-open-magic-drc/.prebuilt)","")
@@ -558,7 +558,7 @@ open-magic-drc: 6-open-magic-drc/.execstamp 6-open-magic-drc/.postconditions.sta
 # build dir
 
 ifeq ("$(wildcard 7-open-magic-gds2spice/.prebuilt)","")
-7-open-magic-gds2spice/.stamp: 1-skywater-130nm/.execstamp 1-skywater-130nm/.postconditions.stamp 1-skywater-130nm/outputs/.execstamp.adk 1-skywater-130nm/outputs/.stamp.adk
+7-open-magic-gds2spice/.stamp: 0-analog-skywater-130nm/.execstamp 0-analog-skywater-130nm/.postconditions.stamp 0-analog-skywater-130nm/outputs/.execstamp.adk 0-analog-skywater-130nm/outputs/.stamp.adk
 7-open-magic-gds2spice/.stamp: 2-mentor-calibre-gdsmerge/.execstamp 2-mentor-calibre-gdsmerge/.postconditions.stamp 2-mentor-calibre-gdsmerge/outputs/.execstamp.design_merged.gds 2-mentor-calibre-gdsmerge/outputs/.stamp.design_merged.gds
 7-open-magic-gds2spice/.stamp:
 	$(call cpdir-and-parameterize,7-open-magic-gds2spice,../design/open-magic-gds2spice,7-open-magic-gds2spice/.stamp)
@@ -567,8 +567,8 @@ endif
 # collect inputs
 
 ifeq ("$(wildcard 7-open-magic-gds2spice/.prebuilt)","")
-7-open-magic-gds2spice/inputs/.stamp.adk: 7-open-magic-gds2spice/.stamp 1-skywater-130nm/outputs/.stamp.adk
-	$(call symlink,7-open-magic-gds2spice/inputs,adk,../../1-skywater-130nm/outputs/adk,.stamp.adk)
+7-open-magic-gds2spice/inputs/.stamp.adk: 7-open-magic-gds2spice/.stamp 0-analog-skywater-130nm/outputs/.stamp.adk
+	$(call symlink,7-open-magic-gds2spice/inputs,adk,../../0-analog-skywater-130nm/outputs/adk,.stamp.adk)
 endif
 
 ifeq ("$(wildcard 7-open-magic-gds2spice/.prebuilt)","")
@@ -627,8 +627,8 @@ open-magic-gds2spice: 7-open-magic-gds2spice/.execstamp 7-open-magic-gds2spice/.
 # build dir
 
 ifeq ("$(wildcard 8-mentor-calibre-comparison/.prebuilt)","")
-8-mentor-calibre-comparison/.stamp: 0-cadence-innovus-signoff/.execstamp 0-cadence-innovus-signoff/.postconditions.stamp 0-cadence-innovus-signoff/outputs/.execstamp.design-merged.gds 0-cadence-innovus-signoff/outputs/.execstamp.design.def.gz 0-cadence-innovus-signoff/outputs/.execstamp.design.gds.gz 0-cadence-innovus-signoff/outputs/.execstamp.design.lvs.v 0-cadence-innovus-signoff/outputs/.stamp.design-merged.gds 0-cadence-innovus-signoff/outputs/.stamp.design.def.gz 0-cadence-innovus-signoff/outputs/.stamp.design.gds.gz 0-cadence-innovus-signoff/outputs/.stamp.design.lvs.v
-8-mentor-calibre-comparison/.stamp: 1-skywater-130nm/.execstamp 1-skywater-130nm/.postconditions.stamp 1-skywater-130nm/outputs/.execstamp.adk 1-skywater-130nm/outputs/.stamp.adk
+8-mentor-calibre-comparison/.stamp: 0-analog-skywater-130nm/.execstamp 0-analog-skywater-130nm/.postconditions.stamp 0-analog-skywater-130nm/outputs/.execstamp.adk 0-analog-skywater-130nm/outputs/.stamp.adk
+8-mentor-calibre-comparison/.stamp: 1-cadence-innovus-signoff/.execstamp 1-cadence-innovus-signoff/.postconditions.stamp 1-cadence-innovus-signoff/outputs/.execstamp.design-merged.gds 1-cadence-innovus-signoff/outputs/.execstamp.design.def.gz 1-cadence-innovus-signoff/outputs/.execstamp.design.gds.gz 1-cadence-innovus-signoff/outputs/.execstamp.design.lvs.v 1-cadence-innovus-signoff/outputs/.stamp.design-merged.gds 1-cadence-innovus-signoff/outputs/.stamp.design.def.gz 1-cadence-innovus-signoff/outputs/.stamp.design.gds.gz 1-cadence-innovus-signoff/outputs/.stamp.design.lvs.v
 8-mentor-calibre-comparison/.stamp: 7-open-magic-gds2spice/.execstamp 7-open-magic-gds2spice/.postconditions.stamp 7-open-magic-gds2spice/outputs/.execstamp.design_extracted.spice 7-open-magic-gds2spice/outputs/.stamp.design_extracted.spice
 8-mentor-calibre-comparison/.stamp:
 	$(call cpdir-and-parameterize,8-mentor-calibre-comparison,../design/mentor-calibre-comparison,8-mentor-calibre-comparison/.stamp)
@@ -637,13 +637,13 @@ endif
 # collect inputs
 
 ifeq ("$(wildcard 8-mentor-calibre-comparison/.prebuilt)","")
-8-mentor-calibre-comparison/inputs/.stamp.adk: 8-mentor-calibre-comparison/.stamp 1-skywater-130nm/outputs/.stamp.adk
-	$(call symlink,8-mentor-calibre-comparison/inputs,adk,../../1-skywater-130nm/outputs/adk,.stamp.adk)
+8-mentor-calibre-comparison/inputs/.stamp.adk: 8-mentor-calibre-comparison/.stamp 0-analog-skywater-130nm/outputs/.stamp.adk
+	$(call symlink,8-mentor-calibre-comparison/inputs,adk,../../0-analog-skywater-130nm/outputs/adk,.stamp.adk)
 endif
 
 ifeq ("$(wildcard 8-mentor-calibre-comparison/.prebuilt)","")
-8-mentor-calibre-comparison/inputs/.stamp.design.lvs.v: 8-mentor-calibre-comparison/.stamp 0-cadence-innovus-signoff/outputs/.stamp.design.lvs.v
-	$(call symlink,8-mentor-calibre-comparison/inputs,design.lvs.v,../../0-cadence-innovus-signoff/outputs/design.lvs.v,.stamp.design.lvs.v)
+8-mentor-calibre-comparison/inputs/.stamp.design.lvs.v: 8-mentor-calibre-comparison/.stamp 1-cadence-innovus-signoff/outputs/.stamp.design.lvs.v
+	$(call symlink,8-mentor-calibre-comparison/inputs,design.lvs.v,../../1-cadence-innovus-signoff/outputs/design.lvs.v,.stamp.design.lvs.v)
 endif
 
 ifeq ("$(wildcard 8-mentor-calibre-comparison/.prebuilt)","")
@@ -713,8 +713,8 @@ debug-8: debug-mentor-calibre-comparison
 # build dir
 
 ifeq ("$(wildcard 9-netgen-lvs-gds/.prebuilt)","")
-9-netgen-lvs-gds/.stamp: 0-cadence-innovus-signoff/.execstamp 0-cadence-innovus-signoff/.postconditions.stamp 0-cadence-innovus-signoff/outputs/.execstamp.design-merged.gds 0-cadence-innovus-signoff/outputs/.execstamp.design.def.gz 0-cadence-innovus-signoff/outputs/.execstamp.design.gds.gz 0-cadence-innovus-signoff/outputs/.execstamp.design.lvs.v 0-cadence-innovus-signoff/outputs/.stamp.design-merged.gds 0-cadence-innovus-signoff/outputs/.stamp.design.def.gz 0-cadence-innovus-signoff/outputs/.stamp.design.gds.gz 0-cadence-innovus-signoff/outputs/.stamp.design.lvs.v
-9-netgen-lvs-gds/.stamp: 1-skywater-130nm/.execstamp 1-skywater-130nm/.postconditions.stamp 1-skywater-130nm/outputs/.execstamp.adk 1-skywater-130nm/outputs/.stamp.adk
+9-netgen-lvs-gds/.stamp: 0-analog-skywater-130nm/.execstamp 0-analog-skywater-130nm/.postconditions.stamp 0-analog-skywater-130nm/outputs/.execstamp.adk 0-analog-skywater-130nm/outputs/.stamp.adk
+9-netgen-lvs-gds/.stamp: 1-cadence-innovus-signoff/.execstamp 1-cadence-innovus-signoff/.postconditions.stamp 1-cadence-innovus-signoff/outputs/.execstamp.design-merged.gds 1-cadence-innovus-signoff/outputs/.execstamp.design.def.gz 1-cadence-innovus-signoff/outputs/.execstamp.design.gds.gz 1-cadence-innovus-signoff/outputs/.execstamp.design.lvs.v 1-cadence-innovus-signoff/outputs/.stamp.design-merged.gds 1-cadence-innovus-signoff/outputs/.stamp.design.def.gz 1-cadence-innovus-signoff/outputs/.stamp.design.gds.gz 1-cadence-innovus-signoff/outputs/.stamp.design.lvs.v
 9-netgen-lvs-gds/.stamp: 7-open-magic-gds2spice/.execstamp 7-open-magic-gds2spice/.postconditions.stamp 7-open-magic-gds2spice/outputs/.execstamp.design_extracted.spice 7-open-magic-gds2spice/outputs/.stamp.design_extracted.spice
 9-netgen-lvs-gds/.stamp:
 	$(call cpdir-and-parameterize,9-netgen-lvs-gds,../design/netgen-lvs-gds,9-netgen-lvs-gds/.stamp)
@@ -723,13 +723,13 @@ endif
 # collect inputs
 
 ifeq ("$(wildcard 9-netgen-lvs-gds/.prebuilt)","")
-9-netgen-lvs-gds/inputs/.stamp.adk: 9-netgen-lvs-gds/.stamp 1-skywater-130nm/outputs/.stamp.adk
-	$(call symlink,9-netgen-lvs-gds/inputs,adk,../../1-skywater-130nm/outputs/adk,.stamp.adk)
+9-netgen-lvs-gds/inputs/.stamp.adk: 9-netgen-lvs-gds/.stamp 0-analog-skywater-130nm/outputs/.stamp.adk
+	$(call symlink,9-netgen-lvs-gds/inputs,adk,../../0-analog-skywater-130nm/outputs/adk,.stamp.adk)
 endif
 
 ifeq ("$(wildcard 9-netgen-lvs-gds/.prebuilt)","")
-9-netgen-lvs-gds/inputs/.stamp.design.lvs.v: 9-netgen-lvs-gds/.stamp 0-cadence-innovus-signoff/outputs/.stamp.design.lvs.v
-	$(call symlink,9-netgen-lvs-gds/inputs,design.lvs.v,../../0-cadence-innovus-signoff/outputs/design.lvs.v,.stamp.design.lvs.v)
+9-netgen-lvs-gds/inputs/.stamp.design.lvs.v: 9-netgen-lvs-gds/.stamp 1-cadence-innovus-signoff/outputs/.stamp.design.lvs.v
+	$(call symlink,9-netgen-lvs-gds/inputs,design.lvs.v,../../1-cadence-innovus-signoff/outputs/design.lvs.v,.stamp.design.lvs.v)
 endif
 
 ifeq ("$(wildcard 9-netgen-lvs-gds/.prebuilt)","")
@@ -788,8 +788,8 @@ netgen-lvs-gds: 9-netgen-lvs-gds/.execstamp 9-netgen-lvs-gds/.postconditions.sta
 # build dir
 
 ifeq ("$(wildcard 10-netgen-lvs-gds-device/.prebuilt)","")
-10-netgen-lvs-gds-device/.stamp: 0-cadence-innovus-signoff/.execstamp 0-cadence-innovus-signoff/.postconditions.stamp 0-cadence-innovus-signoff/outputs/.execstamp.design-merged.gds 0-cadence-innovus-signoff/outputs/.execstamp.design.def.gz 0-cadence-innovus-signoff/outputs/.execstamp.design.gds.gz 0-cadence-innovus-signoff/outputs/.execstamp.design.lvs.v 0-cadence-innovus-signoff/outputs/.stamp.design-merged.gds 0-cadence-innovus-signoff/outputs/.stamp.design.def.gz 0-cadence-innovus-signoff/outputs/.stamp.design.gds.gz 0-cadence-innovus-signoff/outputs/.stamp.design.lvs.v
-10-netgen-lvs-gds-device/.stamp: 1-skywater-130nm/.execstamp 1-skywater-130nm/.postconditions.stamp 1-skywater-130nm/outputs/.execstamp.adk 1-skywater-130nm/outputs/.stamp.adk
+10-netgen-lvs-gds-device/.stamp: 0-analog-skywater-130nm/.execstamp 0-analog-skywater-130nm/.postconditions.stamp 0-analog-skywater-130nm/outputs/.execstamp.adk 0-analog-skywater-130nm/outputs/.stamp.adk
+10-netgen-lvs-gds-device/.stamp: 1-cadence-innovus-signoff/.execstamp 1-cadence-innovus-signoff/.postconditions.stamp 1-cadence-innovus-signoff/outputs/.execstamp.design-merged.gds 1-cadence-innovus-signoff/outputs/.execstamp.design.def.gz 1-cadence-innovus-signoff/outputs/.execstamp.design.gds.gz 1-cadence-innovus-signoff/outputs/.execstamp.design.lvs.v 1-cadence-innovus-signoff/outputs/.stamp.design-merged.gds 1-cadence-innovus-signoff/outputs/.stamp.design.def.gz 1-cadence-innovus-signoff/outputs/.stamp.design.gds.gz 1-cadence-innovus-signoff/outputs/.stamp.design.lvs.v
 10-netgen-lvs-gds-device/.stamp: 7-open-magic-gds2spice/.execstamp 7-open-magic-gds2spice/.postconditions.stamp 7-open-magic-gds2spice/outputs/.execstamp.design_extracted.spice 7-open-magic-gds2spice/outputs/.stamp.design_extracted.spice
 10-netgen-lvs-gds-device/.stamp:
 	$(call cpdir-and-parameterize,10-netgen-lvs-gds-device,../design/netgen-lvs-gds-device,10-netgen-lvs-gds-device/.stamp)
@@ -798,13 +798,13 @@ endif
 # collect inputs
 
 ifeq ("$(wildcard 10-netgen-lvs-gds-device/.prebuilt)","")
-10-netgen-lvs-gds-device/inputs/.stamp.adk: 10-netgen-lvs-gds-device/.stamp 1-skywater-130nm/outputs/.stamp.adk
-	$(call symlink,10-netgen-lvs-gds-device/inputs,adk,../../1-skywater-130nm/outputs/adk,.stamp.adk)
+10-netgen-lvs-gds-device/inputs/.stamp.adk: 10-netgen-lvs-gds-device/.stamp 0-analog-skywater-130nm/outputs/.stamp.adk
+	$(call symlink,10-netgen-lvs-gds-device/inputs,adk,../../0-analog-skywater-130nm/outputs/adk,.stamp.adk)
 endif
 
 ifeq ("$(wildcard 10-netgen-lvs-gds-device/.prebuilt)","")
-10-netgen-lvs-gds-device/inputs/.stamp.design.lvs.v: 10-netgen-lvs-gds-device/.stamp 0-cadence-innovus-signoff/outputs/.stamp.design.lvs.v
-	$(call symlink,10-netgen-lvs-gds-device/inputs,design.lvs.v,../../0-cadence-innovus-signoff/outputs/design.lvs.v,.stamp.design.lvs.v)
+10-netgen-lvs-gds-device/inputs/.stamp.design.lvs.v: 10-netgen-lvs-gds-device/.stamp 1-cadence-innovus-signoff/outputs/.stamp.design.lvs.v
+	$(call symlink,10-netgen-lvs-gds-device/inputs,design.lvs.v,../../1-cadence-innovus-signoff/outputs/design.lvs.v,.stamp.design.lvs.v)
 endif
 
 ifeq ("$(wildcard 10-netgen-lvs-gds-device/.prebuilt)","")
@@ -870,20 +870,20 @@ clean-all:
 .PHONY: clean-0
 
 clean-0:
-	rm -rf ./0-cadence-innovus-signoff
+	rm -rf ./0-analog-skywater-130nm
 
-.PHONY: clean-cadence-innovus-signoff
+.PHONY: clean-analog-skywater-130nm
 
-clean-cadence-innovus-signoff: clean-0
+clean-analog-skywater-130nm: clean-0
 
 .PHONY: clean-1
 
 clean-1:
-	rm -rf ./1-skywater-130nm
+	rm -rf ./1-cadence-innovus-signoff
 
-.PHONY: clean-skywater-130nm
+.PHONY: clean-cadence-innovus-signoff
 
-clean-skywater-130nm: clean-1
+clean-cadence-innovus-signoff: clean-1
 
 .PHONY: clean-10
 
@@ -971,12 +971,12 @@ clean-netgen-lvs-gds: clean-9
 .PHONY: diff-0
 
 diff-0:
-	@echo && diff -r -u --minimal --exclude={configure.yml,.time_end,.time_start,mflowgen-run*,mflowgen-debug,.stamp,inputs,outputs} ../design/cadence-innovus-signoff 0-cadence-innovus-signoff | grep --color=always -e '^-.*' -e '$$' -e 'Only in ../design/cadence-innovus-signoff.*' | GREP_COLOR='01;32' grep --color=always -e '^+.*' -e '$$' -e 'Only in 0-cadence-innovus-signoff.*' && echo || true
+	@echo && diff -r -u --minimal --exclude={configure.yml,.time_end,.time_start,mflowgen-run*,mflowgen-debug,.stamp,inputs,outputs} ../../../../../mflowgen_flow/mflowgen/adks/skywater-130nm-analog-adk 0-analog-skywater-130nm | grep --color=always -e '^-.*' -e '$$' -e 'Only in ../../../../../mflowgen_flow/mflowgen/adks/skywater-130nm-analog-adk.*' | GREP_COLOR='01;32' grep --color=always -e '^+.*' -e '$$' -e 'Only in 0-analog-skywater-130nm.*' && echo || true
 
 .PHONY: diff-1
 
 diff-1:
-	@echo && diff -r -u --minimal --exclude={configure.yml,.time_end,.time_start,mflowgen-run*,mflowgen-debug,.stamp,inputs,outputs} ../../../../../mflowgen_flow/mflowgen/adks/skywater-130nm-analog-adk 1-skywater-130nm | grep --color=always -e '^-.*' -e '$$' -e 'Only in ../../../../../mflowgen_flow/mflowgen/adks/skywater-130nm-analog-adk.*' | GREP_COLOR='01;32' grep --color=always -e '^+.*' -e '$$' -e 'Only in 1-skywater-130nm.*' && echo || true
+	@echo && diff -r -u --minimal --exclude={configure.yml,.time_end,.time_start,mflowgen-run*,mflowgen-debug,.stamp,inputs,outputs} ../design/cadence-innovus-signoff 1-cadence-innovus-signoff | grep --color=always -e '^-.*' -e '$$' -e 'Only in ../design/cadence-innovus-signoff.*' | GREP_COLOR='01;32' grep --color=always -e '^+.*' -e '$$' -e 'Only in 1-cadence-innovus-signoff.*' && echo || true
 
 .PHONY: diff-2
 
@@ -1028,12 +1028,12 @@ diff-10:
 .PHONY: info-0
 
 info-0:
-	@/home/users/xingyuni/ee372/mflowgen_flow/mflowgen/mflowgen/scripts/mflowgen-letters -c -t cadence-innovus-signoff && /home/users/xingyuni/ee372/mflowgen_flow/mflowgen/mflowgen/scripts/mflowgen-info -y .mflowgen/0-cadence-innovus-signoff/configure.yml
+	@/home/users/xingyuni/ee372/mflowgen_flow/mflowgen/mflowgen/scripts/mflowgen-letters -c -t analog-skywater-130nm && /home/users/xingyuni/ee372/mflowgen_flow/mflowgen/mflowgen/scripts/mflowgen-info -y .mflowgen/0-analog-skywater-130nm/configure.yml
 
 .PHONY: info-1
 
 info-1:
-	@/home/users/xingyuni/ee372/mflowgen_flow/mflowgen/mflowgen/scripts/mflowgen-letters -c -t skywater-130nm && /home/users/xingyuni/ee372/mflowgen_flow/mflowgen/mflowgen/scripts/mflowgen-info -y .mflowgen/1-skywater-130nm/configure.yml
+	@/home/users/xingyuni/ee372/mflowgen_flow/mflowgen/mflowgen/scripts/mflowgen-letters -c -t cadence-innovus-signoff && /home/users/xingyuni/ee372/mflowgen_flow/mflowgen/mflowgen/scripts/mflowgen-info -y .mflowgen/1-cadence-innovus-signoff/configure.yml
 
 .PHONY: info-2
 
@@ -1092,7 +1092,7 @@ runtimes:
 .PHONY: list
 
 list:
-	@echo && echo Generic Targets: && echo && printf " - %s\\n" "list      -- List all steps" "status    -- Print build status for each step" "runtimes  -- Print runtimes for each step" "graph     -- Generate a PDF of the step dependency graph" "clean-all -- Remove all build directories" "clean-N   -- Clean target N" "info-N    -- Print configured info for step N" "diff-N    -- Diff target N" && echo && echo Targets: && echo && printf " - %s\\n" "  0 : cadence-innovus-signoff" "  1 : skywater-130nm" "  2 : mentor-calibre-gdsmerge" "  3 : open-magic-def2spice" "  4 : netgen-lvs-def" "  5 : open-magic-antenna" "  6 : open-magic-drc" "  7 : open-magic-gds2spice" "  8 : mentor-calibre-comparison" "  9 : netgen-lvs-gds" " 10 : netgen-lvs-gds-device" && echo && echo Debug Targets: && echo && printf " - %s\\n" "debug-2  : debug-mentor-calibre-gdsmerge" "debug-8  : debug-mentor-calibre-comparison" && echo
+	@echo && echo Generic Targets: && echo && printf " - %s\\n" "list      -- List all steps" "status    -- Print build status for each step" "runtimes  -- Print runtimes for each step" "graph     -- Generate a PDF of the step dependency graph" "clean-all -- Remove all build directories" "clean-N   -- Clean target N" "info-N    -- Print configured info for step N" "diff-N    -- Diff target N" && echo && echo Targets: && echo && printf " - %s\\n" "  0 : analog-skywater-130nm" "  1 : cadence-innovus-signoff" "  2 : mentor-calibre-gdsmerge" "  3 : open-magic-def2spice" "  4 : netgen-lvs-def" "  5 : open-magic-antenna" "  6 : open-magic-drc" "  7 : open-magic-gds2spice" "  8 : mentor-calibre-comparison" "  9 : netgen-lvs-gds" " 10 : netgen-lvs-gds-device" && echo && echo Debug Targets: && echo && printf " - %s\\n" "debug-2  : debug-mentor-calibre-gdsmerge" "debug-8  : debug-mentor-calibre-comparison" && echo
 
 # Graph
 
@@ -1106,5 +1106,5 @@ graph:
 .PHONY: status
 
 status:
-	@/home/users/xingyuni/ee372/mflowgen_flow/mflowgen/mflowgen/scripts/mflowgen-status --backend make -s 0-cadence-innovus-signoff,1-skywater-130nm,2-mentor-calibre-gdsmerge,3-open-magic-def2spice,4-netgen-lvs-def,5-open-magic-antenna,6-open-magic-drc,7-open-magic-gds2spice,8-mentor-calibre-comparison,9-netgen-lvs-gds,10-netgen-lvs-gds-device
+	@/home/users/xingyuni/ee372/mflowgen_flow/mflowgen/mflowgen/scripts/mflowgen-status --backend make -s 0-analog-skywater-130nm,1-cadence-innovus-signoff,2-mentor-calibre-gdsmerge,3-open-magic-def2spice,4-netgen-lvs-def,5-open-magic-antenna,6-open-magic-drc,7-open-magic-gds2spice,8-mentor-calibre-comparison,9-netgen-lvs-gds,10-netgen-lvs-gds-device
 

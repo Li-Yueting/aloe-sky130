@@ -1,0 +1,83 @@
+
+Magic 8.3 revision 285 - Compiled on Mon Apr  4 15:36:51 PDT 2022.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+/farmshare/home/classes/ee/372/PDKs/open_pdks_1.0.310/sky130/sky130A/libs.tech/magic/closed_sky130A.tech: line 1404: section cifoutput:
+	Unknown layer name.
+Input style sky130(vendor): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Loading "extract.tcl" from command line.
+Reading LEF data from file inputs/adk/rtk-tech.lef.
+This action cannot be undone.
+LEF read, Line 85 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 86 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 118 (Message): Unknown keyword "MINENCLOSEDAREA" in LEF file; ignoring.
+LEF read, Line 120 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 121 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 127 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 128 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 129 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 161 (Message): Unknown keyword "MINENCLOSEDAREA" in LEF file; ignoring.
+LEF read, Line 169 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 170 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 172 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 173 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 174 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 210 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 211 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 213 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 214 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 215 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 251 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 252 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 254 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 255 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 256 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 292 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 293 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read: Processed 803 lines.
+Reading LEF data from file inputs/adk/stdcells.lef.
+This action cannot be undone.
+LEF read: Processed 2897 lines.
+Reading DEF data from file design.def.
+This action cannot be undone.
+  Processed 4 vias total.
+DEF read, Line 314 (Warning): Number of pins read (20) does not match the number declared (6).
+  Processed 61 subcell instances total.
+  Processed 10 special nets total.
+  Processed 40 nets total.
+DEF read: Processed 1093 lines.
+DEF Read: encountered 1 warning total.
+Usage: extract do option
+   or  extract no option
+where option is one of:
+  adjust			compensate R and C hierarchically
+  all			all options
+  capacitance		extract substrate capacitance
+  coupling		extract coupling capacitance
+  length			compute driver-receiver pathlengths
+  local			put all generated files in the current directory
+  resistance		estimate resistance
+  labelcheck		check for connections through sticky labels
+  aliases		output all net name aliases
+Processing bgr_top
+Extracting sky130_asc_pnp_05v5_W3p40L3p40_1 into sky130_asc_pnp_05v5_W3p40L3p40_1.ext:
+Extracting sky130_asc_pfet_01v8_lvt_12 into sky130_asc_pfet_01v8_lvt_12.ext:
+Extracting sky130_asc_pnp_05v5_W3p40L3p40_7 into sky130_asc_pnp_05v5_W3p40L3p40_7.ext:
+Extracting sky130_asc_res_xhigh_po_2p85_2 into sky130_asc_res_xhigh_po_2p85_2.ext:
+Extracting sky130_asc_nfet_01v8_lvt_1 into sky130_asc_nfet_01v8_lvt_1.ext:
+Extracting sky130_asc_pfet_01v8_lvt_6 into sky130_asc_pfet_01v8_lvt_6.ext:
+Extracting sky130_asc_pnp_05v5_W3p40L3p40_8 into sky130_asc_pnp_05v5_W3p40L3p40_8.ext:
+Extracting sky130_asc_cap_mim_m3_1 into sky130_asc_cap_mim_m3_1.ext:
+Extracting sky130_asc_res_xhigh_po_2p85_1 into sky130_asc_res_xhigh_po_2p85_1.ext:
+Extracting sky130_asc_nfet_01v8_lvt_9 into sky130_asc_nfet_01v8_lvt_9.ext:
+Extracting sky130_asc_pfet_01v8_lvt_60 into sky130_asc_pfet_01v8_lvt_60.ext:
+Extracting bgr_top into bgr_top.ext:
+exttospice finished.

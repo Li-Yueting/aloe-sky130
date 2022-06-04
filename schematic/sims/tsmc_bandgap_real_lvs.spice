@@ -1,0 +1,97 @@
+**.subckt tsmc_bandgap_real_lvs porst vbg va vb GND VDD
+*.ipin porst
+*.opin vbg
+*.opin va
+*.opin vb
+*.ipin GND
+*.ipin VDD
+XM5 vgate va Vq GND sky130_fd_pr__nfet_01v8_lvt L=2 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=9 m=9 
+XM6 Vq Vx net1 net1 sky130_fd_pr__nfet_01v8_lvt L=2 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM9 vg vb Vq GND sky130_fd_pr__nfet_01v8_lvt L=2 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=9 m=9 
+XM7 Vx Vx net1 net1 sky130_fd_pr__nfet_01v8_lvt L=2 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM13 Vx vgate net2 net2 sky130_fd_pr__pfet_01v8_lvt L=2 W=6.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=12 m=12 
+XM1 va vgate net2 net2 sky130_fd_pr__pfet_01v8_lvt L=2 W=6.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=60 m=60 
+XM2 vb vgate net2 net2 sky130_fd_pr__pfet_01v8_lvt L=2 W=6.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=60 m=60 
+XM3 vbg vgate net2 net2 sky130_fd_pr__pfet_01v8_lvt L=2 W=6.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=60 m=60 
+XM4 vg vg net2 net2 sky130_fd_pr__pfet_01v8_lvt L=2 W=6.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=6 m=6 
+XM8 vgate vg net2 net2 sky130_fd_pr__pfet_01v8_lvt L=2 W=6.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=6 m=6 
+XM10 vgate porst net1 net1 sky130_fd_pr__nfet_01v8_lvt L='2' W='4' nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=9 m=9 
+XR6 net5 va net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR7 net6 net5 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR8 net7 net6 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR10 net8 net7 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR11 net9 net8 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR9 net1 net10 net1 sky130_fd_pr__res_xhigh_po_2p85 L=10.75 mult=1 m=1
+XR3 vbneg vb net1 sky130_fd_pr__res_xhigh_po_2p85 L=31.52 mult=1 m=1
+XR17 net1 vbg net1 sky130_fd_pr__res_xhigh_po_2p85 L=141.84 mult=1 m=1
+XM17 va net2 net2 net2 sky130_fd_pr__pfet_01v8_lvt L=2 W=6.45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=12 m=12 
+XC1 net2 vgate sky130_fd_pr__cap_mim_m3_1 W=2 L=2 MF=100 m=100
+XQQ1 net1 net1 va sky130_fd_pr__pnp_05v5_W3p40L3p40
+XQQ2 net1 net1 vbneg sky130_fd_pr__pnp_05v5_W3p40L3p40
+XC2 va net1 sky130_fd_pr__cap_mim_m3_1 W=2 L=2 MF=100 m=100
+XR14 net10 net3 net1 sky130_fd_pr__res_xhigh_po_2p85 L=10.75 mult=1 m=1
+XR15 net11 net9 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR16 net12 net11 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR22 net13 net12 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR23 net14 net13 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR24 net15 net14 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR25 net16 net15 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR26 net17 net16 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR27 net18 net17 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR28 net19 net18 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR29 net20 net19 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR30 net21 net20 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR31 net22 net21 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR32 net23 net22 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR33 net24 net23 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR34 net3 net24 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR1 net25 vb net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR2 net26 net25 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR4 net27 net26 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR5 net28 net27 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR12 net29 net28 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR13 net1 net30 net1 sky130_fd_pr__res_xhigh_po_2p85 L=10.75 mult=1 m=1
+XR35 net30 net4 net1 sky130_fd_pr__res_xhigh_po_2p85 L=10.75 mult=1 m=1
+XR36 net31 net29 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR37 net32 net31 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR38 net33 net32 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR39 net34 net33 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR40 net35 net34 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR41 net36 net35 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR42 net37 net36 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR43 net38 net37 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR44 net39 net38 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR45 net40 net39 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR46 net41 net40 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR47 net42 net41 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR48 net43 net42 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR49 net44 net43 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+XR50 net4 net44 net1 sky130_fd_pr__res_xhigh_po_2p85 L=7.88 mult=1 m=1
+**.ends
+.GLOBAL GND
+** flattened .save nodes
+.end

@@ -6,7 +6,7 @@ commands:
 edges_i:
   adk:
   - f: adk
-    step: 1-skywater-130nm
+    step: 0-analog-skywater-130nm
   design_merged.gds:
   - f: design_merged.gds
     step: 2-mentor-calibre-gdsmerge

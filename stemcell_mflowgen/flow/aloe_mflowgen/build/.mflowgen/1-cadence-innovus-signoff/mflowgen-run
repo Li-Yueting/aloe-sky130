@@ -1,0 +1,25 @@
+#! /usr/bin/env bash
+set -euo pipefail
+#=========================================================================
+# mflowgen-run
+#=========================================================================
+# Generator : /home/users/xingyuni/ee372/mflowgen_flow/mflowgen/mflowgen/core/build_orchestrator.py
+
+# Pre
+
+rm -f .time_end
+date +%Y-%m%d-%H%M-%S > .time_start
+MFLOWGEN_STEP_HOME=$PWD
+
+# Commands
+
+cat bgr-v0-final.gds.gz > outputs/design.gds.gz
+cat bgr-v0-final-merged.gds> outputs/design-merged.gds
+cat bgr-v0-final.lvs.v > outputs/design.lvs.v
+cat bgr-v0-final.def.gz > outputs/design.def.gz
+
+# Post
+
+cd $MFLOWGEN_STEP_HOME
+date +%Y-%m%d-%H%M-%S > .time_end
+

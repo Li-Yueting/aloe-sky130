@@ -1,0 +1,127 @@
+* NGSPICE file created from bgr_top.ext - technology: sky130A
+
+* Black-box entry subcircuit for sky130_asc_res_xhigh_po_2p85_1 abstract view
+.subckt sky130_asc_res_xhigh_po_2p85_1 Rin Rout VPWR VGND
+.ends
+
+* Black-box entry subcircuit for sky130_asc_cap_mim_m3_1 abstract view
+.subckt sky130_asc_cap_mim_m3_1 Cin Cout VPWR VGND
+.ends
+
+* Black-box entry subcircuit for sky130_asc_pfet_01v8_lvt_6 abstract view
+.subckt sky130_asc_pfet_01v8_lvt_6 GATE SOURCE DRAIN VPWR VGND
+.ends
+
+* Black-box entry subcircuit for sky130_asc_nfet_01v8_lvt_9 abstract view
+.subckt sky130_asc_nfet_01v8_lvt_9 GATE SOURCE DRAIN VPWR VGND
+.ends
+
+* Black-box entry subcircuit for sky130_asc_nfet_01v8_lvt_1 abstract view
+.subckt sky130_asc_nfet_01v8_lvt_1 GATE SOURCE DRAIN VPWR VGND
+.ends
+
+* Black-box entry subcircuit for sky130_asc_pfet_01v8_lvt_12 abstract view
+.subckt sky130_asc_pfet_01v8_lvt_12 GATE SOURCE DRAIN VPWR VGND
+.ends
+
+* Black-box entry subcircuit for sky130_asc_pfet_01v8_lvt_60 abstract view
+.subckt sky130_asc_pfet_01v8_lvt_60 GATE SOURCE DRAIN VPWR VGND
+.ends
+
+* Black-box entry subcircuit for sky130_asc_pnp_05v5_W3p40L3p40_1 abstract view
+.subckt sky130_asc_pnp_05v5_W3p40L3p40_1 Emitter Base Collector VPWR VGND
+.ends
+
+* Black-box entry subcircuit for sky130_asc_res_xhigh_po_2p85_2 abstract view
+.subckt sky130_asc_res_xhigh_po_2p85_2 Rin Rout VPWR VGND
+.ends
+
+* Black-box entry subcircuit for sky130_asc_pnp_05v5_W3p40L3p40_8 abstract view
+.subckt sky130_asc_pnp_05v5_W3p40L3p40_8 Emitter Base Collector VPWR VGND
+.ends
+
+* Black-box entry subcircuit for sky130_asc_pnp_05v5_W3p40L3p40_7 abstract view
+.subckt sky130_asc_pnp_05v5_W3p40L3p40_7 Emitter Base Collector VPWR VGND
+.ends
+
+.subckt bgr_top porst va vb vbg VDD VSS
+XBGR_Core____R10____sub2 BGR_Core____R10____sub2/Rin BGR_Core____R11____sub1/Rin VDD
++ VSS sky130_asc_res_xhigh_po_2p85_1
+XBGR_Core____R7____sub2 BGR_Core____R7____sub2/Rin BGR_Core____R8____sub1/Rin VDD
++ VSS sky130_asc_res_xhigh_po_2p85_1
+XBGR_Core____R3____sub2 BGR_Core____R3____sub2/Rin BGR_Core____R3____sub2/Rout VDD
++ VSS sky130_asc_res_xhigh_po_2p85_1
+XBGR_Core____C2____CA1 va VSS VDD VSS sky130_asc_cap_mim_m3_1
+Xamp____M4 amp____M8/GATE VDD amp____M8/GATE VDD VSS sky130_asc_pfet_01v8_lvt_6
+XBGR_Core____C2____CA2 va VSS VDD VSS sky130_asc_cap_mim_m3_1
+Xamp____M5 va amp____M6/DRAIN M10/DRAIN VDD VSS sky130_asc_nfet_01v8_lvt_9
+XM10 porst VSS M10/DRAIN VDD VSS sky130_asc_nfet_01v8_lvt_9
+XBGR_Core____C2____CA3 va VSS VDD VSS sky130_asc_cap_mim_m3_1
+XBGR_Core____C2____CA4 va VSS VDD VSS sky130_asc_cap_mim_m3_1
+Xamp____M6 amp____M7/GATE VSS amp____M6/DRAIN VDD VSS sky130_asc_nfet_01v8_lvt_1
+XBGR_Core____C2____CA5 va VSS VDD VSS sky130_asc_cap_mim_m3_1
+Xamp____M7 amp____M7/GATE VSS amp____M7/GATE VDD VSS sky130_asc_nfet_01v8_lvt_1
+Xamp____M9 vb amp____M6/DRAIN amp____M8/GATE VDD VSS sky130_asc_nfet_01v8_lvt_9
+Xamp____M8 amp____M8/GATE VDD M10/DRAIN VDD VSS sky130_asc_pfet_01v8_lvt_6
+XR18____sub1 R18____sub1/Rin R18____sub2/Rin VDD VSS sky130_asc_res_xhigh_po_2p85_1
+XBGR_Core____R6____sub1 va BGR_Core____R6____sub2/Rin VDD VSS sky130_asc_res_xhigh_po_2p85_1
+XR18____sub2 R18____sub2/Rin R19____sub1/Rin VDD VSS sky130_asc_res_xhigh_po_2p85_1
+XCM____M17 VDD VDD va VDD VSS sky130_asc_pfet_01v8_lvt_12
+XBGR_Core____R6____sub2 BGR_Core____R6____sub2/Rin BGR_Core____R7____sub1/Rin VDD
++ VSS sky130_asc_res_xhigh_po_2p85_1
+XBGR_Core____R2____sub1 BGR_Core____R2____sub1/Rin BGR_Core____R2____sub2/Rin VDD
++ VSS sky130_asc_res_xhigh_po_2p85_1
+XBGR_Core____R2____sub2 BGR_Core____R2____sub2/Rin BGR_Core____R4____sub1/Rin VDD
++ VSS sky130_asc_res_xhigh_po_2p85_1
+XR21 R21/Rin VSS VDD VSS sky130_asc_res_xhigh_po_2p85_1
+XR17____sub1 vbg R17____sub2/Rin VDD VSS sky130_asc_res_xhigh_po_2p85_1
+XBGR_Core____R5____sub1 BGR_Core____R5____sub1/Rin BGR_Core____R5____sub2/Rin VDD
++ VSS sky130_asc_res_xhigh_po_2p85_1
+XBGR_Core____R12____sub1 BGR_Core____R5____sub2/Rout BGR_Core____R12____sub2/Rin VDD
++ VSS sky130_asc_res_xhigh_po_2p85_1
+XR17____sub2 R17____sub2/Rin R18____sub1/Rin VDD VSS sky130_asc_res_xhigh_po_2p85_1
+XBGR_Core____R12____sub2 BGR_Core____R12____sub2/Rin BGR_Core____R13/Rin VDD VSS sky130_asc_res_xhigh_po_2p85_1
+XBGR_Core____R5____sub2 BGR_Core____R5____sub2/Rin BGR_Core____R5____sub2/Rout VDD
++ VSS sky130_asc_res_xhigh_po_2p85_1
+XBGR_Core____R1____sub1 BGR_Core____R2____sub1/Rin BGR_Core____R1____sub2/Rin VDD
++ VSS sky130_asc_res_xhigh_po_2p85_1
+XCM____M2 M10/DRAIN VDD vb VDD VSS sky130_asc_pfet_01v8_lvt_60
+XCM____M1 M10/DRAIN VDD va VDD VSS sky130_asc_pfet_01v8_lvt_60
+XBGR_Core____R1____sub2 BGR_Core____R1____sub2/Rin vb VDD VSS sky130_asc_res_xhigh_po_2p85_1
+XCM____M3 M10/DRAIN VDD vbg VDD VSS sky130_asc_pfet_01v8_lvt_60
+Xamp____M13 M10/DRAIN VDD amp____M7/GATE VDD VSS sky130_asc_pfet_01v8_lvt_12
+XBGR_Core____pnp_va va VSS VSS VDD VSS sky130_asc_pnp_05v5_W3p40L3p40_1
+XBGR_Core____R11____sub1 BGR_Core____R11____sub1/Rin BGR_Core____R11____sub2/Rin VDD
++ VSS sky130_asc_res_xhigh_po_2p85_1
+XCM____C1____CA1 VDD M10/DRAIN VDD VSS sky130_asc_cap_mim_m3_1
+XBGR_Core____R4____sub1 BGR_Core____R4____sub1/Rin BGR_Core____R4____sub2/Rin VDD
++ VSS sky130_asc_res_xhigh_po_2p85_1
+XBGR_Core____R8____sub2 BGR_Core____R8____sub2/Rin BGR_Core____R8____sub2/Rout VDD
++ VSS sky130_asc_res_xhigh_po_2p85_1
+XBGR_Core____R8____sub1 BGR_Core____R8____sub1/Rin BGR_Core____R8____sub2/Rin VDD
++ VSS sky130_asc_res_xhigh_po_2p85_1
+XBGR_Core____R4____sub2 BGR_Core____R4____sub2/Rin BGR_Core____R5____sub1/Rin VDD
++ VSS sky130_asc_res_xhigh_po_2p85_1
+XCM____C1____CA2 VDD M10/DRAIN VDD VSS sky130_asc_cap_mim_m3_1
+XBGR_Core____R11____sub2 BGR_Core____R11____sub2/Rin BGR_Core____R9/Rin VDD VSS sky130_asc_res_xhigh_po_2p85_1
+XBGR_Core____R13 BGR_Core____R13/Rin VSS VDD VSS sky130_asc_res_xhigh_po_2p85_2
+XCM____C1____CA3 VDD M10/DRAIN VDD VSS sky130_asc_cap_mim_m3_1
+XBGR_Core____pnp_vb____b1 BGR_Core____R3____sub2/Rout VSS VSS VDD VSS sky130_asc_pnp_05v5_W3p40L3p40_8
+XCM____C1____CA4 VDD M10/DRAIN VDD VSS sky130_asc_cap_mim_m3_1
+XBGR_Core____pnp_vb____b2 BGR_Core____R3____sub2/Rout VSS VSS VDD VSS sky130_asc_pnp_05v5_W3p40L3p40_8
+XBGR_Core____pnp_vb____b3 BGR_Core____R3____sub2/Rout VSS VSS VDD VSS sky130_asc_pnp_05v5_W3p40L3p40_8
+XCM____C1____CA5 VDD M10/DRAIN VDD VSS sky130_asc_cap_mim_m3_1
+XBGR_Core____pnp_vb____b4 BGR_Core____R3____sub2/Rout VSS VSS VDD VSS sky130_asc_pnp_05v5_W3p40L3p40_8
+XBGR_Core____pnp_vb____b5 BGR_Core____R3____sub2/Rout VSS VSS VDD VSS sky130_asc_pnp_05v5_W3p40L3p40_7
+XR20____sub1 R20____sub1/Rin R20____sub2/Rin VDD VSS sky130_asc_res_xhigh_po_2p85_1
+XR19____sub1 R19____sub1/Rin R19____sub2/Rin VDD VSS sky130_asc_res_xhigh_po_2p85_1
+XBGR_Core____R9 BGR_Core____R9/Rin VSS VDD VSS sky130_asc_res_xhigh_po_2p85_2
+XBGR_Core____R10____sub1 BGR_Core____R8____sub2/Rout BGR_Core____R10____sub2/Rin VDD
++ VSS sky130_asc_res_xhigh_po_2p85_1
+XBGR_Core____R7____sub1 BGR_Core____R7____sub1/Rin BGR_Core____R7____sub2/Rin VDD
++ VSS sky130_asc_res_xhigh_po_2p85_1
+XBGR_Core____R3____sub1 vb BGR_Core____R3____sub2/Rin VDD VSS sky130_asc_res_xhigh_po_2p85_1
+XR19____sub2 R19____sub2/Rin R20____sub1/Rin VDD VSS sky130_asc_res_xhigh_po_2p85_1
+XR20____sub2 R20____sub2/Rin R21/Rin VDD VSS sky130_asc_res_xhigh_po_2p85_1
+.ends
+

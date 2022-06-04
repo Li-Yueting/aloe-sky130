@@ -1,0 +1,452 @@
+timestamp 1654210637
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use sky130_asc_pfet_01v8_lvt_60 CM____M3 1 0 20692 0 1 5712
+use sky130_asc_nfet_01v8_lvt_9 M10 1 0 7854 0 1 5712
+use sky130_asc_res_xhigh_po_2p85_1 R17____sub1 1 0 41468 0 1 9472
+use sky130_asc_res_xhigh_po_2p85_1 R18____sub1 1 0 44212 0 1 9472
+use sky130_asc_res_xhigh_po_2p85_1 R18____sub2 1 0 38724 0 1 9472
+use sky130_asc_res_xhigh_po_2p85_1 R20____sub2 1 0 35980 0 1 9472
+use sky130_asc_res_xhigh_po_2p85_1 R17____sub2 1 0 44212 0 1 13232
+use sky130_asc_res_xhigh_po_2p85_1 R19____sub1 1 0 38724 0 1 13232
+use sky130_asc_res_xhigh_po_2p85_1 R19____sub2 1 0 33236 0 1 13232
+use sky130_asc_res_xhigh_po_2p85_1 R20____sub1 1 0 35980 0 1 13232
+use sky130_asc_res_xhigh_po_2p85_1 R21 1 0 41468 0 1 13232
+use sky130_asc_res_xhigh_po_2p85_1 BGR_Core____R3____sub1 1 0 38920 0 1 16992
+use sky130_asc_res_xhigh_po_2p85_1 BGR_Core____R3____sub2 1 0 41664 0 1 16992
+use sky130_asc_res_xhigh_po_2p85_1 BGR_Core____R1____sub1 1 0 36176 0 1 16992
+use sky130_asc_res_xhigh_po_2p85_1 BGR_Core____R1____sub2 1 0 44604 0 1 16992
+use sky130_asc_res_xhigh_po_2p85_1 BGR_Core____R5____sub2 1 0 33432 0 1 16992
+use sky130_asc_cap_mim_m3_1 CM____C1____CA5 1 0 18830 0 1 16992
+use sky130_asc_res_xhigh_po_2p85_1 BGR_Core____R7____sub2 1 0 13342 0 1 20752
+use sky130_asc_res_xhigh_po_2p85_1 BGR_Core____R8____sub1 1 0 16086 0 1 20752
+use sky130_asc_pnp_05v5_W3p40L3p40_8 BGR_Core____pnp_vb____b1 1 0 37548 0 1 20752
+use sky130_asc_res_xhigh_po_2p85_1 BGR_Core____R2____sub2 1 0 34804 0 1 20752
+use sky130_asc_cap_mim_m3_1 CM____C1____CA3 1 0 18830 0 1 20752
+use sky130_asc_res_xhigh_po_2p85_1 BGR_Core____R8____sub2 1 0 12950 0 1 24512
+use sky130_asc_res_xhigh_po_2p85_1 BGR_Core____R11____sub2 1 0 15694 0 1 24512
+use sky130_asc_pnp_05v5_W3p40L3p40_8 BGR_Core____pnp_vb____b3 1 0 37548 0 1 24512
+use sky130_asc_res_xhigh_po_2p85_1 BGR_Core____R2____sub1 1 0 32060 0 1 24512
+use sky130_asc_res_xhigh_po_2p85_1 BGR_Core____R4____sub1 1 0 34804 0 1 24512
+use sky130_asc_res_xhigh_po_2p85_1 BGR_Core____R12____sub1 1 0 26572 0 1 24512
+use sky130_asc_res_xhigh_po_2p85_1 BGR_Core____R12____sub2 1 0 29316 0 1 24512
+use sky130_asc_cap_mim_m3_1 CM____C1____CA1 1 0 18830 0 1 24512
+use sky130_asc_nfet_01v8_lvt_9 amp____M5 1 0 26278 0 1 28272
+use sky130_asc_res_xhigh_po_2p85_1 BGR_Core____R6____sub1 1 0 7364 0 1 28272
+use sky130_asc_res_xhigh_po_2p85_1 BGR_Core____R6____sub2 1 0 11676 0 1 28272
+use sky130_asc_res_xhigh_po_2p85_1 BGR_Core____R7____sub1 1 0 14420 0 1 28272
+use sky130_asc_res_xhigh_po_2p85_1 BGR_Core____R10____sub1 1 0 31178 0 1 28272
+use sky130_asc_pnp_05v5_W3p40L3p40_8 BGR_Core____pnp_vb____b4 1 0 37548 0 1 28272
+use sky130_asc_res_xhigh_po_2p85_1 BGR_Core____R5____sub1 1 0 34804 0 1 28272
+use sky130_asc_cap_mim_m3_1 CM____C1____CA2 1 0 18830 0 1 28272
+use sky130_asc_pfet_01v8_lvt_6 amp____M8 1 0 27748 0 1 32032
+use sky130_asc_nfet_01v8_lvt_1 amp____M6 1 0 26278 0 1 32032
+use sky130_asc_nfet_01v8_lvt_1 amp____M7 1 0 17948 0 1 32032
+use sky130_asc_cap_mim_m3_1 BGR_Core____C2____CA4 1 0 6188 0 1 32032
+use sky130_asc_res_xhigh_po_2p85_1 BGR_Core____R10____sub2 1 0 33922 0 1 32032
+use sky130_asc_res_xhigh_po_2p85_1 BGR_Core____R11____sub1 1 0 31178 0 1 32032
+use sky130_asc_res_xhigh_po_2p85_2 BGR_Core____R9 1 0 13832 0 1 32032
+use sky130_asc_pnp_05v5_W3p40L3p40_8 BGR_Core____pnp_vb____b2 1 0 37548 0 1 32032
+use sky130_asc_cap_mim_m3_1 CM____C1____CA4 1 0 18830 0 1 32032
+use sky130_asc_pfet_01v8_lvt_6 amp____M4 1 0 34020 0 1 35792
+use sky130_asc_pnp_05v5_W3p40L3p40_7 BGR_Core____pnp_vb____b5 1 0 38136 0 1 35792
+use sky130_asc_pfet_01v8_lvt_60 CM____M1 1 0 5992 0 1 35792
+use sky130_asc_cap_mim_m3_1 BGR_Core____C2____CA1 1 0 13244 0 1 39552
+use sky130_asc_cap_mim_m3_1 BGR_Core____C2____CA2 1 0 5796 0 1 39552
+use sky130_asc_pfet_01v8_lvt_60 CM____M2 1 0 20692 0 1 39552
+use sky130_asc_nfet_01v8_lvt_9 amp____M9 1 0 31178 0 1 43312
+use sky130_asc_pfet_01v8_lvt_12 amp____M13 1 0 35784 0 1 43312
+use sky130_asc_cap_mim_m3_1 BGR_Core____C2____CA3 1 0 6188 0 1 43312
+use sky130_asc_cap_mim_m3_1 BGR_Core____C2____CA5 1 0 16282 0 1 43312
+use sky130_asc_pnp_05v5_W3p40L3p40_1 BGR_Core____pnp_va 1 0 13636 0 1 43312
+use sky130_asc_res_xhigh_po_2p85_1 BGR_Core____R4____sub2 1 0 45976 0 1 43312
+use sky130_asc_res_xhigh_po_2p85_2 BGR_Core____R13 1 0 42644 0 1 43312
+use sky130_asc_pfet_01v8_lvt_12 CM____M17 1 0 23730 0 1 43312
+port "vbg" 3 31312 0 31340 97 m2
+port "va" 1 0 38656 160 38716 m3
+port "vb" 2 54437 29668 54556 29696 m1
+port "porst" 0 8220 0 8248 97 m2
+port "VSS" 19 0 912 800 1712 m5
+port "VSS" 18 53756 912 54556 1712 m5
+port "VSS" 17 0 51072 800 51872 m5
+port "VSS" 16 53756 51072 54556 51872 m5
+port "VSS" 15 996 0 1796 800 m4
+port "VSS" 14 996 52036 1796 52836 m4
+port "VSS" 13 52720 0 53520 800 m4
+port "VSS" 12 52720 52036 53520 52836 m4
+port "VDD" 11 0 3312 800 4112 m5
+port "VDD" 10 53756 3312 54556 4112 m5
+port "VDD" 9 0 48672 800 49472 m5
+port "VDD" 8 53756 48672 54556 49472 m5
+port "VDD" 7 3396 0 4196 800 m4
+port "VDD" 6 3396 52036 4196 52836 m4
+port "VDD" 5 50320 0 51120 800 m4
+port "VDD" 4 50320 52036 51120 52836 m4
+node "m4_25822_18434#" 2 0 25822 18434 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 153720 5244 0 0 0 0
+node "m4_25822_22216#" 2 0 25822 22216 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 146400 5000 0 0 0 0
+node "m4_25822_25998#" 2 0 25822 25998 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 146400 5000 0 0 0 0
+node "m4_24856_29780#" 2 0 24856 29780 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 146400 5000 0 0 0 0
+node "m4_12988_39632#" 1 0 12988 39632 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 39480 1436 0 0 0 0
+node "m4_6778_41004#" 2 0 6778 41004 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 146400 5000 0 0 0 0
+node "m3_13394_45120#" 6 0 13394 45120 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 394328 13260 34032 1372 0 0 0 0
+node "vbg" 29 0 31312 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10160 720 172840 12340 0 0 0 0 0 0 0 0
+node "m1_39224_11050#" 29 0 39224 11050 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 152928 10912 35328 2456 0 0 0 0 0 0 0 0
+node "m1_44358_11024#" 11 0 44358 11024 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6656 464 69600 4904 0 0 0 0 0 0 0 0
+node "m1_36170_11024#" 11 0 36170 11024 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6656 464 69600 4904 0 0 0 0 0 0 0 0
+node "m1_38930_10072#" 20 0 38930 10072 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6656 464 122912 8712 0 0 0 0 0 0 0 0
+node "m1_41998_10084#" 31 0 41998 10084 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 56552 4028 140440 9964 0 0 0 0 0 0 0 0
+node "m1_36478_10084#" 46 0 36478 10084 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 151024 10776 140048 9936 0 0 0 0 0 0 0 0
+node "m1_33718_13824#" 17 0 33718 13824 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 76320 5440 35328 2456 0 0 0 0 0 0 0 0
+node "m1_33718_14844#" 30 0 33718 14844 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 155504 11096 37232 2592 0 0 0 0 0 0 0 0
+node "m1_39422_17564#" 14 0 39422 17564 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 56384 4016 38296 2668 0 0 0 0 0 0 0 0
+node "m1_36662_17632#" 13 0 36662 17632 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20320 1440 30880 1988 457392 15364 0 0 0 0 0 0
+node "m1_41874_17620#" 18 0 41874 17620 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6656 464 109584 7760 0 0 0 0 0 0 0 0
+node "m1_42720_22134#" 1 0 42720 22134 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3808 328 0 0 0 0 0 0 0 0 0 0
+node "m1_13814_21360#" 17 0 13814 21360 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 76544 5456 35328 2456 0 0 0 0 0 0 0 0
+node "m1_32614_24636#" 22 0 32614 24636 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 71840 5120 69600 4904 0 0 0 0 0 0 0 0
+node "m1_34974_21360#" 20 0 34974 21360 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6656 464 122912 8712 0 0 0 0 0 0 0 0
+node "m1_32582_23604#" 50 0 32582 23604 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 117136 8288 205840 14568 0 0 0 0 0 0 0 0
+node "m1_27062_17620#" 66 0 27062 17620 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 188656 13464 227632 16192 0 0 0 0 0 0 0 0
+node "m1_13478_25656#" 33 0 13478 25656 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 87008 6136 129680 9128 0 0 0 0 0 0 0 0
+node "m1_27094_25112#" 17 0 27094 25112 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 73744 5256 35328 2456 0 0 0 0 0 0 0 0
+node "m1_33902_18584#" 50 0 33902 18584 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34096 2424 283520 20184 0 0 0 0 0 0 0 0
+node "m1_13722_22312#" 32 0 13722 22312 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10912 768 194256 13808 0 0 0 0 0 0 0 0
+node "m1_26326_28908#" 4 0 26326 28908 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7584 536 19428 1290 18760 742 10656 474 0 0 0 0
+node "m1_13446_24148#" 108 0 13446 24148 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 516416 36808 169664 11984 0 0 0 0 0 0 0 0
+node "m1_7834_28092#" 27 0 7834 28092 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 125144 8860 53520 3688 0 0 0 0 0 0 0 0
+node "va" 43 0 0 38656 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5008 352 196668 13822 611520 20734 327228 11144 0 0 0 0
+node "m1_12158_28908#" 17 0 12158 28908 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 76544 5456 35328 2456 0 0 0 0 0 0 0 0
+node "m1_16206_26120#" 97 0 16206 26120 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 436560 31104 179184 12664 0 0 0 0 0 0 0 0
+node "m1_38102_21972#" 50 0 38102 21972 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13312 928 306864 21728 0 0 0 0 0 0 0 0
+node "m1_14306_33136#" 44 0 14306 33136 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48656 3464 229536 16328 0 0 0 0 0 0 0 0
+node "m1_31694_28920#" 31 0 31694 28920 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 56384 4016 140440 9964 0 0 0 0 0 0 0 0
+node "m1_31694_33340#" 14 0 31694 33340 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 51232 3648 44680 3124 0 0 0 0 0 0 0 0
+node "m1_38654_33192#" 16 0 38654 33192 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6656 464 96256 6808 0 0 0 0 0 0 0 0
+node "vb" 145 0 54437 29668 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 234624 16736 651852 46206 441228 14824 0 0 0 0 0 0
+node "m1_35158_29860#" 112 0 35158 29860 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 322712 22972 391200 27808 0 0 0 0 0 0 0 0
+node "m1_14674_43948#" 43 0 14674 43948 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 52128 3712 200024 14128 237404 8028 34032 1372 0 0 0 0
+node "m1_13814_44004#" 2 0 13814 44004 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10160 720 5244 306 13240 558 18936 750 0 0 0 0
+node "m1_35282_24636#" 145 0 35282 24636 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 324896 23128 592352 42176 0 0 0 0 0 0 0 0
+node "m1_29854_24636#" 152 0 29854 24636 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 381064 27140 580928 41360 0 0 0 0 0 0 0 0
+node "li_41429_5933#" 35 0 41429 5933 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1156 136 12452 878 134336 9528 0 0 0 0 0 0 0 0
+node "porst" 40 0 8220 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1156 136 4868 342 170936 12204 0 0 0 0 0 0 0 0
+node "li_12173_6205#" 171 0 12173 6205 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2312 272 294264 20936 313708 22310 16000 650 9696 442 0 0 0 0
+node "li_26617_28577#" 57 0 26617 28577 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1156 136 63392 4478 218112 15512 0 0 0 0 0 0 0 0
+node "li_30757_32147#" 97 0 30757 32147 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1156 136 188072 13378 346768 24640 0 0 0 0 0 0 0 0
+node "li_26893_32385#" 103 0 26893 32385 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1156 136 157456 11062 420144 29808 0 0 0 0 0 0 0 0
+node "li_36921_35921#" 15 0 36921 35921 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1156 136 12216 890 0 0 0 0 0 0 0 0 0 0
+node "li_27997_35921#" 106 0 27997 35921 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2312 272 13064 916 177928 12488 134680 4606 53616 1906 0 0 0 0
+node "li_41521_43435#" 98 0 41521 43435 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2312 272 42644 2996 110536 7828 0 0 0 0 0 0 0 0
+node "li_18613_32181#" 262 0 18613 32181 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3468 408 541760 38570 312248 22236 0 0 0 0 0 0 0 0
+node "li_23949_43537#" 15 0 23949 43537 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1156 136 4868 342 12708 810 16000 650 18936 750 0 0 0 0
+node "li_35541_43605#" 25 0 35541 43605 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1156 136 12264 826 71504 5040 0 0 0 0 0 0 0 0
+node "VSS" 138 0 52720 52036 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3468 408 75698264 1267922 2691456 70918 2334830 45522 84568668 215936 87289600 221424 0 0
+node "li_14841_44625#" 76 0 14841 44625 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2312 272 8864 612 0 0 0 0 0 0 0 0 0 0
+node "li_25053_43435#" 82 0 25053 43435 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2312 272 10600 600 46752 3272 0 0 0 0 0 0 0 0
+node "VDD" 111 0 50320 52036 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2312 272 63039344 1055604 2155168 42926 2165384 42846 84630000 218218 87289600 221424 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "BGR_Core____R10____sub2/Rout" "BGR_Core____R11____sub1/Rin" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "BGR_Core____R11____sub1/Rin" "m1_31694_33340#"
+merge "BGR_Core____R13/Rout" "BGR_Core____C2____CA5/Cout" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "BGR_Core____C2____CA5/Cout" "BGR_Core____C2____CA3/Cout"
+merge "BGR_Core____C2____CA3/Cout" "BGR_Core____pnp_va/Base"
+merge "BGR_Core____pnp_va/Base" "li_14841_44625#"
+merge "li_14841_44625#" "BGR_Core____C2____CA2/Cout"
+merge "BGR_Core____C2____CA2/Cout" "m4_6778_41004#"
+merge "m4_6778_41004#" "BGR_Core____C2____CA1/Cout"
+merge "BGR_Core____C2____CA1/Cout" "m4_12988_39632#"
+merge "m4_12988_39632#" "BGR_Core____R4____sub2/VGND"
+merge "BGR_Core____R4____sub2/VGND" "BGR_Core____R13/VGND"
+merge "BGR_Core____R13/VGND" "amp____M13/VSUBS"
+merge "amp____M13/VSUBS" "amp____M13/VGND"
+merge "amp____M13/VGND" "amp____M9/VGND"
+merge "amp____M9/VGND" "CM____M17/VSUBS"
+merge "CM____M17/VSUBS" "CM____M17/VGND"
+merge "CM____M17/VGND" "BGR_Core____C2____CA5/VSUBS"
+merge "BGR_Core____C2____CA5/VSUBS" "BGR_Core____C2____CA5/VGND"
+merge "BGR_Core____C2____CA5/VGND" "BGR_Core____pnp_va/Collector"
+merge "BGR_Core____pnp_va/Collector" "BGR_Core____pnp_va/VGND"
+merge "BGR_Core____pnp_va/VGND" "BGR_Core____C2____CA3/VSUBS"
+merge "BGR_Core____C2____CA3/VSUBS" "BGR_Core____C2____CA3/VGND"
+merge "BGR_Core____C2____CA3/VGND" "CM____M2/VSUBS"
+merge "CM____M2/VSUBS" "CM____M2/VGND"
+merge "CM____M2/VGND" "BGR_Core____C2____CA1/VSUBS"
+merge "BGR_Core____C2____CA1/VSUBS" "BGR_Core____C2____CA1/VGND"
+merge "BGR_Core____C2____CA1/VGND" "BGR_Core____C2____CA2/VSUBS"
+merge "BGR_Core____C2____CA2/VSUBS" "BGR_Core____C2____CA2/VGND"
+merge "BGR_Core____C2____CA2/VGND" "BGR_Core____pnp_vb____b5/Base"
+merge "BGR_Core____pnp_vb____b5/Base" "BGR_Core____pnp_vb____b5/Collector"
+merge "BGR_Core____pnp_vb____b5/Collector" "BGR_Core____pnp_vb____b5/VGND"
+merge "BGR_Core____pnp_vb____b5/VGND" "amp____M4/VSUBS"
+merge "amp____M4/VSUBS" "amp____M4/VGND"
+merge "amp____M4/VGND" "CM____M1/VSUBS"
+merge "CM____M1/VSUBS" "CM____M1/VGND"
+merge "CM____M1/VGND" "amp____M6/SOURCE"
+merge "amp____M6/SOURCE" "BGR_Core____pnp_vb____b2/Base"
+merge "BGR_Core____pnp_vb____b2/Base" "amp____M7/SOURCE"
+merge "amp____M7/SOURCE" "BGR_Core____pnp_vb____b2/Collector"
+merge "BGR_Core____pnp_vb____b2/Collector" "BGR_Core____pnp_vb____b2/VGND"
+merge "BGR_Core____pnp_vb____b2/VGND" "BGR_Core____R10____sub2/VGND"
+merge "BGR_Core____R10____sub2/VGND" "BGR_Core____R11____sub1/VGND"
+merge "BGR_Core____R11____sub1/VGND" "amp____M8/VSUBS"
+merge "amp____M8/VSUBS" "amp____M8/VGND"
+merge "amp____M8/VGND" "amp____M6/VGND"
+merge "amp____M6/VGND" "CM____C1____CA4/VSUBS"
+merge "CM____C1____CA4/VSUBS" "CM____C1____CA4/VGND"
+merge "CM____C1____CA4/VGND" "amp____M7/VGND"
+merge "amp____M7/VGND" "BGR_Core____R9/Rout"
+merge "BGR_Core____R9/Rout" "BGR_Core____R9/VGND"
+merge "BGR_Core____R9/VGND" "BGR_Core____C2____CA4/Cout"
+merge "BGR_Core____C2____CA4/Cout" "BGR_Core____C2____CA4/VSUBS"
+merge "BGR_Core____C2____CA4/VSUBS" "BGR_Core____C2____CA4/VGND"
+merge "BGR_Core____C2____CA4/VGND" "BGR_Core____pnp_vb____b4/Base"
+merge "BGR_Core____pnp_vb____b4/Base" "BGR_Core____pnp_vb____b4/Collector"
+merge "BGR_Core____pnp_vb____b4/Collector" "BGR_Core____pnp_vb____b4/VGND"
+merge "BGR_Core____pnp_vb____b4/VGND" "BGR_Core____R5____sub1/VGND"
+merge "BGR_Core____R5____sub1/VGND" "BGR_Core____R10____sub1/VGND"
+merge "BGR_Core____R10____sub1/VGND" "amp____M5/VGND"
+merge "amp____M5/VGND" "CM____C1____CA2/VSUBS"
+merge "CM____C1____CA2/VSUBS" "CM____C1____CA2/VGND"
+merge "CM____C1____CA2/VGND" "BGR_Core____R7____sub1/VGND"
+merge "BGR_Core____R7____sub1/VGND" "BGR_Core____R6____sub2/VGND"
+merge "BGR_Core____R6____sub2/VGND" "BGR_Core____R6____sub1/VGND"
+merge "BGR_Core____R6____sub1/VGND" "BGR_Core____pnp_vb____b3/Base"
+merge "BGR_Core____pnp_vb____b3/Base" "BGR_Core____pnp_vb____b3/Collector"
+merge "BGR_Core____pnp_vb____b3/Collector" "BGR_Core____pnp_vb____b3/VGND"
+merge "BGR_Core____pnp_vb____b3/VGND" "BGR_Core____R4____sub1/VGND"
+merge "BGR_Core____R4____sub1/VGND" "BGR_Core____R2____sub1/VGND"
+merge "BGR_Core____R2____sub1/VGND" "BGR_Core____R12____sub2/VGND"
+merge "BGR_Core____R12____sub2/VGND" "BGR_Core____R12____sub1/VGND"
+merge "BGR_Core____R12____sub1/VGND" "CM____C1____CA1/VSUBS"
+merge "CM____C1____CA1/VSUBS" "CM____C1____CA1/VGND"
+merge "CM____C1____CA1/VGND" "BGR_Core____R11____sub2/VGND"
+merge "BGR_Core____R11____sub2/VGND" "BGR_Core____R8____sub2/VGND"
+merge "BGR_Core____R8____sub2/VGND" "BGR_Core____pnp_vb____b1/Base"
+merge "BGR_Core____pnp_vb____b1/Base" "m1_42720_22134#"
+merge "m1_42720_22134#" "BGR_Core____pnp_vb____b1/Collector"
+merge "BGR_Core____pnp_vb____b1/Collector" "BGR_Core____pnp_vb____b1/VGND"
+merge "BGR_Core____pnp_vb____b1/VGND" "BGR_Core____R2____sub2/VGND"
+merge "BGR_Core____R2____sub2/VGND" "CM____C1____CA3/VSUBS"
+merge "CM____C1____CA3/VSUBS" "CM____C1____CA3/VGND"
+merge "CM____C1____CA3/VGND" "BGR_Core____R8____sub1/VGND"
+merge "BGR_Core____R8____sub1/VGND" "BGR_Core____R7____sub2/VGND"
+merge "BGR_Core____R7____sub2/VGND" "BGR_Core____R1____sub2/VGND"
+merge "BGR_Core____R1____sub2/VGND" "BGR_Core____R3____sub2/VGND"
+merge "BGR_Core____R3____sub2/VGND" "BGR_Core____R3____sub1/VGND"
+merge "BGR_Core____R3____sub1/VGND" "BGR_Core____R1____sub1/VGND"
+merge "BGR_Core____R1____sub1/VGND" "BGR_Core____R5____sub2/VGND"
+merge "BGR_Core____R5____sub2/VGND" "CM____C1____CA5/VSUBS"
+merge "CM____C1____CA5/VSUBS" "CM____C1____CA5/VGND"
+merge "CM____C1____CA5/VGND" "R17____sub2/VGND"
+merge "R17____sub2/VGND" "R21/Rout"
+merge "R21/Rout" "R21/VGND"
+merge "R21/VGND" "R19____sub1/VGND"
+merge "R19____sub1/VGND" "R20____sub1/VGND"
+merge "R20____sub1/VGND" "R19____sub2/VGND"
+merge "R19____sub2/VGND" "R18____sub1/VGND"
+merge "R18____sub1/VGND" "R17____sub1/VGND"
+merge "R17____sub1/VGND" "R18____sub2/VGND"
+merge "R18____sub2/VGND" "R20____sub2/VGND"
+merge "R20____sub2/VGND" "M10/SOURCE"
+merge "M10/SOURCE" "CM____M3/VSUBS"
+merge "CM____M3/VSUBS" "CM____M3/VGND"
+merge "CM____M3/VGND" "M10/VGND"
+merge "M10/VGND" "VSUBS"
+merge "VSUBS" "VSS"
+merge "BGR_Core____R4____sub2/VPWR" "BGR_Core____R13/VPWR" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "BGR_Core____R13/VPWR" "amp____M13/SOURCE"
+merge "amp____M13/SOURCE" "amp____M13/VPWR"
+merge "amp____M13/VPWR" "amp____M9/VPWR"
+merge "amp____M9/VPWR" "CM____M17/SOURCE"
+merge "CM____M17/SOURCE" "CM____M17/GATE"
+merge "CM____M17/GATE" "li_25053_43435#"
+merge "li_25053_43435#" "CM____M17/VPWR"
+merge "CM____M17/VPWR" "BGR_Core____C2____CA5/VPWR"
+merge "BGR_Core____C2____CA5/VPWR" "BGR_Core____pnp_va/VPWR"
+merge "BGR_Core____pnp_va/VPWR" "BGR_Core____C2____CA3/VPWR"
+merge "BGR_Core____C2____CA3/VPWR" "CM____M2/SOURCE"
+merge "CM____M2/SOURCE" "CM____M2/VPWR"
+merge "CM____M2/VPWR" "BGR_Core____C2____CA1/VPWR"
+merge "BGR_Core____C2____CA1/VPWR" "BGR_Core____C2____CA2/VPWR"
+merge "BGR_Core____C2____CA2/VPWR" "BGR_Core____pnp_vb____b5/VPWR"
+merge "BGR_Core____pnp_vb____b5/VPWR" "amp____M4/SOURCE"
+merge "amp____M4/SOURCE" "amp____M4/VPWR"
+merge "amp____M4/VPWR" "CM____M1/SOURCE"
+merge "CM____M1/SOURCE" "CM____M1/VPWR"
+merge "CM____M1/VPWR" "BGR_Core____pnp_vb____b2/VPWR"
+merge "BGR_Core____pnp_vb____b2/VPWR" "BGR_Core____R10____sub2/VPWR"
+merge "BGR_Core____R10____sub2/VPWR" "BGR_Core____R11____sub1/VPWR"
+merge "BGR_Core____R11____sub1/VPWR" "amp____M8/SOURCE"
+merge "amp____M8/SOURCE" "amp____M8/VPWR"
+merge "amp____M8/VPWR" "amp____M6/VPWR"
+merge "amp____M6/VPWR" "CM____C1____CA4/VPWR"
+merge "CM____C1____CA4/VPWR" "amp____M7/VPWR"
+merge "amp____M7/VPWR" "BGR_Core____R9/VPWR"
+merge "BGR_Core____R9/VPWR" "BGR_Core____C2____CA4/VPWR"
+merge "BGR_Core____C2____CA4/VPWR" "CM____C1____CA4/Cin"
+merge "CM____C1____CA4/Cin" "BGR_Core____pnp_vb____b4/VPWR"
+merge "BGR_Core____pnp_vb____b4/VPWR" "BGR_Core____R5____sub1/VPWR"
+merge "BGR_Core____R5____sub1/VPWR" "BGR_Core____R10____sub1/VPWR"
+merge "BGR_Core____R10____sub1/VPWR" "amp____M5/VPWR"
+merge "amp____M5/VPWR" "CM____C1____CA2/Cin"
+merge "CM____C1____CA2/Cin" "CM____C1____CA2/VPWR"
+merge "CM____C1____CA2/VPWR" "BGR_Core____R7____sub1/VPWR"
+merge "BGR_Core____R7____sub1/VPWR" "BGR_Core____R6____sub2/VPWR"
+merge "BGR_Core____R6____sub2/VPWR" "BGR_Core____R6____sub1/VPWR"
+merge "BGR_Core____R6____sub1/VPWR" "BGR_Core____pnp_vb____b3/VPWR"
+merge "BGR_Core____pnp_vb____b3/VPWR" "BGR_Core____R4____sub1/VPWR"
+merge "BGR_Core____R4____sub1/VPWR" "BGR_Core____R2____sub1/VPWR"
+merge "BGR_Core____R2____sub1/VPWR" "BGR_Core____R12____sub2/VPWR"
+merge "BGR_Core____R12____sub2/VPWR" "BGR_Core____R12____sub1/VPWR"
+merge "BGR_Core____R12____sub1/VPWR" "CM____C1____CA1/Cin"
+merge "CM____C1____CA1/Cin" "CM____C1____CA1/VPWR"
+merge "CM____C1____CA1/VPWR" "BGR_Core____R11____sub2/VPWR"
+merge "BGR_Core____R11____sub2/VPWR" "BGR_Core____R8____sub2/VPWR"
+merge "BGR_Core____R8____sub2/VPWR" "BGR_Core____pnp_vb____b1/VPWR"
+merge "BGR_Core____pnp_vb____b1/VPWR" "BGR_Core____R2____sub2/VPWR"
+merge "BGR_Core____R2____sub2/VPWR" "CM____C1____CA3/VPWR"
+merge "CM____C1____CA3/VPWR" "BGR_Core____R8____sub1/VPWR"
+merge "BGR_Core____R8____sub1/VPWR" "BGR_Core____R7____sub2/VPWR"
+merge "BGR_Core____R7____sub2/VPWR" "CM____C1____CA3/Cin"
+merge "CM____C1____CA3/Cin" "BGR_Core____R1____sub2/VPWR"
+merge "BGR_Core____R1____sub2/VPWR" "BGR_Core____R3____sub2/VPWR"
+merge "BGR_Core____R3____sub2/VPWR" "BGR_Core____R3____sub1/VPWR"
+merge "BGR_Core____R3____sub1/VPWR" "BGR_Core____R1____sub1/VPWR"
+merge "BGR_Core____R1____sub1/VPWR" "BGR_Core____R5____sub2/VPWR"
+merge "BGR_Core____R5____sub2/VPWR" "CM____C1____CA5/Cin"
+merge "CM____C1____CA5/Cin" "CM____C1____CA5/VPWR"
+merge "CM____C1____CA5/VPWR" "R17____sub2/VPWR"
+merge "R17____sub2/VPWR" "R21/VPWR"
+merge "R21/VPWR" "R19____sub1/VPWR"
+merge "R19____sub1/VPWR" "R20____sub1/VPWR"
+merge "R20____sub1/VPWR" "R19____sub2/VPWR"
+merge "R19____sub2/VPWR" "R18____sub1/VPWR"
+merge "R18____sub1/VPWR" "R17____sub1/VPWR"
+merge "R17____sub1/VPWR" "R18____sub2/VPWR"
+merge "R18____sub2/VPWR" "R20____sub2/VPWR"
+merge "R20____sub2/VPWR" "CM____M3/SOURCE"
+merge "CM____M3/SOURCE" "CM____M3/VPWR"
+merge "CM____M3/VPWR" "M10/VPWR"
+merge "M10/VPWR" "VDD"
+merge "amp____M9/SOURCE" "amp____M6/DRAIN" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "amp____M6/DRAIN" "amp____M5/SOURCE"
+merge "amp____M5/SOURCE" "li_26893_32385#"
+merge "CM____M17/DRAIN" "BGR_Core____C2____CA5/Cin" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "BGR_Core____C2____CA5/Cin" "li_23949_43537#"
+merge "li_23949_43537#" "BGR_Core____pnp_va/Emitter"
+merge "BGR_Core____pnp_va/Emitter" "m3_13394_45120#"
+merge "m3_13394_45120#" "BGR_Core____C2____CA3/Cin"
+merge "BGR_Core____C2____CA3/Cin" "m1_13814_44004#"
+merge "m1_13814_44004#" "BGR_Core____C2____CA1/Cin"
+merge "BGR_Core____C2____CA1/Cin" "BGR_Core____C2____CA2/Cin"
+merge "BGR_Core____C2____CA2/Cin" "BGR_Core____C2____CA4/Cin"
+merge "BGR_Core____C2____CA4/Cin" "BGR_Core____R6____sub1/Rin"
+merge "BGR_Core____R6____sub1/Rin" "va"
+merge "va" "CM____M1/DRAIN"
+merge "CM____M1/DRAIN" "m1_14674_43948#"
+merge "m1_14674_43948#" "amp____M5/GATE"
+merge "amp____M5/GATE" "li_26617_28577#"
+merge "amp____M9/GATE" "CM____M2/DRAIN" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "CM____M2/DRAIN" "li_35541_43605#"
+merge "li_35541_43605#" "BGR_Core____R1____sub2/Rout"
+merge "BGR_Core____R1____sub2/Rout" "BGR_Core____R3____sub1/Rin"
+merge "BGR_Core____R3____sub1/Rin" "vb"
+merge "BGR_Core____R10____sub1/Rin" "BGR_Core____R8____sub2/Rout" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "BGR_Core____R8____sub2/Rout" "m1_13446_24148#"
+merge "amp____M13/GATE" "CM____M2/GATE" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "CM____M2/GATE" "li_41521_43435#"
+merge "li_41521_43435#" "CM____M1/GATE"
+merge "CM____M1/GATE" "amp____M8/DRAIN"
+merge "amp____M8/DRAIN" "CM____C1____CA4/Cout"
+merge "CM____C1____CA4/Cout" "li_27997_35921#"
+merge "li_27997_35921#" "CM____C1____CA2/Cout"
+merge "CM____C1____CA2/Cout" "m4_24856_29780#"
+merge "m4_24856_29780#" "amp____M5/DRAIN"
+merge "amp____M5/DRAIN" "m1_26326_28908#"
+merge "m1_26326_28908#" "CM____C1____CA1/Cout"
+merge "CM____C1____CA1/Cout" "m4_25822_25998#"
+merge "m4_25822_25998#" "CM____C1____CA3/Cout"
+merge "CM____C1____CA3/Cout" "m4_25822_22216#"
+merge "m4_25822_22216#" "CM____C1____CA5/Cout"
+merge "CM____C1____CA5/Cout" "m4_25822_18434#"
+merge "m4_25822_18434#" "CM____M3/GATE"
+merge "CM____M3/GATE" "M10/DRAIN"
+merge "M10/DRAIN" "li_12173_6205#"
+merge "BGR_Core____R11____sub1/Rout" "BGR_Core____R11____sub2/Rin" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "BGR_Core____R11____sub2/Rin" "m1_16206_26120#"
+merge "BGR_Core____R12____sub1/Rin" "BGR_Core____R5____sub2/Rout" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "BGR_Core____R5____sub2/Rout" "m1_27062_17620#"
+merge "M10/GATE" "porst" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "R18____sub1/Rout" "R18____sub2/Rin" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "R18____sub2/Rin" "m1_39224_11050#"
+merge "R20____sub1/Rout" "R20____sub2/Rin" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "R20____sub2/Rin" "m1_36170_11024#"
+merge "R21/Rin" "R20____sub2/Rout" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "R20____sub2/Rout" "m1_36478_10084#"
+merge "amp____M9/DRAIN" "amp____M4/DRAIN" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "amp____M4/DRAIN" "amp____M8/GATE"
+merge "amp____M8/GATE" "li_30757_32147#"
+merge "li_30757_32147#" "amp____M4/GATE"
+merge "amp____M4/GATE" "li_36921_35921#"
+merge "BGR_Core____pnp_vb____b5/Emitter" "BGR_Core____pnp_vb____b2/Emitter" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "BGR_Core____pnp_vb____b2/Emitter" "m1_38654_33192#"
+merge "m1_38654_33192#" "BGR_Core____pnp_vb____b4/Emitter"
+merge "BGR_Core____pnp_vb____b4/Emitter" "BGR_Core____pnp_vb____b3/Emitter"
+merge "BGR_Core____pnp_vb____b3/Emitter" "BGR_Core____pnp_vb____b1/Emitter"
+merge "BGR_Core____pnp_vb____b1/Emitter" "m1_38102_21972#"
+merge "m1_38102_21972#" "BGR_Core____R3____sub2/Rout"
+merge "BGR_Core____R3____sub2/Rout" "m1_41874_17620#"
+merge "BGR_Core____R9/Rin" "BGR_Core____R11____sub2/Rout" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "BGR_Core____R11____sub2/Rout" "m1_14306_33136#"
+merge "BGR_Core____R4____sub1/Rin" "BGR_Core____R2____sub2/Rout" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "BGR_Core____R2____sub2/Rout" "m1_34974_21360#"
+merge "BGR_Core____R4____sub2/Rin" "BGR_Core____R4____sub1/Rout" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "BGR_Core____R4____sub1/Rout" "m1_35282_24636#"
+merge "BGR_Core____R13/Rin" "BGR_Core____R12____sub2/Rout" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "BGR_Core____R12____sub2/Rout" "m1_29854_24636#"
+merge "R19____sub2/Rin" "R19____sub1/Rout" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "R19____sub1/Rout" "m1_33718_14844#"
+merge "R17____sub2/Rin" "R17____sub1/Rout" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "R17____sub1/Rout" "m1_41998_10084#"
+merge "BGR_Core____R7____sub1/Rin" "BGR_Core____R6____sub2/Rout" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "BGR_Core____R6____sub2/Rout" "m1_12158_28908#"
+merge "BGR_Core____R10____sub2/Rin" "BGR_Core____R10____sub1/Rout" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "BGR_Core____R10____sub1/Rout" "m1_31694_28920#"
+merge "BGR_Core____R5____sub1/Rout" "BGR_Core____R5____sub2/Rin" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "BGR_Core____R5____sub2/Rin" "m1_33902_18584#"
+merge "amp____M13/DRAIN" "amp____M7/DRAIN" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "amp____M7/DRAIN" "amp____M6/GATE"
+merge "amp____M6/GATE" "amp____M7/GATE"
+merge "amp____M7/GATE" "li_18613_32181#"
+merge "BGR_Core____R3____sub2/Rin" "BGR_Core____R3____sub1/Rout" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "BGR_Core____R3____sub1/Rout" "m1_39422_17564#"
+merge "BGR_Core____R6____sub2/Rin" "BGR_Core____R6____sub1/Rout" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "BGR_Core____R6____sub1/Rout" "m1_7834_28092#"
+merge "BGR_Core____R8____sub1/Rin" "BGR_Core____R7____sub2/Rout" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "BGR_Core____R7____sub2/Rout" "m1_13814_21360#"
+merge "BGR_Core____R8____sub2/Rin" "BGR_Core____R8____sub1/Rout" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "BGR_Core____R8____sub1/Rout" "m1_13478_25656#"
+merge "R17____sub2/Rout" "R18____sub1/Rin" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "R18____sub1/Rin" "m1_44358_11024#"
+merge "BGR_Core____R12____sub2/Rin" "BGR_Core____R12____sub1/Rout" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "BGR_Core____R12____sub1/Rout" "m1_27094_25112#"
+merge "BGR_Core____R7____sub1/Rout" "BGR_Core____R7____sub2/Rin" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "BGR_Core____R7____sub2/Rin" "m1_13722_22312#"
+merge "R19____sub1/Rin" "R18____sub2/Rout" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "R18____sub2/Rout" "m1_38930_10072#"
+merge "R17____sub1/Rin" "CM____M3/DRAIN" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "CM____M3/DRAIN" "li_41429_5933#"
+merge "li_41429_5933#" "vbg"
+merge "BGR_Core____R1____sub2/Rin" "BGR_Core____R1____sub1/Rout" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "BGR_Core____R1____sub1/Rout" "m1_36662_17632#"
+merge "BGR_Core____R2____sub1/Rout" "BGR_Core____R2____sub2/Rin" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "BGR_Core____R2____sub2/Rin" "m1_32614_24636#"
+merge "R20____sub1/Rin" "R19____sub2/Rout" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "R19____sub2/Rout" "m1_33718_13824#"
+merge "BGR_Core____R4____sub2/Rout" "BGR_Core____R5____sub1/Rin" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "BGR_Core____R5____sub1/Rin" "m1_35158_29860#"
+merge "BGR_Core____R2____sub1/Rin" "BGR_Core____R1____sub1/Rin" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "BGR_Core____R1____sub1/Rin" "m1_32582_23604#"

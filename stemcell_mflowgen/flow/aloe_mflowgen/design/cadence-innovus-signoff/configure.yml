@@ -27,7 +27,7 @@ outputs:
 #-------------------------------------------------------------------------
 
 commands:
-  - cat bgr-v0.gds.gz > outputs/design.gds.gz
-  - cat bgr-v0-merged.gds> outputs/design-merged.gds
-  - cat bgr-v0.lvs.v > outputs/design.lvs.v
-  - cat bgr-v0.def.gz > outputs/design.def.gz
+  - cat bgr-v0-final.gds.gz > outputs/design.gds.gz
+  - cat bgr-v0-final-merged.gds> outputs/design-merged.gds
+  - cat bgr-v0-final.lvs.v > outputs/design.lvs.v
+  - cat bgr-v0-final.def.gz > outputs/design.def.gz

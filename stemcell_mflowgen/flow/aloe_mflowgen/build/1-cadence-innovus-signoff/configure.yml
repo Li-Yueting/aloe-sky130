@@ -1,0 +1,31 @@
+build_dir: 1-cadence-innovus-signoff
+build_id: '1'
+commands:
+- cat bgr-v0-final.gds.gz > outputs/design.gds.gz
+- cat bgr-v0-final-merged.gds> outputs/design-merged.gds
+- cat bgr-v0-final.lvs.v > outputs/design.lvs.v
+- cat bgr-v0-final.def.gz > outputs/design.def.gz
+edges_i: {}
+edges_o:
+  design.def.gz:
+  - f: design.def.gz
+    step: 3-open-magic-def2spice
+  design.gds.gz:
+  - f: design.gds.gz
+    step: 2-mentor-calibre-gdsmerge
+  design.lvs.v:
+  - f: design.lvs.v
+    step: 4-netgen-lvs-def
+  - f: design.lvs.v
+    step: 9-netgen-lvs-gds
+  - f: design.lvs.v
+    step: 10-netgen-lvs-gds-device
+  - f: design.lvs.v
+    step: 8-mentor-calibre-comparison
+name: cadence-innovus-signoff
+outputs:
+- design.gds.gz
+- design-merged.gds
+- design.lvs.v
+- design.def.gz
+source: /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/aloe_mflowgen/design/cadence-innovus-signoff

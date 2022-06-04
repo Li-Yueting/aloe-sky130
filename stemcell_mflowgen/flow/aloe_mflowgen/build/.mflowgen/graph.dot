@@ -12,6 +12,10 @@ splines=polyline;
 center=true;
 nodesep=1.2;
 ranksep=0.8;
+analog_skywater_130nm [ fontsize=24, width=2, penwidth=2, shape=Mrecord, label="{ {  } | \n
+analog-skywater-130nm
+
+\n\n | { <o_adk> adk } }", color=black ];
 cadence_innovus_signoff [ fontsize=24, width=2, penwidth=2, shape=Mrecord, label="{ {  } | \n
 cadence-innovus-signoff
 
@@ -52,30 +56,26 @@ open_magic_gds2spice [ fontsize=24, width=2, penwidth=2, shape=Mrecord, label="{
 open-magic-gds2spice
 
 \n\n | { <o_design_extracted_spice> design_extracted.spice } }", color=black ];
-skywater_130nm [ fontsize=24, width=2, penwidth=2, shape=Mrecord, label="{ {  } | \n
-skywater-130nm
-
-\n\n | { <o_adk> adk } }", color=black ];
-skywater_130nm:o_adk:s -> mentor_calibre_comparison:i_adk:n [ arrowsize=2, penwidth=2 ];
+analog_skywater_130nm:o_adk:s -> mentor_calibre_comparison:i_adk:n [ arrowsize=2, penwidth=2 ];
 cadence_innovus_signoff:o_design_lvs_v:s -> mentor_calibre_comparison:i_design_lvs_v:n [ arrowsize=2, penwidth=2 ];
 open_magic_gds2spice:o_design_extracted_spice:s -> mentor_calibre_comparison:i_design_extracted_spice:n [ arrowsize=2, penwidth=2 ];
-skywater_130nm:o_adk:s -> mentor_calibre_gdsmerge:i_adk:n [ arrowsize=2, penwidth=2 ];
+analog_skywater_130nm:o_adk:s -> mentor_calibre_gdsmerge:i_adk:n [ arrowsize=2, penwidth=2 ];
 cadence_innovus_signoff:o_design_gds_gz:s -> mentor_calibre_gdsmerge:i_design_gds_gz:n [ arrowsize=2, penwidth=2 ];
-skywater_130nm:o_adk:s -> netgen_lvs_def:i_adk:n [ arrowsize=2, penwidth=2 ];
+analog_skywater_130nm:o_adk:s -> netgen_lvs_def:i_adk:n [ arrowsize=2, penwidth=2 ];
 cadence_innovus_signoff:o_design_lvs_v:s -> netgen_lvs_def:i_design_lvs_v:n [ arrowsize=2, penwidth=2 ];
 open_magic_def2spice:o_design_extracted_spice:s -> netgen_lvs_def:i_design_extracted_spice:n [ arrowsize=2, penwidth=2 ];
-skywater_130nm:o_adk:s -> netgen_lvs_gds:i_adk:n [ arrowsize=2, penwidth=2 ];
+analog_skywater_130nm:o_adk:s -> netgen_lvs_gds:i_adk:n [ arrowsize=2, penwidth=2 ];
 cadence_innovus_signoff:o_design_lvs_v:s -> netgen_lvs_gds:i_design_lvs_v:n [ arrowsize=2, penwidth=2 ];
 open_magic_gds2spice:o_design_extracted_spice:s -> netgen_lvs_gds:i_design_extracted_spice:n [ arrowsize=2, penwidth=2 ];
-skywater_130nm:o_adk:s -> netgen_lvs_gds_device:i_adk:n [ arrowsize=2, penwidth=2 ];
+analog_skywater_130nm:o_adk:s -> netgen_lvs_gds_device:i_adk:n [ arrowsize=2, penwidth=2 ];
 cadence_innovus_signoff:o_design_lvs_v:s -> netgen_lvs_gds_device:i_design_lvs_v:n [ arrowsize=2, penwidth=2 ];
 open_magic_gds2spice:o_design_extracted_spice:s -> netgen_lvs_gds_device:i_design_extracted_spice:n [ arrowsize=2, penwidth=2 ];
-skywater_130nm:o_adk:s -> open_magic_antenna:i_adk:n [ arrowsize=2, penwidth=2 ];
+analog_skywater_130nm:o_adk:s -> open_magic_antenna:i_adk:n [ arrowsize=2, penwidth=2 ];
 mentor_calibre_gdsmerge:o_design_merged_gds:s -> open_magic_antenna:i_design_merged_gds:n [ arrowsize=2, penwidth=2 ];
-skywater_130nm:o_adk:s -> open_magic_def2spice:i_adk:n [ arrowsize=2, penwidth=2 ];
+analog_skywater_130nm:o_adk:s -> open_magic_def2spice:i_adk:n [ arrowsize=2, penwidth=2 ];
 cadence_innovus_signoff:o_design_def_gz:s -> open_magic_def2spice:i_design_def_gz:n [ arrowsize=2, penwidth=2 ];
-skywater_130nm:o_adk:s -> open_magic_drc:i_adk:n [ arrowsize=2, penwidth=2 ];
+analog_skywater_130nm:o_adk:s -> open_magic_drc:i_adk:n [ arrowsize=2, penwidth=2 ];
 mentor_calibre_gdsmerge:o_design_merged_gds:s -> open_magic_drc:i_design_merged_gds:n [ arrowsize=2, penwidth=2 ];
-skywater_130nm:o_adk:s -> open_magic_gds2spice:i_adk:n [ arrowsize=2, penwidth=2 ];
+analog_skywater_130nm:o_adk:s -> open_magic_gds2spice:i_adk:n [ arrowsize=2, penwidth=2 ];
 mentor_calibre_gdsmerge:o_design_merged_gds:s -> open_magic_gds2spice:i_design_merged_gds:n [ arrowsize=2, penwidth=2 ];
 }
