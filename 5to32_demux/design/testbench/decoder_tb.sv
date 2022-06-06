@@ -3,9 +3,16 @@ module decoder_tb;
     reg [4:0] a;
     reg en;
     wire[31:0] y;
+    supply0 VSS;
+    supply1 VDD;
+
     // duration for each bit = 20 * timescale = 20 * 1 ns  = 20ns
     localparam period = 20;  
-    decoder5x32 tt(
+    decoder5x32 decoder_inst(
+        `ifdef USE_POWER_PINS
+            .VDD(VDD),	// User area 1 1.8V power
+            .VSS(VSS),	// User area 1 digital ground
+        `endif
         .a(a),
         .en(en),
         .y(y)

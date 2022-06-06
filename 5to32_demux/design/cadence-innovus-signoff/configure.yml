@@ -54,6 +54,8 @@ commands:
   - ln -sf ../results/*.sdc               design.sdc
   - ln -sf ../results/*.sdf               design.sdf
   - ln -sf ../results/*.virtuoso.v        design.virtuoso.v
+  - cd ..
+  - python add_def.py
 
 #-------------------------------------------------------------------------
 # Parameters

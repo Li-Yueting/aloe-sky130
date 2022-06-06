@@ -1,3 +1,4 @@
+`define USE_POWER_PINS 1
 /**
  * Copyright 2020 The SkyWater PDK Authors
  *

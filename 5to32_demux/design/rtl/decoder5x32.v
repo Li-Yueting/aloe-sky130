@@ -1,4 +1,5 @@
-module decoder5x32(
+
+module decoder5x32 (
   input [4:0] a,                   // 5 input lines
   input en,                        // enable pin
   output [31:0] y);               // 32 output lines

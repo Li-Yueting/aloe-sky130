@@ -32,6 +32,6 @@ link_design
 
 read_sdc -echo $pt_sdc
 
-set_propagated_clock [all_clocks]
+# set_propagated_clock [all_clocks]
 
 read_parasitics -format spef $pt_spef
