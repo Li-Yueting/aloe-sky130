@@ -25,7 +25,7 @@ N 300 -340 300 -270 { lab=VSS}
 C {sky130_fd_pr/nfet_01v8.sym} 300 -360 1 0 {name=M1
 L='L_N'
 W='W_N'
-nf=1
+nf=10 
 mult='N'
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -53,8 +53,7 @@ C {devices/lab_pin.sym} 300 -160 1 0 {name=l6 sig_type=std_logic lab=VDD
 C {sky130_fd_pr/pfet_01v8.sym} 300 -70 3 0 {name=M2
 L='L_P'
 W='W_P'
-nf=1
-
+nf=10
 mult='N'
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
