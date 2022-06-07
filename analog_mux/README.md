@@ -1,3 +1,3 @@
 ### ```source setup.csh``` firstly
-### ./layout/analog_mux.mag (ports are not made yet)
-### ./schematic/analog_mux.sch
+### ./layout/analog_mux_ready.mag (ports are not made yet)
+### ./schematic/line_switches.sch
