@@ -1,6 +1,7 @@
 #!/bin/csh
 
 # set environment variables
+setenv PDKPATH /farmshare/home/classes/ee/372/PDKs/open_pdks_1.0.310/sky130/sky130A
 setenv PDK_ROOT /farmshare/home/classes/ee/372/PDKs/open_pdks_1.0.310/sky130
 setenv SIM_DIR ~/.xschem/simulations
 setenv DESIGN_DIR ~/ee372/incremental_delta_sigma_adc

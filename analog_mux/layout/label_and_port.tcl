@@ -49,14 +49,14 @@ port use signal
 
 # VGND
 box 805.00 21057.00 861.00 21094.00
-label VGND FreeSans 30
+label VDD FreeSans 30
 port make 
 port class inout
 port use ground
 
 # VPWR
 box 1029.00 21057.00 1093.00 21094.00
-label VPWR FreeSans 30
+label VSS FreeSans 30
 port make 
 port class inout
 port use power
