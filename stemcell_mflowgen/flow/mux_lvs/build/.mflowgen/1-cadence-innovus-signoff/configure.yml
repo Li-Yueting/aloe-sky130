@@ -1,0 +1,18 @@
+build_dir: 1-cadence-innovus-signoff
+build_id: '1'
+commands:
+- cat analog_mux.gds.gz > outputs/design.gds.gz
+- cat analog_mux.spice > outputs/design-lvs.spice
+edges_i: {}
+edges_o:
+  design-lvs.spice:
+  - f: design-lvs.spice
+    step: 6-netgen-lvs-gds
+  design.gds.gz:
+  - f: design.gds.gz
+    step: 2-mentor-calibre-gdsmerge
+name: cadence-innovus-signoff
+outputs:
+- design.gds.gz
+- design-lvs.spice
+source: /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/mux_lvs/design/cadence-innovus-signoff

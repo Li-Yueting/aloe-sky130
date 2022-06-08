@@ -1,0 +1,41 @@
+build_dir: 2-mentor-calibre-gdsmerge
+build_id: '2'
+commands:
+- mkdir -p $HOME/.calibrewb_workspace/tmp
+- ins=""; for f in inputs/adk/*.gds*; do ins="$ins -in $f"; done
+- echo | calibredrv -a layout filemerge \ -indir inputs \ $ins -topcell analog_mux_ready
+  \ -out design_merged.gds 2>&1 | tee merge.log
+- mkdir -p outputs && cd outputs
+- ln -sf ../design_merged.gds
+debug:
+- calibredrv -m design_merged.gds \ -l inputs/adk/calibre.layerprops
+edges_i:
+  adk:
+  - f: adk
+    step: 0-analog-skywater-130nm
+  design.gds.gz:
+  - f: design.gds.gz
+    step: 1-cadence-innovus-signoff
+edges_o:
+  design_merged.gds:
+  - f: design_merged.gds
+    step: 4-open-magic-drc
+  - f: design_merged.gds
+    step: 3-open-magic-antenna
+  - f: design_merged.gds
+    step: 5-open-magic-gds2spice
+inputs:
+- design.gds.gz
+- adk
+name: mentor-calibre-gdsmerge
+outputs:
+- design_merged.gds
+parameters:
+  design_name: analog_mux_ready
+postconditions:
+- assert File( 'outputs/design_merged.gds' )
+- 'assert ''WARNING: Ignoring duplicate structure'' not in File( ''merge.log'' )'
+preconditions:
+- assert Tool( 'calibredrv' )
+- assert File( 'inputs/design.gds.gz' )
+source: /home/users/xingyuni/ee372/mflowgen_flow/mflowgen/steps/mentor-calibre-gdsmerge

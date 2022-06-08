@@ -1,0 +1,157 @@
+.subckt analog_mux_ready in5 in6 in7 in8 in9 in10 in11 in12 in13 in14 in15 in16 in17 in18 in19 out
++ in0 in1 in2 in3 in4 en0_b en1_b en2_b en3_b en4_b en5_b en6_b en7_b en8_b en9_b en10_b en11_b en12_b
++ en13_b en14_b en15_b en16_b en17_b en18_b en19_b en20_b en21_b en22_b en23_b en24_b en25_b en26_b en27_b
++ en28_b en29_b en30_b en31_b en_b en
+*.ipin in5
+*.ipin in6
+*.ipin in7
+*.ipin in8
+*.ipin in9
+*.ipin in10
+*.ipin in11
+*.ipin in12
+*.ipin in13
+*.ipin in14
+*.ipin in15
+*.ipin in16
+*.ipin in17
+*.ipin in18
+*.ipin in19
+*.opin out
+*.ipin in0
+*.ipin in1
+*.ipin in2
+*.ipin in3
+*.ipin in4
+*.ipin en0_b
+*.ipin en1_b
+*.ipin en2_b
+*.ipin en3_b
+*.ipin en4_b
+*.ipin en5_b
+*.ipin en6_b
+*.ipin en7_b
+*.ipin en8_b
+*.ipin en9_b
+*.ipin en10_b
+*.ipin en11_b
+*.ipin en12_b
+*.ipin en13_b
+*.ipin en14_b
+*.ipin en15_b
+*.ipin en16_b
+*.ipin en17_b
+*.ipin en18_b
+*.ipin en19_b
+*.ipin en20_b
+*.ipin en21_b
+*.ipin en22_b
+*.ipin en23_b
+*.ipin en24_b
+*.ipin en25_b
+*.ipin en26_b
+*.ipin en27_b
+*.ipin en28_b
+*.ipin en29_b
+*.ipin en30_b
+*.ipin en31_b
+*.ipin en_b
+*.ipin en
+x28 in10 net1 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x29 net1 out net21 en10_b VDD VSS switch_5t
+x30 en10_b VGND VNB VPB VPWR net21 sky130_fd_sc_hd__inv_1
+x31 in11 net2 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x32 net2 out net22 en11_b VDD VSS switch_5t
+x33 en11_b VGND VNB VPB VPWR net22 sky130_fd_sc_hd__inv_1
+x34 in12 net3 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x35 net3 out net23 en12_b VDD VSS switch_5t
+x36 en12_b VGND VNB VPB VPWR net23 sky130_fd_sc_hd__inv_1
+x37 in13 net4 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x38 net4 out net24 en13_b VDD VSS switch_5t
+x39 en13_b VGND VNB VPB VPWR net24 sky130_fd_sc_hd__inv_1
+x40 in14 net5 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x41 net5 out net25 en14_b VDD VSS switch_5t
+x42 en14_b VGND VNB VPB VPWR net25 sky130_fd_sc_hd__inv_1
+x43 in15 net6 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x44 net6 out net26 en15_b VDD VSS switch_5t
+x45 en15_b VGND VNB VPB VPWR net26 sky130_fd_sc_hd__inv_1
+x46 in16 net7 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x47 net7 out net27 en16_b VDD VSS switch_5t
+x48 en16_b VGND VNB VPB VPWR net27 sky130_fd_sc_hd__inv_1
+x49 in17 net8 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x50 net8 out net28 en17_b VDD VSS switch_5t
+x51 en17_b VGND VNB VPB VPWR net28 sky130_fd_sc_hd__inv_1
+x52 in18 net9 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x53 net9 out net29 en18_b VDD VSS switch_5t
+x54 en18_b VGND VNB VPB VPWR net29 sky130_fd_sc_hd__inv_1
+x55 in19 net10 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x56 net10 out net30 en19_b VDD VSS switch_5t
+x57 en19_b VGND VNB VPB VPWR net30 sky130_fd_sc_hd__inv_1
+x2 in4 net11 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x3 net11 out net31 en4_b VDD VSS switch_5t
+x4 en4_b VGND VNB VPB VPWR net31 sky130_fd_sc_hd__inv_1
+x5 in5 net12 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x6 net12 out net32 en5_b VDD VSS switch_5t
+x7 en5_b VGND VNB VPB VPWR net32 sky130_fd_sc_hd__inv_1
+x8 in6 net13 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x9 net13 out net33 en6_b VDD VSS switch_5t
+x10 en6_b VGND VNB VPB VPWR net33 sky130_fd_sc_hd__inv_1
+x11 in7 net14 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x12 net14 out net34 en7_b VDD VSS switch_5t
+x13 en7_b VGND VNB VPB VPWR net34 sky130_fd_sc_hd__inv_1
+x14 in8 net15 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x15 net15 out net35 en8_b VDD VSS switch_5t
+x16 en8_b VGND VNB VPB VPWR net35 sky130_fd_sc_hd__inv_1
+x17 in9 net16 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x18 net16 out net36 en9_b VDD VSS switch_5t
+x19 en9_b VGND VNB VPB VPWR net36 sky130_fd_sc_hd__inv_1
+x20 in1 net17 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x21 net17 out net37 en1_b VDD VSS switch_5t
+x22 en1_b VGND VNB VPB VPWR net37 sky130_fd_sc_hd__inv_1
+x23 in2 net18 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x24 net18 out net38 en2_b VDD VSS switch_5t
+x25 en2_b VGND VNB VPB VPWR net38 sky130_fd_sc_hd__inv_1
+x26 in3 net19 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x27 net19 out net39 en3_b VDD VSS switch_5t
+x58 en3_b VGND VNB VPB VPWR net39 sky130_fd_sc_hd__inv_1
+x59 in0 net20 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x60 net20 out net40 en0_b VDD VSS switch_5t
+x61 en0_b VGND VNB VPB VPWR net40 sky130_fd_sc_hd__inv_1
+.ends
+
+* expanding   symbol:  transmission_gate.sym # of pins=4
+* sym_path:
+*+ /home/users/xingyuni/ee372/yueting_git/aloe-sky130/analog_mux/schematic/transmission_gate.sym
+* sch_path:
+*+ /home/users/xingyuni/ee372/yueting_git/aloe-sky130/analog_mux/schematic/transmission_gate.sch
+.subckt transmission_gate  in out en en_b  VDD  VSS     N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+*.iopin in
+*.iopin out
+*.ipin en
+*.ipin en_b
+XM1 out en in VSS sky130_fd_pr__nfet_01v8 L='L_N' W='W_N' nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult='N' m='N' 
+XM2 out en_b in VDD sky130_fd_pr__pfet_01v8 L='L_P' W='W_P' nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult='N' m='N' 
+.ends
+
+
+* expanding   symbol:  switch_5t.sym # of pins=4
+* sym_path: /home/users/xingyuni/ee372/yueting_git/aloe-sky130/analog_mux/schematic/switch_5t.sym
+* sch_path: /home/users/xingyuni/ee372/yueting_git/aloe-sky130/analog_mux/schematic/switch_5t.sch
+.subckt switch_5t  in out en en_b  VDD  VSS
+*.iopin in
+*.iopin out
+*.ipin en
+*.ipin en_b
+x1 in net1 en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+x2 net1 out en en_b VDD VSS transmission_gate N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
+XM1 net1 en_b VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+.ends
+
+** flattened .save nodes
+.end

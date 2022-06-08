@@ -10,9 +10,10 @@ set ::env(pnr_dir) /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/pnr
 set tcllib /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/tcllib
 
 set ::env(stemcell_dir) /home/users/xingyuni/ee372/aloe-sky130/aloe/stemcell
-set ::env(gds_dir) /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/output/gds
-set ::env(lvs_dir) /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/output/lvs
-set ::env(def_dir) /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/output/def
+set ::env(lef_dir) /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/output/lef_final
+set ::env(gds_dir) /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/output/gds_final
+set ::env(lvs_dir) /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/output/lvs_final
+set ::env(def_dir) /home/users/xingyuni/ee372/aloe-sky130/aloe/layout/output/def_final
 set merge_files \
 [concat \
 [lsort [glob -nocomplain $env(stemcell_dir)/*.gds*]] \
@@ -66,6 +67,10 @@ while {$env(gen)<$ngen} {
   python -m aloe.layout.pylib.examine -gen $env(gen) -type_cstr_in new -type_pop_out new
   python -m aloe.layout.pylib.choose -gen $env(gen) -type_pop_in both -type_pop_out old
   python -m aloe.layout.pnr.save -gen $env(gen) -type_pop_out old
+  write_lef_abstract -5.8 -extractBlockObs $env(lef_dir)/bgr-gen-$env(gen).lef
+  # saveNetlist -excludeLeafCell -flat -phys $env(lvs_dir)/bgr-gen-$env(gen).lvs.v
+  # defOut -routing $env(def_dir)/bgr-gen-$env(gen).def.gz
+  # streamOut $env(gds_dir)/bgr-gen-$env(gen).gds.gz -units 1000 -mapFile $env(stemcell_dir)/rtk-stream-out.map
   streamOut $env(gds_dir)/bgr-gen-$env(gen)-merged.gds -units 1000 -mapFile $env(stemcell_dir)/rtk-stream-out.map -merge $merge_files
 }
 

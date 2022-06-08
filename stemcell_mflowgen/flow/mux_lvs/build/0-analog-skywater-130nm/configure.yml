@@ -1,0 +1,28 @@
+build_dir: 0-analog-skywater-130nm
+build_id: '0'
+commands:
+- mkdir -p outputs && cd outputs
+- ln -sf ../view-standard adk
+edges_i: {}
+edges_o:
+  adk:
+  - f: adk
+    step: 2-mentor-calibre-gdsmerge
+  - f: adk
+    step: 4-open-magic-drc
+  - f: adk
+    step: 3-open-magic-antenna
+  - f: adk
+    step: 5-open-magic-gds2spice
+  - f: adk
+    step: 6-netgen-lvs-gds
+  - f: adk
+    step: 7-netgen-lvs-gds-device
+name: analog-skywater-130nm
+outputs:
+- adk
+parameters:
+  adk: skywater-130nm-analog-adk
+  adk_view: view-standard
+sandbox: true
+source: /home/users/xingyuni/ee372/mflowgen_flow/mflowgen/adks/skywater-130nm-analog-adk

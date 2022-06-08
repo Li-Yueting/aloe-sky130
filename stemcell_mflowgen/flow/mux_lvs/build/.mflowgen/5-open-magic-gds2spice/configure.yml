@@ -1,0 +1,28 @@
+build_dir: 5-open-magic-gds2spice
+build_id: '5'
+commands:
+- cp inputs/adk/magicrc .magicrc
+- magic -noconsole -dnull extract.tcl | tee gds2spice.log
+- mv analog_mux_ready.spice outputs/design_extracted.spice
+edges_i:
+  adk:
+  - f: adk
+    step: 0-analog-skywater-130nm
+  design_merged.gds:
+  - f: design_merged.gds
+    step: 2-mentor-calibre-gdsmerge
+edges_o:
+  design_extracted.spice:
+  - f: design_extracted.spice
+    step: 6-netgen-lvs-gds
+  - f: design_extracted.spice
+    step: 7-netgen-lvs-gds-device
+inputs:
+- adk
+- design_merged.gds
+name: open-magic-gds2spice
+outputs:
+- design_extracted.spice
+parameters:
+  design_name: analog_mux_ready
+source: /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/mux_lvs/design/open-magic-gds2spice

@@ -1,0 +1,25 @@
+build_dir: 6-netgen-lvs-gds
+build_id: '6'
+commands:
+- sh run_lvs.sh
+edges_i:
+  adk:
+  - f: adk
+    step: 0-analog-skywater-130nm
+  design-lvs.spice:
+  - f: design-lvs.spice
+    step: 1-cadence-innovus-signoff
+  design_extracted.spice:
+  - f: design_extracted.spice
+    step: 5-open-magic-gds2spice
+edges_o: {}
+inputs:
+- adk
+- design_extracted.spice
+- design-lvs.spice
+name: netgen-lvs-gds
+outputs:
+- lvs_results.log
+parameters:
+  design_name: analog_mux_ready
+source: /home/users/xingyuni/ee372/aloe-sky130/stemcell_mflowgen/flow/mux_lvs/design/netgen-lvs-gds

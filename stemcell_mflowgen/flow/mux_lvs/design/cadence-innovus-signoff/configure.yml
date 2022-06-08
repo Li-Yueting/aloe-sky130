@@ -1,0 +1,32 @@
+#=========================================================================
+# Cadence Innovus
+#=========================================================================
+# Author : Christopher Torng
+# Date   : October 30, 2019
+#
+
+name: cadence-innovus-signoff
+
+#-------------------------------------------------------------------------
+# Inputs and Outputs
+#-------------------------------------------------------------------------
+
+# inputs:
+#   - innovus-foundation-flow
+#   - adk
+#   - design.checkpoint
+
+outputs:
+  - design.gds.gz
+  - design-lvs.spice
+  # - design.def
+
+#-------------------------------------------------------------------------
+# Commands
+#-------------------------------------------------------------------------
+
+commands:
+  # - cat bgr-v0-final.gds.gz > outputs/design.gds.gz
+  - cat analog_mux.gds.gz > outputs/design.gds.gz
+  - cat analog_mux.spice > outputs/design-lvs.spice
+  # - cat analog_mux.def > outputs/design.def

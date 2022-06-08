@@ -161,11 +161,11 @@ def write_run(run_num, generation, gennum):
         if generation == 'old':
             run_tcl.write('cal_nl -n {} -l {} -d {} -b {}\n'.format(
                 run_num, ip.run_num_len, ip.expr_old_dir, ip.blk_name))
-            run_tcl.write(cmd_lefout(run_num, gennum))
+            # run_tcl.write(cmd_lefout(run_num, gennum))
         elif generation == 'new':
             run_tcl.write('cal_nl -n {} -l {} -d {} -b {}\n'.format(
                 run_num, ip.run_num_len, ip.expr_new_dir, ip.blk_name))
-            run_tcl.write(cmd_lefout(run_num, gennum))
+            # run_tcl.write(cmd_lefout(run_num, gennum))
         elif generation == 'out':
             #TODO: Multiple iteration here
             run_tcl.write('cal_nl -n {} -l {} -d {} -b {}\n'.format(
@@ -176,20 +176,19 @@ def write_run(run_num, generation, gennum):
             # for net in ip.gnd_nets:
             #     run_tcl.write('swap_cells -net {} -tail _tied\n'.format(net))
             # [Warning]: Output lef file is not accurate on M1
-            run_tcl.write(cmd_lefout(run_num, gennum))
+            # run_tcl.write(cmd_lefout(run_num, gennum))
 
             ###################################################### Remember to merge gds (lose tech map file) ###############
             # run_tcl.write(cmd_gdsout(run_num))
             ###################################################### Remember to do lvs (lose tech map file) ###############
             # run_tcl.write(cmd_vout(run_num))
-
         # Lucy is one single layout from which all other layouts loads DEF from
         elif generation == 'lucy':
             # TODO: write_run0 also contains other functionaliry
             run_tcl.write('cal_nl -n {} -l {} -d {} -b {}\n'.format(
                 0, ip.run_num_len, ip.expr_hof_dir, ip.blk_name))
             run_tcl.write(cmd_defout())
-            run_tcl.write(cmd_lefout(run_num, gennum))
+            # run_tcl.write(cmd_lefout(run_num, gennum))
         
 
         # run_tcl.write('streamOut $env(gds_dir)/bgr-gen{}-pop{}-merged.gds -units 1000 -mapFile $env(stemcell_dir)/rtk-stream-out.map -merge $merge_files\n'.format(str(gennum), str(run_num)))

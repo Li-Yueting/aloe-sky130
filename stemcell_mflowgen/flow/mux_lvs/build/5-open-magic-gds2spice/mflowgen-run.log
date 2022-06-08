@@ -1,0 +1,56 @@
+
+Magic 8.3 revision 285 - Compiled on Mon Apr  4 15:36:51 PDT 2022.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+/farmshare/home/classes/ee/372/PDKs/open_pdks_1.0.310/sky130/sky130A/libs.tech/magic/closed_sky130A.tech: line 1404: section cifoutput:
+	Unknown layer name.
+Input style sky130(vendor): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Loading "extract.tcl" from command line.
+CIF input style is now "sky130(vendor)"
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 3.0
+Library name: stdcells
+Reading "analog_mux_ready".
+Error while reading cell "analog_mux_ready" (byte position 2815072): Warning:  Cell analog_mux_ready boundary was redefined.
+Error while reading cell "analog_mux_ready" (byte position 2815072): Warning:  Cell analog_mux_ready boundary was redefined.
+Error while reading cell "analog_mux_ready" (byte position 2815072): Warning:  Cell analog_mux_ready boundary was redefined.
+Error while reading cell "analog_mux_ready" (byte position 2815072): Warning:  Cell analog_mux_ready boundary was redefined.
+Error while reading cell "analog_mux_ready" (byte position 2815072): Warning:  Cell analog_mux_ready boundary was redefined.
+Error while reading cell "analog_mux_ready" (byte position 2815072): Warning:  Cell analog_mux_ready boundary was redefined.
+Error while reading cell "analog_mux_ready" (byte position 2815072): Warning:  Cell analog_mux_ready boundary was redefined.
+Error while reading cell "analog_mux_ready" (byte position 2815072): Warning:  Cell analog_mux_ready boundary was redefined.
+Error while reading cell "analog_mux_ready" (byte position 2815072): Warning:  Cell analog_mux_ready boundary was redefined.
+Error while reading cell "analog_mux_ready" (byte position 2815072): Warning:  Cell analog_mux_ready boundary was redefined.
+Error while reading cell "analog_mux_ready" (byte position 2815072): Warning:  Cell analog_mux_ready boundary was redefined.
+Error while reading cell "analog_mux_ready" (byte position 2815072): Warning:  Cell analog_mux_ready boundary was redefined.
+Error while reading cell "analog_mux_ready" (byte position 2815072): Warning:  Cell analog_mux_ready boundary was redefined.
+Error while reading cell "analog_mux_ready" (byte position 2815072): Warning:  Cell analog_mux_ready boundary was redefined.
+Error while reading cell "analog_mux_ready" (byte position 2815072): Warning:  Cell analog_mux_ready boundary was redefined.
+Error while reading cell "analog_mux_ready" (byte position 2815072): Warning:  Cell analog_mux_ready boundary was redefined.
+Error while reading cell "analog_mux_ready" (byte position 2815072): Warning:  Cell analog_mux_ready boundary was redefined.
+Error while reading cell "analog_mux_ready" (byte position 2815072): Warning:  Cell analog_mux_ready boundary was redefined.
+Error while reading cell "analog_mux_ready" (byte position 2815072): Warning:  Cell analog_mux_ready boundary was redefined.
+Error while reading cell "analog_mux_ready" (byte position 2815072): Warning:  Cell analog_mux_ready boundary was redefined.
+Error while reading cell "analog_mux_ready" (byte position 2815072): Warning:  Cell analog_mux_ready boundary was redefined.
+Error while reading cell "analog_mux_ready" (byte position 2815072): Warning:  Cell analog_mux_ready boundary was redefined.
+Error while reading cell "analog_mux_ready" (byte position 2815072): Warning:  Cell analog_mux_ready boundary was redefined.
+Error while reading cell "analog_mux_ready" (byte position 2815072): Warning:  Cell analog_mux_ready boundary was redefined.
+Error while reading cell "analog_mux_ready" (byte position 2815072): Warning:  Cell analog_mux_ready boundary was redefined.
+Error while reading cell "analog_mux_ready" (byte position 2815072): Warning:  Cell analog_mux_ready boundary was redefined.
+Error while reading cell "analog_mux_ready" (byte position 2815072): Warning:  Cell analog_mux_ready boundary was redefined.
+Error while reading cell "analog_mux_ready" (byte position 2815072): Warning:  Cell analog_mux_ready boundary was redefined.
+Error while reading cell "analog_mux_ready" (byte position 2815072): Warning:  Cell analog_mux_ready boundary was redefined.
+Error while reading cell "analog_mux_ready" (byte position 2815072): Warning:  Cell analog_mux_ready boundary was redefined.
+Error while reading cell "analog_mux_ready" (byte position 2815072): Warning:  Cell analog_mux_ready boundary was redefined.
+$analog_mux_ready
+Processing analog_mux_ready
+Extracting analog_mux_ready into analog_mux_ready.ext:
+exttospice finished.

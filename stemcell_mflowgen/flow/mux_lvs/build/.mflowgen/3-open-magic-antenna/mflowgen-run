@@ -1,0 +1,24 @@
+#! /usr/bin/env bash
+set -euo pipefail
+#=========================================================================
+# mflowgen-run
+#=========================================================================
+# Generator : /home/users/xingyuni/ee372/mflowgen_flow/mflowgen/mflowgen/core/build_orchestrator.py
+
+# Pre
+
+rm -f .time_end
+date +%Y-%m%d-%H%M-%S > .time_start
+MFLOWGEN_STEP_HOME=$PWD
+export design_name=analog_mux_ready
+
+# Commands
+
+cp inputs/adk/magicrc .magicrc
+magic -noconsole -dnull run_antenna.tcl | tee outputs/antenna_check.log
+
+# Post
+
+cd $MFLOWGEN_STEP_HOME
+date +%Y-%m%d-%H%M-%S > .time_end
+
