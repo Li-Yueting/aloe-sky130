@@ -1,0 +1,354 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1654670557
+<< metal1 >>
+rect 1381 41301 3583 41303
+rect 1381 41257 5109 41301
+rect 1381 41057 1427 41257
+rect 3537 41255 5109 41257
+rect 3537 41081 3583 41255
+rect 5063 41077 5109 41255
+rect 5686 40436 5736 40472
+rect 0 40380 34 40414
+rect 0 39093 34 39127
+rect 0 37806 34 37840
+rect 0 36519 34 36553
+rect 0 35232 34 35266
+rect 0 33945 34 33979
+rect 0 32658 34 32692
+rect 0 31371 34 31405
+rect 0 30084 34 30118
+rect 0 28797 34 28831
+rect 0 27510 34 27544
+rect 0 26223 34 26257
+rect 0 24936 34 24970
+rect 0 23649 34 23683
+rect 0 22362 34 22396
+rect 0 21075 34 21109
+rect 0 19788 34 19822
+rect 0 18501 34 18535
+rect 0 17214 34 17248
+rect 0 15927 34 15961
+rect 0 14640 34 14674
+rect 0 13353 34 13387
+rect 0 12066 34 12100
+rect 0 10779 34 10813
+rect 0 9492 34 9526
+rect 0 8205 34 8239
+rect 0 6918 34 6952
+rect 0 5631 34 5665
+rect 0 4344 34 4378
+rect 0 3057 34 3091
+rect 0 1770 34 1804
+rect 0 483 34 517
+rect 5683 152 5743 40260
+rect 1381 -83 1427 38
+rect 3539 -83 3585 47
+rect 5059 -83 5105 67
+rect 1381 -129 5105 -83
+<< metal2 >>
+rect 1610 86 1722 41166
+rect 1792 41162 1852 41216
+rect 1930 41162 1986 41216
+rect 2056 613 2186 41165
+rect 5794 40871 5846 40923
+rect 5794 39584 5846 39636
+rect 5794 38297 5846 38349
+rect 5794 37010 5846 37062
+rect 5794 35723 5846 35775
+rect 5794 34436 5846 34488
+rect 5794 33149 5846 33201
+rect 5794 31862 5846 31914
+rect 5794 30575 5846 30627
+rect 5794 29288 5846 29340
+rect 5794 28001 5846 28053
+rect 5794 26714 5846 26766
+rect 5794 25427 5846 25479
+rect 5794 24140 5846 24192
+rect 5794 22853 5846 22905
+rect 5794 21566 5846 21618
+rect 5794 20279 5846 20331
+rect 5794 18992 5846 19044
+rect 5794 17705 5846 17757
+rect 5794 16418 5846 16470
+rect 5794 15131 5846 15183
+rect 5794 13844 5846 13896
+rect 5794 12557 5846 12609
+rect 5794 11270 5846 11322
+rect 5794 9983 5846 10035
+rect 5794 8696 5846 8748
+rect 5794 7409 5846 7461
+rect 5794 6122 5846 6174
+rect 5794 4835 5846 4887
+rect 5794 3548 5846 3600
+rect 5794 2261 5846 2313
+rect 5794 974 5846 1026
+use my_one_line  my_one_line_0
+timestamp 1654670557
+transform 1 0 542 0 1 598
+box -542 -606 5304 728
+use my_one_line  my_one_line_1
+timestamp 1654670557
+transform 1 0 542 0 1 1885
+box -542 -606 5304 728
+use my_one_line  my_one_line_2
+timestamp 1654670557
+transform 1 0 542 0 1 3172
+box -542 -606 5304 728
+use my_one_line  my_one_line_3
+timestamp 1654670557
+transform 1 0 542 0 1 4459
+box -542 -606 5304 728
+use my_one_line  my_one_line_4
+timestamp 1654670557
+transform 1 0 542 0 1 5746
+box -542 -606 5304 728
+use my_one_line  my_one_line_5
+timestamp 1654670557
+transform 1 0 542 0 1 7033
+box -542 -606 5304 728
+use my_one_line  my_one_line_6
+timestamp 1654670557
+transform 1 0 542 0 1 8320
+box -542 -606 5304 728
+use my_one_line  my_one_line_7
+timestamp 1654670557
+transform 1 0 542 0 1 9607
+box -542 -606 5304 728
+use my_one_line  my_one_line_8
+timestamp 1654670557
+transform 1 0 542 0 1 10894
+box -542 -606 5304 728
+use my_one_line  my_one_line_9
+timestamp 1654670557
+transform 1 0 542 0 1 12181
+box -542 -606 5304 728
+use my_one_line  my_one_line_10
+timestamp 1654670557
+transform 1 0 542 0 1 13468
+box -542 -606 5304 728
+use my_one_line  my_one_line_11
+timestamp 1654670557
+transform 1 0 542 0 1 14755
+box -542 -606 5304 728
+use my_one_line  my_one_line_12
+timestamp 1654670557
+transform 1 0 542 0 1 16042
+box -542 -606 5304 728
+use my_one_line  my_one_line_13
+timestamp 1654670557
+transform 1 0 542 0 1 17329
+box -542 -606 5304 728
+use my_one_line  my_one_line_14
+timestamp 1654670557
+transform 1 0 542 0 1 18616
+box -542 -606 5304 728
+use my_one_line  my_one_line_15
+timestamp 1654670557
+transform 1 0 542 0 1 19903
+box -542 -606 5304 728
+use my_one_line  my_one_line_16
+timestamp 1654670557
+transform 1 0 542 0 1 21190
+box -542 -606 5304 728
+use my_one_line  my_one_line_17
+timestamp 1654670557
+transform 1 0 542 0 1 22477
+box -542 -606 5304 728
+use my_one_line  my_one_line_18
+timestamp 1654670557
+transform 1 0 542 0 1 23764
+box -542 -606 5304 728
+use my_one_line  my_one_line_19
+timestamp 1654670557
+transform 1 0 542 0 1 25051
+box -542 -606 5304 728
+use my_one_line  my_one_line_20
+timestamp 1654670557
+transform 1 0 542 0 1 26338
+box -542 -606 5304 728
+use my_one_line  my_one_line_21
+timestamp 1654670557
+transform 1 0 542 0 1 27625
+box -542 -606 5304 728
+use my_one_line  my_one_line_22
+timestamp 1654670557
+transform 1 0 542 0 1 28912
+box -542 -606 5304 728
+use my_one_line  my_one_line_23
+timestamp 1654670557
+transform 1 0 542 0 1 30199
+box -542 -606 5304 728
+use my_one_line  my_one_line_24
+timestamp 1654670557
+transform 1 0 542 0 1 31486
+box -542 -606 5304 728
+use my_one_line  my_one_line_25
+timestamp 1654670557
+transform 1 0 542 0 1 32773
+box -542 -606 5304 728
+use my_one_line  my_one_line_26
+timestamp 1654670557
+transform 1 0 542 0 1 34060
+box -542 -606 5304 728
+use my_one_line  my_one_line_27
+timestamp 1654670557
+transform 1 0 542 0 1 35347
+box -542 -606 5304 728
+use my_one_line  my_one_line_28
+timestamp 1654670557
+transform 1 0 542 0 1 36634
+box -542 -606 5304 728
+use my_one_line  my_one_line_29
+timestamp 1654670557
+transform 1 0 542 0 1 37921
+box -542 -606 5304 728
+use my_one_line  my_one_line_30
+timestamp 1654670557
+transform 1 0 542 0 1 39208
+box -542 -606 5304 728
+use my_one_line  my_one_line_31
+timestamp 1654670557
+transform 1 0 542 0 1 40495
+box -542 -606 5304 728
+<< labels >>
+flabel metal1 5686 40436 5736 40472 1 FreeSans 480 0 0 0 out
+port 1 n signal bidirectional
+flabel metal2 5794 974 5846 1026 1 FreeSans 480 0 0 0 en31_b
+port 2 n signal bidirectional
+flabel metal1 0 483 34 517 1 FreeSans 480 0 0 0 in_31
+port 3 n signal bidirectional
+flabel metal2 5794 2261 5846 2313 1 FreeSans 480 0 0 0 en30_b
+port 4 n signal bidirectional
+flabel metal1 0 1770 34 1804 1 FreeSans 480 0 0 0 in_30
+port 5 n signal bidirectional
+flabel metal2 5794 3548 5846 3600 1 FreeSans 480 0 0 0 en29_b
+port 6 n signal bidirectional
+flabel metal1 0 3057 34 3091 1 FreeSans 480 0 0 0 in_29
+port 7 n signal bidirectional
+flabel metal2 5794 4835 5846 4887 1 FreeSans 480 0 0 0 en28_b
+port 8 n signal bidirectional
+flabel metal1 0 4344 34 4378 1 FreeSans 480 0 0 0 in_28
+port 9 n signal bidirectional
+flabel metal2 5794 6122 5846 6174 1 FreeSans 480 0 0 0 en27_b
+port 10 n signal bidirectional
+flabel metal1 0 5631 34 5665 1 FreeSans 480 0 0 0 in_27
+port 11 n signal bidirectional
+flabel metal2 5794 7409 5846 7461 1 FreeSans 480 0 0 0 en26_b
+port 12 n signal bidirectional
+flabel metal1 0 6918 34 6952 1 FreeSans 480 0 0 0 in_26
+port 13 n signal bidirectional
+flabel metal2 5794 8696 5846 8748 1 FreeSans 480 0 0 0 en25_b
+port 14 n signal bidirectional
+flabel metal1 0 8205 34 8239 1 FreeSans 480 0 0 0 in_25
+port 15 n signal bidirectional
+flabel metal2 5794 9983 5846 10035 1 FreeSans 480 0 0 0 en24_b
+port 16 n signal bidirectional
+flabel metal1 0 9492 34 9526 1 FreeSans 480 0 0 0 in_24
+port 17 n signal bidirectional
+flabel metal2 5794 11270 5846 11322 1 FreeSans 480 0 0 0 en23_b
+port 18 n signal bidirectional
+flabel metal1 0 10779 34 10813 1 FreeSans 480 0 0 0 in_23
+port 19 n signal bidirectional
+flabel metal2 5794 12557 5846 12609 1 FreeSans 480 0 0 0 en22_b
+port 20 n signal bidirectional
+flabel metal1 0 12066 34 12100 1 FreeSans 480 0 0 0 in_22
+port 21 n signal bidirectional
+flabel metal2 5794 13844 5846 13896 1 FreeSans 480 0 0 0 en21_b
+port 22 n signal bidirectional
+flabel metal1 0 13353 34 13387 1 FreeSans 480 0 0 0 in_21
+port 23 n signal bidirectional
+flabel metal2 5794 15131 5846 15183 1 FreeSans 480 0 0 0 en20_b
+port 24 n signal bidirectional
+flabel metal1 0 14640 34 14674 1 FreeSans 480 0 0 0 in_20
+port 25 n signal bidirectional
+flabel metal2 5794 16418 5846 16470 1 FreeSans 480 0 0 0 en19_b
+port 26 n signal bidirectional
+flabel metal1 0 15927 34 15961 1 FreeSans 480 0 0 0 in_19
+port 27 n signal bidirectional
+flabel metal2 5794 17705 5846 17757 1 FreeSans 480 0 0 0 en18_b
+port 28 n signal bidirectional
+flabel metal1 0 17214 34 17248 1 FreeSans 480 0 0 0 in_18
+port 29 n signal bidirectional
+flabel metal2 5794 18992 5846 19044 1 FreeSans 480 0 0 0 en17_b
+port 30 n signal bidirectional
+flabel metal1 0 18501 34 18535 1 FreeSans 480 0 0 0 in_17
+port 31 n signal bidirectional
+flabel metal2 5794 20279 5846 20331 1 FreeSans 480 0 0 0 en16_b
+port 32 n signal bidirectional
+flabel metal1 0 19788 34 19822 1 FreeSans 480 0 0 0 in_16
+port 33 n signal bidirectional
+flabel metal2 5794 21566 5846 21618 1 FreeSans 480 0 0 0 en15_b
+port 34 n signal bidirectional
+flabel metal1 0 21075 34 21109 1 FreeSans 480 0 0 0 in_15
+port 35 n signal bidirectional
+flabel metal2 5794 22853 5846 22905 1 FreeSans 480 0 0 0 en14_b
+port 36 n signal bidirectional
+flabel metal1 0 22362 34 22396 1 FreeSans 480 0 0 0 in_14
+port 37 n signal bidirectional
+flabel metal2 5794 24140 5846 24192 1 FreeSans 480 0 0 0 en13_b
+port 38 n signal bidirectional
+flabel metal1 0 23649 34 23683 1 FreeSans 480 0 0 0 in_13
+port 39 n signal bidirectional
+flabel metal2 5794 25427 5846 25479 1 FreeSans 480 0 0 0 en12_b
+port 40 n signal bidirectional
+flabel metal1 0 24936 34 24970 1 FreeSans 480 0 0 0 in_12
+port 41 n signal bidirectional
+flabel metal2 5794 26714 5846 26766 1 FreeSans 480 0 0 0 en11_b
+port 42 n signal bidirectional
+flabel metal1 0 26223 34 26257 1 FreeSans 480 0 0 0 in_11
+port 43 n signal bidirectional
+flabel metal2 5794 28001 5846 28053 1 FreeSans 480 0 0 0 en10_b
+port 44 n signal bidirectional
+flabel metal1 0 27510 34 27544 1 FreeSans 480 0 0 0 in_10
+port 45 n signal bidirectional
+flabel metal2 5794 29288 5846 29340 1 FreeSans 480 0 0 0 en9_b
+port 46 n signal bidirectional
+flabel metal1 0 28797 34 28831 1 FreeSans 480 0 0 0 in_9
+port 47 n signal bidirectional
+flabel metal2 5794 30575 5846 30627 1 FreeSans 480 0 0 0 en8_b
+port 48 n signal bidirectional
+flabel metal1 0 30084 34 30118 1 FreeSans 480 0 0 0 in_8
+port 49 n signal bidirectional
+flabel metal2 5794 31862 5846 31914 1 FreeSans 480 0 0 0 en7_b
+port 50 n signal bidirectional
+flabel metal1 0 31371 34 31405 1 FreeSans 480 0 0 0 in_7
+port 51 n signal bidirectional
+flabel metal2 5794 33149 5846 33201 1 FreeSans 480 0 0 0 en6_b
+port 52 n signal bidirectional
+flabel metal1 0 32658 34 32692 1 FreeSans 480 0 0 0 in_6
+port 53 n signal bidirectional
+flabel metal2 5794 34436 5846 34488 1 FreeSans 480 0 0 0 en5_b
+port 54 n signal bidirectional
+flabel metal1 0 33945 34 33979 1 FreeSans 480 0 0 0 in_5
+port 55 n signal bidirectional
+flabel metal2 5794 35723 5846 35775 1 FreeSans 480 0 0 0 en4_b
+port 56 n signal bidirectional
+flabel metal1 0 35232 34 35266 1 FreeSans 480 0 0 0 in_4
+port 57 n signal bidirectional
+flabel metal2 5794 37010 5846 37062 1 FreeSans 480 0 0 0 en3_b
+port 58 n signal bidirectional
+flabel metal1 0 36519 34 36553 1 FreeSans 480 0 0 0 in_3
+port 59 n signal bidirectional
+flabel metal2 5794 38297 5846 38349 1 FreeSans 480 0 0 0 en2_b
+port 60 n signal bidirectional
+flabel metal1 0 37806 34 37840 1 FreeSans 480 0 0 0 in_2
+port 61 n signal bidirectional
+flabel metal2 5794 39584 5846 39636 1 FreeSans 480 0 0 0 en1_b
+port 62 n signal bidirectional
+flabel metal1 0 39093 34 39127 1 FreeSans 480 0 0 0 in_1
+port 63 n signal bidirectional
+flabel metal2 5794 40871 5846 40923 1 FreeSans 480 0 0 0 en0_b
+port 64 n signal bidirectional
+flabel metal1 0 40380 34 40414 1 FreeSans 480 0 0 0 in_0
+port 65 n signal bidirectional
+flabel metal2 1792 41162 1852 41216 1 FreeSans 480 0 0 0 en_b
+port 66 n signal bidirectional
+flabel metal2 1930 41162 1986 41216 1 FreeSans 480 0 0 0 en
+port 67 n signal bidirectional
+flabel metal2 1610 41070 1722 41144 1 FreeSans 480 0 0 0 VSS
+port 68 n ground bidirectional
+flabel metal2 2058 41070 2186 41144 1 FreeSans 480 0 0 0 VDD
+port 69 n power bidirectional
+<< end >>

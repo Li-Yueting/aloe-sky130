@@ -5,7 +5,7 @@
 # CREATING RC CORNERS ...
 #
 # <BEGIN TAG> init,create_rc_corner
-create_rc_corner -name typical -cap_table inputs/adk/rtk-typical.captable -T 25
+create_rc_corner -name typical -cap_table inputs/adk/rtk-typical.captable -T 25 -preRoute_res {1.0} -preRoute_cap {1.0} -preRoute_clkres {0.0} -preRoute_clkcap {0.0} -postRoute_res {1.0} -postRoute_cap {1.0} -postRoute_xcap {1.0} -postRoute_clkres {0.0}
 
 # <END TAG> init,create_rc_corner
 #------------------------------------------------

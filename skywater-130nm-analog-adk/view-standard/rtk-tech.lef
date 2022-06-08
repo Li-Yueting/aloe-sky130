@@ -34,25 +34,12 @@ PROPERTYDEFINITIONS
 END PROPERTYDEFINITIONS
 
 # High density, single height
+# High density, single height
 SITE unitasc
   SYMMETRY Y ;
   CLASS CORE ;
   SIZE 0.49 BY 9.40 ;
 END unitasc
-
-# High density, single height
-SITE unithd
-  SYMMETRY Y ;
-  CLASS CORE ;
-  SIZE 0.46 BY 2.72 ;
-END unithd
-
-# High density, double height
-SITE unithddbl
-  SYMMETRY Y ;
-  CLASS CORE ;
-  SIZE 0.46 BY 5.44 ;
-END unithddbl
 
 LAYER nwell
   TYPE MASTERSLICE ;
@@ -65,7 +52,7 @@ LAYER pwell
 END pwell
 
 LAYER poly
-    TYPE MASTERSLICE ;
+  TYPE MASTERSLICE ;
 END poly
 
 LAYER licon1
@@ -93,7 +80,7 @@ LAYER li1
   THICKNESS 0.1 ;
   EDGECAPACITANCE 40.697E-6 ;
   CAPACITANCE CPERSQDIST 36.9866E-6 ;
-  RESISTANCE RPERSQ 12.8 ;
+  RESISTANCE RPERSQ 12.2 ;
 
   ANTENNAMODEL OXIDE1 ;
   ANTENNADIFFSIDEAREARATIO PWL ( ( 0 75 ) ( 0.0125 75 ) ( 0.0225 85.125 ) ( 22.5 10200 ) ) ;
@@ -106,7 +93,6 @@ LAYER mcon
   SPACING 0.19 ;              # Mcon 2
   ENCLOSURE BELOW 0 0 ;       # Mcon 4
   ENCLOSURE ABOVE 0.03 0.06 ; # Met1 4 / Met1 5
-  RESISTANCE 9.30 ;
 
   ANTENNADIFFAREARATIO PWL ( ( 0 3 ) ( 0.0125 3 ) ( 0.0225 3.405 ) ( 22.5 408 ) ) ;
   DCCURRENTDENSITY AVERAGE 0.36 ; # mA per via Iavg_max at Tj = 90oC
@@ -151,7 +137,6 @@ LAYER via
   SPACING 0.17 ;                # Via 2
   ENCLOSURE BELOW 0.055 0.085 ; # Via 4a / Via 5a
   ENCLOSURE ABOVE 0.055 0.085 ; # Met2 4 / Met2 5
-  RESISTANCE 4.50 ;
 
   ANTENNADIFFAREARATIO PWL ( ( 0 6 ) ( 0.0125 6 ) ( 0.0225 6.81 ) ( 22.5 816 ) ) ;
   DCCURRENTDENSITY AVERAGE 0.29 ; # mA per via Iavg_max at Tj = 90oC
@@ -196,7 +181,6 @@ LAYER via2
   SPACING 0.2 ;                 # Via2 2
   ENCLOSURE BELOW 0.04 0.085 ;  # Via2 4
   ENCLOSURE ABOVE 0.065 0.065 ; # Met3 4
-  RESISTANCE 3.41 ;
   ANTENNADIFFAREARATIO PWL ( ( 0 6 ) ( 0.0125 6 ) ( 0.0225 6.81 ) ( 22.5 816 ) ) ;
   DCCURRENTDENSITY AVERAGE 0.48 ; # mA per via Iavg_max at Tj = 90oC
 END via2
@@ -237,7 +221,6 @@ LAYER via3
   SPACING 0.2 ;                 # Via3 2
   ENCLOSURE BELOW 0.06 0.09 ;   # Via3 4 / Via3 5
   ENCLOSURE ABOVE 0.065 0.065 ; # Met4 3
-  RESISTANCE 3.41 ;
   ANTENNADIFFAREARATIO PWL ( ( 0 6 ) ( 0.0125 6 ) ( 0.0225 6.81 ) ( 22.5 816 ) ) ;
   DCCURRENTDENSITY AVERAGE 0.48 ; # mA per via Iavg_max at Tj = 90oC
 END via3
@@ -280,7 +263,6 @@ LAYER via4
   SPACING 0.8 ;               # Via4 2
   ENCLOSURE BELOW 0.19 0.19 ; # Via4 4
   ENCLOSURE ABOVE 0.31 0.31 ; # Met5 3
-  RESISTANCE 0.38 ;
   ANTENNADIFFAREARATIO PWL ( ( 0 6 ) ( 0.0125 6 ) ( 0.0225 6.81 ) ( 22.5 816 ) ) ;
   DCCURRENTDENSITY AVERAGE 2.49 ; # mA per via Iavg_max at Tj = 90oC
 END via4
@@ -314,6 +296,7 @@ END met5
 LAYER OVERLAP
   TYPE OVERLAP ;
 END OVERLAP
+
 
 ### Routing via cells section   ###
 # Plus via rule, metals are along the prefered direction

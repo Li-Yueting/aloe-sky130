@@ -28,3 +28,4 @@ commands:
   - cp inputs/adk/magicrc .magicrc
   - magic -noconsole -dnull extract.tcl | tee gds2spice.log
   - mv {design_name}.spice outputs/design_extracted.spice
+  - python string_swap.py

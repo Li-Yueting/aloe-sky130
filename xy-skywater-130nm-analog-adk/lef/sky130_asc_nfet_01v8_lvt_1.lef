@@ -1,0 +1,78 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO sky130_asc_nfet_01v8_lvt_1
+  CLASS CORE ;
+  FOREIGN sky130_asc_nfet_01v8_lvt_1 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 3.970 BY 9.400 ;
+  SITE unitasc ;
+  PIN GATE
+    DIRECTION INOUT ;
+    ANTENNAGATEAREA 8.000000 ;
+    PORT
+      LAYER li1 ;
+        RECT 1.340 0.720 3.520 1.020 ;
+    END
+  END GATE
+  PIN SOURCE
+    DIRECTION INOUT ;
+    ANTENNADIFFAREA 1.160000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.940 8.450 3.520 8.750 ;
+        RECT 3.285 7.020 3.455 8.450 ;
+        RECT 3.285 6.930 3.460 7.020 ;
+        RECT 3.290 2.980 3.460 6.930 ;
+      LAYER mcon ;
+        RECT 3.290 3.060 3.460 6.940 ;
+      LAYER met1 ;
+        RECT 3.260 3.000 3.490 7.000 ;
+    END
+  END SOURCE
+  PIN DRAIN
+    DIRECTION INOUT ;
+    ANTENNADIFFAREA 1.160000 ;
+    PORT
+      LAYER li1 ;
+        RECT 1.000 3.270 1.170 7.020 ;
+        RECT 0.995 2.980 1.170 3.270 ;
+        RECT 0.995 2.150 1.165 2.980 ;
+        RECT 0.940 1.850 3.520 2.150 ;
+      LAYER mcon ;
+        RECT 1.000 3.060 1.170 6.940 ;
+      LAYER met1 ;
+        RECT 0.970 3.000 1.200 7.000 ;
+    END
+  END DRAIN
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER li1 ;
+        RECT 0.450 9.250 3.520 9.550 ;
+      LAYER mcon ;
+        RECT 1.790 9.250 2.090 9.550 ;
+      LAYER met1 ;
+        RECT 0.450 9.100 3.520 9.700 ;
+    END
+  END VPWR
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER pwell ;
+        RECT 0.450 0.150 3.520 7.130 ;
+      LAYER li1 ;
+        RECT 0.590 0.150 0.890 1.200 ;
+        RECT 0.450 -0.150 3.520 0.150 ;
+      LAYER mcon ;
+        RECT 1.790 -0.150 2.090 0.150 ;
+      LAYER met1 ;
+        RECT 0.450 -0.300 3.520 0.300 ;
+    END
+  END VGND
+END sky130_asc_nfet_01v8_lvt_1
+END LIBRARY
+

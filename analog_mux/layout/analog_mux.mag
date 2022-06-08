@@ -1,0 +1,133 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1654400268
+use one_line  one_line_0
+timestamp 1654327931
+transform 1 0 542 0 1 1642
+box -542 -1642 5304 728
+use one_line  one_line_1
+timestamp 1654327931
+transform 1 0 542 0 1 2929
+box -542 -1642 5304 728
+use one_line  one_line_2
+timestamp 1654327931
+transform 1 0 542 0 1 4216
+box -542 -1642 5304 728
+use one_line  one_line_3
+timestamp 1654327931
+transform 1 0 542 0 1 5503
+box -542 -1642 5304 728
+use one_line  one_line_4
+timestamp 1654327931
+transform 1 0 542 0 1 6790
+box -542 -1642 5304 728
+use one_line  one_line_5
+timestamp 1654327931
+transform 1 0 542 0 1 8077
+box -542 -1642 5304 728
+use one_line  one_line_6
+timestamp 1654327931
+transform 1 0 542 0 1 9364
+box -542 -1642 5304 728
+use one_line  one_line_7
+timestamp 1654327931
+transform 1 0 542 0 1 10651
+box -542 -1642 5304 728
+use one_line  one_line_8
+timestamp 1654327931
+transform 1 0 542 0 1 11938
+box -542 -1642 5304 728
+use one_line  one_line_9
+timestamp 1654327931
+transform 1 0 542 0 1 13225
+box -542 -1642 5304 728
+use one_line  one_line_10
+timestamp 1654327931
+transform 1 0 542 0 1 14512
+box -542 -1642 5304 728
+use one_line  one_line_11
+timestamp 1654327931
+transform 1 0 542 0 1 15799
+box -542 -1642 5304 728
+use one_line  one_line_12
+timestamp 1654327931
+transform 1 0 542 0 1 17086
+box -542 -1642 5304 728
+use one_line  one_line_13
+timestamp 1654327931
+transform 1 0 542 0 1 18373
+box -542 -1642 5304 728
+use one_line  one_line_14
+timestamp 1654327931
+transform 1 0 542 0 1 19660
+box -542 -1642 5304 728
+use one_line  one_line_15
+timestamp 1654327931
+transform 1 0 542 0 1 20947
+box -542 -1642 5304 728
+use one_line  one_line_16
+timestamp 1654327931
+transform 1 0 542 0 1 22234
+box -542 -1642 5304 728
+use one_line  one_line_17
+timestamp 1654327931
+transform 1 0 542 0 1 23521
+box -542 -1642 5304 728
+use one_line  one_line_18
+timestamp 1654327931
+transform 1 0 542 0 1 24808
+box -542 -1642 5304 728
+use one_line  one_line_19
+timestamp 1654327931
+transform 1 0 542 0 1 26095
+box -542 -1642 5304 728
+use one_line  one_line_20
+timestamp 1654327931
+transform 1 0 542 0 1 27382
+box -542 -1642 5304 728
+use one_line  one_line_21
+timestamp 1654327931
+transform 1 0 542 0 1 28669
+box -542 -1642 5304 728
+use one_line  one_line_22
+timestamp 1654327931
+transform 1 0 542 0 1 29956
+box -542 -1642 5304 728
+use one_line  one_line_23
+timestamp 1654327931
+transform 1 0 542 0 1 31243
+box -542 -1642 5304 728
+use one_line  one_line_24
+timestamp 1654327931
+transform 1 0 542 0 1 32530
+box -542 -1642 5304 728
+use one_line  one_line_25
+timestamp 1654327931
+transform 1 0 542 0 1 33817
+box -542 -1642 5304 728
+use one_line  one_line_26
+timestamp 1654327931
+transform 1 0 542 0 1 35104
+box -542 -1642 5304 728
+use one_line  one_line_27
+timestamp 1654327931
+transform 1 0 542 0 1 36391
+box -542 -1642 5304 728
+use one_line  one_line_28
+timestamp 1654327931
+transform 1 0 542 0 1 37678
+box -542 -1642 5304 728
+use one_line  one_line_29
+timestamp 1654327931
+transform 1 0 542 0 1 38965
+box -542 -1642 5304 728
+use one_line  one_line_30
+timestamp 1654327931
+transform 1 0 542 0 1 40252
+box -542 -1642 5304 728
+use one_line  one_line_31
+timestamp 1654327931
+transform 1 0 542 0 1 41539
+box -542 -1642 5304 728
+<< end >>

@@ -1,29 +1,33 @@
-
 module bgr_top (
-    input porst,
-    output va, 
-    output vb,
-    output vbg
+    inout porst,
+    inout va, 
+    inout vb,
+    inout vbg
  );
- wire ground=VSS;
+ 
  wire vc;
  amplifier amp(
      .va(va),
      .vb(vb),
-     .vc(vc)
+     .vc(vc),
+     .VDD(VDD),
+     .VSS(VSS)
  );
 
  core BGR_Core(
-     .ground(ground),
      .va(va),
-     .vb(vb)
+     .vb(vb),
+     .VDD(VDD),
+     .VSS(VSS)
  );
 
  current_mirror CM(
      .va(va),
      .vb(vb),
      .vc(vc),
-     .vbg(vbg)
+     .vbg(vbg),
+     .VDD(VDD),
+     .VSS(VSS)
  );
 
  // =================================set up ========================
@@ -50,7 +54,8 @@ module bgr_top (
      .rin(l19),
      .rout(l20)
  );
- sky130_asc_res R21(
+ // === check ===
+ sky130_asc_res_xhigh_po_2p85_1 R21(
      .Rin(l20),
      .Rout(VSS)
  );
@@ -59,9 +64,11 @@ endmodule
 
 // ============================================ module amplifier =====================================
 module amplifier (
-    output va,
-    output vb,
-    output vc
+    inout va,
+    inout vb,
+    inout vc,
+    inout VSS,
+    inout VDD
  );
  wire vg, vq, vx;
 
@@ -111,19 +118,20 @@ endmodule
 
 // ===================================== module core =============================
 module core (
-    input ground,
-    output va,
-    output vb
+    inout va,
+    inout vb,
+    inout VSS,
+    inout VDD
  );
  wire vbneg, l6, l7, l8, l10, l11;
-  
+//  supply0 ground;
  cap_array C2 (
      .Cin(va),
      .Cout(VSS)
  );
  resistor R6 (
-    .rin(va),
-    .rout(l6)
+     .rin(va),
+     .rout(l6)
  );
  resistor R7 (
      .rin(l6),
@@ -143,12 +151,12 @@ module core (
  );
  sky130_asc_res_xhigh_po_2p85_2 R9 (
      .Rin(l11),
-     .Rout(ground)
+     .Rout(VSS)
  );
  sky130_asc_pnp_05v5_W3p40L3p40_1 pnp_va (
      .Emitter(va),
-     .Base(ground),
-     .Collector(ground)
+     .Base(VSS),
+     .Collector(VSS)
  );
 
  resistor R3 (
@@ -158,7 +166,7 @@ module core (
 
  pnp_array pnp_vb (
      .emitter(vbneg),
-     .base(ground)
+     .base(VSS)
  );
 
  wire l1, l2, l4, l5, l12;
@@ -184,14 +192,14 @@ module core (
  );
  sky130_asc_res_xhigh_po_2p85_2 R13 (
      .Rin(l12),
-     .Rout(ground)
+     .Rout(VSS)
  );
 
 endmodule
 
 module resistor (
-    input rin,
-    output rout
+    inout rin,
+    inout rout
   );
   wire l;
   sky130_asc_res_xhigh_po_2p85_1 sub1(
@@ -205,8 +213,8 @@ module resistor (
 endmodule
 
 module cap_array(
-    input Cin,
-    output Cout
+    inout Cin,
+    inout Cout
 );
 sky130_asc_cap_mim_m3_1 CA1 (
     .Cin(Cin),
@@ -231,8 +239,8 @@ sky130_asc_cap_mim_m3_1 CA5 (
 endmodule
 
 module pnp_array (
-    input emitter,
-    output base
+    inout emitter,
+    inout base
  );
  sky130_asc_pnp_05v5_W3p40L3p40_8 b1(
      .Emitter(emitter),
@@ -263,10 +271,12 @@ endmodule
 
 // ============================================== current mirror =================================
 module current_mirror (
-    input va,
-    input vb,
-    input vc,
-    output vbg
+    inout va,
+    inout vb,
+    inout vc,
+    inout vbg,
+    inout VSS,
+    inout VDD
  );
  cap_array C1 (
      .Cin(VDD),
@@ -293,3 +303,4 @@ module current_mirror (
      .DRAIN(vbg)
  );
 endmodule
+

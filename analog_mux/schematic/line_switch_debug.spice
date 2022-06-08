@@ -1,0 +1,41 @@
+.subckt line_switch_debug out in0 en1_b en_b en VDD VSS in1 en0_b
+
+x59 in0 net1 en en_b VDD VSS transmission_gate  
+x60 net1 out net3 en0_b VDD VSS switch_5t
+x61 en0_b VSS VSS VDD VDD net3 sky130_fd_sc_hd__inv_1
+x1 in1 net2 en en_b VDD VSS transmission_gate  
+x2 net2 out net4 en1_b VDD VSS switch_5t
+x3 en1_b VSS VSS VDD VDD net4 sky130_fd_sc_hd__inv_1
+.ends
+
+
+.subckt transmission_gate  in out en en_b  VDD  VSS N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15  
+
+XM1 out en in VSS sky130_fd_pr__nfet_01v8 L='L_N' W='W_N' nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult='N' m='N' 
+XM2 out en_b in VDD sky130_fd_pr__pfet_01v8 L='L_P' W='W_P' nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult='N' m='N' 
+.ends
+
+
+.subckt switch_5t  in out en en_b  VDD  VSS
+*.iopin in
+*.iopin out
+*.ipin en
+*.ipin en_b
+x1 in net1 en en_b VDD VSS transmission_gate  
+x2 net1 out en en_b VDD VSS transmission_gate 
+XM1 net1 en_b VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+.ends
+
+.subckt sky130_fd_sc_hd__inv_1 A VGND VNB VPB VPWR Y
+X0 VGND A Y VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X1 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
+.ends
+
+** flattened .save nodes
+.end

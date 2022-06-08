@@ -1,0 +1,108 @@
+* NGSPICE file created from my_analog_mux.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_01v8_UNG2NQ a_n416_n136# a_352_n136# a_n128_n136# a_n224_n136#
++ a_64_n136# a_160_n136# a_n320_n136# w_n646_n356# a_n32_n136# a_n508_n136# a_448_n136#
++ a_n512_n234# a_256_n136#
+X0 a_n224_n136# a_n512_n234# a_n320_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=4.488e+11p pd=3.38e+06u as=4.488e+11p ps=3.38e+06u w=1.36e+06u l=150000u
+X1 a_352_n136# a_n512_n234# a_256_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=4.488e+11p pd=3.38e+06u as=4.488e+11p ps=3.38e+06u w=1.36e+06u l=150000u
+X2 a_n128_n136# a_n512_n234# a_n224_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=4.488e+11p pd=3.38e+06u as=0p ps=0u w=1.36e+06u l=150000u
+X3 a_256_n136# a_n512_n234# a_160_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=4.488e+11p ps=3.38e+06u w=1.36e+06u l=150000u
+X4 a_n416_n136# a_n512_n234# a_n508_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=4.488e+11p pd=3.38e+06u as=4.216e+11p ps=3.34e+06u w=1.36e+06u l=150000u
+X5 a_n320_n136# a_n512_n234# a_n416_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+X6 a_n32_n136# a_n512_n234# a_n128_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=4.488e+11p pd=3.38e+06u as=0p ps=0u w=1.36e+06u l=150000u
+X7 a_448_n136# a_n512_n234# a_352_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=4.216e+11p pd=3.34e+06u as=0p ps=0u w=1.36e+06u l=150000u
+X8 a_64_n136# a_n512_n234# a_n32_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=4.488e+11p pd=3.38e+06u as=0p ps=0u w=1.36e+06u l=150000u
+X9 a_160_n136# a_n512_n234# a_64_n136# w_n646_n356# sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.36e+06u l=150000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_6J4AMR a_256_n52# a_n32_n52# a_n224_n52# a_448_n52#
++ a_n416_n52# a_160_n52# a_n610_n226# a_n128_n52# a_n512_n140# a_352_n52# a_n320_n52#
++ a_n508_n52# a_64_n52#
+X0 a_n32_n52# a_n512_n140# a_n128_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.716e+11p ps=1.7e+06u w=520000u l=150000u
+X1 a_n416_n52# a_n512_n140# a_n508_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.612e+11p ps=1.66e+06u w=520000u l=150000u
+X2 a_n224_n52# a_n512_n140# a_n320_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.716e+11p ps=1.7e+06u w=520000u l=150000u
+X3 a_n128_n52# a_n512_n140# a_n224_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X4 a_n320_n52# a_n512_n140# a_n416_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X5 a_160_n52# a_n512_n140# a_64_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.716e+11p ps=1.7e+06u w=520000u l=150000u
+X6 a_352_n52# a_n512_n140# a_256_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.716e+11p pd=1.7e+06u as=1.716e+11p ps=1.7e+06u w=520000u l=150000u
+X7 a_256_n52# a_n512_n140# a_160_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+X8 a_448_n52# a_n512_n140# a_352_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=1.612e+11p pd=1.66e+06u as=0p ps=0u w=520000u l=150000u
+X9 a_64_n52# a_n512_n140# a_n32_n52# a_n610_n226# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=520000u l=150000u
+.ends
+
+.subckt transmission_gate en en_b out VDD VSS in
+Xsky130_fd_pr__pfet_01v8_UNG2NQ_0 in in out in out in out VDD in out out en out sky130_fd_pr__pfet_01v8_UNG2NQ
+Xsky130_fd_pr__nfet_01v8_6J4AMR_0 out in in out in in VSS out en_b in out out out
++ sky130_fd_pr__nfet_01v8_6J4AMR
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_E56BNL a_n72_n90# a_16_n90# a_n32_32# VSUBS
+X0 a_16_n90# a_n32_32# a_n72_n90# VSUBS sky130_fd_pr__nfet_01v8 ad=1.45e+11p pd=1.58e+06u as=1.45e+11p ps=1.58e+06u w=500000u l=150000u
+.ends
+
+.subckt switch_5t transmission_gate_1/en_b transmission_gate_1/out transmission_gate_0/in
++ transmission_gate_1/VDD transmission_gate_1/en VSUBS
+Xtransmission_gate_0 transmission_gate_1/en transmission_gate_1/en_b transmission_gate_1/in
++ transmission_gate_1/VDD VSUBS transmission_gate_0/in transmission_gate
+Xtransmission_gate_1 transmission_gate_1/en transmission_gate_1/en_b transmission_gate_1/out
++ transmission_gate_1/VDD VSUBS transmission_gate_1/in transmission_gate
+Xsky130_fd_pr__nfet_01v8_E56BNL_0 VSUBS transmission_gate_1/in transmission_gate_1/en
++ VSUBS sky130_fd_pr__nfet_01v8_E56BNL
+.ends
+
+.subckt sky130_fd_sc_hd__inv_1 Y A VGND VPWR VNB VPB
+X0 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=1.69e+11p pd=1.82e+06u as=1.69e+11p ps=1.82e+06u w=650000u l=150000u
+X1 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=2.6e+11p pd=2.52e+06u as=2.6e+11p ps=2.52e+06u w=1e+06u l=150000u
+.ends
+
+.subckt my_one_line transmission_gate_0/en transmission_gate_0/in transmission_gate_0/VDD
++ sky130_fd_sc_hd__inv_1_0/A transmission_gate_0/en_b switch_5t_0/transmission_gate_1/out
++ VSUBS
+Xswitch_5t_0 sky130_fd_sc_hd__inv_1_0/Y switch_5t_0/transmission_gate_1/out transmission_gate_0/out
++ transmission_gate_0/VDD sky130_fd_sc_hd__inv_1_0/A VSUBS switch_5t
+Xtransmission_gate_0 transmission_gate_0/en transmission_gate_0/en_b transmission_gate_0/out
++ transmission_gate_0/VDD VSUBS transmission_gate_0/in transmission_gate
+Xsky130_fd_sc_hd__inv_1_0 sky130_fd_sc_hd__inv_1_0/Y sky130_fd_sc_hd__inv_1_0/A VSUBS
++ transmission_gate_0/VDD VSUBS transmission_gate_0/VDD sky130_fd_sc_hd__inv_1
+.ends
+
+.subckt my_analog_mux out en31_b in_31 en30_b in_30 en29_b in_29 en28_b in_28 en27_b
++ in_27 en26_b in_26 en25_b in_25 en24_b in_24 en23_b in_23 en22_b in_22 en21_b in_21
++ en20_b in_20 en19_b in_19 en18_b in_18 en17_b in_17 en16_b in_16 en15_b in_15 en14_b
++ in_14 en13_b in_13 en12_b in_12 en11_b in_11 en10_b in_10 en9_b in_9 en8_b in_8
++ en7_b in_7 en6_b in_6 en5_b in_5 en4_b in_4 en3_b in_3 en2_b in_2 en1_b in_1 en0_b
++ in_0 en_b en VSS VDD
+Xmy_one_line_0 en_b in_31 VDD en31_b en out VSS my_one_line
+Xmy_one_line_1 en_b in_30 VDD en30_b en out VSS my_one_line
+Xmy_one_line_2 en_b in_29 VDD en29_b en out VSS my_one_line
+Xmy_one_line_4 en_b in_27 VDD en27_b en out VSS my_one_line
+Xmy_one_line_3 en_b in_28 VDD en28_b en out VSS my_one_line
+Xmy_one_line_5 en_b in_26 VDD en26_b en out VSS my_one_line
+Xmy_one_line_6 en_b in_25 VDD en25_b en out VSS my_one_line
+Xmy_one_line_7 en_b in_24 VDD en24_b en out VSS my_one_line
+Xmy_one_line_8 en_b in_23 VDD en23_b en out VSS my_one_line
+Xmy_one_line_9 en_b in_22 VDD en22_b en out VSS my_one_line
+Xmy_one_line_30 en_b in_1 VDD en1_b en out VSS my_one_line
+Xmy_one_line_31 en_b in_0 VDD en0_b en out VSS my_one_line
+Xmy_one_line_20 en_b in_11 VDD en11_b en out VSS my_one_line
+Xmy_one_line_22 en_b in_9 VDD en9_b en out VSS my_one_line
+Xmy_one_line_21 en_b in_10 VDD en10_b en out VSS my_one_line
+Xmy_one_line_11 en_b in_20 VDD en20_b en out VSS my_one_line
+Xmy_one_line_10 en_b in_21 VDD en21_b en out VSS my_one_line
+Xmy_one_line_23 en_b in_8 VDD en8_b en out VSS my_one_line
+Xmy_one_line_12 en_b in_19 VDD en19_b en out VSS my_one_line
+Xmy_one_line_24 en_b in_7 VDD en7_b en out VSS my_one_line
+Xmy_one_line_13 en_b in_18 VDD en18_b en out VSS my_one_line
+Xmy_one_line_25 en_b in_6 VDD en6_b en out VSS my_one_line
+Xmy_one_line_14 en_b in_17 VDD en17_b en out VSS my_one_line
+Xmy_one_line_26 en_b in_5 VDD en5_b en out VSS my_one_line
+Xmy_one_line_15 en_b in_16 VDD en16_b en out VSS my_one_line
+Xmy_one_line_27 en_b in_4 VDD en4_b en out VSS my_one_line
+Xmy_one_line_16 en_b in_15 VDD en15_b en out VSS my_one_line
+Xmy_one_line_28 en_b in_3 VDD en3_b en out VSS my_one_line
+Xmy_one_line_17 en_b in_14 VDD en14_b en out VSS my_one_line
+Xmy_one_line_29 en_b in_2 VDD en2_b en out VSS my_one_line
+Xmy_one_line_19 en_b in_12 VDD en12_b en out VSS my_one_line
+Xmy_one_line_18 en_b in_13 VDD en13_b en out VSS my_one_line
+.ends
+

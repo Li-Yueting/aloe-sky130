@@ -1382,6 +1382,16 @@ library ("sky130_fd_sc_hd__tt_025C_1v80") {
             rise_capacitance : 0.0025030000;
         }
         pin ("Base") {
+            capacitance : 0.0024120000;
+            clock : "false";
+            direction : "input";
+            fall_capacitance : 0.0023210000;
+            max_transition : 1.5000000000;
+            related_ground_pin : "VGND";
+            related_power_pin : "VPWR";
+            rise_capacitance : 0.0025030000;
+        }
+        pin ("Collector") {
             direction : "output";
             function : "(Emitter)";
             internal_power () {
@@ -1494,6 +1504,16 @@ library ("sky130_fd_sc_hd__tt_025C_1v80") {
             rise_capacitance : 0.0025030000;
         }
         pin ("Base") {
+            capacitance : 0.0024120000;
+            clock : "false";
+            direction : "input";
+            fall_capacitance : 0.0023210000;
+            max_transition : 1.5000000000;
+            related_ground_pin : "VGND";
+            related_power_pin : "VPWR";
+            rise_capacitance : 0.0025030000;
+        }
+        pin ("Collector") {
             direction : "output";
             function : "(Emitter)";
             internal_power () {
