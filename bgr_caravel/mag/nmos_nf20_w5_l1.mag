@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654739139
+timestamp 1654748007
 << pwell >>
 rect -2706 -970 2608 526
 << psubdiff >>
@@ -327,7 +327,7 @@ rect -2706 -1060 2608 -1030
 use sky130_fd_pr__nfet_01v8_lvt_W76TCA  xm0
 timestamp 0
 transform 1 0 0 0 1 0
-box -2609 -526 2609 526
+box 0 0 1 1
 << labels >>
 flabel metal1 -2608 850 -2548 910 1 FreeSans 800 0 0 0 VPWR
 flabel metal1 -2608 -1030 -2548 -970 1 FreeSans 800 0 0 0 VGND
