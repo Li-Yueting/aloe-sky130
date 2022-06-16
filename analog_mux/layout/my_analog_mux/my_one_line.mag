@@ -1,0 +1,140 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1654670557
+<< nwell >>
+rect 265 -98 1941 552
+rect 4574 216 5048 556
+rect 4544 190 5048 216
+rect 4568 -94 4742 190
+<< pwell >>
+rect 611 -498 2226 -106
+rect 2856 -494 3559 -106
+rect 4521 -233 4852 -170
+rect 4521 -547 4967 -233
+<< locali >>
+rect 4804 -127 4842 -126
+rect 4804 -161 4806 -127
+rect 4840 -161 4842 -127
+rect 4804 -162 4842 -161
+<< viali >>
+rect 4806 -161 4840 -127
+rect 4908 -156 4942 -122
+<< metal1 >>
+rect 934 370 944 426
+rect 996 372 1250 426
+rect 1308 372 1318 426
+rect 996 370 1310 372
+rect 4551 199 4903 217
+rect 4529 186 4903 199
+rect 4529 139 4833 186
+rect 876 126 1618 128
+rect 838 66 860 75
+rect 876 66 1514 126
+rect 838 18 1514 66
+rect 1648 18 1658 126
+rect 4529 122 4804 139
+rect 838 16 1618 18
+rect 4635 -57 5201 -23
+rect 4635 -77 4669 -57
+rect -540 -116 -512 -84
+rect 915 -115 1599 -81
+rect 4613 -111 4669 -77
+rect 4896 -115 4970 -114
+rect 4784 -117 4858 -116
+rect 4784 -169 4795 -117
+rect 4847 -169 4858 -117
+rect 4896 -167 4907 -115
+rect 4959 -167 4970 -115
+rect 4896 -168 4970 -167
+rect 4784 -170 4858 -169
+rect 840 -338 1066 -218
+rect 1018 -340 1066 -338
+rect 1056 -342 1066 -340
+rect 1178 -342 1188 -218
+rect 1378 -380 1388 -378
+rect 916 -436 926 -380
+rect 982 -434 1388 -380
+rect 1444 -434 1454 -378
+rect 4519 -384 4853 -326
+rect 4525 -422 4853 -384
+rect 982 -436 1444 -434
+rect 5141 -582 5201 -57
+<< via1 >>
+rect 944 370 996 426
+rect 1250 372 1308 426
+rect 1514 18 1648 126
+rect 4795 -127 4847 -117
+rect 4795 -161 4806 -127
+rect 4806 -161 4840 -127
+rect 4840 -161 4847 -127
+rect 4795 -169 4847 -161
+rect 4907 -122 4959 -115
+rect 4907 -156 4908 -122
+rect 4908 -156 4942 -122
+rect 4942 -156 4959 -122
+rect 4907 -167 4959 -156
+rect 1066 -342 1178 -218
+rect 926 -436 982 -380
+rect 1388 -434 1444 -378
+<< metal2 >>
+rect 944 426 996 436
+rect 944 360 996 370
+rect 1250 426 1310 728
+rect 1308 372 1310 426
+rect 1066 -218 1178 -208
+rect 1178 -342 1180 -218
+rect 1066 -352 1180 -342
+rect 926 -380 982 -370
+rect 662 -435 926 -383
+rect 982 -435 984 -383
+rect 926 -446 982 -436
+rect 1068 -582 1180 -352
+rect 1250 -582 1310 372
+rect 1388 -378 1444 728
+rect 4340 376 5304 428
+rect 1388 -582 1444 -434
+rect 1514 126 1648 136
+rect 1514 -112 1648 18
+rect 1514 -582 1644 -112
+rect 4794 -117 4848 -106
+rect 4794 -124 4795 -117
+rect 4636 -169 4795 -124
+rect 4847 -169 4848 -117
+rect 4636 -176 4848 -169
+rect 4636 -379 4688 -176
+rect 4794 -180 4848 -176
+rect 4906 -108 4960 -104
+rect 5066 -108 5118 376
+rect 4906 -115 5118 -108
+rect 4906 -167 4907 -115
+rect 4959 -160 5118 -115
+rect 4959 -167 4960 -160
+rect 4906 -178 4960 -167
+rect 4332 -431 4688 -379
+use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1654309566
+transform -1 0 5008 0 1 -374
+box -38 -48 314 592
+use switch_5t  switch_5t_0 ~/ee372/incremental_delta_sigma_adc/design/analog_modulator/layout/one_line
+timestamp 1654670557
+transform 1 0 1612 0 1 -562
+box -53 -40 3094 1176
+use transmission_gate  transmission_gate_0 ~/ee372/incremental_delta_sigma_adc/design/analog_modulator/layout/transmission_gate
+timestamp 1654665171
+transform 1 0 -326 0 1 -511
+box -216 -95 1358 1121
+<< labels >>
+flabel metal2 1072 -572 1172 -506 1 FreeSans 480 0 0 0 VSS
+port 1 n ground bidirectional
+flabel metal2 1516 -574 1642 -512 1 FreeSans 480 0 0 0 VDD
+port 2 n power bidirectional
+flabel metal2 1252 660 1304 714 1 FreeSans 480 0 0 0 en_b
+port 3 n signal bidirectional
+flabel metal2 1392 662 1442 708 1 FreeSans 480 0 0 0 en
+port 4 n signal bidirectional
+flabel metal1 5144 -550 5192 -508 1 FreeSans 480 0 0 0 out
+port 5 n signal bidirectional
+flabel metal1 -540 -116 -512 -84 1 FreeSans 480 0 0 0 in
+port 6 n signal bidirectional
+<< end >>

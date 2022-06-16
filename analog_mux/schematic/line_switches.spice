@@ -1,110 +1,110 @@
-
-.subckt line_switches in5 in6 in7 in8 in9 in10 in11 in12 in13 in14 in15 in16 in17 in18 in19 out
-+ in0 in1 in2 in3 in4 en0_b en1_b en2_b en3_b en4_b en5_b en6_b en7_b en8_b en9_b en10_b en11_b en12_b
-+ en13_b en14_b en15_b en16_b en17_b en18_b en19_b en20_b en21_b en22_b en23_b en24_b en25_b en26_b en27_b
-+ en28_b en29_b en30_b en31_b en_b en in20 in21 in22 in23 in24 in25 in26 in27 in28 in29 in30 in31 VDD VSS
-
-x28 in10 net1 en en_b VDD VSS transmission_gate  
-x29 net1 out net33 en10_b VDD VSS switch_5t
-x31 in11 net2 en en_b VDD VSS transmission_gate  
-x32 net2 out net34 en11_b VDD VSS switch_5t
-x34 in12 net3 en en_b VDD VSS transmission_gate  
-x35 net3 out net35 en12_b VDD VSS switch_5t
-x37 in13 net4 en en_b VDD VSS transmission_gate  
-x38 net4 out net36 en13_b VDD VSS switch_5t
-x40 in14 net5 en en_b VDD VSS transmission_gate  
-x41 net5 out net37 en14_b VDD VSS switch_5t
-x43 in15 net6 en en_b VDD VSS transmission_gate  
-x44 net6 out net38 en15_b VDD VSS switch_5t
-x46 in16 net7 en en_b VDD VSS transmission_gate  
-x47 net7 out net39 en16_b VDD VSS switch_5t
-x49 in17 net8 en en_b VDD VSS transmission_gate  
-x50 net8 out net40 en17_b VDD VSS switch_5t
-x52 in18 net9 en en_b VDD VSS transmission_gate  
-x53 net9 out net41 en18_b VDD VSS switch_5t
-x55 in19 net10 en en_b VDD VSS transmission_gate  
-x56 net10 out net42 en19_b VDD VSS switch_5t
-x2 in4 net11 en en_b VDD VSS transmission_gate  
-x3 net11 out net43 en4_b VDD VSS switch_5t
-x5 in5 net12 en en_b VDD VSS transmission_gate  
-x6 net12 out net44 en5_b VDD VSS switch_5t
-x8 in6 net13 en en_b VDD VSS transmission_gate  
-x9 net13 out net45 en6_b VDD VSS switch_5t
-x11 in7 net14 en en_b VDD VSS transmission_gate  
-x12 net14 out net46 en7_b VDD VSS switch_5t
-x14 in8 net15 en en_b VDD VSS transmission_gate  
-x15 net15 out net47 en8_b VDD VSS switch_5t
-x17 in9 net16 en en_b VDD VSS transmission_gate  
-x18 net16 out net48 en9_b VDD VSS switch_5t
-x20 in1 net17 en en_b VDD VSS transmission_gate  
-x21 net17 out net49 en1_b VDD VSS switch_5t
-x23 in2 net18 en en_b VDD VSS transmission_gate  
-x24 net18 out net50 en2_b VDD VSS switch_5t
-x26 in3 net19 en en_b VDD VSS transmission_gate  
-x27 net19 out net51 en3_b VDD VSS switch_5t
-x59 in0 net20 en en_b VDD VSS transmission_gate  
-x60 net20 out net52 en0_b VDD VSS switch_5t
-x1 in20 net21 en en_b VDD VSS transmission_gate  
-x62 net21 out net53 en20_b VDD VSS switch_5t
-x64 in21 net22 en en_b VDD VSS transmission_gate  
-x65 net22 out net54 en21_b VDD VSS switch_5t
-x67 in22 net23 en en_b VDD VSS transmission_gate  
-x68 net23 out net55 en22_b VDD VSS switch_5t
-x70 in23 net24 en en_b VDD VSS transmission_gate  
-x71 net24 out net56 en23_b VDD VSS switch_5t
-x73 in24 net25 en en_b VDD VSS transmission_gate  
-x74 net25 out net57 en24_b VDD VSS switch_5t
-x76 in25 net26 en en_b VDD VSS transmission_gate  
-x77 net26 out net58 en25_b VDD VSS switch_5t
-x79 in26 net27 en en_b VDD VSS transmission_gate  
-x80 net27 out net59 en26_b VDD VSS switch_5t
-x82 in27 net28 en en_b VDD VSS transmission_gate  
-x83 net28 out net60 en27_b VDD VSS switch_5t
-x85 in28 net29 en en_b VDD VSS transmission_gate  
-x86 net29 out net61 en28_b VDD VSS switch_5t
-x88 in29 net30 en en_b VDD VSS transmission_gate  
-x89 net30 out net62 en29_b VDD VSS switch_5t
-x91 in30 net31 en en_b VDD VSS transmission_gate  
-x92 net31 out net63 en30_b VDD VSS switch_5t
-x94 in31 net32 en en_b VDD VSS transmission_gate  
-x95 net32 out net64 en31_b VDD VSS switch_5t
-x97 en0_b VSS VSS VDD VDD net52 sky130_fd_sc_hd__inv_1
-x22 en1_b VSS VSS VDD VDD net49 sky130_fd_sc_hd__inv_1
-x25 en2_b VSS VSS VDD VDD net50 sky130_fd_sc_hd__inv_1
-x58 en3_b VSS VSS VDD VDD net51 sky130_fd_sc_hd__inv_1
-x4 en4_b VSS VSS VDD VDD net43 sky130_fd_sc_hd__inv_1
-x7 en5_b VSS VSS VDD VDD net44 sky130_fd_sc_hd__inv_1
-x10 en6_b VSS VSS VDD VDD net45 sky130_fd_sc_hd__inv_1
-x13 en7_b VSS VSS VDD VDD net46 sky130_fd_sc_hd__inv_1
-x16 en8_b VSS VSS VDD VDD net47 sky130_fd_sc_hd__inv_1
-x19 en31_b VSS VSS VDD VDD net64 sky130_fd_sc_hd__inv_1
-x30 en30_b VSS VSS VDD VDD net63 sky130_fd_sc_hd__inv_1
-x33 en29_b VSS VSS VDD VDD net62 sky130_fd_sc_hd__inv_1
-x36 en28_b VSS VSS VDD VDD net61 sky130_fd_sc_hd__inv_1
-x39 en27_b VSS VSS VDD VDD net60 sky130_fd_sc_hd__inv_1
-x42 en26_b VSS VSS VDD VDD net59 sky130_fd_sc_hd__inv_1
-x45 en25_b VSS VSS VDD VDD net58 sky130_fd_sc_hd__inv_1
-x48 en24_b VSS VSS VDD VDD net57 sky130_fd_sc_hd__inv_1
-x51 en23_b VSS VSS VDD VDD net56 sky130_fd_sc_hd__inv_1
-x54 en22_b VSS VSS VDD VDD net55 sky130_fd_sc_hd__inv_1
-x57 en20_b VSS VSS VDD VDD net53 sky130_fd_sc_hd__inv_1
-x63 en19_b VSS VSS VDD VDD net42 sky130_fd_sc_hd__inv_1
-x69 en18_b VSS VSS VDD VDD net41 sky130_fd_sc_hd__inv_1
-x72 en17_b VSS VSS VDD VDD net40 sky130_fd_sc_hd__inv_1
-x75 en16_b VSS VSS VDD VDD net39 sky130_fd_sc_hd__inv_1
-x78 en15_b VSS VSS VDD VDD net38 sky130_fd_sc_hd__inv_1
-x81 en14_b VSS VSS VDD VDD net37 sky130_fd_sc_hd__inv_1
-x84 en13_b VSS VSS VDD VDD net36 sky130_fd_sc_hd__inv_1
-x87 en12_b VSS VSS VDD VDD net35 sky130_fd_sc_hd__inv_1
-x90 en11_b VSS VSS VDD VDD net34 sky130_fd_sc_hd__inv_1
-x93 en10_b VSS VSS VDD VDD net33 sky130_fd_sc_hd__inv_1
-x96 en9_b VSS VSS VDD VDD net48 sky130_fd_sc_hd__inv_1
-x61 en21_b VSS VSS VDD VDD net54 sky130_fd_sc_hd__inv_1
+.subckt line_switches out en_b[31] en_b[30] en_b[29] en_b[28] en_b[27] en_b[26] en_b[25] en_b[24]
++ en_b[23] en_b[22] en_b[21] en_b[20] en_b[19] en_b[18] en_b[17] en_b[16] en_b[15] en_b[14] en_b[13] en_b[12]
++ en_b[11] en_b[10] en_b[9] en_b[8] en_b[7] en_b[6] en_b[5] en_b[4] en_b[3] en_b[2] en_b[1] en_b[0] s_en_b
++ s_en VDD VSS in[31] in[30] in[29] in[28] in[27] in[26] in[25] in[24] in[23] in[22] in[21] in[20] in[19]
++ in[18] in[17] in[16] in[15] in[14] in[13] in[12] in[11] in[10] in[9] in[8] in[7] in[6] in[5] in[4] in[3]
++ in[2] in[1] in[0]
+*.PININFO out:O en_b[31:0]:I s_en_b:I s_en:I VDD:I VSS:I in[31:0]:I
+x28 in[10] net1 s_en s_en_b VDD VSS transmission_gate  
+x29 net1 out net33 en_b[10] VDD VSS switch_5t
+x31 in[11] net2 s_en s_en_b VDD VSS transmission_gate  
+x32 net2 out net34 en_b[11] VDD VSS switch_5t
+x34 in[12] net3 s_en s_en_b VDD VSS transmission_gate  
+x35 net3 out net35 en_b[12] VDD VSS switch_5t
+x37 in[13] net4 s_en s_en_b VDD VSS transmission_gate  
+x38 net4 out net36 en_b[13] VDD VSS switch_5t
+x40 in[14] net5 s_en s_en_b VDD VSS transmission_gate  
+x41 net5 out net37 en_b[14] VDD VSS switch_5t
+x43 in[15] net6 s_en s_en_b VDD VSS transmission_gate  
+x44 net6 out net38 en_b[15] VDD VSS switch_5t
+x46 in[16] net7 s_en s_en_b VDD VSS transmission_gate  
+x47 net7 out net39 en_b[16] VDD VSS switch_5t
+x49 in[17] net8 s_en s_en_b VDD VSS transmission_gate  
+x50 net8 out net40 en_b[17] VDD VSS switch_5t
+x52 in[18] net9 s_en s_en_b VDD VSS transmission_gate  
+x53 net9 out net41 en_b[18] VDD VSS switch_5t
+x55 in[19] net10 s_en s_en_b VDD VSS transmission_gate  
+x56 net10 out net42 en_b[19] VDD VSS switch_5t
+x2 in[4] net11 s_en s_en_b VDD VSS transmission_gate  
+x3 net11 out net43 en_b[4] VDD VSS switch_5t
+x5 in[5] net12 s_en s_en_b VDD VSS transmission_gate  
+x6 net12 out net44 en_b[5] VDD VSS switch_5t
+x8 in[6] net13 s_en s_en_b VDD VSS transmission_gate  
+x9 net13 out net45 en_b[6] VDD VSS switch_5t
+x11 in[7] net14 s_en s_en_b VDD VSS transmission_gate  
+x12 net14 out net46 en_b[7] VDD VSS switch_5t
+x14 in[8] net15 s_en s_en_b VDD VSS transmission_gate  
+x15 net15 out net47 en_b[8] VDD VSS switch_5t
+x17 in[9] net16 s_en s_en_b VDD VSS transmission_gate  
+x18 net16 out net48 en_b[9] VDD VSS switch_5t
+x20 in[1] net17 s_en s_en_b VDD VSS transmission_gate  
+x21 net17 out net49 en_b[1] VDD VSS switch_5t
+x23 in[2] net18 s_en s_en_b VDD VSS transmission_gate  
+x24 net18 out net50 en_b[2] VDD VSS switch_5t
+x26 in[3] net19 s_en s_en_b VDD VSS transmission_gate  
+x27 net19 out net51 en_b[3] VDD VSS switch_5t
+x59 in[0] net20 s_en s_en_b VDD VSS transmission_gate  
+x60 net20 out net52 en_b[0] VDD VSS switch_5t
+x1 in[20] net21 s_en s_en_b VDD VSS transmission_gate  
+x62 net21 out net53 en_b[20] VDD VSS switch_5t
+x64 in[21] net22 s_en s_en_b VDD VSS transmission_gate  
+x65 net22 out net54 en_b[21] VDD VSS switch_5t
+x67 in[22] net23 s_en s_en_b VDD VSS transmission_gate  
+x68 net23 out net55 en_b[22] VDD VSS switch_5t
+x70 in[23] net24 s_en s_en_b VDD VSS transmission_gate  
+x71 net24 out net56 en_b[23] VDD VSS switch_5t
+x73 in[24] net25 s_en s_en_b VDD VSS transmission_gate  
+x74 net25 out net57 en_b[24] VDD VSS switch_5t
+x76 in[25] net26 s_en s_en_b VDD VSS transmission_gate  
+x77 net26 out net58 en_b[25] VDD VSS switch_5t
+x79 in[26] net27 s_en s_en_b VDD VSS transmission_gate  
+x80 net27 out net59 en_b[26] VDD VSS switch_5t
+x82 in[27] net28 s_en s_en_b VDD VSS transmission_gate  
+x83 net28 out net60 en_b[27] VDD VSS switch_5t
+x85 in[28] net29 s_en s_en_b VDD VSS transmission_gate  
+x86 net29 out net61 en_b[28] VDD VSS switch_5t
+x88 in[29] net30 s_en s_en_b VDD VSS transmission_gate  
+x89 net30 out net62 en_b[29] VDD VSS switch_5t
+x91 in[30] net31 s_en s_en_b VDD VSS transmission_gate  
+x92 net31 out net63 en_b[30] VDD VSS switch_5t
+x94 in[31] net32 s_en s_en_b VDD VSS transmission_gate  
+x95 net32 out net64 en_b[31] VDD VSS switch_5t
+x97 en_b[0] VSS VSS VDD VDD net52 sky130_fd_sc_hd__inv_1
+x22 en_b[1] VSS VSS VDD VDD net49 sky130_fd_sc_hd__inv_1
+x25 en_b[2] VSS VSS VDD VDD net50 sky130_fd_sc_hd__inv_1
+x58 en_b[3] VSS VSS VDD VDD net51 sky130_fd_sc_hd__inv_1
+x4 en_b[4] VSS VSS VDD VDD net43 sky130_fd_sc_hd__inv_1
+x7 en_b[5] VSS VSS VDD VDD net44 sky130_fd_sc_hd__inv_1
+x10 en_b[6] VSS VSS VDD VDD net45 sky130_fd_sc_hd__inv_1
+x13 en_b[7] VSS VSS VDD VDD net46 sky130_fd_sc_hd__inv_1
+x16 en_b[8] VSS VSS VDD VDD net47 sky130_fd_sc_hd__inv_1
+x19 en_b[31] VSS VSS VDD VDD net64 sky130_fd_sc_hd__inv_1
+x30 en_b[30] VSS VSS VDD VDD net63 sky130_fd_sc_hd__inv_1
+x33 en_b[29] VSS VSS VDD VDD net62 sky130_fd_sc_hd__inv_1
+x36 en_b[28] VSS VSS VDD VDD net61 sky130_fd_sc_hd__inv_1
+x39 en_b[27] VSS VSS VDD VDD net60 sky130_fd_sc_hd__inv_1
+x42 en_b[26] VSS VSS VDD VDD net59 sky130_fd_sc_hd__inv_1
+x45 en_b[25] VSS VSS VDD VDD net58 sky130_fd_sc_hd__inv_1
+x48 en_b[24] VSS VSS VDD VDD net57 sky130_fd_sc_hd__inv_1
+x51 en_b[23] VSS VSS VDD VDD net56 sky130_fd_sc_hd__inv_1
+x54 en_b[22] VSS VSS VDD VDD net55 sky130_fd_sc_hd__inv_1
+x57 en_b[20] VSS VSS VDD VDD net53 sky130_fd_sc_hd__inv_1
+x63 en_b[19] VSS VSS VDD VDD net42 sky130_fd_sc_hd__inv_1
+x69 en_b[18] VSS VSS VDD VDD net41 sky130_fd_sc_hd__inv_1
+x72 en_b[17] VSS VSS VDD VDD net40 sky130_fd_sc_hd__inv_1
+x75 en_b[16] VSS VSS VDD VDD net39 sky130_fd_sc_hd__inv_1
+x78 en_b[15] VSS VSS VDD VDD net38 sky130_fd_sc_hd__inv_1
+x81 en_b[14] VSS VSS VDD VDD net37 sky130_fd_sc_hd__inv_1
+x84 en_b[13] VSS VSS VDD VDD net36 sky130_fd_sc_hd__inv_1
+x87 en_b[12] VSS VSS VDD VDD net35 sky130_fd_sc_hd__inv_1
+x90 en_b[11] VSS VSS VDD VDD net34 sky130_fd_sc_hd__inv_1
+x93 en_b[10] VSS VSS VDD VDD net33 sky130_fd_sc_hd__inv_1
+x96 en_b[9] VSS VSS VDD VDD net48 sky130_fd_sc_hd__inv_1
+x61 en_b[21] VSS VSS VDD VDD net54 sky130_fd_sc_hd__inv_1
 .ends
 
 
-.subckt transmission_gate  in out en en_b VDD VSS  N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15
-
+.subckt transmission_gate  in out en en_b VDD VSS   N=1 W_N=5.3 L_N=0.15 W_P=13.7 L_P=0.15    
 XM1 out en in VSS sky130_fd_pr__nfet_01v8 L='L_N' W='W_N' nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult='N' m='N' 
@@ -114,21 +114,18 @@ XM2 out en_b in VDD sky130_fd_pr__pfet_01v8 L='L_P' W='W_P' nf=1 ad='int((nf+1)/
 .ends
 
 
-.subckt switch_5t  in out en en_b  VDD  VSS 
 
-x1 in net1 en en_b VDD VSS transmission_gate 
-x2 net1 out en en_b VDD VSS transmission_gate 
+.subckt switch_5t in out en en_b  VDD  VSS
+x1 in net1 en en_b VDD VSS transmission_gate  
+x2 net1 out en en_b VDD VSS transmission_gate  
 XM1 net1 en_b VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1 
 .ends
 
-
-.subckt sky130_fd_sc_hd__inv_1 A VGND VNB VPWR VPB Y
-X0 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=1.69e+11p pd=1.82e+06u as=1.69e+11p ps=1.82e+06u w=650000u l=150000u
-X1 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=2.6e+11p pd=2.52e+06u as=2.6e+11p ps=2.52e+06u w=1e+06u l=150000u
+.subckt sky130_fd_sc_hd__inv_1 A VGND VNB VPB VPWR Y
+X0 VGND A Y VNB sky130_fd_pr__nfet_01v8 w=650000u l=150000u
+X1 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt w=1e+06u l=150000u
 .ends
-
-
 ** flattened .save nodes
 .end

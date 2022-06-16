@@ -1,9 +1,5 @@
-Flattening unmatched subcell sky130_fd_pr__pfet_01v8_UNG2NQ in circuit transmission_gate (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_01v8_6J4AMR in circuit transmission_gate (0)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__nfet_01v8_E56BNL in circuit switch_5t (0)(1 instance)
-Flattening unmatched subcell my_one_line in circuit my_analog_mux (0)(32 instances)
-Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 has no definition, treated as a black box.
-Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 has no definition, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
 
 Subcircuit pins:
 Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
@@ -15,8 +11,8 @@ Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
-Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 has no definition, treated as a black box.
-Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 has no definition, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
 
 Subcircuit pins:
 Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
@@ -28,13 +24,15 @@ Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
-Class transmission_gate:  Merged 18 devices.
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_UNG2NQ in circuit transmission_gate (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_6J4AMR in circuit transmission_gate (0)(1 instance)
 
+Class transmission_gate (0):  Merged 18 parallel devices.
 Subcircuit summary:
 Circuit 1: transmission_gate               |Circuit 2: transmission_gate               
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
-sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+sky130_fd_pr__pfet_01v8 (10->1)            |sky130_fd_pr__pfet_01v8 (1)                
+sky130_fd_pr__nfet_01v8 (10->1)            |sky130_fd_pr__nfet_01v8 (1)                
 Number of devices: 2                       |Number of devices: 2                       
 Number of nets: 6                          |Number of nets: 6                          
 ---------------------------------------------------------------------------------------
@@ -55,8 +53,8 @@ in                                         |in
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes transmission_gate and transmission_gate are equivalent.
-Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt has no definition, treated as a black box.
-Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt has no definition, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
 
 Subcircuit pins:
 Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_hvt     
@@ -68,6 +66,7 @@ Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_h
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_pr__pfet_01v8_hvt and sky130_fd_pr__pfet_01v8_hvt are equivalent.
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_E56BNL in circuit switch_5t (0)(1 instance)
 
 Subcircuit summary:
 Circuit 1: switch_5t                       |Circuit 2: switch_5t                       
@@ -111,14 +110,15 @@ VGND                                       |VGND
 VNB                                        |VNB                                        
 VPWR                                       |VPWR                                       
 VPB                                        |VPB                                        
-Y                                          |Y                                          
 A                                          |A                                          
+Y                                          |Y                                          
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sky130_fd_sc_hd__inv_1 and sky130_fd_sc_hd__inv_1 are equivalent.
+Flattening unmatched subcell my_one_line in circuit switch (0)(32 instances)
 
 Subcircuit summary:
-Circuit 1: my_analog_mux                   |Circuit 2: line_switches                   
+Circuit 1: switch                          |Circuit 2: line_switches                   
 -------------------------------------------|-------------------------------------------
 switch_5t (32)                             |switch_5t (32)                             
 transmission_gate (32)                     |transmission_gate (32)                     
@@ -132,78 +132,78 @@ Netlists match uniquely.
 Circuits match correctly.
 
 Subcircuit pins:
-Circuit 1: my_analog_mux                   |Circuit 2: line_switches                   
+Circuit 1: switch                          |Circuit 2: line_switches                   
 -------------------------------------------|-------------------------------------------
-en13_b                                     |en13_b                                     
-en12_b                                     |en12_b                                     
-en2_b                                      |en2_b                                      
-en14_b                                     |en14_b                                     
-en3_b                                      |en3_b                                      
-en15_b                                     |en15_b                                     
-en4_b                                      |en4_b                                      
-en16_b                                     |en16_b                                     
-en5_b                                      |en5_b                                      
-en17_b                                     |en17_b                                     
-en6_b                                      |en6_b                                      
-en18_b                                     |en18_b                                     
-en7_b                                      |en7_b                                      
-en19_b                                     |en19_b                                     
-en8_b                                      |en8_b                                      
-en21_b                                     |en21_b                                     
-en20_b                                     |en20_b                                     
-en10_b                                     |en10_b                                     
-en9_b                                      |en9_b                                      
-en11_b                                     |en11_b                                     
-en0_b                                      |en0_b                                      
-en1_b                                      |en1_b                                      
-en22_b                                     |en22_b                                     
-en23_b                                     |en23_b                                     
-en24_b                                     |en24_b                                     
-en25_b                                     |en25_b                                     
-en26_b                                     |en26_b                                     
-en28_b                                     |en28_b                                     
-en27_b                                     |en27_b                                     
-en29_b                                     |en29_b                                     
-en30_b                                     |en30_b                                     
-en31_b                                     |en31_b                                     
-in_13                                      |in13 **Mismatch**                          
-in_12                                      |in12 **Mismatch**                          
-in_2                                       |in2 **Mismatch**                           
-in_14                                      |in14 **Mismatch**                          
-in_3                                       |in3 **Mismatch**                           
-in_15                                      |in15 **Mismatch**                          
-in_4                                       |in4 **Mismatch**                           
-in_16                                      |in16 **Mismatch**                          
-in_5                                       |in5 **Mismatch**                           
-in_17                                      |in17 **Mismatch**                          
-in_6                                       |in6 **Mismatch**                           
-in_18                                      |in18 **Mismatch**                          
-in_7                                       |in7 **Mismatch**                           
-in_19                                      |in19 **Mismatch**                          
-in_8                                       |in8 **Mismatch**                           
-in_21                                      |in21 **Mismatch**                          
-in_20                                      |in20 **Mismatch**                          
-in_10                                      |in10 **Mismatch**                          
-in_9                                       |in9 **Mismatch**                           
-in_11                                      |in11 **Mismatch**                          
-in_0                                       |in0 **Mismatch**                           
-in_1                                       |in1 **Mismatch**                           
-in_22                                      |in22 **Mismatch**                          
-in_23                                      |in23 **Mismatch**                          
-in_24                                      |in24 **Mismatch**                          
-in_25                                      |in25 **Mismatch**                          
-in_26                                      |in26 **Mismatch**                          
-in_28                                      |in28 **Mismatch**                          
-in_27                                      |in27 **Mismatch**                          
-in_29                                      |in29 **Mismatch**                          
-in_30                                      |in30 **Mismatch**                          
-in_31                                      |in31 **Mismatch**                          
-en                                         |en                                         
-en_b                                       |en_b                                       
+en_b[13]                                   |en_b[13]                                   
+en_b[12]                                   |en_b[12]                                   
+en_b[2]                                    |en_b[2]                                    
+en_b[14]                                   |en_b[14]                                   
+en_b[3]                                    |en_b[3]                                    
+en_b[15]                                   |en_b[15]                                   
+en_b[4]                                    |en_b[4]                                    
+en_b[16]                                   |en_b[16]                                   
+en_b[5]                                    |en_b[5]                                    
+en_b[17]                                   |en_b[17]                                   
+en_b[6]                                    |en_b[6]                                    
+en_b[18]                                   |en_b[18]                                   
+en_b[7]                                    |en_b[7]                                    
+en_b[19]                                   |en_b[19]                                   
+en_b[8]                                    |en_b[8]                                    
+en_b[21]                                   |en_b[21]                                   
+en_b[20]                                   |en_b[20]                                   
+en_b[10]                                   |en_b[10]                                   
+en_b[9]                                    |en_b[9]                                    
+en_b[11]                                   |en_b[11]                                   
+en_b[0]                                    |en_b[0]                                    
+en_b[1]                                    |en_b[1]                                    
+en_b[22]                                   |en_b[22]                                   
+en_b[23]                                   |en_b[23]                                   
+en_b[24]                                   |en_b[24]                                   
+en_b[25]                                   |en_b[25]                                   
+en_b[26]                                   |en_b[26]                                   
+en_b[28]                                   |en_b[28]                                   
+en_b[27]                                   |en_b[27]                                   
+en_b[29]                                   |en_b[29]                                   
+en_b[30]                                   |en_b[30]                                   
+en_b[31]                                   |en_b[31]                                   
+in[13]                                     |in[13]                                     
+in[12]                                     |in[12]                                     
+in[2]                                      |in[2]                                      
+in[14]                                     |in[14]                                     
+in[3]                                      |in[3]                                      
+in[15]                                     |in[15]                                     
+in[4]                                      |in[4]                                      
+in[16]                                     |in[16]                                     
+in[5]                                      |in[5]                                      
+in[17]                                     |in[17]                                     
+in[6]                                      |in[6]                                      
+in[18]                                     |in[18]                                     
+in[7]                                      |in[7]                                      
+in[19]                                     |in[19]                                     
+in[8]                                      |in[8]                                      
+in[21]                                     |in[21]                                     
+in[20]                                     |in[20]                                     
+in[10]                                     |in[10]                                     
+in[9]                                      |in[9]                                      
+in[11]                                     |in[11]                                     
+in[0]                                      |in[0]                                      
+in[1]                                      |in[1]                                      
+in[22]                                     |in[22]                                     
+in[23]                                     |in[23]                                     
+in[24]                                     |in[24]                                     
+in[25]                                     |in[25]                                     
+in[26]                                     |in[26]                                     
+in[28]                                     |in[28]                                     
+in[27]                                     |in[27]                                     
+in[29]                                     |in[29]                                     
+in[30]                                     |in[30]                                     
+in[31]                                     |in[31]                                     
+s_en                                       |s_en                                       
+s_en_b                                     |s_en_b                                     
 out                                        |out                                        
 VDD                                        |VDD                                        
 VSS                                        |VSS                                        
 ---------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
-Device classes my_analog_mux and line_switches are equivalent.
+Device classes switch and line_switches are equivalent.
 Circuits match uniquely.

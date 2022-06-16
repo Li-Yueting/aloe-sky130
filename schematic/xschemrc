@@ -1,10 +1,10 @@
-#### xschemrc system configuration file
-set PDK_ROOT /farmshare/home/classes/ee/272/PDKs/open_pdks/sky130
+# xschemrc system configuration file
+set PDK_ROOT /farmshare/home/classes/ee/372/PDKs/open_pdks_1.0.310/sky130
 set PDK sky130A
-#set XSCHEM_SHAREDIR /cad/xschem/3.0/share/xschem
+set XSCHEM_SHAREDIR /cad/xschem/3.0/share/xschem
 #set XSCHEM_SHAREDIR /home/users/lyt1314/share/xschem
 set USER_CONF_DIR ~/.xschem
-set XSCHEM_SKY130_PATH /farmshare/home/classes/ee/272/PDKs/open_pdks/sources/xschem_sky130
+set XSCHEM_SKY130_PATH /farmshare/home/classes/ee/372/PDKs/open_pdks_1.0.310/sources/xschem_sky130
 puts "Using PDK_ROOT $PDK_ROOT"
 ###########################################################################
 #### XSCHEM INSTALLATION DIRECTORY: XSCHEM_SHAREDIR

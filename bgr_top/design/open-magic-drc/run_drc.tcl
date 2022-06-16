@@ -12,7 +12,7 @@ set drcresult [drc listall why]
 
 # Count number of DRC errors
 drc catchup
-drc count
+drc catchup
 
 quit
 

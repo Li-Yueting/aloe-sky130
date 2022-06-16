@@ -1,0 +1,337 @@
+* SPICE3 file created from my_analog_mux.ext - technology: sky130A
+
+.subckt my_analog_mux out en31_b in_31 en30_b in_30 en29_b in_29 en28_b in_28 en27_b
++ in_27 en26_b in_26 en25_b in_25 en24_b in_24 en23_b in_23 en22_b in_22 en21_b in_21
++ en20_b in_20 en19_b in_19 en18_b in_18 en17_b in_17 en16_b in_16 en15_b in_15 en14_b
++ in_14 en13_b in_13 en12_b in_12 en11_b in_11 en10_b in_10 en9_b in_9 en8_b in_8
++ en7_b in_7 en6_b in_6 en5_b in_5 en4_b in_4 en3_b in_3 en2_b in_2 en1_b in_1 en0_b
++ in_0 en_b en VSS VDD
+C0 my_one_line_7/switch_5t_0/in in_7 6.76fF
+C1 VDD en28_b 3.35fF
+C2 VDD my_one_line_10/switch_5t_0/in 2.20fF
+C3 out my_one_line_19/switch_5t_0/transmission_gate_1/in 7.60fF
+C4 my_one_line_24/switch_5t_0/in my_one_line_24/switch_5t_0/transmission_gate_1/in 7.45fF
+C5 en2_b VDD 3.35fF
+C6 out my_one_line_17/switch_5t_0/transmission_gate_1/in 7.60fF
+C7 my_one_line_31/switch_5t_0/transmission_gate_1/in VDD 2.52fF
+C8 my_one_line_14/switch_5t_0/in VDD 2.20fF
+C9 en13_b VDD 3.35fF
+C10 my_one_line_27/switch_5t_0/in in_27 6.76fF
+C11 in_16 my_one_line_16/switch_5t_0/in 6.76fF
+C12 en5_b VDD 3.35fF
+C13 en25_b VDD 3.35fF
+C14 in_11 my_one_line_11/switch_5t_0/in 6.76fF
+C15 my_one_line_19/switch_5t_0/transmission_gate_1/in my_one_line_19/switch_5t_0/in 7.45fF
+C16 en12_b VDD 3.35fF
+C17 VDD en 32.47fF
+C18 my_one_line_24/switch_5t_0/transmission_gate_1/in VDD 2.72fF
+C19 my_one_line_17/switch_5t_0/in my_one_line_17/switch_5t_0/transmission_gate_1/in 7.45fF
+C20 my_one_line_15/switch_5t_0/transmission_gate_1/in VDD 2.68fF
+C21 my_one_line_3/switch_5t_0/in VDD 2.20fF
+C22 in_8 my_one_line_8/switch_5t_0/in 6.76fF
+C23 my_one_line_6/switch_5t_0/transmission_gate_1/in my_one_line_6/switch_5t_0/in 7.45fF
+C24 en7_b VDD 3.35fF
+C25 my_one_line_3/switch_5t_0/in in_3 6.76fF
+C26 out my_one_line_8/switch_5t_0/transmission_gate_1/in 7.60fF
+C27 my_one_line_1/switch_5t_0/transmission_gate_1/in VDD 2.69fF
+C28 my_one_line_28/switch_5t_0/in in_28 6.76fF
+C29 en14_b VDD 3.35fF
+C30 my_one_line_1/switch_5t_0/in my_one_line_1/switch_5t_0/transmission_gate_1/in 7.45fF
+C31 my_one_line_12/switch_5t_0/transmission_gate_1/in VDD 2.67fF
+C32 my_one_line_6/switch_5t_0/in in_6 6.76fF
+C33 VDD en18_b 3.35fF
+C34 my_one_line_27/switch_5t_0/transmission_gate_1/in VDD 2.67fF
+C35 my_one_line_28/switch_5t_0/in VDD 2.20fF
+C36 my_one_line_25/switch_5t_0/transmission_gate_1/in VDD 2.69fF
+C37 in_26 my_one_line_26/switch_5t_0/in 6.76fF
+C38 VDD my_one_line_11/switch_5t_0/transmission_gate_1/in 2.67fF
+C39 out my_one_line_31/switch_5t_0/transmission_gate_1/in 7.53fF
+C40 my_one_line_0/switch_5t_0/transmission_gate_1/in VDD 3.01fF
+C41 VDD my_one_line_30/switch_5t_0/transmission_gate_1/in 2.67fF
+C42 my_one_line_30/switch_5t_0/in my_one_line_30/switch_5t_0/transmission_gate_1/in 7.45fF
+C43 my_one_line_0/switch_5t_0/transmission_gate_1/in my_one_line_0/switch_5t_0/in 7.45fF
+C44 my_one_line_15/switch_5t_0/in VDD 2.22fF
+C45 my_one_line_5/switch_5t_0/in VDD 2.20fF
+C46 my_one_line_31/switch_5t_0/in VDD 2.01fF
+C47 my_one_line_5/switch_5t_0/in my_one_line_5/switch_5t_0/transmission_gate_1/in 7.45fF
+C48 in_14 my_one_line_14/switch_5t_0/in 6.76fF
+C49 VDD my_one_line_8/switch_5t_0/in 2.20fF
+C50 en30_b VDD 3.35fF
+C51 in_5 my_one_line_5/switch_5t_0/in 6.76fF
+C52 out my_one_line_24/switch_5t_0/transmission_gate_1/in 7.60fF
+C53 en10_b VDD 3.35fF
+C54 out my_one_line_15/switch_5t_0/transmission_gate_1/in 7.60fF
+C55 my_one_line_3/switch_5t_0/transmission_gate_1/in my_one_line_3/switch_5t_0/in 7.45fF
+C56 in_4 my_one_line_4/switch_5t_0/in 6.76fF
+C57 my_one_line_6/switch_5t_0/transmission_gate_1/in VDD 2.67fF
+C58 my_one_line_21/switch_5t_0/in VDD 2.20fF
+C59 en22_b VDD 3.35fF
+C60 en23_b VDD 3.35fF
+C61 my_one_line_12/switch_5t_0/in my_one_line_12/switch_5t_0/transmission_gate_1/in 7.45fF
+C62 my_one_line_6/switch_5t_0/in VDD 2.20fF
+C63 my_one_line_10/switch_5t_0/in my_one_line_10/switch_5t_0/transmission_gate_1/in 7.45fF
+C64 out my_one_line_1/switch_5t_0/transmission_gate_1/in 7.60fF
+C65 my_one_line_20/switch_5t_0/transmission_gate_1/in VDD 2.41fF
+C66 VDD my_one_line_2/switch_5t_0/transmission_gate_1/in 2.67fF
+C67 en24_b VDD 3.35fF
+C68 my_one_line_14/switch_5t_0/transmission_gate_1/in VDD 2.67fF
+C69 my_one_line_12/switch_5t_0/transmission_gate_1/in out 7.62fF
+C70 in_21 my_one_line_21/switch_5t_0/in 6.76fF
+C71 in_19 my_one_line_19/switch_5t_0/in 6.76fF
+C72 my_one_line_25/switch_5t_0/transmission_gate_1/in my_one_line_25/switch_5t_0/in 7.45fF
+C73 my_one_line_21/switch_5t_0/transmission_gate_1/in my_one_line_21/switch_5t_0/in 7.45fF
+C74 out my_one_line_27/switch_5t_0/transmission_gate_1/in 7.60fF
+C75 VDD en21_b 3.27fF
+C76 my_one_line_29/switch_5t_0/in my_one_line_29/switch_5t_0/transmission_gate_1/in 7.45fF
+C77 my_one_line_25/switch_5t_0/in in_25 6.76fF
+C78 my_one_line_25/switch_5t_0/transmission_gate_1/in out 7.60fF
+C79 en16_b VDD 3.35fF
+C80 my_one_line_26/switch_5t_0/in VDD 2.21fF
+C81 VDD my_one_line_29/switch_5t_0/transmission_gate_1/in 2.67fF
+C82 my_one_line_28/switch_5t_0/in my_one_line_28/switch_5t_0/transmission_gate_1/in 7.45fF
+C83 out my_one_line_11/switch_5t_0/transmission_gate_1/in 7.60fF
+C84 my_one_line_23/switch_5t_0/transmission_gate_1/in VDD 2.67fF
+C85 my_one_line_29/switch_5t_0/in in_29 6.76fF
+C86 my_one_line_4/switch_5t_0/transmission_gate_1/in VDD 2.67fF
+C87 out my_one_line_0/switch_5t_0/transmission_gate_1/in 7.45fF
+C88 out my_one_line_30/switch_5t_0/transmission_gate_1/in 7.60fF
+C89 my_one_line_24/switch_5t_0/in VDD 2.27fF
+C90 my_one_line_22/switch_5t_0/transmission_gate_1/in VDD 2.67fF
+C91 my_one_line_18/switch_5t_0/in my_one_line_18/switch_5t_0/transmission_gate_1/in 7.45fF
+C92 my_one_line_27/switch_5t_0/transmission_gate_1/in my_one_line_27/switch_5t_0/in 7.45fF
+C93 my_one_line_13/switch_5t_0/in VDD 2.21fF
+C94 my_one_line_18/switch_5t_0/in VDD 2.20fF
+C95 my_one_line_18/switch_5t_0/transmission_gate_1/in VDD 2.67fF
+C96 my_one_line_29/switch_5t_0/in VDD 2.20fF
+C97 my_one_line_4/switch_5t_0/transmission_gate_1/in my_one_line_4/switch_5t_0/in 7.45fF
+C98 my_one_line_16/switch_5t_0/transmission_gate_1/in VDD 2.67fF
+C99 en20_b VDD 3.35fF
+C100 my_one_line_20/switch_5t_0/transmission_gate_1/in my_one_line_20/switch_5t_0/in 7.45fF
+C101 out my_one_line_6/switch_5t_0/transmission_gate_1/in 7.60fF
+C102 VDD my_one_line_30/switch_5t_0/in 2.20fF
+C103 en_b en 36.91fF
+C104 my_one_line_0/switch_5t_0/in VDD 2.40fF
+C105 VDD my_one_line_5/switch_5t_0/transmission_gate_1/in 2.67fF
+C106 my_one_line_1/switch_5t_0/in VDD 2.23fF
+C107 my_one_line_20/switch_5t_0/transmission_gate_1/in out 7.63fF
+C108 out my_one_line_2/switch_5t_0/transmission_gate_1/in 7.60fF
+C109 en27_b VDD 3.35fF
+C110 my_one_line_13/switch_5t_0/in in_13 6.76fF
+C111 VDD en19_b 3.36fF
+C112 out my_one_line_14/switch_5t_0/transmission_gate_1/in 7.62fF
+C113 VDD en11_b 3.35fF
+C114 in_2 my_one_line_2/switch_5t_0/in 6.76fF
+C115 my_one_line_7/switch_5t_0/in VDD 2.20fF
+C116 VDD my_one_line_4/switch_5t_0/in 2.20fF
+C117 VDD my_one_line_9/switch_5t_0/transmission_gate_1/in 2.67fF
+C118 my_one_line_13/switch_5t_0/transmission_gate_1/in my_one_line_13/switch_5t_0/in 7.45fF
+C119 my_one_line_21/switch_5t_0/transmission_gate_1/in VDD 2.67fF
+C120 out my_one_line_29/switch_5t_0/transmission_gate_1/in 7.63fF
+C121 my_one_line_23/switch_5t_0/transmission_gate_1/in out 7.60fF
+C122 my_one_line_13/switch_5t_0/transmission_gate_1/in VDD 2.67fF
+C123 out my_one_line_4/switch_5t_0/transmission_gate_1/in 7.60fF
+C124 my_one_line_23/switch_5t_0/transmission_gate_1/in my_one_line_23/switch_5t_0/in 7.45fF
+C125 my_one_line_2/switch_5t_0/transmission_gate_1/in my_one_line_2/switch_5t_0/in 7.45fF
+C126 my_one_line_11/switch_5t_0/transmission_gate_1/in my_one_line_11/switch_5t_0/in 7.45fF
+C127 in_10 my_one_line_10/switch_5t_0/in 6.76fF
+C128 VDD my_one_line_9/switch_5t_0/in 2.20fF
+C129 out my_one_line_22/switch_5t_0/transmission_gate_1/in 7.60fF
+C130 my_one_line_12/switch_5t_0/in VDD 2.20fF
+C131 VDD my_one_line_20/switch_5t_0/in 2.07fF
+C132 out my_one_line_18/switch_5t_0/transmission_gate_1/in 7.60fF
+C133 my_one_line_3/switch_5t_0/transmission_gate_1/in VDD 2.67fF
+C134 my_one_line_25/switch_5t_0/in VDD 2.22fF
+C135 out my_one_line_16/switch_5t_0/transmission_gate_1/in 7.61fF
+C136 my_one_line_7/switch_5t_0/transmission_gate_1/in VDD 2.67fF
+C137 VDD en6_b 3.35fF
+C138 out VDD 39.97fF
+C139 my_one_line_26/switch_5t_0/transmission_gate_1/in my_one_line_26/switch_5t_0/in 7.45fF
+C140 en0_b VDD 3.96fF
+C141 en9_b VDD 3.35fF
+C142 my_one_line_23/switch_5t_0/in VDD 2.20fF
+C143 my_one_line_9/switch_5t_0/in my_one_line_9/switch_5t_0/transmission_gate_1/in 7.45fF
+C144 out my_one_line_5/switch_5t_0/transmission_gate_1/in 7.60fF
+C145 my_one_line_28/switch_5t_0/transmission_gate_1/in VDD 2.67fF
+C146 VDD en8_b 3.35fF
+C147 VDD my_one_line_19/switch_5t_0/in 2.21fF
+C148 my_one_line_7/switch_5t_0/in my_one_line_7/switch_5t_0/transmission_gate_1/in 7.45fF
+C149 my_one_line_17/switch_5t_0/in VDD 2.20fF
+C150 in_0 my_one_line_0/switch_5t_0/in 6.76fF
+C151 en4_b VDD 3.35fF
+C152 VDD my_one_line_27/switch_5t_0/in 2.21fF
+C153 out my_one_line_9/switch_5t_0/transmission_gate_1/in 7.60fF
+C154 out my_one_line_21/switch_5t_0/transmission_gate_1/in 7.61fF
+C155 en31_b VDD 3.04fF
+C156 VDD my_one_line_2/switch_5t_0/in 2.21fF
+C157 my_one_line_8/switch_5t_0/transmission_gate_1/in my_one_line_8/switch_5t_0/in 7.45fF
+C158 my_one_line_26/switch_5t_0/transmission_gate_1/in VDD 2.68fF
+C159 my_one_line_15/switch_5t_0/in in_15 6.76fF
+C160 out my_one_line_13/switch_5t_0/transmission_gate_1/in 7.60fF
+C161 my_one_line_24/switch_5t_0/in in_24 6.76fF
+C162 VDD en1_b 3.35fF
+C163 my_one_line_22/switch_5t_0/in my_one_line_22/switch_5t_0/transmission_gate_1/in 7.45fF
+C164 VDD my_one_line_10/switch_5t_0/transmission_gate_1/in 2.67fF
+C165 in_20 my_one_line_20/switch_5t_0/in 6.76fF
+C166 in_9 my_one_line_9/switch_5t_0/in 6.76fF
+C167 my_one_line_22/switch_5t_0/in in_22 6.76fF
+C168 my_one_line_31/switch_5t_0/in my_one_line_31/switch_5t_0/transmission_gate_1/in 7.45fF
+C169 out my_one_line_3/switch_5t_0/transmission_gate_1/in 7.60fF
+C170 VDD en26_b 3.37fF
+C171 my_one_line_22/switch_5t_0/in VDD 2.20fF
+C172 out my_one_line_7/switch_5t_0/transmission_gate_1/in 7.60fF
+C173 my_one_line_19/switch_5t_0/transmission_gate_1/in VDD 2.69fF
+C174 en29_b VDD 3.35fF
+C175 VDD my_one_line_11/switch_5t_0/in 2.20fF
+C176 out my_one_line_28/switch_5t_0/transmission_gate_1/in 7.60fF
+C177 my_one_line_17/switch_5t_0/transmission_gate_1/in VDD 2.67fF
+C178 my_one_line_31/switch_5t_0/in in_31 6.76fF
+C179 my_one_line_15/switch_5t_0/in my_one_line_15/switch_5t_0/transmission_gate_1/in 7.45fF
+C180 en_b VDD 63.21fF
+C181 in_1 my_one_line_1/switch_5t_0/in 6.76fF
+C182 my_one_line_17/switch_5t_0/in in_17 6.76fF
+C183 my_one_line_14/switch_5t_0/transmission_gate_1/in my_one_line_14/switch_5t_0/in 7.45fF
+C184 en3_b VDD 3.35fF
+C185 out my_one_line_26/switch_5t_0/transmission_gate_1/in 7.60fF
+C186 my_one_line_18/switch_5t_0/in in_18 6.76fF
+C187 out my_one_line_10/switch_5t_0/transmission_gate_1/in 7.60fF
+C188 VDD my_one_line_8/switch_5t_0/transmission_gate_1/in 2.67fF
+C189 in_12 my_one_line_12/switch_5t_0/in 6.76fF
+C190 my_one_line_16/switch_5t_0/in my_one_line_16/switch_5t_0/transmission_gate_1/in 7.45fF
+C191 my_one_line_16/switch_5t_0/in VDD 2.20fF
+C192 my_one_line_23/switch_5t_0/in in_23 6.76fF
+C193 in_30 my_one_line_30/switch_5t_0/in 6.76fF
+C194 VDD en15_b 3.35fF
+C195 en17_b VDD 3.35fF
+Xmy_one_line_0 VSS VDD en_b en out in_0 my_one_line
+Xmy_one_line_1 VSS VDD en_b en out in_1 my_one_line
+Xmy_one_line_2 VSS VDD en_b en out in_2 my_one_line
+Xmy_one_line_4 VSS VDD en_b en out in_4 my_one_line
+Xmy_one_line_3 VSS VDD en_b en out in_3 my_one_line
+Xmy_one_line_5 VSS VDD en_b en out in_5 my_one_line
+Xmy_one_line_6 VSS VDD en_b en out in_6 my_one_line
+Xmy_one_line_7 VSS VDD en_b en out in_7 my_one_line
+Xmy_one_line_8 VSS VDD en_b en out in_8 my_one_line
+Xmy_one_line_9 VSS VDD en_b en out in_9 my_one_line
+Xmy_one_line_30 VSS VDD en_b en out in_30 my_one_line
+Xmy_one_line_20 VSS VDD en_b en out in_20 my_one_line
+Xmy_one_line_31 VSS VDD en_b en out in_31 my_one_line
+Xmy_one_line_10 VSS VDD en_b en out in_10 my_one_line
+Xmy_one_line_11 VSS VDD en_b en out in_11 my_one_line
+Xmy_one_line_21 VSS VDD en_b en out in_21 my_one_line
+Xmy_one_line_22 VSS VDD en_b en out in_22 my_one_line
+Xmy_one_line_12 VSS VDD en_b en out in_12 my_one_line
+Xmy_one_line_23 VSS VDD en_b en out in_23 my_one_line
+Xmy_one_line_13 VSS VDD en_b en out in_13 my_one_line
+Xmy_one_line_24 VSS VDD en_b en out in_24 my_one_line
+Xmy_one_line_14 VSS VDD en_b en out in_14 my_one_line
+Xmy_one_line_25 VSS VDD en_b en out in_25 my_one_line
+Xmy_one_line_15 VSS VDD en_b en out in_15 my_one_line
+Xmy_one_line_26 VSS VDD en_b en out in_26 my_one_line
+Xmy_one_line_16 VSS VDD en_b en out in_16 my_one_line
+Xmy_one_line_27 VSS VDD en_b en out in_27 my_one_line
+Xmy_one_line_17 VSS VDD en_b en out in_17 my_one_line
+Xmy_one_line_28 VSS VDD en_b en out in_28 my_one_line
+Xmy_one_line_18 VSS VDD en_b en out in_18 my_one_line
+Xmy_one_line_19 VSS VDD en_b en out in_19 my_one_line
+Xmy_one_line_29 VSS VDD en_b en out in_29 my_one_line
+C196 my_one_line_29/switch_5t_0/in VSS 3.27fF
+C197 my_one_line_29/switch_5t_0/en VSS 4.24fF
+C198 my_one_line_29/switch_5t_0/transmission_gate_1/in VSS 2.90fF
+C199 my_one_line_19/switch_5t_0/in VSS 3.27fF
+C200 my_one_line_19/switch_5t_0/en VSS 4.23fF
+C201 my_one_line_19/switch_5t_0/transmission_gate_1/in VSS 2.90fF
+C202 my_one_line_18/switch_5t_0/in VSS 3.27fF
+C203 my_one_line_18/switch_5t_0/en VSS 4.23fF
+C204 my_one_line_18/switch_5t_0/transmission_gate_1/in VSS 2.90fF
+C205 my_one_line_28/switch_5t_0/in VSS 3.27fF
+C206 my_one_line_28/switch_5t_0/en VSS 4.24fF
+C207 my_one_line_28/switch_5t_0/transmission_gate_1/in VSS 2.90fF
+C208 my_one_line_17/switch_5t_0/in VSS 3.27fF
+C209 my_one_line_17/switch_5t_0/en VSS 4.23fF
+C210 my_one_line_17/switch_5t_0/transmission_gate_1/in VSS 2.90fF
+C211 my_one_line_27/switch_5t_0/in VSS 3.29fF
+C212 my_one_line_27/switch_5t_0/en VSS 4.24fF
+C213 my_one_line_27/switch_5t_0/transmission_gate_1/in VSS 2.92fF
+C214 my_one_line_16/switch_5t_0/in VSS 3.27fF
+C215 my_one_line_16/switch_5t_0/en VSS 4.23fF
+C216 my_one_line_16/switch_5t_0/transmission_gate_1/in VSS 2.90fF
+C217 my_one_line_26/switch_5t_0/in VSS 3.30fF
+C218 my_one_line_26/switch_5t_0/en VSS 4.23fF
+C219 my_one_line_26/switch_5t_0/transmission_gate_1/in VSS 2.92fF
+C220 my_one_line_15/switch_5t_0/in VSS 3.28fF
+C221 my_one_line_15/switch_5t_0/en VSS 4.24fF
+C222 my_one_line_15/switch_5t_0/transmission_gate_1/in VSS 2.91fF
+C223 my_one_line_25/switch_5t_0/in VSS 3.28fF
+C224 my_one_line_25/switch_5t_0/en VSS 4.25fF
+C225 my_one_line_25/switch_5t_0/transmission_gate_1/in VSS 2.91fF
+C226 my_one_line_14/switch_5t_0/in VSS 3.27fF
+C227 my_one_line_14/switch_5t_0/en VSS 4.24fF
+C228 my_one_line_14/switch_5t_0/transmission_gate_1/in VSS 2.90fF
+C229 my_one_line_24/switch_5t_0/in VSS 3.27fF
+C230 my_one_line_24/switch_5t_0/en VSS 4.23fF
+C231 my_one_line_24/switch_5t_0/transmission_gate_1/in VSS 2.90fF
+C232 my_one_line_13/switch_5t_0/in VSS 3.28fF
+C233 my_one_line_13/switch_5t_0/en VSS 4.23fF
+C234 my_one_line_13/switch_5t_0/transmission_gate_1/in VSS 2.91fF
+C235 my_one_line_23/switch_5t_0/in VSS 3.27fF
+C236 my_one_line_23/switch_5t_0/en VSS 4.23fF
+C237 my_one_line_23/switch_5t_0/transmission_gate_1/in VSS 2.90fF
+C238 my_one_line_12/switch_5t_0/in VSS 3.27fF
+C239 my_one_line_12/switch_5t_0/en VSS 4.23fF
+C240 my_one_line_12/switch_5t_0/transmission_gate_1/in VSS 2.90fF
+C241 my_one_line_22/switch_5t_0/in VSS 3.27fF
+C242 my_one_line_22/switch_5t_0/en VSS 4.23fF
+C243 my_one_line_22/switch_5t_0/transmission_gate_1/in VSS 2.90fF
+C244 my_one_line_21/switch_5t_0/in VSS 3.27fF
+C245 my_one_line_21/switch_5t_0/en VSS 4.23fF
+C246 my_one_line_21/switch_5t_0/transmission_gate_1/in VSS 2.90fF
+C247 my_one_line_11/switch_5t_0/in VSS 3.27fF
+C248 my_one_line_11/switch_5t_0/en VSS 4.23fF
+C249 my_one_line_11/switch_5t_0/transmission_gate_1/in VSS 2.90fF
+C250 my_one_line_10/switch_5t_0/in VSS 3.27fF
+C251 my_one_line_10/switch_5t_0/en VSS 4.23fF
+C252 my_one_line_10/switch_5t_0/transmission_gate_1/in VSS 2.90fF
+C253 my_one_line_31/switch_5t_0/in VSS 3.55fF
+C254 en VSS 57.09fF
+C255 en_b VSS 6.79fF
+C256 my_one_line_31/switch_5t_0/en VSS 4.33fF
+C257 my_one_line_31/switch_5t_0/transmission_gate_1/in VSS 3.26fF
+C258 my_one_line_20/switch_5t_0/in VSS 3.27fF
+C259 my_one_line_20/switch_5t_0/en VSS 4.23fF
+C260 my_one_line_20/switch_5t_0/transmission_gate_1/in VSS 2.90fF
+C261 my_one_line_30/switch_5t_0/in VSS 3.32fF
+C262 out VSS 91.66fF
+C263 my_one_line_30/switch_5t_0/en VSS 4.27fF
+C264 VDD VSS 948.36fF
+C265 my_one_line_30/switch_5t_0/transmission_gate_1/in VSS 2.94fF
+C266 my_one_line_9/switch_5t_0/in VSS 3.27fF
+C267 my_one_line_9/switch_5t_0/en VSS 4.23fF
+C268 my_one_line_9/switch_5t_0/transmission_gate_1/in VSS 2.90fF
+C269 my_one_line_8/switch_5t_0/in VSS 3.27fF
+C270 my_one_line_8/switch_5t_0/en VSS 4.23fF
+C271 my_one_line_8/switch_5t_0/transmission_gate_1/in VSS 2.90fF
+C272 my_one_line_7/switch_5t_0/in VSS 3.27fF
+C273 my_one_line_7/switch_5t_0/en VSS 4.23fF
+C274 my_one_line_7/switch_5t_0/transmission_gate_1/in VSS 2.90fF
+C275 my_one_line_6/switch_5t_0/in VSS 3.27fF
+C276 my_one_line_6/switch_5t_0/en VSS 4.23fF
+C277 my_one_line_6/switch_5t_0/transmission_gate_1/in VSS 2.90fF
+C278 my_one_line_5/switch_5t_0/in VSS 3.27fF
+C279 my_one_line_5/switch_5t_0/en VSS 4.23fF
+C280 my_one_line_5/switch_5t_0/transmission_gate_1/in VSS 2.90fF
+C281 my_one_line_3/switch_5t_0/in VSS 3.27fF
+C282 my_one_line_3/switch_5t_0/en VSS 4.23fF
+C283 my_one_line_3/switch_5t_0/transmission_gate_1/in VSS 2.90fF
+C284 my_one_line_4/switch_5t_0/in VSS 3.27fF
+C285 my_one_line_4/switch_5t_0/en VSS 4.24fF
+C286 my_one_line_4/switch_5t_0/transmission_gate_1/in VSS 2.90fF
+C287 my_one_line_2/switch_5t_0/in VSS 3.29fF
+C288 my_one_line_2/switch_5t_0/en VSS 4.24fF
+C289 my_one_line_2/switch_5t_0/transmission_gate_1/in VSS 2.92fF
+C290 my_one_line_1/switch_5t_0/in VSS 3.29fF
+C291 my_one_line_1/switch_5t_0/en VSS 4.23fF
+C292 my_one_line_1/switch_5t_0/transmission_gate_1/in VSS 2.92fF
+C293 my_one_line_0/switch_5t_0/in VSS 3.21fF
+C294 my_one_line_0/switch_5t_0/en VSS 4.21fF
+C295 my_one_line_0/switch_5t_0/transmission_gate_1/in VSS 2.85fF
+.ends

@@ -1,0 +1,9 @@
+name: rtl
+
+outputs:
+  - design.v
+  - design.vcs.v
+
+commands:
+  - cat bgr_0.v decoder5x32.v switch.v all_bgr_top.v > outputs/design.v 
+  - cat bgr_0.v decoder5x32.v switch.v all_bgr_top.v > outputs/design.vcs.v 
