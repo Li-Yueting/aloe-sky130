@@ -40,5 +40,8 @@ puts "half_left_idx: $pins_left_half"
 # Spread the pins evenly across the left and right sides of the block
 
 # set ports_layer M3
-editPin -layer met2 -pin $pins_left_half  -side LEFT  -spreadType SIDE
-editPin -layer met3 -pin $pins_right_half -side RIGHT -spreadType SIDE
+# editPin -layer met2 -pin $pins_left_half  -side LEFT  -spreadType SIDE
+# editPin -layer met3 -pin $pins_right_half -side RIGHT -spreadType SIDE
+# editPin -layer met3 -pin vbg -assign 292.5 55
+# editPin -layer met3 -pin porst -assign 292.5 142 
+editPin -layer met3 -pin $all_ports -side TOP -spreadType SIDE

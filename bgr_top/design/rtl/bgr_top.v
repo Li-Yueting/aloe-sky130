@@ -1,11 +1,9 @@
 module bgr_top (
     inout porst,
-    inout va, 
-    inout vb,
     inout vbg
  );
  
- wire vc;
+ wire va, vb, vc;
  amplifier amp(
      .va(va),
      .vb(vb),
@@ -171,8 +169,8 @@ module core (
 
  wire l1, l2, l4, l5, l12;
  resistor R1 (
-     .rin(l1),
-     .rout(vb)
+     .rin(vb),
+     .rout(l1)
  );
  resistor R2 (
      .rin(l1),
