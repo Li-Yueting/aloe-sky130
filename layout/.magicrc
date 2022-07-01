@@ -25,7 +25,7 @@ ext2spice scale off
 # }
 set PDK_ROOT /farmshare/home/classes/ee/372/PDKs/open_pdks_1.0.310/sky130
 # loading technology
-tech load $PDK_ROOT/sky130A/libs.tech/magic/closed_sky130A.tech
+tech load $PDK_ROOT/sky130A/libs.tech/magic/sky130A.tech
 
 # load device generator
 source $PDK_ROOT/sky130A/libs.tech/magic/sky130A.tcl

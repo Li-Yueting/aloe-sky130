@@ -5,6 +5,7 @@ proc addlef {inst_name output_folder} {
     append inst_name "_flat"
     flatten $inst_name
     load $inst_name
+    save $inst_name
     box -1000 -1000 1000 1000
     select cell
     set box_pos [box position]    
@@ -58,7 +59,8 @@ proc addlef {inst_name output_folder} {
         cd ../lef
         lef write sky130_asc_pfet_01v8_lvt_1.lef
         cd ../gds
-        gds write sky130_asc_pfet_01v8_lvt_1.gds
+        cif istyle sky130(vendor)
+        gds writeall force sky130_asc_pfet_01v8_lvt_1.gds
         cd ../spi
         extract all
         ext2spice lvs

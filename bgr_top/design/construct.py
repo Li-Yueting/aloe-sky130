@@ -58,6 +58,7 @@ def construct():
   magic_antenna   = Step( this_dir + '/open-magic-antenna'              )
   calibre_lvs     = Step( this_dir + '/mentor-calibre-comparison'       )
   macro           = Step( this_dir + '/macro')
+  klayout         = Step( this_dir + '/klayout-drc-gds')
   # pt_power        = Step( this_dir + '/synopsys-pt-power')
   # pt_power_rtl    = pt_power.clone()
   # pt_power_gl     = pt_power.clone()
@@ -101,6 +102,7 @@ def construct():
   g.add_step( netgen_lvs_gds_device  )
   g.add_step( calibre_lvs     )
   g.add_step( macro)
+  g.add_step( klayout)
   #-----------------------------------------------------------------------
   # Graph -- Add edges
   #-----------------------------------------------------------------------
@@ -161,6 +163,7 @@ def construct():
   g.connect_by_name( signoff,         calibre_lvs     )
   g.connect_by_name( magic_gds2spice, calibre_lvs     )
   g.connect_by_name( signoff,         macro         )
+  g.connect_by_name( gdsmerge,           klayout)
   # Timing signoff
   # g.connect( signoff.o('design.spef.gz'),   pt_timing.i('design.spef.gz' ) )
   # g.connect( signoff.o('design.vcs.v'  ),   pt_timing.i('design.vcs.v'   ) )

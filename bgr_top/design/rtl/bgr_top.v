@@ -1,11 +1,11 @@
 module bgr_top (
     inout porst,
-    inout va, 
-    inout vb,
+    // inout va, 
+    // inout vb,
     inout vbg
  );
  
- wire vc;
+ wire va, vb, vc;
  amplifier amp(
      .va(va),
      .vb(vb),
