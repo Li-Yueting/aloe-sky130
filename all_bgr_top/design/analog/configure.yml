@@ -1,0 +1,28 @@
+name: analog 
+
+outputs:
+  - analog.db
+  - analog.lib
+  - bgr_0.lef
+  - bgr_0.gds
+  - bgr_0.sp
+  - decoder5x32.lef
+  - decoder5x32.gds
+  - decoder5x32.sp
+  - switch.lef
+  - switch.gds
+  - switch.sp
+
+commands:
+  - lc_shell -f lc_shell_gen_db.tcl
+  - cat analog.db > ./outputs/analog.db
+  - cat analog.lib > ./outputs/analog.lib
+  - cat bgr_0.lef > ./outputs/bgr_0.lef
+  - cat bgr_0.gds > ./outputs/bgr_0.gds
+  - cat bgr_0.sp > ./outputs/bgr_0.sp
+  - cat decoder5x32.lef > ./outputs/decoder5x32.lef
+  - cat decoder5x32.gds > ./outputs/decoder5x32.gds
+  - cat decoder5x32.sp > ./outputs/decoder5x32.sp
+  - cat switch.lef > ./outputs/switch.lef
+  - cat switch.gds > ./outputs/switch.gds
+  - cat switch.sp > ./outputs/switch.sp

@@ -26,3 +26,7 @@ cp ${OPEN_PDK}/sky130A/libs.tech/klayout/sky130A.lydrc ~/.klayout/drc
 
 ## Example for OPEN_PDK path
 #
+<<<<<<< HEAD
+=======
+
+>>>>>>> bf5f326dc74c425a381a17f9516f41a34d436ef4

@@ -1,0 +1,179 @@
+timestamp 1655333659
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use transmission_gate transmission_gate_0 1 0 -326 0 1 -511
+use switch_5t switch_5t_0 1 0 1612 0 1 -562
+use sky130_fd_sc_hd__inv_1 sky130_fd_sc_hd__inv_1_0 -1 0 5008 0 1 -374
+port "en" 4 1392 662 1442 708 m2
+port "VSS" 1 1072 -572 1172 -506 m2
+port "in" 6 -540 -116 -512 -84 m1
+port "out" 5 5144 -550 5192 -508 m1
+port "VDD" 2 1516 -574 1642 -512 m2
+port "en_b" 3 1252 660 1304 714 m2
+node "m1_4519_n384#" 0 126.024 4519 -384 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 31836 860 0 0 0 0 0 0 0 0 0 0
+node "en" 5 408.036 1392 662 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30260 1192 91448 3528 0 0 0 0 0 0 0 0
+node "VSS" 1 203.574 1072 -572 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 42364 944 42156 976 0 0 0 0 0 0 0 0
+node "m1_915_n115#" 3 57.0887 915 -115 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 23256 1436 0 0 0 0 0 0 0 0 0 0
+node "in" 0 24.8292 -540 -116 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 896 120 0 0 0 0 0 0 0 0 0 0
+node "out" 3 285.098 5144 -550 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 53328 2402 0 0 0 0 0 0 0 0 0 0
+node "VDD" 2 151.739 1516 -574 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 89522 1882 94332 1704 0 0 0 0 0 0 0 0
+node "m1_4529_122#" 1 61.5227 4529 122 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30161 938 0 0 0 0 0 0 0 0 0 0
+node "en_b" 4 117.465 1252 660 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21488 880 82552 2996 0 0 0 0 0 0 0 0
+node "li_4908_n156#" 17 478.841 4908 -156 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1156 136 3996 256 87508 3468 0 0 0 0 0 0 0 0
+node "li_4804_n162#" 16 276.729 4804 -162 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1368 148 3996 256 41280 1690 0 0 0 0 0 0 0 0
+node "w_4544_190#" 3498 671.04 4544 190 nw 0 0 0 0 223680 2308 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_265_n98#" 2450 3268.2 265 -98 nw 0 0 0 0 1089400 4652 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "en_b" "w_265_n98#" 303.94
+cap "out" "w_4544_190#" 30.0587
+cap "li_4804_n162#" "out" 53.3223
+cap "VSS" "en" 416.988
+cap "li_4804_n162#" "m1_4519_n384#" 179.331
+cap "m1_4529_122#" "w_4544_190#" 107.683
+cap "li_4804_n162#" "m1_4529_122#" 10.3519
+cap "m1_915_n115#" "w_265_n98#" 27.5452
+cap "VDD" "w_265_n98#" 322.198
+cap "en_b" "en" 730.944
+cap "VSS" "en_b" 224.69
+cap "m1_915_n115#" "in" 0.801612
+cap "m1_915_n115#" "en" 93.1423
+cap "VSS" "m1_915_n115#" 97.8029
+cap "VDD" "en" 510.68
+cap "VDD" "VSS" 98.6526
+cap "out" "li_4908_n156#" 93.8948
+cap "m1_915_n115#" "en_b" 57.889
+cap "m1_4529_122#" "li_4908_n156#" 0.861
+cap "VDD" "en_b" 277.02
+cap "out" "m1_4519_n384#" 47.1513
+cap "m1_4529_122#" "out" 66.0514
+cap "m1_4529_122#" "m1_4519_n384#" 26.3934
+cap "VDD" "m1_915_n115#" 287.14
+cap "en" "w_265_n98#" 119.728
+cap "li_4908_n156#" "w_4544_190#" 156.402
+cap "li_4804_n162#" "li_4908_n156#" 144.543
+cap "transmission_gate_0/VDD" "switch_5t_0/transmission_gate_0/sky130_fd_pr__nfet_01v8_6J4AMR_0/a_n508_n52#" 14.4375
+cap "switch_5t_0/transmission_gate_0/sky130_fd_pr__nfet_01v8_6J4AMR_0/a_n508_n52#" "transmission_gate_0/out" 74.9557
+cap "transmission_gate_0/en_b" "transmission_gate_0/out" 5.30139
+cap "transmission_gate_0/VDD" "transmission_gate_0/en" 1.85146
+cap "transmission_gate_0/en_b" "transmission_gate_0/VDD" 61.4278
+cap "transmission_gate_0/en_b" "transmission_gate_0/en" 9.18004
+cap "switch_5t_0/en" "transmission_gate_0/in" 2.4458
+cap "transmission_gate_0/VSS" "transmission_gate_0/in" 10.4718
+cap "switch_5t_0/en" "transmission_gate_0/VSS" 2.34855
+cap "transmission_gate_0/in" "switch_5t_0/en_b" 2.11944
+cap "transmission_gate_0/out" "transmission_gate_0/in" 66.6895
+cap "transmission_gate_0/VDD" "transmission_gate_0/in" 53.4412
+cap "transmission_gate_0/VSS" "transmission_gate_0/out" 36.6816
+cap "transmission_gate_0/VDD" "transmission_gate_0/VSS" -2.76356
+cap "switch_5t_0/transmission_gate_0/sky130_fd_pr__nfet_01v8_6J4AMR_0/a_n508_n52#" "transmission_gate_0/in" 26.9624
+cap "transmission_gate_0/in" "transmission_gate_0/en" 77.6745
+cap "switch_5t_0/en" "transmission_gate_0/en" 10.5596
+cap "transmission_gate_0/VDD" "switch_5t_0/en_b" 2.98428
+cap "transmission_gate_0/en_b" "transmission_gate_0/in" 76.2459
+cap "transmission_gate_0/VSS" "switch_5t_0/transmission_gate_0/sky130_fd_pr__nfet_01v8_6J4AMR_0/a_n508_n52#" 3.84364
+cap "transmission_gate_0/VSS" "transmission_gate_0/en" -3.05774
+cap "transmission_gate_0/VDD" "transmission_gate_0/out" -561.432
+cap "transmission_gate_0/out" "transmission_gate_0/en" 6.11407
+cap "transmission_gate_0/en_b" "switch_5t_0/en_b" 10.568
+cap "transmission_gate_0/en_b" "transmission_gate_0/en" 17.6046
+cap "transmission_gate_0/VDD" "switch_5t_0/transmission_gate_1/in" 67.5823
+cap "transmission_gate_0/out" "transmission_gate_0/en" 23.1824
+cap "switch_5t_0/en" "transmission_gate_0/en" 38.7693
+cap "transmission_gate_0/in" "transmission_gate_0/en" 11.4256
+cap "transmission_gate_0/en" "transmission_gate_0/VSS" 108.95
+cap "switch_5t_0/en_b" "transmission_gate_0/en" 12.4892
+cap "transmission_gate_0/out" "switch_5t_0/transmission_gate_1/in" 64.1128
+cap "transmission_gate_0/in" "switch_5t_0/transmission_gate_1/in" 26.9624
+cap "transmission_gate_0/VSS" "switch_5t_0/transmission_gate_1/in" 23.9626
+cap "transmission_gate_0/VDD" "transmission_gate_0/en_b" 78.2015
+cap "switch_5t_0/en" "transmission_gate_0/VDD" 53.616
+cap "transmission_gate_0/out" "transmission_gate_0/VDD" 83.9242
+cap "transmission_gate_0/in" "transmission_gate_0/VDD" 9.0363
+cap "transmission_gate_0/VDD" "transmission_gate_0/VSS" -4.15125
+cap "transmission_gate_0/VDD" "switch_5t_0/en_b" 25.9627
+cap "switch_5t_0/en" "transmission_gate_0/en_b" 8.9298
+cap "transmission_gate_0/out" "transmission_gate_0/en_b" 22.2584
+cap "transmission_gate_0/in" "transmission_gate_0/en_b" 10.7673
+cap "transmission_gate_0/out" "switch_5t_0/en" -9.057
+cap "switch_5t_0/en_b" "transmission_gate_0/en_b" 31.6192
+cap "transmission_gate_0/in" "switch_5t_0/en" 2.4458
+cap "switch_5t_0/en" "transmission_gate_0/VSS" 13.2448
+cap "transmission_gate_0/out" "transmission_gate_0/VSS" 59.2872
+cap "transmission_gate_0/out" "transmission_gate_0/in" 66.3184
+cap "transmission_gate_0/out" "switch_5t_0/en_b" -7.32044
+cap "transmission_gate_0/in" "transmission_gate_0/VSS" 4.21168
+cap "transmission_gate_0/in" "switch_5t_0/en_b" 2.11944
+cap "transmission_gate_0/VDD" "transmission_gate_0/en" 1.02014
+cap "switch_5t_0/en_b" "transmission_gate_0/en_b" 6.29049
+cap "switch_5t_0/out" "switch_5t_0/en_b" 1.50787
+cap "switch_5t_0/transmission_gate_1/in" "switch_5t_0/out" 4.04593
+cap "switch_5t_0/out" "transmission_gate_0/VDD" -206.876
+cap "switch_5t_0/en" "switch_5t_0/en_b" 1.78574
+cap "switch_5t_0/transmission_gate_1/in" "transmission_gate_0/out" 11.5559
+cap "transmission_gate_0/VDD" "transmission_gate_0/out" 20.4494
+cap "switch_5t_0/en" "switch_5t_0/transmission_gate_1/in" 8.7226
+cap "switch_5t_0/en" "transmission_gate_0/VDD" 3.15105
+cap "transmission_gate_0/VSS" "transmission_gate_0/en" 0.695619
+cap "transmission_gate_0/sky130_fd_pr__nfet_01v8_6J4AMR_0/a_352_n52#" "transmission_gate_0/out" 0.394777
+cap "switch_5t_0/transmission_gate_1/in" "switch_5t_0/en_b" -0.048223
+cap "switch_5t_0/en_b" "transmission_gate_0/VDD" 5.82475
+cap "switch_5t_0/transmission_gate_1/in" "transmission_gate_0/VDD" 14.3117
+cap "transmission_gate_0/VSS" "switch_5t_0/out" 1.80166
+cap "transmission_gate_0/en" "transmission_gate_0/out" 2.86474
+cap "switch_5t_0/en" "transmission_gate_0/en" 7.41752
+cap "transmission_gate_0/VSS" "transmission_gate_0/out" 13.7871
+cap "transmission_gate_0/VSS" "switch_5t_0/en" 4.40654
+cap "transmission_gate_0/sky130_fd_pr__pfet_01v8_UNG2NQ_0/a_n416_n136#" "transmission_gate_0/out" 0.348332
+cap "transmission_gate_0/en" "switch_5t_0/en_b" 1.41957
+cap "transmission_gate_0/en_b" "transmission_gate_0/out" 2.46213
+cap "switch_5t_0/en" "transmission_gate_0/en_b" 1.26172
+cap "switch_5t_0/en" "switch_5t_0/out" 4.99885
+cap "transmission_gate_0/VSS" "switch_5t_0/transmission_gate_1/in" -79.8021
+cap "switch_5t_0/transmission_gate_1/en" "switch_5t_0/out" 73.2521
+cap "switch_5t_0/VSS" "switch_5t_0/transmission_gate_1/en_b" 17.1959
+cap "switch_5t_0/transmission_gate_1/in" "switch_5t_0/VSS" 22.6048
+cap "switch_5t_0/VDD" "switch_5t_0/VSS" -12.144
+cap "switch_5t_0/VDD" "switch_5t_0/transmission_gate_1/en_b" 8.57917
+cap "switch_5t_0/transmission_gate_1/in" "switch_5t_0/VDD" 22.229
+cap "switch_5t_0/VSS" "switch_5t_0/transmission_gate_1/en" 20.588
+cap "switch_5t_0/transmission_gate_1/en" "switch_5t_0/transmission_gate_1/en_b" -8.01301
+cap "switch_5t_0/transmission_gate_1/in" "switch_5t_0/transmission_gate_1/en" 73.3034
+cap "switch_5t_0/VDD" "switch_5t_0/transmission_gate_1/en" 0.0442621
+cap "switch_5t_0/VSS" "switch_5t_0/out" 83.0271
+cap "switch_5t_0/transmission_gate_1/en_b" "switch_5t_0/out" 17.697
+cap "switch_5t_0/transmission_gate_1/in" "switch_5t_0/out" 18.8477
+cap "switch_5t_0/VDD" "switch_5t_0/out" 103.785
+cap "switch_5t_0/transmission_gate_1/VSS" "switch_5t_0/out" 15.79
+cap "switch_5t_0/transmission_gate_1/en" "switch_5t_0/out" 5.56131
+cap "switch_5t_0/transmission_gate_1/sky130_fd_pr__nfet_01v8_6J4AMR_0/a_n416_n52#" "switch_5t_0/out" 20.9836
+merge "sky130_fd_sc_hd__inv_1_0/VNB" "switch_5t_0/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "switch_5t_0/VSUBS" "transmission_gate_0/VSUBS"
+merge "transmission_gate_0/VSUBS" "VSUBS"
+merge "switch_5t_0/transmission_gate_1/VDD" "sky130_fd_sc_hd__inv_1_0/VPWR" 7526.46 0 0 0 0 2407482 -6924 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 395013 -1104 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hd__inv_1_0/VPWR" "sky130_fd_sc_hd__inv_1_0/VPB"
+merge "sky130_fd_sc_hd__inv_1_0/VPB" "switch_5t_0/VDD"
+merge "switch_5t_0/VDD" "m1_4529_122#"
+merge "m1_4529_122#" "w_4544_190#"
+merge "w_4544_190#" "switch_5t_0/transmission_gate_0/sky130_fd_pr__pfet_01v8_UNG2NQ_0/w_n646_n356#"
+merge "switch_5t_0/transmission_gate_0/sky130_fd_pr__pfet_01v8_UNG2NQ_0/w_n646_n356#" "transmission_gate_0/VDD"
+merge "transmission_gate_0/VDD" "VDD"
+merge "VDD" "w_265_n98#"
+merge "switch_5t_0/in" "transmission_gate_0/out" 421.116 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 84344 -292 0 0 0 0 0 0 0 0 0 0
+merge "transmission_gate_0/out" "m1_915_n115#"
+merge "switch_5t_0/out" "out" 235.293 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43860 -178 0 0 0 0 0 0 0 0 0 0
+merge "transmission_gate_0/in" "in" 38.4218 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 41602 -118 0 0 0 0 0 0 0 0 0 0
+merge "transmission_gate_0/VSS" "VSS" 166.471 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 345348 -330 0 0 0 0 0 0 0 0 0 0
+merge "transmission_gate_0/en_b" "en_b" -50.5987 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -78208 -208 0 0 0 0 0 0 0 0
+merge "switch_5t_0/transmission_gate_1/en_b" "sky130_fd_sc_hd__inv_1_0/A" -219.12 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -49912 -136 0 0 34736 -836 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hd__inv_1_0/A" "switch_5t_0/en_b"
+merge "switch_5t_0/en_b" "li_4908_n156#"
+merge "transmission_gate_0/en" "en" -5.61852 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 74620 -342 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hd__inv_1_0/VGND" "switch_5t_0/transmission_gate_1/VSS" -160.705 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 52356 -706 0 0 0 0 0 0 0 0 0 0
+merge "switch_5t_0/transmission_gate_1/VSS" "switch_5t_0/VSS"
+merge "switch_5t_0/VSS" "m1_4519_n384#"
+merge "switch_5t_0/transmission_gate_1/en" "sky130_fd_sc_hd__inv_1_0/Y" -58.2492 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 47664 -148 0 0 60008 -350 0 0 0 0 0 0 0 0
+merge "sky130_fd_sc_hd__inv_1_0/Y" "switch_5t_0/en"
+merge "switch_5t_0/en" "li_4804_n162#"
