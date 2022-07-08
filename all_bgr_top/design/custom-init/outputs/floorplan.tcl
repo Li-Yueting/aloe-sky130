@@ -9,7 +9,8 @@
 #-------------------------------------------------------------------------
 # Floorplan variables
 #-------------------------------------------------------------------------
-
+set core_aspect_ratio   1.00; # Aspect ratio 1.0 for a square chip
+set core_density_target 0.60; # Placement density of 70% is reasonable
 # Make room in the floorplan for the core power ring
 set pwr_net_list {VDD VSS}; # List of power nets in the core power ring
 
@@ -30,15 +31,14 @@ set core_margin_l [expr ([llength $pwr_net_list] * ($savedvars(p_ring_width) + $
 #             [expr 3470] \
 #             $core_margin_l $core_margin_b $core_margin_r $core_margin_t
 
-floorPlan -d [expr 600] \
+floorPlan -d [expr 800] \
              [expr 700] \
              $core_margin_l $core_margin_b $core_margin_r $core_margin_t
-
 setFlipping s
 
-placeInstance bgr_inst_0 100 100
-placeInstance decoder_vbgr 450 350
-placeInstance switch_vbgr 450 100
+placeInstance bgr_inst_0 140 100
+placeInstance switch_vbgr 550 100
+placeInstance decoder_vbgr 670 180
 # planDesign
 # placeInstance puf4_inst/BR32_inst 150 1600
 # placeInstance puf4_inst/BR64_inst 150 1500
@@ -56,4 +56,4 @@ placeInstance switch_vbgr 450 100
 # placeInstance puf1_inst/BR64_inst 150 300
 # placeInstance puf1_inst/BR128_inst 150 100
 
-addHaloToBlock 10 10 10 10 -allBlock
+addHaloToBlock 15 15 15 15 -allBlock

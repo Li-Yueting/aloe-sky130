@@ -1,6 +1,8 @@
 lef read inputs/adk/rtk-tech.lef
 lef read inputs/adk/stdcells.lef
-
+lef read inputs/bgr_0.lef
+lef read inputs/decoder5x32.lef
+lef read inputs/switch.lef
 def read design.def
 
 load $::env(design_name)

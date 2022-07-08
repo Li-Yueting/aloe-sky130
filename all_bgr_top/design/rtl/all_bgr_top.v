@@ -28,18 +28,21 @@ module all_bgr_top #(
   
   /* inverters */
   wire switch_en_b_vbgr,  switch_en_b_va, switch_en_b_vb;
-  inv inv_vbgr (
-    .a(switch_en_vbgr),
-    .b(switch_en_b_vbgr)
-  );
-  inv inv_va (
-    .a(switch_en_va),
-    .b(switch_en_b_va)
-  );
-  inv inv_vb (
-    .a(switch_en_vb),
-    .b(switch_en_b_vb)
-  );
+  // inv inv_vbgr (
+  //   .a(switch_en_vbgr),
+  //   .b(switch_en_b_vbgr)
+  // );
+  assign switch_en_b_vbgr = ~switch_en_vbgr;
+  assign switch_en_b_va   = ~switch_en_va;
+  assign switch_en_b_vb   = ~switch_en_vb;
+  // inv inv_va (
+  //   .a(switch_en_va),
+  //   .b(switch_en_b_va)
+  // );
+  // inv inv_vb (
+  //   .a(switch_en_vb),
+  //   .b(switch_en_b_vb)
+  // );
   /* bgr */
   wire [31:0] vbgr;
   wire [31:0] va;

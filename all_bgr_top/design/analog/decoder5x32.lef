@@ -1862,6 +1862,14 @@ MACRO decoder5x32
     END
   END y[0]
   OBS
+      LAYER li1 ;
+        RECT 9.420 9.130 32.080 26.860 ;
+      LAYER met1 ;
+        RECT 9.420 9.130 32.080 26.860 ;
+      LAYER met2 ;
+        RECT 9.420 9.130 32.080 26.860 ;
+      LAYER met3 ;
+        RECT 9.420 9.130 32.080 26.860 ;
       LAYER pwell ;
         RECT 12.100 26.075 12.270 26.265 ;
         RECT 14.400 26.075 14.570 26.265 ;
