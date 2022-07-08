@@ -17,8 +17,8 @@ inputs:
   - design.lef
 
 outputs:
-  - design-merged.gds
-  - design.lef
+  - bgr_top.gds
+
 
 
 #-------------------------------------------------------------------------

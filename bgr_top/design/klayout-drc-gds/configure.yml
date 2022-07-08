@@ -24,7 +24,11 @@ parameters:
   design_name: undefined
 
 commands:
+<<<<<<< HEAD
+  - source klayout_config.sh
+=======
   - ./klayout_config.sh
+>>>>>>> bf5f326dc74c425a381a17f9516f41a34d436ef4
   - git clone https://github.com/efabless/mpw_precheck.git
   - cp ./mpw_precheck/checks/tech-files/sky130A_mr.drc ./drc_sky130.drc
   - klayout -b -rd input=./inputs/design_merged.gds -rd feol=1 -rd beol=1 -rd offgrid=1 -rd seal=1 -rd floating_met=1 -rd report=sky130_drc_report.txt -r drc_sky130.drc
@@ -33,4 +37,7 @@ commands:
 
 debug:
   - klayout -s ./inputs/design_merged.gds -m ./outputs/sky130_drc_report.txt
+<<<<<<< HEAD
+=======
 
+>>>>>>> bf5f326dc74c425a381a17f9516f41a34d436ef4

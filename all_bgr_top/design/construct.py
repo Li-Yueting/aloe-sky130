@@ -87,7 +87,7 @@ def construct():
   netgen_lvs_def  = Step( this_dir + '/netgen-lvs-def'                  )
   magic_antenna   = Step( this_dir + '/open-magic-antenna'              )
   calibre_lvs     = Step( this_dir + '/mentor-calibre-comparison'       )
-
+  place           = Step( this_dir + '/cadence-innovus-place'            )
   # Need to use clone if you want to instantiate the same node more than once
   # in your graph but configure it differently, for example, RTL simulation and
   # gate-level simulation use the same VCS node
@@ -114,7 +114,7 @@ def construct():
   
   iflow           = Step( 'cadence-innovus-flowsetup',     default=True )
   init            = Step( 'cadence-innovus-init',          default=True )
-  place           = Step( 'cadence-innovus-place',         default=True )
+  # place           = Step( 'cadence-innovus-place',         default=True )
   cts             = Step( 'cadence-innovus-cts',           default=True )
   postcts_hold    = Step( 'cadence-innovus-postcts_hold',  default=True )
   route           = Step( 'cadence-innovus-route',         default=True )
@@ -172,7 +172,7 @@ def construct():
   #-----------------------------------------------------------------------
   # Graph -- Add edges
   #-----------------------------------------------------------------------
-  for step in [iflow, init, power, place, cts, postcts_hold, route, postroute, signoff]:
+  for step in [iflow, init, power, place, cts, postcts_hold, route, postroute, signoff, magic_def2spice]:
     step.extend_inputs(['analog.lib', 'bgr_0.lef', 'decoder5x32.lef', 'switch.lef'])
   # Dynamically add edges
   # init.extend_inputs(['floorplan.tcl', 'pin-assignments.tcl'])

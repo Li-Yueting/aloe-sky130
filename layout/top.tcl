@@ -28,9 +28,9 @@ puts "script_path: $script_path"
 # place_pmos 0 0 2 60 1
 # addlef pmos_60 $script_path
 # ### nmos
-# flush
-# place_nmos 0 0 2 1 1
-# addlef nmos_1 $script_path
+flush
+place_nmos 0 0 2 1 1
+addlef nmos_1 $script_path
 # flush
 # place_nmos 0 0 2 9 1
 # addlef nmos_9 $script_path
@@ -38,9 +38,9 @@ puts "script_path: $script_path"
 # flush
 # place_pnp_1 0 0 1
 # addlef pnp_1 $script_path
-flush 
-place_pnp 0 0 7 1
-addlef pnp_7 $script_path
+# flush 
+# place_pnp 0 0 7 1
+# addlef pnp_7 $script_path
 # flush 
 # place_pnp 0 0 8 1
 # addlef pnp_8 $script_path
