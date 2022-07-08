@@ -44,4 +44,8 @@ puts "half_left_idx: $pins_left_half"
 # editPin -layer met3 -pin $pins_right_half -side RIGHT -spreadType SIDE
 # editPin -layer met3 -pin vbg -assign 292.5 55
 # editPin -layer met3 -pin porst -assign 292.5 142 
+<<<<<<< HEAD
+editPin -layer met3 -pin $all_ports -side LEFT -spreadType SIDE
+=======
 editPin -layer met3 -pin $all_ports -side TOP -spreadType SIDE
+>>>>>>> bf5f326dc74c425a381a17f9516f41a34d436ef4

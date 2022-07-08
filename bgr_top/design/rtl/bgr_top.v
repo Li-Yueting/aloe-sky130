@@ -1,5 +1,10 @@
 module bgr_top (
     inout porst,
+<<<<<<< HEAD
+    // inout va, 
+    // inout vb,
+=======
+>>>>>>> bf5f326dc74c425a381a17f9516f41a34d436ef4
     inout vbg
  );
  
