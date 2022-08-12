@@ -1,0 +1,37 @@
+[07/26 17:18:40      0s] 
+[07/26 17:18:40      0s] Cadence Innovus(TM) Implementation System.
+[07/26 17:18:40      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[07/26 17:18:40      0s] 
+[07/26 17:18:40      0s] Version:	v20.13-s083_1, built Tue Jan 19 16:51:46 PST 2021
+[07/26 17:18:40      0s] Options:	
+[07/26 17:18:40      0s] Date:		Tue Jul 26 17:18:40 2022
+[07/26 17:18:40      0s] Host:		iron-502-26 (x86_64 w/Linux 5.13.0-51-generic) (64cores*256cpus*AMD EPYC 7742 64-Core Processor 512KB)
+[07/26 17:18:40      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[07/26 17:18:40      0s] 
+[07/26 17:18:40      0s] License:
+[07/26 17:18:40      0s] 		invs	Innovus Implementation System	20.1	checkout succeeded
+[07/26 17:18:40      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[07/26 17:18:40      0s] **WARN: (IMPSYT-1507):	The display is invalid and will start in no window mode
+[07/26 17:19:00     13s] @(#)CDS: Innovus v20.13-s083_1 (64bit) 01/19/2021 16:51 (Linux 2.6.32-431.11.2.el6.x86_64)
+[07/26 17:19:00     13s] @(#)CDS: NanoRoute 20.13-s083_1 NR201221-0721/20_13-UB (database version 18.20.538) {superthreading v2.13}
+[07/26 17:19:00     13s] @(#)CDS: AAE 20.13-s024 (64bit) 01/19/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+[07/26 17:19:00     13s] @(#)CDS: CTE 20.13-s042_1 () Jan 14 2021 08:49:42 ( )
+[07/26 17:19:00     13s] @(#)CDS: SYNTECH 20.13-s015_1 () Jan  6 2021 07:44:41 ( )
+[07/26 17:19:00     13s] @(#)CDS: CPE v20.13-s092
+[07/26 17:19:00     13s] @(#)CDS: IQuantus/TQuantus 20.1.1-s453 (64bit) Fri Nov 20 21:16:44 PST 2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+[07/26 17:19:00     13s] @(#)CDS: OA 22.60-p048 Wed Nov 11 13:31:42 2020
+[07/26 17:19:00     13s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[07/26 17:19:00     13s] @(#)CDS: RCDB 11.15.0
+[07/26 17:19:00     13s] @(#)CDS: STYLUS 20.10-p024_1 (12/01/2020 07:22 PST)
+[07/26 17:19:00     13s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_532586_iron-502-26_lyt1314_uUj4fm.
+
+[07/26 17:19:00     13s] Change the soft stacksize limit to 0.2%RAM (2063 mbytes). Set global soft_stack_size_limit to change the value.
+[07/26 17:19:02     14s] 
+[07/26 17:19:02     14s] **INFO:  MMMC transition support version v31-84 
+[07/26 17:19:02     14s] 
+[07/26 17:19:02     14s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[07/26 17:19:02     14s] <CMD> suppressMessage ENCEXT-2799
+[07/26 18:23:33     16s] invalid command name ":exit"
+[07/26 18:23:37     16s] invalid command name "quit"
+[07/26 21:34:28     22s] 
+[07/26 21:34:28     22s] *** Memory Usage v#2 (Current mem = 682.203M, initial mem = 295.723M) ***

@@ -21,8 +21,7 @@ $ source setup.csh
 $ cd ./stem_cell_generator 
 $ sh run_generator.sh  
 ```
-### Step 2 - Run PnR Optimization
-
+in magic command line put in: ``` place_pmos 0 0 2 12 1 ``` to generate stem cell for pmos/nmos/pnp/resistor/cap
 ## Play around toy examples (skywater130-analog-flow using mflowgen [4])
 [inverter](./inverter) <br>
 [ring oscillator](./ringosc) 
