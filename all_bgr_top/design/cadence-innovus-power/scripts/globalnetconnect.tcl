@@ -15,3 +15,6 @@ globalNetConnect vccd1    -type pgpin -pin VPB    -inst * -verbose
 
 globalNetConnect vccd1    -type pgpin -pin VDD    -inst * -verbose
 globalNetConnect vssd1    -type pgpin -pin VSS    -inst * -verbose
+
+# globalNetConnect VDD -type pgpin -pin VPWR -inst *
+# globalNetConnect VSS -type pgpin -pin VGND -inst *

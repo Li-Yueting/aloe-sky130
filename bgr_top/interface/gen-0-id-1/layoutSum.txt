@@ -1,0 +1,50 @@
+Current Layout Characteristics
+===================================================
+chip_area: 82759.3728
+chip_core_area: 52925.76
+std_area: 15874.579
+net_total_length: 2382.835
+core_utilization: 0.299940501563
+chip_utilization: 0.191816086359
+----------------------------------------------------
+NetName              NetWeight            NetLength           
+porst                17                   30.465              
+vbg                  19                   99.585              
+va                   12                   112.78              
+vb                   3                    167.96              
+vc                   16                   142.54              
+VDD                  16                   19.76               
+VSS                  3                    80.085              
+l17                  20                   21.42               
+l18                  9                    72.62               
+l19                  13                   106.06              
+l20                  11                   52.08               
+amp/vg               11                   104.3               
+amp/vq               13                   94.92               
+amp/vx               20                   186.24              
+BGR_Core/vbneg       7                    88.4                
+BGR_Core/l6          9                    20.12               
+BGR_Core/l7          11                   42.02               
+BGR_Core/l8          16                   26.6                
+BGR_Core/l10         14                   26.6                
+BGR_Core/l11         3                    28.78               
+BGR_Core/l1          15                   65.38               
+BGR_Core/l2          3                    14.8                
+BGR_Core/l4          14                   18.2                
+BGR_Core/l5          5                    88.08               
+BGR_Core/l12         19                   64.48               
+BGR_Core/R6/l        3                    14.78               
+BGR_Core/R7/l        7                    14.34               
+BGR_Core/R8/l        16                   16.16               
+BGR_Core/R10/l       4                    16.16               
+BGR_Core/R11/l       8                    44.68               
+BGR_Core/R3/l        2                    44.68               
+BGR_Core/R1/l        16                   25.82               
+BGR_Core/R2/l        18                   58.48               
+BGR_Core/R4/l        17                   77.04               
+BGR_Core/R5/l        19                   115.26              
+BGR_Core/R12/l       6                    60.2                
+R17/l                13                   48.96               
+R18/l                17                   33.04               
+R19/l                12                   20.76               
+R20/l                11                   18.2                
