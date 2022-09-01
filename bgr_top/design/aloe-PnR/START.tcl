@@ -40,24 +40,36 @@ source innovus-foundation-flow/custom-scripts/setup-session.tcl
 
 set order [split $::env(order) ","]
 
-# Run the scripts in order (inputs take priority)
-
-foreach tcl $order {
-  # Try to find the script in the "inputs" directory first
-  if {[ file exists inputs/$tcl ]} {
-    puts "\n  > Info: Sourcing \"inputs/$tcl\"\n"
-    source -verbose inputs/$tcl
-  # Try to find the script in the "scripts" directory
-  } elseif {[ file exists scripts/$tcl ]} {
-    puts "\n  > Info: Sourcing \"scripts/$tcl\"\n"
-    source -verbose scripts/$tcl
-  # Failed to find the script anywhere...
-  } else {
-    echo "Warn: Did not find $tcl"
-    exit 1
-  }
+# # Run the scripts in order (inputs take priority)
+# foreach tcl $order {
+#   # Try to find the script in the "inputs" directory first
+#   if {[ file exists inputs/$tcl ]} {
+#     puts "\n  > Info: Sourcing \"inputs/$tcl\"\n"
+#     source -verbose inputs/$tcl
+#   # Try to find the script in the "scripts" directory
+#   } elseif {[ file exists scripts/$tcl ]} {
+#     puts "\n  > Info: Sourcing \"scripts/$tcl\"\n"
+#     source -verbose scripts/$tcl
+#     if { $tcl == "interface.tcl"} {
+#       puts "*****************"
+#       interface "/home/users/lyt1314/ee372/aloe-sky130/bgr_top/interface/gen-0-id-0/layoutSum.txt"
+#     }
+#   # Failed to find the script anywhere...
+#   } else {
+#     echo "Warn: Did not find $tcl"
+#     exit 1
+#   }
+# }
+set dirs [glob -directory ../../interface -type d *]
+set design_name "bgr_top"
+# puts $dirs 
+foreach dir $dirs {
+  source -verbose [file join $dir "netweight.tcl"]
+  source -verbose scripts/pnr.tcl
+  source -verbose scripts/interface.tcl
+  interface $dir $design_name
+  source -verbose scripts/reporting.tcl
 }
-
 #-------------------------------------------------------------------------
 # Clean up
 #-------------------------------------------------------------------------

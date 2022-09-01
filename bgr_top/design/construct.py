@@ -47,7 +47,7 @@ def construct():
   # Signoff is custom because it has to output def that the default step does
   # not do. This is because we use the def instead of gds for generating spice
   # from layout for LVS
-  signoff         = Step( this_dir + '/cadence-innovus-signoff'         )
+  # signoff         = Step( this_dir + '/cadence-innovus-signoff'         )
   # pt_timing       = Step( this_dir + '/synopsys-pt-timing-signoff'      )
   magic_drc       = Step( this_dir + '/open-magic-drc'                  )
   magic_def2spice = Step( this_dir + '/open-magic-def2spice'            )
@@ -58,11 +58,10 @@ def construct():
   magic_antenna   = Step( this_dir + '/open-magic-antenna'              )
   calibre_lvs     = Step( this_dir + '/mentor-calibre-comparison'       )
   macro           = Step( this_dir + '/macro')
-<<<<<<< HEAD
-  klayout         = Step( this_dir + '/klayout-drc-gds')
-=======
-  klayout_drc_gds = Step( this_dir + '/klayout-drc-gds'                 )
->>>>>>> bf5f326dc74c425a381a17f9516f41a34d436ef4
+  pointer         = Step( this_dir + '/pointer')
+  
+  #klayout         = Step( this_dir + '/klayout-drc-gds')
+  #klayout_drc_gds = Step( this_dir + '/klayout-drc-gds'                 )
   # pt_power        = Step( this_dir + '/synopsys-pt-power')
   # pt_power_rtl    = pt_power.clone()
   # pt_power_gl     = pt_power.clone()
@@ -92,7 +91,7 @@ def construct():
   g.add_step( pnr           )
   # g.add_step( route           )
   # g.add_step( postroute       )
-  g.add_step( signoff         )
+  # g.add_step( signoff         )
   g.add_step( gdsmerge        )
   # g.add_step( pt_timing       )
   # g.add_step( pt_power_rtl    )
@@ -106,11 +105,9 @@ def construct():
   g.add_step( netgen_lvs_gds_device  )
   g.add_step( calibre_lvs     )
   g.add_step( macro)
-<<<<<<< HEAD
-  g.add_step( klayout)
-=======
-  g.add_step( klayout_drc_gds )
->>>>>>> bf5f326dc74c425a381a17f9516f41a34d436ef4
+  g.add_step( pointer)
+  #g.add_step( klayout)
+  #g.add_step( klayout_drc_gds )
   #-----------------------------------------------------------------------
   # Graph -- Add edges
   #-----------------------------------------------------------------------
@@ -121,7 +118,8 @@ def construct():
   g.connect_by_name( adk,             pnr           )
   # g.connect_by_name( adk,             route           )
   # g.connect_by_name( adk,             postroute       )
-  g.connect_by_name( adk,             signoff         )
+  g.connect_by_name(adk,              pointer         )
+  # g.connect_by_name( adk,             signoff         )
   g.connect_by_name( adk,             gdsmerge        )
   g.connect_by_name( adk,             magic_drc       )
   g.connect_by_name( adk,             magic_antenna   )
@@ -143,36 +141,43 @@ def construct():
   g.connect_by_name( dummy_dc,          pnr           )
   g.connect_by_name( iflow,           init            )
   # g.connect_by_name( iflow,           power           )
-  g.connect_by_name( iflow,           pnr          )
+  g.connect_by_name( iflow,           pnr               )
   # g.connect_by_name( iflow,           route           )
   # g.connect_by_name( iflow,           postroute       )
-  g.connect_by_name( iflow,           signoff         )
+  g.connect_by_name( iflow,           pointer           )
+  # g.connect_by_name( iflow,           signoff         )
   # Core place and route flow
-  g.connect_by_name( init,            pnr          )
+  g.connect_by_name( init,            pnr               )
   # g.connect_by_name( place,           power           )
   # g.connect_by_name( route,           postroute       )
   # g.connect_by_name( postroute,       signoff         )
-  g.connect_by_name( pnr,       signoff         )
-  g.connect_by_name( signoff,         gdsmerge        )
+  # g.connect_by_name( pnr,       signoff         )
+  g.connect_by_name(  pnr,            pointer         )
+  # g.connect_by_name( signoff,         gdsmerge        )
   # DRC, LVS, timing signoff and power signoff
   g.connect_by_name( gdsmerge,        magic_drc       )
   g.connect_by_name( gdsmerge,        magic_antenna   )
-  g.connect_by_name( gdsmerge,        klayout_drc_gds )
+  #g.connect_by_name( gdsmerge,        klayout_drc_gds )
   # LVS using DEF
-  g.connect_by_name( signoff,         magic_def2spice )
-  g.connect_by_name( signoff,         netgen_lvs_def  )
+  g.connect_by_name( pointer,         magic_def2spice)
+  g.connect_by_name( pointer,         netgen_lvs_def )
+  # g.connect_by_name( signoff,         magic_def2spice )
+  # g.connect_by_name( signoff,         netgen_lvs_def  )
   g.connect_by_name( magic_def2spice, netgen_lvs_def  )
   # LVS using GDS
   g.connect_by_name( gdsmerge,        magic_gds2spice )
-  g.connect_by_name( signoff,         netgen_lvs_gds  )
-  g.connect_by_name( signoff,         netgen_lvs_gds_device  )
+  g.connect_by_name( pointer,         netgen_lvs_gds  )
+  g.connect_by_name( pointer,         netgen_lvs_gds_device)
+  # g.connect_by_name( signoff,         netgen_lvs_gds  )
+  # g.connect_by_name( signoff,         netgen_lvs_gds_device  )
   g.connect_by_name( magic_gds2spice, netgen_lvs_gds  )
   g.connect_by_name( magic_gds2spice, netgen_lvs_gds_device  )
   # LVS comparision using Calibre
-  g.connect_by_name( signoff,         calibre_lvs     )
+  g.connect_by_name( pointer,         calibre_lvs     )
+  # g.connect_by_name( signoff,         calibre_lvs     )
   g.connect_by_name( magic_gds2spice, calibre_lvs     )
-  g.connect_by_name( signoff,         macro         )
-  g.connect_by_name( gdsmerge,           klayout)
+  # g.connect_by_name( signoff,         macro         )
+  #g.connect_by_name( gdsmerge,           klayout)
   # Timing signoff
   # g.connect( signoff.o('design.spef.gz'),   pt_timing.i('design.spef.gz' ) )
   # g.connect( signoff.o('design.vcs.v'  ),   pt_timing.i('design.vcs.v'   ) )

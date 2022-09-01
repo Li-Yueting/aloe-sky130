@@ -3671,6 +3671,14 @@ MACRO decoder5x32
         RECT 0.000 28.180 41.400 30.180 ;
         RECT 0.000 5.860 41.400 7.860 ;
         RECT 0.000 1.860 41.400 3.860 ;
+      LAYER li ;
+        RECT 2.110 1.890 39.250 34.100 ;
+      LAYER m1 ;
+        RECT 2.110 1.890 39.250 34.100 ;
+      LAYER m2 ;
+        RECT 2.110 1.890 39.250 34.100 ;
+      LAYER m3 ;
+        RECT 2.110 1.890 39.250 34.100 ;
   END
 END decoder5x32
 END LIBRARY

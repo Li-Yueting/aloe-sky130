@@ -28,6 +28,7 @@ commands:
   - ln -sf inputs/innovus-foundation-flow
   - rm inputs/innovus-foundation-flow/INNOVUS/run_place.tcl
   - cp cust_run_place.tcl inputs/innovus-foundation-flow/INNOVUS/run_place.tcl
+  # - python run_pnr_optimization.py
   - innovus -overwrite -64 -nowin -init START.tcl -log logs/run.log
 
   # Outputs
@@ -41,11 +42,9 @@ commands:
 parameters:
   useful_skew: True
   order:
-    - floorplan.tcl
-    - pin-assignments.tcl
-    - tech.tcl
-    - power.tcl
+    - netweight.tcl
     - pnr.tcl
+    - interface.tcl
     - reporting.tcl
   cell_padding: 2 # how much padding to add to specified cells
 

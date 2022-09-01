@@ -46,6 +46,10 @@ parameters:
     # - add-endcaps-welltaps.tcl
     # - pin-assignments.tcl
     # # - make-path-groups.tcl
+    - floorplan.tcl
+    - pin-assignments.tcl
+    - tech.tcl
+    - power.tcl
     - reporting.tcl
 
 #-------------------------------------------------------------------------
