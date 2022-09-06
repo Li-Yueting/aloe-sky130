@@ -28,8 +28,9 @@ commands:
   - ln -sf inputs/innovus-foundation-flow
   - rm inputs/innovus-foundation-flow/INNOVUS/run_place.tcl
   - cp cust_run_place.tcl inputs/innovus-foundation-flow/INNOVUS/run_place.tcl
+  - echo $0
   # - python run_pnr_optimization.py
-  - innovus -overwrite -64 -nowin -init START.tcl -log logs/run.log
+  - bash parallel_run.sh
 
   # Outputs
   - cd outputs

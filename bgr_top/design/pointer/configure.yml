@@ -29,7 +29,7 @@ outputs:
 
 commands:
   - ln -sf inputs/innovus-foundation-flow
-  - cp ../../interface/gen-0-id-0/ .
+  - cp ../../interface/gen-0-id-0/* .
   - cd outputs
   - ln -sf ../checkpoints/design.checkpoint
   - ln -sf ../*.gds.gz            design.gds.gz

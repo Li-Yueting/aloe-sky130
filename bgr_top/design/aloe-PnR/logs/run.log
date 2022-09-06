@@ -1,0 +1,27 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v20.13-s083_1, built Tue Jan 19 16:51:46 PST 2021
+Options:	-overwrite -nowin -init START.tcl -log logs/run.log 
+Date:		Thu Sep  1 18:15:42 2022
+Host:		rice-503-20-north (x86_64 w/Linux 5.13.0-52-generic) (20cores*40cpus*Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz 28160KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	20.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (383 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+Sourcing file "START.tcl" ...
+**ERROR: (IMPSYT-6692):	Invalid return code while executing 'START.tcl' was returned and script processing was stopped. Review the following error in 'START.tcl' then restart.
+**ERROR: (IMPSYT-6693):	Error message: START.tcl: couldn't read file "innovus-foundation-flow/custom-scripts/restore-design.tcl": no such file or directory.
+
+*** Memory Usage v#2 (Current mem = 686.523M, initial mem = 287.727M) ***
+*** Message Summary: 0 warning(s), 2 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:15.8, real=0:00:50.0, mem=686.5M) ---

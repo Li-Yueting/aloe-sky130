@@ -1,0 +1,45 @@
+[09/01 18:15:42      0s] 
+[09/01 18:15:42      0s] Cadence Innovus(TM) Implementation System.
+[09/01 18:15:42      0s] Copyright 2020 Cadence Design Systems, Inc. All rights reserved worldwide.
+[09/01 18:15:42      0s] 
+[09/01 18:15:42      0s] Version:	v20.13-s083_1, built Tue Jan 19 16:51:46 PST 2021
+[09/01 18:15:42      0s] Options:	-overwrite -nowin -init START.tcl -log logs/run.log 
+[09/01 18:15:42      0s] Date:		Thu Sep  1 18:15:42 2022
+[09/01 18:15:42      0s] Host:		rice-503-20-north (x86_64 w/Linux 5.13.0-52-generic) (20cores*40cpus*Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz 28160KB)
+[09/01 18:15:42      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[09/01 18:15:42      0s] 
+[09/01 18:15:42      0s] License:
+[09/01 18:15:42      0s] 		invs	Innovus Implementation System	20.1	checkout succeeded
+[09/01 18:15:42      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[09/01 18:16:06     14s] @(#)CDS: Innovus v20.13-s083_1 (64bit) 01/19/2021 16:51 (Linux 2.6.32-431.11.2.el6.x86_64)
+[09/01 18:16:06     14s] @(#)CDS: NanoRoute 20.13-s083_1 NR201221-0721/20_13-UB (database version 18.20.538) {superthreading v2.13}
+[09/01 18:16:06     14s] @(#)CDS: AAE 20.13-s024 (64bit) 01/19/2021 (Linux 2.6.32-431.11.2.el6.x86_64)
+[09/01 18:16:06     14s] @(#)CDS: CTE 20.13-s042_1 () Jan 14 2021 08:49:42 ( )
+[09/01 18:16:06     14s] @(#)CDS: SYNTECH 20.13-s015_1 () Jan  6 2021 07:44:41 ( )
+[09/01 18:16:06     14s] @(#)CDS: CPE v20.13-s092
+[09/01 18:16:06     14s] @(#)CDS: IQuantus/TQuantus 20.1.1-s453 (64bit) Fri Nov 20 21:16:44 PST 2020 (Linux 2.6.32-431.11.2.el6.x86_64)
+[09/01 18:16:06     14s] @(#)CDS: OA 22.60-p048 Wed Nov 11 13:31:42 2020
+[09/01 18:16:06     14s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[09/01 18:16:06     14s] @(#)CDS: RCDB 11.15.0
+[09/01 18:16:06     14s] @(#)CDS: STYLUS 20.10-p024_1 (12/01/2020 07:22 PST)
+[09/01 18:16:06     14s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_356997_rice-503-20-north_lyt1314_RouOc2.
+
+[09/01 18:16:06     14s] Change the soft stacksize limit to 0.2%RAM (383 mbytes). Set global soft_stack_size_limit to change the value.
+[09/01 18:16:07     15s] 
+[09/01 18:16:07     15s] **INFO:  MMMC transition support version v31-84 
+[09/01 18:16:07     15s] 
+[09/01 18:16:07     15s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[09/01 18:16:07     15s] <CMD> suppressMessage ENCEXT-2799
+[09/01 18:16:07     15s] Sourcing file "START.tcl" ...
+[09/01 18:16:07     15s] **ERROR: (IMPSYT-6692):	Invalid return code while executing 'START.tcl' was returned and script processing was stopped. Review the following error in 'START.tcl' then restart.
+[09/01 18:16:07     15s] **ERROR: (IMPSYT-6693):	Error message: START.tcl: couldn't read file "innovus-foundation-flow/custom-scripts/restore-design.tcl": no such file or directory.
+[09/01 18:16:32     15s] 
+[09/01 18:16:32     15s] *** Memory Usage v#2 (Current mem = 686.523M, initial mem = 287.727M) ***
+[09/01 18:16:32     15s] 
+[09/01 18:16:32     15s] *** Summary of all messages that are not suppressed in this session:
+[09/01 18:16:32     15s] Severity  ID               Count  Summary                                  
+[09/01 18:16:32     15s] ERROR     IMPSYT-6692          1  Invalid return code while executing '%s'...
+[09/01 18:16:32     15s] ERROR     IMPSYT-6693          1  Error message: %s: %s.                   
+[09/01 18:16:32     15s] *** Message Summary: 0 warning(s), 2 error(s)
+[09/01 18:16:32     15s] 
+[09/01 18:16:32     15s] --- Ending "Innovus" (totcpu=0:00:15.8, real=0:00:50.0, mem=686.5M) ---
