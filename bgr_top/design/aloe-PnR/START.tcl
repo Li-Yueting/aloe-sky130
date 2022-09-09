@@ -61,27 +61,27 @@ set order [split $::env(order) ","]
 #   }
 # }
 
-puts "I am working on $env(DIR)"
-set dir $env(DIR)
+# puts "I am working on $env(DIR)"
+# set dir $env(DIR)
 
-# set dirs [glob -directory ../../interface -type d *]
+set dirs [glob -directory ../../interface -type d *]
 set design_name "bgr_top"
 # puts $dirs 
 
-source -verbose [file join $dir "netweight.tcl"]
-source -verbose scripts/pnr.tcl
-source -verbose scripts/interface.tcl
-interface $dir $design_name
-source -verbose scripts/reporting.tcl
+# source -verbose [file join $dir "netweight.tcl"]
+# source -verbose scripts/pnr.tcl
+# source -verbose scripts/interface.tcl
+# interface $dir $design_name
+# source -verbose scripts/reporting.tcl
 
 
-# foreach dir $dirs {
-#   source -verbose [file join $dir "netweight.tcl"]
-#   source -verbose scripts/pnr.tcl
-#   source -verbose scripts/interface.tcl
-#   interface $dir $design_name
-#   source -verbose scripts/reporting.tcl
-# }
+foreach dir $dirs {
+  source -verbose [file join $dir "netweight.tcl"]
+  source -verbose scripts/pnr.tcl
+  source -verbose scripts/interface.tcl
+  interface $dir $design_name
+  source -verbose scripts/reporting.tcl
+}
 #-------------------------------------------------------------------------
 # Clean up
 #-------------------------------------------------------------------------

@@ -57,9 +57,9 @@ def construct():
   netgen_lvs_def  = Step( this_dir + '/netgen-lvs-def'                  )
   magic_antenna   = Step( this_dir + '/open-magic-antenna'              )
   calibre_lvs     = Step( this_dir + '/mentor-calibre-comparison'       )
-  macro           = Step( this_dir + '/macro')
+  # macro           = Step( this_dir + '/macro')
   pointer         = Step( this_dir + '/pointer')
-  
+  post_sim        = Step( this_dir + '/post-sim')
   #klayout         = Step( this_dir + '/klayout-drc-gds')
   #klayout_drc_gds = Step( this_dir + '/klayout-drc-gds'                 )
   # pt_power        = Step( this_dir + '/synopsys-pt-power')
@@ -80,8 +80,8 @@ def construct():
   #-----------------------------------------------------------------------
   # Graph -- Add nodes
   #-----------------------------------------------------------------------
-  g.add_step( dummy_dc        )
   g.add_step( info            )
+  g.add_step( dummy_dc        )
   g.add_step( rtl             )
   # g.add_step( constraints     )
   # g.add_step( dc              )
@@ -104,8 +104,9 @@ def construct():
   g.add_step( netgen_lvs_gds  )
   g.add_step( netgen_lvs_gds_device  )
   g.add_step( calibre_lvs     )
-  g.add_step( macro)
+  # g.add_step( macro)
   g.add_step( pointer)
+  g.add_step( post_sim)
   #g.add_step( klayout)
   #g.add_step( klayout_drc_gds )
   #-----------------------------------------------------------------------
@@ -129,7 +130,7 @@ def construct():
   g.connect_by_name( adk,             netgen_lvs_gds  )
   g.connect_by_name( adk,             netgen_lvs_gds_device  )
   g.connect_by_name( adk,             calibre_lvs     )
-  g.connect_by_name( adk,             macro           )
+  # g.connect_by_name( adk,             macro           )
   # g.connect_by_name( adk,             pt_timing       )
   # g.connect_by_name( adk,             pt_power_rtl    )
   # g.connect_by_name( adk,             pt_power_gl     )
@@ -153,6 +154,7 @@ def construct():
   # g.connect_by_name( postroute,       signoff         )
   # g.connect_by_name( pnr,       signoff         )
   g.connect_by_name(  pnr,            pointer         )
+  g.connect_by_name(  pointer,        gdsmerge        )
   # g.connect_by_name( signoff,         gdsmerge        )
   # DRC, LVS, timing signoff and power signoff
   g.connect_by_name( gdsmerge,        magic_drc       )
@@ -176,6 +178,8 @@ def construct():
   g.connect_by_name( pointer,         calibre_lvs     )
   # g.connect_by_name( signoff,         calibre_lvs     )
   g.connect_by_name( magic_gds2spice, calibre_lvs     )
+  g.connect_by_name( pointer,         post_sim        )
+  g.connect_by_name( adk,             post_sim        )
   # g.connect_by_name( signoff,         macro         )
   #g.connect_by_name( gdsmerge,           klayout)
   # Timing signoff

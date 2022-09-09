@@ -22,20 +22,21 @@ outputs:
   - design.gds.gz
   - design.lvs.v
   - design.lef
-
+  - design.def.gz
 #-------------------------------------------------------------------------
 # Commands
 #-------------------------------------------------------------------------
 
 commands:
   - ln -sf inputs/innovus-foundation-flow
-  - cp ../../interface/gen-0-id-0/* .
+  - cp -a ../../interface/gen-0-id-0/. .
   - cd outputs
   - ln -sf ../checkpoints/design.checkpoint
   - ln -sf ../*.gds.gz            design.gds.gz
-  - ln -sf ../*-merged.gds        design-merged.gds
+  - ln -sf ../*-merged.gds        design_merged.gds
   - ln -sf ../*.lvs.v             design.lvs.v
   - ln -sf ../*.lef               design.lef
+  - ln -sf ../*.def.gz            design.def.gz
 #-------------------------------------------------------------------------
 # Parameters
 #-------------------------------------------------------------------------
@@ -58,7 +59,7 @@ debug:
 preconditions:
 
   - assert Tool( 'calibredrv' )
-  - assert File( 'inputs/design.gds.gz' )
+  # - assert File( 'inputs/design.gds.gz' )
 
 postconditions:
 
@@ -81,5 +82,5 @@ postconditions:
   # their own version, (4) something else...
   #
 
-  - "assert 'WARNING: Ignoring duplicate structure'
-      not in File( 'merge.log' )"
+  # - "assert 'WARNING: Ignoring duplicate structure'
+  #     not in File( 'merge.log' )"

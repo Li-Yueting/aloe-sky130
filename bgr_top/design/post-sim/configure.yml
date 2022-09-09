@@ -1,0 +1,15 @@
+name: post-sim
+
+inputs:
+  - adk
+  - design_merged.gds
+
+outputs:
+  - design_parasitic_extracted.spice
+
+commands:
+  - cp inputs/adk/magicrc .magicrc
+  - magic -noconsole -dnull extract.tcl | tee gds2spice.log
+  - mv design_parasitic_extracted.spice outputs/design_parasitic_extracted.spice
+  - python string_swap.py
+  - ngspice -c tf.sp -o tf-out.txt

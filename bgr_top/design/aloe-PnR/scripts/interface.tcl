@@ -8,6 +8,20 @@ proc interface {outdir design_name} {
     layout_summary $outdir $design_name
 }
 
+proc population_pnr {base_dir gen design_name} {
+    set dirs [glob -directory $base_dir -type d gen_$gen*] 
+    puts $dirs
+    set fitness [list]
+    foreach dir $dirs {
+        # source -verbose scripts/loadfp.tcl
+        # source -verbose [file join $dir "netweight.tcl"]
+        # source -verbose scripts/pnr.tcl
+        # set net_total_length [layout_summary $dir $design_name]
+        lappend fitness 1 ;#$net_total_length
+    }
+    return $fitness
+}
+
 proc signoff {outdir design_name} {
     # verification
     verifyConnectivity -noAntenna
@@ -83,6 +97,7 @@ proc layout_summary {outdir design_name} {
         # puts $fp "net_weight: $net_weight"
         # puts $fp "net_length: $net_length"
     close $fp
+    return $net_total_length
 }
 
 proc netLength {netName} {

@@ -17,9 +17,13 @@ inputs:
   - design.v
   - design.sdc
 
+
 outputs:
   - design.checkpoint
-
+  - design.fp
+  - design.fp.fpr
+  - design.def
+  - design.v
 #-------------------------------------------------------------------------
 # Commands
 #-------------------------------------------------------------------------
@@ -32,7 +36,11 @@ commands:
 
   # Outputs
   - cd outputs
+  - cp ../inputs/design.v design.v
   - ln -sf ../checkpoints/design.checkpoint
+  - ln -sf ../design.fp
+  - ln -sf ../design.fpr
+  - ln -sf ../design.def
 
 #-------------------------------------------------------------------------
 # Parameters
@@ -50,6 +58,7 @@ parameters:
     - pin-assignments.tcl
     - tech.tcl
     - power.tcl
+    - savefp.tcl
     - reporting.tcl
 
 #-------------------------------------------------------------------------

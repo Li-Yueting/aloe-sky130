@@ -16,6 +16,10 @@ inputs:
   - adk
   - design.sdc
   - design.checkpoint
+  - design.fp
+  - design.fpr
+  - design.def
+  - design.v
 
 outputs:
   - design.checkpoint
@@ -25,12 +29,14 @@ outputs:
 #-------------------------------------------------------------------------
 
 commands:
-  - ln -sf inputs/innovus-foundation-flow
-  - rm inputs/innovus-foundation-flow/INNOVUS/run_place.tcl
-  - cp cust_run_place.tcl inputs/innovus-foundation-flow/INNOVUS/run_place.tcl
-  - echo $0
-  # - python run_pnr_optimization.py
-  - bash parallel_run.sh
+  # - ln -sf inputs/innovus-foundation-flow
+  # - rm inputs/innovus-foundation-flow/INNOVUS/run_place.tcl
+  # - cp cust_run_place.tcl inputs/innovus-foundation-flow/INNOVUS/run_place.tcl
+
+  # - echo $0
+  # # - python run_pnr_optimization.py
+  - innovus -overwrite -64 -nowin -init start.tcl -cpus 8 -log logs/run.log
+  # - bash parallel_run.sh
 
   # Outputs
   - cd outputs
@@ -72,6 +78,6 @@ preconditions:
 
 postconditions:
 
-  - assert File( 'outputs/design.checkpoint' )       # must exist
+  # - assert File( 'outputs/design.checkpoint' )       # must exist
 
 
