@@ -40,7 +40,7 @@ Then:
 (6)	$\mathrm{I2a =dV_f/R3} $  
 (7)	$\mathrm{I2b = V_{f1}/R2}  $  
 (8)	$\mathrm{I}3 = \mathrm{I}2 = \mathrm{I}2\mathrm{a} + \mathrm{I}2b$   
-(9) $\mathrm{V_{ref}=R4 \cdot I3=R4 \cdot\left(\frac{V_{f1}}{R 2}+\frac{d V_f}{R 3}\right)=R4 \cdot(I2a+I2b)}$, where I2a is PTAT current and I2b is CTAT current. 
+(9) $\mathrm{V_{ref}=R4 \cdot I3=R4 \cdot\left(\frac{V_{f1}}{R 2}+\frac{d V_f}{R 3}\right)=R4 \cdot(I2a+I2b)}$, where $\mathrm{I2a}$ is PTAT current and $\mathrm{I2b}$ is CTAT current. 
 
 
 ## Part B - Analog Standard Cell (Stem Cell) Generation
