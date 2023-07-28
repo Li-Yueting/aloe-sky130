@@ -15,13 +15,13 @@ This project ports an automatic analog layout generation tool called [aloe](http
 
 $I =I_S \cdot\left(e^{\frac{q \cdot V_f}{k \cdot T}}-1\right) \cong I_S \cdot e^{\frac{q \cdot V_f}{k \cdot T}} \mid V_f \gg \frac{k \cdot T}{q}$
 
-$V_f = V_T \cdot \ln\left(\frac{I}{I_S}\right) \tag{1.1}$
+$V_f = V_T \cdot \ln\left(\frac{I}{I_S}\right)$
 ### A2. Get to know Bandgap Reference (BGR) Voltage Circuit
 Abstraction:
 - We want a voltage generation circuit, which is independent of temperature. 
 - **Idea 1**: target_voltage = PTAT_voltage + CTAT_voltage
 (PTAT: proportional to absolute temperature; CTAT: conversely proportional to absolute temperature) <br>
-**Here we use idea 2 [2]: target_voltage = R * (PTAT_current + CTAT_current)**
+Here we use **[idea 2](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=760378)**: target_voltage = R * (PTAT_current + CTAT_current)
 
 ## Part E - Project Proposal & Presentation
 Our aloe-sky130 project proposal & the overview presentation is [here](https://drive.google.com/drive/folders/1wuhCuDhPMV9OHajH3ZFC1K35qJaZ7o5d?usp=sharing)
