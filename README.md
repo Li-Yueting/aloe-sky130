@@ -21,7 +21,8 @@ Abstraction:
 - We want a voltage generation circuit, which is independent of temperature. 
 - **Idea 1**: target_voltage = PTAT_voltage + CTAT_voltage
 (PTAT: proportional to absolute temperature; CTAT: conversely proportional to absolute temperature) <br>
-Here we use **[idea 2](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=760378)**: target_voltage = R * (PTAT_current + CTAT_current)
+ **[Idea 2](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=760378)**: target_voltage = R * (PTAT_current + CTAT_current)   
+ Here we use  **Idea 2**.
 
 ## Part E - Project Proposal & Presentation
 Our aloe-sky130 project proposal & the overview presentation is [here](https://drive.google.com/drive/folders/1wuhCuDhPMV9OHajH3ZFC1K35qJaZ7o5d?usp=sharing)
