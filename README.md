@@ -1,8 +1,25 @@
 # aloe-sky130
-aloe-sky130 is an analog PnR automation tool based on ALOE [1] architecture using skywater-130nm technology. This is a developing repo for our EE372 project at Stanford University. aloe-sky130 is tested on a bandgap reference (BGR) circuit. For the BGR part, we referred [2]. In the layout part, some of the tcl codes referred [3].
+This project ports an automatic analog layout generation tool called [aloe](https://ieeexplore.ieee.org/document/9524486) to work with SkyWater 130 nm technology. Aloe uses a digital place and route tool together with a genetic algorithm to meet different analog layout specifications. Using this tool, we generated several layouts for a bandgap voltage reference (BGR) circuit on this chip, and we compared these with a manually laid out version from the previous offering of this course.
 
-## Proposal & Presentation
-Our project proposal & the overview presentation is [here](https://drive.google.com/drive/folders/1wuhCuDhPMV9OHajH3ZFC1K35qJaZ7o5d?usp=sharing)
+## Table of Contents
+- Part A -  BGR Circuit Understanding
+- Part B - Analog Standard Cell (Stem Cell) Generation
+- Part C - Layout Automation
+- Part D - Silicon Testing Results
+- Part E - Project Proposal & Presentation
+## Part A - BGR Circuit Understanding
+### A1. Current vs Voltage relationship of diode
+![](images/diode.png)
+$\begin{aligned} & I=I_S \cdot\left(e^{\frac{q \cdot V_f}{k \cdot T}}-1\right) \cong I_S \cdot e^{\frac{q \cdot V_f}{k \cdot T}} \mid V_f \gg \frac{k \cdot T}{q} \\ & V_T \cdot \operatorname{In}\left(\frac{I}{I_S}\right)\end{aligned}$
+### A2. Get to know Bandgap Reference (BGR) Voltage Circuit
+Abstraction:
+- We want a voltage generation circuit, which is independent of temperature. 
+- **Idea 1**: target_voltage = PTAT_voltage + CTAT_voltage
+(PTAT: proportional to absolute temperature; CTAT: conversely proportional to absolute temperature) <br>
+**Here we use idea 2 [2]: target_voltage = R * (PTAT_current + CTAT_current)**
+
+## Part E - Project Proposal & Presentation
+Our aloe-sky130 project proposal & the overview presentation is [here](https://drive.google.com/drive/folders/1wuhCuDhPMV9OHajH3ZFC1K35qJaZ7o5d?usp=sharing)
 ## Running codes
 ### Step 0 - Environment Setup 
 Log into farmshare follow the [instruction here, watching the video is recommended](https://ee.stanford.edu/student-resources/it-resources/ee-instructional-computing-resources)  <br>
@@ -27,9 +44,8 @@ $ sh run_generator.sh
 [inverter](./inverter) <br>
 [ring oscillator](./ringosc) 
 ## Reference 
-[1] Wei, Po-Hsuan, and Boris Murmann. "Analog and Mixed-Signal Layout Automation Using Digital Place-and-Route Tools." IEEE Transactions on Very Large Scale Integration (VLSI) Systems 29.11 (2021): 1838-1849. <br>
-[2] https://github.com/johnkustin/bandgapReferenceCircuit <br>
-[3] https://github.com/westonb/open-pmic <br>
+ For the BGR part, we referred [bandgapReferenceCircuit](https://github.com/johnkustin/bandgapReferenceCircuit). In the layout part, some of the tcl codes referred [open-pmic](https://github.com/westonb/open-pmic ).
+
 [4] https://github.com/mflowgen/mflowgen
 ## Contact
 Yueting Li: lyt1314@stanford.edu <br>
