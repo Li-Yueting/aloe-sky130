@@ -42,6 +42,9 @@ Then:
 (8)	I3 = I2 = I2a + I2b  
 (9) $V_{r e f}=R 4 \cdot I 3=R 4 \cdot\left(\frac{V_{f 1}}{R 2}+\frac{d V_f}{R 3}\right)=\mathrm{R} 4 \cdot(\mathrm{I} 2 \mathrm{a}+\mathrm{I} 2 \mathrm{~b})$, where I2a is PTAT current and I2b is CTAT current. 
 
+
+## Part B - Analog Standard Cell (Stem Cell) Generation
+
 ## Part E - Project Proposal & Presentation
 Our aloe-sky130 project proposal & the overview presentation is [here](https://drive.google.com/drive/folders/1wuhCuDhPMV9OHajH3ZFC1K35qJaZ7o5d?usp=sharing)
 ## Running codes
