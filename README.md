@@ -9,9 +9,8 @@ This project ports an automatic analog layout generation tool called [aloe](http
 - Part E - Project Proposal & Presentation
 ## Part A - BGR Circuit Understanding
 ### A1. Current vs Voltage relationship of diode
-</p>
-<img src="https://github.com/Li-Yueting/aloe-sky130/blob/main/images/diode.png" />
-</p>
+
+![diode](https://github.com/Li-Yueting/aloe-sky130/blob/main/images/diode.png)
 
 $I =I_S \cdot\left(e^{\frac{q \cdot V_f}{k \cdot T}}-1\right) \cong I_S \cdot e^{\frac{q \cdot V_f}{k \cdot T}} \mid V_f \gg \frac{k \cdot T}{q}$
 
@@ -23,6 +22,8 @@ Abstraction:
 (PTAT: proportional to absolute temperature; CTAT: conversely proportional to absolute temperature) <br>
  **[Idea 2](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=760378)**: target_voltage = R * (PTAT_current + CTAT_current)   
  Here we use  **Idea 2**.
+
+### A3. Simplified BGR Circuit Schematic (comparator abstraction)
 
 ## Part E - Project Proposal & Presentation
 Our aloe-sky130 project proposal & the overview presentation is [here](https://drive.google.com/drive/folders/1wuhCuDhPMV9OHajH3ZFC1K35qJaZ7o5d?usp=sharing)
