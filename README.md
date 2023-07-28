@@ -24,11 +24,18 @@ Abstraction:
  Here we use  **Idea 2**.
 
 ### A3. Simplified BGR Circuit Schematic (comparator abstraction)
-![simplied-bgr](https://github.com/Li-Yueting/aloe-sky130/blob/main/images/simplified-BGR.png)
+![simplied-bgr](https://github.com/Li-Yueting/aloe-sky130/blob/main/images/simplified-BGR.png)  
+  
 Conditions:  
 (1)	Va = Vb  
-(2)	Sizes of PMOS p1, p2, p3 are the same  
-(3)	R1 = R2  
+(2)	Sizes of PMOS P1, P2, P3 are the same  
+(3)	R1 = R2     
+  
+Then:  
+(1)	I1 = I2 = I3 (current mirror banks)  
+(2)	I1b = I2b  
+(3)	I1a = 12a  
+(4)	-Vb =Vf2 + dVf = Vf1 = -Va  
 
 
 
