@@ -35,7 +35,7 @@ Then:
 (1)	I1 = I2 = I3 (current mirror banks)  
 (2)	I1b = I2b  
 (3)	I1a = 12a  
-(4)	-Vb =Vf2 + dVf = Vf1 = -Va  
+(4)	-Vb = Vf2 + dVf = Vf1 = -Va  
 
 
 
