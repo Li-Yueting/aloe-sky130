@@ -24,6 +24,13 @@ Abstraction:
  Here we use  **Idea 2**.
 
 ### A3. Simplified BGR Circuit Schematic (comparator abstraction)
+![simplied-bgr](https://github.com/Li-Yueting/aloe-sky130/blob/main/images/simplified-BGR.png)
+Conditions:  
+(1)	Va = Vb  
+(2)	Sizes of PMOS p1, p2, p3 are the same  
+(3)	R1 = R2  
+
+
 
 ## Part E - Project Proposal & Presentation
 Our aloe-sky130 project proposal & the overview presentation is [here](https://drive.google.com/drive/folders/1wuhCuDhPMV9OHajH3ZFC1K35qJaZ7o5d?usp=sharing)
