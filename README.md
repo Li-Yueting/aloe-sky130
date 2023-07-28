@@ -12,7 +12,7 @@ This project ports an automatic analog layout generation tool called [aloe](http
 ![](./images/diode.png)
 $$
 I=I_S \cdot\left(e^{\frac{q \cdot V_f}{k \cdot T}}-1\right) \cong I_S \cdot e^{\frac{q \cdot V_f}{k \cdot T}} \mid V_f \gg \frac{k \cdot T}{q} \\
-V_T \cdot \operatorname{In}\left(\frac{I}{I_S}\right)
+V_T \cdot \ln\left(\frac{I}{I_S}\right)
 $$
 ### A2. Get to know Bandgap Reference (BGR) Voltage Circuit
 Abstraction:
