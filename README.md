@@ -15,7 +15,7 @@ This project ports an automatic analog layout generation tool called [aloe](http
 
 $I =I_S \cdot\left(e^{\frac{q \cdot V_f}{k \cdot T}}-1\right) \cong I_S \cdot e^{\frac{q \cdot V_f}{k \cdot T}} \mid V_f \gg \frac{k \cdot T}{q}$
 
-$V_f = V_T \cdot \ln\left(\frac{I}{I_S}\right)$
+$V_f = V_T \cdot \ln\left(\frac{I}{I_S}\right) \tag{1.1}$
 ### A2. Get to know Bandgap Reference (BGR) Voltage Circuit
 Abstraction:
 - We want a voltage generation circuit, which is independent of temperature. 
