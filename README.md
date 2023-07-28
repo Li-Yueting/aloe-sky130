@@ -4,7 +4,7 @@ This project ports an automatic analog layout generation tool called [aloe](http
 ## Table of Contents
 - Part A -  BGR Circuit Understanding
 - Part B - Analog Standard Cell (Stem Cell) Generation
-- Part C - Layout Automation
+- Part C - Layout Automation Playground
 - Part D - Silicon Testing Results
 - Part E - Project Proposal & Presentation
 ## Part A - BGR Circuit Understanding
@@ -36,8 +36,11 @@ Then:
 (2)	I1b = I2b  
 (3)	I1a = 12a  
 (4)	-Vb = Vf2 + dVf = Vf1 = -Va  
-
-
+(5) $d V_f=V_{f 1}-V_{f 2}=V_T \cdot \ln\left(\frac{I}{I_s}\right)-V_T \cdot \ln\left(\frac{I}{N \cdot I_s}\right)=V_T \cdot \ln (N)$    
+(6)	I2a = dVf/R3  
+(7)	I2b = Vf1/R2  
+(8)	I3 = I2 = I2a + I2b  
+(9) $V_{r e f}=R 4 \cdot I 3=R 4 \cdot\left(\frac{V_{f 1}}{R 2}+\frac{d V_f}{R 3}\right)=\mathrm{R} 4 \cdot(\mathrm{I} 2 \mathrm{a}+\mathrm{I} 2 \mathrm{~b})$, where I2a is PTAT current and I2b is CTAT current. 
 
 ## Part E - Project Proposal & Presentation
 Our aloe-sky130 project proposal & the overview presentation is [here](https://drive.google.com/drive/folders/1wuhCuDhPMV9OHajH3ZFC1K35qJaZ7o5d?usp=sharing)
