@@ -1,1 +1,0 @@
-../results/ringosc.lvs.v

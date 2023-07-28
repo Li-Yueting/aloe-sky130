@@ -3,10 +3,9 @@ skywater-digital-flow
 layout/inv1/
 mflowgen/
 venv/
-inverter/build
-ringosc/build
-bgr_top/build
-bgr_top_caravel/build
-5to32_demux/build
-debug/
-all_bgr_top/build
+examples/inverter/build
+exaples/ringosc/build
+examples/bgr/build
+tmp/bgr_top_caravel/build
+examples/5to32_demux/build
+tmp/all_bgr_top/build
