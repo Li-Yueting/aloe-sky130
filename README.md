@@ -32,14 +32,13 @@ Conditions:
 (3)	R1 = R2     
   
 Then:  
-(1)	I1 = I2 = I3 (current mirror banks)  
-(2)	I1b = I2b  
-(3)	I1a = 12a  
-(4)	-Vb = Vf2 + dVf = Vf1 = -Va  
-(5) $d V_f=V_{f 1}-V_{f 2}=V_T \cdot \ln\left(\frac{I}{I_s}\right)-V_T \cdot \ln\left(\frac{I}{N \cdot I_s}\right)=V_T \cdot \ln (N)$    
-(6)	$\mathrm{I} 2 \mathrm{a} = \frac{dV_f}{\mathrm{R}3}  $
-  
-(7)	$\mathrm{I} 2 \mathrm{b} = \frac{V_{f1}}{\mathrm{R}2}  $  
+(1)	$\mathrm{I}1 = \mathrm{I}2 = \mathrm{I}3$ (current mirror banks)    
+(2)	$\mathrm{I}1\mathrm{b} = \mathrm{I}2\mathrm{b} $  
+(3)	$\mathrm{I}1\mathrm{a} = \mathrm{I}2\mathrm{a} $   
+(4)	$-\mathrm{Vb = V_{f2} + dV_f = V_{f1} = -{Va}}  $  
+(5) $\mathrm{d V_f=V_{f 1}-V_{f 2}=V_T \cdot \ln\left(\frac{I}{I_s}\right)-V_T \cdot \ln\left(\frac{I}{N \cdot I_s}\right)=V_T \cdot \ln (N)}$    
+(6)	$\mathrm{I} 2 \mathrm{a} =dV_f/\mathrm{R}3 $  
+(7)	$\mathrm{I} 2 \mathrm{b} = V_{f1}/\mathrm{R}2  $  
 (8)	$\mathrm{I}3 = \mathrm{I}2 = \mathrm{I}2\mathrm{a} + \mathrm{I}2b$   
 (9) $V_{ref}=\mathrm{R} 4 \cdot \mathrm{I}3=\mathrm{R}4 \cdot\left(\frac{V_{f1}}{R 2}+\frac{d V_f}{R 3}\right)=\mathrm{R} 4 \cdot(\mathrm{I} 2 \mathrm{a}+\mathrm{I} 2 \mathrm{b})$, where I2a is PTAT current and I2b is CTAT current. 
 
