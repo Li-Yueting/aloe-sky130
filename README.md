@@ -3,10 +3,7 @@ This project ports an automatic analog layout generation tool called [aloe](http
 
 ## Table of Contents
 - Part A -  BGR Circuit Understanding
-- Part B - Analog Standard Cell (Stem Cell) Generation
-- Part C - Layout Automation Playground
-- Part D - Silicon Testing Results
-- Part E - Project Proposal & Presentation
+- Part B - Analog Standard Cell (Stem Cell) Generation and Examples
 ## Part A - BGR Circuit Understanding
 ### A1. Current vs Voltage relationship of diode
 
@@ -42,22 +39,10 @@ Then:
 (8)	$\mathrm{I3 = I2 = I2a+ I2b}$   
 (9) $\mathrm{V_{ref}=R4 \cdot I3=R4 \cdot\left(\frac{V_{f1}}{R 2}+\frac{d V_f}{R 3}\right)=R4 \cdot(I2a+I2b)}$, where $\mathrm{I2a}$ is PTAT current and $\mathrm{I2b}$ is CTAT current. 
 
-
-## Part B - Analog Standard Cell (Stem Cell) Generation
-
-## Part E - Project Proposal & Presentation
-Our aloe-sky130 project proposal & the overview presentation is [here](https://drive.google.com/drive/folders/1wuhCuDhPMV9OHajH3ZFC1K35qJaZ7o5d?usp=sharing)
-## Running codes
-### Step 0 - Environment Setup 
-Log into farmshare follow the [instruction here, watching the video is recommended](https://ee.stanford.edu/student-resources/it-resources/ee-instructional-computing-resources)  <br>
-Source singularity environment by typing: <br>
+## Part B - Running codes
 ``` 
-$ /farmshare/home/classes/ee/admin/software/bin/centos.sh 
-``` 
-Then:
-``` 
-$ git clone https://github.com/Li-Yueting/aloe-sky130.git 
-$ cd aloe-sky130
+$ git clone https://this_repo_link.git 
+$ cd Open-ALOE
 $ source setup.csh  
 ```
 ### Step 1 - Build Stem Cell Library
@@ -66,7 +51,6 @@ $ cd ./stem_cell_generator
 $ sh run_generator.sh  
 ```
 ### Step 2 - Run PnR Optimization
-
 ## Play around toy examples (skywater130-analog-flow using mflowgen [4])
 [inverter](./inverter) <br>
 [ring oscillator](./ringosc) 
