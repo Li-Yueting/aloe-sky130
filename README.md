@@ -50,7 +50,7 @@ $ cd ./stem_cell_generator
 $ sh run_generator.sh  
 ```
 ### Step 2 - Run PnR Optimization
-## Play around toy examples (skywater130-analog-flow using mflowgen [4])
+## Play around toy examples (skywater130-analog-flow using mflowgen)
 [inverter](./examples/inverter) <br>
 [ring oscillator](./examples/ringosc) 
 ## Reference 
