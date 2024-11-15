@@ -21,8 +21,6 @@
 #
 # and the scripts will execute in that order.
 #
-# Author : Christopher Torng
-# Date   : January 14, 2020
 
 #-------------------------------------------------------------------------
 # Setup
