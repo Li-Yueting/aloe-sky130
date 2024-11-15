@@ -51,8 +51,8 @@ $ sh run_generator.sh
 ```
 ### Step 2 - Run PnR Optimization
 ## Play around toy examples (skywater130-analog-flow using mflowgen [4])
-[inverter](./inverter) <br>
-[ring oscillator](./ringosc) 
+[inverter](./examples/inverter) <br>
+[ring oscillator](./examples/ringosc) 
 ## Reference 
  For the BGR part, we referred [bandgapReferenceCircuit](https://github.com/johnkustin/bandgapReferenceCircuit). In the layout part, some of the tcl codes referred [open-pmic](https://github.com/westonb/open-pmic ).
 
