@@ -2,19 +2,13 @@
 #=========================================================================
 # construct.py
 #=========================================================================
-# Demo with 16-bit GcdUnit
-#
-# Author      : Priyanka Raina
-# Date        : December 4, 2020
-# Modified by : Allen Pan
-# Date        : March 15, 2022
+
 from email.policy import default
 import os
 import sys
 from mflowgen.components import Graph, Step
 def construct():
   g = Graph()
-  g.sys_path.append('/home/users/lyt1314/ee372/aloe-sky130')
   #-----------------------------------------------------------------------
   # Parameters
   #-----------------------------------------------------------------------
