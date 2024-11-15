@@ -1,4 +1,3 @@
-# aloe-sky130
 This project ports an automatic analog layout generation tool called [aloe](https://ieeexplore.ieee.org/document/9524486) to work with SkyWater 130 nm technology. Aloe uses a digital place and route tool together with a genetic algorithm to meet different analog layout specifications. Using this tool, we generated several layouts for a bandgap voltage reference (BGR) circuit on this chip, and we compared these with a manually laid out version from the previous offering of this course.
 
 ## Table of Contents
