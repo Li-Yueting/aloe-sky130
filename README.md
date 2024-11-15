@@ -74,6 +74,4 @@ $ sh run_generator.sh
  For the BGR part, we referred [bandgapReferenceCircuit](https://github.com/johnkustin/bandgapReferenceCircuit). In the layout part, some of the tcl codes referred [open-pmic](https://github.com/westonb/open-pmic ).
 
 [4] https://github.com/mflowgen/mflowgen
-## Contact
-Yueting Li: lyt1314@stanford.edu <br>
-Xingyu Ni: xingyuni@stanford.edu
+
